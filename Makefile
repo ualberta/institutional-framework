@@ -33,6 +33,16 @@ build:
 	@echo "Bootstrap successfully built at ${DATE}."
 	
 #
+# BUILD LESS ONLY
+#
+
+less:
+	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+	@recess --compile ./less/ualberta-ie7.less > ./compiled/css/ualberta-ie7.css
+	@recess --compile ./less/ualberta-ie.less > ./compiled/css/ualberta-ie-less.css
+	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+	
+#
 # COMPILE GH-PAGES
 #
 
@@ -58,9 +68,9 @@ ghpages:
 #
 
 watch:
-	echo "Watching less files..."; \
-	watchr -e "watch('less/.*\.less') { system 'make' }"
+	@echo "Watching less files..."; \
+	watchr -e "watch('less/.*\.less') { system 'make less' }"
 
 
 
-.PHONY: watch ghpages
+.PHONY: watch ghpages less
