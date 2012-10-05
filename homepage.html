@@ -1,0 +1,660 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!-- The Meta: These two must be before <title> -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- The Title -->
+  <title>Framework Prototype</title>
+  
+  <!-- The Other Meta -->
+  <meta name="description" content="University of Alberta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <!-- The Sheets -->
+  
+  <!--[if lt IE 9]>  <link href="./css/ualberta-ie.css" rel="stylesheet"><link href="./css/ualberta-ie-less.css" rel="stylesheet"> <![endif]-->
+  <!--[if IE 7]>  <link href="./css/ualberta-ie7.css" rel="stylesheet"> <![endif]-->
+
+  <!--[if gt IE 8]><!--> <link href="./css/ualberta.css" rel="stylesheet">  <!--<![endif]-->
+   
+    
+  <!-- The Favicon -->
+  <link rel="shortcut icon" href="./ico/favicon.ico">
+  
+  <!-- Le fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+  
+  <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+  <!-- Burn IE6 with fire -->
+  <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header> <!-- Start Header -->
+    <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
+      <div class="blade-inner">
+        <a class="brand" href="#">
+          <img src="./img/logo2.svg" alt="University of Alberta" />
+        </a>
+        <nav class="blade-navigation">
+          <ul class="quick-links-container">
+            <li id="ql" class="dropdown">
+              <a href="#" id="dLabel" class="dropdown-toggle hidden-desktop" data-toggle="dropdown">
+                <span class="quick-links-text">
+                  Quick Links <b class="caret"></b>
+                </span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span></a>
+              <ul class="quick-links" role="menu" aria-labelledby="dLabel">
+                <li role="menuitem"><a href="#">Find a Person</a></li>
+                <li role="menuitem"><a href="#">ONEcard</a></li>
+                <li role="menuitem"><a href="#">Bear Tracks</a></li>
+                <li role="menuitem"><a href="#">Maps</a></li>
+                <li role="menuitem"><a href="#">Mail</a></li>
+                <li role="menuitem"><a href="#">eClass</a></li>
+                <li role="menuitem"><a href="#">Libraries</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="blade-search">
+          <i class="icon-search"></i>
+          <input type="search" class="search-query" placeholder="search">
+        </div>
+      </div>
+    </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
+
+    <div class="banner-container"> <!-- Start Banner -->
+      <div class="banner-inner">
+        <h1>
+          <span class="identifier"></span>
+          <span class="site-title">Faculty of Development</span>
+        </h1>
+        <div class="banner-logo">
+          <img src="#" class="site-logo" alt="Site Logo" />
+        </div>
+      </div>
+      <div class="shadow-container"></div>
+      <div class="oval-container">
+        <div class="oval oval1"></div>
+        <div class="oval oval2"></div>
+        <div class="oval oval3"></div>
+        <div class="oval oval4"></div>
+      </div>
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
+      <nav id="main-nav" class="navigation-inner">
+        <ul>
+          <li>
+            <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation">
+              Show Navigation <i class="icon-toggle-nav"></i>
+            </a>
+            <ul class="main-navigation collapse">
+              <li><a href="#">About</a>
+                <div class="sub-menu">
+                  <h3 class="section-title">In This Section</h3>
+                  <ul class="section-navigation">
+                    <li><a href="#">Dean's Message</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Business Advisory Council</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Donors</a></li>
+                  </ul>
+                  <div class="section-description">
+                     <p>
+                       The Alberta School of Business is built on the Alberta tradition. Innovative ideas, hard work, entrepreneurial spirit and great people have made the Alberta economy the best in Canada.
+                     </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Programs</a>
+                <div class="sub-menu">
+                  <h3 class="section-title">In This Section</h3>
+                  <ul class="section-navigation">
+                    <li><a href="#">Alberta BCom</a></li>
+                    <li><a href="#">Alberta MBA</a></li>
+                    <li><a href="#">Doctor of Philosophy</a></li>
+                    <li><a href="#">Executive Education</a></li>
+                    <li><a href="#">Executive MBA</a></li>
+                    <li><a href="#">Master of Financial Management</a></li>
+                  </ul>
+                  <div class="section-description">
+                     <p>
+                       The Alberta School of Business is built on the Alberta tradition. Innovative ideas, hard work, entrepreneurial spirit and great people have made the Alberta economy the best in Canada.
+                     </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Departments</a>
+                <div class="sub-menu">
+                  <h3 class="section-title">In This Section</h3>
+                  <ul class="section-navigation">
+                    <li><a href="#">Accounting, Operations and Information Systems</a></li>
+                    <li><a href="#">Finance and Statistical Analysis</a></li>
+                    <li><a href="#">Marketing, Business Economics &amp; Law</a></li>
+                    <li><a href="#">Strategic Management and Organization</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Research</a>
+                <div class="sub-menu">
+                  <h3 class="section-title">In This Section</h3>
+                  <ul class="section-navigation">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Activites</a></li>
+                    <li><a href="#">SSHRC Grants</a></li>
+                    <li><a href="#">Ethics Board</a></li>
+                    <li><a href="#">Centres</a></li>
+                  </ul>
+                  <div class="section-description">
+                     <p>
+                       The Alberta School of Business is built on the Alberta tradition. Innovative ideas, hard work, entrepreneurial spirit and great people have made the Alberta economy the best in Canada.
+                     </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Students</a>
+                <div class="sub-menu">
+                  <h3 class="section-title">In This Section</h3>
+                  <ul class="section-navigation">
+                    <li><a href="#">Prospective Students</a></li>
+                    <li><a href="#">Current Students</a></li>
+                    <li><a href="#">International Opportunities</a></li>
+                    <li><a href="#">Groups and Clubs</a></li>
+                  </ul>
+                  <div class="section-description">
+                     <p>
+                       The Alberta School of Business is built on the Alberta tradition. Innovative ideas, hard work, entrepreneurial spirit and great people have made the Alberta economy the best in Canada.
+                     </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Alumni</a>
+                <div class="sub-menu">
+                  <h3 class="section-title">In This Section</h3>
+                  <ul class="section-navigation">
+                    <li><a href="#">Alumni Association</a></li>
+                    <li><a href="#">Magazine</a></li>
+                    <li><a href="#">Profiles</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Keep in Touch</a></li>
+                    <li><a href="#">Mentorship Programs</a></li>
+                  </ul>
+                  <div class="section-description">
+                     <p>
+                       The Alberta School of Business is built on the Alberta tradition. Innovative ideas, hard work, entrepreneurial spirit and great people have made the Alberta economy the best in Canada.
+                     </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- End Navigation -->
+  </header> <!-- End Header -->
+  
+<div class="content-wrapper">
+  <div class="content-top-row">
+    <div class="content-container container"> <!-- Container Start -->
+      <div class="content-inner row-fluid">
+        <div class="span6 feature-area"> <!-- FMA Start -->
+          <div class="frame fma-container">
+            <div class="slide image-caption-container">
+              <a class="image-shadow">
+                <img src="./img/feature-1.png" />
+              </a>
+              <div class="feature-caption caption">
+                <h3><a href="#">Feature Caption</a></h3>
+                <p>Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- FMA End -->
+       
+        <div class="span6 audience-area"> <!-- Audience Area Start -->
+          <ul class="nav nav-tabs"> <!-- Tabs Start -->
+            <li class="active">
+              <a href="#Students" data-toggle="tab">Prospective Students</a>
+            </li>
+            <li>
+              <a href="#Alumni" data-toggle="tab">Alumni</a>
+            </li>
+          </ul> <!-- Tabs End -->
+          <div class="tab-content"> <!-- Tab Content Start -->
+           <div class="tab-pane active" id="Students">
+             <p>Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere. Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere.</p>
+             <div class="row-fluid">
+               <div class="span6">
+                 <strong>Undergraduate Programs</strong>
+                 <ul>
+                   <li><a href="#">Alberta BCom</a></li>
+                 </ul>
+                 <strong>Other Programs</strong>
+                 <ul>
+                   <li><a href="#">Executive Education</a></li>
+                 </ul>
+               </div>
+               <div class="span6">
+                 <strong>Graduate Programs</strong>
+                 <ul>
+                   <li><a href="#">Executive MBA</a></li>
+                   <li><a href="#">Alberta MBA</a></li>
+                   <li><a href="#">Doctor of Philosophy</a></li>
+                   <li><a href="#">Master of Financial Management</a></li>
+                 </ul>
+               </div>
+              <p>Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere. Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere.</p>
+             </div>
+           </div> 
+           <div class="tab-pane" id="Alumni">
+             <p>Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere.</p>
+             <strong>Links</strong>
+             <ul>
+               <li><a href="#">Link One</a></li>
+               <li><a href="#">Link Two</a></li>
+               <li><a href="#">Link Three</a></li>
+               <li><a href="#">Link Four</a></li>
+             </ul>
+           </div>
+          </div> <!-- End Tab Content -->
+        </div> <!-- End Audience Area -->
+      </div> <!-- End Top Row -->
+    </div>
+  </div>
+  
+  <div class="content-container container">
+    <div class="content-inner row-fluid"> <!-- Second Row Start -->
+      <div class="span5 primary-content-area">
+        <div class="module-container module-image-callout latest-news">
+          <div class="news-heading">
+            <h3>Latest News</h3>
+            <a href="#">View News Archive</a>
+          </div>
+          <ul class="news-list">
+            <li class="news-row small-image">
+              <div class="frame news-thumbnail">
+                  <a href="#" class="image-shadow">
+                    <img src="http://placehold.it/250x250" />
+                  </a>
+              </div>
+              <div class="news-description">
+                <h4><a href="#">Leadership - Scholarship - Relationships</a></h4>
+                <span class="news-date">Posted on September 18, 2012</span>
+                <p class="news-teaser">
+Mauris facilisis ante non justo consequat tristique. Praesent id congue justo. Sed nec sapien tortor.
+                </p>
+              </div>
+            </li>
+            <li class="news-row small-image">
+              <div class="frame news-thumbnail">
+                  <a href="#" class="image-shadow">
+                    <img src="http://placehold.it/250x250" />
+                  </a>
+              </div>
+              <div class="news-description">
+                <h4><a href="#">Professors from Top Business Schools Flock to U of A</a></h4>
+                <span class="news-date">Posted on September 18, 2012</span>
+                <p class="news-teaser">
+Mauris facilisis ante non justo consequat tristique. Praesent id congue justo. Sed nec sapien tortor. 
+                </p>
+              </div>
+            </li>
+            <li class="news-row small-image">
+              <div class="frame news-thumbnail">
+                  <a href="#" class="image-shadow">
+                    <img src="http://placehold.it/250x250" />
+                  </a>
+              </div>
+              <div class="news-description">
+                <h4><a href="#">Purdy's CEO to Receive Henry Singer</a></h4>
+                <span class="news-date">Posted on September 18, 2012</span>
+                <p class="news-teaser">
+Mauris facilisis ante non justo consequat tristique. Praesent id congue justo. Sed nec sapien tortor. 
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+        <hr class="module-separator" />
+        <div class="module-container module-image-callout latest-news">
+          <div class="news-heading">
+            <h3>In the Media</h3>
+            <a href="#">View Media Archive</a>
+          </div>
+          <ul class="news-list">
+            <li class="news-row headline">
+              <div class="frame news-thumbnail">
+                  <a href="#" class="image-shadow">
+                    <img src="http://placehold.it/400x250" />
+                  </a>
+              </div>
+              <div class="news-description">
+                <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
+                <span class="news-date">September 24, 2012 - The Atlantic</span>
+                <p class="news-teaser">
+Edy Wong is referenced in the Atlantic on how China may not be producing enough creative minds or skilled managers.
+                </p>
+              </div>
+            </li>
+            <li class="news-row headline">
+              <div class="frame news-thumbnail">
+                  <a href="#" class="image-shadow">
+                    <img src="http://placehold.it/250x250" />
+                  </a>
+              </div>
+              <div class="news-description">
+                <h4><a href="#">Hazardous foray into insurance</a></h4>
+                <span class="news-date">July 26, 2012 - Edmonton Journal</span>
+                <p class="news-teaser">
+Richard Dixon explores the logic of the B.C. premier's demand to be paid royalties in order to build the Gateway pipeline through British Columbia.
+                </p>
+              </div>
+            </li>
+            <li class="news-row headline">
+              <div class="frame news-thumbnail">
+                  <a href="#" class="image-shadow">
+                    <img src="http://placehold.it/250x250" />
+                  </a>
+              </div>
+              <div class="news-description">
+                <h4><a href="#">Retaining aging workers is a win-win</a></h4>
+                <span class="news-date">July 25, 2012 - Edmonton Journal</span>
+                <p class="news-teaser">
+Story outlines ways for Alberta's baby boomers to stay employed with quotes from Ian Gellatly.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr class="module-separator" />
+        
+      </div>
+      
+      <div class="span5 secondary-content-area clearfix">
+        
+        <div class="secondary-row">
+          <!-- Find Us -->
+          <div class="module-container module-image-callout find-us">
+            <h3>Find Us</h3>
+            <div class="frame">
+              <div class="hover-caption-container">
+                <a href="#" class="image-shadow">
+                  <img src="./img/map.png" />
+                </a>
+                <div class="caption">
+                  <p>Go to the maps!</p>
+                </div>
+              </div>
+            </div>
+            <p>
+              Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere.
+            </p>
+          </div>
+          <!-- End Find Us -->
+        
+          <!-- Information Sessions -->
+          <div class="module-container module-image-callout information-sessions">
+            <h3>Information Sessions</h3>
+              <div class="frame">
+                <div class="hover-caption-container">
+                  <a href="#" class="image-shadow">
+                    <img src="./img/info.png" />
+                  </a>
+                  <div class="caption">
+                    <p>View all information sessions</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Aenean nec orci sem. Suspendisse lobortis felis vitae ligula adipiscing vitae tempor lorem posuere.
+              </p>
+          </div>
+          <!-- End Information Sessions -->
+        </div>
+        
+        
+        <div class="secondary-row">
+        <!-- Accreditation -->
+        <div class="module-container module-image-callout aacsb-accreditation">
+          <h3>Earned Excellence</h3>
+            <div class="frame">
+              <div class="hover-caption-container">
+                <a href="#" class="image-shadow">
+                  <img src="./img/accredit.png" />
+                </a>
+                <div class="caption">
+                  <p>Read more about our AACSB accreditation</p>
+                </div>
+              </div>
+            </div>
+            <p>
+              <strong>The best business schools in the world.</strong> 
+              The Alberta School of Business is the first and longest continually accredited business school in Canada: 1969 &mdash; 2012.
+            </p>
+        </div>
+        <!-- End Accreditation -->
+        </div>
+        
+        
+      </div> 
+      <div class="span2 sidebar"> <!-- Sidebar Start -->
+        <div class="extrude twitter-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".twitter-feed">
+            <i class="icon-twitter"></i> Twitter <small>(@UAlberta)</small>
+          </h5>
+          <div class="twitter-feed sidebar-content collapse">
+            <ul class="tweet_list">
+              <li class="tweet_first tweet_odd">
+                <span class="tweet_text">@<a href="http://twitter.com/familiartragedy" target="_blank">familiartragedy</a>  Woot! Congratulations. See you in September!</span> 
+                <span class="tweet_time"><a href="http://twitter.com/UAlberta/status/218524444736499712" title="view tweet on twitter" target="_blank">about 13 hours ago</a></span><br>
+                <a class="tweet_action tweet_reply" href="#"><i class="icon-share-alt"></i> reply</a> 
+                <a class="tweet_action tweet_retweet" href="#"><i class="icon-retweet"></i> retweet</a> 
+                <a class="tweet_action tweet_favorite" href="#"><i class="icon-star"></i> fav</a>
+              </li>
+              <li class="tweet_even">
+                <span class="tweet_text">@<a href="http://twitter.com/Mitch1918" target="_blank">Mitch1918</a>  Hang in there! Have you followed up with a recruiter in your preferred faculty?</span> 
+                <span class="tweet_time"><a href="http://twitter.com/UAlberta/status/218397299989159936" title="view tweet on twitter" target="_blank">about 21 hours ago</a></span><br>
+                <a class="tweet_action tweet_reply" href="#"><i class="icon-share-alt"></i> reply</a> 
+                <a class="tweet_action tweet_retweet" href="#"><i class="icon-retweet"></i> retweet</a> 
+                <a class="tweet_action tweet_favorite" href="#"><i class="icon-star"></i> fav</a>
+              </li>
+            </ul>
+            <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.1347008535.html#_=1349105297937&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=UAlberta&amp;show_count=false&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button" style="width: 118px; height: 20px; " title="Twitter Follow Button" data-twttr-rendered="true"></iframe>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+        <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-link"></i> Links
+          </h5>
+          <div class="sidebar-content collapse links">
+            <ul>
+              <li><a href="#">Link One</a></li>
+              <li><a href="#">Link Two</a></li>
+              <li><a href="#">Link Three</a></li>
+              <li><a href="#">Link Four</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="extrude events-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".events">
+            <i class="icon-calendar"></i> Events
+          </h5>
+          <div class="sidebar-content collapse events">
+            <ul>
+              <li>
+                <a href="#">Business Alumni Association 2012 CMA Cup</a>
+                <span class="date">Sep. 5, 2012</span>  
+              </li>
+              <li>
+                <a href="#">Canmore Alumni and Business Advisory Council Reception</a>
+                <span class="date">Sep. 27, 2012</span>  
+              </li>
+              <li>
+                <a href="#">11th Annual Report to the Community</a>
+                <span class="date">Oct. 18, 2012</span>  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- Sidebar End -->
+     
+    </div> <!-- Second Row End -->
+   
+  </div> <!-- Container End -->
+</div>
+  <footer> <!-- Footer start -->
+    <div class="top-footer-row"> <!-- Footer Top Row Start -->
+      <div class="footer-container container"> <!-- Footer Container Start -->
+        <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+        
+          <div class="span6 footer-faculty-links"> <!-- Footer Top Row Left Column Start -->
+          
+            <h3>Alberta School of Business</h3>
+            
+            <div class="row-fluid">
+              <div class="span5">
+                <ul class="faculty-links">
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Intranet</a></li>
+                  <li><a href="#">Winspear Library</a></li>
+                  <li><a href="#">Staff Directory</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+         
+              <div class="span7">
+                <ul class="unstyled social-media">
+                  <li>
+                    <a class="btn-social-media" href="#">
+                      <i class="icon-facebook"></i>
+                      <span>Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-social-media" href="#">
+                      <i class="icon-twitter"></i>
+                      <span>Twitter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-social-media" href="#">
+                      <i class="icon-linkedin"></i>
+                      <span>LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div> <!-- Footer Top Row Left Column End -->
+          
+          <div class="span6 vcard"> <!-- Footer Top Row Right Column Start -->
+          
+            <h3>Contact Information</h3>
+            
+            <div class="row-fluid">
+              <div class="span6"> <!-- Use hCard Microformat for contact info: http://microformats.org/wiki/hcard -->
+                <p class="adr">
+                  <span class="street-address">2-08 Materials Management<br>University of Alberta</span><br>
+                  <span class="locality">Edmonton</span>, 
+                  <span class="region">Alberta</span><br>
+                  <span class="country-name">Canada</span> 
+                  <span class="postal-code">T6G 2R6</span><br>
+                </p>
+                <p>
+                  <i class="icon-map-marker"></i>&emsp;&emsp;<a href="#">View Map</a>
+                </p>
+
+              </div>
+              
+              <div class="span6"> 
+                <p class="tel">
+                  <strong><abbr title="Telephone">Tel:</abbr> </strong>1.780.492.3884<br>
+                  <strong>Fax: </strong>1.780.492.3884
+                </p>
+                <p><strong>Email: </strong><a class="email" href="mailto:uofaweb@ualberta.ca">uofaweb@ualberta.ca</a></p>
+                <p class="note">
+                  Contact information for specific departments and offices may be found on
+                  the <a href="#">contact us</a> page.
+                </p>
+              </div>
+              
+            </div>
+          </div> <!-- Footer Top Row Right Column End -->
+          
+        </div> <!-- Footer Inner End -->
+      </div> <!-- Footer Container End -->
+    </div> <!-- Footer Top Row End -->
+    
+    <div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
+      <div class="footer-container container"> <!-- Footer Container Start -->
+        <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+        
+          <div class="span9 footer-copyright">
+            <ul class="footer-quick-links">
+              <li><a href="#">Find a Person</a></li>
+              <li><a href="#">ONEcard</a></li>
+              <li><a href="#">Bear Tracks</a></li>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Mail</a></li>
+              <li><a href="#">eClass</a></li>
+              <li><a href="#">Libraries</a></li>
+            </ul>
+            <p>
+              © 2012 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
+            </p>
+          </div>
+          
+          <div class="span3 footer-right">
+            <a href="#">Back To Top</a>
+          </div>
+          
+        </div> <!-- Footer Inner End -->
+      </div>  <!-- Footer Container End -->
+    </div> <!-- Footer Bottom Row End -->
+  </footer> <!-- Footer End -->
+ 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+  /*
+    $(document).ready(function() {
+    $('.content-top-row .tab-content').height(
+      ($('.content-top-row').height()-$('.content-top-row .nav-tabs').height()-50)
+      );
+    });
+    */
+  </script>
+  <!-- end scripts -->
+
+</body>
+</html>

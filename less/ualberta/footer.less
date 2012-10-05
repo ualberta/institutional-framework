@@ -1,0 +1,134 @@
+.top-footer-row {
+  margin: 20px 0 0 0;
+  .box-shadow(inset 0 5px 30px rgba(0, 110, 65, 0.08), inset 0 1px 3px rgba(0, 0, 0, 0.15));
+  border-bottom: 1px solid rgba(0, 50, 25, 0.15);
+  border-top: 1px solid rgba(0, 50, 25, 0.2);
+  background: rgba(255, 200, 10, 0.05);
+}
+
+.bottom-footer-row {
+  background:  #007c41;
+  border-top:  3px solid #ffdb05;
+  margin: 0;
+  color: #fff;
+  font-size: 13px;
+  .box-shadow(inset 0px 1px 10px darken(#007c41,5%));
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-right {
+     text-align: right;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+}
+
+p.note {
+  color: #666;
+  font-size:  0.92307692307692em;
+}
+
+.social-media i[class*="icon"] {
+  font-size: 16px;
+}
+
+.social-media {
+  font-size:  1.1em;
+  line-height: 1.5em;
+  font-family: "DIN Medium", sans-serif;
+}
+
+.social-media li {
+  display: inline-block;
+  padding:5px 6px 5px 0;
+}
+
+.social-media a {
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+
+.footer-inner {
+  padding:  20px 0px;
+  h3 {
+    font-size:  16px;
+    line-height:1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+  }
+
+}
+
+ul.footer-quick-links {
+  display:  inline-block;
+  list-style: none;
+  margin: 0 0 12px -10px;
+  padding: 0;
+  
+  li {
+    display:  inline-block;
+    margin-right: -4px;
+    padding: 0px;
+    line-height:  1em;
+    
+    &:last-child {
+      a { border: 0px }
+    }
+    
+    a {
+      display:  block;
+      padding: 0px 10px;
+      border-right: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+    }
+  
+  }
+  
+}
+
+
+
+.btn-social-media {
+  padding: 6px 10px 6px 7px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.25);
+  #gradient > .vertical(rgba(255, 255, 255, 0.35),rgba(255, 255, 255, 0.01));
+  text-shadow: none;
+  font-family: DIN Bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  .border-radius(4px);
+  .box-shadow(1px 1px 1px rgba(0,0,0,0.1));
+  color: #999;
+  font-size: 13px;
+  line-height: 1em;
+  
+  &:hover {
+    background:#fff;
+    color: #007c41;
+  }
+  
+  span {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    left: 0px;
+  }
+}
+
+.btn-social-media i[class*="icon"] {
+  line-height: 1em;
+  background: #007c41;
+  padding: 4px 0px 0px 0px;
+  margin-right: 4px;
+  border-radius: 2px;
+  color: #fff;
+}
