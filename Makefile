@@ -4,7 +4,7 @@ BOOTSTRAP_RESPONSIVE = ./docs/assets/css/bootstrap-responsive.css
 BOOTSTRAP_RESPONSIVE_LESS = ./less_docs/responsive.less
 PROTOTYPE = ./prototype/css/ualberta.css
 PROTOTYPE_LESS = ./less/ualberta.less
-PAGESDIR = ../gh-pages
+PAGESDIR = ../institutional-framework-pages
 DATE=$(shell date +%I:%M%p)
 CHECK=\033[32m✔\033[39m
 HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
@@ -68,6 +68,7 @@ ghpages:
 	@uglifyjs -nc ${PAGESDIR}/js/bootstrap.js > ${PAGESDIR}/js/bootstrap.min.js
 	@echo "Minifying and copying javascript...               ${CHECK} Done"
 	@cp ./*.html ${PAGESDIR}/
+	@mv ${PAGESDIR}/homepage.html ${PAGESDIR}/index.html
 	@echo "Copying html files...               ${CHECK} Done"
 
 #
