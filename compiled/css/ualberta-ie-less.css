@@ -1,0 +1,92 @@
+.image-caption-container .feature-caption {
+  background: #fff;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#73ffffff', endColorstr='#d9ffffff', GradientType=0);
+}
+
+.frame,
+.extrude,
+.tab-content {
+  border: 1px solid #e0e0e0;
+}
+
+.banner-container {
+  background-color: #007c41;
+}
+
+.nav-tabs > .active {
+  margin-left: 0;
+  border: 1px solid #e0e0e0;
+  border-bottom: 1px solid #fff;
+}
+
+.primary-content-area .latest-news div.news-heading {
+  overflow: auto;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#00FFDB05', endColorstr='#33FFDB05', GradientType=0);
+}
+
+.top-footer-row {
+  overflow: auto;
+  background-image: url(../img/shadow-bg.png);
+  background-position: top left;
+  background-repeat: repeat-x;
+  border-top: 1px solid #dfdcd0;
+  border-bottom: 1px solid #cfccc0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#11ddb903', endColorstr='#22ddb903', GradientType=0);
+}
+
+.content-top-row {
+  overflow: auto;
+  background-image: url(../img/shadow-bg.png);
+  background-position: 0 -1px;
+  background-repeat: repeat-x;
+  border-bottom: 1px solid #efece0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#11ddb903', endColorstr='#0cddb903', GradientType=0);
+}
+
+.navigation-container {
+  background: transparent url(../img/navbar-bg.gif) repeat-x center center;
+  border-bottom-color: #abb1ae;
+}
+
+.banner-container {
+  background: transparent url(../img/banner-bg.jpg) repeat-x center left;
+}
+
+.navigation-inner ul li a {
+  border-right: 1px solid #cbd2cd;
+  border-left: 1px solid #fff;
+}
+
+.navigation-inner ul.main-navigation {
+  border-left: 1px solid #cbd2cd;
+}
+
+.hover-caption-container .caption {
+  overflow: auto;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000', endColorstr='#cc000000', GradientType=0);
+}
+
+.footer-inner h3 {
+  border-bottom: 1px solid #e0d9c6;
+}
+
+.brand {
+  background: transparent url(../img/logo.png) no-repeat top left;
+}
+
+.brand img {
+  display: none;
+}
+
+.navigation-inner .main-navigation > li:hover .sub-menu {
+  z-index: 500;
+  overflow: visible;
+  filter: alpha(opacity=100);
+  visibility: visible;
+}
+
+.navigation-inner .main-navigation > li .sub-menu {
+  position: absolute;
+  z-index: 500;
+  visibility: visible;
+}

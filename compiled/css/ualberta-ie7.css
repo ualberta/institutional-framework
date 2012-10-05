@@ -1,0 +1,40 @@
+.ie7-inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+ul.quick-links li,
+.navigation-inner ul li a,
+.navigation-inner ul li,
+.blade-search,
+ul.quick-links-container,
+ul.quick-links-container li,
+.latest-news div.news-heading h3,
+.latest-news div.news-heading a,
+.latest-news ul.news-list li.news-row span.news-date,
+ul.footer-quick-links,
+ul.footer-quick-links li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.row-fluid .primary-content-area,
+.row-fluid .footer-faculty-links,
+.row-fluid .footer-copyright {
+  margin-left: 0;
+}
+
+.blade-search {
+  top: -15px;
+}
+
+.navigation-inner ul li a,
+ul.quick-links li {
+  margin-right: 0;
+}
+
+.navigation-inner ul.main-navigation {
+  border-right: 1px solid #fff;
+}
