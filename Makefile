@@ -33,23 +33,11 @@ build:
 	@echo "Bootstrap successfully built at ${DATE}."
 	
 #
-# COMPILE PROTOTYPE
-#
-
-prototype:
-	@recess --compile ${PROTOTYPE_LESS} > ${PROTOTYPE}
-	@recess --compile ./prototype/less/ualberta-ie7.less > ./prototype/css/ualberta-ie7.css
-	@recess --compile ./prototype/less/ualberta-ie.less > ./prototype/css/ualberta-ie-less.css
-	@echo "Compiling LESS with Recess...               ${CHECK} Done"
-	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > prototype/js/bootstrap.js
-	@uglifyjs -nc prototype/js/bootstrap.js > prototype/js/bootstrap.min.js
-
-	
-#
 # COMPILE GH-PAGES
 #
 
 ghpages:
+	@mkdir -p ${PAGESDIR}
 	@recess --compile ${PROTOTYPE_LESS} > ./css/ualberta.css
 	@recess --compile ./less/ualberta-ie7.less > ./css/ualberta-ie7.css
 	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie-less.css
@@ -58,12 +46,12 @@ ghpages:
 	@mkdir -p ${PAGESDIR}/js
 	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PAGESDIR}/js/bootstrap.js
 	@uglifyjs -nc ${PAGESDIR}/js/bootstrap.js > ${PAGESDIR}/js/bootstrap.min.js
-	@echo "Minifying and copying javascript...               ${CHECK} Done"
+	@echo "Minifying and copying javascript...         ${CHECK} Done"
 	@cp ./*.html ${PAGESDIR}/
 	@cp -r ./img ${PAGESDIR}
 	@cp -r ./font ${PAGESDIR}
 	@mv ${PAGESDIR}/homepage.html ${PAGESDIR}/index.html
-	@echo "Copying html files...               ${CHECK} Done"
+	@echo "Copying html files...                       ${CHECK} Done"
 
 #
 # WATCH LESS FILES
@@ -73,12 +61,6 @@ watch:
 	echo "Watching less files..."; \
 	watchr -e "watch('less/.*\.less') { system 'make' }"
 
-#
-# HAUNT GITHUB ISSUES 4 FAT & MDO ONLY (O_O  )
-#
-
-haunt:
-	@haunt .issue-guidelines.js https://github.com/twitter/bootstrap
 
 
-.PHONY: docs watch gh-pages prototype
+.PHONY: watch ghpages
