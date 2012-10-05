@@ -5715,7 +5715,7 @@ ul.footer-quick-links li a {
 
 .content-top-row {
   background-color: rgba(255, 200, 10, 0.1);
-  background-image: url('../../img/test-bg.png');
+  background-image: url('../img/test-bg.png');
   background-position: bottom left;
   background-repeat: repeat-x;
   border-bottom: 1px solid rgba(0, 50, 25, 0.35);

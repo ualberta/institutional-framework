@@ -62,12 +62,16 @@ ghpages:
 	@recess --compile ${PROTOTYPE_LESS} > ./css/ualberta.css
 	@recess --compile ./less/ualberta-ie7.less > ./css/ualberta-ie7.css
 	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie-less.css
-	@cp ./css/*.css ${PAGESDIR}/css/
+	@cp -r ./css ${PAGESDIR}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+	@rm -r ${PAGESDIR}/js
+	@mkdir ${PAGESDIR}/js
 	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PAGESDIR}/js/bootstrap.js
 	@uglifyjs -nc ${PAGESDIR}/js/bootstrap.js > ${PAGESDIR}/js/bootstrap.min.js
 	@echo "Minifying and copying javascript...               ${CHECK} Done"
 	@cp ./*.html ${PAGESDIR}/
+	@cp -r ./img ${PAGESDIR}
+	@cp -r ./font ${PAGESDIR}
 	@mv ${PAGESDIR}/homepage.html ${PAGESDIR}/index.html
 	@echo "Copying html files...               ${CHECK} Done"
 
