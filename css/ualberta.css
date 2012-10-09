@@ -4749,16 +4749,18 @@ body {
   background: #f6f6f6 url(../img/framework-bg.png) repeat top left;
 }
 
-body,
-.blade-inner,
-.banner-inner,
-.navigation-inner,
-.container,
-.row {
-  -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
-       -o-transition: all .2s linear;
-          transition: all .2s linear;
+@media (min-width: 1025px) {
+  body,
+  .blade-inner,
+  .banner-inner,
+  .navigation-inner,
+  .container,
+  .row {
+    -webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+         -o-transition: all .2s linear;
+            transition: all .2s linear;
+  }
 }
 
 hr.soften {
@@ -5039,54 +5041,6 @@ span.identifier {
        -o-transform-origin: center center;
           transform-origin: center center;
   -moz-transform-origin: center center;
-}
-
-@-webkit-keyframes animationName {
-  0% {
-    -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-         -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-       -moz-transform: rotate(359deg);
-        -ms-transform: rotate(359deg);
-         -o-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
-@keyframes animationName {
-  0% {
-    -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-         -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-       -moz-transform: rotate(359deg);
-        -ms-transform: rotate(359deg);
-         -o-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
 }
 
 .oval1 {
@@ -5961,6 +5915,11 @@ ul.footer-quick-links li a {
   .main-navigation.collapse.in {
     height: auto;
   }
+  .main-navigation.collapse.in {
+    display: block;
+    height: auto!important;
+    overflow: visible!important;
+  }
   .navigation-inner ul li a {
     position: relative;
     display: block;
@@ -6391,8 +6350,8 @@ ul.footer-quick-links li a {
   }
   .main-navigation.collapse {
     display: block;
-    height: auto !important;
-    overflow: visible !important;
+    height: auto!important;
+    overflow: visible!important;
   }
   .sidebar-content.collapse {
     display: block;
