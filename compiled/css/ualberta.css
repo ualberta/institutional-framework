@@ -5915,6 +5915,11 @@ ul.footer-quick-links li a {
   .main-navigation.collapse.in {
     height: auto;
   }
+  .main-navigation.collapse.in {
+    display: block;
+    height: auto!important;
+    overflow: visible!important;
+  }
   .navigation-inner ul li a {
     position: relative;
     display: block;
@@ -6345,8 +6350,8 @@ ul.footer-quick-links li a {
   }
   .main-navigation.collapse {
     display: block;
-    height: auto !important;
-    overflow: visible !important;
+    height: auto!important;
+    overflow: visible!important;
   }
   .sidebar-content.collapse {
     display: block;
