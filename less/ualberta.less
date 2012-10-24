@@ -9,33 +9,33 @@
  */
 
 // CSS Reset
-@import "reset.less";
+@import "framework/reset.less";
 
 // Core variables and mixins
-@import "variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "mixins.less";
+@import "framework/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "framework/mixins.less";
 @import "ualberta/fonts.less";
 
 // Grid system and page structure
-@import "scaffolding.less";
-@import "grid.less";
-@import "layouts.less";
+@import "framework/scaffolding.less";
+@import "framework/grid.less";
+@import "framework/layouts.less";
 
-@import "responsive.less";
+@import "framework/responsive.less";
 
 
 // Base CSS
 //@import "fonts.less";
-@import "type.less";
-@import "code.less";
-@import "forms.less"; 
-@import "tables.less";
+@import "framework/type.less";
+@import "framework/code.less";
+@import "framework/forms.less"; 
+@import "framework/tables.less";
 
-@import "font-awesome.less";
+@import "framework/font-awesome.less";
 //@import "component-animations.less";
 
 
-@import "dropdowns.less";
+@import "framework/dropdowns.less";
 
 @import "ualberta/tabs.less";
 @import "ualberta/page.less";
@@ -55,7 +55,6 @@
 @import "pages/homepage.less";
 @import "pages/why-ualberta.less";
 
-
 @import "ualberta/mobile.less";
 @import "ualberta/tablet.less";
 @import "ualberta/desktop.less";
@@ -66,4 +65,4 @@
 // @import "font-awesome.less";
 
 // Utility classes
-@import "utilities.less"; // Has to be last to override when necessary
+@import "framework/utilities.less"; // Has to be last to override when necessary
