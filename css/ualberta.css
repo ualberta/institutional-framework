@@ -4015,16 +4015,18 @@ ul.icons li .icon-large:before {
 body {
   background: #f6f6f6 url(../img/framework-bg.png) repeat top left;
 }
-body,
-.blade-inner,
-.banner-inner,
-.navigation-inner,
-.container,
-.row {
-  transition: all .2s linear;
-  -o-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
+@media (min-width: 1025px) {
+  body,
+  .blade-inner,
+  .banner-inner,
+  .navigation-inner,
+  .container,
+  .row {
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+  }
 }
 hr.soften {
   height: 1px;
@@ -5213,6 +5215,11 @@ ul.footer-quick-links li a {
   .main-navigation.collapse.in {
     height: auto;
   }
+  .main-navigation.collapse.in {
+    display: block;
+    height: auto!important;
+    overflow: visible!important;
+  }
   .navigation-inner ul li a {
     position: relative;
     display: block;
@@ -5638,8 +5645,8 @@ ul.footer-quick-links li a {
   }
   .main-navigation.collapse {
     display: block;
-    height: auto !important;
-    overflow: visible !important;
+    height: auto!important;
+    overflow: visible!important;
   }
   .sidebar-content.collapse {
     display: block;
