@@ -4773,10 +4773,6 @@ hr.soften {
   border: 0;
 }
 
-.banner-logo {
-  display: none;
-}
-
 .frame {
   padding: 5px;
   background: #fff;
@@ -4899,6 +4895,7 @@ hr.module-separator {
 }
 
 .brand img {
+  display: none;
   height: 100%;
 }
 
@@ -4963,7 +4960,7 @@ ul.quick-links-container li {
 
 .banner-container {
   position: relative;
-  height: 110px;
+  height: 90px;
   overflow: hidden;
   color: #fff;
   background: #78c89d;
@@ -4975,36 +4972,57 @@ ul.quick-links-container li {
 
 .banner-inner {
   position: relative;
-  height: 110px;
+  z-index: 12;
+  height: 90px;
   margin: 0 auto;
 }
 
 .banner-inner h1 {
-  position: absolute;
-  bottom: -5px;
-  left: 10px;
-  z-index: 15;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+  display: none;
 }
 
-span.identifier {
+nav.audience-navigation {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  z-index: 50;
+}
+
+nav.audience-navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav.audience-navigation ul li {
   position: relative;
-  z-index: 20;
   display: block;
-  font-family: "DIN Regular", sans-serif;
-  font-size: 0.6em;
-  font-weight: normal;
-  line-height: 1.1em;
+  float: left;
+  margin-left: 20px;
+}
+
+nav.audience-navigation ul li a {
+  font-family: DIN Medium, sans-serif;
   color: #fff;
-  text-transform: uppercase;
+}
+
+nav.audience-navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+.banner-logo {
+  position: absolute;
+  top: 20px;
+  z-index: 999;
 }
 
 .oval-container {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
-  height: 110px;
+  height: 90px;
   overflow: hidden;
 }
 
@@ -5012,9 +5030,9 @@ span.identifier {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 11;
   width: 100%;
-  height: 110px;
+  height: 90px;
   overflow: hidden;
   -webkit-box-shadow: inset 0 2px 3px rgba(0, 30, 0, 0.25);
      -moz-box-shadow: inset 0 2px 3px rgba(0, 30, 0, 0.25);
