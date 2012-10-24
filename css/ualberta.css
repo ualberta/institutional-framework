@@ -5151,6 +5151,10 @@ nav.audience-navigation ul li a:hover {
   text-decoration: none;
 }
 
+.navigation-inner ul li .audience-link {
+  display: none;
+}
+
 .content-inner {
   padding: 20px 0;
 }
@@ -6104,6 +6108,9 @@ ul.footer-quick-links li a {
     font-size: 24px;
     line-height: 1.4em;
   }
+  nav.audience-navigation {
+    display: none;
+  }
   .navigation-inner ul li {
     display: block;
   }
@@ -6570,6 +6577,19 @@ ul.footer-quick-links li a {
 }
 
 @media (min-width: 690px) and (max-width: 979px) {
+  nav.audience-navigation {
+    right: 10px;
+    bottom: 10px;
+    width: 400px;
+  }
+  nav.audience-navigation ul li {
+    width: 44%;
+    margin-bottom: 7px;
+    text-align: right;
+  }
+  nav.audience-navigation ul li:nth-child(3) {
+    clear: left;
+  }
   .navigation-inner > ul > li:first-child {
     display: block;
   }
