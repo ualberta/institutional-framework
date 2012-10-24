@@ -1,11 +1,4 @@
-// Between 690px and 979px
-@media (min-width: 690px) and (max-width: 979px) {
 
-  .banner-inner h1 {
-    font-size: 28px;
-  }
-  
-}
 
 // Up to 979px
 @media (max-width: 979px) {
@@ -238,5 +231,47 @@
     height: auto!important;
     overflow: visible!important;
   }
+  
+}
+
+// Between 690px and 979px
+@media (min-width: 690px) and (max-width: 979px) {
+
+.navigation-inner>ul>li:first-child {
+  display: block;
+}
+
+.navigation-inner ul li ul li {
+  
+  padding: 0 0.725% 0 0.725%;
+  text-align: center;
+margin-right: -4px;  
+  a {
+    padding:  12px 10px 8px 10px;
+    border: 0;
+    margin-left:  -10px;
+    margin-right: -10px;
+  }
+  
+  &:nth-child(1) {
+   // padding-left: 10px;
+    width: 16%;
+  }
+  &:nth-child(2) {
+    width: 23.2%;
+  }
+  &:nth-child(3) {
+    width: 10%;
+  }
+  &:nth-child(4) {
+    width: 11%;
+  }
+  &:nth-child(5) {
+    width: 12.5%;
+  }
+  &:nth-child(6) {
+    width: 16%;
+  }
+}
   
 }
