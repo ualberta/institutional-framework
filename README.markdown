@@ -1,1 +1,1 @@
-# Master README file
+# Read the [Wiki](https://github.com/ualberta/institutional-framework/wiki)
