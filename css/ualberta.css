@@ -4830,6 +4830,15 @@ ul.footer-quick-links li a {
   width: 100%;
   height: 100%;
 }
+ul.calendar-med-mod {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+ul.calendar-med-mod li a {
+  display: block;
+  border-bottom: 1px dotted #e0e0e0;
+}
 .secondary-content-area .module-container {
   margin-bottom: 1.5em;
 }
@@ -4846,7 +4855,6 @@ ul.footer-quick-links li a {
   clear: both;
 }
 .content-top-row {
-  background-image: url('../img/test-bg.png');
   background-position: bottom left;
   background-repeat: repeat-x;
   -webkit-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
@@ -5017,6 +5025,9 @@ ul.footer-quick-links li a {
   border-bottom: 1px solid rgba(0, 50, 25, 0.35);
   border-top: 1px solid rgba(0, 50, 25, 0.25);
   background-color: rgba(255, 200, 10, 0.1);
+}
+.seeityourself p {
+  margin-top: 5px;
 }
 @media (max-width: 689px) {
   /*****************************************
