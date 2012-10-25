@@ -1,0 +1,61 @@
+@linkModBorderColor: #ddd;
+
+.link-mod-container {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border:  1px solid @linkModBorderColor;
+  background: #fff;
+  min-height:  300px;
+  &>li {
+    position: relative;
+    z-index:  15;
+    width:  220px;
+    padding: 10px;
+    border-bottom: 1px solid @linkModBorderColor;
+    border-right:  1px solid @linkModBorderColor;
+    #gradient > .vertical(#fff,#eee);
+  }
+  &>li ul.link-mod-items {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 241px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 338px;
+  }
+  &>li.link-mod-active {
+    background: #fff;
+    ul.link-mod-items {
+      display: block;
+    }
+  }
+  &>li:last-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-height: 280px;
+    border-bottom: none;
+    background: #eee;
+    z-index:  14;
+    input {
+      position: absolute;
+      bottom: 0px;
+      z-index:  15;
+    }
+  }
+
+  &>li ul.link-mod-items li {
+    border-bottom: 1px solid @linkModBorderColor;
+    a {
+      display: block;
+      padding:  8px;
+    }
+    a:hover {
+      background: #f6f6f6;
+    }
+  }
+}
