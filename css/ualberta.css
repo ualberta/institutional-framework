@@ -4048,6 +4048,7 @@ hr.soften {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin:5px 0 0 0;
 }
 .image-shadow {
   position: relative;
@@ -4092,6 +4093,7 @@ hr.module-separator {
 }
 .content-inner h3 {
   margin: 0 0 3px 0;
+  border-bottom: 1px solid #E0E0E0;
 }
 .blade-container {
   background: #fff;
