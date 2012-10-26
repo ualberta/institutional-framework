@@ -37,7 +37,7 @@
   <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
   
   <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
   <!-- Burn IE6 with fire -->
@@ -158,27 +158,44 @@
 
         <ul class="link-mod-container">
           <li class="link-mod-category link-mod-active">
-               <a href="#most-popular">Most Popular</a>
-               <ul class="link-mod-items">
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
+               <h4><a href="#most-popular">Most Popular</a></h4>
+               <ul class="link-mod-items searchable">
+                    <li><a href="http://link.com/">Careers</a></li>
+                    <li><a href="http://link.com/">Calendar</a></li>
+                    <li><a href="http://link.com/">Tuition and Fees</a></li>
+                    <li><a href="http://link.com/">Alberta Facts</a></li>
+                    <li><a href="http://link.com/">Class Size</a></li>
+                    <li><a href="http://link.com/">Student Experiences</a></li>
+                    <li><a href="http://link.com/">International Students</a></li>
+                    <li><a href="http://link.com/">About Edmonton</a></li>
+                    <li><a href="http://link.com/">History</a></li>
+                    <li><a href="http://link.com/">Go Abroad</a></li>
                </ul>
           </li>
           <li class="link-mod-category">
-               <a href="#">Category 1</a>
-               <ul class="link-mod-items">
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
-                    <li><a href="http://link.com/">Link</a></li>
-               </ul>
+            <h4><a href="#">About UAlberta</a></h4>
+            <ul class="link-mod-items searchable">
+              <li><a href="http://link.com/">Link</a></li>
+            </ul>
           </li>
-          <li class="link-mod-filter">
-               <input type="text" id="link-mod-filter-field" name="link-mod-filter-field" />
+          <li class="link-mod-category">
+            <h4><a href="#">Top Employer</a></h4>
+            <ul class="link-mod-items searchable">
+              <li><a href="http://link.com/">Link</a></li>
+            </ul>
+          </li>
+          <li class="link-mod-category link-mod-filter">
+               <span class="link-mod-label">Filter Results</span>
+               <i class="icon-filter"></i>
+               <input type="text" placeholder="filter links" id="link-mod-filter-field" name="link-mod-filter-field" />
+               <ul class="link-mod-results link-mod-items">
+                 <li class="link-mod-result-title">
+                   <h4>Displaying <span class="link-mod-count">0</span> matches for &quot;<span class="link-mod-query"></span>&quot;</h4>
+                 </li>
+                 <li class="link-mod-result-none">
+                   <p>There are no links on this page that match your filter.  Try a different query, or give us <a href="#">feedback</a> to help us make your experience better.</p>
+                 </li>
+               </ul>
           </li>
         </ul>
 
@@ -232,10 +249,66 @@
   </footer> <!-- Footer End -->
  
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="../institutional-framework-pages/js/bootstrap.min.js"></script>
+  <script src="./js/ualberta/jquery.livesearch.js"></script>
+  <script>
+      (function($) {
+        $(document).ready(function() {
+        
+          $('.link-mod-category h4, .link-mod-category input').click(function() {
+            $('.link-mod-category').removeClass('link-mod-active');
+            $(this).parent().addClass('link-mod-active');
+            return false;
+          });
+          
+          $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+          $('.searchable a').each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+          $('.link-mod-result-none').hide();
+        
+        
+          $('#link-mod-filter-field').search('.searchable a', function(on) {
+            on.all(function(results) {
+              var size = results ? results.size() : 0
+              $('.link-mod-result-title h4').html(
+                'Displaying '+size+
+                ' matches for &quot;'+$('#link-mod-filter-field').val()+
+                '&quot'
+              );
+            });
+
+            on.reset(function() {
+              $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+              $('.searchable a').each(function() {
+                $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+              });
+              $('.link-mod-result-none').hide();
+            });
+
+            on.empty(function() {
+              $('.link-mod-result-none').show();
+              $('.link-mod-result-item').remove();
+            });
+
+            on.noval(function() {
+              console.log('noval');
+            });
+
+            on.results(function(results) {
+              $('.link-mod-result-none').hide();
+              $('.link-mod-result-item').remove();
+              results.each(function() {
+                $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+              });
+            });
+          });
+        });
+      })(jQuery);
+  </script>
   <!-- end scripts -->
 
 </body>

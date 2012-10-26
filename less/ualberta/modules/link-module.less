@@ -1,4 +1,6 @@
 @linkModBorderColor: #ddd;
+@linkModHeight: 380px;
+@linkModFilterHeight: 360px;
 
 .link-mod-container {
   position: relative;
@@ -6,16 +8,34 @@
   margin: 0;
   padding: 0;
   border:  1px solid @linkModBorderColor;
-  background: #fff;
-  min-height:  300px;
+  background: #eee;
+  min-height:  @linkModHeight;
+  h4 {
+    font-size:  14px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    a { display: block; }
+  }
+  .icon-filter {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    color: #ccc;
+    z-index: 16;
+  }
   &>li {
-    position: relative;
-    z-index:  15;
     width:  220px;
     padding: 10px;
     border-bottom: 1px solid @linkModBorderColor;
     border-right:  1px solid @linkModBorderColor;
-    #gradient > .vertical(#fff,#eee);
+    #gradient > .vertical(#fff,#e6e6e6);
+    &:hover {
+      #gradient > .vertical(#fff,#FFF5B8);
+    }
+    .link-mod-label {
+      display: none;
+    }
   }
   &>li ul.link-mod-items {
     display: none;
@@ -26,25 +46,58 @@
     margin: 0;
     padding: 0;
     width: 338px;
+    border-left:  1px solid @linkModBorderColor;
+    margin-left: -1px;
+    min-height: @linkModHeight;
+    height: @linkModHeight;
+    overflow: auto;
+    background: #fff;
+    .box-shadow(inset 2px 0px 6px #E0E6E0);
+    border-left-color: rgba(0, 0, 0, 0.2);
   }
   &>li.link-mod-active {
-    background: #fff;
+    #gradient > .vertical(#007C41,#00502A);
+    color: #fff;
+    margin:  -1px -1px 0 -1px;
+    border-left: 1px solid #00502a;
+    border-top: 1px solid #005D30;
+    border-bottom: 1px solid #00502a;
+    border-right: 0px solid transparent;
+    h4 a {
+     color: #fff; 
+    }
     ul.link-mod-items {
       display: block;
     }
+    .link-mod-label {
+      display: block;
+    }
+  }
+  &>li.link-mod-active:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    float: right;
   }
   &>li:last-child {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    min-height: 280px;
     border-bottom: none;
-    background: #eee;
+    background: none;
     z-index:  14;
+    margin: 0;
+    border: 0;
+    color: #666;
     input {
       position: absolute;
       bottom: 0px;
+      left: 10px;
       z-index:  15;
+      padding: 5px 6px 3px 25px;
+      width: 188px;
+      font-size: 12px;
+      line-height: 1em;
     }
   }
 
@@ -53,9 +106,26 @@
     a {
       display: block;
       padding:  8px;
+      background: none;
     }
     a:hover {
       background: #f6f6f6;
     }
   }
+  
+  .link-mod-result-title {
+    padding: 10px;
+  }
+  
+  &>li ul.link-mod-items li.link-mod-result-none {
+    p {
+      padding:  20px;
+      text-align: center;
+      font-style: italic;
+      color: #999;
+      a { display:  inline; padding: 0; background: none; }
+    }
+  }
 }
+
+
