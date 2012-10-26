@@ -4092,7 +4092,6 @@ hr.module-separator {
 }
 .content-inner h3 {
   margin: 0 0 3px 0;
-  border-bottom:1px solid #e0e0e0;
 }
 .blade-container {
   background: #fff;
@@ -4465,7 +4464,6 @@ h5.sidebar-title i {
   padding: 0 10px;
   line-height: 1.2em;
   position: relative;
-  border-bottom:none;
 }
 .image-caption-container .caption h3 {
   font-family: "DIN Bold", sans-serif;
@@ -4715,7 +4713,6 @@ ul.footer-quick-links li a {
 .latest-news div.news-heading h3,
 .latest-news div.news-heading a {
   display: inline-block;
-  border-bottom:none;
 }
 .latest-news div.news-heading a {
   margin-left: 8px;
@@ -5183,6 +5180,38 @@ ul.calendar-med-mod li a {
 }
 .seeityourself p {
   margin-top: 5px;
+}
+div.featured-news {
+  margin-bottom: 20px;
+}
+.clear {
+  clear: both;
+}
+.news-search i {
+  color: #CCCCCC;
+  font-size: 1.3em;
+  left: 5px;
+  line-height: 1em;
+  pointer-events: none;
+  position: absolute;
+  top: 7px;
+}
+.news-search {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 90%;
+}
+.news-search input.search-query {
+  padding-left: 25px;
+  width: 100%;
+}
+.news-search-container {
+  margin: 0 0 20px 0 ;
+}
+.news-search-container label {
+  margin: 5px 0 0 0 ;
+  font-size: 0.8em;
 }
 @media (max-width: 689px) {
   /*****************************************
