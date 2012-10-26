@@ -4048,7 +4048,6 @@ hr.soften {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  margin:5px 0 0 0;
 }
 .image-shadow {
   position: relative;
@@ -4093,7 +4092,7 @@ hr.module-separator {
 }
 .content-inner h3 {
   margin: 0 0 3px 0;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom:1px solid #e0e0e0;
 }
 .blade-container {
   background: #fff;
@@ -4715,6 +4714,7 @@ ul.footer-quick-links li a {
 .latest-news div.news-heading h3,
 .latest-news div.news-heading a {
   display: inline-block;
+  border-bottom:none;
 }
 .latest-news div.news-heading a {
   margin-left: 8px;
@@ -4905,6 +4905,9 @@ ul.calendar-med-mod {
 ul.calendar-med-mod li a {
   display: block;
   border-bottom: 1px dotted #e0e0e0;
+}
+.campus-maps p {
+  margin-top: 5px;
 }
 .secondary-content-area .module-container {
   margin-bottom: 1.5em;
