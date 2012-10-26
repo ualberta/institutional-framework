@@ -1,0 +1,738 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!-- The Meta: These two must be before <title> -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- The Title -->
+  <title>Framework Prototype</title>
+  
+  <!-- The Other Meta -->
+  <meta name="description" content="University of Alberta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <!-- The Sheets -->
+  
+  <!--[if lt IE 9]>  <link href="./css/ualberta-ie.css" rel="stylesheet"><link href="./css/ualberta-ie-less.css" rel="stylesheet"> <![endif]-->
+  <!--[if IE 7]>  <link href="./css/ualberta-ie7.css" rel="stylesheet"> <![endif]-->
+
+  <!--[if gt IE 8]><!--> <link href="./css/ualberta.css" rel="stylesheet">  <!--<![endif]-->
+   
+    
+  <!-- The Favicon -->
+  <link rel="shortcut icon" href="./ico/favicon.ico">
+  
+  <!-- Le fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+  
+  <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+  <!-- Burn IE6 with fire -->
+  <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header> <!-- Start Header -->
+  
+    <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
+      <div class="blade-inner">
+        <a class="brand" href="#">
+          <!-- for faculties only <img src="./img/logo2.svg" alt="University of Alberta" /> -->
+        </a>
+        <nav class="blade-navigation">
+          <ul class="quick-links-container">
+            <li id="ql" class="dropdown">
+              <a href="#" id="dLabel" class="dropdown-toggle hidden-desktop" data-toggle="dropdown">
+                <span class="quick-links-text">
+                  Quick Links <b class="caret"></b>
+                </span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+              </a>
+              <ul class="quick-links" role="menu" aria-labelledby="dLabel">
+                <li role="menuitem"><a href="#">Find a Person</a></li>
+                <li role="menuitem"><a href="#">ONEcard</a></li>
+                <li role="menuitem"><a href="#">Bear Tracks</a></li>
+                <li role="menuitem"><a href="#">Maps</a></li>
+                <li role="menuitem"><a href="#">Mail</a></li>
+                <li role="menuitem"><a href="#">eClass</a></li>
+                <li role="menuitem"><a href="#">Libraries</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+       <div class="blade-search">
+          <i class="icon-search"></i>
+          <input type="search" class="search-query" placeholder="search">
+        </div> 
+      </div>
+    </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
+
+    <div class="banner-container"> <!-- Start Banner -->
+      <div class="banner-inner">
+        <h1>
+          <span class="identifier"></span>
+          <span class="site-title">Faculty of Development</span>
+        </h1>
+        <div class="banner-logo">
+          <img src="http://www.ualberta.ca/~publicas/uofa/css/img/NavLogo.png" class="site-logo" alt="Site Logo" />
+        </div>
+        <nav class="audience-navigation">
+          <ul>
+            <li role="menuitem"><a href="#">Prospective Students</a></li>
+            <li role="menuitem"><a href="#">Current Students</a></li>
+            <li role="menuitem"><a href="#">Faculty &amp; Staff</a></li>
+            <li role="menuitem"><a href="#">Alumni &amp; Friends</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="shadow-container"></div>
+      <div class="oval-container">
+        <div class="oval oval1"></div>
+        <div class="oval oval2"></div>
+        <div class="oval oval3"></div>
+        <div class="oval oval4"></div>
+      </div>
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
+      <nav id="main-nav" class="navigation-inner">
+        <ul>
+          <li>
+            <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation">
+              Show Navigation <i class="icon-toggle-nav"></i>
+            </a>
+            <ul class="main-navigation collapse">
+              <li role="menuitem"><a href="#">Why UAlberta?</a></li>
+              <li role="menuitem"><a href="#">Faculties &amp; Programs</a></li>
+              <li role="menuitem"><a href="#">Research</a></li>
+              <li role="menuitem"><a href="#">Admissions</a></li>
+              <li role="menuitem"><a href="#">Campus Life</a></li>
+              <li role="menuitem"><a href="#">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Current Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Faculty &amp; Staff</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Alumni &amp; Friends</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- End Navigation -->
+    
+  </header> <!-- End Header -->
+  
+<div class="content-wrapper">
+
+  <div class="page-title-row">
+    <div class="title-container container"> <!-- Container Start -->
+      <h2 class="page-title">Faculties & Programs</h2>
+    </div>
+  </div>
+  <div class="content-top-row">
+          
+    Top     
+  </div>
+  
+  <div class="content-container container">
+    <div class="content-inner row-fluid"> <!-- Second Row Start -->
+      <div class="span5 primary-content-area">
+        <div class="module-container module-image-callout">
+          <div class="faculties-departments">
+            <h3>Faculties & Departments</h3>
+            
+            <p>UAlberta is home to Canada's largest academic staff association. There are more than 8,400 faculty, librarians, graduate 
+assistants and other academic staff. Another 6,500-plus employees work in a supporting capacity.</p>
+
+			<ul class="metadatalist" id="accordion">
+				
+				<li id="ales">
+					<a href="http://www.ales.ualberta.ca/">Agricultural, Life and Environmental Sciences</a><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">+</a>
+				
+					<ul id="alescollapse" class="accordion-body collapse">
+				
+						<li>
+							<a href="http://www.afns.ales.ualberta.ca/">Agricultural Food and Nutritional Science</a>
+						</li>
+		
+						<li>
+							<a href="http://www.ales.ualberta.ca/devonian">Devonian Botanic Garden</a>
+						</li>
+		
+						<li>
+							<a href="http://www.ales.ualberta.ca/forestry">Forest Science and Management, Alberta School of</a>
+						</li>
+		
+						<li>
+							<a href="http://www.hecol.ales.ualberta.ca/">Human Ecology</a>
+						</li>
+		
+						<li>
+							<a href="http://www.rr.ales.ualberta.ca/">Renewable Resources</a>
+						</li>
+		
+						<li>
+							<a href="http://www.ales.ualberta.ca/rees/">Resource Economics and Environmental Sociology</a>
+						</li>
+		
+					</ul>
+		
+				</li>
+		
+				<li>
+					<a href="http://www.business.ualberta.ca/">Alberta School of Business</a>
+				
+					<ul class="metadatalist">
+				
+						<li>
+							<a href="http://www.business.ualberta.ca/Departments/AOIS.aspx">Accounting, Operations and Information Systems</a>
+						</li>
+		
+						<li>
+							<a href="http://www.business.ualberta.ca/Departments/FSA.aspx">Finance and Statistical Analysis</a>
+						</li>
+		
+						<li>
+							<a href="http://www.business.ualberta.ca/Departments/MBEL.aspx">Marketing, Business Economics, and Law</a>
+						</li>
+		
+						<li>
+							<a href="http://www.business.ualberta.ca/Departments/SMORG.aspx">Strategic Management and Organization</a>
+						</li>
+		
+					</ul>
+		
+				</li>
+		
+				<li>
+					<a href="http://www.foa.ualberta.ca/">Arts</a>
+				
+					<ul class="metadatalist" style="display: none; ">
+				
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/anthropology">Anthropology</a>
+				
+						</li>
+		
+						<li>
+							<a href="http://www.ualberta.ca/artdesign/">Art and Design</a>
+						</li>
+		
+						<li>
+							<a href="http://www.ualberta.ca/drama/">Drama</a>
+						</li>
+		
+						<li>
+							<a href="http://www.eastasianstudies.ualberta.ca/">East Asian Studies</a>
+						</li>
+		
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/economics/">Economics</a>
+						</li>
+		
+						<li>
+							<a href="http://www.arts.ualberta.ca/efs">English and Film Studies</a>
+						</li>
+		
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/historyandclassics">History and Classics</a>
+						</li>
+		
+						<li>
+							<a href="http://www.ois.ualberta.ca/">Interdisciplinary Studies</a>
+						</li>
+		
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/linguistics">Linguistics</a>
+						</li>
+		
+						<li>
+							<a href="http://www.humanities.ualberta.ca/mlcs">Modern Languages and Cultural Studies</a>
+						</li>
+		
+						<li>
+							<a href="http://www.ualberta.ca/music">Music</a>
+						</li>
+		
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/philosophy/">Philosophy</a>
+						</li>
+		
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/polisci/">Political Science</a>
+						</li>
+		
+						<li>
+							<a href="http://www.psych.ualberta.ca/">Psychology</a>
+						</li>
+		
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/sociology">Sociology</a>
+						</li>
+		
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/womensstudies">Women's Studies</a>
+						</li>
+		
+					</ul>
+		
+				</li>
+		
+				<li>
+					<a href="http://www.augustana.ualberta.ca/">Augustana Campus</a>
+				
+					<ul>
+				
+						<li>
+							<a href="http://www.augustana.ualberta.ca/departments/finearts/">Fine Arts</a>
+						</li>
+		
+						<li>
+							<a href="http://www.augustana.ualberta.ca/departments/humanities/">Humanities</a>
+						</li>
+		
+						<li>
+							<a  href="http://www.augustana.ualberta.ca/departments/science/">Science</a>
+						</li>
+		
+						<li>
+							<a  href="http://www.augustana.ualberta.ca/departments/socialsciences/">Social Sciences</a>
+						</li>
+		
+					</ul>
+		
+				</li>
+		
+				<li>
+					<a href="http://www.csj.ualberta.ca/">Campus Saint-Jean</a>
+				</li>
+		
+				<li>
+					<a href="http://www.education.ualberta.ca/">Education</a>
+				
+					<ul>
+				
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/edpolicystudies/">Educational Policy Studies</a>
+						</li>
+			
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/edpsychology/">Educational Psychology</a>
+						</li>
+			
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/elementaryed/">Elementary Education</a>
+						</li>
+			
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/secondaryed/">Secondary Education</a>
+						</li>
+			
+					</ul>
+			
+				</li>
+			
+				<li>
+					<a href="http://www.engineering.ualberta.ca">Engineering</a>
+					
+					<ul>
+					
+						<li>
+							<a href="http://www.biomed.engineering.ualberta.ca/">Biomedical Engineering</a>
+						</li>
+			
+						<li>
+							<a href="http://www.engineering.ualberta.ca/cme/">Chemical and Materials Engineering</a>
+						</li>
+			
+						<li>
+							<a href="http://www.engineering.ualberta.ca/civil/">Civil and Environmental Engineering</a>
+						</li>
+			
+						<li>
+							<a href="http://www.ece.ualberta.ca/">Electrical and Computer Engineering</a>
+						</li>
+				
+						<li>
+							<a href="http://www.engineering.ualberta.ca/mece/">Mechanical Engineering</a>
+						</li>
+			
+						<li>
+							<a href="http://www.civil.engineering.ualberta.ca/">School of Mining and Petroleum Engineering</a>
+						</li>
+			
+					</ul>
+			
+				</li>
+			
+				<li>
+					<a href="http://www.extension.ualberta.ca/">Extension</a>
+					
+					<ul>
+					
+						<li>
+							<a href="http://www.extension.ualberta.ca/study/arts/">Arts</a>
+						</li>
+			
+						<li>
+							<a href="http://www.extension.ualberta.ca/study/communications/">Communications</a>
+						</li>
+			
+						<li>
+							<a href="http://www.extension.ualberta.ca/study/education/">Education</a>
+						</li>
+			
+						<li>
+							<a href="http://www.extension.ualberta.ca/study/esl/">English Language (ESL)</a>
+						</li>
+			
+						<li>
+							<a href="http://www.extension.ualberta.ca/study/government-studies/">Government Studies</a>
+						</li>
+			
+						<li>
+							<a href="http://www.extension.ualberta.ca/study/management/">Management</a>
+						</li>
+			
+						<li>
+							<a href="http://www.extension.ualberta.ca/study/sciences/">Sciences</a>
+						</li>
+			
+					</ul>
+			
+				</li>
+			
+				<li>
+					<a href="http://www.ualberta.ca/gradstudies/">Graduate Studies and Research</a>
+				</li>
+			
+				<li>
+					<a href="http://www.law.ualberta.ca/">Law</a>
+				</li>
+			
+				<li>
+					<a href="http://www.slis.ualberta.ca/">Library and Information Studies, School of</a>
+				</li>
+			
+				<li>
+					<a href="http://www.med.ualberta.ca/">Medicine and Dentistry</a>
+					
+					<ul>
+					
+						<li>
+							<a href="http://www.anesthesiology.med.ualberta.ca/">Anesthesiology and Pain Medicine</a>
+						</li>
+			
+						<li>
+							<a href="http://www.biochem.ualberta.ca/">Biochemistry</a>
+						</li>
+			
+						<li>
+							<a href="http://www.biomed.engineering.ualberta.ca/">Biomedical Engineering</a>
+						</li>
+			
+						<li>
+							<a href="http://www.cellbiology.ualberta.ca/">Cell Biology</a>
+						</li>
+			
+						<li>
+							<a href="http://www.dent.ualberta.ca/">Dentistry and Dental Hygiene</a>
+						</li>
+			
+						<li>
+							<a href="http://emergencymed.med.ualberta.ca/">Emergency Medicine</a>
+						</li>
+			
+						<li>
+							<a href="http://www.familymed.med.ualberta.ca/">Family Medicine</a>
+						</li>
+			
+						<li>
+							<a href="http://lmp.med.ualberta.ca/">Laboratory Medicine and Pathology</a>
+						</li>
+			
+						<li>
+							<a href="http://www.medicalgenetics.med.ualberta.ca/">Medical Genetics</a>
+						</li>
+			
+						<li>
+							<a href="http://www.ualberta.ca/~mmi/">Medical Microbiology and Immunology</a>
+						</li>
+			
+						<li>
+							<a href="http://www.medicine.med.ualberta.ca/">Medicine</a>
+						</li>
+			
+						<li>
+							<a href="http://www.obgyn.med.ualberta.ca/">Obstetrics and Gynecology</a>
+						</li>
+			
+						<li>
+							<a href="http://www.oncology.med.ualberta.ca/">Oncology</a>
+						</li>
+			
+						<li>
+							<a href="http://www.ophthalm.med.ualberta.ca">Ophthalmology</a>
+						</li>
+			
+						<li>
+							<a href="http://pediatrics.med.ualberta.ca/">Pediatrics</a>
+						</li>
+			
+						<li>
+							<a href="http://www.pmcol.ualberta.ca/">Pharmacology</a>
+						</li>
+			
+						<li>
+							<a href="http://www.physiology.ualberta.ca/">Physiology</a>
+						</li>
+			
+						<li>
+							<a href="http://psychiatry.med.ualberta.ca/">Psychiatry</a>
+						</li>
+			
+						<li>
+							<a href="http://www.radiology.med.ualberta.ca/">Radiology and Diagnostic Imaging</a>
+						</li>
+			
+						<li>
+							<a href="http://www.surgery.ualberta.ca/">Surgery</a>
+						</li>
+			
+					</ul>
+			
+				</li>
+			
+				<li>
+					<a href="http://www.ualberta.ca/nativestudies">Native Studies</a>
+				</li>
+			
+				<li>
+					<a href="http://www.uofaweb.ualberta.ca/nursing/">Nursing</a>
+				</li>
+			
+				<li>
+					<a href="http://www.pharm.ualberta.ca/">Pharmacy and Pharmaceutical Sciences</a>
+				</li>
+			
+				<li>
+					<a href="http://www.physedandrec.ualberta.ca/">Physical Education and Recreation</a>
+				</li>
+			
+				<li>
+					<a href="http://www.publichealth.ualberta.ca/">Public Health, School of</a>
+				</li>
+			
+				<li>
+					<a href="http://www.rehabmed.ualberta.ca">Rehabilitation Medicine</a>
+					
+					<ul>
+					
+						<li>
+							<a href="http://www.rehabmed.ualberta.ca/ot/">Occupational Therapy</a>
+						</li>
+			
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/pt/">Physical Therapy</a>
+						</li>
+			
+						<li>
+							<a href="http://www.uofaweb.ualberta.ca/spa/">Speech Pathology and Audiology</a>
+						</li>
+			
+					</ul>
+			
+				</li>
+			
+				<li>
+					<a href="http://www.ualberta.ca/science">Science</a>
+					
+					<ul>
+					
+						<li>
+							<a href="http://www.biology.ualberta.ca/">Biological Sciences</a>
+						</li>
+			
+						<li>
+							<a href="http://www.chem.ualberta.ca/">Chemistry</a>
+						</li>
+			
+						<li>
+							<a href="http://www.cs.ualberta.ca/">Computing Science</a>
+						</li>
+			
+						<li>
+							<a href="http://www.ualberta.ca/eas">Earth and Atmospheric Sciences</a>
+						</li>
+			
+						<li>
+							<a href="http://www.math.ualberta.ca/">Mathematical and Statistical Sciences</a>
+						</li>
+			
+						<li>
+							<a href="http://www.physics.ualberta.ca/">Physics</a>
+						</li>
+			
+						<li>
+							<a href="http://www.psych.ualberta.ca/">Psychology</a>
+						</li>
+			
+					</ul>
+			
+				</li>
+			
+				<li>
+					<a href="http://www.stjosephs.ualberta.ca/">St. Joseph's College</a>
+				</li>
+			
+				<li>
+					<a href="http://www.ualberta.ca/ST.STEPHENS/">St. Stephen's College</a>
+				</li>
+			
+			</ul>
+            
+          </div>
+        </div>
+    
+        <hr class="module-separator" />        
+      </div>
+      
+      <div class="span5 secondary-content-area clearfix">
+        
+        <div class="secondary-row">
+          <!-- Find a Program -->
+          <div class="module-container">
+            <h3>Find a Program</h3>
+	          <div class="grey-box grad">
+	            <a>Graduate</a>
+	            <p>Further your education with over 170 graduate programs.</p>
+	          </div>
+	          <div class="grey-box undergrad">
+	            <a>Undergraduate</a>
+	            <p>UAlberta has more than 200 programs to explore.</p>
+	          </div>
+	          <div class="grey-box continue">
+	            <a>Continuing Studies</a>
+	            <p>Pursue lifelong learning with over 30 programs and 300 courses.</p>
+	          </div>
+	          <div class="grey-box open">
+	            <a>Open Studies</a>
+	            <p>Upgrade or take courses for general interest.</p>
+	          </div>
+	          <!-- program boxes -->
+          </div>
+          <!-- End Find a Program -->
+        
+          <!-- Centres & Institutes -->
+          <div class="module-container">
+            <h3>Centres & Institutes</h3>
+              <div class="grey-box">
+	            <a>View our Centres and Institutes</a>
+				<p>Explore our connections with communities of research and practice.</p>
+	          </div>
+          </div>
+          <!-- End Centres & Institutes -->
+          
+          <!-- Professional Development -->
+          <div class="module-container">
+            <h3>Professional Development</h3>
+              <div class="grey-box">
+	            <a>View our career development opportunities</a>
+				<p>Stay current on knowledge and develop practical skills in your chosen field.</p>
+	          </div>
+          </div>
+          <!-- End Professional Development -->
+          
+        </div>
+        
+  
+        
+        
+      </div> 
+      <div class="span2 sidebar"> <!-- Sidebar Start -->
+                <div class="extrude">
+          <h5 class="sidebar-title">
+            <i class="icon-map-marker"></i> Campus Maps
+          </h5>
+          <img src="./img/explore-campus.png" />
+          <p>Find buildings, parking and food options, just to name a few, with Google Maps.</p>
+       </div>
+       <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-calendar"></i> University Calendar
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">View the Calendar</a></li>
+              <li><a href="#">Costs, Tuition and Fees</a></li>
+              <li><a href="#">Major Deadlines</a></li>
+              <li><a href="#">Academic Schedule</a></li>
+            </ul>
+          </div>
+        </div>
+     </div> <!-- Sidebar End -->
+     
+    </div> <!-- Second Row End -->
+   
+  </div> <!-- Container End -->
+</div>
+     
+    <div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
+      <div class="footer-container container"> <!-- Footer Container Start -->
+        <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+        
+          <div class="span9 footer-copyright">
+            <ul class="footer-quick-links">
+              <li><a href="#">Find a Person</a></li>
+              <li><a href="#">ONEcard</a></li>
+              <li><a href="#">Bear Tracks</a></li>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Mail</a></li>
+              <li><a href="#">eClass</a></li>
+              <li><a href="#">Libraries</a></li>
+            </ul>
+            <p>
+              © 2012 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
+            </p>
+          </div>
+          
+          <div class="span3 footer-right">
+            <a href="#">Back To Top</a>
+          </div>
+          
+        </div> <!-- Footer Inner End -->
+      </div>  <!-- Footer Container End -->
+    </div> <!-- Footer Bottom Row End -->
+  </footer> <!-- Footer End -->
+ 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+<script src="./compiled/js/bootstrap.min.js"></script>
+<script src="./js/bootstrap-collapse.js"></script>
+<script src="./js/bootstrap-transition.js"></script>
+  <script>
+  /*
+    $(document).ready(function() {
+    $('.content-top-row .tab-content').height(
+      ($('.content-top-row').height()-$('.content-top-row .nav-tabs').height()-50)
+      );
+    });
+    */
+  </script>
+  <!-- end scripts -->
+
+</body>
+</html>
