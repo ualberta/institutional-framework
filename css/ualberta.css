@@ -4465,6 +4465,7 @@ h5.sidebar-title i {
   padding: 0 10px;
   line-height: 1.2em;
   position: relative;
+  border-bottom:none;
 }
 .image-caption-container .caption h3 {
   font-family: "DIN Bold", sans-serif;
