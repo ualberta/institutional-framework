@@ -258,8 +258,8 @@
       (function($) {
         $(document).ready(function() {
         
-          // add active class to link category when clicked.\
-          $('.link-mod-category h4, .link-mod-category input').click(function() {
+          // add active class to link category when clicked.
+          $('.link-mod-category > h4, .link-mod-category input').click(function() {
             $('.link-mod-category').removeClass('link-mod-active');
             $(this).parent().addClass('link-mod-active');
             return false;
