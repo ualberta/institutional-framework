@@ -5181,6 +5181,17 @@ ul.calendar-med-mod li a {
 .seeityourself p {
   margin-top: 5px;
 }
+/* Test
+.class {
+.clearfix();
+.border-radius(10px);
+#gradient > .vertical(#fff, #000);
+}
+*/
+.primary-content-area ul li {
+  background-color: #e0e0e0;
+  margin-bottom: 1em;
+}
 @media (max-width: 689px) {
   /*****************************************
     ** BLADE START
