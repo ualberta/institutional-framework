@@ -193,7 +193,7 @@
                    <h4>Displaying <span class="link-mod-count">0</span> matches for &quot;<span class="link-mod-query"></span>&quot;</h4>
                  </li>
                  <li class="link-mod-result-none">
-                   <p>There are no links on this page that match your filter.  Try a different query, or give us <a href="#">feedback</a> to help us make your experience better.</p>
+                   <p>There are no links on this page that match your filter.  Try a different query, or give us <a href="#">feedback</a> to help us improve our website.</p>
                  </li>
                </ul>
           </li>
@@ -283,6 +283,7 @@
 
             on.reset(function() {
               $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+              $('.link-mod-result-item').remove();
               $('.searchable a').each(function() {
                 $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
               });
