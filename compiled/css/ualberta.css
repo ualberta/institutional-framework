@@ -4773,10 +4773,6 @@ hr.soften {
   border: 0;
 }
 
-.banner-logo {
-  display: none;
-}
-
 .frame {
   padding: 5px;
   background: #fff;
@@ -4899,6 +4895,7 @@ hr.module-separator {
 }
 
 .brand img {
+  display: none;
   height: 100%;
 }
 
@@ -4963,7 +4960,7 @@ ul.quick-links-container li {
 
 .banner-container {
   position: relative;
-  height: 110px;
+  height: 90px;
   overflow: hidden;
   color: #fff;
   background: #78c89d;
@@ -4975,36 +4972,57 @@ ul.quick-links-container li {
 
 .banner-inner {
   position: relative;
-  height: 110px;
+  z-index: 12;
+  height: 90px;
   margin: 0 auto;
 }
 
 .banner-inner h1 {
-  position: absolute;
-  bottom: -5px;
-  left: 10px;
-  z-index: 15;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+  display: none;
 }
 
-span.identifier {
+nav.audience-navigation {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  z-index: 50;
+}
+
+nav.audience-navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav.audience-navigation ul li {
   position: relative;
-  z-index: 20;
   display: block;
-  font-family: "DIN Regular", sans-serif;
-  font-size: 0.6em;
-  font-weight: normal;
-  line-height: 1.1em;
+  float: left;
+  margin-left: 20px;
+}
+
+nav.audience-navigation ul li a {
+  font-family: DIN Medium, sans-serif;
   color: #fff;
-  text-transform: uppercase;
+}
+
+nav.audience-navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+.banner-logo {
+  position: absolute;
+  top: 20px;
+  z-index: 999;
 }
 
 .oval-container {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
-  height: 110px;
+  height: 90px;
   overflow: hidden;
 }
 
@@ -5012,9 +5030,9 @@ span.identifier {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 11;
   width: 100%;
-  height: 110px;
+  height: 90px;
   overflow: hidden;
   -webkit-box-shadow: inset 0 2px 3px rgba(0, 30, 0, 0.25);
      -moz-box-shadow: inset 0 2px 3px rgba(0, 30, 0, 0.25);
@@ -5133,8 +5151,19 @@ span.identifier {
   text-decoration: none;
 }
 
+.navigation-inner ul li .audience-link {
+  display: none;
+}
+
 .content-inner {
   padding: 20px 0;
+}
+
+h2.page-title {
+  margin: 20px 0 10px 0;
+  font-size: 22px;
+  line-height: 1.1em;
+  border-bottom: 1px solid rgba(0, 30, 0, 0.2);
 }
 
 h5.sidebar-title {
@@ -5648,6 +5677,160 @@ ul.footer-quick-links li a {
   }
 }
 
+.link-mod-container {
+  position: relative;
+  min-height: 380px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #eee;
+  border: 1px solid #dddddd;
+}
+
+.link-mod-container h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1em;
+}
+
+.link-mod-container h4 a {
+  display: block;
+}
+
+.link-mod-container .icon-filter {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  z-index: 16;
+  color: #ccc;
+}
+
+.link-mod-container > li {
+  width: 220px;
+  padding: 10px;
+  *background-color: #f3f3f3;
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+}
+
+.link-mod-container > li .link-mod-label {
+  display: none;
+}
+
+.link-mod-container > li ul.link-mod-items {
+  position: absolute;
+  top: 0;
+  left: 241px;
+  display: none;
+  width: 338px;
+  height: 380px;
+  min-height: 380px;
+  padding: 0;
+  margin: 0;
+  margin-left: -1px;
+  overflow: auto;
+  list-style: none;
+  background: #fff;
+  border-left: 1px solid #dddddd;
+}
+
+.link-mod-container > li.link-mod-active {
+  background: #fff;
+}
+
+.link-mod-container > li.link-mod-active ul.link-mod-items {
+  display: block;
+}
+
+.link-mod-container > li.link-mod-active .link-mod-label {
+  display: block;
+}
+
+.link-mod-container > li.link-mod-active:before {
+  display: inline-block;
+  float: right;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f0da";
+}
+
+.link-mod-container > li:last-child {
+  z-index: 14;
+  background: none;
+  border-bottom: none;
+}
+
+.link-mod-container > li:last-child input {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  z-index: 15;
+  width: 188px;
+  padding: 5px 6px 3px 25px;
+  font-size: 12px;
+  line-height: 1em;
+}
+
+.link-mod-container > li ul.link-mod-items li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.link-mod-container > li ul.link-mod-items li a {
+  display: block;
+  padding: 8px;
+  background: #fff;
+}
+
+.link-mod-container > li ul.link-mod-items li a:hover {
+  background: #f6f6f6;
+}
+
+.link-mod-container .link-mod-result-title {
+  padding: 10px;
+}
+
+.link-mod-container > li ul.link-mod-items li.link-mod-result-none p {
+  padding: 20px;
+  font-style: italic;
+  color: #999;
+  text-align: center;
+}
+
+.link-mod-container > li ul.link-mod-items li.link-mod-result-none p a {
+  display: inline;
+  padding: 0;
+  background: none;
+}
+
+.video-mod-container {
+  position: relative;
+  height: 0;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.video-mod-container iframe,
+.video-mod-container object,
+.video-mod-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .secondary-content-area .module-container {
   margin-bottom: 1.5em;
 }
@@ -5669,13 +5852,13 @@ ul.footer-quick-links li a {
 
 .content-top-row {
   background-color: rgba(255, 200, 10, 0.1);
-  background-image: url('../img/test-bg.png');
   background-position: bottom left;
   background-repeat: repeat-x;
+  border-top: 1px solid rgba(0, 50, 25, 0.25);
   border-bottom: 1px solid rgba(0, 50, 25, 0.35);
-  -webkit-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px -2px 4px rgba(0, 0, 0, 0.15), 0px 2px 2px #ffffff;
-     -moz-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px -2px 4px rgba(0, 0, 0, 0.15), 0px 2px 2px #ffffff;
-          box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px -2px 4px rgba(0, 0, 0, 0.15), 0px 2px 2px #ffffff;
+  -webkit-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+     -moz-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+          box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
 }
 
 @media (min-width: 690px) {
@@ -5697,7 +5880,6 @@ ul.footer-quick-links li a {
 @media (min-width: 690px) and (max-width: 979px) {
   .sidebar {
     position: absolute;
-    top: 20px;
     right: 10px;
   }
 }
@@ -5827,6 +6009,30 @@ ul.footer-quick-links li a {
   }
 }
 
+.content-top-row {
+  background-color: rgba(255, 200, 10, 0.1);
+  background-image: url('../img/test-bg.png');
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  border-top: 1px solid rgba(0, 50, 25, 0.25);
+  border-bottom: 1px solid rgba(0, 50, 25, 0.35);
+  -webkit-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+     -moz-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+          box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+}
+
+.content-top-row {
+  background-color: rgba(255, 200, 10, 0.1);
+  background-image: url('../img/test-bg.png');
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  border-top: 1px solid rgba(0, 50, 25, 0.25);
+  border-bottom: 1px solid rgba(0, 50, 25, 0.35);
+  -webkit-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+     -moz-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+          box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+}
+
 @media (max-width: 689px) {
   {
     /*****************************************
@@ -5888,6 +6094,9 @@ ul.footer-quick-links li a {
   .banner-inner h1 {
     font-size: 24px;
     line-height: 1.4em;
+  }
+  nav.audience-navigation {
+    display: none;
   }
   .navigation-inner ul li {
     display: block;
@@ -6091,12 +6300,6 @@ ul.footer-quick-links li a {
   .blade-inner ul.quick-links {
     right: 0;
     left: auto;
-  }
-}
-
-@media (min-width: 690px) and (max-width: 979px) {
-  .banner-inner h1 {
-    font-size: 28px;
   }
 }
 
@@ -6360,6 +6563,54 @@ ul.footer-quick-links li a {
   }
 }
 
+@media (min-width: 690px) and (max-width: 979px) {
+  nav.audience-navigation {
+    right: 10px;
+    bottom: 10px;
+    width: 400px;
+  }
+  nav.audience-navigation ul li {
+    width: 44%;
+    margin-bottom: 7px;
+    text-align: right;
+  }
+  nav.audience-navigation ul li:nth-child(3) {
+    clear: left;
+  }
+  .navigation-inner > ul > li:first-child {
+    display: block;
+  }
+  .navigation-inner ul li ul li {
+    padding: 0 0.725% 0 0.725%;
+    margin-right: -4px;
+    text-align: center;
+  }
+  .navigation-inner ul li ul li a {
+    padding: 12px 10px 8px 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    border: 0;
+  }
+  .navigation-inner ul li ul li:nth-child(1) {
+    width: 16%;
+  }
+  .navigation-inner ul li ul li:nth-child(2) {
+    width: 23.2%;
+  }
+  .navigation-inner ul li ul li:nth-child(3) {
+    width: 10%;
+  }
+  .navigation-inner ul li ul li:nth-child(4) {
+    width: 11%;
+  }
+  .navigation-inner ul li ul li:nth-child(5) {
+    width: 12.5%;
+  }
+  .navigation-inner ul li ul li:nth-child(6) {
+    width: 16%;
+  }
+}
+
 @media (min-width: 980px) and (max-width: 1199px) {
   
 }
@@ -6389,10 +6640,6 @@ ul.footer-quick-links li a {
     padding: 0 10px;
     border-right: 1px solid #eee;
   }
-  .navigation-inner ul li a {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
   .banner-inner h1 {
     left: 0;
     font-size: 32px;
@@ -6404,6 +6651,10 @@ ul.footer-quick-links li a {
   .blade-inner,
   .navigation-inner {
     width: 1170px;
+  }
+  .navigation-inner ul li a {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
