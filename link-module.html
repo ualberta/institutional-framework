@@ -258,20 +258,24 @@
       (function($) {
         $(document).ready(function() {
         
+          // add active class to link category when clicked.\
           $('.link-mod-category h4, .link-mod-category input').click(function() {
             $('.link-mod-category').removeClass('link-mod-active');
             $(this).parent().addClass('link-mod-active');
             return false;
           });
           
+          // populate results with all links by default
           $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
           $('.searchable a').each(function() {
             $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
           });
           $('.link-mod-result-none').hide();
         
-        
+          // live search plugin initialization        
           $('#link-mod-filter-field').search('.searchable a', function(on) {
+          
+            // this happens on any keydown, keyup, keypress, or blur event
             on.all(function(results) {
               var size = results ? results.size() : 0
               $('.link-mod-result-title h4').html(
@@ -281,6 +285,7 @@
               );
             });
 
+            // this happens when the filter field has nothing entered
             on.reset(function() {
               $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
               $('.link-mod-result-item').remove();
@@ -290,15 +295,13 @@
               $('.link-mod-result-none').hide();
             });
 
+            // this happens when there are no results base on the query
             on.empty(function() {
               $('.link-mod-result-none').show();
               $('.link-mod-result-item').remove();
             });
 
-            on.noval(function() {
-              console.log('noval');
-            });
-
+            // this happens when there are results
             on.results(function(results) {
               $('.link-mod-result-none').hide();
               $('.link-mod-result-item').remove();

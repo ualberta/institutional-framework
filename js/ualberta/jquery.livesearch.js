@@ -14,7 +14,6 @@
   Search.prototype.all = function(fn) { this.callbacks.all = fn; }
   Search.prototype.reset = function(fn) { this.callbacks.reset = fn; }
   Search.prototype.empty = function(fn) { this.callbacks.empty = fn; }
-  Search.prototype.noval = function(fn) { this.callbacks.noval = fn; }
   Search.prototype.results = function(fn) { this.callbacks.results = fn; }
 
   function query(selector) {
