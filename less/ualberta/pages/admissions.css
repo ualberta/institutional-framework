@@ -1,0 +1,14 @@
+/* Test
+.class {
+.clearfix();
+.border-radius(10px);
+#gradient > .vertical(#fff, #000);
+}
+*/
+.primary-content-area ul li {
+  background-color: #cccccc;
+  border: 10px #000 solid;
+}
+.secondary-content-area h3 {
+  border-bottom: 1px #999999 solid;
+}
