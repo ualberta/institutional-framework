@@ -1,0 +1,312 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!-- The Meta: These two must be before <title> -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- The Title -->
+  <title>Framework Prototype</title>
+  
+  <!-- The Other Meta -->
+  <meta name="description" content="University of Alberta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <!-- The Sheets -->
+  
+  <!--[if lt IE 9]>  <link href="./css/ualberta-ie.css" rel="stylesheet"><link href="./css/ualberta-ie-less.css" rel="stylesheet"> <![endif]-->
+  <!--[if IE 7]>  <link href="./css/ualberta-ie7.css" rel="stylesheet"> <![endif]-->
+
+  <!--[if gt IE 8]><!--> <link href="./css/ualberta.css" rel="stylesheet">  <!--<![endif]-->
+   
+    
+  <!-- The Favicon -->
+  <link rel="shortcut icon" href="./ico/favicon.ico">
+  
+  <!-- Le fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+  
+  <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+  <!-- Burn IE6 with fire -->
+  <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header> <!-- Start Header -->
+  
+    <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
+      <div class="blade-inner">
+        <a class="brand" href="#">
+          <!-- for faculties only <img src="./img/logo2.svg" alt="University of Alberta" /> -->
+        </a>
+        <nav class="blade-navigation">
+          <ul class="quick-links-container">
+            <li id="ql" class="dropdown">
+              <a href="#" id="dLabel" class="dropdown-toggle hidden-desktop" data-toggle="dropdown">
+                <span class="quick-links-text">
+                  Quick Links <b class="caret"></b>
+                </span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+              </a>
+              <ul class="quick-links" role="menu" aria-labelledby="dLabel">
+                <li role="menuitem"><a href="#">Find a Person</a></li>
+                <li role="menuitem"><a href="#">ONEcard</a></li>
+                <li role="menuitem"><a href="#">Bear Tracks</a></li>
+                <li role="menuitem"><a href="#">Maps</a></li>
+                <li role="menuitem"><a href="#">Mail</a></li>
+                <li role="menuitem"><a href="#">eClass</a></li>
+                <li role="menuitem"><a href="#">Libraries</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+       <div class="blade-search">
+          <i class="icon-search"></i>
+          <input type="search" class="search-query" placeholder="search">
+        </div> 
+      </div>
+    </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
+
+    <div class="banner-container"> <!-- Start Banner -->
+      <div class="banner-inner">
+        <h1>
+          <span class="identifier"></span>
+          <span class="site-title">Faculty of Development</span>
+        </h1>
+        <div class="banner-logo">
+          <img src="http://www.ualberta.ca/~publicas/uofa/css/img/NavLogo.png" class="site-logo" alt="Site Logo" />
+        </div>
+        <nav class="audience-navigation">
+          <ul>
+            <li role="menuitem"><a href="#">Prospective Students</a></li>
+            <li role="menuitem"><a href="#">Current Students</a></li>
+            <li role="menuitem"><a href="#">Faculty &amp; Staff</a></li>
+            <li role="menuitem"><a href="#">Alumni &amp; Friends</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="shadow-container"></div>
+      <div class="oval-container">
+        <div class="oval oval1"></div>
+        <div class="oval oval2"></div>
+        <div class="oval oval3"></div>
+        <div class="oval oval4"></div>
+      </div>
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
+      <nav id="main-nav" class="navigation-inner">
+        <ul>
+          <li>
+            <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation">
+              Show Navigation <i class="icon-toggle-nav"></i>
+            </a>
+            <ul class="main-navigation collapse">
+              <li role="menuitem"><a href="#">Why UAlberta?</a></li>
+              <li role="menuitem"><a href="#">Faculties &amp; Programs</a></li>
+              <li role="menuitem"><a href="#">Research</a></li>
+              <li role="menuitem"><a href="#">Admissions</a></li>
+              <li role="menuitem"><a href="#">Campus Life</a></li>
+              <li role="menuitem"><a href="#">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Current Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Faculty &amp; Staff</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Alumni &amp; Friends</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- End Navigation -->
+    
+  </header> <!-- End Header -->
+  
+<div class="content-wrapper">
+
+  <div class="page-title-row">
+    <div class="title-container container"> <!-- Container Start -->
+      <h2 class="page-title">Current Students</h2>
+    </div>
+  </div>
+  <div class="content-top-row">
+          
+    Top     
+  </div>
+  
+  <div class="content-container container">
+    <div class="content-inner row-fluid"> <!-- Second Row Start -->
+      <div class="span5 primary-content-area">
+        <div class="module-container module-image-callout">
+          <div>
+            <h3>Current Students Resorces</h3>
+			<ul class="link-mod-container">
+			  <li class="link-mod-category link-mod-active">
+				   <h4><a href="#most-popular">Most Popular</a></h4>
+				   <ul class="link-mod-items searchable">
+						<li><a href="http://link.com/">Careers</a></li>
+						<li><a href="http://link.com/">Calendar</a></li>
+						<li><a href="http://link.com/">Tuition and Fees</a></li>
+						<li><a href="http://link.com/">Alberta Facts</a></li>
+						<li><a href="http://link.com/">Class Size</a></li>
+						<li><a href="http://link.com/">Student Experiences</a></li>
+						<li><a href="http://link.com/">International Students</a></li>
+						<li><a href="http://link.com/">About Edmonton</a></li>
+						<li><a href="http://link.com/">History</a></li>
+						<li><a href="http://link.com/">Go Abroad</a></li>
+				   </ul>
+			  </li>
+			  <li class="link-mod-category">
+				<h4><a href="#">About UAlberta</a></h4>
+				<ul class="link-mod-items searchable">
+				  <li><a href="http://link.com/">Link</a></li>
+				</ul>
+			  </li>
+			  <li class="link-mod-category">
+				<h4><a href="#">Top Employer</a></h4>
+				<ul class="link-mod-items searchable">
+				  <li><a href="http://link.com/">Link</a></li>
+				</ul>
+			  </li>
+			  <li class="link-mod-category link-mod-filter">
+				   <span class="link-mod-label">Filter Results</span>
+				   <i class="icon-filter"></i>
+				   <input type="text" placeholder="filter links" id="link-mod-filter-field" name="link-mod-filter-field" />
+				   <ul class="link-mod-results link-mod-items">
+					 <li class="link-mod-result-title">
+					   <h4></h4>
+					 </li>
+					 <li class="link-mod-result-none">
+					   <p>There are no links on this page that match your filter.  Try a different query, or give us <a href="#">feedback</a> to help us improve our website.</p>
+					 </li>
+				   </ul>
+			  </li>
+			</ul>
+          </div>
+        </div><!--content-container-->
+    
+        <hr class="module-separator" />        
+      </div>
+      
+      <div class="span5 secondary-content-area clearfix">
+        
+        <div class="secondary-row">
+          <!-- Admissions-->
+          <div class="module-container">
+            <h3>Student Services by Faculty</h3>
+	           <p>Choose a program from the list below to view the services available:</p>
+	           <ul class="student-services">
+					<li><a href="http://www.ales.ualberta.ca/CurrentStudents.aspx">Agricultural, Life &amp; Environmental Science</a></li>
+					<li><a href="http://www.business.ualberta.ca/Programs/BachelorOfCommerce.aspx">Alberta School of Business</a></li>
+					<li><a href="http://www.foa.ualberta.ca/en/Undergraduate_Programs/Student_Services.aspx">Arts</a></li>
+					<li><a href="http://www.augustana.ualberta.ca/services/studentservices/">Augustana</a></li>
+					<li><a href="http://www.csj.ualberta.ca/index.php/les-etudes/etudes-de-1er-cycle-baccalaureat/">Campus Saint-Jean</a></li>
+					<li><a href="http://www.uss.ualberta.ca/">Education</a></li>
+					<li><a href="http://www.engineering.ualberta.ca/ContactUs/StudentAdvisors.aspx">Engineering</a></li>
+					<li><a href="http://www.extension.ualberta.ca/services/">Extension</a></li>
+					<li><a href="http://www.gradstudies.ualberta.ca/en/students/current.aspx">Graduate Studies &amp; Research</a></li>
+					<li><a href="http://www.law.ualberta.ca/currentstudents/quicklinks.php">Law</a></li>
+					<li><a href="http://ume.med.ualberta.ca/ProspectiveLearners/Contacts/Pages/default.aspx">Medicine &amp; Dentistry</a></li>
+					<li><a href="http://www.ualberta.ca/NATIVESTUDIES/student.htm">Native Studies</a></li>
+					<li><a href="http://www.nursing.ualberta.ca/en/Undergraduate/StudentServices.aspx">Nursing</a></li>
+					<li><a href="http://www.pharm.ualberta.ca/Contact%20Us.aspx">Pharmacy &amp; Pharmaceutical Sciences</a></li>
+					<li><a href="http://www.physedandrec.ualberta.ca/en/UndergraduatePrograms/UGOfficeHours.aspx">Physical Education &amp; Recreation</a></li>
+					<li><a href="http://www.publichealth.ualberta.ca/en/student_resources.aspx">Public Health, School of</a></li>
+					<li><a href="http://www.rehabilitation.ualberta.ca/en/Students/Admissions.aspx">Rehabilitation Medicine</a></li>
+					<li><a href="http://www.science.ualberta.ca/UndergraduateStudents/StudentAdvising.aspx">Science</a></li>
+				</ul>
+	               
+          </div>
+          <!-- End Student Services -->
+        
+        </div>
+        
+  
+        
+        
+      </div> 
+      <div class="span2 sidebar"> <!-- Sidebar Start -->
+         <div class="extrude campus-maps">
+          <h5 class="sidebar-title">
+            <i class="icon-map-marker"></i> Campus Maps
+          </h5>
+          <img src="./img/explore-campus.png" />
+          <p>Find buildings, parking and food options, just to name a few, with Google Maps.</p>
+       </div>
+       <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-calendar"></i> University Calendar
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">View the Calendar</a></li>
+              <li><a href="#">Costs, Tuition and Fees</a></li>
+              <li><a href="#">Major Deadlines</a></li>
+              <li><a href="#">Academic Schedule</a></li>
+            </ul>
+          </div>
+        </div>
+     </div> <!-- Sidebar End -->
+     
+    </div> <!-- Second Row End -->
+   
+  </div> <!-- Container End -->
+</div>
+     
+    <div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
+      <div class="footer-container container"> <!-- Footer Container Start -->
+        <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+        
+          <div class="span9 footer-copyright">
+            <ul class="footer-quick-links">
+              <li><a href="#">Find a Person</a></li>
+              <li><a href="#">ONEcard</a></li>
+              <li><a href="#">Bear Tracks</a></li>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Mail</a></li>
+              <li><a href="#">eClass</a></li>
+              <li><a href="#">Libraries</a></li>
+            </ul>
+            <p>
+              © 2012 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
+            </p>
+          </div>
+          
+          <div class="span3 footer-right">
+            <a href="#">Back To Top</a>
+          </div>
+          
+        </div> <!-- Footer Inner End -->
+      </div>  <!-- Footer Container End -->
+    </div> <!-- Footer Bottom Row End -->
+  </footer> <!-- Footer End -->
+ 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+<script src="./js/bootstrap.min.js"></script>
+  <script>
+  /*
+    $(document).ready(function() {
+    $('.content-top-row .tab-content').height(
+      ($('.content-top-row').height()-$('.content-top-row .nav-tabs').height()-50)
+      );
+    });
+    */
+  </script>
+  <!-- end scripts -->
+
+</body>
+</html>
