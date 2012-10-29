@@ -1,8 +1,31 @@
+@fmaActiveWidth: 77%;
+@fmaInactiveWidth: 10.5%;
+@fmaSpacing: 1%;
+
+
 .fma-container {
+  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .fma-slide {
-    background:  #999;
     float: left;
     display: block;
     position: relative;
+    overflow: hidden;
+    margin-right: @fmaSpacing;
+    height:  350px;
+    width: @fmaInactiveWidth;
+    .transition(all 0.3s ease);
+    cursor: pointer;
+    .opacity(50);
+    &:hover {
+      .opacity(100);
+    }
+  }
+  .fma-slide.fma-active {
+    width: @fmaActiveWidth;
+    cursor: auto;
+    .opacity(100);
+  }
+  .fma-slide.fma-last {
+    margin-right: 0px;
   }
 }
