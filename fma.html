@@ -37,7 +37,7 @@
   <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
   
   <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
   <!-- Burn IE6 with fire -->
@@ -84,7 +84,7 @@
       <div class="banner-inner">
         <h1>
           <span class="identifier"></span>
-          <span class="site-title">University of Alberta</span>
+          <span class="site-title">Faculty of Development</span>
         </h1>
         <div class="banner-logo">
           <img src="http://www.ualberta.ca/~publicas/uofa/css/img/NavLogo.png" class="site-logo" alt="Site Logo" />
@@ -132,25 +132,30 @@
     </div><!-- End Navigation -->
     
   </header> <!-- End Header -->
-
+  
 <div class="content-wrapper">
 
-
-
-<div class="page-title-row">
-  <div class="title-container container"> <!-- Container Start -->
-    <h2 class="page-title">Admissions</h2>
+  <div class="page-title-row">
+    <div class="title-container container"> <!-- Container Start -->
+      <h2 class="page-title">Base Page</h2>
+    </div>
   </div>
-</div>
-
-<!-- Container for Admissions page -->
-<div class="admissions">
-
+  
   <div class="content-top-row">
     <div class="content-container container"> <!-- Container Start -->
       <div class="content-inner row-fluid">
-        <div class="span6 feature-area"> <!-- FMA Start -->
-              <p>FMA Area</p>
+        <div class="span12 feature-area"> <!-- FMA Start -->
+            <div class="fma-container">
+              <div class="fma-slide fma-first fma-active">
+                <p>Slide one</p>
+              </div>
+              <div class="fma-slide">
+                <p>Slide two</p>
+              </div>
+              <div class="fma-slide fma-last">
+                <p>Slide three</p>
+              </div>
+            </div>
         </div> <!-- FMA End -->
       </div> 
     </div> <!-- End Top Row -->
@@ -159,151 +164,61 @@
   <div class="content-container container">
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
     
-   
-    
-    <div class="span5 primary-content-area">
-     
-     <ul class="unstyled">
-       <li class="extrude">
-         <h3>Undergraduate</h3>
-         <ul class="unstyled">
-           <li><a href="#">Our programs</a></li>
-           <li>
-             <button class="btn">
-             <a href="#">Apply now</a></button>
-           </li>
-         </ul>
-       </li>
-       <li class="extrude">
-         <h3>International</h3>
-         <ul class="unstyled">
-           <li><a href="#">Our programs</a></li>
-           <li>
-             <button class="btn">
-             <a href="#">Apply now</a></button>
-           </li>
-         </ul>
-       </li>
-       <li class="extrude">
-         <h3>Graduate</h3>
-         <ul class="unstyled">
-           <li><a href="#">Our programs</a></li>
-           <li>
-             <button class="btn">
-             <a href="#">Apply now</a></button>
-           </li>
-         </ul>
-       </li>
-       <li class="extrude">
-         <h3>Continuing Studies</h3>
-         <ul class="unstyled">
-           <li><a href="#">Our programs</a></li>
-           <li><a href="#">Courses</a></li>
-           <li>
-             <button class="btn">
-             <a href="#">Apply now</a></button>
-           </li>
-         </ul>
-       </li>
-       <li class="extrude">
-         <h3>Open Studies</h3>
-         <ul class="unstyled">
-           <li><a href="#">Learn more</a></li>
-           <li>
-             <button class="btn">
-             <a href="#">Apply now</a></button></button>
-           </li>
-         </ul>
-       </li>
-     </ul>
-      	
-      	
+      <div class="span5 primary-content-area">
+        <h3>Link Module Heading</h3>
+        <ul class="link-mod-container">
+          <li class="link-mod-category link-mod-active">
+               <h4><a href="#most-popular">Most Popular</a></h4>
+               <ul class="link-mod-items searchable">
+                    <li><a href="http://link.com/">Careers</a></li>
+                    <li><a href="http://link.com/">Calendar</a></li>
+                    <li><a href="http://link.com/">Tuition and Fees</a></li>
+                    <li><a href="http://link.com/">Alberta Facts</a></li>
+                    <li><a href="http://link.com/">Class Size</a></li>
+                    <li><a href="http://link.com/">Student Experiences</a></li>
+                    <li><a href="http://link.com/">International Students</a></li>
+                    <li><a href="http://link.com/">About Edmonton</a></li>
+                    <li><a href="http://link.com/">History</a></li>
+                    <li><a href="http://link.com/">Go Abroad</a></li>
+               </ul>
+          </li>
+          <li class="link-mod-category">
+            <h4><a href="#">About UAlberta</a></h4>
+            <ul class="link-mod-items searchable">
+              <li><a href="http://link.com/">Link</a></li>
+            </ul>
+          </li>
+          <li class="link-mod-category">
+            <h4><a href="#">Top Employer</a></h4>
+            <ul class="link-mod-items searchable">
+              <li><a href="http://link.com/">Link</a></li>
+            </ul>
+          </li>
+          <li class="link-mod-category link-mod-filter">
+               <span class="link-mod-label">Filter Results</span>
+               <i class="icon-filter"></i>
+               <input type="text" placeholder="filter links" id="link-mod-filter-field" name="link-mod-filter-field" />
+               <ul class="link-mod-results link-mod-items">
+                 <li class="link-mod-result-title">
+                   <h4></h4>
+                 </li>
+                 <li class="link-mod-result-none">
+                   <p>There are no links on this page that match your filter.  Try a different query, or give us <a href="#">feedback</a> to help us improve our website.</p>
+                 </li>
+               </ul>
+          </li>
+        </ul>
 
-  
-      
-<!-- Backup -->
-    
-    
-     <!--    <div>
-        <h3>Undergraduate</h3>
-        <ul class="unstyled">
-        	<li><a href="#">Our programs</a></li>
-        	<li><button class="btn"><a href="#">Apply now</a></button></li>
-        	</ul>
-        	</div>
-        <div>
-        <h3>International</h3>
-        <ul class="unstyled">
-			<li><a href="#">Our programs</a></li>
-        	<li><button class="btn"><a href="#">Apply now</a></button></li></ul>
-        	</div>
-        	
-        <div>
-        <h3>Graduate</h3>
-        <ul class="unstyled">
-			<li><a href="#">Our programs</a></li>
-        	<li><button class="btn"><a href="#">Apply now</a></button></li></ul>
-        	</div>
-        <div>
-        <h3>Continuing Studies</h3>
-        <ul class="unstyled">
-			<li><a href="#">Our programs</a></li>
-        	<li><a href="#">Courses</a></li>
-        	<li><button class="btn"><a href="#">Apply now</a></button></li></ul><
-        	/div>
-        <div>
-        <h3>Open Studies</h3>
-        <ul class="unstyled">
-        	<li><a href="#">Learn more</a></li>
-        	<li><button class="btn"><a href="#">Apply now</a></button></button></li></ul>
-        </div>
-        
-       -->
-      
-  <!-- End backup area -->
-  
-  </div>
+      </div>
       
       <div class="span5 secondary-content-area clearfix">
         <div class="secondary-row">
-       
-          <div class="module-container"><h3>Study Here</h3>
-          <!-- Video -->
-         <div class="video-mod-container">
-         <iframe width="560" height="315" src="http://www.youtube.com/embed/cBgIkhinRww?rel=0" frameborder="0" allowfullscreen></iframe>
-         	           </div>
-          <p>UAlberta is a Top 5 Canadian university and one of the Top 100 in the world, home to more than 200 undergraduate programs, 170 undergraduate programs and 400 active student groups.</p></div>
+          <p>secondary column</p>
         </div>
-        
-      
-        <div class="module-container"><h3>Quick Links</h3>
-        	<ul class="unstyled">
-        		<li><a href="#">University Calendar</a></li>
-        		<li><a href="#">Costs, Tuition, Fees</a></li>
-        		<li><a href="#">Registrar</a></li>
-        		</ul>
-        </div>
-        
-        </div>
- 
+      </div> 
       
       <div class="span2 sidebar"> <!-- Sidebar Start -->
-         <button class="btn"><a href="#">Contact Us</a></button>
-         
-         <div class="extrude links-module">
-         <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
-           <i class="icon-star"></i> [Upcoming admissions module]
-         </h5>
-         <p>Lorem ipsum text text text more text text text text</p>
-         <div class="sidebar-content links">
-           <ul>
-             <li><a href="#">Link</a></li>
-             <li><a href="#">Link</a></li>
-             <li><a href="#">Link</a></li>
-             <li><a href="#">Link</a></li>
-           </ul>
-         </div>
-         
+          <p>sidebar</p>
       </div> <!-- Sidebar End -->
       
     </div> <!-- Second Row End -->
@@ -344,10 +259,70 @@
   </footer> <!-- Footer End -->
  
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="../institutional-framework-pages/js/bootstrap.min.js"></script>
+  <script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
+  <script>
+      (function($) {
+        $(document).ready(function() {
+        
+          // add active class to link category when clicked.
+          $('.link-mod-category > h4, .link-mod-category input').click(function() {
+            $('.link-mod-category').removeClass('link-mod-active');
+            $(this).parent().addClass('link-mod-active');
+            return false;
+          });
+          
+          // populate results with all links by default
+          $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+          $('.searchable a').each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+          $('.link-mod-result-none').hide();
+        
+          // live search plugin initialization        
+          $('#link-mod-filter-field').search('.searchable a', function(on) {
+          
+            // this happens on any keydown, keyup, keypress, or blur event
+            on.all(function(results) {
+              var size = results ? results.size() : 0
+              $('.link-mod-result-title h4').html(
+                'Displaying '+size+
+                ' matches for &quot;'+$('#link-mod-filter-field').val()+
+                '&quot'
+              );
+            });
+
+            // this happens when the filter field has nothing entered
+            on.reset(function() {
+              $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+              $('.link-mod-result-item').remove();
+              $('.searchable a').each(function() {
+                $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+              });
+              $('.link-mod-result-none').hide();
+            });
+
+            // this happens when there are no results base on the query
+            on.empty(function() {
+              $('.link-mod-result-none').show();
+              $('.link-mod-result-item').remove();
+            });
+
+            // this happens when there are results
+            on.results(function(results) {
+              $('.link-mod-result-none').hide();
+              $('.link-mod-result-item').remove();
+              results.each(function() {
+                $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+              });
+            });
+          });
+        });
+      })(jQuery);
+  </script>
   <!-- end scripts -->
 
 </body>
