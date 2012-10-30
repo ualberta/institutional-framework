@@ -5837,7 +5837,7 @@ ul.footer-quick-links li a {
 
 .link-mod-container {
   position: relative;
-  min-height: 380px;
+  min-height: 420px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -5903,8 +5903,8 @@ ul.footer-quick-links li a {
   left: 222px;
   display: none;
   width: 357px;
-  height: 380px;
-  min-height: 380px;
+  height: 420px;
+  min-height: 420px;
   padding: 0;
   margin: 0;
   margin-left: -1px;
