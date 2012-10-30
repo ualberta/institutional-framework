@@ -4807,6 +4807,10 @@ ul.icons li .icon-large:before {
   font-weight: 500;
 }
 
+.sidebar-title a:hover {
+  text-decoration: none;
+}
+
 .primary-content-area > h3,
 .secondary-content-area > h3 {
   border-bottom: 1px solid #ccc;
@@ -5281,7 +5285,7 @@ ul.quick-links-container li {
 /** content.less - basic content pieces **/
 
 h2.page-title {
-  margin: 20px 0 0 0;
+  margin: 20px 0 5px 0;
   font-size: 22px;
   line-height: 1.1em;
   border-bottom: 1px solid rgba(0, 30, 0, 0.2);
@@ -5837,7 +5841,7 @@ ul.footer-quick-links li a {
 
 .link-mod-container {
   position: relative;
-  min-height: 420px;
+  min-height: 400px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -5903,8 +5907,8 @@ ul.footer-quick-links li a {
   left: 222px;
   display: none;
   width: 357px;
-  height: 420px;
-  min-height: 420px;
+  height: 400px;
+  min-height: 400px;
   padding: 0;
   margin: 0;
   margin-left: -1px;
@@ -7048,6 +7052,11 @@ div.featured-news {
   margin-bottom: 1.5em;
 }
 
+.admissions .sidebar .deadlines ul li li {
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+
 .grey-box {
   padding: 10px 20px;
   margin: 10px 0;
@@ -7104,19 +7113,33 @@ div.featured-news {
   text-shadow: none;
 }
 
-.facultyandstaff .secondary-content-area ul li {
-  position: static;
-  padding: 0;
-  margin-bottom: 0;
-  border: none;
+.linklist li {
+  margin-bottom: 0.5em;
+  line-height: 1.3em;
 }
 
-.facultyandstaff .secondary-content-area a.btn {
+.facultyandstaff .content-inner {
+  position: relative;
+}
+
+.facultyandstaff .content-inner .fma-caption {
   position: absolute;
-  top: 0.7em;
-  right: 0.7em;
+  bottom: 15px;
+  left: 0;
+  padding: 1em;
   font-size: 0.9em;
-  font-weight: bold;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.facultyandstaff .content-inner .fma-caption li {
+  margin-bottom: 0.5em;
+  line-height: 1.3em;
+}
+
+.facultyandstaff .secondary-content-area li {
+  margin-bottom: 0.5em;
+  line-height: 1.3em;
 }
 
 .facultyandstaff .sidebar button {
@@ -7124,19 +7147,30 @@ div.featured-news {
   margin-bottom: 1.5em;
 }
 
+.campuslife .content-inner {
+  position: relative;
+}
+
+.campuslife .content-inner .fma-caption {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  padding: 1em;
+  font-size: 0.9em;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.campuslife .content-inner .fma-caption li {
+  margin-bottom: 0.5em;
+  line-height: 1.3em;
+}
+
 .campuslife .secondary-content-area ul li {
   position: static;
   padding: 0;
   margin-bottom: 0;
   border: none;
-}
-
-.campuslife .secondary-content-area a.btn {
-  position: absolute;
-  top: 0.7em;
-  right: 0.7em;
-  font-size: 0.9em;
-  font-weight: bold;
 }
 
 .campuslife .sidebar button {
