@@ -1,3 +1,13 @@
+
+/** content.less - basic content pieces **/
+
+h2.page-title {
+    font-size: 22px;
+    line-height: 1.1em;
+    border-bottom: 1px solid rgba(0, 30, 0, 0.2);
+    margin: 20px 0 0px 0;
+}
+
 body {
   background: #f6f6f6 url(../img/framework-bg.png) repeat top left;
 }
@@ -73,10 +83,51 @@ hr.module-separator {
 }
 
 .content-inner {
+  padding:  20px 0px;
   hr.soften {
     margin: 0;
   }
   h3 {
     margin: 0 0 5px 0;
+  }
+}
+
+/** content.less - sidebar **/
+
+h5.sidebar-title {
+  line-height: 1.2em;
+  font-size:13px;
+  margin: -10px -10px 5px -10px;
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px solid #ddd;
+  font-family: "DIN Bold", sans-serif;
+  .border-radius(3px 3px 0 0);
+  #gradient > .vertical(#fff, #f0f0f0);
+  text-shadow: 1px 1px 0px #fff;
+  i {
+    float: right;
+  }
+  
+}
+
+.sidebar .extrude {
+  margin-bottom: 1.5em;
+  font-size: 12px;
+  padding: 10px 10px 6px 10px;
+}
+
+.sidebar div[class*='module'] {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 5px 0 3px 0;
+      border-bottom: 1px dotted #e0e0e0;
+      &:first-child {
+        padding: 0 0 3px 0;
+      }
+    }
+    
   }
 }

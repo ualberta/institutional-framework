@@ -14,7 +14,7 @@
 // Core variables and mixins
 @import "framework/variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "framework/mixins.less";
-@import "ualberta/fonts.less";
+@import "framework/fonts.less";
 
 // Grid system and page structure
 @import "framework/scaffolding.less";
@@ -23,7 +23,6 @@
 @import "framework/responsive.less";
 
 // Base CSS
-//@import "fonts.less";
 @import "framework/type.less";
 @import "framework/code.less";
 @import "framework/forms.less"; 
@@ -31,30 +30,36 @@
 @import "framework/font-awesome.less";
 //@import "component-animations.less";
 @import "framework/dropdowns.less";
+@import "framework/tabs.less";
+@import "framework/images.less";
 
-@import "ualberta/tabs.less";
-@import "ualberta/page.less";
+@import "framework/page-elements/base.less";
+@import "framework/page-elements/blade.less";
+@import "framework/page-elements/banner.less";
+@import "framework/page-elements/navigation.less";
+@import "framework/page-elements/content.less";
+@import "framework/page-elements/footer.less";
+
+@import "framework/modules/twitter.less";
+@import "framework/modules/image-callout.less";
+@import "framework/modules/link-bucket.less";
+@import "framework/modules/events.less";
+@import "framework/modules/news.less";
+@import "framework/modules/link-module.less";
+@import "framework/modules/video.less";
+@import "framework/modules/calendar-med-mod.less";
+@import "framework/modules/campus-maps.less";
+@import "framework/modules/fma-module.less";
+
+@import "framework/devices/mobile.less";
+@import "framework/devices/tablet.less";
+@import "framework/devices/desktop.less";
+@import "framework/devices/highres.less";
+
+// UAlberta Institutional Less
 @import "ualberta/blade.less";
 @import "ualberta/banner.less";
-@import "ualberta/navigation.less";
-@import "ualberta/content.less";
-@import "ualberta/sidebar.less";
-@import "ualberta/images.less";
-@import "ualberta/footer.less";
 
-
-@import "ualberta/modules/twitter.less";
-@import "ualberta/modules/image-callout.less";
-@import "ualberta/modules/link-bucket.less";
-@import "ualberta/modules/events.less";
-@import "ualberta/modules/news.less";
-@import "ualberta/modules/link-module.less";
-@import "ualberta/modules/video.less";
-@import "ualberta/modules/calendar-med-mod.less";
-@import "ualberta/modules/campus-maps.less";
-@import "ualberta/modules/fma-module.less";
-
-@import "ualberta/pages/base.less";
 @import "ualberta/pages/homepage.less";
 @import "ualberta/pages/why-ualberta.less";
 @import "ualberta/pages/prospective-students.less";
@@ -64,11 +69,7 @@
 @import "ualberta/pages/faculty-and-staff.less";
 @import "ualberta/pages/campus-life.less";
 
-
-@import "ualberta/devices/mobile.less";
 @import "ualberta/devices/tablet.less";
-@import "ualberta/devices/desktop.less";
-@import "ualberta/devices/highres.less";
 
 // Utility classes
 @import "framework/utilities.less"; // Has to be last to override when necessary
