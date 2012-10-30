@@ -11,11 +11,13 @@
     position: relative;
     height: 322px;
     overflow: hidden;
-    margin-right: @fmaSpacing;
+    margin: -1px @fmaSpacing 0px 0;
     width: @fmaInactiveWidth;
     .transition(all 0.3s ease);
     cursor: pointer;
     .opacity(50);
+    #gradient > .directional(rgba(0,100,250,0.35), rgba(205,205,125,0.5), -45deg);
+    .box-shadow(inset 0px 0px 15px rgba(0,0,0,0.25));
     &:hover {
       .opacity(100);
     }
@@ -38,8 +40,7 @@
     margin-right: 0px;
   }
   .fma-slide:nth-child(1) {
-    #gradient > .directional(darken(@linkColor,10%), lighten(@linkColor, 5%), -45deg);
-    .box-shadow(inset 0px 0px 30px rgba(0,0,0,0.35));
+    
     font-family:  Din Bold;
     p {
       color: #ffdb05;
@@ -51,8 +52,7 @@
     }
   }
   .fma-slide:nth-child(2) {
-    #gradient > .directional(desaturate(@linkColor,80%), desaturate(@linkColor, 5%), 45deg);
-    .box-shadow(inset 0px 0px 30px rgba(0,0,0,0.35));
+
   }
 }
 
@@ -74,10 +74,44 @@
       float: left;
       width: 33.333333333%;
       a {
+        font-size: 14px;
+        font-family: 'DIN Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         display: block;
         border-left: 1px solid #fff;
         border-right: 1px solid #ccc;
         padding: 10px;
+        &:hover {
+          #gradient > .vertical(#fff,#FFF5B8);
+          text-decoration: none;
+        }
+      }
+      &.fma-button-active {
+        position: relative;
+        a {
+          //#gradient > .vertical(darken(#44524A, 8%), #44524A);
+          #gradient > .vertical(#007C41,#00502A);
+          color: #fff;
+          border-left-color: #44524a;
+          margin-left: -1px;
+          margin-bottom: -1px;
+          padding-left: 11px;
+          border-bottom: 1px solid #44524a;
+          border-right-color: #44524a;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 0;
+          top: -15px;
+          right: 50%;
+          bottom: auto;
+          left: auto;
+          margin-right: -15px;
+          border-width: 0 15px 15px;
+          border-color: #007C41 transparent;
+          border-style: solid;
+        }
       }
     }
   }

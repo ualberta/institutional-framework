@@ -279,9 +279,12 @@
         $(document).ready(function() {
         
         
-          $('.fma-slide').click( function() {
+          $('.fma-slide, .fma-tabs li').click(function() {
             $('.fma-slide').removeClass('fma-active');
-            $(this).addClass('fma-active');
+            $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
+            $('.fma-tabs li').removeClass('fma-button-active');
+            $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
+            return false;
           });
         
           // add active class to link category when clicked.
