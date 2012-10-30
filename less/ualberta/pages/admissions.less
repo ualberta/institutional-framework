@@ -1,13 +1,12 @@
 .admissions {
 	.primary-content-area {
-
 		ul li {
 			background-color: @white;
 			margin-bottom: 1em;
 			padding: 0.7em;
 			position: relative;
 			border: @grayLighter 1px solid;
-			.border-radius(10px);
+			.border-radius(5px);
 			li {
 				padding: 0;
 				position: static;
@@ -16,22 +15,26 @@
 				}
 		}
 		
-		button {
+		a.btn {
 			font-size: 0.9em;
 			font-weight: bold;
 			position: absolute;
 			top: 0.7em;
 			right: 0.7em;
+			display: inline-block;
+			border: @grayLighter 1px solid;
+			.border-radius(5px);
+			padding: 5px;
 		}
-		
 	}
 	
 	.secondary-content-area {
 	}
 	
 	.sidebar {
-		button {
+		a.btn-large {
 			margin-bottom: 1.5em;
+			width: 100%;
 		}
 	}
 }

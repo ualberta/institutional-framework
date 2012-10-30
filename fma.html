@@ -141,24 +141,33 @@
     </div>
   </div>
   
-  <div class="content-top-row">
+  <div class="content-top-row" style="padding:0; margin-top:5px;">
     <div class="content-container container"> <!-- Container Start -->
-      <div class="content-inner row-fluid">
-        <div class="span12 feature-area"> <!-- FMA Start -->
-            <div class="fma-container">
-              <div class="fma-slide fma-first fma-active">
-                <p>Slide one</p>
-              </div>
-              <div class="fma-slide">
-                <p>Slide two</p>
-              </div>
-              <div class="fma-slide fma-last">
-                <p>Slide three</p>
-              </div>
-            </div>
-        </div> <!-- FMA End -->
+      <div class="content-inner row-fluid" style="padding:0;">
+        <div class="fma-container">
+          <div class="fma-slide fma-first fma-active">
+            <p>Slide one</p>
+          </div>
+          <div class="fma-slide fma-inactive">
+            <p>Slide two</p>
+          </div>
+          <div class="fma-slide fma-inactive fma-image fma-last">
+            <p>Slide three</p>
+            <img class="fma-background" src="http://ualberta.ca/~publicas/uofa/img/features/feature-thrun.jpg">
+          </div>
+        </div>
       </div> 
     </div> <!-- End Top Row -->
+    
+    <div class="fma-tabs-container">
+      <div class="container">
+        <ul class="fma-tabs row-fluid">
+          <li class="fma-button-active"><a href="#">Slide One</a></li>
+          <li><a href="#">Slide Two</a></li>
+          <li><a href="#">Slide Three</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
   
   <div class="content-container container">
@@ -267,6 +276,15 @@
   <script>
       (function($) {
         $(document).ready(function() {
+        
+        
+          $('.fma-slide, .fma-tabs li').click(function() {
+            $('.fma-slide').removeClass('fma-active');
+            $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
+            $('.fma-tabs li').removeClass('fma-button-active');
+            $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
+            return false;
+          });
         
           // add active class to link category when clicked.
           $('.link-mod-category > h4, .link-mod-category input').click(function() {
