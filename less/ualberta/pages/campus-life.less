@@ -1,15 +1,22 @@
+.linklist {
+	li {
+		margin-bottom: 0.5em;
+		line-height: 135%;
+	}
+}
+
 .campuslife {
 	.content-inner {
 		position: relative;
 		.fma-caption {
-			background-color: #fff;
 			position: absolute;
 			bottom: 15px;
 			left: 0;
-			padding: 1em;
-			opacity: 0.8;
 			.linklist;
 			font-size: 0.9em;
+			.btn .icon-large:before {
+				width: auto;
+			}
 		}
 	}
 	.secondary-content-area {
@@ -18,13 +25,53 @@
 				position: static;
 				border: none;
 				margin-bottom: 0;
-			}
+		}
 	}
 	.sidebar {
+		h5.sidebar-title {
+		    line-height: 1.2em;
+		    margin: -10px -10px 0 -10px;
+		}
 		button {
 			margin-bottom: 1.5em;
 			width: 100%;
 		}	
+		.links-module {
+			line-height: 150%;
+		}
+		.links ul li a {
+			line-height: 135%;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+		.links ul li a:hover {
+			background-image: linear-gradient(to bottom, #fff5bb, #ffffff);
+		}
+		.date {
+			line-height: 1em;
+			margin-bottom: 0.5em;
+			margin-top: 0.5em;
+			font-size: 0.9em;
+			color: #000;
+		}
+		.footer {
+			background-image: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
+			 background-repeat: repeat-x;
+			 border-bottom: 1px solid #DDDDDD;
+			 border-top: 1px solid #DDDDDD;
+			 border-radius: 0 0 3px 3px;
+			 line-height: 100%;
+			 margin: 0 -10px -10px -10px;
+			 padding: 10px;
+			 text-shadow: 1px 1px 0 #FFFFFF;
+			 font-size: 0.9em;
+		}
+		.giving {
+			h5 {
+				margin-bottom: 1em;
+			}
+			padding-bottom: 1em;
+		}
 	}
 }
 
