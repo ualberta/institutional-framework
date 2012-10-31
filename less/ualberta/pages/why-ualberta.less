@@ -1,11 +1,117 @@
 .content-top-row {
   background-image: url('../img/test-bg.png');
-  background-position: bottom left;
+  background-position: 0px 100px;
   background-repeat: repeat-x;
   .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
   border-bottom: 1px solid rgba(0, 50, 25, 0.35);
   border-top: 1px solid rgba(0, 50, 25, 0.25);
   background-color: rgba(255, 200, 10, 0.1);
+  .transition(all 5s ease-out);
+}
+
+.content-top-row.start {
+  background-position: -150px 250px;
 }
 
 
+.fma-container {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: visible;
+  .ualberta-minute {
+    .transition(all 1s ease);
+    height: 300px;
+    .circle {
+      position: absolute;
+      left:  20px;
+      top:  20px;
+      width:  12em; 
+      height:12em; 
+      .border-radius(500px); 
+      text-align: center; 
+      font-family: DIN Bold; 
+      color: #fff; 
+      padding-top: 4em; 
+      font-size:  1em; 
+      line-height: 1.4em;
+      #gradient > .directional(lighten(@linkColor,10%), @linkColor, -45deg);
+      .box-shadow(0px 1px 6px rgba(0,0,0,0.25));
+      .opacity(90);
+      text-transform: uppercase;
+      .transition(all 1s ease);
+      span {
+       display: block;
+       line-height: 1em;
+      }
+    }
+    .circle.student-groups {
+      left: 42%;
+      margin-left: -6em;
+      top:  80px;
+      .transition(all 2s ease 1s);
+    }
+    .circle.fellowships {
+      left: 20%;
+      margin-left: -6em;
+      padding-top: 3.25em;
+      font-size: 1.7em;
+      top: 60px;
+      .transition(all 3s ease);
+    }
+    .circle.funding {
+      left: 60%;
+      margin-left: -6em;
+      padding-top: 2.75em;
+      font-size: 0.8em;
+      .transition(all 1.5s ease 2s);
+    }
+    .circle.alumni {
+      left: 80%;
+      top: 60px;
+      margin-left: -6em;
+      padding-top: 3.25em;
+      font-size: 1.2em;
+      .transition(all 3s ease 1.5s);
+    }
+    .circle.subtle {
+      left: 55%;
+      top: 150px;
+      width: 5em;
+      height: 5em;
+      margin-left: -3em;
+      font-size: 0.8em;
+      padding-top: 2em;
+      #gradient > .directional(rgba(255,255,255,1), rgba(255,255,255,0.5), 45deg);
+      color:@linkColor;
+      .transition(all 2s ease 3s);
+      .opacity(50);
+      i { font-size: 2.5em; }
+    }
+    .hover-box {
+      position: absolute;
+      z-index: 100;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 0px;
+      overflow: hidden;
+      #translucent > .background(#000, 0.8);
+      .box-shadow(inset 0px 0px 80px #000);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      .transition(height 0.5s ease-in-out);
+      button { position: relative; top: 47%; }
+    }
+    &:hover {
+      .hover-box {
+        height: 300px;
+      }
+    }
+  }
+  .ualberta-minute.start {
+    .circle {
+      top: 310px;
+    }
+  }
+}
