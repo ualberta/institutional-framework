@@ -1,296 +1,40 @@
-@media (min-width: 690px) and (max-width: 979px) {
-  .banner-inner h1 {
-    font-size: 28px;
-  }
-}
-
-// Up to 979px
-@media (max-width: 979px) {
-  .blade-inner, .container {
-    width:  auto;
-    padding: 0px 10px;
-  }
-  
-  .container {
-    
-  }
-  
-  
-  ul.quick-links {
-    .dropdown-menu;
-  
-    li {
-      display: block;
-      text-align: left;
-      
-      a {
-        color:  #fff;
-        border-bottom: 1px solid rgba(0,0,0,0.15);
-        border-right: 1px solid rgba(0,0,0,0.05);
-        border-left: 1px solid rgba(255,255,255,0.05);
-        border-top: 1px solid rgba(255,255,255,0.15);
-        padding: 10px;
-        display: block;
-        
-        &:hover {
-          background: rgba(0,0,0,0.25);
-          #gradient > .vertical(darken(@grayDark, 3%), @grayDark);
-          text-decoration: none;
-          border-top-color: darken(@grayDark, 4%);
-          color:  #ffdb05;
-        }
-      }
-    }
-    
-  }
-  
-  
-  // Open state for the dropdown
-  // ---------------------------
-  .open {
-    // IE7's z-index only goes to the nearest positioned ancestor, which would
-    // make the menu appear below buttons that appeared later on the page
-    *z-index: @zindexDropdown;
-  
-    & > ul.quick-links {
-      display: block;
-    }
-  }
-  
-  .banner-inner {
-    width:  auto;
-    padding: 0px 10px;
-  }
-
-}
-
-// At least 690px
-// Pieces:
-//  - Switch to horizontal main navigation
-//  - Quick Links text button w/ dropdown
-//  - Main Navigation big menus
-//  - Banner font size 
-@media (min-width: 690px) {
-
-  .navigation-inner {
-    width:  auto;
-    padding: 0px;
-  }
-  
-  .navigation-inner ul li {
-    display:  inline-block;
-    position: relative;
-    a {
-      display:  inline-block;
-      padding:  12px 20px 8px 20px;
-      border-left: 1px solid rgba(255,255,255,0.65);
-      border-right: 1px solid rgba(0,0,0,0.1);
-      margin-right: -4px;
-      
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-  .navigation-inner ul.main-navigation > li:hover > a {
-    background: rgba(0,30,0,0.1);
-    .box-shadow(inset 0px 1px 6px rgba(0,0,0,0.25));
-    border-top: 1px solid rgba(0,0,0,0.25);
-    border-left-color: rgba(0,0,0,0.15);
-    padding-top: 11px;
-    color: @grayDark;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.65);
-  }
-  
-  .navigation-inner ul li .navigation-toggle {
-    display: none;
-  }
-  
-  .navigation-inner .main-navigation > li .sub-menu {
-    display: block;
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-  }
-  
-  .navigation-inner .main-navigation > li:hover .sub-menu {
-    display: block;
-    visibility: visible;
-    width:  600px;
-    height: auto;
-    .opacity(100);
-  }
-  
-  .navigation-inner .sub-menu {
-    position: absolute;
-    top: 39px;
-    left: -1px;
-    z-index: 100;
-    width:  600px;
-    background: #ccc;
-    .border-radius(0px 0px 4px 4px);
-    padding: 10px;
-    #gradient > .vertical-three-colors(#fbfbfb, #ffffff, 33%, #E7EDE7);
-    .box-shadow(inset 0px 0px 5px #aabaaa, 0px 1px 10px rgba(0,0,0,0.15));
-    border: 1px solid #ccd6cc;
-    border-bottom: 2px solid #bbcbbb;
-    border-top: 1px solid #acb1af;
-    .transition(opacity 0.2s linear);
-    .opacity(0);
-  }
-  
-  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu {
-    right: -500px;
-    left: auto;
-  }
-  
-  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
-    right: -250px;
-    left: auto;
-    width: 400px;
-    & .section-navigation {
-      width: 96%;
-    }
-  }
-  
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu {
-    right: -300px;
-    left: auto;
-  }
-  
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu {
-    right: -100px;
-    left: auto;
-  }
-  
-  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
-    right: -5px;
-    left: auto;
-  }
-  
-  .navigation-inner .sub-menu ul,
-  .navigation-inner .sub-menu ul li,
-  .navigation-inner .sub-menu ul li a {
-    display: block;
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navigation-inner .sub-menu .section-title {
-    font-weight: bold;
-    font-size:  14px;
-    border-bottom: 1px dotted @grayDark;
-    line-height:  1em;
-    margin: 0 0 4px 0;
-    padding: 5px 0px;
-    text-shadow:  none;
-  }
-  
-  .navigation-inner .sub-menu .section-navigation,
-  .navigation-inner .sub-menu .section-description {
-    display: inline-block;
-    vertical-align: top;
-    width: 47%;
-  }
-  
-  .navigation-inner .sub-menu .section-navigation {
-    margin-right:2%;
-  }
-  
-  .navigation-inner .sub-menu .section-description {
-    padding: 4px 0 2px 2%;
-    margin-top: -3px;
-    border-left: 1px dotted @grayDark;
-  }
-
-  .navigation-inner .sub-menu ul li a {
-    font-family: sans-serif;
-    text-transform: none;
-    border: none;
-    padding: 4px 0px;
-    color: @linkColor;
-    line-height: 1.2em;
-    
-    &:hover {
-      padding-left:10px;
-      margin-left: -11px;
-      #gradient > .horizontal(rgba(255,219,5,0.65), rgba(255,219,5,0));
-      border-left: 1px solid darken(#ffdb05,3%);
-      text-shadow: none;
-    }
-  }
-  
-  .main-navigation.collapse {
-    display:block;
-    height: auto!important;
-    overflow: visible!important;
-  }
-  
-  .sidebar-content.collapse {
-    display: block;
-    height: auto!important;
-    overflow: visible!important;
-  }
-  
-}
-
 // Between 690px and 979px
 // targets tablet portrait only
 @media (min-width: 690px) and (max-width: 979px) {
 
-
-nav.audience-navigation {
-  right: 10px;
-  bottom:  10px;
-  width: 400px;
-  ul li {
-    width: 44%;
-    text-align: right;
-    margin-bottom:  7px;
-  }
-  ul li:nth-child(3) {
-    clear:left;
-  }
-}
-
-.navigation-inner>ul>li:first-child {
-  display: block;
-}
-
-.navigation-inner ul li ul li {
-  
-  padding: 0 0.725% 0 0.725%;
-  text-align: center;
-  margin-right: -4px;  
-  a {
-    padding:  12px 6px 8px 6px;
-    border: 0;
-    margin-left:  -10px;
-    margin-right: -10px;
-  }
-  
-  &:nth-child(1) {
-   // padding-left: 10px;
-    width: 6.2%;
-  }
-  &:nth-child(2) {
-    width: 11.2%;
-  }
-  &:nth-child(3) {
-    width: 11.2%;
-  }
-  &:nth-child(4) {
-    width: 12.2%;
-  }
-  &:nth-child(5) {
-    width: 24.5%;
-  }
-  &:nth-child(6) {
-    width: 25.5%;
+  .navigation-inner ul li ul.main-navigation li {
+    
+    padding: 0 0.725% 0 0.725%;
+    text-align: center;
+    margin-right: -4px;  
+    a {
+      border: 0;
+      margin-left:  -10px;
+      margin-right: -10px;
+    }
+    
+    &:nth-child(1) {
+     // padding-left: 10px;
+      width: 6.2%;
+    }
+    &:nth-child(2) {
+      width: 11.2%;
+    }
+    &:nth-child(3) {
+      width: 11.2%;
+    }
+    &:nth-child(4) {
+      width: 12.2%;
+    }
+    &:nth-child(5) {
+      width: 23.9%;
+    }
+    &:nth-child(6) {
+      width: 26.8%;
+    }
   }
 }
-  
+
+.navigation-inner .sub-menu ul li a {
+	padding:4px 0px;
 }

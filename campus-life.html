@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
   <!-- The Title -->
-  <title>Framework Prototype</title>
+  <title>Campus Life</title>
   
   <!-- The Other Meta -->
   <meta name="description" content="University of Alberta">
@@ -146,14 +146,46 @@
 <!-- Container for Admissions page -->
 <div class="campuslife">
 
-  <div class="content-top-row">
+
+  <div class="content-top-row" style="padding:0; margin-top:5px;">
     <div class="content-container container"> <!-- Container Start -->
-      <div class="content-inner row-fluid">
-        <div class="span6 feature-area"> <!-- FMA Start -->
-              <p>FMA Area</p>
-        </div> <!-- FMA End -->
+      <div class="content-inner row-fluid" style="padding:0;">
+      <!-- FMA -->
+        <div class="fma-container">
+          <div class="fma-slide fma-first fma-active">
+            <p>Slide one</p>
+          </div>
+          <div class="fma-slide fma-inactive">
+            <p>Slide two</p>
+          </div>
+          <div class="fma-slide fma-inactive fma-image fma-last">
+            <p>Slide three</p>
+            <img class="fma-background" src="http://ualberta.ca/~publicas/uofa/img/features/feature-thrun.jpg">
+          </div>
+        </div>
+        
+        <!-- See it for yourself -->
+        <div class="module-container fma-caption span3 extrude">
+          <h3>See it for yourself</h3>
+          <ul class="unstyled linklist">
+            <li><a href="#" class="btn">Take a virtual tour of our campuses</a></li>
+            <li><a href="#" class="btn">Explore our campus maps</a></li>
+          </ul>
+        </div>
+        
       </div> 
     </div> <!-- End Top Row -->
+    
+    <div class="fma-tabs-container">
+    <div class="container">
+        <ul class="fma-tabs row-fluid">
+          <li class="fma-button-active"><a href="#">Slide One</a></li>
+          <li><a href="#">Slide Two</a></li>
+          <li><a href="#">Slide Three</a></li>
+        </ul>
+    </div>
+    </div>
+    
   </div>
   
   <div class="content-container container">
@@ -238,16 +270,16 @@
             <iframe width="560" height="315" src="http://www.youtube.com/embed/cBgIkhinRww?rel=0" frameborder="0" allowfullscreen></iframe>
           </div>
           <p>Learn about our programs, find out what you need to apply, and get started with our step-by-step application guides.</p>
-          <a href="#">Apply Now</a>
+          <a href="#" class="btn">Apply Now</a>
         </div>
         <div class="module-container">
           <h3>Work Here</h3>
           <!-- Video -->
           <div class="video-mod-container">
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/cBgIkhinRww?rel=0" frameborder="0" allowfullscreen></iframe>
-          </div>
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/tWHu8wdcejg" frameborder="0" allowfullscreen></iframe>
+           </div>
           <p>Join a dynamic team of 11,000 unique individuals whose collective knowledge, talent, and skills are building one of the world's great universities for the public good.</p>
-          <a href="#">Browse Job Opportunities</a>
+          <a href="#" class="btn">Browse Job Opportunities</a>
         </div>
         
       </div>

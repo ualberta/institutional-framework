@@ -12,7 +12,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 <!-- The Title -->
-<title>Framework Prototype</title>
+<title>Faculty and Staff</title>
 
 <!-- The Other Meta -->
 <meta name="description" content="University of Alberta">
@@ -128,16 +128,48 @@
   
   <!-- Container for Admissions page -->
   <div class="facultyandstaff">
-    <div class="content-top-row">
+  
+  
+    <div class="content-top-row" style="padding:0; margin-top:5px;">
       <div class="content-container container"> <!-- Container Start -->
-        <div class="content-inner row-fluid">
-          <div class="span6 feature-area"> <!-- FMA Start -->
-            <p>top row</p>
+        <div class="content-inner row-fluid" style="padding:0;">
+          <!-- FMA -->
+          <div class="fma-container">
+            <div class="fma-slide fma-first fma-active">
+              <p>Slide one</p>
+            </div>
+            <div class="fma-slide fma-inactive">
+              <p>Slide two</p>
+            </div>
+            <div class="fma-slide fma-inactive fma-image fma-last">
+              <p>Slide three</p>
+              <img class="fma-background" src="http://ualberta.ca/~publicas/uofa/img/features/feature-thrun.jpg">
+            </div>
           </div>
-          <!-- FMA End --> 
-        </div>
+          
+          <!-- Keep in touch -->
+          <div class="module-container fma-caption span3 extrude">
+            <h3>Campus Notices</h3>
+            <ul class="unstyled linklist">
+              <li><a href="#">Campus Maps 2.0 launched</a></li>
+              <li><a href="#">Grad School Expo 2012 Oct. 17</a></li>
+              <li><a href="#">Blog encourages a greener, more sustainable campus</a></li>
+            </ul>
+            <p>[social media icons]</p>
+          </div>
+        </div> 
+      </div> <!-- End Top Row -->
+      
+      <div class="fma-tabs-container">
+      <div class="container">
+          <ul class="fma-tabs row-fluid">
+            <li class="fma-button-active"><a href="#">Slide One</a></li>
+            <li><a href="#">Slide Two</a></li>
+            <li><a href="#">Slide Three</a></li>
+          </ul>
       </div>
-      <!-- End Top Row --> 
+      </div>
+      
     </div>
     <div class="content-container container">
       <div class="content-inner row-fluid"> <!-- Second Row Start -->
@@ -225,20 +257,13 @@
                 <button type="submit" class="btn"><i class="icon-arrow-right"></i></button>
               </form>
             </div>
-            <div class="module-container">
-              <h3>Campus Notices</h3>
-              <ul class="unstyled">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-              </ul>
-            </div>
+            
             <div class="module-container">
               <h3>Subscribe to Daily News [rss icon]</h3>
-              <ul class="unstyled">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+              <ul class="unstyled linklist">
+                <li><a href="#">Research harnessing viruses to fight cancer</a></li>
+                <li><a href="#">Conference centre achieves green standard</a></li>
+                <li><a href="#">Preventing premature births worldwide</a></li>
               </ul>
               <form class="well form-search">
                 <input type="text" class="input-large search-query" placeholder="Enter email address">
@@ -248,24 +273,11 @@
           </div>
         </div>
         <div class="span2 sidebar"> <!-- Sidebar Start -->
-          <div class="extrude links-module">
+          <div class="extrude links-module giving">
             <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <i class="icon-gift icon-large"></i>Make a Gift</h5>
             <p>Your support provides scholarships and bursaries to students to help attract world-class talent, researchers, teachers and top students. Propel UAlberta to a whole new level.</p>
-            <a href="#">Give to the U of A</a>
+            <a href="#" class="btn">Give to the U of A</a>
           </div>
-            <div class="extrude links-module">
-              <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <i class="icon-twitter icon-large"></i>Twitter</h5>
-              <div class="sidebar-content links">
-                <ul>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <a href="#" class="icon-twitter icon-small">Follow @ualberta</a>
-              [icons for social media]
-            </div>
         </div>
         <!-- Sidebar End --> 
         
