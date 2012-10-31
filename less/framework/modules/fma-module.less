@@ -83,14 +83,15 @@
         position: relative;
         a {
           //#gradient > .vertical(darken(#44524A, 8%), #44524A);
-          #gradient > .vertical(#007C41,#00502A);
-          color: #fff;
-          border-left-color: #44524a;
+          //#gradient > .vertical(#007C41,#00502A);
+          #gradient > .vertical(#fff,#FFF5B8);
+          color: #007c41;
+          border-left-color: darken(desaturate(#FFF5B8,50%),10%);
           margin-left: -1px;
           margin-bottom: -1px;
           padding-left: 11px;
-          border-bottom: 1px solid #44524a;
-          border-right-color: #44524a;
+          border-bottom: 1px solid darken(desaturate(#FFF5B8,50%),10%);
+          border-right-color: darken(#FFF5B8,15%);
         }
         &:after {
           content: "";
@@ -103,7 +104,7 @@
           left: auto;
           margin-right: -15px;
           border-width: 0 15px 15px;
-          border-color: #007C41 transparent;
+          border-color: #fff transparent;
           border-style: solid;
         }
       }
