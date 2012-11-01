@@ -1,0 +1,61 @@
+@highRes_RowWidth_third:           @gridRowWidth1200;
+@highRes_PriColWidth_third:        940px;
+@highRes_InthisSectionWidth:       170px;
+@highRes_MainContentAreaWidth: 715px;
+@highRes_PriColFluid_third:        percentage(@highRes_PriColWidth_third/@highRes_RowWidth_third);
+
+@desktop_RowWidth_third:           @gridRowWidth;
+@desktop_PriColWidth_third:        730px;
+@desktop_InthisSectionWidth:       170px;
+@desktop_MainContentAreaWidth:  500px;
+@desktop_MainContentFluid_third:        percentage(@desktop_MainContentAreaWidth/@desktop_RowWidth_third);
+@desktop_PriColFluid_third:        percentage(@desktop_PriColWidth_third/@desktop_RowWidth_third);
+
+@media (min-width: 1200px) {
+  
+  .row-fluid {
+    .third-primary-content-area {
+      width: @highRes_PriColFluid_third;
+    }
+ .inthissection{
+      width: @highRes_InthisSectionWidth;
+    }
+  .main-content-area{
+	  width: @highRes_MainContentAreaWidth;
+
+  }
+}
+}
+
+@media (min-width: 980px) {
+  .row-fluid {
+     .third-primary-content-area {
+        width: @desktop_PriColFluid_third;
+      }
+      .inthissection{
+      width: @desktop_InthisSectionWidth;
+    }
+
+
+  }
+ }
+ @media (min-width: 980px) and (max-width: 1199px) {
+ 
+     .main-content-area{
+	  width: @desktop_MainContentFluid_third;
+  }
+ 
+ }
+ @media (min-width: 690px) and (max-width: 979px) {
+
+  .row-fluid {
+      .inthissection{
+      width: @desktop_InthisSectionWidth;
+    }
+     .main-content-area{
+	  width: @desktop_MainContentAreaWidth;
+  }
+}
+  
+}
+
