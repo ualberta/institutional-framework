@@ -96,27 +96,40 @@
 			margin-bottom: 1.5em;
 			width: 100%;
 		}
-		.deadlines ul li li {
-			line-height: 150%;
-			margin-bottom: 0.5em;
+		.deadlines {
+			h5 {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+			h6 {
+				background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6);
+				display: block;
+				margin: 0 -10px;
+				padding: 0.4em 10px; 
+				border-top: #e0e0e0 1px solid;
+			}
 		}
 		.links-module {
 			line-height: 150%;
-		}
-		.links ul li a {
-			line-height: 135%;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-		}
-		.links ul li a:hover {
-			background-image: linear-gradient(to bottom, #fff5bb, #ffffff);
-		}
-		.date {
-			line-height: 1em;
-			margin-bottom: 0.5em;
-			margin-top: 0.5em;
-			font-size: 0.9em;
-			color: #000;
+			.links ul li ul {
+				li a {
+					line-height: 135%;
+					padding-top: 0.5em;
+					padding-bottom: 0.8em;
+					border-top: 1px dotted #E0E0E0;
+					border-color: auto;
+				}
+				li a:hover {
+					background-image: linear-gradient(to bottom, #fff5bb, #ffffff);
+					border-top: 1px solid #e0e0e0;
+				}
+				li:first-child a {
+					border-color: transparent; 
+				}
+				li:first-child a:hover {
+					border-top: 1px solid #e0e0e0;
+				}
+			}	
 		}
 	}
 }
