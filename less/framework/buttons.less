@@ -1,17 +1,39 @@
-.ualberta-minute button {
+button {
   #gradient > .vertical(#FFF5B8, #ffdb05);
-  padding: 22px 20px 18px 20px;
+  padding: 12px 20px 8px 20px;
   border: 1px solid #ffdb05;
-  border-bottom-color: darken(#ffdb05, 25%);
-  border-right-color: darken(#ffdb05, 20%);
+  border-bottom-color: darken(#ffdb05, 10%);
+  border-right-color: darken(#ffdb05, 5%);
   .border-radius(5px);
   color: #007c41;
   font-size: 1.2em;
   line-height: 1em;
   font-family: DIN Bold;
-  .box-shadow(inset 1px 1px 2px #fffec6, inset 0px -1px 4px darken(#ffdb05, 20%));
+  .box-shadow(inset 1px 1px 4px #fffec6);
   i {
     margin-right: 10px;
     margin-top: 1px;
+  }
+}
+
+button {
+  #gradient > .vertical(#FFDB05, #e1c310);
+  padding: 0.8em 1.5em 0.6em 1.5em; 
+  .border-radius(10px); 
+  font-family: "DIN Bold", Arial, sans-serif; 
+  text-decoration: none; 
+  font-weight:500;  
+  color: #007c41; 
+  text-shadow: 1px 1px 1px #fe9; 
+  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px #fe9, inset 0px -1px 3px #e1c310); 
+  text-align: center;
+  &:hover {
+    #gradient > .vertical(lighten(#FFDB05,10%), lighten(#e1c310,15%));
+  }
+  &:active {
+    #gradient > .vertical(#e1c310, #FFDB05);
+    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(#FFDB05,10%));
+    border: 1px solid darken(#FFDB05,10%);
+    text-shadow:  none;
   }
 }

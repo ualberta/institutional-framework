@@ -1,5 +1,5 @@
 .content-top-row {
-  background-image: url('../img/test-bg.png');
+  background-image: url('../img/whirl-bg.png');
   background-position: 0px 100px;
   background-repeat: repeat-x;
   .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
@@ -10,9 +10,8 @@
 }
 
 .content-top-row.start {
-  background-position: -150px 250px;
+  background-position: -600px 250px;
 }
-
 
 .fma-container {
   position: relative;
@@ -27,6 +26,7 @@
       top:  20px;
       width:  12em; 
       height:12em; 
+      z-index: 10;
       .border-radius(500px); 
       text-align: center; 
       font-family: DIN Bold; 
@@ -45,13 +45,13 @@
       }
     }
     .circle.student-groups {
-      left: 42%;
+      left: 44%;
       margin-left: -6em;
       top:  80px;
       .transition(all 2s ease 1s);
     }
     .circle.fellowships {
-      left: 20%;
+      left: 18%;
       margin-left: -6em;
       padding-top: 3.25em;
       font-size: 1.7em;
@@ -59,14 +59,14 @@
       .transition(all 3s ease);
     }
     .circle.funding {
-      left: 60%;
+      left: 61.5%;
       margin-left: -6em;
       padding-top: 2.75em;
       font-size: 0.8em;
       .transition(all 1.5s ease 2s);
     }
     .circle.alumni {
-      left: 80%;
+      left: 82.5%;
       top: 60px;
       margin-left: -6em;
       padding-top: 3.25em;
@@ -75,7 +75,7 @@
     }
     .circle.subtle {
       left: 55%;
-      top: 150px;
+      top: -11em;
       width: 5em;
       height: 5em;
       margin-left: -3em;
@@ -83,9 +83,58 @@
       padding-top: 2em;
       #gradient > .directional(rgba(255,255,255,1), rgba(255,255,255,0.5), 45deg);
       color:@linkColor;
-      .transition(all 2s ease 3s);
+      .transition(all 2.5s linear 0.5s);
       .opacity(50);
+      z-index: 1;
       i { font-size: 2.5em; }
+    }
+    
+    .circle.subtle.i2 {
+      left: 30%;
+      color: #007c41;
+      top: -60px;
+      .transition(all 2s linear 2s);
+    }
+    .icon-play-circle {
+      position: relative;
+      font-size: 15em;
+      color: white;
+      z-index: 101;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+      top: 100px;
+      .opacity(35);
+      display: block;
+    }
+    .ualberta-link {
+      display: block;
+      height: 300px;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 102;
+      .opacity(100);
+      .transition(all 0.75s ease 4.25s);
+      text-align: center;
+      span {
+        display: inline-block;
+        position: relative;
+        top: 46px;
+        z-index: 102;
+        background: #fff;
+        .border-radius(10px);
+        padding: 10px;
+        font-weight: bold;
+        .opacity(0);
+        .box-shadow(0px 1px 6px rgba(0,0,0,0.15));
+        .transition(all 0.75s ease 0s);
+      }
+      &:hover {
+        text-decoration: none;
+        span {
+          .opacity(100);
+        }
+      }
     }
     .hover-box {
       position: absolute;
@@ -107,11 +156,31 @@
       .hover-box {
         height: 300px;
       }
+      .icon-play-circle {
+        .opacity(100);
+        .transition(all 0.25s ease 0s);
+      }
     }
   }
   .ualberta-minute.start {
     .circle {
       top: 310px;
     }
+    .circle.subtle.i2 {
+      top: 310px;
+    }
+    .ualberta-link {
+      top: 310px;
+      .opacity(0);
+    }
+  }
+}
+
+@media (min-width: 690px) and (max-width: 979px) {
+  .ualberta-minute {
+    font-size: 0.9em;
+  }
+  .sidebar {
+    top: 405px;
   }
 }
