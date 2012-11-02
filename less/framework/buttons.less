@@ -1,22 +1,9 @@
-button {
-  #gradient > .vertical(#FFF5B8, #ffdb05);
-  padding: 12px 20px 8px 20px;
+button.btn {
   border: 1px solid #ffdb05;
   border-bottom-color: darken(#ffdb05, 10%);
   border-right-color: darken(#ffdb05, 5%);
-  .border-radius(5px);
-  color: #007c41;
   font-size: 1.2em;
   line-height: 1em;
-  font-family: DIN Bold;
-  .box-shadow(inset 1px 1px 4px #fffec6);
-  i {
-    margin-right: 10px;
-    margin-top: 1px;
-  }
-}
-
-button {
   #gradient > .vertical(#FFDB05, #e1c310);
   padding: 0.8em 1.5em 0.6em 1.5em; 
   .border-radius(10px); 
@@ -36,4 +23,36 @@ button {
     border: 1px solid darken(#FFDB05,10%);
     text-shadow:  none;
   }
+}
+
+//
+// Close icons
+// --------------------------------------------------
+
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: @baseLineHeight;
+  color: @black;
+  text-shadow: 0 1px 0 rgba(255,255,255,1);
+  .opacity(20);
+  &:hover {
+    color: @black;
+    text-decoration: none;
+    cursor: pointer;
+    .opacity(40);
+  }
+}
+
+// Additional properties for button version
+// iOS requires the button element instead of an anchor tag.
+// If you want the anchor version, it requires `href="#"`.
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }
