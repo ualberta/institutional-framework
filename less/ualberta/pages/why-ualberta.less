@@ -13,7 +13,7 @@
   position: relative;
   overflow-y: hidden;
   overflow-x: visible;
-  height: 300px;
+  
 }
 
 
@@ -22,7 +22,6 @@
   .fma-slide {
     position: absolute;
     top: 600px;
-    width: 100%;
     .transition(all 0.3s ease-in-out);
   }
   .fma-slide.fma-active {
@@ -30,7 +29,7 @@
   }
   .student-experience, .working-here {
     text-align: center;
-    font-size:  4em;
+    font-size:  2em;
     padding-top: 100px;
     h3 {
       font-size:  1.8em;
@@ -48,6 +47,11 @@
 }
 
 .fma-container {
+  width: 100%;
+  height: 300px;
+  .fma-slide {
+    width:  100%;
+  }
   .ualberta-minute {
     font-size: 0.85em;
     //.transition(all 1s ease);
@@ -218,8 +222,20 @@
 }
 
 @media (max-width: 689px) {
+  .fma-container {
+    overflow: visible;
+    min-height: 200px;
+  }
+  .fma-container .fma-slide {
+    position:  relative;
+  }
+  .fma-slide {
+    display: none;
+  }
+  .fma-slide.fma-active {
+    display: block;
+  }
   .fma-container .ualberta-minute {
-    min-height:  200px;
     padding:  0px 10px;
     p.circle { margin:  0.35em 12em 0.35em 0em; padding-bottom:  0.25em; border-bottom:  1px solid rgba(0,0,0,0.05); }
     p.context {
@@ -270,7 +286,7 @@
 }
 
 @media (min-width: 690px) and (max-width: 979px) {
-  .sidebar {
+  .why-ualberta .sidebar {
     top: 405px;
   }
 }
