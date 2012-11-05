@@ -142,7 +142,7 @@
   </div>
   <div class="content-top-row start">
     <div class="fma-container">
-      <div class="ualberta-minute start">
+      <div class="ualberta-minute fma-slide fma-active start">
         <p class="visible-phone context">UAlberta is a Top-5 Canadian University that offers more than 400 programs plus:</p>
         <a class="ualberta-link video-modal-link" href="http://www.youtube.com/v/jNookHNIl4w?version=3&amp;hl=en_US&amp;autoplay=1&amp;rel=0" data-target="#videoModal" data-toggle="modal" data-title="UAlberta in a Minute Video">
           <i class="icon-play-circle"></i>
@@ -172,28 +172,12 @@
         <p class="circle subtle i2">
           <i class="icon-user-md"></i>
         </p>
-        <!--
-        <div class="hover-box">
-          <button><i class="icon-film"></i> Watch UAlberta in a Minute Video</button>
-        </div>
-        -->
-        <div id="videoModal" class="modal hide fade">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3>Video Modal</h3>
-          </div>
-          <div class="modal-body">
-            <div class="video-mod-container">
-              <iframe src="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="student-experience">
+      <div class="student-experience fma-slide">
         <h3>Student Experience</h3>
         <button class="experience-students">Student Experience</button>
       </div>
-      <div class="working-here">
+      <div class="working-here fma-slide">
         <h3>Working Here</h3>
         <button class="working-here">Working Here</button>
       </div>
@@ -424,6 +408,18 @@
       </div>  <!-- Footer Container End -->
     </div> <!-- Footer Bottom Row End -->
   </footer> <!-- Footer End -->
+  
+  <div id="videoModal" class="modal hide fade">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Video Modal</h3>
+    </div>
+    <div class="modal-body">
+      <div class="video-mod-container">
+        <iframe src="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+    </div>
+  </div>
  
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -439,6 +435,14 @@
         var videoSrc = $(this).attr('href');
         $('#videoModal iframe').attr('src', videoSrc);
         $('#videoModal .modal-header h3').text($(this).data('title'));
+      });
+      
+      $('.fma-tabs li').click(function() {
+        $('.fma-slide').removeClass('fma-active');
+        $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
+        $('.fma-tabs li').removeClass('fma-button-active');
+        $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
+        return false;
       });
       
       $('#videoModal').bind('hidden', function () {

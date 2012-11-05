@@ -13,6 +13,32 @@
   position: relative;
   overflow-y: hidden;
   overflow-x: visible;
+  height: 300px;
+}
+
+
+
+.fma-container {
+  .fma-slide {
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    .transition(all 0.3s ease-in-out);
+  }
+  .fma-slide.fma-active {
+    top: 0px;
+  }
+  .student-experience, .working-here {
+    text-align: center;
+    font-size:  4em;
+    padding-top: 100px;
+    h3 {
+      font-size:  1.8em;
+    }
+    button {
+      display:  none;
+    }
+  }
 }
 
 @media (min-width: 690px) {
@@ -20,6 +46,7 @@
 .content-top-row.start {
   background-position: -600px 250px;
 }
+
 .fma-container {
   .ualberta-minute {
     font-size: 0.85em;
@@ -29,7 +56,7 @@
     .circle {
       position: absolute;
       width:  12em; 
-      height:12em; 
+      height:8em; 
       z-index: 10;
       .border-radius(500px);
       text-align: center;
@@ -60,6 +87,7 @@
       left: 18%;
       margin-left: -6em;
       padding-top: 3.25em;
+      height: 8.75em;
       font-size: 1.7em;
       top: 60px;
       .transition(all 3s ease);
@@ -71,6 +99,7 @@
       top: 20px;
       margin-left: -6em;
       padding-top: 2.75em;
+      height: 9.25em;
       font-size: 0.8em;
       .transition(all 1.5s ease 2s);
       .big { font-size:2.3em; }
@@ -81,6 +110,7 @@
       top: 60px;
       margin-left: -6em;
       padding-top: 3.25em;
+      height:  8.75em;
       font-size: 1.2em;
       .transition(all 3s ease 1.5s);
       .big { font-size:2.75em; }
@@ -91,7 +121,7 @@
       left: 55%;
       top: -11em;
       width: 5em;
-      height: 5em;
+      height: 3em;
       margin-left: -3em;
       font-size: 0.8em;
       padding-top: 2em;
@@ -200,7 +230,7 @@
       float: right;
       position: relative;
       width:  10em; 
-      height:10em;
+      height:7em;
       padding-top: 3em; 
       z-index: 4;
       .border-radius(500px);
