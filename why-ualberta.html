@@ -149,7 +149,7 @@
       <div class="ualberta-minute start">
 >>>>>>> Nov-5-9am
         <p class="visible-phone context">UAlberta is a Top-5 Canadian University that offers more than 400 programs plus:</p>
-        <a class="ualberta-link video-modal-link" href="http://www.youtube.com/v/jNookHNIl4w?version=3&amp;hl=en_US&amp;autoplay=1&amp;rel=0" data-target="#videoModal" data-toggle="modal" data-title="UAlberta in a Minute Video">
+        <a class="ualberta-link video-modal-link" href="http://www.youtube.com/embed/jNookHNIl4w?autoplay=1" data-target="#videoModal" data-toggle="modal" data-title="UAlberta in a Minute Video">
           <i class="icon-play-circle"></i>
           <span class="watch-video">Watch UAlberta in a Minute Video</span>
         </a>
@@ -180,11 +180,11 @@
       </div>
       <div class="student-experience fma-slide">
         <h3>Student Experience</h3>
-        <button class="experience-students">Student Experience</button>
+        <button class="btn">View more Student Experience videos</button>
       </div>
       <div class="working-here fma-slide">
         <h3>Working Here</h3>
-        <button class="working-here">Working Here</button>
+        <button class="btn">Visit the Human Resources portal</button>
       </div>
     </div>
     <div class="fma-tabs-container">
@@ -327,7 +327,7 @@
             <h3>Admissions</h3>
             <div class="frame">
               <div class="hover-caption-container">
-                <a href="http://www.youtube.com/v/cBgIkhinRww?version=3&amp;hl=en_US&amp;autoplay=1&amp;rel=0" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="Admissions Video">
+                <a href="http://www.youtube.com/embed/cBgIkhinRww?autoplay=1" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="Admissions Video">
                   <img src="./img/wu-admissions.png" />
                 </a>
                 <i class="icon-play-circle"></i>
@@ -348,7 +348,7 @@
                    <p>
                 Your support provides scholarships and bursaries to students to help attract world-class talent, researchers, teachers and top students. Propel UAlberta to a whole new level.
               </p>
-              <button class="btn" type="button">Give to the UofA</button>
+              <button class="btn-green" type="button">Give to the UofA</button>
           </div>
           <!-- End Make a Gift-->
         </div>
@@ -421,7 +421,7 @@
     </div>
     <div class="modal-body">
       <div class="video-mod-container">
-        <iframe src="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <iframe type="text/html" src="" style="min-width: 300px; min-height: 100px;" frameborder="0"></iframe>
       </div>
     </div>
   </div>
@@ -438,6 +438,10 @@
 
       $(document).on("click", ".video-modal-link", function () {
         var videoSrc = $(this).attr('href');
+        // no modal for mobile
+        if($(window).width() < 500) {
+          window.location = videoSrc;
+        }
         $('#videoModal iframe').attr('src', videoSrc);
         $('#videoModal .modal-header h3').text($(this).data('title'));
       });

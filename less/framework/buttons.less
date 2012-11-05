@@ -1,28 +1,63 @@
-button.btn {
-  border: 1px solid #ffdb05;
-  border-bottom-color: darken(#ffdb05, 10%);
-  border-right-color: darken(#ffdb05, 5%);
+.standard-button(@backgroundColor: #ccc, @textColor: #666) {
+  border: 1px solid @backgroundColor;
+  border-bottom-color: darken(@backgroundColor, 10%);
+  border-right-color: darken(@backgroundColor, 5%);
   font-size: 1.2em;
   line-height: 1em;
-  #gradient > .vertical(#FFDB05, #e1c310);
+  #gradient > .vertical(@backgroundColor,  darken(@backgroundColor, 5%));
   padding: 0.8em 1.5em 0.6em 1.5em; 
   .border-radius(10px); 
   font-family: "DIN Bold", Arial, sans-serif; 
   text-decoration: none; 
   font-weight:500;  
-  color: #007c41; 
-  text-shadow: 1px 1px 1px #fe9; 
-  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px #fe9, inset 0px -1px 3px #e1c310); 
+  color: @textColor; 
+  text-shadow: 1px 1px 1px lighten(@backgroundColor, 35%); 
+  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px lighten(@backgroundColor, 35%), inset 0px -1px 3px darken(@backgroundColor, 5%)); 
   text-align: center;
   &:hover {
-    #gradient > .vertical(lighten(#FFDB05,10%), lighten(#e1c310,15%));
+    #gradient > .vertical(lighten(@backgroundColor,10%), lighten(@backgroundColor,10%));
   }
   &:active {
-    #gradient > .vertical(#e1c310, #FFDB05);
-    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(#FFDB05,10%));
-    border: 1px solid darken(#FFDB05,10%);
+    #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
+    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
+    border: 1px solid darken(@backgroundColor,10%);
     text-shadow:  none;
   }
+}
+
+.standard-button-dark(@backgroundColor: #555, @backgroundColor2:#333, @textColor: #666) {
+  border: 1px solid @backgroundColor;
+  border-bottom-color: darken(@backgroundColor2, 3%);
+  border-right-color: @backgroundColor2;
+  font-size: 1.2em;
+  line-height: 1em;
+  #gradient > .vertical(@backgroundColor, @backgroundColor2);
+  padding: 0.8em 1.5em 0.6em 1.5em; 
+  .border-radius(10px); 
+  font-family: "DIN Bold", Arial, sans-serif; 
+  text-decoration: none; 
+  font-weight:500;  
+  color: @textColor; 
+  text-shadow: 1px 1px 1px desaturate(darken(@backgroundColor2, 5%),10%); 
+  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px desaturate(lighten(@backgroundColor, 25%),50%), inset 0px -1px 3px darken(@backgroundColor2, 5%)); 
+  text-align: center;
+  &:hover {
+    #gradient > .vertical(lighten(@backgroundColor,2%), lighten(@backgroundColor2,2%));
+  }
+  &:active {
+    #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
+    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
+    border: 1px solid darken(@backgroundColor,10%);
+    text-shadow:  none;
+  }
+}
+
+.btn {
+  .standard-button(#ffdb05, #007c41);
+}
+
+.btn-green {
+  .standard-button-dark(#00AF5C, #007c41, #fff);
 }
 
 //
