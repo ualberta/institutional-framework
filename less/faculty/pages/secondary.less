@@ -1,0 +1,162 @@
+@highRes_RowWidth:           @gridRowWidth1200;
+@highRes_PriContWidthSecond:        970px;
+@highRes_PriColWidthSecond:        800px;
+@highRes_SecColWidthSecond:        340px;
+@highRes_SidebarWidth:       170px;
+
+
+@highRes_PriContFluidSecond:        percentage(@highRes_PriContWidthSecond/@highRes_RowWidth);
+@highRes_PriColFluidSecond:        percentage(@highRes_PriColWidthSecond/@highRes_RowWidth);
+@highRes_SecColFluidSecond:        percentage(@highRes_SecColWidthSecond/@highRes_RowWidth);
+@highRes_SidebarFluid:       percentage(@highRes_SidebarWidth/@highRes_RowWidth);
+@highRes_FeatureFluid:       percentage(@highRes_FeatureWidth/@highRes_RowWidth);
+@highRes_AudienceFluid:      percentage(@highRes_AudienceWidth/@highRes_RowWidth);
+
+
+@desktop_RowWidth:           @gridRowWidth;
+@desktop_IntroSecond:        720px;
+@desktop_PriContWidthSecond:        750px;
+@desktop_PriColWidthSecond:        643px;
+@desktop_SecColWidthSecond:        269px;
+@desktop_SidebarWidth:       170px;
+
+
+@desktop_IntroFluidSecond:        percentage(@desktop_IntroSecond/@desktop_RowWidth);
+@desktop_PriContFluidSecond:        percentage(@desktop_PriContWidthSecond/@desktop_RowWidth);
+@desktop_PriColFluidSecond:        percentage(@desktop_PriColWidthSecond/@desktop_RowWidth);
+@desktop_SecColFluidSecond:        percentage(@desktop_SecColWidthSecond/@desktop_RowWidth);
+@desktop_SidebarFluid:       percentage(@desktop_SidebarWidth/@desktop_RowWidth);
+@desktop_FeatureFluid:       percentage(@desktop_FeatureWidth/@desktop_RowWidth);
+@desktop_AudienceFluid:      percentage(@desktop_AudienceWidth/@desktop_RowWidth);
+
+@tablet_RowWidth:           768px;
+@tablet_PriContWidthSecond:        580px;
+@tablet_PriColWidthSecond:        768px;
+@tablet_SecColWidthSecond:        344px;
+@tablet_SecColMargin:       20px;
+@tablet_SidebarWidth:       170px;
+
+@tablet_PriContFluidSecond:        percentage(@tablet_PriContWidthSecond/@tablet_RowWidth);
+@tablet_PriColFluidSecond:        percentage(@tablet_PriColWidthSecond/@tablet_RowWidth);
+@tablet_SecColFluidSecond:        percentage(@tablet_SecColWidthSecond/@tablet_PriColWidthSecond);
+@tablet_SecColMarginFluid:  percentage(@tablet_SecColMargin/@tablet_PriColWidthSecond);
+@tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
+
+@media (max-width: 1199px) {
+	.module-tertiary-links{
+		height:auto;
+	}
+}
+@media (min-width: 690px) {
+  .row-fluid.second {
+    .primary-content-area,
+    .secondary-content-area {
+      width: @tablet_PriColFluidSecond;
+    }
+    }
+      .row-fluid.second{
+	      .primary-content-area-container{
+		      width:@tablet_PriContFluidSecond;
+		      float:left;
+	      }
+	      
+      }
+       .row-fluid.second {
+      .sidebar {
+      width: @tablet_SidebarFluid;
+      float: right;
+      position:inherit;
+   }
+    }
+   }
+
+
+@media (min-width: 460px) and (max-width: 979px) {
+  
+  .row-fluid.second .secondary-content-area .module-container {
+    display: block;
+    float: left;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: @tablet_SecColFluidSecond;
+    margin-left: @tablet_SecColMarginFluid;
+  }  
+  .row-fluid .secondary-content-area .module-container:first-child,
+  .row-fluid .secondary-content-area .module-container:nth-child(odd) {
+    margin-left: 0;
+    
+  }
+  .module-tertiary-links{
+		height:auto;
+	}
+}
+
+@media (max-width: 979px) {
+
+  .row-fluid.second {
+    .primary-content-area-container,
+    .primary-content-area,
+    .secondary-content-area {
+      margin-left: 0px;
+    }
+  }
+  .row-fluid {
+    .feature-area,
+    .primary-content-area {
+      margin-bottom: 1.5em;
+    }
+  }
+  
+   
+}
+
+@media (min-width: 980px) {
+
+  hr.soften {
+    width: auto;
+  }
+  .row-fluid.second {
+       .primary-content-area-container {
+        width: @desktop_PriContFluidSecond;
+        float:left;
+      }
+      .primary-content-area {
+        width: @desktop_PriColFluidSecond;
+      }
+      .secondary-content-area {
+        width: @desktop_SecColFluidSecond;
+      }
+      .sidebar {
+        width: @desktop_SidebarFluid;
+      }
+  }
+
+}
+@media (min-width: 691px) and (max-width: 1199px) {
+	.row-fluid.second .span6{
+		width:100%;
+		margin-left:0px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+  
+  .row-fluid.second {
+    .primary-content-area-container {
+      width: @highRes_PriContFluidSecond;
+      float:left;
+    }
+    .primary-content-area {
+      width: @highRes_PriColFluidSecond;
+    }
+    .secondary-content-area {
+      width: @highRes_SecColFluidSecond;
+    }
+    .sidebar {
+      width: @highRes_SidebarFluid;
+      }
+  }
+}
