@@ -6012,6 +6012,16 @@ ul.calendar-med-mod li a {
           transition: all 0.3s ease;
 }
 
+.fma-container .fma-slide p {
+  padding-top: 160px;
+  font-family: "DIN Medium";
+  font-size: 3em;
+  color: #ffdb05;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .fma-container .fma-slide:hover {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -6034,19 +6044,6 @@ ul.calendar-med-mod li a {
 
 .fma-container .fma-slide.fma-last {
   margin-right: 0;
-}
-
-.fma-container .fma-slide:nth-child(1) {
-  font-family: Din Bold;
-}
-
-.fma-container .fma-slide:nth-child(1) p {
-  padding-top: 160px;
-  font-size: 3em;
-  color: #ffdb05;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .fma-tabs-container {
@@ -6397,9 +6394,9 @@ div.featured-news {
   margin-bottom: 1em;
   background-color: #ffffff;
   border: #eeeeee 1px solid;
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .admissions .primary-content-area ul li li {
@@ -6409,15 +6406,22 @@ div.featured-news {
   border: none;
 }
 
-.admissions .primary-content-area button {
+.admissions .primary-content-area a.btn {
   position: absolute;
   top: 0.7em;
   right: 0.7em;
+  display: inline-block;
+  padding: 5px;
   font-size: 0.9em;
   font-weight: bold;
+  border: #eeeeee 1px solid;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
-.admissions .sidebar button {
+.admissions .sidebar a.btn-large {
+  width: 100%;
   margin-bottom: 1.5em;
 }
 
@@ -6475,6 +6479,46 @@ div.featured-news {
   margin: -42px 0 0 0;
   font-size: 20px;
   text-shadow: none;
+}
+
+.facultyandstaff .secondary-content-area ul li {
+  position: static;
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.facultyandstaff .secondary-content-area a.btn {
+  position: absolute;
+  top: 0.7em;
+  right: 0.7em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.facultyandstaff .sidebar button {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.campuslife .secondary-content-area ul li {
+  position: static;
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.campuslife .secondary-content-area a.btn {
+  position: absolute;
+  top: 0.7em;
+  right: 0.7em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.campuslife .sidebar button {
+  width: 100%;
+  margin-bottom: 1.5em;
 }
 
 @media (max-width: 689px) {
