@@ -1,0 +1,30 @@
+.page-breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  line-height: 1em;
+  margin-top: 1.75em;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  li {
+    display: block;
+    float: left;
+    position: relative;
+    
+    margin: 0 10px 0 0;
+    &:after {
+      content: "\00BB";
+      margin-left: 10px;
+      font-size: 16px;
+    }
+    &:last-child {
+      margin-right:0;
+      &:after {
+        content: '';
+        margin-left: 0;
+      }
+    }
+  }
+}
