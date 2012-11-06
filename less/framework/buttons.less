@@ -16,6 +16,8 @@
   text-align: center;
   &:hover {
     #gradient > .vertical(lighten(@backgroundColor,10%), lighten(@backgroundColor,10%));
+    text-decoration: none;
+    color: @textColor; 
   }
   &:active {
     #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
@@ -43,6 +45,7 @@
   text-align: center;
   &:hover {
     #gradient > .vertical(lighten(@backgroundColor,2%), lighten(@backgroundColor2,2%));
+    text-decoration: none;
   }
   &:active {
     #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
