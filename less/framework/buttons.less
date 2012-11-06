@@ -1,17 +1,98 @@
-.ualberta-minute button {
-  #gradient > .vertical(#FFF5B8, #ffdb05);
-  padding: 22px 20px 18px 20px;
-  border: 1px solid #ffdb05;
-  border-bottom-color: darken(#ffdb05, 25%);
-  border-right-color: darken(#ffdb05, 20%);
-  .border-radius(5px);
-  color: #007c41;
+.standard-button(@backgroundColor: #ccc, @textColor: #666) {
+  border: 1px solid @backgroundColor;
+  border-bottom-color: darken(@backgroundColor, 10%);
+  border-right-color: darken(@backgroundColor, 5%);
   font-size: 1.2em;
   line-height: 1em;
-  font-family: DIN Bold;
-  .box-shadow(inset 1px 1px 2px #fffec6, inset 0px -1px 4px darken(#ffdb05, 20%));
-  i {
-    margin-right: 10px;
-    margin-top: 1px;
+  #gradient > .vertical(@backgroundColor,  darken(@backgroundColor, 5%));
+  padding: 0.8em 1.5em 0.6em 1.5em; 
+  .border-radius(10px); 
+  font-family: "DIN Bold", Arial, sans-serif; 
+  text-decoration: none; 
+  font-weight:500;  
+  color: @textColor; 
+  text-shadow: 0px 1px 1px lighten(@backgroundColor, 25%); 
+  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px lighten(@backgroundColor, 35%), inset 0px -1px 3px darken(@backgroundColor, 5%)); 
+  text-align: center;
+  &:hover {
+    #gradient > .vertical(lighten(@backgroundColor,10%), lighten(@backgroundColor,10%));
   }
+  &:active {
+    #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
+    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
+    border: 1px solid darken(@backgroundColor,10%);
+    text-shadow:  none;
+  }
+}
+
+.standard-button-dark(@backgroundColor: #555, @backgroundColor2:#333, @textColor: #666) {
+  border: 1px solid @backgroundColor;
+  border-bottom-color: darken(@backgroundColor2, 3%);
+  border-right-color: @backgroundColor2;
+  font-size: 1.2em;
+  line-height: 1em;
+  #gradient > .vertical(@backgroundColor, @backgroundColor2);
+  padding: 0.8em 1.5em 0.6em 1.5em; 
+  .border-radius(10px); 
+  font-family: "DIN Bold", Arial, sans-serif; 
+  text-decoration: none; 
+  font-weight:500;  
+  color: @textColor; 
+  text-shadow: 1px 1px 1px desaturate(darken(@backgroundColor2, 5%),10%); 
+  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px desaturate(lighten(@backgroundColor, 25%),50%), inset 0px -1px 3px darken(@backgroundColor2, 5%)); 
+  text-align: center;
+  &:hover {
+    #gradient > .vertical(lighten(@backgroundColor,2%), lighten(@backgroundColor2,2%));
+  }
+  &:active {
+    #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
+    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
+    border: 1px solid darken(@backgroundColor,10%);
+    text-shadow:  none;
+  }
+}
+
+.btn {
+  .standard-button(#ffdb05, #007c41);
+}
+
+.btn-green {
+  .standard-button-dark(#00AF5C, #007c41, #fff);
+}
+
+.sidebar .btn {
+  display: block;
+  margin-bottom: 18px;
+}
+
+//
+// Close icons
+// --------------------------------------------------
+
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: @baseLineHeight;
+  color: @black;
+  text-shadow: 0 1px 0 rgba(255,255,255,1);
+  .opacity(20);
+  &:hover {
+    color: @black;
+    text-decoration: none;
+    cursor: pointer;
+    .opacity(40);
+  }
+}
+
+// Additional properties for button version
+// iOS requires the button element instead of an anchor tag.
+// If you want the anchor version, it requires `href="#"`.
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }

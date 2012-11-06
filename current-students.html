@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
   <!-- The Title -->
-  <title>Framework Prototype</title>
+  <title>Current Students</title>
   
   <!-- The Other Meta -->
   <meta name="description" content="University of Alberta">
@@ -37,7 +37,7 @@
   <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
   
   <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
   <!-- Burn IE6 with fire -->
@@ -133,16 +133,50 @@
     
   </header> <!-- End Header -->
   
-<div class="content-wrapper">
+<div class="content-wrapper current-students">
 
   <div class="page-title-row">
     <div class="title-container container"> <!-- Container Start -->
       <h2 class="page-title">Current Students</h2>
     </div>
   </div>
-  <div class="content-top-row">
-          
-    Top     
+  <div class="content-top-row start">
+    <div class="container fma-container image-slider">
+      <div class="content-inner container" style="padding:0;">
+      	
+      	<div class="fma-display start">
+        
+        	<i class="icon-group one"></i>
+        	<i class="icon-certificate"></i>
+        	<i class="icon-group two"></i>
+        	<i class="icon-certificate two"></i>
+        
+        </div>
+        
+        <!-- See it for yourself -->
+        <div class="module-container fma-caption">
+          <h3>Announcements</h3>
+          <ul class="unstyled linklist">
+			<li><a href="http://www.gradstudies.ualberta.ca/en/gtl/Financial%20Information%20Fair.aspx">Financial Information Fair on Nov. 7 at SUB</a></li>
+			
+			<li><a href="http://www.uhc.ualberta.ca/Flu%20Clinics.aspx">Flu Clinic information</a></li>
+			
+			<li><a href="http://uofa.ualberta.ca/notices/dropboxspacerace.aspx">Misleading email endorsement claim - Dropbox space race!</a></li>
+			
+			<li><a href="http://www.registrarsoffice.ualberta.ca/Registration-and-Courses/Registration-Dates-and-Deadlines/Winter-Term-Deadlines.aspx">Winter term deadlines</a></li>
+          </ul>
+        </div>
+        
+        <div class="module-container fma-btns">
+          <a class="btn" href="#">Contact UAlberta</a>
+          <a class="btn" href="#">Subscribe to text alrets</a>
+          <a class="btn" href="#">Subscribe to daily news</a>
+        </div>
+        
+      </div> 
+    </div> <!-- End Top Row -->
+    
+    
   </div>
   
   <div class="content-container container">
@@ -249,7 +283,7 @@
 			  <li><a href="http://www.gradstudies.ualberta.ca/en/gtl/Financial%20Information%20Fair.aspx">Financial Information Fair</a>
 				<i>Nov. 7</i></li>
 			  <li><a href="http://www.festivalofideas.ca">Festival of Ideas 2012</a>
-				<i>Nov. 14-18</li></li>
+				<i>Nov. 14-18</i></li>
             </ul>
           </div>
         </div>
@@ -297,11 +331,14 @@
   </footer> <!-- Footer End -->
  
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
-<script src="./js/bootstrap.min.js"></script>
-  <script>
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+  			$('.start').removeClass('start');
+    	}); 
   /*
     $(document).ready(function() {
     $('.content-top-row .tab-content').height(
@@ -309,7 +346,7 @@
       );
     });
     */
-  </script>
+</script>
   <!-- end scripts -->
 
 </body>

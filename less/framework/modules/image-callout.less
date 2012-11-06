@@ -7,12 +7,24 @@
 .hover-caption-container {
   position: relative;
   overflow: hidden;
+  i {
+    position:absolute; 
+    font-size: 6em; 
+    color: #fff; 
+    left:50%;
+    margin-left: -0.35em; 
+    top:50%;
+    margin-top: -0.25em;
+    text-shadow: 0px 0px 10px #000; 
+    .opacity(35);
+    pointer-events:none;
+  }
   .caption {
     color: #fff;
     background: rgba(0,0,0,0.75);
     text-shadow: 0px 1px 2px #000;
     position: absolute;
-    bottom: -50%;
+    bottom: -100%;
     left: 0px;
     width: 100%;
     pointer-events: none;
@@ -21,9 +33,15 @@
       padding: 4px 10px;
       margin: 0;
     }
-    
   }
   &:hover .caption {
     bottom: 0px;
   }
+  &:hover i {
+    .opacity(65);
+  }
+}
+
+.frame + p {
+  margin-top: 6px;
 }
