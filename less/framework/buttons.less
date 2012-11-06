@@ -24,6 +24,8 @@
     .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
     border: 1px solid darken(@backgroundColor,10%);
     text-shadow:  none;
+    text-decoration: none;
+    color: @textColor; 
   }
 }
 
@@ -46,12 +48,15 @@
   &:hover {
     #gradient > .vertical(lighten(@backgroundColor,2%), lighten(@backgroundColor2,2%));
     text-decoration: none;
+    color: @textColor; 
   }
   &:active {
     #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
     .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
     border: 1px solid darken(@backgroundColor,10%);
     text-shadow:  none;
+    text-decoration: none;
+    color: @textColor; 
   }
 }
 
