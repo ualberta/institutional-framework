@@ -1,0 +1,55 @@
+.accordion-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border:  1px solid #ddd;
+  background: #fff;
+  & > li {
+    position: relative;
+  }
+  & > li > a {
+    display: block;
+    .gradient-row();
+    padding: 10px;
+    font-weight: bold;
+  }
+  & li ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  & li ul li a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    &:hover {
+      background: #FFF5B8;
+    }
+  }
+  & li ul li:nth-child(even) a {
+    background: #f9fcfa;
+    &:hover {
+      background: #FFF5B8;
+    }
+  }
+  & a.accordion-toggle {
+    .standard-button-dark(#00AF5C, #007c41, #fff);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 8px 5px 5px 6px;
+    line-height: 1em;
+    background: #007c41;
+    display: inline-block;
+    color:  #fff;
+    text-align: center;
+    .border-radius(5px);
+  }
+  & li.expanded ul {
+    display: block;
+  }
+  & li.expanded a.icon-plus::before {
+    content: '\f068';
+  }
+}
