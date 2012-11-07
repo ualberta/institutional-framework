@@ -1,3 +1,28 @@
+/**
+@highRes_RowWidth:           @gridRowWidth1200; // 1170
+@highRes_PriColWidth:        970px;
+@highRes_SidebarWidth:       170px;
+
+@highRes_PriColFluid:        percentage(@highRes_PriColWidth/@highRes_RowWidth);
+@highRes_SidebarFluid:       percentage(@highRes_SidebarWidth/@highRes_RowWidth);
+
+
+@desktop_RowWidth:           @gridRowWidth; // 960
+@desktop_PriColWidth:        451px;
+@desktop_SidebarWidth:       170px;
+
+@desktop_PriColFluid:        percentage(@desktop_PriColWidth/@desktop_RowWidth);
+@desktop_SidebarFluid:       percentage(@desktop_SidebarWidth/@desktop_RowWidth);
+
+@tablet_RowWidth:           768px;
+@tablet_PriColWidth:        578px;
+@tablet_SecColMargin:       20px;
+@tablet_SidebarWidth:       170px;
+
+@tablet_PriColFluid:        percentage(@tablet_PriColWidth/@tablet_RowWidth);
+@tablet_SecColMarginFluid:  percentage(@tablet_SecColMargin/@tablet_PriColWidth);
+@tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
+
 .content-top-row {
   background-image: url('../img/test-bg.png');
   background-position: bottom left;
@@ -7,5 +32,4 @@
   border-top: 1px solid rgba(0, 50, 25, 0.25);
   background-color: rgba(255, 200, 10, 0.1);
 }
-
-
+**/
