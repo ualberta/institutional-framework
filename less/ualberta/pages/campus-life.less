@@ -1,17 +1,28 @@
 .campuslife {
+	.btn-green {
+		margin-bottom: 1.5em;
+		font-size: 0.9em;
+		padding: 0.4em 0.8em 0.2em 0.8em;
+	}
 	.content-inner {
 		position: relative;
 		.fma-caption {
 			position: absolute;
 			bottom: 20px;
 			left: 0;
-			.linklist;
 			font-size: 0.9em;
-			.btn {
+			.btn-green {
 				text-align: left;
 				.icon-large:before {
 					width: auto;
 				}
+				font-size: 1em;
+			}
+			li {
+				margin-bottom: 1.5em;
+			}
+			h3 {
+				margin-bottom: 0.5em;
 			}
 		}
 	}
@@ -21,6 +32,9 @@
 				position: static;
 				border: none;
 				margin-bottom: 0;
+		}
+		.module-container {
+			margin-bottom: 2.5em;
 		}
 	}
 	.sidebar {
@@ -41,7 +55,13 @@
 			padding-bottom: 0.5em;
 		}
 		.links ul li a:hover {
-			background-image: linear-gradient(to bottom, #fff5bb, #ffffff);
+			#gradient .vertical(@startColor: #fff5bb, @endColor: #fff);
+		}
+		.links ul li:first-child a {
+			border-top: none; 
+		}
+		.links ul li:first-child a:hover {
+			border-top: none;
 		}
 		.date {
 			line-height: 1em;
@@ -51,10 +71,10 @@
 			color: #666;
 		}
 		.footer {
-			background-image: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
+			#gradient .vertical(@startColor: #fff, @endColor: #f0f0f0);
 			 background-repeat: repeat-x;
-			 border-bottom: 1px solid #DDDDDD;
-			 border-top: 1px solid #DDDDDD;
+			 border-bottom: 1px solid #ddd;
+			 border-top: 1px solid #ddd;
 			 border-radius: 0 0 3px 3px;
 			 line-height: 100%;
 			 margin: 0 -10px -10px -10px;
@@ -66,7 +86,7 @@
 			h5 {
 				margin-bottom: 1em;
 			}
-			padding-bottom: 1em;
+			padding-bottom: 2em;
 			
 		}
 	}
