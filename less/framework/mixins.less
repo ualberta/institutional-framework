@@ -569,6 +569,39 @@
   }
 }
 
+.heading-gradient() {
+  position: relative;
+  padding: 4px 10px 1px 10px;
+  border-top: 1px solid transparent;
+  h3 {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    line-height: 1.57em;
+  } 
+}
+
+.heading-gradient-yellow() {
+  .heading-gradient();
+  border: 1px solid #eae7cb;
+  border-bottom-color: #fff9ee;
+  border-top-color: #efecd0;
+  background: -webkit-linear-gradient(top, rgba(255, 200, 20, 0), rgba(255, 200, 20, 0.075) 83%, rgba(255, 200, 20, 0.15));
+  background: -o-linear-gradient(top, rgba(255, 200, 20, 0), rgba(255, 200, 20, 0.075) 83%, rgba(255, 200, 20, 0.15));
+  background: -moz-linear-gradient(top, rgba(255, 200, 20, 0), rgba(255, 200, 20, 0.075) 83%, rgba(255, 200, 20, 0.15));
+  background: linear-gradient(top,rgba(255, 200, 20, 0), rgba(255, 200, 20, 0.075) 83%, rgba(255, 200, 20, 0.15));
+}
+
+.heading-gradient-green() {
+  .heading-gradient();
+  border:  1px solid #e0efe4;
+  border-bottom-color: #f0fcf6;
+  background: -webkit-linear-gradient(top, rgba(0, 124, 65, 0), rgba(0, 124, 65, 0.05) 83%, rgba(0, 124, 65, 0.1));
+  background: -o-linear-gradient(top, rgba(0, 124, 65, 0), rgba(0, 124, 65, 0.05) 83%, rgba(0, 124, 65, 0.1));
+  background: -moz-linear-gradient(top, rgba(0, 124, 65, 0), rgba(0, 124, 65, 0.05) 83%, rgba(0, 124, 65, 0.1));
+  background: linear-gradient(top, rgba(0, 124, 65, 0), rgba(0, 124, 65, 0.05) 83%, rgba(0, 124, 65, 0.1));
+}
+
 
 // Grid System
 // -----------

@@ -207,3 +207,50 @@
   margin-top: 2px; // give it some space to breathe
   .border-radius(4px);
 }
+
+div[class*='heading'] .dropdown-menu {
+  background: #fff;
+  border: 0px;
+  font-size: 12px;
+  margin-top: 5px;
+  .box-shadow(0px 1px 4px rgba(0,0,0,0.2));
+  padding: 4px 0px;
+  li { 
+    margin: 4px 0px;
+  }
+  a {
+    padding: 0px 10px;
+    &:hover {
+      background:#f0f0f0;
+      color: #333;
+    }
+  }
+  &:after {
+    position: absolute;
+    top: -7px;
+    right: 21px;
+    bottom: auto;
+    left: auto;
+    z-index: 101;
+    display: block;
+    width: 0;
+    border-color: white transparent;
+    border-style: solid;
+    border-width: 0 7px 7px;
+    content: "";
+  }
+  &:before {
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    bottom: auto;
+    left: auto;
+    z-index: 101;
+    display: block;
+    width: 0;
+    border-color: #ddd transparent;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    content: "";
+  }
+}
