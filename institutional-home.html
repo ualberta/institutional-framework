@@ -157,12 +157,12 @@
   
   <div class="content-container container">
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
-      <div class="left-content-area">
-        Why Ualberta
+      <div class="primary-content-area span">
+        <h3>Why Ualberta</h3>
       </div> 
       <div class="span2 sidebar"> <!-- Sidebar Start -->
          <div class="extrude twitter-module">
-          <h5 class="sidebar-title collapsed"  data-toggle="collapse" data-target=".maps">
+          <h5 class="sidebar-title collapsed"  data-toggle="collapse" data-target=".twitter-feed">
             <a href="#maps"><i class="icon-twitter"></i> Twitter</a>
           </h5>
           <div class="sidebar-content twitter-feed collapse">
@@ -238,11 +238,11 @@
     (function($) {
       $(document).ready(function() {
       
-      $("#ualberta-twitter").tweet({
+      $(".twitter-feed").tweet({
         count: 3,
         username: "UAlberta",
         loading_text: "loading tweets...",
-        template: "{text} {time} {reply_action} {retweet_action} {favorite_action}"
+        template: "{text} {time}<br/>{reply_action} {retweet_action} {favorite_action}"
       });
 
       $(document).on("click", ".video-modal-link", function () {
