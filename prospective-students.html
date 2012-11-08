@@ -133,18 +133,50 @@
     
   </header> <!-- End Header -->
   
-<div class="content-wrapper">
+<div class="content-wrapper prospective-student">
 
   <div class="page-title-row">
     <div class="title-container container"> <!-- Container Start -->
       <h2 class="page-title">Prospective Students</h2>
     </div>
   </div>
-  <div class="content-top-row">
-          
-    Top     
-  </div>
-  
+  <div class="content-top-row" style="padding:0; margin-top:5px;">
+    <div class="content-container container"> <!-- Container Start -->
+      <div class="content-inner row-fluid" style="padding:0;">
+        <div class="fma-container image-slider">
+          <div class="fma-slide fma-active search-undergraduate">
+            <a href="#fma-link">
+              <img class="fma-background" src="#slide-image">
+            </a>
+            <div class="fma-caption">
+              <h3>Search Undergraduate Programs</h3>
+             <div class="input-append">
+  <input class="span2" id="appendedInputButton" type="text">
+  <button class="btn" type="button">Search </button>
+</div>
+           </div>
+          </div>
+          <div class="fma-slide fma-inactive search-graduate">
+            <a href="#fma-link">
+              <img class="fma-background" src="#slide-image">
+            </a>
+            <div class="fma-caption">
+              <h3>Search Graduate Programs</h3>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> <!-- End Top Row -->
+    
+    <div class="pros-student-slider fma-tabs-container">
+      <div class="container">
+        <ul class="fma-tabs row-fluid">
+          <li class="fma-button-active"><a href="#">Search Undergraduate Programs</a></li>
+          <li><a href="#">Search Graduate Programs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>  
   <div class="content-container container">
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
       <div class="span5 primary-content-area">
@@ -253,20 +285,81 @@
   </footer> <!-- Footer End -->
  
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
-<script src="./js/bootstrap.min.js"></script>
-  <script>
-  /*
-    $(document).ready(function() {
-    $('.content-top-row .tab-content').height(
-      ($('.content-top-row').height()-$('.content-top-row .nav-tabs').height()-50)
-      );
-    });
-    */
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
+<script>
+      (function($) {
+        $(document).ready(function() {
+        
+        
+          $('.fma-slide, .fma-tabs li').click(function() {
+            $('.fma-slide').removeClass('fma-active');
+            $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
+            $('.fma-tabs li').removeClass('fma-button-active');
+            $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
+            return false;
+          });
+        
+          // add active class to link category when clicked.
+          $('.link-mod-category > h4, .link-mod-category input').click(function() {
+            $('.link-mod-category').removeClass('link-mod-active');
+            $(this).parent().addClass('link-mod-active');
+            return false;
+          });
+          
+          // populate results with all links by default
+          $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+          $('.searchable a').each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+          $('.link-mod-result-none').hide();
+        
+          // live search plugin initialization        
+          $('#link-mod-filter-field').search('.searchable a', function(on) {
+          
+            // this happens on any keydown, keyup, keypress, or blur event
+            on.all(function(results) {
+              var size = results ? results.size() : 0
+              $('.link-mod-result-title h4').html(
+                'Displaying '+size+
+                ' matches for &quot;'+$('#link-mod-filter-field').val()+
+                '&quot'
+              );
+            });
+
+            // this happens when the filter field has nothing entered
+            on.reset(function() {
+              $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+              $('.link-mod-result-item').remove();
+              $('.searchable a').each(function() {
+                $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+              });
+              $('.link-mod-result-none').hide();
+            });
+
+            // this happens when there are no results base on the query
+            on.empty(function() {
+              $('.link-mod-result-none').show();
+              $('.link-mod-result-item').remove();
+            });
+
+            // this happens when there are results
+            on.results(function(results) {
+              $('.link-mod-result-none').hide();
+              $('.link-mod-result-item').remove();
+              results.each(function() {
+                $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+              });
+            });
+          });
+        });
+      })(jQuery);
   </script>
   <!-- end scripts -->
+
 
 </body>
 </html>
