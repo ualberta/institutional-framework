@@ -266,8 +266,16 @@
         <div class="module-container">
           <h3>Study Here</h3>
           <!-- Video -->
-          <div class="video-mod-container">
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/cBgIkhinRww?rel=0" frameborder="0" allowfullscreen></iframe>
+          <div class="frame">
+            <div class="hover-caption-container">
+              <a href="http://www.youtube.com/embed/cBgIkhinRww?autoplay=1" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="Study Here">
+                <img src="./img/wu-admissions.png" />
+              </a>
+              <i class="icon-play-circle"></i>
+              <div class="caption">
+                <p>Colten Yamagishi talks about how easy it is to live, study and have fun at UAlberta.</p>
+              </div>
+            </div>
           </div>
           <p>Learn about our programs, find out what you need to apply, and get started with our step-by-step application guides.</p>
           <a href="#" class="btn-green">Apply Now</a>
@@ -275,9 +283,19 @@
         <div class="module-container">
           <h3>Work Here</h3>
           <!-- Video -->
-          <div class="video-mod-container">
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/tWHu8wdcejg" frameborder="0" allowfullscreen></iframe>
-           </div>
+          <div class="frame">
+            <div class="hover-caption-container">
+              <a href="http://www.youtube.com/embed/tWHu8wdcejg?autoplay=1" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="Work Here">
+                <img src="./img/thb_workhere.png" />
+              </a>
+              <i class="icon-play-circle"></i>
+              <div class="caption">
+                <p>Staff and Faculty members share their thoughts on career and professional development opportunities at UAlberta.</p>
+              </div>
+            </div>
+          </div>
+          
+          
           <p>Join a dynamic team of 11,000 unique individuals whose collective knowledge, talent, and skills are building one of the world's great universities for the public good.</p>
           <a href="#" class="btn-green">Browse Job Opportunities</a>
         </div>
@@ -287,10 +305,11 @@
         </div>
       
       <div class="span2 sidebar"> <!-- Sidebar Start -->
+     
          
            <div class="extrude links-module">
-             <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <i class="icon-calendar icon-large"></i>Upcoming Events</h5>
-             <div class="sidebar-content links">
+             <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <a href="#"><i class="icon-calendar icon-large"></i>Upcoming Events</a></h5>
+             <div class="sidebar-content links collapse">
                <ul>
                  <li><a href="#">Sustainability Awareness Week
                  <div class="date">October 29-November 2</div></a>
@@ -306,9 +325,13 @@
              
             
              <div class="extrude links-module giving">
-               <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <i class="icon-gift icon-large"></i>Make a Gift</h5>
-               <p>Your support provides scholarships and bursaries to students to help attract world-class talent, researchers, teachers and top students. Propel UAlberta to a whole new level.</p>
-               <a href="#" class="btn-green">Give to the U of A</a>
+               <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".givingcontent"> <a href="#"><i class="icon-gift icon-large"></i>Make a Gift</a></h5>
+               <div class="sidebar-content givingcontent collapse">
+               		<div>
+               			<p>Your support provides scholarships and bursaries to students to help attract world-class talent, researchers, teachers and top students. Propel UAlberta to a whole new level.</p>
+               			<a href="#" class="btn-green">Give to the U of A</a>
+               		</div>
+               </div>
              </div>
           
          
@@ -352,12 +375,168 @@
     </div> <!-- Footer Bottom Row End -->
   </footer> <!-- Footer End -->
  
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-  <!-- scripts concatenated and minified via build script -->
-  <script src="./js/bootstrap.min.js"></script>
-  <!-- end scripts -->
-
+ <!-- Modal piece -->
+ <div id="videoModal" class="modal hide fade">
+   <div class="modal-header">
+     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+     <h3>Video Modal</h3>
+   </div>
+   <div class="modal-body">
+     <div class="video-mod-container">
+       <iframe type="text/html" src="" style="min-width: 300px; min-height: 100px;" frameborder="0"></iframe>
+     </div>
+   </div>
+ </div>
+ <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+   <!-- scripts concatenated and minified via build script -->
+ <script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+ <script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
+ <script>
+  (function($) {
+       $(document).ready(function() {
+ 
+       // add active class to link category when clicked.
+       $('.link-mod-category > h4, .link-mod-category input').click(function() {
+         $('.link-mod-category').removeClass('link-mod-active');
+         $(this).parent().addClass('link-mod-active');
+         return false;
+       });
+ 
+       // populate results with all links by default
+       $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+       $('.searchable a').each(function() {
+         $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+       });
+       $('.link-mod-result-none').hide();
+ 
+       // live search plugin initialization        
+       $('#link-mod-filter-field').search('.searchable a', function(on) {
+ 
+         // this happens on any keydown, keyup, keypress, or blur event
+         on.all(function(results) {
+           var size = results ? results.size() : 0
+           $('.link-mod-result-title h4').html(
+             'Displaying '+size+
+             ' matches for &quot;'+$('#link-mod-filter-field').val()+
+             '&quot'
+           );
+         });
+ 
+         // this happens when the filter field has nothing entered
+         on.reset(function() {
+           $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+           $('.link-mod-result-item').remove();
+           $('.searchable a').each(function() {
+             $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+           });
+           $('.link-mod-result-none').hide();
+         });
+ 
+         // this happens when there are no results base on the query
+         on.empty(function() {
+           $('.link-mod-result-none').show();
+           $('.link-mod-result-item').remove();
+         });
+ 
+         // this happens when there are results
+         on.results(function(results) {
+           $('.link-mod-result-none').hide();
+           $('.link-mod-result-item').remove();
+           results.each(function() {
+             $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+           });
+         });
+       });
+     });
+     })(jQuery);
+ </script>
+ 
+ <!-- For video -->
+ 
+ <script>
+     (function($) {
+       $(document).ready(function() {
+ 
+       $(document).on("click", ".video-modal-link", function () {
+         var videoSrc = $(this).attr('href');
+         // no modal for mobile
+         if($(window).width() < 500) {
+           window.location = videoSrc;
+         }
+         $('#videoModal iframe').attr('src', videoSrc);
+         $('#videoModal .modal-header h3').text($(this).data('title'));
+       });
+       
+       $('.fma-tabs li').click(function() {
+         $('.fma-slide').removeClass('fma-active');
+         $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
+         $('.fma-tabs li').removeClass('fma-button-active');
+         $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
+         return false;
+       });
+       
+       $('#videoModal').bind('hidden', function () {
+         $('#videoModal iframe').attr('src', '');
+       });
+ 
+       $('.start').removeClass('start');
+       // add active class to link category when clicked.
+       $('.link-mod-category > h4, .link-mod-category input').click(function() {
+         $('.link-mod-category').removeClass('link-mod-active');
+         $(this).parent().addClass('link-mod-active');
+         return false;
+       });
+ 
+       // populate results with all links by default
+       $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+       $('.searchable a').each(function() {
+         $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+       });
+       $('.link-mod-result-none').hide();
+ 
+       // live search plugin initialization        
+       $('#link-mod-filter-field').search('.searchable a', function(on) {
+ 
+         // this happens on any keydown, keyup, keypress, or blur event
+         on.all(function(results) {
+           var size = results ? results.size() : 0
+           $('.link-mod-result-title h4').html(
+             'Displaying '+size+
+             ' matches for &quot;'+$('#link-mod-filter-field').val()+
+             '&quot'
+           );
+         });
+ 
+         // this happens when the filter field has nothing entered
+         on.reset(function() {
+           $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+           $('.link-mod-result-item').remove();
+           $('.searchable a').each(function() {
+             $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+           });
+           $('.link-mod-result-none').hide();
+         });
+ 
+         // this happens when there are no results base on the query
+         on.empty(function() {
+           $('.link-mod-result-none').show();
+           $('.link-mod-result-item').remove();
+         });
+ 
+         // this happens when there are results
+         on.results(function(results) {
+           $('.link-mod-result-none').hide();
+           $('.link-mod-result-item').remove();
+           results.each(function() {
+             $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+           });
+         });
+       });
+     });
+     })(jQuery);
+   </script>
+ <!-- End scripts -->
 </body>
 </html>
