@@ -19,47 +19,63 @@
 
 .current-students .content-inner {
 	position: relative;
-	height: 300px;
+	min-height: 300px;
+}
+
+.current-students .fma-container .content-inner {
+
+
 }
 
 .current-students .content-inner .fma-caption {
-	position: absolute;
-	bottom: 15px;
-	left: 0;
-	font-size: 0.9em;
-	width: 300px;
-	padding: 10px 10px 0 10px;
-	background: #FFFFFF;
-	border: none;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-	z-index: 100;
+	text-align: left;
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.current-students .content-inner .fma-btns {
-	position: absolute;
-	bottom: 15px;
-	left: 340px;
-	font-size: 1em;
-	z-index: 99;
-}
-
-	.current-students .content-inner .fma-btns a {
+	.current-students .content-inner .fma-caption h3 {
+		font-size: 2em;
+		margin: 0.6em 0em 0.25em 0em;
 		display: block;
-		margin-top: 10px;
+		width: 300px;
 	}
 	
+	.current-students .content-inner .fma-caption ul {
+		display: block;
+		vertical-align:top;
+		width: 300px;
+		min-height: 173px;
+	}
+	
+	.current-students .content-inner .fma-caption ul a {
 
-.current-students .btn {
-	font-size: 0.9em;
+	}
+	
+	.current-students .content-inner .fma-caption .frame {
+		max-width: 300px;
+		float: right;
+		margin-top: -32px;
+	}
+
+.current-students .content-inner .fma-btns {
+	text-align: center;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 20px;
 }
+	
+	.current-students .content-inner .fma-btns .btn {
+		display: inline-block;
+		margin-top: 10px;
+	}
+
+
 
 .current-students .content-top-row {
-	z-index: -2;
+	background-image: none;
 }
 
 .current-students .image-slider {
@@ -74,95 +90,7 @@
 	overflow-x: visible;
 }
 	
-	.current-students .fma-display.start .icon-group.one {
-		top: 1100px;
-		opacity: 0;
-	}
-	
-	.current-students .fma-display.start .icon-certificate {
-		margin-top: 1110px;
-		transform:rotate(360deg);
-		-ms-transform:rotate(360deg);
-		-moz-transform:rotate(360deg);
-		-webkit-transform:rotate(360deg); 
-		-o-transform:rotate(360deg);
-		opacity: 0;
-	}
-	
-	.current-students .fma-display.start .icon-group.two {
-		top: -510px;
-		opacity: 0;
-	}
-	
-	.current-students .fma-display.start .icon-certificate.two {
-		bottom: -510px;
-		opacity: 0;
-	}
-	
-	.current-students .content-top-row.start {
-    	background-position: -600px 250px;
-  	}
-	
-	.current-students .fma-display .icon-group.one {
-		font-size: 260px;
-		line-height: 300px;
-		position: absolute;
-		right: 0;
-		margin-right: 135px;
-		color: #FFFFFF;
-		z-index:1;
-		-webkit-transition: all 2s ease 1s;
-    	-moz-transition: all 2s ease 1s;
-    	-o-transition: all 2s ease 1s;
-    	transition: all 2s ease 1s;
-	}
-	
-	.current-students .fma-display .icon-certificate {
-		font-size: 600px;
-		line-height: 300px;
-		float: right;
-		color: #007C41;
-		text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-		-webkit-transition: all 2s ease 1s;
-    	-moz-transition: all 2s ease 1s;
-    	-o-transition: all 2s ease 1s;
-    	transition: all 2s ease 1s;
-    	padding-right: 20px;
-	}
-	
-	.current-students .fma-display .icon-group.two {
-		font-size: 150px;
-		line-height: 300px;
-		position: absolute;
-		right: 380px;
-		margin-right: 135px;
-		color: #007C41;
-		text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-		z-index: 100;
-		-webkit-transition: all 2.7s ease 1s;
-		-moz-transition: all 2.7s ease 1s;
-		-o-transition: all 2.7s ease 1s;
-		transition: all 2.7s ease 1s;
-		top: -55px;
-	}
-	
-	.current-students .fma-display .icon-certificate.two {
-		font-size: 635px;
-		line-height: 300px;
-		position: absolute;
-		left: 0;
-		margin-right: 135px;
-		color: #007C41;
-		text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-		z-index: 100;
-		-webkit-transition: all 2.7s ease 1s;
-		-moz-transition: all 2.7s ease 1s;
-		-o-transition: all 2.7s ease 1s;
-		transition: all 2.7s ease 1s;
-		bottom: -120px;
-		z-index: 0;
-	}
-	
+
 .current-students .sidebar a.btn-large {
 	margin-bottom: 1.5em;
 	width: 83%;
@@ -178,17 +106,24 @@
 	
 @media (max-width: 1200px) {
 
-	.current-students .fma-display .icon-certificate.two {
-		opacity:0;
-	}
-	
-	.current-students .fma-display .icon-group.two {
-		right: 360px;
-	}
+
 }
 	
 @media (max-width: 690px) {
 
+	.current-students .content-inner {
+		height: auto;
+	}
+	
+	.current-students .content-inner .fma-caption ul {
+		min-height: auto;
+		display: inline-block;
+	}
+	
+	.current-students .content-inner .fma-caption .frame {
+		display: none;
+	}
+	
 	.current-students .content-inner .fma-caption {
 		width: 100%;
 		top: 10px;
@@ -196,23 +131,7 @@
 	}
 
 	.current-students .content-inner .fma-btns {
-		bottom: 10px;
-		left: auto;
 		width: 100%;
-		font-size: 1.1em;
 	}
 	
-	.current-students .fma-display .icon-certificate.two {
-		opacity:0;
-	}
-	
-	.current-students .fma-display .icon-certificate {
-		padding-right: 0px;
-		margin-right: -44px;
-	}
-	
-	.current-students .fma-display .icon-group.one {
-		right: -70px;
-	}
-
 }
