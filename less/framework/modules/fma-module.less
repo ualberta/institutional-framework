@@ -5,19 +5,19 @@
 
 .fma-container.image-slider {
   * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .fma-slide-wrapper.inside {
+    margin: 10px 10px 0px 10px;
+  }
   .fma-slide {
     float: left;
     display: block;
     position: relative;
-    height: 322px;
     overflow: hidden;
     margin: -1px @fmaSpacing 0px 0;
     width: @fmaInactiveWidth;
     .transition(all 0.3s ease);
     cursor: pointer;
     .opacity(50);
-    #gradient > .directional(rgba(0,100,250,0.35), rgba(205,205,125,0.5), -45deg);
-    .box-shadow(inset 0px 0px 15px rgba(0,0,0,0.25));
     p {
       color: #ffdb05;
       font-size: 3em;
@@ -27,8 +27,14 @@
       white-space: nowrap;
       font-family: "DIN Medium";
     }
-    &:hover {
+    &:hover, &.fma-hover {
       .opacity(100);
+    }
+    img.fma-background {
+      position: relative;
+      width: 878px;
+      height: 313px;
+      max-width: none;
     }
   }
   .fma-slide.fma-active {
@@ -84,8 +90,6 @@
       &.fma-button-active {
         position: relative;
         a {
-          //#gradient > .vertical(darken(#44524A, 8%), #44524A);
-          //#gradient > .vertical(#007C41,#00502A);
           #gradient > .vertical(#fff,#FFF5B8);
           color: #007c41;
           border-left-color: darken(desaturate(#FFF5B8,50%),10%);
@@ -111,6 +115,57 @@
           border-style: solid;
         }
       }
+      &.fma-button-hover {
+        position: relative;
+        a {
+          #gradient > .vertical(#fff,#FFF5B8);
+          color: #007c41;
+          border-left-color: darken(desaturate(#FFF5B8,50%),10%);
+          margin-left: -1px;
+          margin-bottom: -1px;
+          padding-left: 11px;
+          border-bottom: 1px solid darken(desaturate(#FFF5B8,50%),10%);
+          border-right-color: darken(#FFF5B8,15%);
+        }
+      }
+    }
+  }
+  &.inside {
+    ul {
+      border-left: none;
+      border-right: none;
+      li.fma-button-active a,
+      li a,
+      li a:hover {
+        padding-bottom: 8px;
+      }
+      
+    }
+  }
+}
+
+@media (max-width: 1169px) {
+  .fma-container.image-slider .fma-slide img.fma-background {
+    width: 706px;
+    height: 251px;
+    &.center-align {
+      left: 50%;
+      margin-left: -353px;
+    }
+    &.right-align {
+      float: right;
+    }
+  }
+}
+
+@media (min-width: 690px) {
+  .fma-container.image-slider .fma-slide img.fma-background {
+    &.center-align {
+      left: 50%;
+      margin-left: -353px;
+    }
+    &.right-align {
+      float: right;
     }
   }
 }

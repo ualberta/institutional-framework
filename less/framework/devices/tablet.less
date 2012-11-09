@@ -68,29 +68,45 @@
   }
   
   .navigation-inner ul li {
-    display:  inline-block;
     position: relative;
-    a {
-      display:  inline-block;
-      padding:  12px 20px 8px 20px;
-      border-left: 1px solid rgba(255,255,255,0.65);
-      border-right: 1px solid rgba(0,0,0,0.1);
-      margin-right: -4px;
-      
+    padding: 0;
+    a { 
+      margin-right: 0px;
       &:hover {
         text-decoration: none;
       }
     }
+  }
+  
+  .navigation-inner > ul > li {
+    display: block;
+    .clearfix();
+    margin-right: 0px;
+  } 
+  
+  
+  .navigation-inner ul li ul li {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    text-align: center;
+    display: block;
+    margin-right: 0px;
+    border-left: 1px solid #f9fffc;
+    border-right: 1px solid #c9cfcc;
+    text-align: center;
   }
 
   .navigation-inner ul.main-navigation > li:hover > a {
     background: rgba(0,30,0,0.1);
     .box-shadow(inset 0px 1px 6px rgba(0,0,0,0.25));
     border-top: 1px solid rgba(0,0,0,0.25);
-    border-left-color: rgba(0,0,0,0.15);
     padding-top: 11px;
     color: @grayDark;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.65);
+    margin-left: -1px;
+    border-left: 1px solid #a2a7a3;
   }
   
   .navigation-inner ul li .navigation-toggle {
@@ -252,15 +268,9 @@ nav.audience-navigation {
 }
 
 .navigation-inner ul li ul li {
-  
-  padding: 0 0.725% 0 0.725%;
-  text-align: center;
-  margin-right: -4px;  
+  text-align: center; 
   a {
-    padding:  12px 10px 8px 10px;
     border: 0;
-    margin-left:  -10px;
-    margin-right: -10px;
   }
 }
   
