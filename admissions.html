@@ -202,9 +202,17 @@
             <div class="module-container">
               <h3>Study Here</h3>
               <!-- Video -->
-              <div class="video-mod-container">
-                <iframe width="560" height="315" src="http://www.youtube.com/embed/cBgIkhinRww?rel=0" frameborder="0" allowfullscreen></iframe>
-              </div>
+             <div class="frame">
+               <div class="hover-caption-container">
+                 <a href="http://www.youtube.com/embed/cBgIkhinRww?autoplay=1" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="Study Here">
+                   <img src="./img/wu-admissions.png" />
+                 </a>
+                 <i class="icon-play-circle"></i>
+                 <div class="caption">
+                   <p>Colten Yamagishi talks about how easy it is to live, study and have fun at UAlberta.</p>
+                 </div>
+               </div>
+             </div>
               <p>UAlberta is a Top 5 Canadian university and one of the Top 100 in the world, home to more than 200 undergraduate programs, 170 undergraduate programs and 400 active student groups.</p>
             </div>
             <div class="module-container">
@@ -220,24 +228,18 @@
          
         </div>
         <div class="span2 sidebar"> <!-- Sidebar Start -->
-          <a href="#" class="btn-green">Contact Us</a>
-          <div class="extrude links-module deadlines">
-            <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"><i class="icon-calendar icon-large"></i>Upcoming 2013 Winter Term Deadlines</h5>
-            <div class="sidebar-content links">
+          <a href="#" class="btn">Contact Us</a>
+          <h4>Upcoming Applications Deadlines</h4>
+          <div class="extrude deadlines">
+            <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <a href="#"><i class="icon-calendar icon-large"></i>Winter 2013</a></h5>
+           
+            <div class="sidebar-content links collapse">
 				<ul>
-				  <li>
-				    <h6>November 15</h6>
-				    <ul>
-				      <li><a href="#">Agriculture, Life and Environmental Sciences - All Undergraduate and Special/Visiting</a></li>
-				      <li><a href="#">Augustana excluding Bachelor of Music (No Admission)</a></li>
-				      <li><a href="#">Native Studies Special/Visiting</a></li>
-				      <li><a href="#">Faculté Saint-Jean BA and BSc Programs, BSc (ENCS) (Bilingual) and Special/Visiting</a></li>
-				    </ul>
-				  </li>
 				  <li>
 				    <h6>December 1</h6>
 				    <ul>
 				      <li><a href="#">Augustana Special/Visiting</a></li>
+				      <li><a href="#">Augustana excluding Bachelor of Music (No Admission)</a></li>
 				      <li><a href="#">Engineering Special/Visiting</a></li>
 				    </ul>
 				  </li>
@@ -249,6 +251,30 @@
 				  </li>
 				</ul>    
 			</div>
+          </div>
+          
+          <div class="extrude deadlines">
+            <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <a href="#"><i class="icon-calendar icon-large"></i>Spring/Summer 2013</a></h5>
+            <div class="sidebar-content links collapse">
+          		<ul>
+          		  <li>
+          		    <h6>January 31</h6>
+          		    <ul>
+          		      <li><a href="#">Business Special (Accounting only) and Visiting</a></li>
+          		    </ul>
+          		  </li>
+          		  <li>
+          		    <h6>February 1</h6>
+          		    <ul>
+          		      <li><a href="#">Diploma in Education</a></li>
+          		      <li><a href="#">Nursing BScN (Collaborative and BScN Billingual Program</a></li>
+          		      <li><a href="#">Nursing RPN to BScN</a></li>
+          		      <li><a href="#">Nursing BScN After Degree</a></li>
+          		      <li><a href="#">BScN (Billingual) Faculté Saint-Jean</a></li>
+          		      </ul>
+          		  </li>
+          		</ul>    
+          	</div>
           </div>
           <!-- Sidebar End --> 
           
@@ -293,12 +319,168 @@
 </footer>
 <!-- Footer End --> 
 
-<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline --> 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<!-- Modal piece -->
+<div id="videoModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Video Modal</h3>
+  </div>
+  <div class="modal-body">
+    <div class="video-mod-container">
+      <iframe type="text/html" src="" style="min-width: 300px; min-height: 100px;" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-<!-- scripts concatenated and minified via build script --> 
-<script src="./js/bootstrap.min.js"></script> 
-<!-- end scripts -->
+  <!-- scripts concatenated and minified via build script -->
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
+<script>
+ (function($) {
+      $(document).ready(function() {
 
+      // add active class to link category when clicked.
+      $('.link-mod-category > h4, .link-mod-category input').click(function() {
+        $('.link-mod-category').removeClass('link-mod-active');
+        $(this).parent().addClass('link-mod-active');
+        return false;
+      });
+
+      // populate results with all links by default
+      $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+      $('.searchable a').each(function() {
+        $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+      });
+      $('.link-mod-result-none').hide();
+
+      // live search plugin initialization        
+      $('#link-mod-filter-field').search('.searchable a', function(on) {
+
+        // this happens on any keydown, keyup, keypress, or blur event
+        on.all(function(results) {
+          var size = results ? results.size() : 0
+          $('.link-mod-result-title h4').html(
+            'Displaying '+size+
+            ' matches for &quot;'+$('#link-mod-filter-field').val()+
+            '&quot'
+          );
+        });
+
+        // this happens when the filter field has nothing entered
+        on.reset(function() {
+          $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+          $('.link-mod-result-item').remove();
+          $('.searchable a').each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+          $('.link-mod-result-none').hide();
+        });
+
+        // this happens when there are no results base on the query
+        on.empty(function() {
+          $('.link-mod-result-none').show();
+          $('.link-mod-result-item').remove();
+        });
+
+        // this happens when there are results
+        on.results(function(results) {
+          $('.link-mod-result-none').hide();
+          $('.link-mod-result-item').remove();
+          results.each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+        });
+      });
+    });
+    })(jQuery);
+</script>
+
+<!-- For video -->
+
+<script>
+    (function($) {
+      $(document).ready(function() {
+
+      $(document).on("click", ".video-modal-link", function () {
+        var videoSrc = $(this).attr('href');
+        // no modal for mobile
+        if($(window).width() < 500) {
+          window.location = videoSrc;
+        }
+        $('#videoModal iframe').attr('src', videoSrc);
+        $('#videoModal .modal-header h3').text($(this).data('title'));
+      });
+      
+      $('.fma-tabs li').click(function() {
+        $('.fma-slide').removeClass('fma-active');
+        $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
+        $('.fma-tabs li').removeClass('fma-button-active');
+        $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
+        return false;
+      });
+      
+      $('#videoModal').bind('hidden', function () {
+        $('#videoModal iframe').attr('src', '');
+      });
+
+      $('.start').removeClass('start');
+      // add active class to link category when clicked.
+      $('.link-mod-category > h4, .link-mod-category input').click(function() {
+        $('.link-mod-category').removeClass('link-mod-active');
+        $(this).parent().addClass('link-mod-active');
+        return false;
+      });
+
+      // populate results with all links by default
+      $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+      $('.searchable a').each(function() {
+        $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+      });
+      $('.link-mod-result-none').hide();
+
+      // live search plugin initialization        
+      $('#link-mod-filter-field').search('.searchable a', function(on) {
+
+        // this happens on any keydown, keyup, keypress, or blur event
+        on.all(function(results) {
+          var size = results ? results.size() : 0
+          $('.link-mod-result-title h4').html(
+            'Displaying '+size+
+            ' matches for &quot;'+$('#link-mod-filter-field').val()+
+            '&quot'
+          );
+        });
+
+        // this happens when the filter field has nothing entered
+        on.reset(function() {
+          $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+          $('.link-mod-result-item').remove();
+          $('.searchable a').each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+          $('.link-mod-result-none').hide();
+        });
+
+        // this happens when there are no results base on the query
+        on.empty(function() {
+          $('.link-mod-result-none').show();
+          $('.link-mod-result-item').remove();
+        });
+
+        // this happens when there are results
+        on.results(function(results) {
+          $('.link-mod-result-none').hide();
+          $('.link-mod-result-item').remove();
+          results.each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+        });
+      });
+    });
+    })(jQuery);
+  </script>
+<!-- End scripts -->
 </body>
 </html>

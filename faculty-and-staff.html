@@ -266,7 +266,7 @@
             </div>
             
             <div class="module-container">
-              <h3>Subscribe to Daily News [rss icon]</h3>
+              <h3>Subscribe to Daily News <a href="#" class="rss hide-text">RSS</a></h3>
               <ul class="unstyled linklist">
                 <li><a href="#">Research harnessing viruses to fight cancer</a></li>
                 <li><a href="#">Conference centre achieves green standard</a></li>
@@ -281,11 +281,13 @@
         </div>
         <div class="span2 sidebar"> <!-- Sidebar Start -->
 
-          <div class="extrude links-module giving">
-            <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links"> <i class="icon-gift icon-large"></i>Make a Gift</h5>
-            <p>Your support provides scholarships and bursaries to students to help attract world-class talent, researchers, teachers and top students. Propel UAlberta to a whole new level.</p>
-            <a href="#" class="btn-green">Give to the U of A</a>
-          </div>
+         <div class="extrude links-module giving">
+           <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".givingcontent"> <a href="#"><i class="icon-gift icon-large"></i>Make a Gift</a></h5>
+           <div class="sidebar-content givingcontent collapse">
+           		<p>Your support provides scholarships and bursaries to students to help attract world-class talent, researchers, teachers and top students. Propel UAlberta to a whole new level.</p>
+           		<a href="#" class="btn-green">Give to the U of A</a>
+           </div>
+         </div>
         </div>
         <!-- Sidebar End --> 
         
@@ -330,12 +332,74 @@
 </footer>
 <!-- Footer End --> 
 
-<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline --> 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 
-<!-- scripts concatenated and minified via build script --> 
-<script src="./js/bootstrap.min.js"></script> 
-<!-- end scripts -->
+ <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
+<script>
+ (function($) {
+      $(document).ready(function() {
+
+      // add active class to link category when clicked.
+      $('.link-mod-category > h4, .link-mod-category input').click(function() {
+        $('.link-mod-category').removeClass('link-mod-active');
+        $(this).parent().addClass('link-mod-active');
+        return false;
+      });
+
+      // populate results with all links by default
+      $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+      $('.searchable a').each(function() {
+        $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+      });
+      $('.link-mod-result-none').hide();
+
+      // live search plugin initialization        
+      $('#link-mod-filter-field').search('.searchable a', function(on) {
+
+        // this happens on any keydown, keyup, keypress, or blur event
+        on.all(function(results) {
+          var size = results ? results.size() : 0
+          $('.link-mod-result-title h4').html(
+            'Displaying '+size+
+            ' matches for &quot;'+$('#link-mod-filter-field').val()+
+            '&quot'
+          );
+        });
+
+        // this happens when the filter field has nothing entered
+        on.reset(function() {
+          $('.link-mod-result-title h4').html('Displaying all '+$('.searchable a').size()+' links. <small>Begin typing to filter...');
+          $('.link-mod-result-item').remove();
+          $('.searchable a').each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+          $('.link-mod-result-none').hide();
+        });
+
+        // this happens when there are no results base on the query
+        on.empty(function() {
+          $('.link-mod-result-none').show();
+          $('.link-mod-result-item').remove();
+        });
+
+        // this happens when there are results
+        on.results(function(results) {
+          $('.link-mod-result-none').hide();
+          $('.link-mod-result-item').remove();
+          results.each(function() {
+            $('.link-mod-results').append('<li class="link-mod-result-item">'+$(this).parent().html()+'</li>');
+          });
+        });
+      });
+    });
+    })(jQuery);
+</script>
+
+<!-- End scripts -->
 
 </body>
 </html>

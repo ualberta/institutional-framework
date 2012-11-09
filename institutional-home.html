@@ -134,22 +134,31 @@
   </header> <!-- End Header -->
   
 <div class="content-wrapper ualberta-home">
-  <div class="content-top-row start"> 
-    <div class="fma-container">
-    fma
-    </div>
-    <div class="fma-tabs-container">
-      <div class="container">
+<p></p>
+    <div class="fma-container container image-slider">
+      <div class="fma-slide-wrapper clearfix">
+        <div class="fma-slide">
+          slide 1
+        </div>
+        <div class="fma-slide">
+          slide 2
+        </div>
+        <div class="fma-slide">
+          slide 3
+        </div>
+        <div class="fma-slide">
+          slide 4
+        </div>
+      </div>
+      <div class="fma-tabs-container">
         <ul class="fma-tabs row-fluid">
-          <li class="fma-button-active"><a href="#">UAlberta in a Minute</a></li>
-          <li><a href="#">Student Experiences</a></li>
-          <li><a href="#">Working Here</a></li>
+          <li class="fma-button-active"><a href="#">Fran Lebowitz: Festival of Ideas</a></li>
+          <li><a href="#">Steven Pinker</a></li>
+          <li><a href="#">Nobel Peace Prize Night</a></li>
+          <li><a href="#">Jian Ghomeshi</a></li>
         </ul>
       </div>
     </div>
-  </div>
-  
-
   
   <div class="content-container container">
     <div class="why-ualberta-row row-fluid" style="margin-top: 1.57em"> 
@@ -335,6 +344,54 @@ Ralph Haas / Stantec Fellow in Civil Engineering recognizes achievements of youn
     (function($) {
       $(document).ready(function() {
       
+      // FMA MODULE
+      
+      // init
+      var fmaContainer = $('.fma-container');
+      var fmaSlides = fmaContainer.find('.fma-slide');
+      var fmaTabs = fmaContainer.find('.fma-tabs li');
+      console.log('Slides: '+fmaSlides.length);
+      console.log(fmaTabs);
+      
+      var margin = 1;
+      var activeWidth = 75;
+      var inactiveWidth = ((100-activeWidth)-(fmaSlides.length-1*margin))/(fmaSlides.length-1);
+      var tabWidth = 100/fmaSlides.length;
+      
+      console.log('SlideWidth: '+ inactiveWidth);
+      console.log('TabWidth: '+ tabWidth);
+      
+      // setActive
+      fmaTabs.click(function() {
+        setActive($(this).index());
+      });
+      
+      fmaSlides.click(function() {
+        setActive($(this).index());
+      });
+      
+      var setActive = function(i) {
+        fmaSlides.removeClass('fma-active');
+        fmaSlides.eq(i).addClass('fma-active');
+        fmaTabs.removeClass('fma-button-active');
+        fmaTabs.eq(i).addClass('fma-button-active');
+        fmaSlides.css({width: inactiveWidth+'%', marginRight: margin+'%'});
+        fmaSlides.eq(fmaSlides.length-1).css('margin-right', '0%');
+        fmaSlides.eq(i).css('width', activeWidth+'%');
+        return false;
+      }
+      
+      fmaSlides.css({width: inactiveWidth+'%', marginRight: margin+'%'});
+      fmaTabs.css('width', tabWidth+'%');
+      fmaSlides.eq(0).click();
+      fmaSlides.eq(fmaSlides.length-1).css('margin-right', '0%');
+      
+      
+
+      
+
+      
+      
       $(".twitter-feed").tweet({
         count: 3,
         username: "UAlberta",
@@ -352,14 +409,7 @@ Ralph Haas / Stantec Fellow in Civil Engineering recognizes achievements of youn
         $('#videoModal .modal-header h3').text($(this).data('title'));
       });
       
-      $('.fma-tabs li').click(function() {
-        $('.fma-slide').removeClass('fma-active');
-        $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
-        $('.fma-tabs li').removeClass('fma-button-active');
-        $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
-        return false;
-      });
-      
+
       $('#videoModal').bind('hidden', function () {
         $('#videoModal iframe').attr('src', '');
       });
