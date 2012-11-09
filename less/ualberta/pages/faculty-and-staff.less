@@ -12,10 +12,13 @@
 			bottom: 20px;
 			left: 0;
 			padding: 1em;
-			.opacity(80);
+			.opacity(90);
 			ul {margin-bottom: 0;}
 			.linklist;
 			font-size: 0.9em;
+		}
+		.fma-caption:hover {
+			.opacity(100);
 		}
 	}
 	a.hide-text {
@@ -23,6 +26,11 @@
 		height: 24px;
 		display: inline-block;
 		margin-right: 5px;
+		padding: 10px 0 0 0;
+		.opacity(85);
+	}
+	a.hide-text:hover {
+		.opacity(100);
 	}
 	a.facebook {
 		background: url(../img/icon_facebook.png) 0 0 no-repeat;
@@ -49,10 +57,20 @@
 	.secondary-content-area {
 		.linklist;
 		button {
-			margin-top: 1.5em;
+			margin-bottom: 0;
 			padding: 0.6em 0.8em 0.4em 0.8em;
 		}
 		a.rss {
+			padding: 23px 0 0 0;
+			height: 10px;
+			width: 30px;
+			background-position: top right;
+		}
+		a:hover.rss {
+			text-decoration: none;
+		}
+		input {
+			font-size: 0.85em;
 		}
 	}
 	.sidebar {
