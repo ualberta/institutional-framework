@@ -136,21 +136,26 @@
 <div class="content-wrapper ualberta-home">
 <p></p>
     <div class="fma-container container image-slider">
-      <div class="fma-slide-wrapper clearfix">
+      <div class="fma-slide-wrapper inside clearfix">
         <div class="fma-slide">
-          slide 1
+          <img class="fma-background right-align" src="./img/homepage/feature-lebowitz.jpg" />
+          <div class="fma-caption">
+            <h3></h3>
+            <p></p>
+            <a href="#" class="fma-callout"></a>
+          </div>
         </div>
         <div class="fma-slide">
-          slide 2
+          <img class="fma-background" src="./img/homepage/feature-pinker.jpg" />
         </div>
         <div class="fma-slide">
-          slide 3
+          <img class="fma-background" src="./img/homepage/feature-foi-oct.jpg" />
         </div>
         <div class="fma-slide">
-          slide 4
+          <img class="fma-background right-align" src="./img/homepage/feature-q3.jpg" />
         </div>
       </div>
-      <div class="fma-tabs-container">
+      <div class="fma-tabs-container inside">
         <ul class="fma-tabs row-fluid">
           <li class="fma-button-active"><a href="#">Fran Lebowitz: Festival of Ideas</a></li>
           <li><a href="#">Steven Pinker</a></li>
@@ -159,7 +164,7 @@
         </ul>
       </div>
     </div>
-  
+ 
   <div class="content-container container">
     <div class="why-ualberta-row row-fluid" style="margin-top: 1.57em"> 
       <div class="span12">
@@ -350,7 +355,7 @@ Ralph Haas / Stantec Fellow in Civil Engineering recognizes achievements of youn
       var fmaContainer = $('.fma-container');
       var fmaSlides = fmaContainer.find('.fma-slide');
       var fmaTabs = fmaContainer.find('.fma-tabs li');
-      console.log('Slides: '+fmaSlides.length);
+      console.log(fmaSlides);
       console.log(fmaTabs);
       
       var margin = 1;
@@ -370,6 +375,18 @@ Ralph Haas / Stantec Fellow in Civil Engineering recognizes achievements of youn
         setActive($(this).index());
       });
       
+      fmaTabs.hover(function() {
+        toggleHover($(this).index());
+      }, function() {
+        toggleHover($(this).index());
+      });
+      
+      fmaSlides.hover(function() {
+        toggleHover($(this).index());
+      }, function() {
+        toggleHover($(this).index());
+      });
+      
       var setActive = function(i) {
         fmaSlides.removeClass('fma-active');
         fmaSlides.eq(i).addClass('fma-active');
@@ -378,6 +395,12 @@ Ralph Haas / Stantec Fellow in Civil Engineering recognizes achievements of youn
         fmaSlides.css({width: inactiveWidth+'%', marginRight: margin+'%'});
         fmaSlides.eq(fmaSlides.length-1).css('margin-right', '0%');
         fmaSlides.eq(i).css('width', activeWidth+'%');
+        return false;
+      }
+      
+      var toggleHover = function(i) {
+        fmaSlides.eq(i).toggleClass('fma-hover');
+        fmaTabs.eq(i).toggleClass('fma-button-hover');
         return false;
       }
       

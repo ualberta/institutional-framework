@@ -5,6 +5,12 @@
   border-right-width: 0px;
 }
 
+.navigation-inner > ul > li {
+  .btnLightShinyBackground(#E8EeEa, #666, 1px 1px 1px #fff);
+  .box-shadow(none);
+  border-width: 0px;
+}
+
 .navigation-inner {
   margin:  0 auto;
 }
@@ -21,8 +27,7 @@
 
 .navigation-inner ul li {
   a {
-    display:  inline-block;
-    padding:  12px 10px 8px 10px;
+    padding:  12px 0 8px 0;
     font-family:  "DIN Bold", sans-serif;
     text-transform:  uppercase;
     color: #666;
@@ -34,4 +39,14 @@
   .audience-link {
     display: none;
   }
+}
+
+.navigation-inner > ul > li {
+  display: block;
+  .clearfix();
+  margin-right: 0px;
+} 
+
+.navigation-inner ul li ul li a {
+  display: block;
 }
