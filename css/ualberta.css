@@ -7953,6 +7953,63 @@ div.featured-news {
 .campuslife-b .content-inner .fma-caption h3 {
   margin-bottom: 0.2em;
 }
+div.featured-news {
+  margin-bottom: 20px;
+}
+.clear {
+  clear: both;
+}
+.news-search i {
+  color: #CCCCCC;
+  font-size: 1.3em;
+  left: 5px;
+  line-height: 1em;
+  pointer-events: none;
+  position: absolute;
+  top: 7px;
+}
+.news-search {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 90%;
+}
+.news-search input.search-query {
+  padding-left: 25px;
+  width: 100%;
+}
+.news-search-container {
+  margin: 0 0 20px 0 ;
+}
+.news-search-container label {
+  margin: 5px 0 0 0 ;
+  font-size: 0.8em;
+}
+.news-articles .primary-content-area .news-title {
+  display: inline;
+}
+.news-articles .primary-content-area .news-author {
+  display: inline-block;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+.news-articles .primary-content-area .social-media-buttons {
+  margin-bottom: 20px;
+}
+.news-articles .secondary-content-area .news-social {
+  font-size: 28px;
+  display: inline;
+  float: right;
+  margin-top: 2px;
+}
+.news-articles .secondary-content-area .news-social a:hover {
+  text-decoration: none;
+}
+@media (max-width: 979px) and (min-width: 460px) {
+  .secondary-content-area .comments-container {
+    width: 100% !important;
+  }
+}
 @media (min-width: 690px) and (max-width: 979px) {
   nav.audience-navigation {
     bottom: 13px;
