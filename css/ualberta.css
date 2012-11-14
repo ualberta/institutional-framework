@@ -5563,7 +5563,16 @@ ul.calendar-med-mod li a {
   box-sizing: border-box;
 }
 .fma-container.image-slider .fma-slide-wrapper.inside {
-  margin: 10px 10px 0px 10px;
+  padding: 10px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
 }
 .fma-container.image-slider .fma-slide {
   float: left;
@@ -5721,6 +5730,15 @@ ul.calendar-med-mod li a {
   border-bottom: 1px solid #e1d8a4;
   border-right-color: #ffea6c;
 }
+.fma-tabs-container.inside {
+  margin-top: -40px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0px 0px 3px 3px;
+  -moz-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
+}
 .fma-tabs-container.inside ul {
   border-left: none;
   border-right: none;
@@ -5729,6 +5747,18 @@ ul.calendar-med-mod li a {
 .fma-tabs-container.inside ul li a,
 .fma-tabs-container.inside ul li a:hover {
   padding-bottom: 8px;
+}
+.fma-tabs-container.inside ul li:first-child a {
+  border-left-width: 0px;
+  -webkit-border-radius: 0px 0px 0px 3px;
+  -moz-border-radius: 0px 0px 0px 3px;
+  border-radius: 0px 0px 0px 3px;
+}
+.fma-tabs-container.inside ul li:last-child a {
+  border-right-width: 0px;
+  -webkit-border-radius: 0px 0px 3px 0px;
+  -moz-border-radius: 0px 0px 3px 0px;
+  border-radius: 0px 0px 3px 0px;
 }
 @media (max-width: 1169px) {
   .fma-container.image-slider .fma-slide img.fma-background {
@@ -6101,6 +6131,9 @@ button.close {
   }
   .main-navigation.collapse.in {
     height: auto;
+  }
+  .navigation-inner ul li .audience-link {
+    display: block;
   }
   .main-navigation.collapse.in {
     display: block;
@@ -7863,59 +7896,73 @@ ul.event-list li.events-row:nth-child(even) {
   line-height: 150%;
   padding-bottom: 1em;
 }
-.campuslife .btn-green {
+.campuslife .btn-green,
+.campuslife-b .btn-green {
   margin-bottom: 1.5em;
   font-size: 0.9em;
   padding: 0.4em 0.8em 0.2em 0.8em;
 }
-.campuslife .content-inner {
+.campuslife .content-inner,
+.campuslife-b .content-inner {
   position: relative;
 }
-.campuslife .content-inner .fma-caption {
+.campuslife .content-inner .fma-caption,
+.campuslife-b .content-inner .fma-caption {
   position: absolute;
   bottom: 20px;
   left: 0;
   font-size: 0.9em;
 }
-.campuslife .content-inner .fma-caption .btn-green {
+.campuslife .content-inner .fma-caption .btn-green,
+.campuslife-b .content-inner .fma-caption .btn-green {
   text-align: left;
   font-size: 1em;
 }
-.campuslife .content-inner .fma-caption .btn-green .icon-large:before {
+.campuslife .content-inner .fma-caption .btn-green .icon-large:before,
+.campuslife-b .content-inner .fma-caption .btn-green .icon-large:before {
   width: auto;
 }
-.campuslife .content-inner .fma-caption li {
+.campuslife .content-inner .fma-caption li,
+.campuslife-b .content-inner .fma-caption li {
   margin-bottom: 1.5em;
 }
-.campuslife .content-inner .fma-caption h3 {
+.campuslife .content-inner .fma-caption h3,
+.campuslife-b .content-inner .fma-caption h3 {
   margin-bottom: 0.5em;
 }
-.campuslife .secondary-content-area ul li {
+.campuslife .secondary-content-area ul li,
+.campuslife-b .secondary-content-area ul li {
   padding: 0;
   position: static;
   border: none;
   margin-bottom: 0;
 }
-.campuslife .secondary-content-area .module-container {
-  margin-bottom: 2.5em;
+.campuslife .secondary-content-area .module-container,
+.campuslife-b .secondary-content-area .module-container {
+  margin-bottom: 1.8em;
 }
-.campuslife .sidebar h5.sidebar-title {
+.campuslife .sidebar h5.sidebar-title,
+.campuslife-b .sidebar h5.sidebar-title {
   line-height: 1.2em;
   margin: -10px -10px 0 -10px;
 }
-.campuslife .sidebar button {
+.campuslife .sidebar button,
+.campuslife-b .sidebar button {
   margin-bottom: 1.5em;
   width: 100%;
 }
-.campuslife .sidebar .links-module {
+.campuslife .sidebar .links-module,
+.campuslife-b .sidebar .links-module {
   line-height: 150%;
 }
-.campuslife .sidebar .links ul li a {
+.campuslife .sidebar .links ul li a,
+.campuslife-b .sidebar .links ul li a {
   line-height: 135%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-.campuslife .sidebar .links ul li a:hover {
+.campuslife .sidebar .links ul li a:hover,
+.campuslife-b .sidebar .links ul li a:hover {
   *background-color: #fffadd;
   background-image: -moz-linear-gradient(top, #fff5bb, #ffffff);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff5bb), to(#ffffff));
@@ -7925,20 +7972,24 @@ ul.event-list li.events-row:nth-child(even) {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffff5bb', endColorstr='#ffffffff', GradientType=0);
 }
-.campuslife .sidebar .links ul li:first-child a {
+.campuslife .sidebar .links ul li:first-child a,
+.campuslife-b .sidebar .links ul li:first-child a {
   border-top: none;
 }
-.campuslife .sidebar .links ul li:first-child a:hover {
+.campuslife .sidebar .links ul li:first-child a:hover,
+.campuslife-b .sidebar .links ul li:first-child a:hover {
   border-top: none;
 }
-.campuslife .sidebar .date {
+.campuslife .sidebar .date,
+.campuslife-b .sidebar .date {
   line-height: 1em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   font-size: 0.9em;
   color: #666;
 }
-.campuslife .sidebar .footer {
+.campuslife .sidebar .footer,
+.campuslife-b .sidebar .footer {
   *background-color: #f8f8f8;
   background-image: -moz-linear-gradient(top, #ffffff, #f0f0f0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f0f0f0));
@@ -7956,12 +8007,52 @@ ul.event-list li.events-row:nth-child(even) {
   text-shadow: 1px 1px 0 #FFFFFF;
   font-size: 0.9em;
 }
-.campuslife .sidebar .footer a {
+.campuslife .sidebar .footer a,
+.campuslife-b .sidebar .footer a {
   display: inline-block;
   margin: auto auto 10px 0.5em;
 }
-.campuslife .sidebar .givingcontent div {
-  margin: 0.4em auto 0.7em auto;
+.campuslife .sidebar .givingcontent div,
+.campuslife-b .sidebar .givingcontent div {
+  margin: 1em auto 1.2em auto;
+}
+.campuslife-b h2,
+.campuslife-b h3 {
+  border: none;
+}
+.campuslife-b h2.page-title {
+  margin: 0.2em auto 0 auto;
+  font-size: 2.1em;
+}
+.campuslife-b h3 {
+  font-size: 1.6em;
+}
+.campuslife-b h5.sidebar-title {
+  font-size: 1.2em;
+  font-family: "DIN Medium", Arial, sans-serif;
+}
+.campuslife-b a.btn-green {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  padding: 0.5em 1em 0.6em 1em;
+  display: inline-block;
+  margin: 0;
+}
+.campuslife-b .breadcrumb {
+  font-size: 0.85em;
+  margin-top: 1em;
+  margin-left: 0.2em;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.campuslife-b .workhere {
+  padding-top: 0.8em;
+}
+.campuslife-b .content-inner .fma-caption li {
+  margin-bottom: 0.5em;
+}
+.campuslife-b .content-inner .fma-caption h3 {
+  margin-bottom: 0.2em;
 }
 @media (min-width: 690px) and (max-width: 979px) {
   nav.audience-navigation {

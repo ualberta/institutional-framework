@@ -6,7 +6,8 @@
 .fma-container.image-slider {
   * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .fma-slide-wrapper.inside {
-    margin: 10px 10px 0px 10px;
+    .extrude;
+    padding-bottom: 40px;
   }
   .fma-slide {
     float: left;
@@ -131,6 +132,9 @@
     }
   }
   &.inside {
+    margin-top: -40px;
+    .box-shadow(none);
+    .border-radius(0px 0px 3px 3px);
     ul {
       border-left: none;
       border-right: none;
@@ -138,8 +142,16 @@
       li a,
       li a:hover {
         padding-bottom: 8px;
+        
       }
-      
+      li:first-child a {
+        border-left-width: 0px;
+        .border-radius(0px 0px 0px 3px);
+      }
+      li:last-child a {
+        border-right-width:  0px;
+        .border-radius(0px 0px 3px 0px);
+      }
     }
   }
 }
