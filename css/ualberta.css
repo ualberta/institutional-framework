@@ -8232,15 +8232,20 @@ div.featured-news {
   vertical-align: middle;
 }
 .news-articles .primary-content-area .social-media-buttons {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
-.news-articles .secondary-content-area .news-social {
-  font-size: 28px;
-  display: inline;
-  float: right;
-  margin-top: 2px;
+.news-articles .secondary-content-area .news-social a {
+  display: block;
+  vertical-align: top;
+  line-height: 40px;
 }
-.news-articles .secondary-content-area .news-social a:hover {
+.news-articles .secondary-content-area .news-social a i {
+  font-size: 40px;
+  margin-right: 10px;
+  line-height: 40px;
+}
+.news-articles .secondary-content-area .news-social a i:hover,
+.news-articles .secondary-content-area .news-social a:hover i {
   text-decoration: none;
 }
 @media (max-width: 979px) and (min-width: 460px) {
