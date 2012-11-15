@@ -140,9 +140,6 @@
         <div class="fma-slide">
           <img class="fma-background right-align" src="./img/homepage/feature-lebowitz.jpg" />
           <div class="fma-caption">
-            <h3></h3>
-            <p></p>
-            <a href="#" class="fma-callout"></a>
           </div>
         </div>
         <div class="fma-slide">
@@ -157,7 +154,7 @@
       </div>
       <div class="fma-tabs-container inside">
         <ul class="fma-tabs row-fluid">
-          <li class="fma-button-active"><a href="#">Fran Lebowitz: Festival of Ideas</a></li>
+          <li class="fma-button-active"><a href="#">Fran Lebowitz</a></li>
           <li><a href="#">Steven Pinker</a></li>
           <li><a href="#">Nobel Peace Prize Night</a></li>
           <li><a href="#">Jian Ghomeshi</a></li>
@@ -174,15 +171,14 @@
         </div>
       </div>
     </div>
+    <div class="row-fluid">
+      <div class="extrude explore-bar span12">
+        Explore bar
+      </div>
+    </div>
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
       <div class="main-content span">
         <div class="row-fluid">
-          <div class="extrude explore-bar span12">
-            Explore bar
-          </div>
-        </div>
-        <div class="row-fluid">
-
       <div class="primary-content-area span">
       <div class="latest-news">
         <div class="news-heading">
@@ -369,10 +365,12 @@ Ralph Haas / Stantec Fellow in Civil Engineering recognizes achievements of youn
       // setActive
       fmaTabs.click(function() {
         setActive($(this).index());
+        return false;
       });
       
       fmaSlides.click(function() {
         setActive($(this).index());
+        return false;
       });
       
       fmaTabs.hover(function() {
@@ -402,18 +400,9 @@ Ralph Haas / Stantec Fellow in Civil Engineering recognizes achievements of youn
         fmaSlides.eq(i).toggleClass('fma-hover');
         fmaTabs.eq(i).toggleClass('fma-button-hover');
         return false;
-      }
+      }     
       
-      fmaSlides.css({width: inactiveWidth+'%', marginRight: margin+'%'});
-      fmaTabs.css('width', tabWidth+'%');
-      fmaSlides.eq(0).click();
-      fmaSlides.eq(fmaSlides.length-1).css('margin-right', '0%');
-      
-      
-
-      
-
-      
+      setActive(0);
       
       $(".twitter-feed").tweet({
         count: 3,
