@@ -1,0 +1,297 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!-- The Meta: These two must be before <title> -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- The Title -->
+  <title>Framework Prototype</title>
+  
+  <!-- The Other Meta -->
+  <meta name="description" content="University of Alberta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <!-- The Sheets -->
+  
+  <!--[if lt IE 9]>  <link href="./css/ualberta-ie.css" rel="stylesheet"><link href="./css/ualberta-ie-less.css" rel="stylesheet"> <![endif]-->
+  <!--[if IE 7]>  <link href="./css/ualberta-ie7.css" rel="stylesheet"> <![endif]-->
+
+  <!--[if gt IE 8]><!--> <link href="./css/ualberta.css" rel="stylesheet">  <!--<![endif]-->
+   
+    
+  <!-- The Favicon -->
+  <link rel="shortcut icon" href="./ico/favicon.ico">
+  
+  <!-- Le fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+  
+  <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+  <!-- Burn IE6 with fire -->
+  <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header> <!-- Start Header -->
+  
+    <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
+      <div class="blade-inner">
+        <a class="brand" href="#">
+          <!-- for faculties only <img src="./img/logo2.svg" alt="University of Alberta" /> -->
+        </a>
+        <nav class="blade-navigation">
+          <ul class="quick-links-container">
+            <li id="ql" class="dropdown">
+              <a href="#" id="dLabel" class="dropdown-toggle hidden-desktop" data-toggle="dropdown">
+                <span class="quick-links-text">
+                  Quick Links <b class="caret"></b>
+                </span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+              </a>
+              <ul class="quick-links" role="menu" aria-labelledby="dLabel">
+                <li role="menuitem"><a href="#">Find a Person</a></li>
+                <li role="menuitem"><a href="#">ONEcard</a></li>
+                <li role="menuitem"><a href="#">Bear Tracks</a></li>
+                <li role="menuitem"><a href="#">Maps</a></li>
+                <li role="menuitem"><a href="#">Mail</a></li>
+                <li role="menuitem"><a href="#">eClass</a></li>
+                <li role="menuitem"><a href="#">Libraries</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+       <div class="blade-search">
+          <i class="icon-search"></i>
+          <input type="search" class="search-query" placeholder="search">
+        </div> 
+      </div>
+    </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
+
+    <div class="banner-container"> <!-- Start Banner -->
+      <div class="banner-inner">
+        <h1>
+          <span class="identifier"></span>
+          <span class="site-title">Faculty of Development</span>
+        </h1>
+        <div class="banner-logo">
+          <img src="http://www.ualberta.ca/~publicas/uofa/css/img/NavLogo.png" class="site-logo" alt="Site Logo" />
+        </div>
+        <nav class="audience-navigation">
+          <ul>
+            <li role="menuitem"><a href="#">Prospective Students</a></li>
+            <li role="menuitem"><a href="#">Current Students</a></li>
+            <li role="menuitem"><a href="#">Faculty &amp; Staff</a></li>
+            <li role="menuitem"><a href="#">Alumni &amp; Friends</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="shadow-container"></div>
+      <div class="oval-container">
+        <div class="oval oval1"></div>
+        <div class="oval oval2"></div>
+        <div class="oval oval3"></div>
+        <div class="oval oval4"></div>
+      </div>
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
+      <nav id="main-nav" class="navigation-inner">
+        <ul>
+          <li>
+            <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation">
+              Show Navigation <i class="icon-toggle-nav"></i>
+            </a>
+            <ul class="main-navigation collapse">
+              <li role="menuitem"><a href="#">Why UAlberta?</a></li>
+              <li role="menuitem"><a href="#">Faculties &amp; Programs</a></li>
+              <li role="menuitem"><a href="#">Research</a></li>
+              <li role="menuitem"><a href="#">Admissions</a></li>
+              <li role="menuitem"><a href="#">Campus Life</a></li>
+              <li role="menuitem"><a href="#">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Current Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Faculty &amp; Staff</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Alumni &amp; Friends</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- End Navigation -->
+    
+  </header> <!-- End Header -->
+  
+<div class="content-wrapper news-articles">
+
+  <div class="page-title-row">
+    <div class="title-container container"> <!-- Container Start -->
+      <ul class="page-breadcrumb">
+        <li><a href="#" class="bc-home">UAlberta.ca</a></li>
+        <li><a href="#">News &amp; Events</a></li>
+        <li>Chan Koonchung: A dissident vision of 'new China'</li>
+      </ul>
+      <h2 class="page-title">News and Events</h2>
+    </div>
+  </div>
+  <div class="content-container container">
+    <div class="content-inner row-fluid"> <!-- Second Row Start -->
+      <div class="span5 primary-content-area">
+	       <!-- FMA Start -->
+          <h2 class="news-title">Chan Koonchung: A dissident vision of 'new China'</h2>
+          
+          <p class="news-author">By Jamie Hanlon, November 2, 2012</p>
+          
+          <div class="frame featured-news">
+            <div class="slide image-caption-container">
+              <a class="image-shadow">
+                <img src="./img/news-article.jpg" />
+              </a>
+              <div class="feature-caption caption">
+                <p>Chan Koonchung, Chinese activist and author of "The Fat Years," is coming to Edmonton and Calgary as part of UAlberta's 2012 Festival of Ideas.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-media-buttons">
+									
+            <div style="height: 24px; width: 106px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial;" id="___plusone_0"><iframe allowtransparency="true" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 106px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1352912018082" name="I0_1352912018082" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;hl=en-US&amp;origin=http%3A%2F%2Fwww.news.ualberta.ca&amp;url=http%3A%2F%2Fwww.news.ualberta.ca%2Farticle.aspx%3Fid%3D08AD05D7CE0243229B469691DAF3D3B7&amp;jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3DfG-f5n53cL8.en_GB.%2Fsv%3D1%2Fam%3D!9YrXPIrxx2-ITyEIjA%2Fd%3D1%2Frs%3DAItRSTP9LDtUHl4-v_hlv0sErdWxTGDPRg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled&amp;id=I0_1352912018082&amp;parent=http%3A%2F%2Fwww.news.ualberta.ca&amp;pfname=%2F08AD05D7CE0243229B469691DAF3D3B7" title="+1"></iframe></div>
+            <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1352365724.html#_=1352912018071&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.news.ualberta.ca%2Farticle.aspx%3Fid%3D08AD05D7CE0243229B469691DAF3D3B7&amp;size=m&amp;text=Chan%20Koonchung%3A%20A%20dissident%20vision%20of%20'new%20China'&amp;url=http%3A%2F%2Fwww.news.ualberta.ca%2Farticle.aspx%3Fid%3D08AD05D7CE0243229B469691DAF3D3B7" class="twitter-share-button twitter-count-horizontal" style="width: 107px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true"></iframe>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=www.news.ualberta.ca/article.aspx?id=08AD05D7CE0243229B469691DAF3D3B7&amp;amp;layout=button_count&amp;amp;show_faces=true&amp;amp;width=225&amp;amp;action=like&amp;amp;colorscheme=dark&amp;amp;height=21" scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: auto; height: 21px;"></iframe>
+        
+		</div>
+          
+          <!-- FMA End -->
+     <div class="clear"></div>
+     <div class="module-container">
+     
+		<!-- News story text -->
+		<p>(Edmonton) The name Chan Koonchung may not be a household name in Canada. But given his pedigree and understanding of China and its rising dominance globally, his may be a name that Albertans want to remember.</p>
+		<p>The Hong Kong-born Chan, an author, writer and producer, is coming to Edmonton and Calgary Nov. 17 and 18 as part of the University of Alberta’s <a href="http://www.festivalofideas.ca/">Festival of Ideas</a>. </p>
+		<p>Now based in Beijing, Chan is concerned about a gap in perception that exists among Chinese citizens, notably in Beijing. He fears that this gap, caused by current economic prosperity, clouds many people’s perceptions of the current state—and those whose reality remains unclouded are ignored by the other group and squelched by the government. As an activist and public intellectual, Chan transformed his worries into words—a fictional novel entitled <em>The Fat Years</em>.</p>
+		<p><em>The Fat Years </em>(in Chinese, <em>Shengshi: Zhongguo, 2013</em>), which was banned by the Chinese government for its subversive nature, tells of a future China that is gaining in economic strength after another recession has all but crippled other global economies. In this future setting, Chan reveals a complacent population revelling in prosperity with no notice or concern that an entire month’s history has been wiped from public record. The allegorical tale gives more than a nod to the country’s actual treatment of history surrounding the Tiananmen Square protests.</p>
+		<p>His book and much of his work (through his NGO Minjian International) is largely an effort to encourage people to remain vigilant and critical of the government, even in the current times of prosperity. In a 2010 <a href="http://www.youtube.com/watch?v=UCVYaEAeZq4">interview with Danwei TV</a>, Chan spoke of the book and how the fictional work metaphorically revealed what he sees as the current situation in China. </p>
+		<p>“I think people forget a lot, or they try not to remember topics like the period in 1989. It’s not a topic you can profess publicly,” he said. “The younger generation really doesn’t know anything about it now and the people who went through that, their memories are distorted in the sense that they now think that it was maybe good for China. That was not the feeling at the time.”</p>
+		<p>A cooled economy followed by an economic boom. A region overflowing with contrasts of prosperity and poverty—the haves and the have-nots. An exploitative and repressive government. This is the China that occupies Chan’s thoughts. These are also likely some of the thoughts he will bring to light as he joins in conversation with author and journalist Jan Wong at this year’s Festival of Ideas.</p>
+		<p><strong>Chan Koonchung at the Festival of Ideas</strong></p>
+		<p><a href="https://tickets.citadeltheatre.com/TheatreManager/1/tmEvent/tmEvent1680.html?utm_source=festivalofideas.ca&amp;utm_medium=referral&amp;utm_campaign=2012-festival-of-ideas&amp;utm_content=an_afternoon_with_chan_koonchung_nov_17-regular_event_title">Get tickets for the Edmonton event Nov. 17</a></p>
+		<p><a href="http://www.primeboxoffice.com/concert/tickets.aspx/chan-koonchung/Calgary/1193?&amp;utm_campaign=2012-festival-of-ideas&amp;utm_content=ethiopian_jazz_either_orchestra_nov_17-regular_event_title">Get tickets for the Calgary event Nov. 18</a></p>
+
+     </div>
+     
+      </div><!--primary content-->
+      
+      <div class="span5 secondary-content-area clearfix">
+        
+        <div class="secondary-row">
+          <!-- Comments -->
+          <div class="module-container comments-container">
+          	<div class="news-social">
+          		<a href="#"><i class="icon-google-plus-sign"></i></a>
+          		<a href="#"><i class="icon-twitter-sign"></i></a> 
+          		<a href="#"><i class="icon-facebook-sign"></i></a>
+          	</div>
+            <h3>Share your thoughts</h3>
+            <p>Need some text for this area. Facebook comments can go below here.</p>
+            
+            <img src="./img/fb-filler.jpg" />
+            
+     		<div class="fb-comments" data-href="http://news.ualberta.ca/" data-num-posts="10" data-width="580"></div>
+     		
+          </div>
+             <!-- End Comments -->
+        </div>
+        
+  
+        
+        
+      </div> 
+      <div class="span2 sidebar"> <!-- Sidebar Start -->
+           <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-star"></i> Need to Know
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Residence and Housing</a></li>
+              <li><a href="#">Order Transcripts</a></li>
+              <li><a href="#">Scholarships and Awards</a></li>
+              <li><a href="#">Contact UAlberta</a></li>
+            </ul>
+          </div>
+        </div><!--Need to know end-->
+        <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-asterisk"></i> Special Registrations
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Open Studies</a></li>
+              <li><a href="#">Transfer</a></li>
+            </ul>
+          </div>
+        </div><!--Need to know end-->
+     </div> <!-- Sidebar End -->
+     
+    </div> <!-- Second Row End -->
+   
+  </div> <!-- Container End -->
+</div>
+     
+    <div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
+      <div class="footer-container container"> <!-- Footer Container Start -->
+        <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+        
+          <div class="span9 footer-copyright">
+            <ul class="footer-quick-links">
+              <li><a href="#">Find a Person</a></li>
+              <li><a href="#">ONEcard</a></li>
+              <li><a href="#">Bear Tracks</a></li>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Mail</a></li>
+              <li><a href="#">eClass</a></li>
+              <li><a href="#">Libraries</a></li>
+            </ul>
+            <p>
+              © 2012 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
+            </p>
+          </div>
+          
+          <div class="span3 footer-right">
+            <a href="#">Back To Top</a>
+          </div>
+          
+        </div> <!-- Footer Inner End -->
+      </div>  <!-- Footer Container End -->
+    </div> <!-- Footer Bottom Row End -->
+  </footer> <!-- Footer End -->
+ 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+<script src="./js/bootstrap.min.js"></script>
+  <script>
+  /*
+    $(document).ready(function() {
+    $('.content-top-row .tab-content').height(
+      ($('.content-top-row').height()-$('.content-top-row .nav-tabs').height()-50)
+      );
+    });
+    */
+  </script>
+  <!-- end scripts -->
+
+</body>
+</html>

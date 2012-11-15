@@ -1,3 +1,21 @@
+@highRes_RowWidth:           @gridRowWidth1200;
+@highRes_SearchBox:        520px;
+@highRes_SearchMiddle:  70px;
+
+@highRes_SearchBoxFluid:        percentage(@highRes_SearchBox/@highRes_RowWidth);
+@highRes_SearchMiddleFluid:       percentage(@highRes_SearchMiddle/@highRes_RowWidth);
+
+@desktop_RowWidth:           @gridRowWidth;
+@desktop_SearchBox:        405px;
+@desktop_SearchMiddle:        60px;
+
+@desktop_SearchBoxFluid:        percentage(@desktop_SearchBox/@desktop_RowWidth);
+@desktop_SearchMiddleFluid:        percentage(@desktop_SearchMiddle/@desktop_RowWidth);
+
+@tablet_SidebarWidth:       170px;
+
+@tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
+
 .prospective-student .fma-container {
   .fma-slide {
     position: absolute;
@@ -31,10 +49,10 @@
 	box-shadow: none;
 }
 .prospective-student .fma-container {
-  position: relative;
-  overflow-y: hidden;
-  overflow-x: visible;
-  .secondary-link {
+  	position: relative;
+  	overflow-y: hidden;
+  	overflow-x: visible;
+  	.secondary-link {
     margin-left: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 10px;
@@ -87,16 +105,15 @@ ul.program-list li{
 	font-size:1.5em;
 	margin-top:80px;
 }
-
 .grey-arrow{
-	font-size:2.2em;
+	font-size:2.5em;
 	margin:10px 0px 15px 0px;
 }
 .major-search .btn{
--webkit-border-radius: 0 4px 4px 0;
-     -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
-           display: inline-block;
+	-webkit-border-radius: 0 4px 4px 0;
+   -moz-border-radius: 0 4px 4px 0;
+   border-radius: 0 4px 4px 0;
+   display: inline-block;
   width: auto;
   min-width: 16px;
   padding: 4px 27px;
@@ -121,57 +138,98 @@ ul.program-list li{
 .prospective-student .fma-container h3{
 	font-size:2em;
 	margin: 0.8em 0em 0.5em 0em;
-
 }
 .prospective-student .fma-container .fma-slide.fma-active {
     width:  100%;
     padding:10px 10px 10px 0px;
-   text-align:center;
-  }
-  .prospective-student .fma-container.image-slider .fma-slide p{
-  padding-top:0px;
-  font-size:1.2em;
-  color:#44524A;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: none;
-  }
+    text-align:center;
+}
+.prospective-student .fma-container.image-slider .fma-slide p{
+  	padding-top:0px;
+  	font-size:1em;
+  	color:#44524A;
+  	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  	text-transform: none;
+  	white-space:inherit;
+}
 .white-boxes{
-background-color: white;
-border: #EEE 1px solid;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-padding: 10px;
-margin: 0px 0px 15px 0px;
-
+	background-color: white;
+	border: #EEE 1px solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	margin: 0px 0px 15px 0px;
+}
+	.content-top-row.start {
+		background-position: -600px 250px;
+	}
+	.prospective-student .fma-container {
+		width: 100%;
+		height: 300px;
+	}
+   .fma-slide {
+   		width:  100%;
 }
 
-@media (min-width: 690px) {
-
-.content-top-row.start {
-  background-position: -600px 250px;
-}
-
-.prospective-student .fma-container {
-  width: 100%;
-  height: 300px;}
-
-  .fma-slide {
-    width:  100%;
-  }
-
-}
-
-@media (min-width: 979px) {
-
-}
-
-@media (max-width: 689px) {
-
-
+@media (min-width: 320px) and (max-width:689px){
+	.prospective-student .fma-container .search-graduate h3, .prospective-student .fma-container .search-undergraduate h3{
+		font-size:1.3em;
+		margin:0;
+	}
+	h4.search-header{
+		font-size:1.2em;
+		line-height:17px;
+	}
+	.grey-arrow{
+		display:none;
+	}
+	.span2.middle{
+		display:none;
+	}
+	.input-append input[class*="span"].search-input{
+		width:70%;
+	}
+	.white-boxes{
+		padding:5px;
+		margin:0px 0px 10px 0px;
+	}
+	.major-search .btn{
+		padding:4px 10px;
+	}
 }
 
 @media (min-width: 690px) and (max-width: 979px) {
- 
+	.prospective-student{
+		.sidebar {
+			top:363px;
+		}	
+ }
+}
+@media (min-width: 690px) and (max-width:1199px) {
+	.prospective-student{
+		.search-faculty{
+			width:@desktop_SearchBoxFluid;
+		}
+		.search-major{
+			width:@desktop_SearchBoxFluid;
+		}
+		.middle{
+			width:@desktop_SearchMiddleFluid;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.prospective-student{
+		.search-faculty{
+			width:@highRes_SearchBoxFluid;
+		}
+		.search-major{
+			width:@highRes_SearchBoxFluid;
+		}
+		.middle{
+			width:@highRes_SearchMiddleFluid;
+		}
+	}
 }
