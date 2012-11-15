@@ -12,6 +12,20 @@
 @hRes_SecColFluid:        percentage(@hRes_SecCol/@hRes_Content);
 @hRes_innerGutterFluid:   percentage(@hRes_Gutter/@hRes_Content);
 
+@dTop_RowContainer:       @gridRowWidth;
+
+@dTop_Content:            750px;
+@dTop_PriCol:             451px;
+@dTop_SecCol:             279px;
+@dTop_Sidebar:            170px;
+@dTop_Gutter:             20px;
+
+@dTop_ContentFluid:       percentage(@dTop_Content/@dTop_RowContainer);
+@dTop_SidebarFluid:       percentage(@dTop_Sidebar/@dTop_RowContainer);
+@dTop_PriColFluid:        percentage(@dTop_PriCol/@dTop_Content);
+@dTop_SecColFluid:        percentage(@dTop_SecCol/@dTop_Content);
+@dTop_innerGutterFluid:   percentage(@dTop_Gutter/@dTop_Content);
+
 
 .secondary-content-area {
   div[class*='heading'] {
@@ -75,6 +89,38 @@
   }
 }
 
+@media (min-width: 690px) {
+  .ualberta-home .fma-tabs-container ul li { width: 25%; }
+}
+
+
+@media (min-width: 979px) {
+
+  .content-top-row {
+    .tab-content {
+      min-height: 264px;
+      height: 264px;
+    }
+  }
+  
+  .ualberta-home {
+    .row-fluid {
+      .main-content {
+        width: @hRes_ContentFluid;
+      }
+      .primary-content-area {
+        width: @hRes_PriColFluid;
+      }
+      .secondary-content-area {
+        width: @hRes_SecColFluid;
+        margin-left: @hRes_innerGutterFluid;
+      }
+      .sidebar {
+        width: @hRes_SidebarFluid;
+      }
+    }
+  }
+}
 
 
 @media (min-width: 1200px) {
@@ -87,20 +133,26 @@
   }
   
   .ualberta-home {
-  .row-fluid {
-    .main-content {
-      width: @hRes_ContentFluid;
-    }
-    .primary-content-area {
-      width: @hRes_PriColFluid;
-    }
-    .secondary-content-area {
-      width: @hRes_SecColFluid;
-      margin-left: @hRes_innerGutterFluid;
-    }
-    .sidebar {
-      width: @hRes_SidebarFluid;
+    .row-fluid {
+      .main-content {
+        width: @hRes_ContentFluid;
+      }
+      .primary-content-area {
+        width: @hRes_PriColFluid;
+      }
+      .secondary-content-area {
+        width: @hRes_SecColFluid;
+        margin-left: @hRes_innerGutterFluid;
+      }
+      .sidebar {
+        width: @hRes_SidebarFluid;
+      }
     }
   }
+}
+
+@media (min-width: 690px) and (max-width: 979px) {
+  .ualberta-home .sidebar {
+    top: 491px;
   }
 }
