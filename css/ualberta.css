@@ -8055,6 +8055,37 @@ ul.event-list li.events-row:nth-child(even) {
   margin-bottom: 0.2em;
 }
 @media (min-width: 690px) and (max-width: 979px) {
+  .row-fluid.two-col .primary-two-col {
+    width: 74.21875%;
+    margn-left: 0px;
+    float: left;
+  }
+  .row-fluid.two-col .sidebar {
+    width: 22.135416666666664%;
+    float: right;
+    position: inherit;
+  }
+}
+@media (min-width: 980px) {
+  .row-fluid.two-col .primary-two-col {
+    width: 750px;
+    float: left;
+  }
+  .row-fluid.two-col .sidebar {
+    width: 18.085106382978726%;
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .row-fluid.two-col .primary-two-col {
+    width: 82.90598290598291%;
+    float: left;
+  }
+  .row-fluid.two-col .sidebar {
+    width: 14.529914529914532%;
+  }
+}
+@media (min-width: 690px) and (max-width: 979px) {
   nav.audience-navigation {
     bottom: 13px;
   }
