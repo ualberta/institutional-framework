@@ -37,6 +37,14 @@
   margin-top: 0px;
 }
 
+.ualberta-home .content-inner {
+  position: relative;
+}
+
+.why-ualberta-row {
+  position: relative;
+}
+
 .explore-bar {
   margin-bottom: 1.57em;
 }
@@ -90,36 +98,51 @@
 }
 
 @media (min-width: 690px) {
-  .ualberta-home .fma-tabs-container ul li { width: 25%; }
+  .ualberta-home .fma-tabs-container ul li { 
+    width: 25%; 
+  }
+  
+  .why-ualberta-row {
+    .button-container {
+      width:  20%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      button {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    }
+    p {
+      width: 50%;
+    }
+    .extrude {
+      min-height: 135px;
+    }
+  }
 }
 
 
 @media (min-width: 979px) {
-
-  .content-top-row {
-    .tab-content {
-      min-height: 264px;
-      height: 264px;
-    }
-  }
   
   .ualberta-home {
     .row-fluid {
       .main-content {
-        width: @hRes_ContentFluid;
+        width: @dTop_ContentFluid;
       }
       .primary-content-area {
-        width: @hRes_PriColFluid;
+        width: @dTop_PriColFluid;
       }
       .secondary-content-area {
-        width: @hRes_SecColFluid;
-        margin-left: @hRes_innerGutterFluid;
+        width: @dTop_SecColFluid;
+        margin-left: @dTop_innerGutterFluid;
       }
       .sidebar {
-        width: @hRes_SidebarFluid;
+        width: @dTop_SidebarFluid;
       }
     }
   }
+  
 }
 
 
@@ -153,6 +176,8 @@
 
 @media (min-width: 690px) and (max-width: 979px) {
   .ualberta-home .sidebar {
-    top: 491px;
+    top: 20px;
+    right:  0px;
+    position: absolute;
   }
 }

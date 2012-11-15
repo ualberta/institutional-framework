@@ -1,0 +1,128 @@
+.explore-bar-container {
+  margin-bottom:  1.57em;
+  overflow: hidden;
+  position: relative;
+  a.eb-control {
+    display: block;
+    position: absolute;
+    top: 0;
+    height:60px;
+    padding:  55px 15px 10px 15px;
+    font-size: 2em;
+    #gradient > .vertical(#fff, #f0f0f0);
+    text-align: center;
+    &.eb-prev {
+
+      .border-radius(3px 0px 0px 3px);
+      border-right:  1px solid #f0f0f0;
+      left: 0;
+    }
+    &.eb-next {
+
+      .border-radius(0px 3px 3px 0px);
+      right: 0;
+      border-left:  1px solid #f0f0f0;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    .clearfix();
+    width: 8000px;
+  }
+  ul li {
+    float: left;
+    text-align: center;
+    width: 115px;
+    padding: 5px 5px 3px 5px;
+    &:first-child {
+      padding-left:45px;
+    }
+    &:last-child {
+      padding-right: 45px;
+    }
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  ul li i {
+    font-size:  3em;
+    vertical-align:middle;
+    width: 64px;
+    height: 64px;
+    .border-radius(44px);
+    #gradient > .directional(lighten(@linkColor,10%), @linkColor, -45deg);
+    .box-shadow(inset 0px 0px 10px #007c41, 1px 1px 3px rgba(0,0,0,0.35));
+    text-shadow: 0px 1px 4px darken(@linkColor, 5%);
+    color: #fff;
+    font-weight: normal;
+    &::before {
+      margin-top:26px;
+    }
+  }
+  ul li span {
+    display: block;
+    font-size:  12px;
+    margin-top: 5px;
+    line-height:  1.2em;
+    font-weight: bold;
+    color:  @grayDark;
+  }
+  ul li a:hover {
+    i {
+      background: @linkColor;
+      .box-shadow(inset 0px 0px 15px darken(@linkColor,10%));
+      text-shadow: none;
+    }
+  }
+}
+
+.explore-bar-container {
+  ul li {
+    width: 95px;
+  }
+  ul li i {
+    font-size:  2em;
+    width: 44px;
+    height: 44px;
+    &::before {
+      margin-top:15px;
+    }
+  }
+}
+
+@media (min-width:690px) {
+  .row-fluid {
+    .explore-bar-container {
+      width: @tablet_PriColFluid;
+    }
+  }
+}
+
+@media (min-width:979px) {
+  .row-fluid {
+    .explore-bar-container {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width:1200px) {
+  .explore-bar-container {
+    ul li {
+      width: 115px;
+    }
+    ul li i {
+      font-size:  3em;
+      width: 64px;
+      height: 64px;
+      &::before {
+        margin-top:26px;
+      }
+    }
+  }
+}
