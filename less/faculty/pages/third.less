@@ -32,27 +32,23 @@
 @tablet_InThisSectionFluidThird: percentage(@tablet_InThisSectionWidthThird/@tablet_RowWidth);
 @tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
 
+hr.softline{
+	  margin:10px 0px;
+  }
+
 @media (min-width: 690px) {
-.row-fluid.third {
-  
-
-    .primary-content-area
-    {
-      width: @tablet_PriColFluidThird;
-      float:left;
+	.row-fluid.third {
+  		.primary-content-area{
+	  	width: @tablet_PriColFluidThird;
+        float:left;
     }
-    
-     .sidebar {
-      width: @tablet_SidebarFluid;
-      float: right;
-      position:inherit;
+    .sidebar {
+      	width: @tablet_SidebarFluid;
+      	float: right;
+      	position:inherit;
     }
-    
   }
-  }
-
-
-
+ }
 @media (min-width: 690px) and (max-width: 890px) {
 .row-fluid.third {
     .inthissection,
@@ -62,11 +58,9 @@
 	     width:@tablet_InThisSectionFluidThird;
 	      margin-left:0px;
      }
-     }
+  }
 }
-
 @media (min-width: 891px) and (max-width: 979px) {
-
   .row-fluid.third {
       .primary-content-area {
         width: @desktop_PriColFluidThird;
@@ -77,41 +71,25 @@
         position:inherit;
       }
   }
-
 }
-
-@media (max-width: 979px) {
-
-  .row-fluid.third{
-    .feature-area, 
-    .audience-area,
-    .primary-content-area,
-    .secondary-content-area {
-      margin-left: 0px;
-    }
-  }
-  
-}
-
 @media (min-width: 980px) {
-
   hr.soften {
     width: auto;
   }
   .row-fluid.third{
       .feature-area {
-        width: @desktop_FeatureFluid;
-      }
-      .audience-area {
-        width: @desktop_AudienceFluid;
-      }
-      .primary-content-area {
-        width: @desktop_PriColFluidThird;
-        float:left;
-      }
-      .sidebar {
+      width: @desktop_FeatureFluid;
+  }
+  .audience-area {
+      width: @desktop_AudienceFluid;
+   }
+   .primary-content-area {
+       width: @desktop_PriColFluidThird;
+       float:left;
+   }
+   .sidebar {
         width: @desktop_SidebarFluid;
-      }
+    }
   }
   .content-top-row {
     .tab-content {
@@ -120,18 +98,15 @@
       height: 260px;
     }
   }
-
 }
 
 @media (min-width: 1200px) {
-
   .content-top-row {
     .tab-content {
       min-height: 264px;
       height: 264px;
     }
   }
-  
   .row-fluid.third{
     .feature-area {
       width: @highRes_FeatureFluid;
@@ -148,7 +123,3 @@
     }
   }
 }
-
-  hr.softline{
-	  margin:10px 0px;
-  }

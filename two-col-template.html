@@ -1,0 +1,299 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!-- The Meta: These two must be before <title> -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- The Title -->
+  <title>Framework Prototype</title>
+  
+  <!-- The Other Meta -->
+  <meta name="description" content="University of Alberta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <!-- The Sheets -->
+  
+  <!--[if lt IE 9]>  <link href="./css/ualberta-ie.css" rel="stylesheet"><link href="./css/ualberta-ie-less.css" rel="stylesheet"> <![endif]-->
+  <!--[if IE 7]>  <link href="./css/ualberta-ie7.css" rel="stylesheet"> <![endif]-->
+
+  <!--[if gt IE 8]><!--> <link href="./css/ualberta.css" rel="stylesheet">  <!--<![endif]-->
+   
+    
+  <!-- The Favicon -->
+  <link rel="shortcut icon" href="./ico/favicon.ico">
+  
+  <!-- Le fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+  
+  <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+  <!-- Burn IE6 with fire -->
+  <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header> <!-- Start Header -->
+  
+    <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
+      <div class="blade-inner">
+        <a class="brand" href="#">
+          <!-- for faculties only <img src="./img/logo2.svg" alt="University of Alberta" /> -->
+        </a>
+        <nav class="blade-navigation">
+          <ul class="quick-links-container">
+            <li id="ql" class="dropdown">
+              <a href="#" id="dLabel" class="dropdown-toggle hidden-desktop" data-toggle="dropdown">
+                <span class="quick-links-text">
+                  Quick Links <b class="caret"></b>
+                </span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+              </a>
+              <ul class="quick-links" role="menu" aria-labelledby="dLabel">
+                <li role="menuitem"><a href="#">Find a Person</a></li>
+                <li role="menuitem"><a href="#">ONEcard</a></li>
+                <li role="menuitem"><a href="#">Bear Tracks</a></li>
+                <li role="menuitem"><a href="#">Maps</a></li>
+                <li role="menuitem"><a href="#">Mail</a></li>
+                <li role="menuitem"><a href="#">eClass</a></li>
+                <li role="menuitem"><a href="#">Libraries</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+       <div class="blade-search">
+          <i class="icon-search"></i>
+          <input type="search" class="search-query" placeholder="search">
+        </div> 
+      </div>
+    </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
+
+    <div class="banner-container"> <!-- Start Banner -->
+      <div class="banner-inner">
+        <h1>
+          <span class="identifier"></span>
+          <span class="site-title">Faculty of Development</span>
+        </h1>
+        <div class="banner-logo">
+          <img src="http://www.ualberta.ca/~publicas/uofa/css/img/NavLogo.png" class="site-logo" alt="Site Logo" />
+        </div>
+        <nav class="audience-navigation">
+          <ul>
+            <li role="menuitem"><a href="#">Prospective Students</a></li>
+            <li role="menuitem"><a href="#">Current Students</a></li>
+            <li role="menuitem"><a href="#">Faculty &amp; Staff</a></li>
+            <li role="menuitem"><a href="#">Alumni &amp; Friends</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="shadow-container"></div>
+      <div class="oval-container">
+        <div class="oval oval1"></div>
+        <div class="oval oval2"></div>
+        <div class="oval oval3"></div>
+        <div class="oval oval4"></div>
+      </div>
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
+      <nav id="main-nav" class="navigation-inner">
+        <ul>
+          <li>
+            <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation">
+              Show Navigation <i class="icon-toggle-nav"></i>
+            </a>
+            <ul class="main-navigation collapse">
+              <li role="menuitem"><a href="#">Why UAlberta?</a></li>
+              <li role="menuitem"><a href="#">Faculties &amp; Programs</a></li>
+              <li role="menuitem"><a href="#">Research</a></li>
+              <li role="menuitem"><a href="#">Admissions</a></li>
+              <li role="menuitem"><a href="#">Campus Life</a></li>
+              <li role="menuitem"><a href="#">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Current Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Faculty &amp; Staff</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Alumni &amp; Friends</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- End Navigation -->
+    
+  </header> <!-- End Header -->
+  
+<div class="content-wrapper">
+
+  <div class="page-title-row">
+    <div class="title-container container"> <!-- Container Start -->
+      <h2 class="page-title">Second Column</h2>
+    </div>
+  </div>
+  <div class="content-container container">
+    <div class="content-inner row-fluid two-col">
+    <div class="primary-two-col">
+  <p>The University of Alberta is committed to providing our staff, students and visitors with websites that respect their privacy. This page summarizes the privacy policy and practices for all University of Alberta websites. University of Alberta websites do not automatically gather any personal information from you, such as your name, phone number or email address. This information is only obtained if you provide it voluntarily, through contacting us via email, or through an online form. Any personal information you do provide is managed according to the Alberta Freedom of Information and Protection of Privacy (FOIP) Act. This means that, at the point of collection, you will be informed that your personal information is being collected, the purpose for which it is being collected, and that you have a right of access to the collected information. Some University of Alberta websites may collect more information than is described here and will have additional privacy policies. Where applicable, please be sure to read these privacy policies.</p>
+      <p><strong>Information collected automatically via the Internet</strong></p>
+      <p>The University of Alberta logs http requests to our server. These logs capture computer information, navigation and clickstream data.</p>
+
+<p>Some of the information collected does not identify who you are. Other information, such as your domain name or IP address, may identify you depending on the naming standards followed by your Internet service provider. You may wish to ask them about their polices and practices.</p>
+
+<p>Although we make no attempt to link the information captured to the identity of individuals, the information captured does identify the following:</p>
+<ul>
+    <li>the Internet domain and IP address from which you access our website</li>
+    <li>the type of browser and operating system used to access our site</li>
+    <li>screen resolution of your monitor</li>
+    <li>the date and time you access our site</li>
+    <li>the pages you visit</li>
+    <li>the address of any website from which you linked to the University of Alberta website</li>
+</ul>
+<p>This information is used to help us make our site more useful to our audiences by learning about the number of visitors to our site, and by monitoring traffic patterns and the types of technology our visitors use. We do not track or record information about specific individuals and their visits. Visitor information is not disclosed to anyone except University of Alberta personnel who need the information for legitimate business purposes such as responding to a request.</p>
+<p><Strong>Cookies</Strong></p>
+<p>A cookie is a small piece of text information that is sent to your browser when you access a website. Your browser will return this cookie information to the domain where the cookie originated. We do not regularly use “cookies” to track how our visitors use the site; when cookies are used, they may be used to help you fill in forms or track your use of the sites. The length of time that the cookie will reside on your machine will depend upon the specific set-up of the particular sites you visit. If you are concerned about the use of cookies, you can refer to the help information in your browser software for information on how to disable cookies. If you wish to delete cookies from your machine, consult your browser’s help files for instructions on how to do so.</p>
+<p><Strong>Cookies used on some sites</Strong></p>
+<p>A number of University of Alberta websites (such as the one you are viewing now) use dynamically driven content. These pages use two specific cookies to define the parameters of the site you are visiting. These tokens are identified by your browser as CFIDE and CFTOKEN.These cookies do not gather or submit any information on users visiting the site.</p>
+     <p><Strong>Cookies used on some sites</Strong></p>
+<p>A number of University of Alberta websites (such as the one you are viewing now) use dynamically driven content. These pages use two specific cookies to define the parameters of the site you are visiting. These tokens are identified by your browser as CFIDE and CFTOKEN.These cookies do not gather or submit any information on users visiting the site.</p>
+    </div>
+     
+        
+     
+      
+       <div class="span2 sidebar"> <!-- Sidebar Start -->
+           <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-phone"></i> Media Relations
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Find Media Contacts</a></li>
+            </ul>
+          </div>
+        </div><!--Media contacts-->
+        <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-asterisk"></i> Stay Informed
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Daily News Email</a></li>
+              <li><a href="#">Follow @UAlberta</a></li>
+              <li><a href="#">RSS</a></li>
+            </ul>
+          </div>
+        </div><!--End Stay Informed-->
+      <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-bullhorn"></i> Campus Notices
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+            </ul>
+          </div>
+        </div><!--End Campus Notices-->
+        <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-trophy"></i> Bears and Pandas News
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">More &raquo;</a></li>
+            </ul>
+          </div>
+        </div><!--End Bears and Pandas-->
+                <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-group"></i> Alumni News
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">More &raquo;</a></li>
+            </ul>
+          </div>
+        </div><!--End Alumni-->
+       <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <i class="icon-pencil"></i> Colloquy Blog
+          </h5>
+          <div class="sidebar-content links">
+            <ul>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">Nullam Cras Ipsum Nibh</a></li>
+              <li><a href="#">More &raquo;</a></li>
+            </ul>
+          </div>
+        </div><!--End Colloquy blog-->
+     </div> <!-- Sidebar End -->
+     
+    </div> <!-- Second Row End -->
+   
+  </div> <!-- Container End -->
+</div>
+     
+    <div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
+      <div class="footer-container container"> <!-- Footer Container Start -->
+        <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+        
+          <div class="span9 footer-copyright">
+            <ul class="footer-quick-links">
+              <li><a href="#">Find a Person</a></li>
+              <li><a href="#">ONEcard</a></li>
+              <li><a href="#">Bear Tracks</a></li>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Mail</a></li>
+              <li><a href="#">eClass</a></li>
+              <li><a href="#">Libraries</a></li>
+            </ul>
+            <p>
+              © 2012 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
+            </p>
+          </div>
+          
+          <div class="span3 footer-right">
+            <a href="#">Back To Top</a>
+          </div>
+          
+        </div> <!-- Footer Inner End -->
+      </div>  <!-- Footer Container End -->
+    </div> <!-- Footer Bottom Row End -->
+  </footer> <!-- Footer End -->
+ 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+<script src="./js/bootstrap.min.js"></script>
+  <script>
+  /*
+    $(document).ready(function() {
+    $('.content-top-row .tab-content').height(
+      ($('.content-top-row').height()-$('.content-top-row .nav-tabs').height()-50)
+      );
+    });
+    */
+  </script>
+  <!-- end scripts -->
+
+</body>
+</html>
