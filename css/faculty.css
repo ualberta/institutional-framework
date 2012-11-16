@@ -6026,49 +6026,6 @@ ul.calendar-med-mod li a {
 h1 {
   font-size: 30px;
 }
-@media (min-width: 690px) {
-  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu {
-    right: -480px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
-    right: -300px;
-    left: auto;
-    width: 500px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu .section-navigation {
-    width: 46%;
-  }
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu {
-    right: -350px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu {
-    right: -150px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
-    width: 500px;
-  }
-  .navigation-inner .sub-menu .section-title {
-    text-align: left;
-  }
-  .navigation-inner .sub-menu ul li a {
-    text-align: left;
-  }
-  .navigation-inner .sub-menu .section-description {
-    text-align: left;
-  }
-}
-@media (min-width: 690px) and (max-width: 831px) {
-  .navigation-inner ul li ul li a {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-}
-@media (min-width: 832px) and (max-width: 979px) {
-  .navigation-inner ul li ul li a {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
 div.module-tertiary-links-heading {
   position: relative;
   border-bottom: 1px solid #fff9ee;
@@ -6175,6 +6132,63 @@ ul.breadcrumbs li:last-child:after {
   margin-top: 0px;
   font-family: "DIN Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .navigation-inner ul li a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 690px) {
+  .navigation-inner ul.section-navigation li {
+    border: none;
+    float: none;
+    margin-left: -5px;
+  }
+  .navigation-inner ul.section-navigation li:hover {
+    margin-left: -5px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu {
+    right: -480px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
+    right: -300px;
+    left: auto;
+    width: 500px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu .section-navigation {
+    width: 46%;
+  }
+  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu {
+    right: -350px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu {
+    right: -150px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
+    width: 500px;
+  }
+  .navigation-inner .sub-menu .section-title {
+    text-align: left;
+  }
+  .navigation-inner .sub-menu ul li a {
+    text-align: left;
+  }
+  .navigation-inner .sub-menu .section-description {
+    text-align: left;
+  }
+}
+@media (min-width: 690px) and (max-width: 831px) {
+  .navigation-inner ul li ul li a {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+@media (min-width: 832px) and (max-width: 979px) {
+  .navigation-inner ul li ul li a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 @media (min-width: 460px) and (max-width: 979px) {
   .row-fluid.secondary .secondary-content-area .module-container {
