@@ -7198,7 +7198,7 @@ nav.audience-navigation ul li a:hover {
     margin-bottom: 1.5em;
     font-size: 1em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 0.3em 1em 0.5em 1em;
+    padding: 0.3em 1em 0.5em 1.1em;
     font-weight: 600;
     *background-color: #ffe85e;
     background-image: -moz-linear-gradient(top, #ffea6b, #ffe652);
@@ -8088,7 +8088,8 @@ ul.event-list li.events-row:nth-child(even) {
 }
 .facultyandstaff .secondary-content-area button {
   margin-bottom: 0;
-  padding: 0.6em 0.8em 0.4em 0.8em;
+  padding: 0.3em 0.8em 0.4em 0.8em;
+  font-size: 0.9em;
 }
 .facultyandstaff .secondary-content-area a.rss {
   padding: 23px 0 0 0;
@@ -8233,7 +8234,7 @@ h5.sidebar-title {
 }
 .btn {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0.3em 1em 0.5em 1em;
+  padding: 0.3em 1em 0.5em 1.1em;
   font-weight: 600;
   *background-color: #ffe85e;
   background-image: -moz-linear-gradient(top, #ffea6b, #ffe652);
@@ -8264,7 +8265,7 @@ h5.sidebar-title {
 .btn-green {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  padding: 1em;
+  padding: 1em 1em 1em 1.1em;
   display: inline-block;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -8273,7 +8274,7 @@ h5.sidebar-title {
 }
 .btn-green .icon-large,
 .btn-green .icon-large:before {
-  margin-right: 2px;
+  margin-left: 3px;
   opacity: 0.7;
   width: auto;
   font-size: 1.1em;
