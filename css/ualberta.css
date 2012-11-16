@@ -7398,6 +7398,63 @@ nav.audience-navigation ul li a:hover {
     top: 361px;
   }
 }
+button.search-major-btn {
+  border: 1px solid #cccccc;
+  border-bottom-color: #b3b3b3;
+  border-right-color: #bfbfbf;
+  font-size: 1.2em;
+  line-height: 1em;
+  *background-color: #c6c6c6;
+  background-image: -moz-linear-gradient(top, #cccccc, #bfbfbf);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cccccc), to(#bfbfbf));
+  background-image: -webkit-linear-gradient(top, #cccccc, #bfbfbf);
+  background-image: -o-linear-gradient(top, #cccccc, #bfbfbf);
+  background-image: linear-gradient(to bottom, #cccccc, #bfbfbf);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcccccc', endColorstr='#ffbfbfbf', GradientType=0);
+  padding: 0.8em 1.5em 0.6em 1.5em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: "DIN Bold", Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  color: #666666;
+  text-shadow: 0px 1px 1px #ffffff;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #bfbfbf;
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #bfbfbf;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #bfbfbf;
+  text-align: center;
+}
+button.search-major-btn:hover {
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -o-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe6e6e6', endColorstr='#ffe6e6e6', GradientType=0);
+  text-decoration: none;
+  color: #666666;
+}
+button.search-major-btn:active {
+  *background-color: #c6c6c6;
+  background-image: -moz-linear-gradient(top, #bfbfbf, #cccccc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bfbfbf), to(#cccccc));
+  background-image: -webkit-linear-gradient(top, #bfbfbf, #cccccc);
+  background-image: -o-linear-gradient(top, #bfbfbf, #cccccc);
+  background-image: linear-gradient(to bottom, #bfbfbf, #cccccc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbfbfbf', endColorstr='#ffcccccc', GradientType=0);
+  -webkit-box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #b3b3b3;
+  -moz-box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #b3b3b3;
+  box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #b3b3b3;
+  border: 1px solid #b3b3b3;
+  text-shadow: none;
+  text-decoration: none;
+  color: #666666;
+}
 .prospective-student .fma-container .fma-slide {
   position: absolute;
   top: 600px;
@@ -7442,6 +7499,9 @@ nav.audience-navigation ul li a:hover {
   position: relative;
   overflow-y: hidden;
   overflow-x: visible;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
 }
 .prospective-student .fma-container .secondary-link {
   margin-left: 10px;
@@ -7456,6 +7516,7 @@ nav.audience-navigation ul li a:hover {
 ul.program-list h3 {
   border-bottom: none;
   margin: 0px;
+  font-size: 18px;
 }
 .program-list-icon {
   width: 65px;
@@ -7518,10 +7579,6 @@ ul.program-list li {
 .prospective-student-faculty {
   margin-bottom: 10px;
 }
-.prospective-student .fma-container {
-  width: 100%;
-  height: 300px;
-}
 .prospective-student .fma-container h3 {
   font-size: 2em;
   margin: 0.8em 0em 0.5em 0em;
@@ -7552,10 +7609,6 @@ ul.program-list li {
 .content-top-row.start {
   background-position: -600px 250px;
 }
-.prospective-student .fma-container {
-  width: 100%;
-  height: 300px;
-}
 .fma-slide {
   width: 100%;
 }
@@ -7585,10 +7638,13 @@ ul.program-list li {
   .major-search .btn {
     padding: 4px 10px;
   }
+  .prospective-student .fma-tabs-container ul li {
+    width: 100%;
+  }
 }
 @media (min-width: 690px) and (max-width: 979px) {
   .prospective-student .sidebar {
-    top: 363px;
+    top: 462px;
   }
 }
 @media (min-width: 690px) and (max-width: 1199px) {

@@ -15,9 +15,10 @@
 @tablet_SidebarWidth:       170px;
 
 @tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
+button.search-major-btn { .standard-button(); }
 
 .prospective-student .fma-container {
-  .fma-slide {
+  .fma-slide { 
     position: absolute;
     top: 600px;
     .transition(all 0.3s ease-in-out);
@@ -32,6 +33,7 @@
       font-size:  2em;
       margin: 0.8em 0em 0.25em 0em;
     }
+    
   }
 }
 .content-top-row {
@@ -52,6 +54,9 @@
   	position: relative;
   	overflow-y: hidden;
   	overflow-x: visible;
+  	overflow:hidden;
+  		width: 100%;
+		height: 300px;
   	.secondary-link {
     margin-left: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -66,6 +71,7 @@
 ul.program-list h3{
 	border-bottom:none;
 	margin:0px;
+	font-size:18px;
 }
 .program-list-icon{
 	width:65px;
@@ -130,11 +136,6 @@ ul.program-list li{
 .prospective-student-faculty{
 	margin-bottom:10px;
 }
-.prospective-student .fma-container {
-  width: 100%;
-  height: 300px;
- 
-}
 .prospective-student .fma-container h3{
 	font-size:2em;
 	margin: 0.8em 0em 0.5em 0em;
@@ -165,10 +166,7 @@ ul.program-list li{
 	.content-top-row.start {
 		background-position: -600px 250px;
 	}
-	.prospective-student .fma-container {
-		width: 100%;
-		height: 300px;
-	}
+
    .fma-slide {
    		width:  100%;
 }
@@ -198,12 +196,15 @@ ul.program-list li{
 	.major-search .btn{
 		padding:4px 10px;
 	}
+	.prospective-student .fma-tabs-container ul li{
+		width:100%;
+	}
 }
 
 @media (min-width: 690px) and (max-width: 979px) {
 	.prospective-student{
 		.sidebar {
-			top:363px;
+			top:462px;
 		}	
  }
 }
