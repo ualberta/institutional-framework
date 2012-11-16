@@ -8112,17 +8112,6 @@ ul.event-list li.events-row:nth-child(even) {
   height: 300px;
   position: relative;
 }
-.campuslife .secondary-content-area ul li,
-.campuslife-b .secondary-content-area ul li {
-  padding: 0;
-  position: static;
-  border: none;
-  margin-bottom: 0;
-}
-.campuslife .secondary-content-area .module-container,
-.campuslife-b .secondary-content-area .module-container {
-  margin-bottom: 1.8em;
-}
 .campuslife .sidebar h5.sidebar-title,
 .campuslife-b .sidebar h5.sidebar-title {
   line-height: 1.2em;
@@ -8225,7 +8214,7 @@ h5.sidebar-title {
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-  margin-bottom: 0.8em;
+  margin-bottom: 1.2em;
 }
 .btn-green,
 .btn {
@@ -8282,6 +8271,15 @@ h5.sidebar-title {
 .sidebar .btn {
   font-size: 0.9em;
   padding: 0.7em 1em;
+}
+.campuslife-b .secondary-content-area ul li {
+  padding: 0;
+  position: static;
+  border: none;
+  margin-bottom: 0;
+}
+.campuslife-b .secondary-content-area .module-container {
+  margin-bottom: 0;
 }
 .campuslife-b .content-inner .fma-slide {
   text-align: center;

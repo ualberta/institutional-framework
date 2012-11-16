@@ -4,17 +4,6 @@
 		height: 300px;
 		position: relative;
 	}
-	.secondary-content-area {
-		ul li {
-				padding: 0;
-				position: static;
-				border: none;
-				margin-bottom: 0;
-		}
-		.module-container {
-			margin-bottom: 1.8em;
-		}
-	}
 	.sidebar {
 		h5.sidebar-title {
 		    line-height: 1.2em;
@@ -103,7 +92,7 @@ h5.sidebar-title {
   background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
   background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
-  margin-bottom: 0.8em;
+  margin-bottom: 1.2em;
 }
 .btn-green, .btn {
 	margin-bottom: 1.5em;
@@ -160,7 +149,17 @@ h5.sidebar-title {
 //	Overrides for Campus Life only
 
 .campuslife-b {
-	
+	.secondary-content-area {
+		ul li {
+				padding: 0;
+				position: static;
+				border: none;
+				margin-bottom: 0;
+		}
+		.module-container {
+			margin-bottom: 0;
+		}
+	}
 	.content-inner {
 		.fma-slide {
 			 text-align: center;
