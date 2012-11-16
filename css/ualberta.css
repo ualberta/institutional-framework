@@ -7178,7 +7178,6 @@ nav.audience-navigation ul li a:hover {
     background-image: -webkit-linear-gradient(top, #ffdb05, #ebc900);
     background-image: -o-linear-gradient(top, #ffdb05, #ebc900);
     background-image: linear-gradient(to bottom, #ffdb05, #ebc900);
-    background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffdb05', endColorstr='#ffebc900', GradientType=0);
     padding: 0.8em 1.5em 0.6em 1.5em;
     -webkit-border-radius: 10px;
@@ -7193,6 +7192,22 @@ nav.audience-navigation ul li a:hover {
     -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #fff5b7, inset 0px -1px 3px #ebc900;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #fff5b7, inset 0px -1px 3px #ebc900;
     text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0.3em 1em 0.5em 1em;
+    font-weight: 600;
+    *background-color: #ffe85e;
+    background-image: -moz-linear-gradient(top, #ffea6b, #ffe652);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffea6b), to(#ffe652));
+    background-image: -webkit-linear-gradient(top, #ffea6b, #ffe652);
+    background-image: -o-linear-gradient(top, #ffea6b, #ffe652);
+    background-image: linear-gradient(to bottom, #ffea6b, #ffe652);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffea6b', endColorstr='#ffffe652', GradientType=0);
+    text-align: left;
+    border-radius: 15px;
+    color: #555;
     display: inline-block;
     position: relative;
     top: 300px;
@@ -7238,6 +7253,11 @@ nav.audience-navigation ul li a:hover {
     text-shadow: none;
     text-decoration: none;
     color: #007c41;
+  }
+  .why-ualberta .fma-container .ualberta-minute .ualberta-link span .icon-small {
+    font-size: 0.9em;
+    width: auto;
+    margin-left: 5px;
   }
   .why-ualberta .fma-container .ualberta-minute .ualberta-link:hover {
     text-decoration: none;
@@ -7791,16 +7811,9 @@ ul.event-list li.events-row:nth-child(even) {
   position: absolute;
   top: 0.7em;
   right: 0.7em;
-  font-size: 0.9em;
-  padding: 0.5em 0.8em 0.4em 0.8em;
-}
-.admissions .sidebar a.btn {
-  margin-bottom: 1.5em;
-  margin-top: 0.5em;
-  display: block;
 }
 .admissions .sidebar h4 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 0.5em;
 }
 .admissions .sidebar .deadlines h5 {
@@ -8004,11 +8017,6 @@ ul.event-list li.events-row:nth-child(even) {
 .facultyandstaff .content-inner {
   height: 300px;
 }
-.facultyandstaff .btn-green {
-  margin-bottom: 1.5em;
-  font-size: 0.9em;
-  padding: 0.4em 0.8em 0.2em 0.8em;
-}
 .facultyandstaff .content-inner {
   position: relative;
 }
@@ -8091,41 +8099,10 @@ ul.event-list li.events-row:nth-child(even) {
   line-height: 150%;
   padding-bottom: 1em;
 }
-.campuslife .btn-green,
-.campuslife-b .btn-green {
-  margin-bottom: 1.5em;
-  font-size: 0.9em;
-  padding: 0.4em 1em 0.2em 0.8em;
-}
 .campuslife .content-inner,
 .campuslife-b .content-inner {
   height: 300px;
   position: relative;
-}
-.campuslife .content-inner .fma-caption,
-.campuslife-b .content-inner .fma-caption {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  font-size: 0.9em;
-}
-.campuslife .content-inner .fma-caption .btn-green,
-.campuslife-b .content-inner .fma-caption .btn-green {
-  text-align: left;
-  font-size: 1em;
-}
-.campuslife .content-inner .fma-caption .btn-green .icon-large:before,
-.campuslife-b .content-inner .fma-caption .btn-green .icon-large:before {
-  width: auto;
-  margin-right: 5px;
-}
-.campuslife .content-inner .fma-caption li,
-.campuslife-b .content-inner .fma-caption li {
-  margin-bottom: 1.5em;
-}
-.campuslife .content-inner .fma-caption h3,
-.campuslife-b .content-inner .fma-caption h3 {
-  margin-bottom: 0.5em;
 }
 .campuslife .secondary-content-area ul li,
 .campuslife-b .secondary-content-area ul li {
@@ -8142,11 +8119,6 @@ ul.event-list li.events-row:nth-child(even) {
 .campuslife-b .sidebar h5.sidebar-title {
   line-height: 1.2em;
   margin: -10px -10px 0 -10px;
-}
-.campuslife .sidebar button,
-.campuslife-b .sidebar button {
-  margin-bottom: 1.5em;
-  width: 100%;
 }
 .campuslife .sidebar .links-module,
 .campuslife-b .sidebar .links-module {
@@ -8247,23 +8219,75 @@ h5.sidebar-title {
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
   margin-bottom: 0.8em;
 }
-.campuslife-b a.btn-green {
+.btn-green,
+.btn {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+}
+.btn,
+button.btn {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.3em 1em 0.5em 1em;
+  font-weight: 600;
+  *background-color: #ffe85e;
+  background-image: -moz-linear-gradient(top, #ffea6b, #ffe652);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffea6b), to(#ffe652));
+  background-image: -webkit-linear-gradient(top, #ffea6b, #ffe652);
+  background-image: -o-linear-gradient(top, #ffea6b, #ffe652);
+  background-image: linear-gradient(to bottom, #ffea6b, #ffe652);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffea6b', endColorstr='#ffffe652', GradientType=0);
+  text-align: left;
+  border-radius: 15px;
+  color: #555;
+}
+.btn .icon-small,
+button.btn .icon-small {
+  font-size: 0.9em;
+  width: auto;
+  margin-left: 5px;
+}
+.btn:hover {
+  color: #555;
+}
+.btn-green {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  padding: 0.5em 1em 0.6em 1em;
+  padding: 1em;
   display: inline-block;
-  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  border-radius: 7px;
+}
+.btn-green .icon-large,
+.btn-green .icon-large:before {
+  margin-right: 2px;
+  opacity: 0.7;
+  width: auto;
+  font-size: 1.1em;
+}
+.sidebar .btn {
+  font-size: 0.9em;
+  padding: 0.7em 1em;
 }
 .campuslife-b .content-inner .fma-slide {
   text-align: center;
 }
 .campuslife-b .content-inner .fma-caption {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  font-size: 0.9em;
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
 }
-.campuslife-b .content-inner .fma-caption a.btn-green {
-  padding: 0.6em 1em 0.5em 1em;
+.campuslife-b .content-inner .fma-caption li {
+  margin-bottom: 1.5em;
+}
+.campuslife-b .content-inner .fma-caption h3 {
+  margin-bottom: 0.5em;
 }
 .campuslife-b .content-inner .fma-caption li {
   margin-bottom: 0.5em;
