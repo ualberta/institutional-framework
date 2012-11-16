@@ -7882,9 +7882,7 @@ ul.event-list li.events-row:nth-child(even) {
     top: 60px;
   }
 }
-.faculties-programs .sidebar a.btn-large {
-  margin-bottom: 1.5em;
-  width: 83%;
+.faculties-programs .sidebar a.btn-green {
   display: block;
 }
 .faculties-programs .btn-large {
@@ -7950,6 +7948,9 @@ ul.event-list li.events-row:nth-child(even) {
 .current-students .content-inner .fma-btns .btn {
   display: block;
   margin-top: 10px;
+  padding-top: 10px;
+  height: 20px;
+  text-align: center;
 }
 .current-students .content-top-row {
   background-image: none;
@@ -7964,9 +7965,7 @@ ul.event-list li.events-row:nth-child(even) {
   overflow-y: hidden;
   overflow-x: visible;
 }
-.current-students .sidebar a.btn-large {
-  margin-bottom: 1.5em;
-  width: 83%;
+.current-students .sidebar a.btn-green {
   display: block;
 }
 .current-students .btn-large {
