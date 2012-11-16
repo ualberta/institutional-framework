@@ -7789,17 +7789,21 @@ ul.event-list li.events-row:nth-child(even) {
 }
 .grey-box.grad,
 .grey-box.undergrad,
-.grey-box.continue {
+.grey-box.continue,
+.grey-box.open {
   padding: 10px 100px 10px 20px;
 }
 .grey-box.grad {
-  background: #ffffff url('../img/fp-grad.png') right 7px no-repeat;
+  background: #ffffff url('../img/graduate-icon.png') 95% 15px no-repeat;
 }
 .grey-box.undergrad {
-  background: #ffffff url('../img/fp-under.png') right 7px no-repeat;
+  background: #ffffff url('../img/undergraduate-icon.png') 92% 15px no-repeat;
 }
 .grey-box.continue {
-  background: #ffffff url('../img/fp-cont.png') right 7px no-repeat;
+  background: #ffffff url('../img/continuing-studies-icon.png') 94% 15px no-repeat;
+}
+.grey-box.open {
+  background: #ffffff url('../img/open-studies-icon.png') 94% 15px no-repeat;
 }
 @media (min-width: 690px) and (max-width: 979px) {
   .faculties-programs .sidebar {
