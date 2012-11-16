@@ -6899,6 +6899,9 @@ nav.audience-navigation ul li a:hover {
     position: absolute;
   }
 }
+.why-ualberta h2.page-title {
+  margin-top: 0.5em;
+}
 .why-ualberta .content-top-row {
   background-image: url('../img/whirl-bg.png');
   background-repeat: repeat-x;
@@ -6929,7 +6932,7 @@ nav.audience-navigation ul li a:hover {
   overflow: hidden;
 }
 .why-ualberta .content-container {
-  margin-top: 330px;
+  margin-top: 350px;
 }
 .why-ualberta .fma-container .fma-slide {
   position: absolute;
