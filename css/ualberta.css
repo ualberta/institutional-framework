@@ -7259,6 +7259,9 @@ nav.audience-navigation ul li a:hover {
     width: auto;
     margin-left: 5px;
   }
+  .why-ualberta .fma-container .ualberta-minute .ualberta-link span .icon-chevron-right {
+    float: right;
+  }
   .why-ualberta .fma-container .ualberta-minute .ualberta-link:hover {
     text-decoration: none;
   }
@@ -7811,6 +7814,8 @@ ul.event-list li.events-row:nth-child(even) {
   position: absolute;
   top: 0.7em;
   right: 0.7em;
+  font-size: 0.75em;
+  padding: 0.7em 0.9em;
 }
 .admissions .sidebar h4 {
   font-size: 1.2em;
@@ -7882,9 +7887,7 @@ ul.event-list li.events-row:nth-child(even) {
     top: 60px;
   }
 }
-.faculties-programs .sidebar a.btn-large {
-  margin-bottom: 1.5em;
-  width: 83%;
+.faculties-programs .sidebar a.btn-green {
   display: block;
 }
 .faculties-programs .btn-large {
@@ -7950,6 +7953,9 @@ ul.event-list li.events-row:nth-child(even) {
 .current-students .content-inner .fma-btns .btn {
   display: block;
   margin-top: 10px;
+  padding-top: 10px;
+  height: 20px;
+  text-align: center;
 }
 .current-students .content-top-row {
   background-image: none;
@@ -7964,9 +7970,7 @@ ul.event-list li.events-row:nth-child(even) {
   overflow-y: hidden;
   overflow-x: visible;
 }
-.current-students .sidebar a.btn-large {
-  margin-bottom: 1.5em;
-  width: 83%;
+.current-students .sidebar a.btn-green {
   display: block;
 }
 .current-students .btn-large {
@@ -8202,7 +8206,7 @@ h2.page-title {
   border: none;
 }
 h2.page-title {
-  margin: 0.8em auto 0.2em auto;
+  margin: 0.2em auto 0 auto;
   font-size: 2.1em;
 }
 h3 {
@@ -8224,8 +8228,7 @@ h5.sidebar-title {
   margin-bottom: 1.5em;
   font-size: 1em;
 }
-.btn,
-button.btn {
+.btn {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.3em 1em 0.5em 1em;
   font-weight: 600;
@@ -8241,11 +8244,16 @@ button.btn {
   border-radius: 15px;
   color: #555;
 }
-.btn .icon-small,
-button.btn .icon-small {
+.btn .icon-small {
   font-size: 0.9em;
   width: auto;
   margin-left: 5px;
+}
+.btn .icon-chevron-right {
+  float: right;
+}
+.fma-container .icon-chevron-right {
+  float: none;
 }
 .btn:hover {
   color: #555;
