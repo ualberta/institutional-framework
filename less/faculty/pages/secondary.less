@@ -42,38 +42,9 @@
 @tablet_SecColMarginFluid:  percentage(@tablet_SecColMargin/@tablet_PriColWidthSecond);
 @tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
 
-@media (max-width: 1199px) {
-	.module-tertiary-links{
-		height:auto;
-	}
-}
-@media (min-width: 690px) {
-  .row-fluid.second {
-    .primary-content-area,
-    .secondary-content-area {
-      width: @tablet_PriColFluidSecond;
-    }
-    }
-      .row-fluid.second{
-	      .primary-content-area-container{
-		      width:@tablet_PriContFluidSecond;
-		      float:left;
-	      }
-	      
-      }
-       .row-fluid.second {
-      .sidebar {
-      width: @tablet_SidebarFluid;
-      float: right;
-      position:inherit;
-   }
-    }
-   }
-
-
 @media (min-width: 460px) and (max-width: 979px) {
   
-  .row-fluid.second .secondary-content-area .module-container {
+  .row-fluid.secondary .secondary-content-area .module-container {
     display: block;
     float: left;
     min-height: 30px;
@@ -92,10 +63,33 @@
 		height:auto;
 	}
 }
+@media (min-width: 690px) {
+  .row-fluid.secondary {
+    .primary-content-area,
+    .secondary-content-area {
+    	width: @tablet_PriColFluidSecond;
+    }
+    .primary-content-area-container{
+		width:@tablet_PriContFluidSecond;
+		float:left;
+	}
+	.sidebar {
+     	width: @tablet_SidebarFluid;
+	    float: right;
+	    position:inherit;
+   }
 
+    }
+}
+@media (min-width: 691px) and (max-width: 1199px) {
+	.row-fluid.secondary .span6{
+		width:100%;
+		margin-left:0px;
+	}
+}
 @media (max-width: 979px) {
 
-  .row-fluid.second {
+  .row-fluid.secondary {
     .primary-content-area-container,
     .primary-content-area,
     .secondary-content-area {
@@ -105,23 +99,19 @@
   .row-fluid {
     .feature-area,
     .primary-content-area {
-      margin-bottom: 1.5em;
+    	margin-bottom: 1.5em;
     }
   }
-  
-   
 }
-
 @media (min-width: 980px) {
-
   hr.soften {
     width: auto;
   }
-  .row-fluid.second {
+  .row-fluid.secondary {
        .primary-content-area-container {
         width: @desktop_PriContFluidSecond;
         float:left;
-      }
+   }
       .primary-content-area {
         width: @desktop_PriColFluidSecond;
       }
@@ -134,17 +124,13 @@
   }
 
 }
-@media (min-width: 691px) and (max-width: 1199px) {
-	.row-fluid.second .span6{
-		width:100%;
-		margin-left:0px;
+@media (max-width: 1199px) {
+	.module-tertiary-links{
+		height:auto;
 	}
 }
-
 @media (min-width: 1200px) {
-
-  
-  .row-fluid.second {
+  .row-fluid.secondary {
     .primary-content-area-container {
       width: @highRes_PriContFluidSecond;
       float:left;
