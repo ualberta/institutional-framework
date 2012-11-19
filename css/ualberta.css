@@ -6724,7 +6724,8 @@ button.close {
   -moz-box-shadow: 1px 0px 0px #ffffff;
   box-shadow: 1px 0px 0px #ffffff;
 }
-.page-breadcrumb {
+.page-breadcrumb,
+.breadcrumb {
   display: none;
 }
 .banner-inner h1 {
