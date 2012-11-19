@@ -69,7 +69,43 @@
 }
 
 .btn-grey {
-  .standard-button(#f6f6f6, #666);
+  border: 1px solid #dfe9e3;
+  border-bottom-color: darken(#dfe9e3, 13%);
+  border-right-color: darken(#dfe9e3, 5%);
+  font-size: 1.2em;
+  line-height: 1em;
+  #gradient > .vertical(#f4f4f4, #dfe9e3);
+  padding: 0.8em 1.5em 0.6em 1.5em; 
+  .border-radius(10px); 
+  font-family: "DIN Bold", Arial, sans-serif; 
+  text-decoration: none; 
+  font-weight:500;  
+  color: #007c41; 
+  text-shadow: 0px 1px 1px lighten(#dfe9e3, 25%); 
+  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px lighten(#dfe9e3, 35%), inset 0px -1px 3px darken(#dfe9e3, 5%)); 
+  text-align: center;
+  &:hover {
+    #gradient > .vertical(lighten(#f4f4f4,6%), lighten(#dfe9e3,6%));
+    text-decoration: none;
+    color: #007c41; 
+  }
+  &:active {
+    #gradient > .vertical(darken(#dfe9e3, 5%), #f0f0f0);
+    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(#dfe9e3,10%));
+    border: 1px solid darken(#dfe9e3,14%);
+    text-shadow:  none;
+    text-decoration: none;
+    color: #007c41; 
+  }
+}
+
+.btn.small {
+  font-size: 1em;
+}
+
+.btn.micro {
+  font-size: 0.85;
+  text-transform:uppercase;
 }
 
 .sidebar .btn {
