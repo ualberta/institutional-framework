@@ -8200,8 +8200,9 @@ h2.page-title {
   border: none;
 }
 h2.page-title {
-  margin: 0.2em auto 0 auto;
+  margin: 0.8em auto 0.2em auto;
   font-size: 2.1em;
+  margin-top: 0.7em;
 }
 h3 {
   font-size: 1.6em;
@@ -8273,6 +8274,16 @@ h5.sidebar-title {
   font-size: 0.9em;
   padding: 0.7em 1em;
 }
+.sidebar .givingcontent .btn-green {
+  margin-bottom: 0;
+}
+.link-mod-container h4 a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+.link-mod-container > li ul.link-mod-items li a {
+  font-size: 0.9em;
+}
 .campuslife-b .secondary-content-area ul li {
   padding: 0;
   position: static;
@@ -8321,13 +8332,6 @@ h5.sidebar-title {
 }
 .campuslife-b .content-inner .fma-caption .last {
   margin-right: 0;
-}
-.campuslife-b .link-mod-container h4 a {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-}
-.campuslife-b .link-mod-container > li ul.link-mod-items li a {
-  font-size: 0.9em;
 }
 .campuslife-b .content-top-row {
   padding: 0;
