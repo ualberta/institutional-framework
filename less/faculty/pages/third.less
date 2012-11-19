@@ -1,34 +1,29 @@
 @highRes_RowWidth:           @gridRowWidth1200;
-@highRes_PriColWidthThird:        970px;
+@highRes_PriContWidthThird:        970px;
+@highRes_PriColWidthThird:        850px;
 @highRes_SidebarWidth:       170px;
-@highRes_FeatureWidth:       @highRes_PriColWidth;
-@highRes_AudienceWidth:      @highRes_SecColWidth+@highRes_SidebarWidth+30;
 
 @highRes_PriColFluidThird:        percentage(@highRes_PriColWidthThird/@highRes_RowWidth);
+@highRes_PriContFluidThird:        percentage(@highRes_PriContWidthThird/@highRes_RowWidth);
 @highRes_SidebarFluid:       percentage(@highRes_SidebarWidth/@highRes_RowWidth);
-@highRes_FeatureFluid:       percentage(@highRes_FeatureWidth/@highRes_RowWidth);
-@highRes_AudienceFluid:      percentage(@highRes_AudienceWidth/@highRes_RowWidth);
-
 
 @desktop_RowWidth:           @gridRowWidth;
-@desktop_PriColWidthThird:        750px;
+@desktop_PriContWidthThird:        750px;
+@desktop_PriColWidthThird:        670px;
 @desktop_SidebarWidth:       170px;
-@desktop_FeatureWidth:       @desktop_PriColWidth;
-@desktop_AudienceWidth:      @desktop_SecColWidth+@desktop_SidebarWidth+20;
 
+@desktop_PriContFluidThird:        percentage(@desktop_PriContWidthThird/@desktop_RowWidth);
 @desktop_PriColFluidThird:        percentage(@desktop_PriColWidthThird/@desktop_RowWidth);
 @desktop_SidebarFluid:       percentage(@desktop_SidebarWidth/@desktop_RowWidth);
-@desktop_FeatureFluid:       percentage(@desktop_FeatureWidth/@desktop_RowWidth);
-@desktop_AudienceFluid:      percentage(@desktop_AudienceWidth/@desktop_RowWidth);
 
 @tablet_RowWidth:           768px;
-@tablet_PriColWidthThird:        578px;
-@tablet_PriColSecWidthThird:        578px;
+@tablet_PriContWidthThird:        578px;
+
 @tablet_InThisSectionWidthThird:        768px;
 @tablet_SidebarWidth:       170px;
 
-@tablet_PriColFluidThird:        percentage(@tablet_PriColWidthThird/@tablet_RowWidth);
-@tablet_PriColSecFluidThird:        percentage(@tablet_PriColSecWidthThird/@tablet_RowWidth);
+@tablet_PriContFluidThird:        percentage(@tablet_PriContWidthThird/@tablet_RowWidth);
+
 @tablet_InThisSectionFluidThird: percentage(@tablet_InThisSectionWidthThird/@tablet_RowWidth);
 @tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
 
@@ -37,9 +32,9 @@ hr.softline{
   }
 
 @media (min-width: 690px) {
-	.row-fluid.third {
-  		.primary-content-area{
-	  	width: @tablet_PriColFluidThird;
+	.row-fluid.tertiary{
+  		.primary-content-area-container{
+	  	width: @tablet_PriContFluidThird;
         float:left;
     }
     .sidebar {
@@ -50,22 +45,24 @@ hr.softline{
   }
  }
 @media (min-width: 690px) and (max-width: 890px) {
-.row-fluid.third {
+.row-fluid.tertiary {
     .inthissection,
-    .primary-content,
-    .primary-content-second,
-    .primary-content-third{
+    .primary-content-area{
 	     width:@tablet_InThisSectionFluidThird;
 	      margin-left:0px;
      }
   }
 }
 @media (min-width: 891px) and (max-width: 979px) {
-  .row-fluid.third {
-      .primary-content-area {
-        width: @desktop_PriColFluidThird;
+  .row-fluid.tertiary{
+      .primary-content-area-container {
+        width: @desktop_PriContFluidThird;
         float:left;
       }
+   .primary-content-area{
+       width: @desktop_PriColFluidThird;
+       margin-left:20px;
+   }
       .sidebar {
         width: @desktop_SidebarFluid;
         position:inherit;
@@ -76,15 +73,12 @@ hr.softline{
   hr.soften {
     width: auto;
   }
-  .row-fluid.third{
-      .feature-area {
-      width: @desktop_FeatureFluid;
-  }
-  .audience-area {
-      width: @desktop_AudienceFluid;
-   }
-   .primary-content-area {
+  .row-fluid.tertiary{
+   .primary-content-area{
        width: @desktop_PriColFluidThird;
+   }
+   .primary-content-area-container {
+       width: @desktop_PriContFluidThird;
        float:left;
    }
    .sidebar {
@@ -107,16 +101,13 @@ hr.softline{
       height: 264px;
     }
   }
-  .row-fluid.third{
-    .feature-area {
-      width: @highRes_FeatureFluid;
-    }
-    .audience-area {
-      width: @highRes_AudienceFluid;
-    }
-    .primary-content-area {
-      width: @highRes_PriColFluidThird;
+  .row-fluid.tertiary{
+    .primary-content-area-container {
+      width: @highRes_PriContFluidThird;
       float:left;
+    }
+   .primary-content-area {
+      width: @highRes_PriColFluidThird;
     }
     .sidebar {
       width: @highRes_SidebarFluid;

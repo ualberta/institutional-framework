@@ -7425,6 +7425,9 @@ nav.audience-navigation ul li a:hover {
     top: 361px;
   }
 }
+.major-search {
+  padding-bottom: 4px;
+}
 button.search-major-btn {
   border: 1px solid #cccccc;
   border-bottom-color: #b3b3b3;
@@ -7452,6 +7455,7 @@ button.search-major-btn {
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #bfbfbf;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #bfbfbf;
   text-align: center;
+  margin-bottom: 0px;
 }
 button.search-major-btn:hover {
   *background-color: #e6e6e6;
