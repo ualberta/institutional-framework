@@ -8407,13 +8407,8 @@ div.featured-news {
   margin: 5px 0 0 0 ;
   font-size: 0.8em;
 }
-.news-articles .primary-content-area .news-title {
-  display: inline;
-}
 .news-articles .primary-content-area .news-author {
-  display: inline-block;
-  padding-bottom: 5px;
-  vertical-align: middle;
+  padding: 5px 0;
 }
 .news-articles .primary-content-area .social-media-buttons {
   margin: 20px 0;
