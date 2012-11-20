@@ -49,17 +49,30 @@
 				border-bottom: none;
 			}
 			h6 {
-				border-bottom: 1px solid rgba(0, 30, 0, 0.2);
+				border-bottom: 1px solid rgba(0, 30, 0, 0.5);
 				text-transform: uppercase;
 				font-size: 0.9em;
+				margin-bottom: 0;
 			}
-			.links {
-				ul {
-					margin-bottom: 1.4em;
-				}
-				ul li {
-					margin-bottom: 0.7em;
+			.links ul {
+				li {
 					line-height: 125%;
+				}
+				li ul li {
+					border-bottom: 1px dotted #e0e0e0;
+					padding: 0;
+				}
+				li ul li:last-child {
+					border-bottom: 0;
+				}
+				li a {
+					display: block;
+					line-height: 135%;
+					padding-top: 0.4em;
+					padding-bottom: 0.4em;
+				}
+				li a:hover {
+					#gradient .vertical(#fff5bb, #fff);
 				}
 			}
 		}

@@ -1,22 +1,162 @@
-.campuslife, .campuslife-b {
+//	Overrides to header size, borders, and dividers
 
+.campuslife {
+  
+
+.breadcrumb {
+	font-size: 0.85em;
+	margin-top: 1em;
+	margin-left: 0.2em;
+	.opacity(80);
+}
+h2.page-title {
+	border: none;
+}
+.primary-content-area, .secondary-content-area {
+	h2, h3 {
+		border: none;
+	}
+}
+h2.page-title {
+	margin: 0.2em auto 0 auto;
+	font-size: 2.1em;
+	margin-top: 0.7em;
+	
+}
+h3 {
+	font-size: 1.6em;
+}
+h5.sidebar-title {
+	font-size: 1.2em;
+	font-family: "DIN Medium",Arial,sans-serif;
+}
+.content-inner hr.soften {
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  margin-bottom: 1.2em;
+}
+.btn-green, .btn {
+	margin-bottom: 1.5em;
+	font-size: 1em;
+}
+.btn {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;			
+	padding: 0.3em 1em 0.5em 1.1em;
+	font-weight: 600;
+	@backgroundColor: #FFDB05;
+	@backgroundColor2: #EBC900; 
+	#gradient > .vertical(lighten(@backgroundColor,20%), lighten(@backgroundColor2,20%));
+	text-align: left;
+	border-radius: 15px;
+	color: #555;
+	.icon-small {
+		font-size: 0.9em;
+		width: auto;
+		margin-left: 5px;
+	}
+	.icon-chevron-right {
+		float: right;
+	}
+}
+.fma-container .icon-chevron-right {
+	float: none;
+}
+.btn:hover {
+	color: #555;
+}
+.btn-green {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+	padding: 1em 1em 1em 1.1em;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	border-radius: 7px;
+	.icon-large, .icon-large:before {
+		margin-left: 3px;
+		opacity: 0.7;
+		width: auto;
+		font-size: 1.1em;
+	}
+}
+.sidebar .btn {
+	font-size: 0.9em;
+	padding: 0.7em 1em;
+}
+.sidebar .givingcontent .btn-green {
+	margin-bottom: 0;
+}
+.link-mod-container h4 a {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 500;
+}
+.link-mod-container > li ul.link-mod-items li a {
+	font-size: 0.9em;
+}
+
+}
+
+
+.campuslife-b {
+	.fma-container .thumbnail-slide h3 {
+		margin-bottom: 0.4em;
+	}
+	.content-wrapper {
+		margin-bottom: 1.5em;
+	}
 	.content-inner {
 		height: 300px;
 		position: relative;
+	}
+	.fma-container { 
+		padding-top: 1.2em;
+	}
+	.frame {
+		margin-bottom: 1em;
+		width: 260px;
+	}
+	.frame-container {
+		width:  270px;
+		display: inline-block;
+		margin-right: 1%;
+		.btn {
+			font-size: 0.85em;
+		}
+	}
+	.caption {
+		bottom: 0;
+		font-size: 0.9em;
+	}
+	.content-top-row {
+	 	padding:0;
+	 	margin: 5px auto 20px auto;
+	}
+	.row-fluid {
+		padding: 0;
+	}
+	.secondary-content-area {
+		ul li {
+			padding: 0;
+			position: static;
+			border: none;
+			margin-bottom: 0;
+		}
+		.module-container {
+			margin-bottom: 0;
+		}
 	}
 	.sidebar {
 		h5.sidebar-title {
 		    line-height: 1.2em;
 		    margin: -10px -10px 0 -10px;
 		}
-
-		.links-module {
-			line-height: 150%;
-		}
 		.links ul li a {
 			line-height: 135%;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
+			padding-top: 0.4em;
+			padding-bottom: 0.4em;
 		}
 		.links ul li a:hover {
 			#gradient .vertical(#fff5bb, #fff);
@@ -54,140 +194,18 @@
 			margin: 1em auto 1.2em auto;
 		}
 	}
-	
-	.btn {
-	//	font-family: "DIN Medium",Arial,sans-serif;	
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;			
-		padding: 0.3em 1em 0.5em 1.1em;
-		font-weight: 600;
-		@backgroundColor: #FFDB05;
-		@backgroundColor2: #EBC900; 
-		#gradient > .vertical(lighten(@backgroundColor,20%), lighten(@backgroundColor2,20%));
-		text-align: left;
-		border-radius: 15px;
-		color: #555;
-		.icon-small {
-			font-size: 0.9em;
-			width: auto;
-			margin-left: 5px;
-		}
-		.icon-chevron-right {
-			float: right;
-		}
-	}
-	
-	.btn:hover {
-		color: #555;
-	}
-
-	.btn-green {
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-weight: normal;
-		padding: 1em 1em 1em 1.1em;
-		display: inline-block;
-		text-transform: uppercase;
-		font-size: 0.8em;
-		letter-spacing: 0.1em;
-		border-radius: 7px;
-		margin-bottom: 1.5em;
-		font-size: 1em;
-		.icon-large, .icon-large:before {
-			margin-left: 3px;
-			opacity: 0.7;
-			width: auto;
-			font-size: 1.1em;
-		}
-	}
-}
-
-//	Overrides to header size, borders, and dividers
-
-
-
-.fma-container .icon-chevron-right {
-	float: none;
-}
-
-.sidebar .btn {
-	font-size: 0.9em;
-	padding: 0.7em 1em;
-}
-.sidebar .givingcontent .btn-green {
-	margin-bottom: 0;
-}
-.link-mod-container h4 a {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: 500;
-}
-.link-mod-container > li ul.link-mod-items li a {
-	font-size: 0.9em;
-}
-
-//	Overrides for Campus Life only
-
-.campuslife-b {
-	.secondary-content-area {
-		ul li {
-				padding: 0;
-				position: static;
-				border: none;
-				margin-bottom: 0;
-		}
-		.module-container {
-			margin-bottom: 0;
-		}
-	}
-	.content-inner {
-		.fma-slide {
-			 text-align: center;
-		}
-		.fma-caption {
-//		 	.btn-green {
-//		 		padding: 0.6em 1em 0.5em 1em;
-//			}
-			position: absolute;
-			bottom: 30px;
-			left: 0;
-			font-size: 0.9em;
-			
-			li {
-				margin-bottom: 1.5em;
+	@media (max-width: 979px) and (min-width: 690px) {
+		.thumbnail-container {
+			.frame {
+				width: 165px;
 			}
-			h3 {
-				margin-bottom: 0.5em;
+			.frame-container {
+				width: 185px;
+				.btn {
+					font-size: 0.8em;
+				}
 			}
-			li {
-				margin-bottom: 0.5em;
-			}
-			h3 {
-				margin-bottom: auto auto 0.2em auto;
-				font-size: 2em;
-			} 
-			.thumbnail {
-				width: 100%;
-				padding: 5px;
-				background-color: #fff;
-				margin-bottom: 0.5em;
-			}
-			.feature-item {
-				float: left;
-				width: 240px; 
-				margin-right: 40px;
-			}
-			.last {
-				margin-right: 0;
-			}
-			width: 70%;
-			margin-left: 15%;
-			margin-right: 15%;
 		}
 	}
-	
-	.content-top-row {
-	 	padding:0;
-	 	margin: 5px auto 20px auto;
-	}
-	.row-fluid {
-		padding: 0;
-	}
 }
+
