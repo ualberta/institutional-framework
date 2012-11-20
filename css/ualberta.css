@@ -5941,9 +5941,9 @@ ul.calendar-med-mod li a {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00af5c', endColorstr='#ff007c41', GradientType=0);
   padding: 0.8em 1.5em 0.6em 1.5em;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   font-family: "DIN Bold", Arial, sans-serif;
   text-decoration: none;
   font-weight: 500;
@@ -6015,9 +6015,9 @@ ul.calendar-med-mod li a {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffdb05', endColorstr='#ffebc900', GradientType=0);
   padding: 0.8em 1.5em 0.6em 1.5em;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   font-family: "DIN Bold", Arial, sans-serif;
   text-decoration: none;
   font-weight: 500;
@@ -6072,9 +6072,9 @@ ul.calendar-med-mod li a {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00af5c', endColorstr='#ff007c41', GradientType=0);
   padding: 0.8em 1.5em 0.6em 1.5em;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   font-family: "DIN Bold", Arial, sans-serif;
   text-decoration: none;
   font-weight: 500;
@@ -6129,9 +6129,9 @@ ul.calendar-med-mod li a {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffdfe9e3', GradientType=0);
   padding: 0.8em 1.5em 0.6em 1.5em;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   font-family: "DIN Bold", Arial, sans-serif;
   text-decoration: none;
   font-weight: 500;
@@ -6171,11 +6171,93 @@ ul.calendar-med-mod li a {
   text-decoration: none;
   color: #007c41;
 }
-.btn.small {
+.btn-apply {
+  text-shadow: 1px 1px 1px #ffeedd;
+  background-color: #ffdb05;
+  background: -o-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -o-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(0, 0, 0, 0.1))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), color-stop(0.5, rgba(255, 255, 255, 0.35)), color-stop(0.5, transparent), to(transparent));
+  background: -moz-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -moz-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  border: 1px solid;
+  border-color: transparent rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  color: #007c41;
+}
+.btn-apply:hover {
+  text-shadow: 1px 1px 1px #ffeedd;
+  background-color: #ffe652;
+  background: -o-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -o-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(0, 0, 0, 0.1))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), color-stop(0.5, rgba(255, 255, 255, 0.35)), color-stop(0.5, transparent), to(transparent));
+  background: -moz-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -moz-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  border: 1px solid;
+  border-color: transparent rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  color: #007c41;
+}
+.btn-apply:active {
+  text-shadow: 1px 1px 1px #ffeedd;
+  background-color: #fad600;
+  background: -o-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -o-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(0, 0, 0, 0.1))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), color-stop(0.5, rgba(255, 255, 255, 0.35)), color-stop(0.5, transparent), to(transparent));
+  background: -moz-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -moz-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  border: 1px solid;
+  border-color: transparent rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  color: #007c41;
+  -webkit-box-shadow: inset 0px 0px 5px #b79d00, 0px 1px 2px #ffffff;
+  -moz-box-shadow: inset 0px 0px 5px #b79d00, 0px 1px 2px #ffffff;
+  box-shadow: inset 0px 0px 5px #b79d00, 0px 1px 2px #ffffff;
+  text-shadow: none;
+}
+.btn-work {
+  text-shadow: 1px 1px 1px #ffffff;
+  background-color: #e8eeea;
+  background: -o-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -o-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(0, 0, 0, 0.1))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), color-stop(0.5, rgba(255, 255, 255, 0.35)), color-stop(0.5, transparent), to(transparent));
+  background: -moz-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -moz-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  border: 1px solid;
+  border-color: transparent rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  color: #007c41;
+}
+.btn-give {
+  text-shadow: 1px 1px 1px #ffffff;
+  background-color: #e8eeea;
+  background: -o-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -o-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(0, 0, 0, 0.1))), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), color-stop(0.5, rgba(255, 255, 255, 0.35)), color-stop(0.5, transparent), to(transparent));
+  background: -moz-linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), -moz-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.1)), linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2), inset 0px 1px 4px rgba(255, 255, 255, 0.65);
+  border: 1px solid;
+  border-color: transparent rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  color: #007c41;
+}
+.btn-large {
+  font-size: 1.4em;
+}
+.btn-small {
   font-size: 1em;
 }
-.btn.micro {
-  font-size: 0.85;
+.btn-micro {
+  font-size: 0.815em;
   text-transform: uppercase;
 }
 .sidebar .btn {
@@ -7359,9 +7441,9 @@ nav.audience-navigation ul li a:hover {
     background-image: linear-gradient(to bottom, #ffdb05, #ebc900);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffdb05', endColorstr='#ffebc900', GradientType=0);
     padding: 0.8em 1.5em 0.6em 1.5em;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     font-family: "DIN Bold", Arial, sans-serif;
     text-decoration: none;
     font-weight: 500;
@@ -7618,9 +7700,9 @@ button.search-major-btn {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcccccc', endColorstr='#ffbfbfbf', GradientType=0);
   padding: 0.8em 1.5em 0.6em 1.5em;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   font-family: "DIN Bold", Arial, sans-serif;
   text-decoration: none;
   font-weight: 500;
@@ -8004,6 +8086,7 @@ ul.event-list li.events-row:nth-child(even) {
 }
 .admissions .primary-content-area hr.soften {
   width: 80%;
+  margin-bottom: 0.8em;
 }
 .admissions .primary-content-area ul li {
   background-color: #ffffff;
@@ -8033,31 +8116,34 @@ ul.event-list li.events-row:nth-child(even) {
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
+.admissions .sidebar div.links-module ul li {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
 .admissions .sidebar .deadlines h5 {
-  margin-bottom: 0;
+  margin-bottom: 0.6em;
   border-bottom: none;
 }
 .admissions .sidebar .deadlines h6 {
-  border-bottom: 1px solid rgba(0, 30, 0, 0.5);
   text-transform: uppercase;
   font-size: 0.9em;
   margin-bottom: 0;
+  margin-top: 0.4em;
 }
 .admissions .sidebar .deadlines .links ul li {
   line-height: 125%;
 }
 .admissions .sidebar .deadlines .links ul li ul li {
-  border-bottom: 1px dotted #e0e0e0;
   padding: 0;
-}
-.admissions .sidebar .deadlines .links ul li ul li:last-child {
-  border-bottom: 0;
 }
 .admissions .sidebar .deadlines .links ul li a {
   display: block;
   line-height: 135%;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
+}
+.admissions .sidebar .deadlines .links ul li:first-child a {
+  border-top: 1px solid rgba(0, 30, 0, 0.5);
 }
 .admissions .sidebar .deadlines .links ul li a:hover {
   *background-color: #fffadd;
