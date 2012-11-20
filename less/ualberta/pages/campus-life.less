@@ -1,66 +1,4 @@
-.campuslife, .campuslife-b {
-
-	.content-inner {
-		height: 300px;
-		position: relative;
-	}
-	.sidebar {
-		h5.sidebar-title {
-		    line-height: 1.2em;
-		    margin: -10px -10px 0 -10px;
-		}
-//		button {
-//			margin-bottom: 1.5em;
-//			width: 100%;
-//		}	
-		.links-module {
-			line-height: 150%;
-		}
-		.links ul li a {
-			line-height: 135%;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-		}
-		.links ul li a:hover {
-			#gradient .vertical(#fff5bb, #fff);
-		}
-		.links ul li:first-child a {
-			border-top: none; 
-		}
-		.links ul li:first-child a:hover {
-			border-top: none;
-		}
-		.date {
-			line-height: 1em;
-			margin-bottom: 0.5em;
-			margin-top: 0.5em;
-			font-size: 0.9em;
-			color: #666;
-		}
-		.footer {
-			#gradient .vertical(#fff, #f0f0f0);
-			 background-repeat: repeat-x;
-			 border-bottom: 1px solid #ddd;
-			 border-top: 1px solid #ddd;
-			 border-radius: 0 0 3px 3px;
-			 line-height: 100%;
-			 margin: 0 -10px -10px -10px;
-			 padding: 10px 10px 0 10px;
-			 text-shadow: 1px 1px 0 #FFFFFF;
-			 font-size: 0.9em;
-		}
-		.footer a {
-			display: inline-block;
-			margin: auto auto 10px 0.5em;
-		}
-		.givingcontent div {
-			margin: 1em auto 1.2em auto;
-		}
-	}
-}
-
 //	Overrides to header size, borders, and dividers
-
 
 .breadcrumb {
 	font-size: 0.85em;
@@ -77,7 +15,7 @@ h2.page-title {
 	}
 }
 h2.page-title {
-	margin: 0.8em auto 0.2em auto;
+	margin: 0.2em auto 0 auto;
 	font-size: 2.1em;
 	margin-top: 0.7em;
 	
@@ -157,67 +95,37 @@ h5.sidebar-title {
 	font-size: 0.9em;
 }
 
-//	Overrides for Campus Life only
 
 .campuslife-b {
-	.secondary-content-area {
-		ul li {
-				padding: 0;
-				position: static;
-				border: none;
-				margin-bottom: 0;
-		}
-		.module-container {
-			margin-bottom: 0;
-		}
+	.fma-container .thumbnail-slide h3 {
+		margin-bottom: 0.4em;
+	}
+	.content-wrapper {
+		margin-bottom: 1.5em;
 	}
 	.content-inner {
-		.fma-slide {
-			 text-align: center;
-		}
-		.fma-caption {
-//		 	.btn-green {
-//		 		padding: 0.6em 1em 0.5em 1em;
-//			}
-			position: absolute;
-			bottom: 30px;
-			left: 0;
-			font-size: 0.9em;
-			
-			li {
-				margin-bottom: 1.5em;
-			}
-			h3 {
-				margin-bottom: 0.5em;
-			}
-			li {
-				margin-bottom: 0.5em;
-			}
-			h3 {
-				margin-bottom: auto auto 0.2em auto;
-				text-transform: uppercase;
-				font-size: 2.1em;
-			} 
-			.thumbnail {
-				width: 100%;
-				padding: 5px;
-				background-color: #fff;
-				margin-bottom: 0.5em;
-			}
-			.feature-item {
-				float: left;
-				width: 240px; 
-				margin-right: 40px;
-			}
-			.last {
-				margin-right: 0;
-			}
-			width: 70%;
-			margin-left: 15%;
-			margin-right: 15%;
+		height: 300px;
+		position: relative;
+	}
+	.fma-container { 
+		padding-top: 1.2em;
+	}
+	.frame {
+		margin-bottom: 1em;
+		width: 260px;
+	}
+	.frame-container {
+		width:  270px;
+		display: inline-block;
+		margin-right: 1%;
+		.btn {
+			font-size: 0.85em;
 		}
 	}
-	
+	.caption {
+		bottom: 0;
+		font-size: 0.9em;
+	}
 	.content-top-row {
 	 	padding:0;
 	 	margin: 5px auto 20px auto;
@@ -225,4 +133,75 @@ h5.sidebar-title {
 	.row-fluid {
 		padding: 0;
 	}
+	.secondary-content-area {
+		ul li {
+			padding: 0;
+			position: static;
+			border: none;
+			margin-bottom: 0;
+		}
+		.module-container {
+			margin-bottom: 0;
+		}
+	}
+	.sidebar {
+		h5.sidebar-title {
+		    line-height: 1.2em;
+		    margin: -10px -10px 0 -10px;
+		}
+		.links ul li a {
+			line-height: 135%;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+		.links ul li a:hover {
+			#gradient .vertical(#fff5bb, #fff);
+		}
+		.links ul li:first-child a {
+			border-top: none; 
+		}
+		.links ul li:first-child a:hover {
+			border-top: none;
+		}
+		.date {
+			line-height: 1em;
+			margin-bottom: 0.5em;
+			margin-top: 0.5em;
+			font-size: 0.9em;
+			color: #666;
+		}
+		.footer {
+			#gradient .vertical(#fff, #f0f0f0);
+			 background-repeat: repeat-x;
+			 border-bottom: 1px solid #ddd;
+			 border-top: 1px solid #ddd;
+			 border-radius: 0 0 3px 3px;
+			 line-height: 100%;
+			 margin: 0 -10px -10px -10px;
+			 padding: 10px 10px 0 10px;
+			 text-shadow: 1px 1px 0 #FFFFFF;
+			 font-size: 0.9em;
+		}
+		.footer a {
+			display: inline-block;
+			margin: auto auto 10px 0.5em;
+		}
+		.givingcontent div {
+			margin: 1em auto 1.2em auto;
+		}
+	}
+	@media (max-width: 979px) and (min-width: 690px) {
+		.thumbnail-container {
+			.frame {
+				width: 165px;
+			}
+			.frame-container {
+				width: 185px;
+				.btn {
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
 }
+

@@ -1,6 +1,4 @@
 *.espressostorage
 .DS_Store
 *.css
-./css/faculty.css
-./css/ualberta.css
-less/faculty/med/devices/desktop.css
+*.mno

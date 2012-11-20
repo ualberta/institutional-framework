@@ -81,18 +81,19 @@ h4 small { font-size: 14px; }
 
 h2.page-title {
     font-size: 22px;
-    line-height: 1.1em;
-    border-bottom: 1px solid rgba(0, 30, 0, 0.2);
-    margin: 20px 0 5px 0;
+    line-height: 1em;
+    border: none;
+    margin: 0.7em auto 0.2em auto;
+    font-size: 2.1em;
 }
 
 h5.sidebar-title {
   line-height: 1.2em;
-  font-size:13px;
+	font-size: 1.2em;
   margin: -10px -10px 5px -10px;
   padding: 10px 10px 5px 10px;
   border-bottom: 1px solid #ddd;
-  font-family: "DIN Bold", sans-serif;
+	font-family: "DIN Medium",Arial,sans-serif;
   .border-radius(3px 3px 0 0);
   #gradient > .vertical(#fff, #f0f0f0);
   text-shadow: 1px 1px 0px #fff;
@@ -106,6 +107,16 @@ h5.sidebar-title {
       color: @linkColor;
     }
   }
+}
+
+.primary-content-area, .secondary-content-area {
+	h2, h3 {
+		border: none;
+	}
+}
+
+h3 {
+	font-size: 1.6em;
 }
 
 div[class*='-heading'] {
@@ -191,12 +202,14 @@ hr.module-separator {
 hr.soften {
   height: 1px;
   margin: 0px 0;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  margin-bottom: 1.2em;
   border: 0;
 }
+
 // Abbreviations and acronyms
 abbr[title] {
   cursor: help;

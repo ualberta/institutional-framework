@@ -23,9 +23,9 @@
   
   <!--[if lt IE 9]>  <link href="./css/ualberta-ie.css" rel="stylesheet"><link href="./css/ualberta-ie-less.css" rel="stylesheet"> <![endif]-->
   <!--[if IE 7]>  <link href="./css/ualberta-ie7.css" rel="stylesheet"> <![endif]-->
+   <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  <!--[if gt IE 8]><!--> <link href="./css/ualberta.css" rel="stylesheet">  <!--<![endif]-->
 
-  <!--[if gt IE 8]><!--> <link href="./css/faculty.css" rel="stylesheet">  <!--<![endif]-->
-   
     
   <!-- The Favicon -->
   <link rel="shortcut icon" href="./ico/favicon.ico">
@@ -225,7 +225,7 @@
     </div><!-- End Navigation -->   
   </header> <!-- End Header -->
   
-<div class="content-wrapper">
+<div class="content-wrapper events">
   <div class="content-top-row">
     <div class="content-container container"> <!-- Container Start -->
       <div class="content-inner row-fluid">
@@ -238,7 +238,10 @@
       <div class="span5 primary-content-area">
            <div class="row-fluid">
            	<div class="span6"> 
-	           <h3>Filter Events By Faculty</h3>
+<div class="datepicker"></div>
+	        </div>
+           		<div class="span6">
+           		 <h3>Filter Events By Faculty</h3>
 	           <select class="select-box span12">
 	       		<option>Choose a Faculty</option>
 					<option>Administrative Units</option>
@@ -266,8 +269,7 @@
 					<option>St. Joseph's College</option>
 					<option>St. Stephen's College</option>										
 				</select>
-           	</div>
-           		<div class="span6">
+
 	           <h3>Filter Events By Subject</h3>
 	           <select class="select-box span12">
 	       		<option>Choose a Subject</option>
@@ -291,72 +293,15 @@
 				</select>
            		</div>
            </div>
+           <div class="module-tertiary-links-heading">
+            <h3>List of Events</h3>
+            </div>
 
         
       </div>
       
       <div class="span5 secondary-content-area clearfix">
-       <div class="module-container">
-      <h3>Filter Events By Faculty</h3>
-	           <select class="select-box span12">
-	       		<option>Choose a Faculty</option>
-					<option>Administrative Units</option>
-					<option>Agricultural, Life and Environmental Sciences</option>
-					<option>Alberta School of Business</option>
-					<option>Arts</option>
-					<option>Augustana Campus</option>
-					<option>Campus Saint-Jean</option>
-					<option>Education</option>
-					<option>Engineering</option>
-					<option>Extension</option>
-					<option>Graduate Studies and Research</option>
-					<option>International</option>
-					<option>Law</option>
-					<option>Library and Information Studies, School of</option>
-					<option>Medicine and Dentistry</option>
-					<option>Native Studies</option>
-					<option>Nursing</option>
-					<option>Other</option>
-					<option>Pharmacy and Pharmaceutical Sciences</option>
-					<option>Physical Education and Recreation</option>
-					<option>Public Health, School of</option>
-					<option>Rehabilitation Medicine</option>
-					<option>Science</option>
-					<option>St. Joseph's College</option>
-					<option>St. Stephen's College</option>										
-				</select>
-       </div>
- <div class="module-container">
-<h3>Filter Events By Faculty</h3>
-	           <select class="select-box span12">
-	       		<option>Choose a Faculty</option>
-					<option>Administrative Units</option>
-					<option>Agricultural, Life and Environmental Sciences</option>
-					<option>Alberta School of Business</option>
-					<option>Arts</option>
-					<option>Augustana Campus</option>
-					<option>Campus Saint-Jean</option>
-					<option>Education</option>
-					<option>Engineering</option>
-					<option>Extension</option>
-					<option>Graduate Studies and Research</option>
-					<option>International</option>
-					<option>Law</option>
-					<option>Library and Information Studies, School of</option>
-					<option>Medicine and Dentistry</option>
-					<option>Native Studies</option>
-					<option>Nursing</option>
-					<option>Other</option>
-					<option>Pharmacy and Pharmaceutical Sciences</option>
-					<option>Physical Education and Recreation</option>
-					<option>Public Health, School of</option>
-					<option>Rehabilitation Medicine</option>
-					<option>Science</option>
-					<option>St. Joseph's College</option>
-					<option>St. Stephen's College</option>										
-				</select>
- </div>
- <div class="module-container">
+      <div class="module-container">
 	           <div class="module-heading"><h3>Featured Events</h3></div>
 	           <ul class="event-list">
             <li class="events-row headline">
@@ -567,19 +512,16 @@
   </footer> <!-- Footer End -->
  
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-  <!-- scripts concatenated and minified via build script -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<!-- scripts concatenated and minified via build script -->
   <script src="./js/bootstrap.min.js"></script>
   
   <script>
-  /*
-    $(document).ready(function() {
-    $('.content-top-row .tab-content').height(
-      ($('.content-top-row').height()-$('.content-top-row .nav-tabs').height()-50)
-      );
+ $(function() {
+        $( ".datepicker" ).datepicker();
     });
-    */
+ 
   </script>
   <!-- end scripts -->
 

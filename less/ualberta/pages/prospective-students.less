@@ -97,7 +97,7 @@ ul.program-list{
 	padding:0px;
 	margin:0px;
 }
-ul.program-list li{
+ul.program-list li{ 
 	background-color:#fff;
 	border:#eee 1px solid;
 	-webkit-border-radius: 5px;
@@ -106,6 +106,10 @@ ul.program-list li{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     padding:10px;
     margin:0px 0px 15px 0px;
+    opacity: 0.8;
+}
+ul.program-list li:hover{
+	opacity:inherit;
 }
 .seeityourself p{
 	margin-top:5px;
@@ -206,11 +210,15 @@ ul.program-list li{
 		width:100%;
 	}
 }
-
+@media (min-width: 320px) and (max-width: 979px) {
+	ul.program-list li{ 
+		opacity:inherit;
+	}
+}
 @media (min-width: 690px) and (max-width: 979px) {
 	.prospective-student{
 		.sidebar {
-			top:462px;
+			top:427px;
 		}	
  }
 }

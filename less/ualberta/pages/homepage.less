@@ -43,11 +43,22 @@
 
 .why-ualberta-row {
   position: relative;
+  .button-container {
+    float: none;
+    text-align: center;
+    button {
+      margin:  5px;
+    }
+  }
 }
 
+.ualberta-home .content-top-row {
+  margin-top: 1.57em; padding: 0.753em 0em; background-position: bottom left;
+}
 .explore-bar {
   margin-bottom: 1.57em;
 }
+
 
 
 .striped-list {
@@ -101,22 +112,38 @@
   .ualberta-home .fma-tabs-container ul li { 
     width: 25%; 
   }
+  .ualberta-home .content-top-row {
+    background-position: 80px 95px;
+  }
   
   .why-ualberta-row {
     .button-container {
       width:  20%;
       position: absolute;
       top: 10px;
-      right: 10px;
+      right: 0px;
+      float: right;
       button {
         width: 100%;
+        margin-top: 3px;
         margin-bottom: 5px;
+        font-size:  1em;
+        text-align: left;
+        padding: 12px 15px 8px 15px;
+        line-height: 1em;
       }
     }
+    .frame {
+      display:inline-block; float:left; width:20%; margin-right:2%; margin-bottom: 1em;
+    }
     p.description {
-      width: 50%;
-      font-size: 1.14285714285714em;
+      width: 54%;
+      margin-left: 24%;
+      font-size: 1em;
       line-height: 1.57em;
+    }
+    h3 {
+      margin-left: 24%;
     }
     .extrude {
       min-height: 135px;
@@ -145,6 +172,16 @@
     }
   }
   
+  .why-ualberta-row {
+    p.description {
+      width: 54%;
+      margin-left: 22%;
+    }
+    h3 {
+      margin-left: 22%;
+    }
+  }
+  
 }
 
 
@@ -154,6 +191,28 @@
     .tab-content {
       min-height: 264px;
       height: 264px;
+    }
+  }
+  
+  .why-ualberta-row {
+    .button-container {
+      top: 15px;
+      button {
+        font-size:  1.2em;
+      }
+    }
+  }
+  
+  .why-ualberta-row {
+    h3 { 
+      position: relative;
+      top: 8px;  
+    }
+    p.description {
+      position: relative;
+      top: 4px;
+      font-size: 1.14285714285714em;
+      line-height: 1.57em;
     }
   }
   
@@ -172,6 +231,16 @@
       .sidebar {
         width: @hRes_SidebarFluid;
       }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 689px) {
+  .why-ualberta-row {
+    .frame {
+      width: 34%;
+      float: left;
+      margin-right: 20px;
     }
   }
 }
