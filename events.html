@@ -43,11 +43,12 @@
   <!-- Burn IE6 with fire -->
   <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
-    <header> <!-- Start Header -->
+ <header> <!-- Start Header -->
+  
     <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
       <div class="blade-inner">
         <a class="brand" href="#">
-          <img src="./img/logo2.svg" alt="University of Alberta" />
+          <!-- for faculties only <img src="./img/logo2.svg" alt="University of Alberta" /> -->
         </a>
         <nav class="blade-navigation">
           <ul class="quick-links-container">
@@ -58,7 +59,8 @@
                 </span>
                 <span class="icon-bar quick-links-button"></span>
                 <span class="icon-bar quick-links-button"></span>
-                <span class="icon-bar quick-links-button"></span></a>
+                <span class="icon-bar quick-links-button"></span>
+              </a>
               <ul class="quick-links" role="menu" aria-labelledby="dLabel">
                 <li role="menuitem"><a href="#">Find a Person</a></li>
                 <li role="menuitem"><a href="#">ONEcard</a></li>
@@ -71,10 +73,10 @@
             </li>
           </ul>
         </nav>
-        <div class="blade-search">
+       <div class="blade-search">
           <i class="icon-search"></i>
           <input type="search" class="search-query" placeholder="search">
-        </div>
+        </div> 
       </div>
     </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
 
@@ -82,8 +84,19 @@
       <div class="banner-inner">
         <h1>
           <span class="identifier"></span>
-          <span class="site-title">Faculty of Medicine &amp; Dentistry</span>
+          <span class="site-title">Faculty of Development</span>
         </h1>
+        <div class="banner-logo">
+          <img src="http://www.ualberta.ca/~publicas/uofa/css/img/NavLogo.png" class="site-logo" alt="Site Logo" />
+        </div>
+        <nav class="audience-navigation">
+          <ul>
+            <li role="menuitem"><a href="#">Prospective Students</a></li>
+            <li role="menuitem"><a href="#">Current Students</a></li>
+            <li role="menuitem"><a href="#">Faculty &amp; Staff</a></li>
+            <li role="menuitem"><a href="#">Alumni &amp; Friends</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="shadow-container"></div>
       <div class="oval-container">
@@ -92,8 +105,9 @@
         <div class="oval oval3"></div>
         <div class="oval oval4"></div>
       </div>
-    </div> <!-- End Banner -->  
-  <div class="navigation-container"> <!-- Start Navigation -->
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
       <nav id="main-nav" class="navigation-inner">
         <ul>
           <li>
@@ -101,129 +115,24 @@
               Show Navigation <i class="icon-toggle-nav"></i>
             </a>
             <ul class="main-navigation collapse">
-              <li><a href="#">About</a>
-                <div class="sub-menu">
-                  <h3 class="section-title">In This Section</h3>
-                  <ul class="section-navigation">
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Dean's Message</a></li>
-                    <li><a href="#">Vision, Mission &amp; Values</a></li>
-                    <li><a href="#">Leadership</a></li>
-                    <li><a href="#">International Relations</a></li>
-                    <li><a href="#">Why FoMD</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                  <div class="section-description">
-                     <p>
-                       The Alberta School of Business is built on the Alberta tradition. Innovative ideas, hard work, entrepreneurial spirit and great people have made the Alberta economy the best in Canada.
-                     </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">Programs</a>
-                <div class="sub-menu">
-                  <h3 class="section-title">In This Section</h3>
-                  <ul class="section-navigation">
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Alberta International Medical Graduate (AIMG)</a></li>
-                    <li><a href="#">Diploma/DSc in Dental Hygiene</a></li>
-                    <li><a href="#">Doctor of Dental Surgery (DDS)</a></li>
-                    <li><a href="#">Doctor of Medicine (MD)</a></li>
-                    <li><a href="#">Medical Laboratory Sciences (MLS)</a></li>
-                    <li><a href="#">Residency and Fellowship</a></li>
-                    <li><a href="#">Visiting Students</a></li>
-                    <li><a href="#">Continuing Education</a></li>
-                    <li><a href="#">Medical Education Scholarship</a></li>
-                    <li><a href="#">Graduate Studies</a></li>
-                  </ul>
-                  
-                  <div class="section-description">
-                     <p>
-                       Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.
-                     </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">Departments</a>
-                <div class="sub-menu">
-                  <h3 class="section-title">In This Section</h3>
-                  <ul class="section-navigation">
-                    <li><a href="#">DSME</a></li>
-                  </ul>
-                   <div class="section-description">
-                     <p>
-                       Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.
-                     </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">Research</a>
-                <div class="sub-menu">
-                  <h3 class="section-title">In This Section</h3>
-                  <ul class="section-navigation">
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Research Chairs</a></li>
-                    <li><a href="#">Groups, Centres and Institutes</a></li>
-                    <li><a href="#">Core Research Facilities</a></li>
-                    <li><a href="#">Managing Your Research</a></li>
-                    <li><a href="#">Student Research Funding</a></li>
-                    <li><a href="#">Undergraduate Summer Studentship</a></li>
-                    <li><a href="#">Grad Students &amp; Post-Doctoral Research</a></li>
-                    <li><a href="#">J.B. Collip Club</a></li>
-                    <li><a href="#">Contact Office of Research</a></li>
-                  </ul>
-                  <div class="section-description">
-                     <p>
-                       Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor.
-                     </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">Alumni</a>
-                <div class="sub-menu">
-                  <h3 class="section-title">In This Section</h3>
-                  <ul class="section-navigation">
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Photo Gallery</a></li>
-                    <li><a href="#">Alumni e-newsletter</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                  <div class="section-description">
-                     <p>
-                       Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.
-                     </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">Communities</a>
-                <div class="sub-menu">
-                  <h3 class="section-title">In This Section</h3>
-                  <ul class="section-navigation">
-                    <li><a href="#">Clinical Academic Colleagues</a></li>
-                    <li><a href="#">Global Health</a></li>
-                    <li><a href="#">Indigenous Health Initiatives</a></li>
-                    <li><a href="#">Inner City</a></li>
-                    <li><a href="#">Mini Medical School</a></li>
-                    <li><a href="#">Rural &amp; Regional Health</a></li>
-                  </ul>
-                  <div class="section-description">
-                     <p>
-                     Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor.
-                     </p>
-                  </div>
-                </div>
-              </li>
+              <li role="menuitem"><a href="#">Why UAlberta?</a></li>
+              <li role="menuitem"><a href="#">Faculties &amp; Programs</a></li>
+              <li role="menuitem"><a href="#">Research</a></li>
+              <li role="menuitem"><a href="#">Admissions</a></li>
+              <li role="menuitem"><a href="#">Campus Life</a></li>
+              <li role="menuitem"><a href="#">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Current Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Faculty &amp; Staff</a></li>
+              <li role="menuitem" class="audience-link"><a href="#">Alumni &amp; Friends</a></li>
             </ul>
           </li>
         </ul>
       </nav>
-    </div><!-- End Navigation -->   
+    </div><!-- End Navigation -->
+    
   </header> <!-- End Header -->
+
   
 <div class="content-wrapper events">
   <div class="page-title-row">
@@ -234,22 +143,23 @@
   <div class="content-container container">
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
       <div class="span5 primary-content-area">
+             <h3>Filter Events</h3>
            <div class="row-fluid filter extrude">
-           	<div class="span6"> 
+               	<div class="span6"> 
 	           	<div class="datepicker"></div>
 	        </div>
            		<div class="span6">
            		<div class="filter-day">
-           		 <h3>Filter Events By Day, Month, Current</h3>
+           		 <label>Filter by Day, Month, or Current</label>
            		    <select class="select-box span12">
-	       		<option>Select option</option>
+           		    <option>Current</option>
 					<option>Day</option>
 					<option>Month</option>
-           		    <option>Current</option>
+
            		    </select>
            		</div>
            		<div class="faculty-event">
-           		 <h3>Filter Events By Faculty</h3>
+           		 <label>Filter by Faculty</label>
 	           <select class="select-box span12">
 	       		<option>Choose a Faculty</option>
 					<option>Administrative Units</option>
@@ -279,7 +189,7 @@
 				</select>
            		</div>
            		<div class="subject-event">
-	           <h3>Filter Events By Subject</h3>
+	           <label>Filter by Subject</label>
 	           <select class="select-box span12">
 	       		<option>Choose a Subject</option>
 					<option>Alumni</option>
@@ -307,36 +217,86 @@
            <div class="latest-news">
            <div class="news-heading">
             	<h3>List of Events</h3>
-            	Filtered by Day
+            	 <span class="filtered-by">| Filtered by Day</span>
             </div>
               <ul class="event-list">
             <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
              <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
             <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                 <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
              <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
+             <li class="events-row headline">
+              <div class="events-description">
+                <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              </div>
+            </li>
+        <li class="events-row headline">
+              <div class="events-description">
+                <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              </div>
+            </li>
+             <li class="events-row headline">
+              <div class="events-description">
+                <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              </div>
+            </li>
+            <li class="events-row headline">
+              <div class="events-description">
+                <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
+                <span class="events-date">September 24, 2012</span>
+                 <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              </div>
+            </li>
+             <li class="events-row headline">
+              <div class="events-description">
+                <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              </div>
+            </li>
+             <li class="events-row headline">
+              <div class="events-description">
+                <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              </div>
+            </li>            
             </ul><!--end of list-of-events-->
-            
            </div>
+            <ul class="events-pagnation">
+ <li class="active">1</li>
+ <li><a href="#">2</a></li>
+ <li><a href="#">3</a></li>
+ </ul>
       </div>
       
       <div class="span5 secondary-content-area clearfix">
@@ -346,19 +306,22 @@
             <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
             <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
                         <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
 	           </ul>
@@ -370,85 +333,55 @@
             <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
             <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
                         <li class="events-row headline">
               <div class="events-description">
                 <h4><a href="#">Behind the Foxconn Riot: The Turbulent Future of Chinese Manufacturing</a></h4>
-                <span class="events-date">September 24, 2012 - Edmonton Journal</span>
+                <span class="events-date">September 24, 2012</span>
+                <p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               </div>
             </li>
 	           </ul>
  </div>
      </div> <!--END Secondary Column-->
       <div class="span2 sidebar"> <!-- Sidebar Start -->
+      <a href="#" class="btn btn-grey btn-small">Submit an Event</a>
+      <a href="#" class="btn btn-yellow btn-small">Apply Now</a>
         <div class="extrude links-module">
           <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
-            <i class="icon-link"></i> Links
+            <i class="icon-asterisk"></i> Stay Informed
           </h5>
           <div class="sidebar-content collapse links">
             <ul>
-              <li><a href="#">Link One</a></li>
-              <li><a href="#">Link Two</a></li>
-              <li><a href="#">Link Three</a></li>
-              <li><a href="#">Link Four</a></li>
+              <li><a href="#">Daily News Email</a></li>
+              <li><a href="#">Follow @UAlberta</a></li>
+              <li><a href="#">RSS</a></li>
             </ul>
           </div>
         </div>
-        <div class="extrude events-module">
-          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".events">
-            <a href="#"><i class="icon-calendar"></i> Faculty Events</a>
+        <div class="extrude links-module">
+          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".links">
+            <a href="#calendar"><i class="icon-calendar"></i> University Calendar</a>
           </h5>
-          <div class="sidebar-content collapse events">
+          <div class="sidebar-content links collapse">
             <ul>
-              <li>
-                <a href="#">Business Alumni Association 2012 CMA Cup</a>
-                <span class="date">Sep. 5, 2012</span>  
-              </li>
-              <li>
-                <a href="#">Canmore Alumni and Business Advisory Council Reception</a>
-                <span class="date">Sep. 27, 2012</span>  
-              </li>
-              <li>
-                <a href="#">11th Annual Report to the Community</a>
-                <span class="date">Oct. 18, 2012</span>  
-              </li>
+              <li><a href="#">View the Calendar</a></li>
+              <li><a href="#">Costs, Tuition and Fees</a></li>
+              <li><a href="#">Major Deadlines</a></li>
+              <li><a href="#">Academic Schedule</a></li>
             </ul>
-          </div>
-        </div>
-                <div class="extrude twitter-module">
-          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".twitter-feed">
-            <i class="icon-twitter"></i> Twitter <small>(@UAlberta)</small>
-          </h5>
-          <div class="twitter-feed sidebar-content collapse">
-            <ul class="tweet_list">
-              <li class="tweet_first tweet_odd">
-                <span class="tweet_text">@<a href="http://twitter.com/familiartragedy" target="_blank">familiartragedy</a>  Woot! Congratulations. See you in September!</span> 
-                <span class="tweet_time"><a href="http://twitter.com/UAlberta/status/218524444736499712" title="view tweet on twitter" target="_blank">about 13 hours ago</a></span><br>
-                <a class="tweet_action tweet_reply" href="#"><i class="icon-share-alt"></i> reply</a> 
-                <a class="tweet_action tweet_retweet" href="#"><i class="icon-retweet"></i> retweet</a> 
-                <a class="tweet_action tweet_favorite" href="#"><i class="icon-star"></i> fav</a>
-              </li>
-              <li class="tweet_even">
-                <span class="tweet_text">@<a href="http://twitter.com/Mitch1918" target="_blank">Mitch1918</a>  Hang in there! Have you followed up with a recruiter in your preferred faculty?</span> 
-                <span class="tweet_time"><a href="http://twitter.com/UAlberta/status/218397299989159936" title="view tweet on twitter" target="_blank">about 21 hours ago</a></span><br>
-                <a class="tweet_action tweet_reply" href="#"><i class="icon-share-alt"></i> reply</a> 
-                <a class="tweet_action tweet_retweet" href="#"><i class="icon-retweet"></i> retweet</a> 
-                <a class="tweet_action tweet_favorite" href="#"><i class="icon-star"></i> fav</a>
-              </li>
-            </ul>
-            <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.1347008535.html#_=1349105297937&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=UAlberta&amp;show_count=false&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button" style="width: 118px; height: 20px; " title="Twitter Follow Button" data-twttr-rendered="true"></iframe>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
-        </div><!--END Twitter-->
-      </div> <!-- Sidebar End -->
+          </div>      
+          </div> <!-- Sidebar End -->
      
     </div> <!-- Second Row End -->
    
