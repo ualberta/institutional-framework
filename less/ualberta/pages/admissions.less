@@ -14,6 +14,7 @@
 		}
 		hr.soften {
 			width: 80%;
+			margin-bottom: 0.8em;
 		}
 		ul li {
 			background-color: @white;
@@ -43,36 +44,42 @@
 			font-size: 1.2em;
 			margin-bottom: 0.5em;
 		}
+		div.links-module ul li {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
 		.deadlines {
 			h5 {
-				margin-bottom: 0;
+				margin-bottom: 0.6em;
 				border-bottom: none;
 			}
 			h6 {
-				border-bottom: 1px solid rgba(0, 30, 0, 0.5);
+//				border-bottom: 1px solid rgba(0, 30, 0, 0.5);
 				text-transform: uppercase;
 				font-size: 0.9em;
 				margin-bottom: 0;
+				margin-top: 0.4em;
 			}
-			.links ul {
-				li {
-					line-height: 125%;
-				}
-				li ul li {
-					border-bottom: 1px dotted #e0e0e0;
-					padding: 0;
-				}
-				li ul li:last-child {
-					border-bottom: 0;
-				}
-				li a {
-					display: block;
-					line-height: 135%;
-					padding-top: 0.4em;
-					padding-bottom: 0.4em;
-				}
-				li a:hover {
-					#gradient .vertical(#fff5bb, #fff);
+			.links, .links2 {
+				ul {
+					li {
+						line-height: 125%;
+					}
+					li ul li {
+						padding: 0;
+					}
+					li a {
+						display: block;
+						line-height: 135%;
+						padding-top: 0.4em;
+						padding-bottom: 0.4em;
+					}
+					li:first-child a {
+						border-top:  1px solid rgba(0, 30, 0, 0.5);
+					}
+					li a:hover {
+						#gradient .vertical(#fff5bb, #fff);
+					}
 				}
 			}
 		}
