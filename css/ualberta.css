@@ -8038,16 +8038,36 @@ ul.event-list li.events-row:nth-child(even) {
   border-bottom: none;
 }
 .admissions .sidebar .deadlines h6 {
-  border-bottom: 1px solid rgba(0, 30, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 30, 0, 0.5);
   text-transform: uppercase;
   font-size: 0.9em;
-}
-.admissions .sidebar .deadlines .links ul {
-  margin-bottom: 1.4em;
+  margin-bottom: 0;
 }
 .admissions .sidebar .deadlines .links ul li {
-  margin-bottom: 0.7em;
   line-height: 125%;
+}
+.admissions .sidebar .deadlines .links ul li ul li {
+  border-bottom: 1px dotted #e0e0e0;
+  padding: 0;
+}
+.admissions .sidebar .deadlines .links ul li ul li:last-child {
+  border-bottom: 0;
+}
+.admissions .sidebar .deadlines .links ul li a {
+  display: block;
+  line-height: 135%;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+.admissions .sidebar .deadlines .links ul li a:hover {
+  *background-color: #fffadd;
+  background-image: -moz-linear-gradient(top, #fff5bb, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff5bb), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #fff5bb, #ffffff);
+  background-image: -o-linear-gradient(top, #fff5bb, #ffffff);
+  background-image: linear-gradient(to bottom, #fff5bb, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffff5bb', endColorstr='#ffffffff', GradientType=0);
 }
 .grey-box {
   padding: 10px 20px;
@@ -8522,8 +8542,8 @@ h5.sidebar-title {
 }
 .campuslife-b .sidebar .links ul li a {
   line-height: 135%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 .campuslife-b .sidebar .links ul li a:hover {
   *background-color: #fffadd;
