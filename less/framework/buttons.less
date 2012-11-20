@@ -6,7 +6,7 @@
   line-height: 1em;
   #gradient > .vertical(@backgroundColor,  darken(@backgroundColor, 5%));
   padding: 0.8em 1.5em 0.6em 1.5em; 
-  .border-radius(10px); 
+  .border-radius(7px); 
   font-family: "DIN Bold", Arial, sans-serif; 
   text-decoration: none; 
   font-weight:500;  
@@ -37,7 +37,7 @@
   line-height: 1em;
   #gradient > .vertical(@backgroundColor, @backgroundColor2);
   padding: 0.8em 1.5em 0.6em 1.5em; 
-  .border-radius(10px); 
+  .border-radius(7px); 
   font-family: "DIN Bold", Arial, sans-serif; 
   text-decoration: none; 
   font-weight:500;  
@@ -76,7 +76,7 @@
   line-height: 1em;
   #gradient > .vertical(#f4f4f4, #dfe9e3);
   padding: 0.8em 1.5em 0.6em 1.5em; 
-  .border-radius(10px); 
+  .border-radius(7px); 
   font-family: "DIN Bold", Arial, sans-serif; 
   text-decoration: none; 
   font-weight:500;  
@@ -99,12 +99,36 @@
   }
 }
 
-.btn.small {
+.btn-apply {
+  .btnLightShinyBackground(#ffdb05, #007c41, 1px 1px 1px #fed);
+  &:hover {
+    .btnLightShinyBackground(lighten(#ffdb05,15%), #007c41, 1px 1px 1px #fed);
+  }
+  &:active {
+    .btnLightShinyBackground(darken(#ffdb05,2%), #007c41, 1px 1px 1px #fed);
+    .box-shadow(inset 0px 0px 5px darken(#ffdb05, 15%), 0px 1px 2px #fff);
+    text-shadow: none;
+  }
+}
+
+.btn-work {
+  .btnLightShinyBackground(#E8EeEa, #007c41, 1px 1px 1px #fff);
+}
+
+.btn-give {
+  .btnLightShinyBackground(#E8EeEa, #007c41, 1px 1px 1px #fff);
+}
+
+.btn-large {
+  font-size: 1.4em;
+}
+
+.btn-small {
   font-size: 1em;
 }
 
-.btn.micro {
-  font-size: 0.85;
+.btn-micro {
+  font-size: 0.815em;
   text-transform:uppercase;
 }
 
