@@ -1,14 +1,80 @@
 .events{
+	/*Calendar Start*/
 	.ui-widget-content{
-	border:1px solid #ddd;
-	color:#44524A;
+		border:1px solid #ddd;
+		color:#44524A;
 	}
+ a.ui-state-default{
+	   color:#007C41;
+   }
 	.ui-widget-header{
-	border:none;
-	background:none;
+		border:none;
+		background:none;
 	}
-	.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
-		
+	.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+		border: 1px solid #ddd; 
+		font-weight: normal;
+		color: #007C41;
+		background-color:#DDF1E5;
+		background-image:none;
 	}
+	.ui-widget-header .ui-state-hover{
+		background-color:#007C41;
+	}
+	.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+		border:1px solid #ddd;
+		background-color:#DDF1E5;
+		background-image:none;
+	}
+	.ui-widget-header .ui-icon {
+		background-image: url(../img/calendar-icon.png);
+	 }
+	.ui-widget-header { 
+		border: 1px solid #007c45; 
+		background: #007c45 url(../img/ui-bg_gloss-wave_35_007c45_500x100.png) 50% 50% repeat-x; 
+		color: #ffffff; font-weight: bold; 
+	}
+	.ui-datepicker .ui-datepicker-header{
+		font-size:0.85em;
+	}
+	.ui-datepicker table{
+		font-size:0.7em;
+	}
+	/*Calendar End*/
+	/*Multiselector Start*/
+	    .event-list-filters { float: left; margin-right: 50px; }
+    
+    .ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+    .ui-multiselect span.ui-icon { float:right }
+    .ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+    .ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
 
+    .ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+    .ui-multiselect-header ul { font-size:0.9em }
+    .ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+    .ui-multiselect-header a { text-decoration:none }
+    .ui-multiselect-header a:hover { text-decoration:underline }
+    .ui-multiselect-header span.ui-icon { float:left }
+    .ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+    .ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
+    .ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
+    .ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+    .ui-multiselect-checkboxes label input { position:relative; top:1px }
+    .ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
+    .ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+    .ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+
+    /* remove label borders in IE6 because IE6 does not support transparency */
+    * html .ui-multiselect-checkboxes label { border:none }
+    /*Multiselector end*/
+	.filter{
+		margin-bottom:15px;
+	}
+	.filter h3{
+		font-size:1.2em;
+	}
+	.faculty-event{
+		margin-bottom:10px;
+	}
 }
