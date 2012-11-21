@@ -70,10 +70,12 @@ ul.event-list li.events-row:first-child {
 ul.event-list li.events-row:nth-child(even) {
   background: rgba(0, 124, 65, 0.02);
 }
+.news-and-events ul.event-list li.events-row:first-child{
+		border-top:solid 1px #e0e0e0;
+	}
 .explore-logo{
 	margin:0px 0px 10px 0px;
 	font-size:0.95em;
-
 }
 .explore-logo-img{
 	background-color:#fff;
@@ -84,27 +86,25 @@ ul.event-list li.events-row:nth-child(even) {
 .explore-logo-img a{
 	display:block;
 }
-@media (min-width:330px) and (max-width:489px) {
-.row-fluid .span6.explore-logo{
-	width:100%;
-	float:left;
-	margin-right:10px;
-	}
+.news-and-events .datepicker{
+	margin-bottom:10px;
 }
-@media (min-width: 490px) and (max-width:689px) {
+.news-and-events .events{
+	margin-bottom:9px;
+}
+@media (min-width: 500px) and (max-width:689px) {
 	.row-fluid .span6.explore-logo{
 	width:47%;
 	float:left;
 	margin-right:10px;
 	}
 }
-@media (max-width:979px) {
-	.explore-container .span6{
-		width:36%;
-	}
-}
-@media (min-width:980px) {
-	.explore-container .span6{
-		width:23%;
+
+@media (min-width: 460px) and (max-width:690px) {
+	.news-and-events{
+		.secondary-row .module-container{
+			width:100%;
+			margin-left:0px;
+		}
 	}
 }
