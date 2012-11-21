@@ -259,7 +259,7 @@
           <div class="module-container">
             <h3>Student Services by Faculty</h3>
 	           <p>Choose a program from the list below to view the services available:</p>
-	           <ul class="student-services">
+	           <ul class="student-services striped-list">
 					<li><a href="http://www.ales.ualberta.ca/CurrentStudents.aspx">Agricultural, Life &amp; Environmental Science</a></li>
 					<li><a href="http://www.business.ualberta.ca/Programs/BachelorOfCommerce.aspx">Alberta School of Business</a></li>
 					<li><a href="http://www.foa.ualberta.ca/en/Undergraduate_Programs/Student_Services.aspx">Arts</a></li>
@@ -307,13 +307,15 @@
              </div> 
              </div>
         
-        <div class="extrude campus-maps">
-          <h5 class="sidebar-title">
-            <i class="icon-map-marker"></i> Campus Maps
-          </h5>
-          <img src="./img/explore-campus.png" />
-          <p>Find buildings, parking and food options, just to name a few, with Google Maps.</p>
-       </div>
+         <div class="extrude campus-maps">
+           <h5 class="sidebar-title collapsed"  data-toggle="collapse" data-target=".maps">
+             <a href="#maps"><i class="icon-map-marker"></i> Campus Maps</a>
+           </h5>
+           <div class="sidebar-content maps collapse">
+           <a href="#" class="image-shadow sidebar-image-container"><img src="./img/explore-campus.png" /></a>
+           <p>Find buildings, parking and food options, just to name a few, with Google Maps.</p>
+           </div>
+        </div>
        
        <a href="#" class="btn btn-give btn-small">Give to the U of A</a>
        
