@@ -97,7 +97,8 @@ h5.sidebar-title {
   margin: -10px -10px 5px -10px;
   padding: 10px 10px 5px 10px;
   border-bottom: 1px solid #ddd;
-	font-family: "DIN Medium",Arial,sans-serif;
+	font-family: @headingsFontFamily;
+	font-weight: @headingsFontWeight;
   .border-radius(3px 3px 0 0);
   #gradient > .vertical(#fff, #f0f0f0);
   text-shadow: 1px 1px 0px #fff;
@@ -210,8 +211,11 @@ hr.soften {
   background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
   background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
-  margin-bottom: 1.2em;
   border: 0;
+}
+div.content-inner hr.soften {
+  margin-bottom: 1em;
+  margin-top: 0;
 }
 
 // Abbreviations and acronyms
