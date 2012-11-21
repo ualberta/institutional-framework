@@ -79,11 +79,12 @@
 
   .why-ualberta .content-top-row {
     background-position: 0px 100px;
-    .transition(background 5s ease-out);
+    
   }
   
   .content-top-row.start {
     background-position: -600px 250px;
+    
   }
   
   .why-ualberta .fma-container {
@@ -269,6 +270,7 @@
   }
   .why-ualberta .content-top-row {
     background-position: 0px 140px;
+    .transition(background 5s ease-out);
   }
 }
 
@@ -278,12 +280,12 @@
     background-position: center 103px;
   }
 
-  .why-ualberta .fma-container .student-experience {
+  .why-ualberta .fma-container .thumbnail-slide {
     margin-top: 5%;
     h3, p {
       padding:  0 10px;
     }
-    .student-video-container {
+    .thumbnail-container {
      display: none;
     }   
   }
@@ -324,40 +326,12 @@
       font-weight: bold;
     }
     .ualberta-link {
-      float: right;
-      position: relative;
-      width:  10em; 
-      height:7em;
-      padding-top: 3em; 
-      z-index: 4;
-      .border-radius(500px);
-      text-align: center;
-      font-family: DIN Bold;
-      color: #fff;
-      font-size:  1em;
-      line-height: 1.4em;
-      #gradient > .directional(lighten(@linkColor,10%), @linkColor, -45deg);
-      .box-shadow(0px 1px 6px rgba(0,0,0,0.25));
-      .opacity(90);
-      text-transform: uppercase;
       span {
         display: inline-block;
         width:  8em;
-        text-shadow: 1px 1px 4px darken(@linkColor,10%);
       }
       i {
-        position: absolute;
-        line-height: 1em;
-        font-size: 10em;
-        top: 0.11em;
-        left: 0.11em;
-        .opacity(15);
-      }
-      &:hover {
-        i {
-          .opacity(35);
-          text-decoration:  none;
-        }
+        display:none
       }
     }
   }
