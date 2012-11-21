@@ -66,9 +66,6 @@ a:focus {
 
 @media (min-width: 690px) {
 
-  hr.soften {
-    width: @tablet_PriColFluid;
-  }
 
   .row-fluid {
   
@@ -154,7 +151,10 @@ a:focus {
   .row-fluid .secondary-content-area .module-container:first-child,
   .row-fluid .secondary-content-area .module-container:nth-child(odd) {
     margin-left: 0;
-    
+  }
+  
+  .row-fluid .secondary-content-area .module-container hr.soften {
+    display: none;
   }
   
 }
@@ -184,9 +184,6 @@ a:focus {
 
 @media (min-width: 980px) {
 
-  hr.soften {
-    width: auto;
-  }
   .row-fluid {
       .feature-area {
         width: @desktop_FeatureFluid;
