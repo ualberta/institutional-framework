@@ -52,7 +52,6 @@ less:
 production:
 	@mkdir -p ${PRODDIR}
 	@recess --compile ${PROTOTYPE_LESS} > ./css/ualberta.css
-	@recess --compile ./less/faculty.less > ./css/faculty.css
 	@recess --compile ./less/ualberta-ie7.less > ./css/ualberta-ie7.css
 	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie-less.css
 	@cp -r ./css ${PRODDIR}
