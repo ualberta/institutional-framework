@@ -84,6 +84,9 @@ hr.softline{
    .sidebar {
         width: @desktop_SidebarFluid;
     }
+   .span12.primary-content-area{
+	    width:100%;
+    }
   }
   .content-top-row {
     .tab-content {
@@ -92,6 +95,9 @@ hr.softline{
       height: 260px;
     }
   }
+     .span12.primary-content-area{
+	    width:100%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -113,4 +119,10 @@ hr.softline{
       width: @highRes_SidebarFluid;
     }
   }
+}
+@media(min-width:320px){
+	    .row-fluid .span12.primary-content-area{
+	    width:100%;
+	    margin-left:0px;
+    }
 }
