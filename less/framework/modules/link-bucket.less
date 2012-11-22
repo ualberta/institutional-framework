@@ -12,19 +12,21 @@
             display: block;
             border-top: 1px dotted #E0E0E0; 
             &:hover {
-              #gradient > .vertical(#f0f0f0,#fff);
+              background: #FFF5B8;
               margin-left: -10px;
               margin-right: -10px;
               padding-left: 10px;
               padding-right: 10px;
-              border-top: 1px solid #e0e0e0;
+              border-top: 1px solid desaturate(darken(#FFF5B8,10%),50%);
+              margin-bottom: -1px;
+              border-bottom: 1px solid desaturate(darken(#FFF5B8,10%),50%);
               text-decoration:  none;
             }
           }
           &:first-child a { 
-            border-color: transparent; 
+            border-top-color: transparent; 
             &:hover {
-              border-top-color: #e0e0e0;
+              border-top-color: desaturate(darken(#FFF5B8,10%),50%);
             }
           }
   
