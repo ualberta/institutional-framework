@@ -121,12 +121,57 @@
   }
 }
 
+.ualberta-home .fma-container .fma-slide .fma-caption {
+  position: relative;
+  padding: 10px 10px 20px 10px;
+  width: 340px;
+  .clearfix();
+  h3 {
+    color: @linkColor;
+    border-bottom: none;
+    margin: 0;
+  }
+  span {
+    font-family: @heavyFontFamily;
+    text-transform: uppercase;
+  }
+  p {
+    
+  }
+  a.btn {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    &:active {
+      .box-shadow(none);
+    }
+  }
+}
+
+
 @media (min-width: 690px) {
   .ualberta-home .fma-tabs-container ul li { 
     width: 25%; 
   }
   .ualberta-home .content-top-row {
     background-position: 80px 95px;
+  }
+  
+  .ualberta-home .fma-container .fma-slide .fma-caption {
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.65);
+    padding: 10px 15px 20px 15px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    .transition(all 0.3s ease-in-out);
+    h3 {
+      color: #ffdb05;
+    }
+    a.btn {
+      padding-top: 6px;
+      padding-bottom: 4px;
+    }
   }
   
   .why-ualberta-row {
