@@ -53,7 +53,9 @@
 }
 
 .ualberta-home .content-top-row {
-  margin-top: 1.57em; padding: 0.753em 0em; background-position: bottom left;
+  margin-top: 1.57em; 
+  padding: 1em 0em; 
+  background-position: bottom left;
 }
 .explore-bar {
   margin-bottom: 1.57em;
@@ -183,11 +185,10 @@
       float: right;
       button {
         display: block;
-        width: 96%;
-        margin-top: 3px;
-        margin-bottom: 5px;
+        width: 100%;
+        margin: 3px 0px 5px 0px;
         font-size:  1em;
-        padding: 12px 1.5% 8px 1.5%;
+        padding: 12px 0 8px 0;
         line-height: 1em;
       }
     }
@@ -238,6 +239,33 @@
     h3 {
       margin-left: 22%;
     }
+    & > .span {
+      padding: 0 15px;
+    }
+    .button-container {
+      right: 15px;
+    }
+  }
+  
+  .why-ualberta-row {
+    & > .span {
+      margin-bottom: -6px;
+    }
+    h3 { 
+      position: relative;  
+      top: -9px;
+    }
+    div.frame {
+      margin-bottom: 0;
+    }
+    p.description {
+      position: relative;
+      top: -13px;
+      margin-bottom: 0;
+    }
+    .button-container {
+      top: -2px;
+    }
   }
   
 }
@@ -252,24 +280,22 @@
   }
   
   .why-ualberta-row {
+    & > .span {
+      margin-bottom: -4px;
+    }
+    h3 { 
+      top: -5px;
+    }
+    p.description {
+      top: -7px;
+      font-size: 1.14285714285714em;
+      line-height: 1.57em;
+    }
     .button-container {
-      top: 15px;
+      top: 4px;
       button {
         font-size:  1.2em;
       }
-    }
-  }
-  
-  .why-ualberta-row {
-    h3 { 
-      position: relative;
-      top: 8px;  
-    }
-    p.description {
-      position: relative;
-      top: 4px;
-      font-size: 1.14285714285714em;
-      line-height: 1.57em;
     }
   }
   
