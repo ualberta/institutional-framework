@@ -66,7 +66,6 @@
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
 }
 
 	.current-students .content-inner .fma-caption h3 {
@@ -78,8 +77,20 @@
 	.current-students .content-inner .fma-caption ul {
 		display: inline-block;
 		vertical-align:top;
-		width: 30%;
-		margin-right: 2.564102564102564%;
+		margin-left: 2.564102564102564%;
+	}
+	
+	.current-students .content-inner .fma-caption ul.fma-major {
+		width: 35%;
+	}
+	
+	.current-students .content-inner .fma-caption ul.fma-minor {
+		width: 20%;
+	}
+	
+	.current-students .content-inner .fma-caption ul.fma-major .btn-grey, .current-students .content-inner .fma-caption ul.fma-minor .btn-grey {
+		display: block;
+		margin-bottom: 14px;
 	}
 	
 	.current-students .content-inner .fma-caption .fma-title {
@@ -110,25 +121,44 @@
   		color: #003019;
   		text-decoration: underline;
   	}
+  	
+  	.current-students .content-inner .fma-caption .fma-picture {
+  		font-family: @headingsFontFamily;
+		font-weight: @headingsFontWeight;
+  		height: auto;
+  		width: 95%;
+  		border: 5px #FFF solid;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+		font-size: 32px;
+		overflow: hidden;
+  	}
 	
-	.current-students .content-inner .fma-caption ul a {
-
-	}
-	
-	.current-students .content-inner .fma-caption .frame {
-		width: 300px;
-		float: left;
+	.current-students .content-inner .fma-caption .fma-picture a {
+		padding: 20px;
+		display: inline-block;
 	}
 	
 	.current-students .content-inner .fma-caption .social {
-		font-size: 32px;
-		margin: 0;
-		letter-spacing: -10px;
+		padding: 10px 0 7px 0;
 	}
 	
 	.current-students .content-inner .fma-caption .social a {
-		margin-right: 10px;
+		padding: 0;
+		margin-right: 7px;
 	}
+	
+		.current-students .content-inner .fma-caption .social a img {
+			margin-bottom: 7px;
+		}
+		
+		.current-students .content-inner .fma-caption .social a.social-last {
+			margin-right: 0;
+		}
 	
 	.current-students .content-inner .fma-caption .social a:hover {
 		text-decoration: none;
@@ -168,6 +198,7 @@
 	.current-students .content-inner .fma-caption {
 		margin-top: 0;
 	}
+
 }
 	
 @media (max-width: 690px) {
@@ -178,6 +209,14 @@
 	
 	.current-students .content-top-row {
 		background-position: bottom;
+	}
+	
+	.current-students .content-inner .fma-caption ul.fma-major {
+		width: 100%;
+	}
+	
+	.current-students .content-inner .fma-caption ul.fma-minor {
+		width: 100%;
 	}
 	
 	.current-students .content-inner .fma-caption ul {
