@@ -153,16 +153,16 @@
 
 
 
-  <div class="content-top-row">
-    <div class="content-container container"> <!-- Container Start -->
+  
+   
       <div class="content-inner row-fluid">
+      
+      <div class="content-top-row start"> 
       <!-- FMA -->
         <div class="fma-container">
-         <div class="fma-slide">
          
-         <!-- Discover a Vibrant Campus -->
-         
-         <div class="thumbnail-slide fma-slide">
+        <!-- Discover a Vibrant Campus -->
+         <div class="thumbnail-slide fma-slide fma-active start">
            <h3>Discover a Vibrant Campus</h3>
            <div class="thumbnail-container container">
              <div class="frame-container">
@@ -196,9 +196,77 @@
              </div>
          </div>
          
+      <!-- Residences and Housing -->
+         <div class="thumbnail-slide fma-slide">
+           <h3>Residence and Housing</h3>
+           <div class="thumbnail-container container">
+             <div class="frame-container">
+               <div class="frame">
+                 <div class="hover-caption-container"> <a href="http://www.campuslife.ualberta.ca/en/ourcampuses.aspx" class="image-shadow"> <img src="img/virtualtour.jpg" /> </a>
+                   <div class="caption">
+                     <p>Explore campuses with a virtual tour.</p>
+                   </div>
+                 </div>
+               </div>
+              <a href="http://www.campuslife.ualberta.ca/en/ourcampuses.aspx" class="btn btn-grey btn-small">Take a 360&#176; virtual tour</a></div>
+             <div class="frame-container">
+               <div class="frame">
+                 <div class="hover-caption-container"> <a href="http://www.campusmap.ualberta.ca" class="image-shadow"> <img src="img/campusmap.png" /> </a>
+                   <div class="caption">
+                     <p>Find buildings, parking, food, and more.</p>
+                   </div>
+                 </div>
+               </div>
+               <a href="http://www.campusmap.ualberta.ca" class="btn btn-grey btn-small">Explore our campus maps</a> </div>
+             <div class="frame-container">
+               <div class="frame">
+                 <div class="hover-caption-container"> 
+                 <a href="http://www.admissions.ualberta.ca/en/Resources/Campus-Visit-Program.aspx" class="image-shadow"> <img src="img/campusvisit.jpg" /> </a>
+                   <div class="caption">
+                     <p>Book a visit to UAlberta.</p>
+                   </div>
+                 </div>
+               </div>
+               <a href="http://www.admissions.ualberta.ca/en/Resources/Campus-Visit-Program.aspx" class="btn btn-grey btn-small">Visit the campus</a> </div>
+             </div>
+         </div>
+         
+             <!-- Sports and Recreation -->
+                <div class="thumbnail-slide fma-slide">
+                  <h3>Sports and Recreation</h3>
+                  <div class="thumbnail-container container">
+                    <div class="frame-container">
+                      <div class="frame">
+                        <div class="hover-caption-container"> <a href="http://www.campuslife.ualberta.ca/en/ourcampuses.aspx" class="image-shadow"> <img src="img/virtualtour.jpg" /> </a>
+                          <div class="caption">
+                            <p>Explore campuses with a virtual tour.</p>
+                          </div>
+                        </div>
+                      </div>
+                     <a href="http://www.campuslife.ualberta.ca/en/ourcampuses.aspx" class="btn btn-grey btn-small">Take a 360&#176; virtual tour</a></div>
+                    <div class="frame-container">
+                      <div class="frame">
+                        <div class="hover-caption-container"> <a href="http://www.campusmap.ualberta.ca" class="image-shadow"> <img src="img/campusmap.png" /> </a>
+                          <div class="caption">
+                            <p>Find buildings, parking, food, and more.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="http://www.campusmap.ualberta.ca" class="btn btn-grey btn-small">Explore our campus maps</a> </div>
+                    <div class="frame-container">
+                      <div class="frame">
+                        <div class="hover-caption-container"> 
+                        <a href="http://www.admissions.ualberta.ca/en/Resources/Campus-Visit-Program.aspx" class="image-shadow"> <img src="img/campusvisit.jpg" /> </a>
+                          <div class="caption">
+                            <p>Book a visit to UAlberta.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="http://www.admissions.ualberta.ca/en/Resources/Campus-Visit-Program.aspx" class="btn btn-grey btn-small">Visit the campus</a> </div>
+                    </div>
+                </div>
              
          	  
-         	</div>
          	
          	
          </div>
@@ -206,7 +274,7 @@
         
                 
       </div> 
-    </div> <!-- End Top Row -->
+     <!-- End Top Row -->
     
     <div class="fma-tabs-container">
     <div class="container">
@@ -219,6 +287,7 @@
     </div>
     
   </div>
+  
   
   <div class="content-container container">
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
@@ -469,6 +538,18 @@
  <script>
   (function($) {
        $(document).ready(function() {
+ 
+ 	// control FMA tab function 
+ 	$('.fma-tabs li').click(function() {
+ 	  $('.fma-slide').removeClass('fma-active');
+ 	  $('.fma-slide:eq('+$(this).index()+')').addClass('fma-active');
+ 	  $('.fma-tabs li').removeClass('fma-button-active');
+ 	  $('.fma-tabs li:eq('+$(this).index()+')').addClass('fma-button-active');
+ 	  return false;
+ 	});
+ 	
+ 	$('.start').removeClass('start');
+ 	
  
        // add active class to link category when clicked.
        $('.link-mod-category > h4, .link-mod-category input').click(function() {
