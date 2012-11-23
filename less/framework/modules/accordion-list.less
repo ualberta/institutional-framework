@@ -1,16 +1,34 @@
 .accordion-list {
+  .extrude;
   list-style: none;
-  margin: 0;
+  margin: 0 0 1.57em 0;
   padding: 0;
-  border:  1px solid #ddd;
+  .border-radius(4px);
   background: #fff;
   & > li {
     position: relative;
   }
+  & li:first-child a:first-child {
+    .border-radius(4px 4px 0 0);
+  }
+  & li:last-child a:first-child {
+    .border-radius(0px 0px 4px 4px);
+  }
+  & > li.expanded > a:first-child {
+    color: #fff; 
+    #gradient > .vertical(#00AF5C,#007C41);
+    margin:  -1px -5px 0px -5px;
+    padding-left: 14px;
+    border-left: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid #007C41;
+    border-right-color: transparent;
+    .border-radius(4px);
+  }
   & > li > a {
     display: block;
     .gradient-row();
-    padding: 10px;
+    padding: 7px 10px;
     font-weight: bold;
   }
   & li ul {
@@ -18,33 +36,54 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    
   }
   & li ul li a {
     display: block;
-    border-bottom: 1px solid #ddd;
     padding: 5px 10px;
+    border-bottom: 1px solid #dfe9e3;
     &:hover {
       background: #FFF5B8;
+      text-decoration: none;
     }
   }
   & li ul li:nth-child(even) a {
-    background: #f9fcfa;
     &:hover {
       background: #FFF5B8;
     }
   }
   & a.accordion-toggle {
-    .standard-button-dark(#00AF5C, #007c41, #fff);
     position: absolute;
-    right: 5px;
-    top: 5px;
-    padding: 8px 5px 5px 6px;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 12px 0 0px 0;
+    height: 22px;
+    width: 35px;
+    color:  @linkColor;
+    border-left: 1px solid #dfe9e3;
+    border-bottom: 1px solid #dfe9e3;
     line-height: 1em;
-    background: #007c41;
     display: inline-block;
-    color:  #fff;
     text-align: center;
-    .border-radius(5px);
+    vertical-align: middle;
+    font-size:0.9em;
+    
+    .box-shadow(inset 0px 0px 6px #fff);
+  }
+  & li.expanded a.accordion-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    height: 23px;
+    .box-shadow(inset 0px 0px 6px darken(#007C41,5%));
+    margin-right: -5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    .border-radius(0px 4px 4px 0px);
+    &:hover {
+      background: rgba(255,255,255,0.2);
+    }
   }
   & li.expanded ul {
     display: block;

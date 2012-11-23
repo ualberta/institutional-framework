@@ -9,17 +9,11 @@
     border-bottom: 1px solid rgba(0, 50, 25, 0.35);
     border-top: 1px solid rgba(0, 50, 25, 0.25);
     background-color: rgba(255, 200, 10, 0.1);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin-top: 0px;
   }
   
   .fma-container {
     position: relative;
-    overflow-y: hidden;
-    overflow-x: visible;
-    margin-top: 43px;
+    overflow: hidden;
     .secondary-link {
       margin-left: 10px;
       border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -30,10 +24,6 @@
     .fma-slide {
       overflow: hidden;
     }
-  }
-  
-  .content-container {
-    margin-top: 350px;
   }
 }
 
@@ -346,17 +336,21 @@
   }
   
   .why-ualberta .fma-tabs-container .fma-tabs {
-    margin-left: -10px;
-    margin-right: -10px;
     width: auto;
+  }
+}
+
+@media (min-width: 690px) {
+  p.context {
+    display: none;
   }
 }
 
 @media (min-width: 690px) and (max-width: 979px) {
   .why-ualberta .content-container{
-    margin-top: 295px;
+   
   }
   .why-ualberta .sidebar {
-    top: 361px;
+    top: 371px;
   }
 }

@@ -1,5 +1,5 @@
 .grey-box {
-	padding: 10px 20px;
+	padding: 10px 100px 10px 15px;
 	margin: 10px 0px;
 	background: white;
 	border: none;
@@ -16,12 +16,9 @@
 		font-size: 1.1em;
 	}
 
-.grey-box.grad, .grey-box.undergrad, .grey-box.continue, .grey-box.open {
-	padding: 10px 100px 10px 15px;
-}
-
 	.grey-box.grad {
 		background: #fff url('../img/graduate-icon.png') 95% no-repeat;
+		margin-top: 0px;
 	}
 	
 	.grey-box.undergrad {
@@ -36,9 +33,9 @@
 		background: #fff url('../img/open-studies-icon.png') 94% no-repeat;	
 	}
 
-@media (min-width: 690px) and (max-width: 979px) {
-  .faculties-programs .sidebar {
-    top: 60px;
+.faculties-programs .secondary-content-area {
+  .btn {
+    display: inline-block;
   }
 }
 
@@ -56,6 +53,19 @@
   .faculties-programs hr.soften {
     width: auto;
   }
+  
+@media (min-width: 980px) {
+  .faculties-programs .sidebar {
+    position: relative;
+    top: 33px;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 979px) {
+  .faculties-programs .sidebar {
+    top: 100px;
+  }
+}
 
 @media (min-width: 460px) and (max-width: 979px) {
   .faculties-programs .row-fluid .secondary-content-area .module-container {

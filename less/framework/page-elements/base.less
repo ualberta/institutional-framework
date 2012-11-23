@@ -46,7 +46,7 @@ a:focus {
 
 .secondary-content-area {
   .module-container {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.57em;
   }
 }
 
@@ -62,10 +62,13 @@ a:focus {
   border-top: 1px solid rgba(0, 50, 25, 0.25);
   background-color: rgba(255, 200, 10, 0.1);
   margin-top:  5px;
+  .container;
+ 
 }
 
 
 @media (min-width: 690px) {
+
 
 
   .row-fluid {
@@ -203,6 +206,8 @@ a:focus {
       }
   }
   .content-top-row {
+    width: @desktop_RowWidth;
+    .border-radius(4px);
     .tab-content {
       overflow: auto;
       min-height: 260px;
@@ -215,6 +220,7 @@ a:focus {
 @media (min-width: 1200px) {
 
   .content-top-row {
+    width: @highRes_RowWidth;
     .tab-content {
       min-height: 264px;
       height: 264px;
@@ -222,6 +228,7 @@ a:focus {
   }
   
   .row-fluid {
+    
     .feature-area {
       width: @highRes_FeatureFluid;
     }
