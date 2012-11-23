@@ -51,15 +51,18 @@ less:
 
 production:
 	@mkdir -p ${PRODDIR}
+	@mkdir -p ${PRODDIR}/js
 	@recess --compile ${PROTOTYPE_LESS} > ./css/ualberta.css
 	@recess --compile ./less/faculty.less > ./css/faculty.css
 	@recess --compile ./less/ualberta-ie7.less > ./css/ualberta-ie7.css
 	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie-less.css
 	@cp -r ./css ${PRODDIR}
+	@cp -r ./js ${PRODDIR}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
 	@mkdir -p ${PRODDIR}/js
 	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PRODDIR}/js/bootstrap.js
 	@uglifyjs -nc ${PRODDIR}/js/bootstrap.js > ${PRODDIR}/js/bootstrap.min.js
+	@cp -r ./js ${PRODDIR}
 	@echo "Minifying and copying javascript...         ${CHECK} Done"
 	
 #

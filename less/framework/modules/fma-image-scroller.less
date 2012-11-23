@@ -1,0 +1,86 @@
+.fma-container.image-scroller {
+  .fma-slide-wrapper {
+    overflow: hidden;
+    .border-radius(4px 4px 0px 0px);
+  }
+  .fma-slide {
+    width: auto;
+    float: left;
+    position: relative;
+    .opacity(50);
+    .transition(opacity 0.2s ease-in-out);
+    cursor: pointer;
+    max-width: 690px;
+  }
+  .fma-slide:hover, .fma-slide.fma-hover {
+    .opacity(95);
+  }
+  .fma-slide.fma-active {
+    .opacity(100);
+    cursor: auto;
+  }
+}
+
+@media (max-width:689px) {
+  .fma-container.image-scroller .fma-slide {
+    .fma-caption {
+      background: #fff;
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: 690px) {
+  .fma-container.image-scroller {
+    .fma-slide-scroller {
+      position: relative;
+      width: 9999px;
+      .transition(all 0.5s ease-in-out);
+    }
+    .fma-slide.fma-active {
+      &:before, &:after {
+        position: absolute;
+        top: 50%;  
+        left: -40px;
+        z-index: 1000;
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        content: "\f053";
+        font-size: 4em;
+        color: rgba(255,255,255,0.5);
+        pointer-events: none;
+      }
+      &:after {
+        content: "\f054";
+        right: -40px;
+        left: auto;
+      }
+    }
+    .fma-slide .fma-caption.right {
+      right: 15px;
+      left: auto;
+    }
+    .fma-caption {
+      min-width:200px;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .fma-container.image-scroller {
+    .fma-slide {
+      max-width: 940px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .fma-container.image-scroller {
+    .fma-slide {
+      max-width: 1170px;
+    }
+  }
+}

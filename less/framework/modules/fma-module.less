@@ -2,6 +2,9 @@
 @fmaInactiveWidth: 10.5%;
 @fmaSpacing: 1%;
 
+.fma-container.container {
+  padding: 0;
+}
 
 .fma-container.image-slider {
   * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -62,127 +65,12 @@
   }
 }
 
-.fma-tabs-container {
-  
-  border-top: 1px solid rgba(0,0,0,0.1);
-  .box-shadow(0px 1px 6px rgba(0,0,0,0.15));
-  margin-bottom: -1px;
-  border-bottom: 1px solid #ccc;
-  margin-top: -1px;
-  ul {
-    list-style: none;
-    padding:0;
-    margin: 0;
-    li {
-      
-      a {
-        font-size: 14px;
-        font-family: @headingsFontFamily;
-        font-weight: @headingsFontWeight;
-        display: block;
-        padding: 10px;
-        overflow: hidden;
-        white-space: nowrap;
-        border: 1px solid #ccc;
-        border-top-width: 0px;
-        border-right-width: 0px;
-        background: #fff;
-        &:hover {
-          background: #FFF5B8;
-          border-color: darken(desaturate(#FFF5B8,50%),10%);
-          text-decoration: none;
-        }
-      }
-      &.fma-button-active,
-      &.fma-button-hover {
-        position: relative;
-        a {
-          background: #FFF5B8;
-          color: #007c41;
-          border-color: darken(desaturate(#FFF5B8,50%),10%);
-        }
-      }
-    }
-  }
-  &.inside {
-    .box-shadow(none);
-    border-top-width: 0px;
-    .border-radius(0px 0px 3px 3px);
-    ul {
-
-      li.fma-button-active a,
-      li a,
-      li a:hover {
-        padding-bottom: 8px;
-        
-      }
-    }
-  }
-}
-
-.fma-tabs-container {
-  .container {
-    padding: 0;
-  }
-}
-
 @media (min-width: 690px)
 {
   .fma-container.image-slider .fma-slide-wrapper.inside {
     padding-bottom: 40px;
   }
-  .fma-tabs-container ul {
-      li a {
-        
-      }
-  }
-  .fma-tabs-container {
-    .clearfix();
-    height: 40px;
-    ul li {
-      float: left;
-      width: 33.333333333%;
-      &.fma-button-hover, 
-      &.fma-button-active {
-        a {
-          margin-bottom: -1px;
-          border-bottom: 1px solid darken(desaturate(#FFF5B8,50%),10%);
-          border-color: darken(desaturate(#FFF5B8,50%),10%);
-        }
-      }
-    }
-    &.inside {
-      margin-top: -40px;
-      .border-radius(0px 0px 3px 3px);
-      ul {
-        border-left: none;
-        border-right: none;
-        li:first-child a {
-          border-left-width: 0px;
-          .border-radius(0px 0px 0px 3px);
-        }
-        li:last-child a {
-          border-right-width:  0px;
-          .border-radius(0px 0px 3px 0px);
-        }
-      }
-    }
-  }
-  .fma-tabs-container ul li.fma-button-active::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 0;
-      top: -7px;
-      right: 50%;
-      bottom: auto;
-      left: auto;
-      z-index: 101;
-      margin-right: -7px;
-      border-width: 0 7px 7px;
-      border-color: #FFF5B8 transparent;
-      border-style: solid;
-  }
+
   .fma-container.image-slider .fma-slide img.fma-background {
     width: 940px;
     &.center-align {
@@ -193,35 +81,6 @@
       float: right;
     }
   }
-}
-
-
-
-@media (max-width:689px) {
-  .fma-tabs-container.inside ul {
-    
-    background: #ccc;
-    margin-top: -1px;
-    li {
-      width: auto!important;
-      margin: 0px 1px 0px 1px;
-      border-top: 1px solid #cfcfcf;
-    }
-  }
-  .fma-container.image-slider{
-    .fma-slide {
-      display: none;
-      margin: 0%!important;
-    }
-    .fma-slide.fma-active {
-      display: block;
-      width: auto!important;
-      margin: -10px -10px -10px -10px!important;
-      img.fma-background {
-        .border-radius(3px 3px 0px 0px);
-      }
-    }
-  } 
 }
 
 @media (min-width: 980px) {
@@ -247,21 +106,6 @@
   }
   .fma-container.image-slider .fma-slide.fma-active {
     width: @fmaActiveWidth;
-  }
-  
-  .fma-tabs-container {
-    .border-radius(0px 0px 4px 4px);
-  }
-  .fma-tabs-container ul li {
-    &:first-child {
-      a { .border-radius(0px 0px 0px 4px); }
-    }
-    &:last-child {
-      a { 
-        .border-radius(0px 0px 4px 0px); 
-        border-right-width:1px;
-      }
-    }
   }
   
   .thumbnail-container .frame,

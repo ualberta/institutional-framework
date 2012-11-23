@@ -134,28 +134,48 @@
   </header> <!-- End Header -->
   
 <div class="content-wrapper ualberta-home">
-    <div class="fma-container container image-slider" style="margin-top:1.57em">
-      <div class="fma-slide-wrapper inside clearfix">
-        <div class="fma-slide">
-          <img class="fma-background right-align" src="./img/homepage/feature-lebowitz.jpg" />
-          <div class="fma-caption">
-            <span class="fest">Festival of Ideas</span>
-            <h3>An Evening with Fran Lebowitz</h3>
-            <p>November 16, 2012</p>
-            <a href="#" class="btn btn-green btn-micro">Buy Tickets</a>
+    <div class="fma-container container image-scroller" style="margin-top:1.57em">
+      <div class="fma-slide-wrapper clearfix">
+        <div class="fma-slide-scroller">
+          <div class="fma-slide fma-active">
+            <a class="image-shadow"><img class="fma-background right-align" src="./img/homepage/feature-lebowitz.jpg" /></a>
+            <div class="fma-caption">
+              <span class="fest">Festival of Ideas</span>
+              <h3>An Evening with Fran Lebowitz</h3>
+              <p>November 16, 2012</p>
+              <a href="#" class="btn btn-green btn-micro">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="fma-slide">
+            <a class="image-shadow"><img class="fma-background" src="./img/homepage/feature-pinker.jpg" /></a>
+            <div class="fma-caption">
+              <span class="fest">Festival of Ideas</span>
+              <h3>Steven Pinker</h3>
+              <p>November 16, 2012</p>
+              <a href="#" class="btn btn-green btn-micro">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="fma-slide">
+            <a class="image-shadow"><img class="fma-background" src="./img/homepage/feature-foi-oct.jpg" /></a>
+            <div class="fma-caption right">
+              <span class="fest">Festival of Ideas</span>
+              <h3>Nobel Peace Prize Night</h3>
+              <p>November 16, 2012</p>
+              <a href="#" class="btn btn-green btn-micro">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="fma-slide">
+            <a class="image-shadow"><img class="fma-background" src="./img/homepage/feature-q3.jpg" /></a>
+            <div class="fma-caption">
+              <span class="fest">Festival of Ideas</span>
+              <h3>Jian Ghomeshi</h3>
+              <p>November 16, 2012</p>
+              <a href="#" class="btn btn-green btn-micro">Buy Tickets</a>
+            </div>
           </div>
         </div>
-        <div class="fma-slide">
-          <img class="fma-background" src="./img/homepage/feature-pinker.jpg" />
-        </div>
-        <div class="fma-slide">
-          <img class="fma-background" src="./img/homepage/feature-foi-oct.jpg" />
-        </div>
-        <div class="fma-slide">
-          <img class="fma-background right-align" src="./img/homepage/feature-q3.jpg" />
-        </div>
       </div>
-      <div class="fma-tabs-container inside">
+      <div class="fma-tabs-container">
         <ul class="fma-tabs row-fluid">
           <li class="fma-button-active"><a href="#">Fran Lebowitz</a></li>
           <li><a href="#">Steven Pinker</a></li>
@@ -486,13 +506,10 @@
       console.log(fmaSlides);
       console.log(fmaTabs);
       
-      var margin = 1;
-      var activeWidth = 75;
-      var inactiveWidth = ((100-activeWidth)-(fmaSlides.length-1*margin))/(fmaSlides.length-1);
-      var tabWidth = 100/fmaSlides.length;
       
-      console.log('SlideWidth: '+ inactiveWidth);
-      console.log('TabWidth: '+ tabWidth);
+      console.log('TabWidth: ');
+      
+      
       
       // setActive
       fmaTabs.click(function() {
@@ -517,14 +534,41 @@
         toggleHover($(this).index());
       });
       
+      var getSlidesWidth = function() {
+        var slidesWidth = 0;
+        fmaSlides.each(function() {
+          slidesWidth += $(this).width();
+        });
+        return slidesWidth;
+      }
+      
+      var totalWidth = getSlidesWidth();
+      
       var setActive = function(i) {
+        
+        var leftPoint = fmaSlides.eq(i).position().left;
+        var containerWidth = $('.fma-slide-wrapper').width();
+        var slidePosition = 0;
+        
+        console.log(fmaSlides.length);
+        console.log(i);
+      
         fmaSlides.removeClass('fma-active');
         fmaSlides.eq(i).addClass('fma-active');
         fmaTabs.removeClass('fma-button-active');
         fmaTabs.eq(i).addClass('fma-button-active');
-        fmaSlides.css({width: inactiveWidth+'%', marginRight: margin+'%'});
-        fmaSlides.eq(fmaSlides.length-1).css('margin-right', '0%');
-        fmaSlides.eq(i).css('width', activeWidth+'%');
+        
+        if(i==0) {
+          $('.fma-slide-scroller').css('left','0px');
+        }
+        else if(i==(fmaSlides.length-1)) {
+          slidePosition = containerWidth-getSlidesWidth();
+          $('.fma-slide-scroller').css('left',slidePosition+'px');
+        } else {
+          slidePosition = ((containerWidth-fmaSlides.eq(i).width())/2)-leftPoint;
+          $('.fma-slide-scroller').css('left',slidePosition+'px');
+        }
+        
         return false;
       }
       
@@ -532,7 +576,7 @@
         fmaSlides.eq(i).toggleClass('fma-hover');
         fmaTabs.eq(i).toggleClass('fma-button-hover');
         return false;
-      }     
+      }   
       
       setActive(0);
       
