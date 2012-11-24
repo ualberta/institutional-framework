@@ -104,6 +104,10 @@
 
 .btn-apply {
   .btnLightShinyBackground(#ffdb05, #007c41, 1px 1px 1px #fed);
+  position: relative;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 40px;
   &:hover {
     .btnLightShinyBackground(lighten(#ffdb05,15%), #007c41, 1px 1px 1px #fed);
   }
@@ -112,13 +116,51 @@
     .box-shadow(inset 0px 0px 5px darken(#ffdb05, 15%), 0px 1px 2px #fff);
     text-shadow: none;
   }
+  &:after {
+    position: absolute;
+    top: 14px;  
+    right: 10px;
+    z-index: 1000;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 1.4em;
+    color: @linkColor;
+    text-shadow: 1px 1px 2px lighten(#ffdb05,35%);
+    pointer-events: none;
+    content: "\f0a9";
+  }
 }
 
 .btn-work, .btn-give {
   .btnLightShinyBackground(#E8EeEa, #007c41, 1px 1px 1px #fff);
-  text-align: center;
+  position: relative;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 40px;
+  &:after {
+    position: absolute;
+    top: 14px;  
+    right: 10px;
+    z-index: 1000;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 1.4em;
+    color: darken(#dfe9e3,25%);
+    text-shadow: 1px 1px 2px #fff;
+    pointer-events: none;
+    content: "\f0a9";
+  }
   &:hover {
     .btnLightShinyBackground(lighten(#E8EeEa, 15%), #007c41, 1px 1px 1px #fff);
+    &:after {
+      color: @linkColor;
+    }
   }
   &:active {
     .btnLightShinyBackground(darken(#E8EeEa,2%), #007c41, 1px 1px 1px #fff);
