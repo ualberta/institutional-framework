@@ -5819,7 +5819,7 @@ ul.footer-quick-links li a {
 }
 
 .sidebar .twitter-module .twitter-feed {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .sidebar .twitter-module .twitter-feed ul {
@@ -5831,7 +5831,7 @@ ul.footer-quick-links li a {
   margin-right: 3px;
   font-size: 1em;
   font-size: 11px;
-  color: #999;
+  color: #6a7870;
 }
 
 .sidebar .twitter-module .twitter-feed .tweet_action i {
@@ -5840,7 +5840,7 @@ ul.footer-quick-links li a {
 
 .sidebar .twitter-module .twitter-feed .tweet_time a {
   font-size: 11px;
-  color: #999;
+  color: #6a7870;
 }
 
 .sidebar .twitter-module .twitter-feed .tweet_action:hover {
@@ -6105,7 +6105,9 @@ ul.footer-quick-links li a {
 .link-mod-container h4 {
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
   line-height: 1em;
 }
 
