@@ -391,6 +391,7 @@
 
   <!-- scripts concatenated and minified via build script -->
 <script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/institutional.js"></script>
 <script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
 <script>
  (function($) {
@@ -448,13 +449,6 @@
           });
         });
       });
-
-      var winHeight = $(document).height();
-      var headHeight = $('header').height();
-      var footerHeight = $('footer').height();
-      var bodyMinHeight = winHeight-(headHeight+footerHeight);
-      $('.content-wrapper').css('min-height', bodyMinHeight+'px');
-
     });
     })(jQuery);
 </script>
