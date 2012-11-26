@@ -3,7 +3,31 @@
     max-height: 300px;
     overflow: hidden;
   }
-  
+  .sidebar {
+    .event-list h5.sidebar-title {
+        line-height: 1.2em;
+        margin: -10px -10px 0 -10px;
+    }
+    .links ul li a {
+    	line-height: 135%;
+    	padding-top: 0.4em;
+    	padding-bottom: 0.4em;
+    }
+    .links ul li:first-child a {
+    	border-top: none; 
+    }
+    .links ul li:first-child a:hover {
+    	border-top: none;
+    }
+    .date {
+    	line-height: 1em;
+    	margin-bottom: 0.5em;
+    	margin-top: 0.5em;
+    	font-size: 0.9em;
+    	color: @lightText;
+    }
+  }
+
 }
 
 @media (min-width: 690px) {
