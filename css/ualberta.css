@@ -7120,6 +7120,31 @@ ul.calendar-med-mod li a {
   margin: 0;
 }
 
+.data-list-navigation {
+  text-align: center;
+}
+
+.data-list-navigation a {
+  display: inline-block;
+  padding: 5px;
+}
+
+.data-list-navigation a.jp-first {
+  float: left;
+  padding-left: 0;
+}
+
+.data-list-navigation a.jp-last {
+  float: right;
+  padding-right: 0;
+  text-align: right;
+}
+
+.data-list-navigation a.jp-current {
+  font-weight: bold;
+  color: #44524a;
+}
+
 .btn {
   padding: 0.8em 1.5em 0.6em 1.5em;
   font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
