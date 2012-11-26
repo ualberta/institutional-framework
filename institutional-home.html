@@ -332,14 +332,14 @@
                 <h3>Latest News</h3>
                 <div class="dropdown">
                   <!-- Link or button to toggle dropdown -->
-                  <a href="#" class="button-link" data-toggle="dropdown">Subscribe <b class="caret"></b></a>
+                  <a href="#" class="button-link" data-toggle="dropdown" rel="tooltip" title="Subscribe"><i class="icon-rss"></i></a>
                   <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
                     <li><a tabindex="-1" href="#">RSS</a></li>
                     <li><a tabindex="-1" href="#">Daily News E-mail</a></li>
                   </ul>
                 </div>
               </div>
-              <ul class="news-list">
+              <ul class="news-list data-list">
                 <li class="news-row">
                   <div class="news-description">
                     <h4><a href="#">UAlberta key player in Canada-India collaboration</a></h4>
@@ -380,7 +380,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="news-row news-bottom">
+                <li class="news-row bottom-row">
                   <a href="#">More News</a>
                 </li>
               </ul>
@@ -388,10 +388,10 @@
             </div> 
             <div class="secondary-content-area span">
               <div class="campus-notices">
-                <div class="module-heading">
+                <div class="module-top">
                   <h3>Campus Notices</h3>
                 </div>
-                <ul class="striped-list">
+                <ul class="data-list">
                   <li><a href="#">Notice regarding 114 Street lane closures Nov. 3-26</a></li>
                   <li><a href="#">Notice regarding 87 Avenue lane closures Nov. 7-8</a></li>
                   <li><a href="#">Reminder: Watch out for rare thieves of public property</a></li>
@@ -399,10 +399,10 @@
                 </ul>
               </div>
               <div class="colloquy-blog">
-                <div class="module-heading">
+                <div class="module-top">
                   <h3>Colloquy Blog</h3>
                 </div>
-                <ul class="striped-list">
+                <ul class="data-list">
                   <li><a href="#">TLEF workshop Thurs., Nov. 8</a></li>
                   <li><a href="#">Roger Epp: The importance of place &amp; community</a></li>
                   <li><a href="#">University signs MOU with Udacity for research, course development</a></li>
@@ -497,20 +497,15 @@
     (function($) {
       $(document).ready(function() {
       
+      $('.button-link').tooltip();
+      
       // FMA MODULE
       
       // init
       var fmaContainer = $('.fma-container');
       var fmaSlides = fmaContainer.find('.fma-slide');
       var fmaTabs = fmaContainer.find('.fma-tabs li');
-      console.log(fmaSlides);
-      console.log(fmaTabs);
-      
-      
-      console.log('TabWidth: ');
-      
-      
-      
+
       // setActive
       fmaTabs.click(function() {
         setActive($(this).index());
@@ -549,9 +544,6 @@
         var leftPoint = fmaSlides.eq(i).position().left;
         var containerWidth = $('.fma-slide-wrapper').width();
         var slidePosition = 0;
-        
-        console.log(fmaSlides.length);
-        console.log(i);
       
         fmaSlides.removeClass('fma-active');
         fmaSlides.eq(i).addClass('fma-active');

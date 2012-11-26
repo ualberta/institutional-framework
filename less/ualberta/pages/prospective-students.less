@@ -1,247 +1,32 @@
-@highRes_RowWidth:           @gridRowWidth1200;
-@highRes_SearchBox:        520px;
-@highRes_SearchMiddle:  70px;
-
-@highRes_SearchBoxFluid:        percentage(@highRes_SearchBox/@highRes_RowWidth);
-@highRes_SearchMiddleFluid:       percentage(@highRes_SearchMiddle/@highRes_RowWidth);
-
-@desktop_RowWidth:           @gridRowWidth;
-@desktop_SearchBox:        405px;
-@desktop_SearchMiddle:        60px;
-
-@desktop_SearchBoxFluid:        percentage(@desktop_SearchBox/@desktop_RowWidth);
-@desktop_SearchMiddleFluid:        percentage(@desktop_SearchMiddle/@desktop_RowWidth);
-
-@tablet_SidebarWidth:       170px;
-
-@tablet_SidebarFluid:       percentage(@tablet_SidebarWidth/@tablet_RowWidth);
-.major-search{
-	padding-bottom:4px;
-}
-button.search-major-btn { 
-	
-	margin-bottom:0px;
-}
-
-.prospective-student .fma-container {
-  .fma-slide { 
-    position: absolute;
-    top: 600px;
-    .transition(all 0.3s ease-in-out);
-  }
-  .fma-slide.fma-active {
-    top: 0px;
-  }
-  .search-graduate, .search-undergraduate {
-    text-align: center;
-    font-size:  1em;
-    h3 {
-      font-size:  2em;
-      margin: 0.8em 0em 0.25em 0em;
-    }
-    
-  }
-}
-.prospective-student .content-top-row {
-  background-image: url('../img/whirl-bg.png');
-  background-position: 0px 100px;
-  background-repeat: repeat-x;
-  .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
-  border-bottom: 1px solid rgba(0, 50, 25, 0.35);
-  border-top: 1px solid rgba(0, 50, 25, 0.25);
-  background-color: rgba(255, 200, 10, 0.1);
-}
-.prospective-student  .fma-container.image-slider .fma-slide{
-	background:none;
-	box-shadow: none;
-}
-.prospective-student .fma-container {
-  	position: relative;
-  	overflow:hidden;
-  		width: 100%;
-		height: 280px;
-  	.secondary-link {
-    //margin-left: 10px;
-    //border-left: 1px solid rgba(0, 0, 0, 0.2);
-    //padding-left: 10px;
+.prospective-student {
+  .fma-container {
     position: relative;
-    top: 2px;
+    overflow:hidden;
+    width: 100%;
+  	height: 280px;
+  	.fma-slide { 
+  	  position: absolute;
+  	  top: 600px;
+  	  .transition(all 0.3s ease-in-out);
+  	}
+  	.fma-slide.fma-active {
+  	  top: 0px;
+  	}
   }
+  .fma-tabs-container ul li{
+  	width:50%;
+  }
+  ul.our-programs {
+    p.description {
+      margin-bottom: 0px;
+    }
+  }  
 }
 
-.prospective-student .fma-tabs-container ul li{
-	width:50%;
-}
-ul.program-list h3{
-	border-bottom:none;
-	margin:0px;
-	font-size:18px;
-}
-.program-list-icon{
-	width:65px;
-	text-align:center;
-	margin:5px 0px 0px 5px;
-	float:right;
-}
-.continuing-studies-icon{
-	margin:15px 0px 0px 0px;
-}
-.open-studies-icon{
-	margin:10px 0px 0px 0px;
-}
-
-ul.program-list{
-	list-style: none;
-	padding:0px;
-	margin:0px;
-}
-ul.program-list li{ 
-	background-color:#fff;
-	border:#eee 1px solid;
-	-webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    padding:10px;
-    margin:0px 0px 15px 0px;
-    opacity: 0.8;
-}
-ul.program-list li:hover{
-	opacity:inherit;
-}
-.seeityourself p{
-	margin-top:5px;
-}
-.middle{
-	text-align: center;
-	vertical-align: middle;
-	font-family: ;
-	font-size:1.5em;
-	margin-top:80px;
-}
-.grey-arrow{
-	font-size:2.5em;
-	margin:10px 0px 15px 0px;
-}
-.major-search .btn{
-	-webkit-border-radius: 0 4px 4px 0;
-   -moz-border-radius: 0 4px 4px 0;
-   border-radius: 0 4px 4px 0;
-   display: inline-block;
-  width: auto;
-  min-width: 16px;
-  padding: 4px 27px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
-  text-align: center;
-  text-shadow: 0 1px 0 #ffffff;
-  background-color: #eeeeee;
-  border: 1px solid #ccc;
-  box-shadow: none;
-}
-
-.prospective-student-faculty{
-	margin-bottom:10px;
-}
-.prospective-student .fma-container h3{
-	font-size:2em;
-	margin: 0.8em 0em 0.5em 0em;
-}
-.prospective-student .fma-container .fma-slide.fma-active {
-	text-align:left;
-	padding:10px;
-	margin-top:20px;
-
-}
-.prospective-student .fma-container.image-slider .fma-slide p{
-  	padding-top:0px;
-  	font-size:1em;
-  	color:#44524A;
-  	font-family: @headingsFontFamily;
-  	font-weight: @headingsFontWeight;
-  	text-transform: none;
-  	white-space:inherit;
-}
-
-
-
-   .fma-slide {
-   		width:  100%;
-}
-.search-faculty .extrude {
-  margin-left: 5px;
-}
-.search-major .extrude {
-  margin-right:  5px;
-}
-
-@media (min-width: 320px) and (max-width:689px){
-	.prospective-student .fma-container .search-graduate h3, .prospective-student .fma-container .search-undergraduate h3{
-		font-size:1.3em;
-		margin:0;
-	}
-	h4.search-header{
-		font-size:1.2em;
-		line-height:17px;
-	}
-	.grey-arrow{
-		display:none;
-	}
-	.span2.middle{
-		display:none;
-	}
-	.input-append input[class*="span"].search-input{
-		width:70%;
-	}
-	.white-boxes{
-		padding:5px;
-		margin:0px 0px 10px 0px;
-	}
-	.major-search .btn{
-		padding:4px 10px;
-	}
-	.prospective-student .fma-tabs-container ul li{
-		width:100%;
-	}
-
-	
-}
-@media (min-width: 320px) and (max-width: 979px) {
-	ul.program-list li{ 
-		opacity:inherit;
-	}
-}
 @media (min-width: 690px) and (max-width: 979px) {
 	.prospective-student{
 		.sidebar {
-			top:427px;
+			top:417px;
 		}	
  }
-}
-@media (min-width: 690px) and (max-width:1199px) {
-	.prospective-student{
-		.search-faculty{
-			width:@desktop_SearchBoxFluid;
-		}
-		.search-major{
-			width:@desktop_SearchBoxFluid;
-		}
-		.middle{
-			width:@desktop_SearchMiddleFluid;
-		}
-	}
-}
-@media (min-width: 1200px) {
-	.prospective-student{
-		.search-faculty{
-			width:@highRes_SearchBoxFluid;
-		}
-		.search-major{
-			width:@highRes_SearchBoxFluid;
-		}
-		.middle{
-			width:@highRes_SearchMiddleFluid;
-		}
-	}
 }

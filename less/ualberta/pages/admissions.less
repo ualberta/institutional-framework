@@ -1,139 +1,31 @@
-.linklist {
-	li {
-		margin-bottom: 0.5em;
-		line-height: 135%;
+.admissions {
+	.sidebar .deadlines {
+		h6 {
+			font-family: @sansFontFamily;
+			font-weight: bold;
+			font-size: 11px;
+			color: @lightText;
+			margin-bottom: 0;
+		}
+		.links li {
+		  line-height: 1.57em;
+		  a {
+		    padding-top: 5px; 
+		    padding-bottom: 3px;  
+		  }
+		}
 	}
 }
 
-.admissions {
-	.primary-content-area {
-		ul.program-list h3{
-			border-bottom:none;
-			margin:0px;
-			font-size:18px;
-		}
-		.program-list-icon{
-			width:65px;
-			text-align:center;
-			margin:5px 0px 0px 5px;
-			float:right;
-		}
-		.continuing-studies-icon{
-			margin:15px 0px 0px 0px;
-		}
-		.open-studies-icon{
-			margin:10px 0px 0px 0px;
-		}
-		
-		ul.program-list{
-			list-style: none;
-			padding:0px;
-			margin:0px;
-		}
-		ul.program-list li{ 
-			background-color:#fff;
-			border:#eee 1px solid;
-			-webkit-border-radius: 5px;
-		    -moz-border-radius: 5px;
-		    border-radius: 5px;
-		    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-		    padding:10px;
-		    margin:0px 0px 15px 0px;
-		    opacity: 0.8;
-		}
-		ul.program-list li ul {
-			padding: 0;
-			margin: 0;
-		}
-		ul.program-list li ul li {
-			border: 0;
-			border-radius: 0;
-			box-shadow: none;
-			opacity: 1;
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-			a.btn {
-				display: inline-block;
-				margin-top: 0.5em;
-			}
-		}
-		ul.program-list li:hover{
-			opacity:inherit;
-		}
-		
-//		h3 {
-//			width: 85%;
-//			font-size: 1.4em;
-//			margin-bottom: 0.1em;
-//		}
-//		hr.soften {
-//			width: 80%;
-//			margin-bottom: 0.8em;
-//		}
-//		ul li {
-//			background-color: @white;
-//			margin-bottom: 1em;
-//			padding: 0.7em;
-//			position: relative;
-//			border: @grayLighter 1px solid;
-//			.border-radius(5px);
-//			li {
-//				padding: 0;
-//				position: static;
-//				border: none;
-//				margin-bottom: 0.5em;
-//				line-height: 135%;
-//				}
-//		}
-//		.btn {
-//			position: absolute;
-//			top: 0.7em;
-//			right: 0.7em;
-//			font-size: 0.8em;
-//		}
-	}
-	.sidebar {
-		h4 {
-			font-size: 1.2em;
-			margin-bottom: 0.5em;
-		}
-		div.links-module ul li {
-			border-bottom: 0;
-			padding-bottom: 0;
-		}
-		.deadlines {
-			h5 {
-				margin-bottom: 0.6em;
-				border-bottom: none;
-			}
-			h6 {
-//				border-bottom: 1px solid rgba(0, 30, 0, 0.5);
-				text-transform: uppercase;
-				font-size: 0.9em;
-				margin-bottom: 0;
-				margin-top: 0.4em;
-			}
-			.links {
-				ul {
-					li {
-						line-height: 125%;
-					}
-					li ul li {
-						padding: 0;
-					}
-					li a {
-						display: block;
-						line-height: 135%;
-						padding-top: 0.4em;
-						padding-bottom: 0.4em;
-					}
-					li:first-child a {
-						border-top:  1px solid rgba(0, 30, 0, 0.25);
-					}
-				}
-			}
-		}
-	}
+@media (min-width: 690px) {
+  .admissions .sidebar {
+    margin-top: 79px;
+  }
+}
+
+@media (min-width: 980px) {
+  .admissions .sidebar {
+    margin-top: 28px;
+  }
 }
 
