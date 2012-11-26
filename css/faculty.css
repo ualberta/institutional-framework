@@ -1731,8 +1731,7 @@ h4 small {
 }
 
 h2.page-title {
-  margin: 0.2em auto 0 auto;
-  margin-top: 0.7em;
+  margin: 0.8em auto 0 auto;
   font-size: 2.1em;
   line-height: 1em;
   border: none;
@@ -5905,22 +5904,24 @@ ul.footer-quick-links li a {
   margin-top: 6px;
 }
 
-.sidebar .links-module .links ul li {
+.sidebar .links-module .links li {
   padding: 0;
-  line-height: 2em;
+  line-height: 1.57em;
   border: 0;
 }
 
-.sidebar .links-module .links ul li:first-child {
+.sidebar .links-module .links li:first-child {
   padding: 0;
 }
 
-.sidebar .links-module .links ul li a {
+.sidebar .links-module .links li a {
   display: block;
+  padding-top: 5px;
+  padding-bottom: 3px;
   border-top: 1px dotted #E0E0E0;
 }
 
-.sidebar .links-module .links ul li a:hover {
+.sidebar .links-module .links li a:hover {
   padding-right: 10px;
   padding-left: 10px;
   margin-right: -10px;
@@ -5932,11 +5933,11 @@ ul.footer-quick-links li a {
   border-bottom: 1px solid #e1d8a4;
 }
 
-.sidebar .links-module .links ul li:first-child a {
+.sidebar .links-module .links li:first-child a {
   border-top-color: transparent;
 }
 
-.sidebar .links-module .links ul li:first-child a:hover {
+.sidebar .links-module .links li:first-child a:hover {
   border-top-color: #e1d8a4;
 }
 
