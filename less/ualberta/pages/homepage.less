@@ -133,23 +133,30 @@
       background: none;
       font-size: @base12px;
       font-family: @sansFontFamily;
-      text-align: center;
       font-weight: bold;
-      padding: 10px 0px 0px 0px;
+      padding: 0;
       margin: 0;
       &:hover {
         background:none;
         border: none;
         border-top: 1px dotted #e0e0e0;
-        padding: 10px 0px 0px 0px;
+        padding: 0;
         margin: 0;
       }
       a {
         display: block;
-        .btn-grey;
+        padding:  10px;
+        background: rgba(0,0,0,0.025);
+        background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0) 10%);
         font-family: @sansFontFamily;
+        border-bottom: 1px solid #e0e0e0;
         &:hover {
           text-decoration: none;
+          background-color: rgba(0,0,0,0.05);
+        }
+        &:after {
+          content: "\00BB";
+          margin-left: 6px;
         }
       }
     }

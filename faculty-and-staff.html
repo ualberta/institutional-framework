@@ -289,7 +289,7 @@
             <div class="module-container">
               <hr class="soften">
               <h3>Campus Notices</h3>
-              <ul class="unstyled linklist">
+              <ul class="data-list">
                 <li><a href="#">Campus Maps 2.0 launched</a></li>
                 <li><a href="#">Grad School Expo 2012 Oct. 17</a></li>
                 <li><a href="#">Blog encourages a greener, more sustainable campus</a></li>
@@ -297,10 +297,20 @@
               
               </div>
                         
-            <div class="module-container">
+            <div class="module-container latest-news">
               <hr class="soften">
-              <h3>Subscribe to Daily News <a href="#" class="rss hide-text">RSS</a></h3>
-              <ul class="unstyled linklist">
+              <div class="module-heading news-heading">
+                <h3>Subscribe to Daily News</h3>
+                <div class="dropdown">
+                  <!-- Link or button to toggle dropdown -->
+                  <a href="#" class="button-link" data-toggle="dropdown" rel="tooltip" title="Subscribe"><i class="icon-rss"></i></a>
+                  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                    <li><a tabindex="-1" href="#">RSS</a></li>
+                    <li><a tabindex="-1" href="#">Daily News E-mail</a></li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="data-list">
                 <li><a href="#">Research harnessing viruses to fight cancer</a></li>
                 <li><a href="#">Conference centre achieves green standard</a></li>
                 <li><a href="#">Preventing premature births worldwide</a></li>
@@ -381,6 +391,7 @@
 
   <!-- scripts concatenated and minified via build script -->
 <script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/ualberta/institutional.js"></script>
 <script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
 <script>
  (function($) {
@@ -438,13 +449,6 @@
           });
         });
       });
-
-      var winHeight = $(document).height();
-      var headHeight = $('header').height();
-      var footerHeight = $('footer').height();
-      var bodyMinHeight = winHeight-(headHeight+footerHeight);
-      $('.content-wrapper').css('min-height', bodyMinHeight+'px');
-
     });
     })(jQuery);
 </script>
