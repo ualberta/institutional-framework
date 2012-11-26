@@ -327,17 +327,12 @@
         </div>
         <div class="row-fluid">
           <div class="primary-content-area span">
-            <div class="latest-news">
-              <div class="news-heading">
+            <div class="module-container latest-news">
+              <div class="module-heading">
                 <h3>Latest News</h3>
-                <div class="dropdown">
                   <!-- Link or button to toggle dropdown -->
-                  <a href="#" class="button-link" data-toggle="dropdown" rel="tooltip" title="Subscribe"><i class="icon-rss"></i></a>
-                  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
-                    <li><a tabindex="-1" href="#">RSS</a></li>
-                    <li><a tabindex="-1" href="#">Daily News E-mail</a></li>
-                  </ul>
-                </div>
+                  <a href="#" class="heading-link" data-toggle="dropdown" rel="tooltip" title="Subscribe to RSS feed"><i class="icon-rss"></i></a>
+                  <a href="#" class="heading-link" data-toggle="dropdown" rel="tooltip" title="Daily News Email"><i class="icon-envelope"></i></a>
               </div>
               <ul class="news-list data-list">
                 <li class="news-row">
@@ -501,7 +496,7 @@
     (function($) {
       $(document).ready(function() {
       
-      $('.button-link').tooltip();
+      $('.heading-link').tooltip();
       
       // FMA MODULE
       
