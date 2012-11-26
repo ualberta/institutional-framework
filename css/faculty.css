@@ -6406,6 +6406,28 @@ ul.calendar-med-mod li a {
   margin-top: 5px;
 }
 
+.emergency {
+  padding: 8px 35px 8px 14px;
+  color: #B94A48;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #F2DEDE;
+  border-bottom: 1px solid #EED3D7;
+}
+
+.emergency h1 {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.emergency p {
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 689px) {
   {
     /*****************************************
