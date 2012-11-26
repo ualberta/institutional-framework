@@ -1,4 +1,12 @@
 .prospective-student {
+  .content-top-row {
+    background-image: url('../img/whirl-bg.png');
+    background-repeat: repeat-x;
+  }
+  .fma-caption{
+	margin-left:10px;
+	  	width:100%;
+}
   .fma-container {
     position: relative;
     overflow:hidden;
@@ -10,11 +18,14 @@
   	  .transition(all 0.3s ease-in-out);
   	}
   	.fma-slide.fma-active {
-  	  top: 0px;
+  	  top: 125px;
+  	  width:100%;
   	}
+
   }
   .fma-tabs-container ul li{
   	width:50%;
+  	float:right;
   }
   ul.our-programs {
     p.description {
@@ -23,6 +34,49 @@
   }  
 }
 
+.search-program-btn{
+	margin-top:-10px;
+	height:31px;
+	padding:9px 23px;
+	font-size:1em;
+}
+@media (min-width:961px){
+.prospective-student .fma-container .fma-slide.fma-active{
+	width:60%;
+	top:120px;
+}
+}
+@media (min-width:691px) and (max-width:960px){
+.prospective-student .fma-container .fma-slide.fma-active{
+	width:75%;
+	top:120px;
+}
+}
+
+@media (min-width:516px) and (max-width:690px) {
+.prospective-student .fma-container .fma-slide.fma-active{
+	width:90%;
+	top:80px;
+}
+.prospective-student .fma-container .fma-slide.fma-active .search-program-btn{
+	margin-top:0px;
+}
+}
+@media (min-width:320px) and (max-width: 515px) {
+.prospective-student .fma-container .fma-slide.fma-active{
+	width:95%;
+	top:40px;
+}
+.prospective-student .fma-container .fma-slide.fma-active .search-program-btn{
+	margin-top:0px;
+}
+}
+@media (min-width:320px) and (max-width: 440px) {
+.prospective-student .fma-tabs-container ul li{
+  	width:100%;
+  	float:right;
+  	}
+}
 @media (min-width: 690px) and (max-width: 979px) {
 	.prospective-student{
 		.sidebar {
