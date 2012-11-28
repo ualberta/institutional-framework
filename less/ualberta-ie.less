@@ -1,90 +1,55 @@
-.image-caption-container .feature-caption {
-  background: #fff;
-  filter: ~"progid:dximagetransform.microsoft.gradient(startColorstr='#73ffffff', endColorstr='#d9ffffff', GradientType=0)";
-}
+/******** FRAMEWORK BASE START *********/
 
-.frame, .extrude, .tab-content {
-  border: 1px solid #e0e0e0;
-}
+// CSS Reset
+@import "framework/base/reset.less";
 
-.banner-container {
-  background-color:#007c41;
-}
+// Core variables and mixins
+@import "framework/base/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "framework/base/mixins.less";
+@import "framework/base/fonts.less";
 
-.nav-tabs > .active {
-  border: 1px solid #e0e0e0;
-  border-bottom: 1px solid #fff;
-  margin-left: 0px;
-}
+// Grid system and page structure
+@import "framework/base/scaffolding.less";
+@import "framework/base/grid.less";
 
-.primary-content-area .latest-news div.news-heading {
-overflow: auto;
-filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#00FFDB05',endColorstr='#33FFDB05', GradientType=0)";
-}
+// Base CSS
+@import "framework/base/type.less";
+@import "framework/base/code.less";
+@import "framework/base/forms.less"; 
+@import "framework/base/tables.less";
+@import "framework/base/font-awesome.less";
+//@import "component-animations.less";
 
-.top-footer-row {
-  overflow: auto;
-  border-top: 1px solid #dfdcd0;
-  border-bottom: 1px solid #cfccc0;
-  background-image: url(../img/shadow-bg.png);
-  background-position: top left;
-  background-repeat: repeat-x;
-  filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#11ddb903',endColorstr='#22ddb903', GradientType=0)";
-}
+@import "framework/base/dropdowns.less";
+@import "framework/base/modals.less";
+@import "framework/base/tabs.less";
+@import "framework/base/images.less";
+@import "framework/base/buttons.less";
 
-.content-top-row {
-  overflow: auto;
-  border-bottom: 1px solid #efece0;
-  background-image: url(../img/test-bg.png);
-  background-position: left bottom;
-  background-repeat: repeat-x;filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#11ddb903',endColorstr='#0cddb903', GradientType=0)";
-}
+@import "framework/ie/base.less";
+@import "framework/ie/blade.less";
+@import "framework/ie/banner.less";
+@import "framework/ie/navigation.less";
+@import "framework/page-elements/breadcrumb.less";
+@import "framework/page-elements/content.less";
+@import "framework/page-elements/footer.less";
 
-.navigation-container {
-  border-bottom-color: #abb1ae;
-  background: transparent url(../img/navbar-bg.gif) repeat-x center center;
-}
+@import "framework/modules/module-base.less";
+@import "framework/modules/twitter.less";
+@import "framework/modules/image-callout.less";
+@import "framework/modules/link-bucket.less";
+@import "framework/modules/events.less";
+@import "framework/modules/news.less";
+@import "framework/ie/link-module.less";
+@import "framework/modules/video.less";
+@import "framework/modules/calendar-med-mod.less";
+@import "framework/modules/campus-maps.less";
+@import "framework/modules/fma-module.less";
+@import "framework/modules/fma-tabs.less";
+@import "framework/modules/fma-image-scroller.less";
+@import "framework/modules/accordion-list.less";
+@import "framework/modules/emergency.less";
+@import "framework/modules/pagination.less";
+@import "framework/modules/data-list.less";
 
-.banner-container {
-  background: transparent url(../img/banner-bg.jpg) repeat-x center left;
-}
-
-.navigation-inner ul li a {
-  border-left: 1px solid #fff;
-  border-right: 1px solid #cbd2cd;
-}
-
-.navigation-inner ul.main-navigation {
-  border-left: 1px solid #cbd2cd;
-}
-
-.hover-caption-container .caption {
-overflow: auto;
-filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0)";
-}
-
-.footer-inner h3 {
-  border-bottom: 1px solid #e0d9c6;
-}
-
-.brand {
-  background: transparent url(../img/logo.png) no-repeat top left;
-}
-
-.brand img {
-  display: none;
-}
-
-.navigation-inner .main-navigation > li:hover .sub-menu {
-  overflow: visible;
-  visibility: visible;
-  z-index: 500;
-  filter: alpha(opacity=100);
-}
-  
-.navigation-inner .main-navigation > li .sub-menu {
-  visibility: visible;
-  z-index: 500;
-  position: absolute;
-}
-
+/******** FRAMEWORK BASE END *********/
