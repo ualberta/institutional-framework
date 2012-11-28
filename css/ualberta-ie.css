@@ -4454,11 +4454,11 @@ div[class*='-heading'] .dropdown-menu:before {
 .btn-give:after {
   position: absolute;
   top: 14px;
-  right: 10px;
+  right: 8px;
   z-index: 1000;
   display: inline-block;
   font-family: FontAwesome;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-style: normal;
   font-weight: normal;
   color: #93b5a1;
