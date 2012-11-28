@@ -89,6 +89,9 @@ ghpages:
 
 push-gh-pages:
 	(cd ../institutional-framework-pages; git add .; git commit -a -m pages; git push origin gh-pages)
+	
+push-production:
+	(cd ../production; git add .; git commit -a -m prod; git push origin production)
 
 #
 # WATCH LESS FILES
