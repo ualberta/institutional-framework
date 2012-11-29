@@ -168,20 +168,26 @@ ul.events-pagination{
 	margin:15px 0px 0px 0px;
 }
 ul.events-pagination li{
-	display:inline-block;
-	padding:5px 10px;
+	display:inline;
 	background-color:#fff;
 	border:1px solid #ccc;
 }
 ul.events-pagination li:hover{
 	background-color:#DDF1E5;
 }
+ul.events-pagination li{
+	display:block;
+	float:left;
+	margin-right:5px;
+}
 ul.events-pagination li.active{
 	background-color:#DDF1E5;
+	padding:5px 10px;
 }
 ul.events-pagination li a{
-	display:block;
 	cursor:pointer;
+	display:block;
+	padding:5px 10px;
 }
 ul.events-pagination li a:hover{
 	text-decoration:none;

@@ -241,14 +241,33 @@
 	   			<hr class="softline" />
 	   			<div class="row-fluid">
 	   				<div class="span3 inthissection">
+	   				<div>
+	   				<a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".leftnav">
+              Show Navigation <i class="icon-toggle-nav"></i>
+            </a>
+	   				</div>
 	   					<h3>
 	   						In this section
 	   					</h3>
-	   					<ul class="leftnav">
-	   						<li><a href="#">Continuing Dental Education</a></li>
+	   					<ul class="leftnav collapse">
+	   					
+	   						<li><a href="#">Continuing Dental Education</a>
+	   							<ul>
+                    	 <li><a href="#">Alberta International Medical Graduate (AIMG)</a>
+                    	 	<ul>
+                    	 	 <li><a href="#">Alberta International Medical Graduate (AIMG)</a></li>
+                    	 	 <li><a href="#">Diploma/DSc in Dental Hygiene</a></li>
+                    	 	</ul>
+                    	 </li>
+                    	 <li><a href="#">Diploma/DSc in Dental Hygiene</a></li>
+                    	</ul>
+                    
+
+	   						</li>
 	   						<li><a href="#">Continuous Professional Learning</a></li>
 	   						<li><a href="#">Physician Learning Program</a></li>
-	   					</ul>	   				
+	   					</ul>	   	
+	   				
 	   				</div><!--span3-->
 	   			<div class="span9 primary-content-area">
 	   			<div class="row-fluid">
@@ -468,11 +487,11 @@
   </footer> <!-- Footer End -->
  
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-  <!-- scripts concatenated and minified via build script -->
-  <script src="./js/bootstrap.min.js"></script>
-  <!-- end scripts -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+   <!-- scripts concatenated and minified via build script -->
+ <script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+ <script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
 
 </body>
 </html>
