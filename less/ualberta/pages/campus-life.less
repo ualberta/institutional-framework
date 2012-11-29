@@ -1,51 +1,70 @@
 .campuslife {
-	.content-top-row {
-	  background-image: url('../img/whirl-bg.png');
-	  background-repeat: repeat-x;
-	  .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
-	  border-bottom: 1px solid rgba(0, 50, 25, 0.35);
-	  border-top: 1px solid rgba(0, 50, 25, 0.25);
-	  background-color: rgba(255, 200, 10, 0.1);
-	}
-	.fma-container {
-		width: 100%;
-		height: 300px;
-	 	position: relative;
-	  	overflow: hidden;
-	  	.secondary-link {
-	   		margin-left: 10px;
-	    	border-left: 1px solid rgba(0, 0, 0, 0.2);
-	    	padding-left: 10px;
-	    	position: relative;
-	    	top: 2px;
-	  	}
-	  	.fma-slide {
-	    	overflow: hidden;
-	    	position: absolute;
-	    	top: 600px;
-	    	.transition(all 0.3s ease-in-out);
-	        width:  100%;
-	  	}
-	  	.fma-slide.fma-active {
-			top: 0px;
-	  	}
-	  	.frame {
-	  		margin-bottom: 1.6em;
-	  		width: 270px;
-	  	}
-	  	.frame-container {
-	  		width:  280px;
-	  		display: inline-block;
-	  		margin-right: 1%;
-	  		.caption {
-	  			bottom: 0;
-	  			font-size: 0.9em;
-	  			line-height: 125%;
-	  		}
-	  	}
-	}
-
-	
+  .fma-container {
+    padding: 0;
+  }
+  .fma-prospective {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    img {
+      max-width: 690px;
+    }
+    span.image-shadow {
+      position: relative;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+    .explore-box {
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background: rgba(0,0,0,0.45);
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: 10px 10px 0px 10px;
+      font-size: 0.9em;
+      display: inline-block;
+      .box-shadow(inset 0px 1px 6px rgba(0,0,0,0.35));
+      input {
+        display: block;
+        width: 80%;
+        margin:0 auto;
+        height: auto;
+      }
+      .search-undergrad {
+        margin-right: 6px;
+      }
+      h3 {
+        color: #ffdb05;
+        font-size: 1.8em;
+        margin:  0.15em 0em 0.35em 0em;
+        text-shadow:  0px 1px 6px rgba(0,0,0,0.65);
+      }
+      input {
+        padding: 0.787em;
+        margin-bottom: 1.2em;
+        .border-radius(5px);
+        border:  1px solid #445;
+      }
+      p {
+        color: #fff;
+        font-weight: bold;
+        text-shadow:  0px 1px 3px rgba(0,0,0,0.65);
+      }
+      .btn {
+        margin-right: 6px;
+        margin-bottom: 10px;
+        font-size: 11px;
+      }
+    }
+  }
 	.sidebar {
 		.event-list h5.sidebar-title {
 		    line-height: 1.2em;
@@ -73,142 +92,103 @@
 			margin: 1em auto 0.5em auto;
 		}
 	}
-
-//	@media (min-width: 979px) {
-//	  .content-top-row {
-//	    background-position: 0px 140px;
-//	    .transition(background 5s ease-out);
-//	  }
-//	}
-//	
-//	@media (max-width: 689px) {
-//		.fma-slide {
-//			display: inline;
-//			.frame {
-//				display: none;
-//			}
-//			.frame-container {
-//				display: block;
-//				margin-left: auto;
-//				margin-right: auto;
-//				width: 100%;
-//				.btn {
-//					display: block;
-//					margin-bottom: 1em;
-//				}
-//			}
-//		}
-//	}
-//	
-//	
-//	@media (max-width: 979px) and (min-width: 690px) {
-//		.thumbnail-container {
-//			.frame {
-//				width: 165px;
-//				.caption {
-//					font-size: 0.85em;
-//				}
-//			}
-//			.frame-container {
-//				width: 185px;
-//				.btn {
-//					font-size: 0.85em;
-//				}
-//			}
-//		}
-//	}
 }
 
-
-
-
-@media (min-width: 979px) {
-  .campuslife .fma-container {
-    height: 300px;
-    .ualberta-minute {
-      font-size: 1em;
-    }
-    .student-video-container .frame,
-    .hr-video-container .frame {
-      width: 230px; 
-    }
-  }
-  .campuslife .content-top-row {
-    background-position: 0px 140px;
-    .transition(background 5s ease-out);
+@media (min-width:690px) {
+  .campuslife {
+    .fma-prospective {
+      height: 275px;
+      img {
+        max-width: 980px;
+      }
+      br {
+        display: none;
+      }
+      .explore-box {
+        h3 {
+          font-size: 2.25em;
+          margin:  0.25em 0em 0.35em 0em;
+          font-family: DIN Regular;
+        }
+      }
+    } 
   }
 }
 
-@media (max-width: 689px) {
-	.campuslife {
-  		.content-top-row {
-    		background-position: center 103px;
-  		}
-		.fma-container {
-			overflow: visible;
-			height: 255px;
-			.thumbnail-slide {
-    			margin-top: 5%;
-    			h3, p {
-      				padding:  0 10px;
-    			}
-    			.frame {
-     				display: none;
-    			}
-				.btn {
-					display: block;
-					margin-bottom: 1em;
-				}
-  			} 
-  			.fma-slide {
-  				position:  relative;
-    			margin-top: 5%;
-    			h3, p {
-      				padding:  0 10px;
-    			}
-    			.hr-video-container {
-     				display: none;
-    			}   
-  			}
-	    	.secondary-link {
-	      			border: none;
-	      			display: block;
-	      			margin-top: 10px;
-	      			margin-bottom: 10px;
-	    	}
-	  	}
-	  	.fma-tabs-container .fma-tabs {
-	    	width: auto;
-	  	}
-	}
+@media (min-width:690px) and (max-width:979px) {
+  .sidebar {
+    top: 350px;
+  }
 }
 
-@media (min-width: 690px) {
+
+@media (min-width:980px) {
+  .campuslife {
+    .fma-container {
+      padding: 0px 10px;
+    }
+    .fma-prospective {
+      height: 275px;
+      text-align: center;
+      img {
+        max-width: 940px;
+      }
+      img, .image-shadow::before {
+        .border-radius(4px);
+      }
+      span.image-shadow {
+        position: absolute;
+      }
+      .explore-box {
+        position: relative;
+        .box-shadow(none);
+        top: 151px;
+        bottom: auto;
+        height: auto;
+        padding: 10px 25px;
+        font-size: 0.9em;
+        text-align: center;
+        .border-radius(4px);
+        input {
+          width: 420px;
+          font-size: 1em;
+          padding: 0.787em;
+          margin-bottom: 1.2em;
+        }
+        h3 {
+          font-size: 2.5em;
+          margin:  0.35em 0em;
+        }
+        .btn {
+          font-size: 11px;
+        }
+      }
+    } 
+  }
 }
 
-@media (min-width: 690px) and (max-width: 979px) {
-	.campuslife {
-		.fma-container {
-			width: 100%;
-			height: 255px;
-		}
-  		.sidebar {
-    		top: 371px;
-  		}
-		.thumbnail-container {
-			.frame {
-				width: 165px;
-				.caption {
-					font-size: 0.85em;
-				}
-			}
-			.frame-container {
-				width: 185px;
-				.btn {
-					font-size: 0.85em;
-				}
-			}
-		}
-  	}
+@media (min-width:1200px) {
+  .campuslife {
+    .fma-prospective {
+      img {
+        max-width: 1170px;
+      }
+      height: 342px;
+      .explore-box {
+        top: 216px;
+        padding: 10px 25px;
+        font-size: 1em;
+        input {
+          width: 500px;
+          font-size: 1em;
+          padding: 0.787em;
+          margin-bottom: 1.2em;
+        }
+        h3 {
+          font-size: 2.5em;
+          margin:  0.35em 0em;
+        }
+      }
+    } 
+  }
 }
-
