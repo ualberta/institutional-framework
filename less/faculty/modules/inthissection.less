@@ -1,6 +1,5 @@
 .inthissection h3{
-	font-size:1em;
-	border-bottom:1px dotted @gray;
+	font-size:1.3em;
 	margin-bottom:0px;
 	padding:0px 0px 0px 5px;
 }
@@ -10,11 +9,26 @@ ul.leftnav{
 	margin:0px 0px 15px 0px;
 	font-size:0.875em;
 }
+ul.leftnav li h3 a{
+	padding-left:0px;
+}
 ul.leftnav li a{
 	border-bottom:1px dotted @grayLight;
 	display: block;
-	padding: 4px 5px;
+	padding: 4px 10px;
 	line-height:1.3em;
+}
+ul.leftnav li ul{
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+
+ul.leftnav li ul li a{
+	padding-left:20px;
+}
+ul.leftnav li ul li ul li a{
+	padding-left:30px;
 }
 ul.leftnav li a:hover{
   *background-color: #f8f8f8;
@@ -27,4 +41,4 @@ ul.leftnav li a:hover{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0f0f0', endColorstr='#ffffffff', GradientType=0);
   text-decoration:none;
   }
-  
+ 

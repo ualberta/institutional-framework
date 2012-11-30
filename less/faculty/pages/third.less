@@ -30,17 +30,50 @@
 hr.softline{
 	  margin:10px 0px;
   }
-ul.leftnav li ul{
-	list-style-type: none;
-	padding:0px;
-	margin:0px;
+  @media (min-width: 320px) and (max-width:890px){
+ .section-nav{
+	border-bottom:1px dotted @grayLight;
+	font-family:"DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding:5px 0px;
 }
-ul.leftnav li ul li a{
-	padding-left:10px;
+.section-nav a{
+	display:block;
+	position:relative;
+	width:100%;
+	cursor: pointer;
 }
-ul.leftnav li ul li ul li a{
-	padding-left:20px;
+.section-nav a:hover{
+	text-decoration:none;
 }
+ .inthissection .navigation-toggle i.icon-toggle-nav{
+	 position:absolute;
+	 right:20px;
+	 top:0px;
+ }
+ .inthissection .navigation-toggle i.icon-toggle-nav:before {
+    content: "\f0d8";
+  }
+ .inthissection .navigation-toggle.collapsed i.icon-toggle-nav:before {
+    content: "\f0d7";
+  }
+.leftnav.collapse.in{
+	  display: block;
+height: auto!important;
+overflow: visible!important;
+  }
+.leftnav.collapse {
+position: relative;
+height: 0;
+overflow: hidden;
+min-height: 0px;
+}
+  }
+  @media (min-width:891px){
+	  .inthissection .section-nav{
+	  display:none;
+  }
+
+  }
 @media (min-width: 690px) {
 	.row-fluid.tertiary{
   		.primary-content-area-container{
