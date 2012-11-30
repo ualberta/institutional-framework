@@ -80,7 +80,7 @@
 .fontSizeRem(@sizeValue){
   @remValue: (@sizeValue/@baseFontSizepx);
   @pxValue: @sizeValue;
-  font-size: ~"@{pxValue}px"; 
+  *font-size: ~"@{pxValue}px"; 
   font-size: ~"@{remValue}rem";
 }
 
@@ -92,7 +92,7 @@
 .widthRem(@widthValue) {
   @remValue: (@widthValue/@baseFontSizepx);
   @pxValue: @widthValue;
-  width: ~"@{pxValue}px"; 
+  *width: ~"@{pxValue}px"; 
   width: ~"@{remValue}rem";  
 }
 
@@ -104,7 +104,7 @@
 .heightRem(@heightValue) {
   @remValue: (@heightValue/@baseFontSizepx);
   @pxValue: @heightValue;
-  height: ~"@{pxValue}px"; 
+  *height: ~"@{pxValue}px"; 
   height: ~"@{remValue}rem";  
 }
 
@@ -113,13 +113,107 @@
   height: ~"@{emValue}em";  
 }
 
-.scaleRem(@property, @size) {
+.paddingRem(@size) {
   @remValue: (@size/@baseFontSizepx);
   @pxValue: @size;
-  @{property}: ~"@{pxValue}px";
-  @{property}: ~"@{remValue}rem";
+  *padding: ~"@{pxValue}px";
+  padding: ~"@{remValue}rem";
 }
 
+.paddingRem(top, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *padding-top: ~"@{pxValue}px";
+  padding-top: ~"@{remValue}rem";
+}
+
+.paddingRem(left, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *padding-left: ~"@{pxValue}px";
+  padding-left: ~"@{remValue}rem";
+}
+
+.paddingRem(right, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *padding-right: ~"@{pxValue}px";
+  padding-right: ~"@{remValue}rem";
+}
+
+.paddingRem(bottom, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *padding-bottom: ~"@{pxValue}px";
+  padding-bottom: ~"@{remValue}rem";
+}
+
+.paddingRem(tb, @tb, @rl) {
+  @tbr: (@tb/@baseFontSizepx);
+  @rlr: (@rl/@baseFontSizepx);
+  *padding: ~"@{tb}px @{rl}px";
+  padding: ~"@{tbr}rem @{rlr}rem";
+}
+
+.paddingRem(@t, @r, @b, @l) {
+  @tr: (@t/@baseFontSizepx);
+  @rr: (@r/@baseFontSizepx);
+  @br: (@b/@baseFontSizepx);
+  @lr: (@l/@baseFontSizepx);
+  *padding: ~"@{t}px @{r}px @{b}px @{l}px";
+  padding: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
+}
+
+.marginRem(@size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *margin: ~"@{pxValue}px";
+  margin: ~"@{remValue}rem";
+}
+
+.marginRem(top, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *margin-top: ~"@{pxValue}px";
+  margin-top: ~"@{remValue}rem";
+}
+
+.marginRem(left, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *margin-left: ~"@{pxValue}px";
+  margin-left: ~"@{remValue}rem";
+}
+
+.marginRem(right, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *margin-right: ~"@{pxValue}px";
+  margin-right: ~"@{remValue}rem";
+}
+
+.marginRem(bottom, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  *margin-bottom: ~"@{pxValue}px";
+  margin-bottom: ~"@{remValue}rem";
+}
+
+.marginRem(tb, @tb, @rl) {
+  @tbr: (@tb/@baseFontSizepx);
+  @rlr: (@rl/@baseFontSizepx);
+  *margin: ~"@{tb}px @{rl}px";
+  margin: ~"@{tbr}rem @{rlr}rem";
+}
+
+.marginRem(@t, @r, @b, @l) {
+  @tr: (@t/@baseFontSizepx);
+  @rr: (@r/@baseFontSizepx);
+  @br: (@b/@baseFontSizepx);
+  @lr: (@l/@baseFontSizepx);
+  *margin: ~"@{t}px @{r}px @{b}px @{l}px";
+  margin: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
+}
 
 // Placeholder text
 // -------------------------
