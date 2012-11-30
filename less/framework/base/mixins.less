@@ -77,6 +77,50 @@
   .size(@size, @size);
 }
 
+.fontSizeRem(@sizeValue){
+  @remValue: (@sizeValue/@baseFontSizepx);
+  @pxValue: @sizeValue;
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+.fontSizeEm(@sizeValue, @currentEmValue: @baseFontSizepx) {
+  @emValue: (@sizeValue/@currentEmValue);
+  font-size: ~"@{emValue}em";  
+}
+
+.widthRem(@widthValue) {
+  @remValue: (@widthValue/@baseFontSizepx);
+  @pxValue: @widthValue;
+  width: ~"@{pxValue}px"; 
+  width: ~"@{remValue}rem";  
+}
+
+.widthEm(@widthValue, @currentEmValue: @baseFontSizepx) {
+  @emValue: (@widthValue/@currentEmValue);
+  width: ~"@{emValue}em";  
+}
+
+.heightRem(@heightValue) {
+  @remValue: (@heightValue/@baseFontSizepx);
+  @pxValue: @heightValue;
+  height: ~"@{pxValue}px"; 
+  height: ~"@{remValue}rem";  
+}
+
+.heightEm(@heightValue, @currentEmValue: @baseFontSizepx) {
+  @emValue: (@heightValue/@currentEmValue);
+  height: ~"@{emValue}em";  
+}
+
+.scaleRem(@property, @size) {
+  @remValue: (@size/@baseFontSizepx);
+  @pxValue: @size;
+  @{property}: ~"@{pxValue}px";
+  @{property}: ~"@{remValue}rem";
+}
+
+
 // Placeholder text
 // -------------------------
 .placeholder(@color: @placeholderText) {
