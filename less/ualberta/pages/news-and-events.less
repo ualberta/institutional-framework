@@ -66,6 +66,21 @@ div.featured-news{
   font-size: 1.5em;
 }
 
+.news-and-events .soften.long {
+  display: none;
+}
+
+@media (max-width: 979px) and (min-width: 691px) {
+	
+	.news-and-events .soften.short {
+  		display: none;
+	}
+	
+	.news-and-events .row-fluid .secondary-content-area .module-container.filter-events {
+		margin-left: 3.4602076124567476%;
+	}
+}
+
 @media (min-width: 500px) and (max-width:689px) {
 	.row-fluid .span6.explore-logo{
 	width:47%;
@@ -80,5 +95,18 @@ div.featured-news{
 			width:100%;
 			margin-left:0px;
 		}
+		.row-fluid .secondary-content-area .module-container {
+			float: none;
+		}
+	}
+	
+	.news-and-events .soften.short {
+		display: block;
+	}	
+}
+
+@media (min-width: 200px) {
+	.news-and-events .soften.long {
+		display: block;
 	}
 }
