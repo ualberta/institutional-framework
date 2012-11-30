@@ -80,9 +80,9 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: @baseLineHeight;
-  padding: 4px 6px;
-  margin-bottom: 9px;
-  font-size: @baseFontSize;
+  .paddingRem(tb, 4, 6);
+  .marginRem(bottom, 9);
+  .fontSizeRem(14);
   line-height: @baseLineHeight;
   color: @gray;
   .border-radius(@inputBorderRadius);
