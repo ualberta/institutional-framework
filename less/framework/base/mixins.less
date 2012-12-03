@@ -96,12 +96,13 @@
   // #em > .size(width, 300, base);      Sets width
   // #em > .size(height, 100, base);     Sets height
   //
-  .size(@widthValue, @heightValue, @baseVal) when (issnumber(@widthValue)) {
+  .size(@widthValue, @heightValue, @baseVal) when (isnumber(@widthValue)) {
     @emWidthValue: (@widthValue/@baseVal);
     @emHeightValue: (@heightValue/@baseVal);
     width: ~"@{emWidthValue}em";  
     height: ~"@{emHeightValue}em";
   }
+  
   .size(width, @widthValue, @baseVal) {
     @emWidthValue: (@widthValue/@baseVal);
     width: ~"@{emWidthValue}em";  
@@ -664,6 +665,7 @@
     background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
     background-repeat: no-repeat;
   }
+  
   .striped(@color: #555, @angle: 45deg) {
     background-color: @color;
     background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));

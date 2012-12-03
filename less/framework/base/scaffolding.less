@@ -68,7 +68,7 @@ a:hover {
 }
 
 .extrude {
-  #em > .padding(10,14);
+  #em > .padding(10,@baseFontSizepx);
   background: #fff;
   border: none;
   .border-radius(3px);
@@ -76,5 +76,8 @@ a:hover {
 }
 
 .sidebar .extrude {
+  #em > .font-size(12,@baseFontSizepx);
   #em > .padding(10,12);
+  margin-bottom: 1.57em;
+  #em > .padding(10, 10, 6, 10, 12);
 }

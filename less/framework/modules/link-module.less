@@ -28,7 +28,7 @@
   padding: 0;
   border:  1px solid @linkModBorderColor;
   background: lighten(#dfe9e3,5%);
-  min-height:  @linkModHeight;
+  min-height:  1em*(@linkModHeight/14);
   .box-shadow(0px 1px 4px rgba(0,0,0,0.1));
   h4 {
     font-size: 1em;
@@ -48,13 +48,6 @@
       }
     }
   }
-  .icon-filter {
-    position: absolute;
-    bottom: 12px;
-    left: 15px;
-    color: #ccc;
-    z-index: 16;
-  }
   &>li {
     width:  @linkModHighresLeftWidth;
     .link-mod-label {
@@ -69,18 +62,17 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    width: @linkModHighresRightWidth;
     border-left:  1px solid @linkModBorderColor;
     margin-left: -1px;
-    min-height: @linkModHeight;
-    height: @linkModHeight;
+    min-height: 1em*(@linkModHeight/@baseFontSizepx);
+    #em > .size(@linkModHighresRightWidth, @linkModHeight, @baseFontSizepx);
     overflow: auto;
     background: #fff;
     .box-shadow(inset 2px 0px 6px #E0E6E0);
     border-left-color: desaturate(darken(@linkModBorderColor, 5%),50%);
   }
   &>li.link-mod-active {  
-    color: #fff;
+    //color: #fff;
     h4 a {
      color: #fff; 
      #gradient > .vertical(#00AF5C,#007C41);
@@ -106,25 +98,11 @@
     float: right;
     margin-right:  10px;
     margin-top: 10px;
+    color: #fff;
   }
-  &>li:last-child {
-    border-bottom: none;
-    z-index:  14;
-    margin: 0;
-    border: 0;
-    color: #666;
-    input {
-      position: absolute;
-      bottom: 0px;
-      left: 10px;
-      z-index:  15;
-      padding: 5px 6px 3px 25px;
-      width: 188px;
-      font-size: 12px;
-      line-height: 1em;
-    }
+  &>li.link-mod-filter:before {
+    color: @grayDark;
   }
-
   &>li ul.link-mod-items li {
     border-bottom: 1px solid @linkModBorderColor;
     a {
@@ -138,7 +116,7 @@
       border-color: darken(desaturate(#FFF5B8,50%),10%);
     }
   }
-  
+
   .link-mod-result-title {
     padding: 10px;
     #gradient > .vertical(#fff,#FFF5B8);
@@ -185,8 +163,14 @@
       content:  "";
       margin-top: 17px;
     }
+    & .link-mod-filter input {
+      padding-left: 25px;
+    }
     .icon-filter {
+      position: absolute;
       top: 16px;
+      left: 15px;
+      color: #ccc;
     }
     &>li.link-mod-active {  
       .link-mod-label {
@@ -219,7 +203,44 @@
     &>li.link-mod-active {  
       .link-mod-label {
         display: block;
-        padding: 8px;
+        padding-left: 9px;
+      }
+    }
+    li.link-mod-filter {
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+      z-index:  14;
+      margin: 0;
+      border: none;
+      color: @lightText;
+      &.link-mod-active:before {
+        margin-top:0;
+      }
+      .icon-filter {
+        position: absolute;
+        left: 15px;
+        bottom: 0.6em;
+        color: #ccc;
+        z-index: 16;
+      }
+      .link-mod-label {
+        padding-bottom: 2.75em;
+      }
+      input {
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+        z-index:  15;
+        #em > .padding(5, 6, 3, 25, @baseFontSizepx);
+        #em > .size(width, 188, @baseFontSizepx);
+        #em > .font-size(12, @baseFontSizepx);
+        line-height: 1em;
+      }
+      ul.link-mod-items {
+        position: absolute;
+        bottom: 0;
+        top: auto;
       }
     }
   }
@@ -228,15 +249,19 @@
 @media (min-width: 75em) {
   .link-mod-container {
     &>li {
-      width:  @linkModHighresLeftWidth;
+      #em > .size(width,@linkModHighresLeftWidth,@baseFontSizepx);
     }
     &>li ul.link-mod-items {
-      width: @linkModHighresRightWidth;
-      left: @linkModHighresIndent;
+      #em > .size(width,@linkModHighresRightWidth,@baseFontSizepx);
+      #em > .position(left,@linkModHighresIndent,@baseFontSizepx);
     }
-    &>li:last-child {
+    &>li.link-mod-filter {
       input {
-        width: @linkModHighresFilterWidth;
+        #em > .size(width,@linkModHighresFilterWidth,@baseFontSizepx);
+      }
+      &:before {
+        #em > .margin(right,@linkModHighresRightWidth,@baseFontSizepx);
+        padding-right: 8px;
       }
     }
   }
@@ -245,32 +270,40 @@
 @media (min-width: 61.25em) and (max-width: 74.9375em) {
   .link-mod-container {
     &>li {
-      width:  @linkModDesktopLeftWidth;
+      #em > .size(width,@linkModDesktopLeftWidth,@baseFontSizepx);
     }
     &>li ul.link-mod-items {
-      width: @linkModDesktopRightWidth;
-      left: @linkModDesktopIndent;
+      #em > .size(width,@linkModDesktopRightWidth,@baseFontSizepx);
+      #em > .position(left,@linkModDesktopIndent,@baseFontSizepx);
     }
-    &>li:last-child {
+    &>li.link-mod-filter {
       input {
-        width: @linkModDesktopFilterWidth;
+        #em > .size(width,@linkModDesktopFilterWidth,@baseFontSizepx);
+      }
+      &:before {
+        #em > .margin(right,@linkModDesktopRightWidth,@baseFontSizepx);
+        padding-right: 8px;
       }
     }
-  }
+  } 
 }
 
 @media (min-width: 30em) and (max-width: 61.1875em) {
   .link-mod-container {
     &>li {
-      width:  @linkModTabletLeftWidth;
+      width:@linkModTabletLeftWidth;
     }
     &>li ul.link-mod-items {
       width: @linkModTabletRightWidth;
       left: @linkModTabletIndent;
     }
-    &>li:last-child {
+    &>li.link-mod-filter {
       input {
-        width: @linkModTabletFilterWidth;
+        width:@linkModTabletFilterWidth;
+      }
+      &:before {
+        margin-right:@linkModTabletRightWidth;
+        padding-right: 8px;
       }
     }
   }
