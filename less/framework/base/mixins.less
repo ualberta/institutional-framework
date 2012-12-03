@@ -77,142 +77,223 @@
   .size(@size, @size);
 }
 
-.fontSizeRem(@sizeValue){
-  @remValue: (@sizeValue/@baseFontSizepx);
-  @pxValue: @sizeValue;
-  *font-size: ~"@{pxValue}px"; 
-  font-size: ~"@{remValue}rem";
-}
+#rem {
 
-.fontSizeEm(@sizeValue, @currentEmValue: @baseFontSizepx) {
-  @emValue: (@sizeValue/@currentEmValue);
-  font-size: ~"@{emValue}em";  
-}
-
-.widthRem(@widthValue) {
-  @remValue: (@widthValue/@baseFontSizepx);
-  @pxValue: @widthValue;
-  *width: ~"@{pxValue}px"; 
-  width: ~"@{remValue}rem";  
-}
-
-.widthEm(@widthValue, @currentEmValue: @baseFontSizepx) {
-  @emValue: (@widthValue/@currentEmValue);
-  width: ~"@{emValue}em";  
-}
-
-.heightRem(@heightValue) {
-  @remValue: (@heightValue/@baseFontSizepx);
-  @pxValue: @heightValue;
-  *height: ~"@{pxValue}px"; 
-  height: ~"@{remValue}rem";  
-}
-
-.heightEm(@heightValue, @currentEmValue: @baseFontSizepx) {
-  @emValue: (@heightValue/@currentEmValue);
-  height: ~"@{emValue}em";  
-}
-
-.paddingRem(@size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding: ~"@{pxValue}px";
-  padding: ~"@{remValue}rem";
-}
-
-.paddingRem(top, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-top: ~"@{pxValue}px";
-  padding-top: ~"@{remValue}rem";
-}
-
-.paddingRem(left, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-left: ~"@{pxValue}px";
-  padding-left: ~"@{remValue}rem";
-}
-
-.paddingRem(right, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-right: ~"@{pxValue}px";
-  padding-right: ~"@{remValue}rem";
-}
-
-.paddingRem(bottom, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-bottom: ~"@{pxValue}px";
-  padding-bottom: ~"@{remValue}rem";
-}
-
-.paddingRem(tb, @tb, @rl) {
-  @tbr: (@tb/@baseFontSizepx);
-  @rlr: (@rl/@baseFontSizepx);
-  *padding: ~"@{tb}px @{rl}px";
-  padding: ~"@{tbr}rem @{rlr}rem";
-}
-
-.paddingRem(@t, @r, @b, @l) {
-  @tr: (@t/@baseFontSizepx);
-  @rr: (@r/@baseFontSizepx);
-  @br: (@b/@baseFontSizepx);
-  @lr: (@l/@baseFontSizepx);
-  *padding: ~"@{t}px @{r}px @{b}px @{l}px";
-  padding: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
-}
-
-.marginRem(@size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin: ~"@{pxValue}px";
-  margin: ~"@{remValue}rem";
-}
-
-.marginRem(top, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-top: ~"@{pxValue}px";
-  margin-top: ~"@{remValue}rem";
-}
-
-.marginRem(left, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-left: ~"@{pxValue}px";
-  margin-left: ~"@{remValue}rem";
-}
-
-.marginRem(right, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-right: ~"@{pxValue}px";
-  margin-right: ~"@{remValue}rem";
-}
-
-.marginRem(bottom, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-bottom: ~"@{pxValue}px";
-  margin-bottom: ~"@{remValue}rem";
-}
-
-.marginRem(tb, @tb, @rl) {
-  @tbr: (@tb/@baseFontSizepx);
-  @rlr: (@rl/@baseFontSizepx);
-  *margin: ~"@{tb}px @{rl}px";
-  margin: ~"@{tbr}rem @{rlr}rem";
-}
-
-.marginRem(@t, @r, @b, @l) {
-  @tr: (@t/@baseFontSizepx);
-  @rr: (@r/@baseFontSizepx);
-  @br: (@b/@baseFontSizepx);
-  @lr: (@l/@baseFontSizepx);
-  *margin: ~"@{t}px @{r}px @{b}px @{l}px";
-  margin: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
+  // Font Sizing
+  // ---------------------------------------
+  // Usage:
+  // #rem > .font-size(14);
+  //
+  .font-size(@sizeValue) {
+    @remValue: (@sizeValue/@baseFontSizepx);
+    @pxValue: @sizeValue;
+    font-size: ~"@{pxValue}px\9"; 
+    font-size: ~"@{remValue}rem";
+  }
+  
+  // Width and Height
+  // ---------------------------------------
+  // Usage:
+  // #rem > .size(300, 100);        Sets width and height
+  // #rem > .size(width, 300);      Sets width
+  // #rem > .size(height, 100);     Sets height
+  //
+  .size(@widthValue, @heightValue) when (issnumber(@widthValue)) {
+    @remWidthValue: (@widthValue/@baseFontSizepx);
+    @pxWidthValue: @widthValue;
+    @remHeightValue: (@heightValue/@baseFontSizepx);
+    @pxHeightValue: @heightValue;
+    width: ~"@{pxWidthValue}px\9"; 
+    width: ~"@{remWidthValue}rem";  
+    height: ~"@{pxHeightValue}px\9"; 
+    height: ~"@{remHeightValue}rem";
+  }
+  .size(width, @widthValue) {
+    @remWidthValue: (@widthValue/@baseFontSizepx);
+    @pxWidthValue: @widthValue;
+    width: ~"@{pxWidthValue}px\9"; 
+    width: ~"@{remWidthValue}rem";  
+  }
+  .size(height, @heightValue) {
+    @remHeightValue: (@heightValue/@baseFontSizepx);
+    @pxHeightValue: @heightValue;
+    height: ~"@{pxHeightValue}px\9"; 
+    height: ~"@{remHeightValue}rem";  
+  }
+  
+  // Positioning
+  // ---------------------------------------
+  // Usage:
+  // #rem > .position(top, 100);      Sets top position
+  // #rem > .position(right, 100);    Sets right position
+  // #rem > .position(bottom, 100);   Sets bottom position
+  // #rem > .position(left, 100);     Sets left position
+  // #rem > .position(0, 100);        Sets top and left position
+  //
+  .position(top, @pos:0) {
+    @rem: (@pos/@baseFontSizepx);
+    @px: @pos;
+    top: ~"@{px}px\9"; 
+    top: ~"@{rem}rem"; 
+  }
+  .position(right, @pos:0) {
+    @rem: (@pos/@baseFontSizepx);
+    @px: @pos;
+    right: ~"@{px}px\9"; 
+    right: ~"@{rem}rem";   
+  }
+  .position(bottom, @pos:0) {
+    @rem: (@pos/@baseFontSizepx);
+    @px: @pos;
+    bottom: ~"@{px}px\9"; 
+    bottom: ~"@{rem}rem"; 
+  }
+  .position(left, @pos:0) {
+    @rem: (@pos/@baseFontSizepx);
+    @px: @pos;
+    left: ~"@{px}px\9"; 
+    left: ~"@{rem}rem"; 
+  }
+  .position(@posx:0, @posy:0) when (isnumber(@posx)) {
+    @remx: (@posx/@baseFontSizepx);
+    @pxx: @posx;
+    @remy: (@posy/@baseFontSizepx);
+    @pxy: @posy;
+    top: ~"@{pxy}px\9"; 
+    top: ~"@{remy}rem";
+    left: ~"@{pxx}px\9"; 
+    left: ~"@{remx}rem"; 
+  }
+  
+  // Margins
+  // ---------------------------------------
+  // Usage:
+  // #rem > .margin(10);            Sets margin for all sides
+  // #rem > .margin(top, 10);       Sets margin for top side
+  // #rem > .margin(left, 10);      Sets margin for left side
+  // #rem > .margin(right, 10);     Sets margin for right side
+  // #rem > .margin(bottom, 10);    Sets margin for bottom side
+  // #rem > .margin(10, 20);        Sets margin for top/bottom and left/right
+  // #rem > .margin(10, 20, 5);     Sets margin for top, left/right, and bottom
+  // #rem > .margin(10, 20, 5, 0);  Sets margin for top, right, bottom, left
+  //
+  .margin(@size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    margin: ~"@{pxValue}px\9";
+    margin: ~"@{remValue}rem";
+  }
+  .margin(top, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    margin-top: ~"@{pxValue}px\9";
+    margin-top: ~"@{remValue}rem";
+  }
+  .margin(left, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    margin-left: ~"@{pxValue}px\9";
+    margin-left: ~"@{remValue}rem";
+  }
+  .margin(right, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    margin-right: ~"@{pxValue}px\9";
+    margin-right: ~"@{remValue}rem";
+  }
+  .margin(bottom, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    margin-bottom: ~"@{pxValue}px\9";
+    margin-bottom: ~"@{remValue}rem";
+  }
+  .margin(@tb, @rl) when (isnumber(@tb)) {
+    @tbr: (@tb/@baseFontSizepx);
+    @rlr: (@rl/@baseFontSizepx);
+    margin: ~"@{tb}px @{rl}px\9";
+    margin: ~"@{tbr}rem @{rlr}rem";
+  }
+  .margin(@t, @rl, @b) {
+    @tr: (@t/@baseFontSizepx);
+    @rlr: (@rl/@baseFontSizepx);
+    @br: (@b/@baseFontSizepx);
+    margin: ~"@{t}px @{r}px @{b}px\9";
+    margin: ~"@{tr}rem @{rlr}rem @{br}rem";
+  }
+  .margin(@t, @r, @b, @l) {
+    @tr: (@t/@baseFontSizepx);
+    @rr: (@r/@baseFontSizepx);
+    @br: (@b/@baseFontSizepx);
+    @lr: (@l/@baseFontSizepx);
+    margin: ~"@{t}px @{r}px @{b}px @{l}px\9";
+    margin: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
+  }
+  
+  
+  // Padding
+  // ---------------------------------------
+  // Usage:
+  // #rem > .padding(10);            Sets padding for all sides
+  // #rem > .padding(top, 10);       Sets padding for top side
+  // #rem > .padding(left, 10);      Sets padding for left side
+  // #rem > .padding(right, 10);     Sets padding for right side
+  // #rem > .padding(bottom, 10);    Sets padding for bottom side
+  // #rem > .padding(10, 20);        Sets padding for top/bottom and left/right
+  // #rem > .padding(10, 20, 5);     Sets padding for top, left/right, and bottom
+  // #rem > .padding(10, 20, 5, 0);  Sets padding for top, right, bottom, left
+  //
+  .padding(@size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    padding: ~"@{pxValue}px\9";
+    padding: ~"@{remValue}rem";
+  }
+  .padding(top, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    padding-top: ~"@{pxValue}px\9";
+    padding-top: ~"@{remValue}rem";
+  }
+  .padding(left, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    padding-left: ~"@{pxValue}px\9";
+    padding-left: ~"@{remValue}rem";
+  }
+  .padding(right, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    padding-right: ~"@{pxValue}px\9";
+    padding-right: ~"@{remValue}rem";
+  }
+  .padding(bottom, @size) {
+    @remValue: (@size/@baseFontSizepx);
+    @pxValue: @size;
+    padding-bottom: ~"@{pxValue}px\9";
+    padding-bottom: ~"@{remValue}rem";
+  }
+  .padding(@tb, @rl) when (isnumber(@tb)) {
+    @tbr: (@tb/@baseFontSizepx);
+    @rlr: (@rl/@baseFontSizepx);
+    padding: ~"@{tb}px @{rl}px\9";
+    padding: ~"@{tbr}rem @{rlr}rem";
+  }
+  .padding(@t, @rl, @b) {
+    @tr: (@t/@baseFontSizepx);
+    @rlr: (@rl/@baseFontSizepx);
+    @br: (@b/@baseFontSizepx);
+    padding: ~"@{t}px @{r}px @{b}px\9";
+    padding: ~"@{tr}rem @{rlr}rem @{br}rem";
+  }
+  .padding(@t, @r, @b, @l) {
+    @tr: (@t/@baseFontSizepx);
+    @rr: (@r/@baseFontSizepx);
+    @br: (@b/@baseFontSizepx);
+    @lr: (@l/@baseFontSizepx);
+    padding: ~"@{t}px @{r}px @{b}px @{l}px\9";
+    padding: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
+  }
+  
 }
 
 // Placeholder text

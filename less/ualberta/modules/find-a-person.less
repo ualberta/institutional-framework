@@ -5,28 +5,28 @@
       position: absolute;
       top: 0;
       left:0;
-      .marginRem(10);
       z-index: 5;
       color: #ccc;
+      #rem > .margin(10);
     }
     input {
       .border-radius(4px 0px 0px 4px);
-      .heightRem(28);
       width: 75%;
-      .paddingRem(left, 30);
       margin-right: 0;
+      #rem > .size(height,28);
+      #rem > .padding(left,30);
     }
     .btn {
       position: absolute;
       top: auto;
       right: 0;
       width: auto;
-      .border-radius(0px 4px 4px 0px);
       margin: 0;
+      .border-radius(0px 4px 4px 0px);
       .box-shadow(none);
-      .marginRem(left,-5);
-      .heightRem(38);
       text-align: center;
+      margin-left: -5px;
+      #rem > .size(height,38);
     }
   }
 }
