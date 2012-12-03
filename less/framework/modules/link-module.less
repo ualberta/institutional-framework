@@ -21,7 +21,6 @@
 @linkModTabletFilterWidth: 25%;
 @linkModTabletIndent: 36.3%;
 
-
 .link-mod-container {
   position: relative;
   list-style: none;
@@ -275,4 +274,24 @@
       }
     }
   }
+}
+// IE 9
+
+.ie-9 {
+	li.link-mod-active h4 a{
+	filter:none;
+	background-image:url('../img/link-mod-active-bg.png');
+	}
+	li.link-mod-active::before{
+	display:none;
+	}
+	li.link-mod-active h4 a::after{
+	font-family:FontAwesome;
+	font-syle:normal;
+	font-weight:normal;
+	text-decoration:inherit;
+	margin-top:10px;
+	margin-left:10px;
+	content:"\f0da";
+	}
 }
