@@ -35,7 +35,7 @@ a:hover {
 }
 
 .frame {
-  padding: 5px;
+  #em > .padding(5,14);
   background: #fff;
   background: rgba(255,255,255,0.95);
   border: none;
@@ -68,9 +68,13 @@ a:hover {
 }
 
 .extrude {
-  padding: 10px;
+  #em > .padding(10,14);
   background: #fff;
   border: none;
   .border-radius(3px);
   .box-shadow(0 1px 4px rgba(0, 30, 15, 0.2));
+}
+
+.sidebar .extrude {
+  #em > .padding(10,12);
 }
