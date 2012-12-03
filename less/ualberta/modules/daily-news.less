@@ -5,16 +5,15 @@
       position: absolute;
       top: 0;
       left:0;
-      .marginRem(10);
+      #em > .margin(10,14);
       z-index: 5;
       color: #ccc;
     }
     input {
       .border-radius(4px 0px 0px 4px);
-      .heightRem(28);
+      #em > .size(height,28,14);
       width: 75%;
-      .paddingRem(left, 30);
-      
+      #em > .padding(left, 30,14);
       margin-right: 0;
     }
     .btn {
@@ -25,8 +24,8 @@
       .border-radius(0px 4px 4px 0px);
       margin: 0;
       .box-shadow(none);
-      .marginRem(left,-5);
-      .heightRem(38);
+      margin-left: -5px;
+      #em > .size(height,38,14);
       text-align: center;
     }
   }

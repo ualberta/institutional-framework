@@ -77,143 +77,177 @@
   .size(@size, @size);
 }
 
-.fontSizeRem(@sizeValue){
-  @remValue: (@sizeValue/@baseFontSizepx);
-  @pxValue: @sizeValue;
-  *font-size: ~"@{pxValue}px"; 
-  font-size: ~"@{remValue}rem";
+#em {
+
+  // Font Sizing
+  // ---------------------------------------
+  // Usage:
+  // #em > .font-size(14, base);
+  //
+  .font-size(@sizeVal, @baseVal) {
+    @emValue: (@sizeVal/@baseVal);
+    font-size: ~"@{emValue}em";
+  }
+  
+  // Width and Height
+  // ---------------------------------------
+  // Usage:
+  // #em > .size(300, 100, base);        Sets width and height
+  // #em > .size(width, 300, base);      Sets width
+  // #em > .size(height, 100, base);     Sets height
+  //
+  .size(@widthValue, @heightValue, @baseVal) when (issnumber(@widthValue)) {
+    @emWidthValue: (@widthValue/@baseVal);
+    @emHeightValue: (@heightValue/@baseVal);
+    width: ~"@{emWidthValue}em";  
+    height: ~"@{emHeightValue}em";
+  }
+  .size(width, @widthValue, @baseVal) {
+    @emWidthValue: (@widthValue/@baseVal);
+    width: ~"@{emWidthValue}em";  
+  }
+  .size(height, @heightValue, @baseVal) {
+    @emHeightValue: (@heightValue/@baseVal);
+    height: ~"@{emHeightValue}em";  
+  }
+  
+  // Positioning
+  // ---------------------------------------
+  // Usage:
+  // #em > .position(top, 100, @baseVal);      Sets top position
+  // #em > .position(right, 100, @baseVal);    Sets right position
+  // #em > .position(bottom, 100, @baseVal);   Sets bottom position
+  // #em > .position(left, 100, @baseVal);     Sets left position
+  // #em > .position(0, 100, @baseVal);        Sets top and left position
+  //
+  .position(top, @pos:0, @baseVal) {
+    @emVal: (@pos/@baseVal);
+    top: ~"@{emVal}em"; 
+  }
+  .position(right, @pos:0, @baseVal) {
+    @emVal: (@pos/@baseVal);
+    right: ~"@{emVal}em";   
+  }
+  .position(bottom, @pos:0, @baseVal) {
+    @emVal: (@pos/@baseVal);
+    bottom: ~"@{emVal}em"; 
+  }
+  .position(left, @pos:0, @baseVal) {
+    @emVal: (@pos/@baseVal);
+    left: ~"@{emVal}em"; 
+  }
+  .position(@posx:0, @posy:0, @baseVal) when (isnumber(@posx)) {
+    @emx: (@posx/@baseVal);
+    @emy: (@posy/@baseVal);
+    top: ~"@{emy}em";
+    left: ~"@{emx}em"; 
+  }
+  
+  // Margins
+  // ---------------------------------------
+  // Usage:
+  // #em > .margin(10, base);            Sets margin for all sides
+  // #em > .margin(top, 10, base);       Sets margin for top side
+  // #em > .margin(left, 10, base);      Sets margin for left side
+  // #em > .margin(right, 10, base);     Sets margin for right side
+  // #em > .margin(bottom, 10, base);    Sets margin for bottom side
+  // #em > .margin(10, 20, base);        Sets margin for top/bottom and left/right
+  // #em > .margin(10, 20, 5, base);     Sets margin for top, left/right, and bottom
+  // #em > .margin(10, 20, 5, 0, base);  Sets margin for top, right, bottom, left
+  //
+  .margin(@size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    margin: ~"@{emValue}em";
+  }
+  .margin(top, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    margin-top: ~"@{emValue}em";
+  }
+  .margin(left, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    margin-left: 1em*@emValue;
+  }
+  .margin(right, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    margin-right: ~"@{emValue}em";
+  }
+  .margin(bottom, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    margin-bottom: ~"@{emValue}em";
+  }
+  .margin(@tb, @rl, @baseVal) when (isnumber(@tb)) {
+    @tbr: (@tb/@baseVal);
+    @rlr: (@rl/@baseVal);
+    margin: ~"@{tbr}em @{rlr}em";
+  }
+  .margin(@t, @rl, @b, @baseVal) {
+    @tr: (@t/@baseVal);
+    @rlr: (@rl/@baseVal);
+    @br: (@b/@baseVal);
+    margin: ~"@{tr}em @{rlr}em @{br}em";
+  }
+  .margin(@t, @r, @b, @l, @baseVal) {
+    @tr: (@t/@baseVal);
+    @rr: (@r/@baseVal);
+    @br: (@b/@baseVal);
+    @lr: (@l/@baseVal);
+    margin: ~"@{tr}em @{rr}em @{br}em @{lr}em";
+  }
+  
+  
+  // Padding
+  // ---------------------------------------
+  // Usage:
+  // #em > .padding(10, base);            Sets padding for all sides
+  // #em > .padding(top, 10, base);       Sets padding for top side
+  // #em > .padding(left, 10, base);      Sets padding for left side
+  // #em > .padding(right, 10, base);     Sets padding for right side
+  // #em > .padding(bottom, 10, base);    Sets padding for bottom side
+  // #em > .padding(10, 20, base);        Sets padding for top/bottom and left/right
+  // #em > .padding(10, 20, 5, base);     Sets padding for top, left/right, and bottom
+  // #em > .padding(10, 20, 5, 0, base);  Sets padding for top, right, bottom, left
+  //
+  .padding(@size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    padding: ~"@{emValue}em";
+  }
+  .padding(top, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    padding-top: ~"@{emValue}em";
+  }
+  .padding(left, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    padding-left: ~"@{emValue}em";
+  }
+  .padding(right, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    padding-right: ~"@{emValue}em";
+  }
+  .padding(bottom, @size, @baseVal) {
+    @emValue: (@size/@baseVal);
+    padding-bottom: ~"@{emValue}em";
+  }
+  .padding(@tb, @rl, @baseVal) when (isnumber(@tb)) {
+    @tbr: (@tb/@baseVal);
+    @rlr: (@rl/@baseVal);
+    padding: ~"@{tbr}em @{rlr}em";
+  }
+  .padding(@t, @rl, @b, @baseVal) {
+    @tr: (@t/@baseVal);
+    @rlr: (@rl/@baseVal);
+    @br: (@b/@baseVal);
+    padding: ~"@{tr}em @{rlr}em @{br}em";
+  }
+  .padding(@t, @r, @b, @l, @baseVal) {
+    @tr: (@t/@baseVal);
+    @rr: (@r/@baseVal);
+    @br: (@b/@baseVal);
+    @lr: (@l/@baseVal);
+    padding: ~"@{tr}em @{rr}em @{br}em @{lr}em";
+  }
+  
 }
 
-.fontSizeEm(@sizeValue, @currentEmValue: @baseFontSizepx) {
-  @emValue: (@sizeValue/@currentEmValue);
-  font-size: ~"@{emValue}em";  
-}
-
-.widthRem(@widthValue) {
-  @remValue: (@widthValue/@baseFontSizepx);
-  @pxValue: @widthValue;
-  *width: ~"@{pxValue}px"; 
-  width: ~"@{remValue}rem";  
-}
-
-.widthEm(@widthValue, @currentEmValue: @baseFontSizepx) {
-  @emValue: (@widthValue/@currentEmValue);
-  width: ~"@{emValue}em";  
-}
-
-.heightRem(@heightValue) {
-  @remValue: (@heightValue/@baseFontSizepx);
-  @pxValue: @heightValue;
-  *height: ~"@{pxValue}px"; 
-  height: ~"@{remValue}rem";  
-}
-
-.heightEm(@heightValue, @currentEmValue: @baseFontSizepx) {
-  @emValue: (@heightValue/@currentEmValue);
-  height: ~"@{emValue}em";  
-}
-
-.paddingRem(@size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding: ~"@{pxValue}px";
-  padding: ~"@{remValue}rem";
-}
-
-.paddingRem(top, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-top: ~"@{pxValue}px";
-  padding-top: ~"@{remValue}rem";
-}
-
-.paddingRem(left, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-left: ~"@{pxValue}px";
-  padding-left: ~"@{remValue}rem";
-}
-
-.paddingRem(right, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-right: ~"@{pxValue}px";
-  padding-right: ~"@{remValue}rem";
-}
-
-.paddingRem(bottom, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *padding-bottom: ~"@{pxValue}px";
-  padding-bottom: ~"@{remValue}rem";
-}
-
-.paddingRem(tb, @tb, @rl) {
-  @tbr: (@tb/@baseFontSizepx);
-  @rlr: (@rl/@baseFontSizepx);
-  *padding: ~"@{tb}px @{rl}px";
-  padding: ~"@{tbr}rem @{rlr}rem";
-}
-
-.paddingRem(@t, @r, @b, @l) {
-  @tr: (@t/@baseFontSizepx);
-  @rr: (@r/@baseFontSizepx);
-  @br: (@b/@baseFontSizepx);
-  @lr: (@l/@baseFontSizepx);
-  *padding: ~"@{t}px @{r}px @{b}px @{l}px";
-  padding: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
-}
-
-.marginRem(@size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin: ~"@{pxValue}px";
-  margin: ~"@{remValue}rem";
-}
-
-.marginRem(top, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-top: ~"@{pxValue}px";
-  margin-top: ~"@{remValue}rem";
-}
-
-.marginRem(left, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-left: ~"@{pxValue}px";
-  margin-left: ~"@{remValue}rem";
-}
-
-.marginRem(right, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-right: ~"@{pxValue}px";
-  margin-right: ~"@{remValue}rem";
-}
-
-.marginRem(bottom, @size) {
-  @remValue: (@size/@baseFontSizepx);
-  @pxValue: @size;
-  *margin-bottom: ~"@{pxValue}px";
-  margin-bottom: ~"@{remValue}rem";
-}
-
-.marginRem(tb, @tb, @rl) {
-  @tbr: (@tb/@baseFontSizepx);
-  @rlr: (@rl/@baseFontSizepx);
-  *margin: ~"@{tb}px @{rl}px";
-  margin: ~"@{tbr}rem @{rlr}rem";
-}
-
-.marginRem(@t, @r, @b, @l) {
-  @tr: (@t/@baseFontSizepx);
-  @rr: (@r/@baseFontSizepx);
-  @br: (@b/@baseFontSizepx);
-  @lr: (@l/@baseFontSizepx);
-  *margin: ~"@{t}px @{r}px @{b}px @{l}px";
-  margin: ~"@{tr}rem @{rr}rem @{br}rem @{lr}rem";
-}
 
 // Placeholder text
 // -------------------------
@@ -789,22 +823,25 @@
     .offsetX (0) {}
 
     .offset (@columns) {
-      margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns + 1));
+      @offsetVal: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns + 1));
+      #em > .margin(left, @offsetVal, @baseFontSizepx);
     }
 
     .span (@columns) {
-      width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
+      @colWidth: ((@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)));
+      #em > .size(width, @colWidth, @baseFontSizepx);
     }
 
     .row {
-      margin-left: @gridGutterWidth * -1;
+      @negGutter: @gridGutterWidth * -1;
+      #em > .margin(left, @negGutter, @baseFontSizepx);
       .clearfix();
     }
 
     [class*="span"] {
       float: left;
       min-height: 1px; // prevent collapsing columns
-      margin-left: @gridGutterWidth;
+      #em > .margin(left, @gridGutterWidth, @baseFontSizepx);
     }
 
     // Set the container width, and override it for fixed navbars in media queries
