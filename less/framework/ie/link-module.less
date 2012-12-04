@@ -82,16 +82,13 @@
       display: block;
     }
   }
-  & li.link-mod-active:before {
+  & li.link-mod-active:after {
     content: "\f0da";
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
-    display: inline-block;
     text-decoration: inherit;
     float: right;
-    margin-right:  10px;
-    margin-top: 10px;
   }
   & li.link-mod-filter {
     border-bottom: none;
@@ -99,6 +96,7 @@
     margin: 0;
     border: 0;
     color: #666;
+    float:none;
     input {
       position: absolute;
       bottom: 0px;
@@ -172,17 +170,7 @@
 h5.sidebar-title {
 	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
 }
-.link-mod-container li.link-mod-filter{
-		float:none;
-	}
-	.link-mod-container li.link-mod-active h4 a::after{
-		font-style:normal;
-		font-family:FontAwesome;
-		float:right;
-		content:"\f0da";
-		text-decoration: inherit;
-	}
-	.link-mod-container .icon-filter{
+.link-mod-container .icon-filter{
 		bottom:0px;
-	}
 }
+
