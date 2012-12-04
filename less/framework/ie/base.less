@@ -65,12 +65,12 @@ a:focus {
     }
 }
 .content-top-row {
-  width: @desktop_RowWidth;
+  #em > .size(width,@desktop_RowWidth,@baseFontSizepx);
   .border-radius(4px);
   .tab-content {
     overflow: auto;
     min-height: 260px;
-    height: 260px;
+    #em > .size(height,260,@baseFontSizepx);
   }
 }
 .extrude {
