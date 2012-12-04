@@ -62,6 +62,7 @@ production:
 	@uglifyjs -nc ${PRODDIR}/js/bootstrap.js > ${PRODDIR}/js/bootstrap.min.js
 	@cp -r ./js ${PRODDIR}
 	@echo "Minifying and copying javascript...         ${CHECK} Done"
+	(cd ../production; git add .; git commit -a -m prod; git push origin production)
 	
 #
 # COMPILE GH-PAGES
