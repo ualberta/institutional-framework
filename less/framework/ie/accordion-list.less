@@ -72,8 +72,7 @@
     .box-shadow(inset 0px 0px 6px #fff);
   }
   & li.expanded a.accordion-toggle {
-    background-color:none;
-    filter:none;
+    background: none;
     border: none;
     color: #fff;
     height: 23px;
@@ -93,10 +92,13 @@
     content: '\f068';
   }
 }
-li.expanded a.accordion-toggle.icon-plus::before{
-	 content: '\f068';
-}
-li.expanded a.accordion-toggle:hover{
-	background:none;
+// IE 9
+.ie-9 {
+	.accordion-list > li.expanded > a:first-child{
 	filter:none;
+	background-image:url('../img/link-mod-active-bg.png');
+	}
+	.accordion-list a.accordion-toggle{
+		filter:none;
+	}
 }
