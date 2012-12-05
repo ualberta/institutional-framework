@@ -62,6 +62,7 @@
     padding: 0;
     width: @linkModDesktopRightWidth;
     border-left:  1px solid @linkModBorderColor;
+    border-right:  1px solid @linkModBorderColor;
     margin-left: -1px;
     min-height: @linkModHeight;
     height: 100%;
@@ -166,11 +167,18 @@
     }
   }
 }
-
-h5.sidebar-title {
-	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
-}
+.link-mod-container li.link-mod-filter{
+		float:none;
+	}
+.link-mod-container li.link-mod-active h4 a::after{
+		font-style:normal;
+		font-family:FontAwesome;
+		float:right;
+		content:"\f0da";
+		text-decoration: inherit;
+	}
 .link-mod-container .icon-filter{
 		bottom:10px;
+		#em > .position(bottom,9,@baseFontSizepx);
 }
 

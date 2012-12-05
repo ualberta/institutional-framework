@@ -83,21 +83,22 @@
      border-top: 1px solid #00AF5C;
      border-bottom: 1px solid #007C41;
      border-right: 0px solid transparent;
+     position: relative;
     }
     ul.link-mod-items {
       display: block;
     }
   }
-  &>li.link-mod-active:before {
+  &>li.link-mod-active h4 a:after {
     content: "\f0da";
+    position:absolute;
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
     display: inline-block;
     text-decoration: inherit;
-    float: right;
-    margin-right:  10px;
-    margin-top: 10px;
+    right:  10px;
+    top: 10px;
     color: #fff;
   }
   &>li.link-mod-filter:before {
@@ -132,6 +133,18 @@
     }
   }
 }
+
+.ie-9 {
+  .link-mod-container li.link-mod-active h4 a {
+     #gradient > .vertical(#00AF5C,#007C41);
+     margin:  -1px -1px 0px -2px;
+     padding-left: 11px;
+     &:after {
+       top:2px;
+     }
+  }
+}
+
 
 // SMALL MOBILE
 @media (max-width: 29.9375em) {
