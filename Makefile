@@ -53,6 +53,7 @@ production:
 	@recess --compress ${PROTOTYPE_LESS} > ./css/ualberta.css
 	@recess --compress ./less/faculty.less > ./css/faculty.css
 	@recess --compress ./less/framework.less > ./css/framework.css
+	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie.css
 	@recess --compile ./less/ualberta-ie7.less > ./css/ualberta-ie7.css
 	@cp -r ./css ${PRODDIR}
 	@cp -r ./js ${PRODDIR}
@@ -74,7 +75,7 @@ ghpages:
 	@mkdir -p ${PAGESDIR}/js
 	@recess --compile ./less/faculty.less > ./css/faculty.css
 	@recess --compile ${PROTOTYPE_LESS} > ./css/ualberta.css
-	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@lessc ./less/ualberta-ie.less > ./css/ualberta-ie.css
 	@recess --compile ./less/ualberta-ie7.less > ./css/ualberta-ie7.css
 	@cp -r ./css ${PAGESDIR}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
