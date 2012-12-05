@@ -50,3 +50,36 @@ ul.quick-links li {
 .navigation-inner ul.main-navigation {
   border-right: 1px solid #fff;
 }
+
+.hide, .modal.hide {
+  display: none;
+}
+
+hr.soften {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  *display : list-item;
+  *list-style : url(../img/hr-bevel-short.png) inside;
+  *filter : alpha(opacity=0);
+  *margin-left: -10px;
+  *width : 0;
+  *border:none;
+}
+
+.ie-lt8 {
+  ul.quick-links li, 
+  .navigation-inner ul li a,
+  .navigation-inner ul li,
+  .blade-search,
+  ul.quick-links-container,
+  ul.quick-links-container li,
+  .latest-news div.news-heading h3, 
+  .latest-news div.news-heading a,
+  .latest-news ul.news-list li.news-row span.news-date,
+  ul.footer-quick-links,
+  ul.footer-quick-links li,
+  {
+    .ie7-inline-block();  
+  } 
+}

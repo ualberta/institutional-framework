@@ -83,6 +83,14 @@
       display: block;
     }
   }
+  & li.link-mod-active h4 a:after {
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    float: right;
+  }
   & li.link-mod-filter {
     border-bottom: none;
     z-index:  14;
@@ -170,6 +178,7 @@
 		text-decoration: inherit;
 	}
 .link-mod-container .icon-filter{
+		bottom:10px;
 		#em > .position(bottom,9,@baseFontSizepx);
 }
 
