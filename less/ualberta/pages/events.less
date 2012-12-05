@@ -135,10 +135,10 @@ hr.softline{
 	/*Multiselector Start*/
 	    .event-list-filters { float: left; margin-right: 50px; }
     
-    .ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+    .ui-multiselect { padding:2px 0 2px 4px; text-align:left;font-size:0.95}
     .ui-multiselect span.ui-icon { float:right }
     .ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
-    .ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
+    .ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important;background-color:#fff; }
 
     .ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
     .ui-multiselect-header ul { font-size:0.9em }
@@ -151,7 +151,7 @@ hr.softline{
     .ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
     .ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
     .ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
-    .ui-multiselect-checkboxes label input { position:relative; top:1px }
+    .ui-multiselect-checkboxes label input { position:relative; top:1px;margin-right:5px; }
     .ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
     .ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
     .ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
@@ -211,4 +211,39 @@ ul.events-pagination li a:hover{
 .events-location{
 	font-size:1.2em;
 	display:block;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+	background-image:none;
+	background-color:#ddf1e6;
+}
+	.filter-day{
+		margin-bottom:5px;
+	}
+	.calendar-event{
+		margin-bottom:5px;
+	}
+	.category-event{
+		margin-bottom:5px;
+	}
+/*SECONDARY COLUMN FILTER EVENTS*/
+.secondary-content-area{
+	.filter h3{
+		font-size:1.4em;
+		margin:10px;
+	}
+	.filter-cont{
+		padding:0px 10px 10px 10px;
+	}
+	.module-container .datepicker{
+		margin:0px 18px 8px -10px;
+	}
+	.filter-day{
+		width:90%;
+	}
+	.calendar-event{
+		width:90%;
+	}
+	.category-event{
+		width:90%;
+	}
 }

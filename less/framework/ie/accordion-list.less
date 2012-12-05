@@ -72,30 +72,24 @@
     .box-shadow(inset 0px 0px 6px #fff);
   }
   & li.expanded a.accordion-toggle {
-    background: none;
+  	background-image:url(../img/expand.png);
     filter:none;
+   color:#00974F;
     border: none;
-    color: #fff;
     height: 23px;
-    .box-shadow(inset 0px 0px 6px darken(#007C41,5%));
-    margin-right: -5px;
+    box-shadow:none;
+    margin-right: -10px;
     padding-right: 5px;
     padding-left: 5px;
+    padding-top:0px;
+    padding-bottom:24px;
     .border-radius(0px 4px 4px 0px);
     &:hover {
-      background: rgba(255,255,255,0.2);
+      background-color: none;
     }
   }
   & li.expanded ul {
     display: block;
   }
-  & li.expanded a.icon-plus::before {
-    content: '\f068';
-  }
 }
-.accordion-list li.expanded a.accordion-toggle.icon-plus{
-	content:'\f068';
-}
-.accordion-list li.expanded a.accordion-toggle:hover{
-	background-color:none
-}
+
