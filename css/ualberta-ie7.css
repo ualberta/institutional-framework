@@ -21,7 +21,6 @@
 
 .primary-content-area .latest-news div.news-heading {
   overflow: auto;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#00FFDB05', endColorstr='#33FFDB05', GradientType=0);
 }
 
 .top-footer-row {
@@ -32,50 +31,6 @@
   border-top: 1px solid #dfdcd0;
   border-bottom: 1px solid #cfccc0;
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#11ddb903', endColorstr='#22ddb903', GradientType=0);
-}
-
-.content-top-row {
-  overflow: auto;
-  background-image: url(../img/test-bg.png);
-  background-position: left bottom;
-  background-repeat: repeat-x;
-  border-bottom: 1px solid #efece0;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#11ddb903', endColorstr='#0cddb903', GradientType=0);
-}
-
-.navigation-container {
-  background: transparent url(../img/navbar-bg.gif) repeat-x center center;
-  border-bottom-color: #abb1ae;
-}
-
-.banner-container {
-  background: transparent url(../img/banner-bg.jpg) repeat-x center left;
-}
-
-.navigation-inner ul li a {
-  border-right: 1px solid #cbd2cd;
-  border-left: 1px solid #fff;
-}
-
-.navigation-inner ul.main-navigation {
-  border-left: 1px solid #cbd2cd;
-}
-
-.hover-caption-container .caption {
-  overflow: auto;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000', endColorstr='#cc000000', GradientType=0);
-}
-
-.footer-inner h3 {
-  border-bottom: 1px solid #e0d9c6;
-}
-
-.brand {
-  background: transparent url(../img/logo.png) no-repeat top left;
-}
-
-.brand img {
-  display: none;
 }
 
 .navigation-inner .main-navigation > li:hover .sub-menu {
@@ -123,11 +78,29 @@ ul.footer-quick-links li {
   top: -15px;
 }
 
-.navigation-inner ul li a,
-ul.quick-links li {
-  margin-right: 0;
-}
-
 .navigation-inner ul.main-navigation {
   border-right: 1px solid #fff;
+}
+
+h5.sidebar-title {
+  padding-top: 6px;
+  padding-bottom: 9px;
+}
+
+li.expanded a.accordion-toggle {
+  height: 22px;
+  padding-bottom: 10px!important;
+}
+
+li.expanded a.accordion-toggle:hover {
+  background-color: none;
+}
+
+.sidebar .links-module .links li a {
+  padding-top: 0;
+}
+
+.sidebar .links-module .links li a:hover {
+  margin-bottom: 0;
+  border-bottom: 0;
 }
