@@ -242,31 +242,26 @@ button.close {
 .ie-9 {
 	.btn {
 		filter: none;
+			outline: none;
 	}
 	.btn-work, .btn-give, .btn-apply {
 		box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.1), inset 0px 1px 4px rgba(255,255,255,0.65);
 	}
 	.btn-apply {
+		outline: none;
 		background: #ffec05 left bottom repeat-x url(../img/bg-btn-lg-yellow.png);
-		&:hover {
+		&:hover,&:active {
 			background-image: none;
 			background-color: #ffec05;
-		}
-		&:active {
-			padding: 13px 43px 11px 9px;
-			outline: none;
 		}
 	}
 	.btn-work {
 		filter: none;
+			outline: none;
 		background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);
-		&:hover {
+		&:hover,&:active{
 			background-image: none;
 			background-color: #f3f7f5;
-		}
-		&:active {
-			padding: 13px 43px 11px 9px;
-			outline: none;
 		}
 	}
 }
