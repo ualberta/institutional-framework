@@ -242,31 +242,49 @@ button.close {
 .ie-9 {
 	.btn {
 		filter: none;
+		outline: none;
+	}
+	.btn-grey {
+		background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-grey.png);
+		&:hover,&:active {
+			background-image: none;
+			background-color: #f3f7f5;
+		}
 	}
 	.btn-work, .btn-give, .btn-apply {
 		box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.1), inset 0px 1px 4px rgba(255,255,255,0.65);
 	}
 	.btn-apply {
+		outline: none;
 		background: #ffec05 left bottom repeat-x url(../img/bg-btn-lg-yellow.png);
-		&:hover {
+		&:hover,&:active {
 			background-image: none;
-			background-color: #ffec05;
+			background-color: #ffee6c;
 		}
-		&:active {
-			padding: 13px 43px 11px 9px;
-			outline: none;
+	}
+	.btn-apply.btn-micro, .btn-apply.btn-small {
+		filter: none;
+		background: #ffec05 left bottom repeat-x url(../img/bg-btn-sm-yellow.png);
+		&:hover,&:active {
+			background-image: none;
+			background-color: #ffee6c;
 		}
 	}
 	.btn-work {
 		filter: none;
+		outline: none;
 		background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);
-		&:hover {
+		&:hover,&:active{
 			background-image: none;
 			background-color: #f3f7f5;
 		}
-		&:active {
-			padding: 13px 43px 11px 9px;
-			outline: none;
+	}
+	.explore-box .btn {
+		filter: none;
+		background: #00bd6e left bottom repeat-x url(../img/bg-btn-sm-green.png);
+		&:hover,&:active{
+			background-image: none;
+			background-color: #00a249;
 		}
 	}
 }
