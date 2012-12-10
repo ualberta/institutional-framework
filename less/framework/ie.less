@@ -92,6 +92,27 @@
     margin-left:  0;
   }
   
+  .person-search, .subscribe-form, icon-field {
+    position: relative;
+    i {
+      position: absolute;
+      color: #ccc;
+      #em > .position(top,6,@baseFontSizepx);
+      #em > .position(left,10,@baseFontSizepx);
+      z-index: 100;
+    }
+    input {
+      #em > .padding(left,30,@baseFontSizepx);
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      padding: 6px 10px;
+    }
+  }
+  
   // No media queries, set container widths
   .row-fluid {
       .feature-area {
