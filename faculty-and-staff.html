@@ -385,7 +385,8 @@
   <!-- scripts concatenated and minified via build script -->
 <script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
 <script src="https://raw.github.com/ualberta/institutional-framework/production/js/ualberta/institutional.js"></script>
-<script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>xs
+<script src="js/jquery.placeholder.js"></script>
 <script>
  (function($) {
       $(document).ready(function() {
@@ -444,9 +445,10 @@
       });
     });
     })(jQuery);
-    
+    $(function() {
+ $('input, textarea').placeholder();
+});
 </script>
-
 <!-- End scripts -->
 
 </body>
