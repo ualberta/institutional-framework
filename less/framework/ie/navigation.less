@@ -1,3 +1,23 @@
+@navWidth:       729px;
+
+@wuNav:          129px;
+@fpNav:          180px;
+@rsNav:          90px;
+@adNav:          100px;
+@clNav:          106px;
+@neNav:          124px;
+@margNav:        20px;
+@borderNav:      1px;
+
+@wuNavFluid:     percentage(@wuNav/@navWidth);
+@fpNavFluid:     percentage(@fpNav/@navWidth);
+@rsNavFluid:     percentage(@rsNav/@navWidth);
+@adNavFluid:     percentage(@adNav/@navWidth);
+@clNavFluid:     percentage(@clNav/@navWidth);
+@neNavFluid:     percentage(@neNav/@navWidth);
+@margNavFluid:   percentage(@margNav/@navWidth);
+@borderNavFluid: percentage(@borderNav/@navWidth);
+
 .navigation-container {
   border-top-color: #CCC404;
   border-left-width: 0px;
@@ -81,6 +101,7 @@
 }
 
 .navigation-inner ul.main-navigation > li:hover > a {
+  background-color: #f6fcf9;
   background-color: rgba(255,255,255,0.5);
 }
 
@@ -110,26 +131,6 @@
   height: auto!important;
   overflow: visible!important;
 }
-
-@navWidth:       729px;
-
-@wuNav:          129px;
-@fpNav:          180px;
-@rsNav:          90px;
-@adNav:          100px;
-@clNav:          106px;
-@neNav:          124px;
-@margNav:        20px;
-@borderNav:      1px;
-
-@wuNavFluid:     percentage(@wuNav/@navWidth);
-@fpNavFluid:     percentage(@fpNav/@navWidth);
-@rsNavFluid:     percentage(@rsNav/@navWidth);
-@adNavFluid:     percentage(@adNav/@navWidth);
-@clNavFluid:     percentage(@clNav/@navWidth);
-@neNavFluid:     percentage(@neNav/@navWidth);
-@margNavFluid:   percentage(@margNav/@navWidth);
-@borderNavFluid: percentage(@borderNav/@navWidth);
 
 .navigation-container {
    border-bottom: 1px solid #ccc; 

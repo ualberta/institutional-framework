@@ -8,25 +8,8 @@
 
 .lt-ie8 {
   // IE7 and below
-  .image-caption-container .feature-caption {
-    background: #fff;
-  }
-  
-  .frame, .extrude, .tab-content {
-    border: 1px solid #e0e0e0;
-  }
-  
-  .banner-container {
-    background-color:#007c41;
-  }
-  
-  .primary-content-area .latest-news div.news-heading {
-    overflow: auto;
-  }
   
   ul.quick-links li, 
-  .navigation-inner ul li a,
-  .navigation-inner ul li,
   .blade-search,
   ul.quick-links-container,
   ul.quick-links-container li,
@@ -39,23 +22,14 @@
     .ie7-inline-block();  
   } 
   
-  .row-fluid .primary-content-area,
-  .row-fluid .footer-faculty-links,
-  .row-fluid .footer-copyright {
-    margin-left:  0;
+  // Fix extra space on global navigation
+  .navigation-container {
+    height: 40px;
   }
-  
+ 
+  // Align search with links
   .blade-search {
     top: -15px;
-  }
-  
-  .navigation-inner ul.main-navigation {
-    border-right: 1px solid #fff;
-  }
-  
-  h5.sidebar-title {
-  	padding-top: 6px;
-  	padding-bottom: 9px;
   }
   
   li.expanded a.accordion-toggle{padding-bottom:10px!important;height:22px;}
@@ -69,27 +43,103 @@
   	margin-bottom:0px;
   }
   
-  .btn-work {
-  	filter: none;
-  	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);
-  	&:hover {
-  		filter: none;
-  		background-image: none;
-  		background-color: #f3f7f5;
-  	}
+  // base.less overrides
+  // -----------------------
+  
+  .image-caption-container {
+    .caption {
+      position: static;
+      padding: 6px 0px 3px 0px;
+      background: #fff;
+      color: @lightText;
+      text-shadow: none;
+      a {
+        color: @linkColor;
+      }
+      p,h3 {
+        padding: 0px;
+        margin-bottom: 0;
+        line-height: 1.4em;
+      }
+    }
   }
+  
+  .content-top-row {
+    #em > .size(width,@desktop_RowWidth,@baseFontSizepx);
+    .border-radius(4px);
+    .tab-content {
+      overflow: auto;
+      min-height: 260px;
+      #em > .size(height,260,@baseFontSizepx);
+    }
+  }
+  
+  .navigation-inner ul li a,
+  ul.quick-links li {
+    margin-right: 0px;
+  }
+  
+  
 }
 
 .lt-ie9 {
   // IE8 and below
+  
+  // < IE9 does not support :first-child and :last-child selectors
+  .row-fluid .primary-content-area,
+  .row-fluid .footer-faculty-links,
+  .row-fluid .footer-copyright {
+    margin-left:  0;
+  }
+  
+  // No media queries, set container widths
+  .row-fluid {
+      .feature-area {
+        width: @desktop_FeatureFluid;
+      }
+      .audience-area {
+        width: @desktop_AudienceFluid;
+      }
+      .primary-content-area {
+        width: @desktop_PriColFluid;
+      }
+      .secondary-content-area {
+        width: @desktop_SecColFluid;
+      }
+      .sidebar {
+        width: @desktop_SidebarFluid;
+      }
+  }
+  
+  // Set a semi-transparent background for captions
+  .hover-caption-container .caption {
+    overflow: auto;
+    filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0)";
+  }
+  
+  // Modal window shows on IE, get rid of that
+  .hide, .modal.hide {
+    display: none;
+  }
+  
 }
 
 .ie7 {
-  
+  // alignment for sidebar title
+  h5.sidebar-title {
+  	padding-top: 6px;
+  	padding-bottom: 9px;
+  }
 }
 
 .ie8 {
-  
+  // alignment for sidebar title
+  h5.sidebar-title {
+  	margin-top: -9px;
+  	margin-right: -9px;
+  	padding-top: 9px;
+  	padding-bottom: 6px;
+  }
 }
 
 .ie9 {

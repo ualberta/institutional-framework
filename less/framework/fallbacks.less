@@ -1,0 +1,88 @@
+.no-inlinesvg {
+  
+  // Banner
+  // ----------------
+  .banner-container .banner-logo {
+    background: transparent url(../img/ieLogo.png) no-repeat center center;
+    #em > .size(width,210,@baseFontSizepx);
+    #em > .size(height,55px,@baseFontSizepx);
+    img { display: none; }
+  }
+  
+}
+
+.no-boxshadow {
+  .frame, .extrude {
+    border: 1px solid #e0e0e0;
+  }
+  
+  .navigation-container {
+  
+    .navigation-inner ul li a {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #cbd2cd;
+    }
+    
+    .navigation-inner ul.main-navigation {
+      border-left: 1px solid #cbd2cd;
+      border-right: 1px solid #fff;
+    }
+    
+  }
+
+}
+
+.no-cssgradients {
+  
+  // Banner
+  // ----------------
+  .banner-container { 
+    background: #007c41 url(../img/banner-bg.jpg) repeat-x top left;
+    .oval-container, .oval { display: none; }
+  }
+  
+  // Navigation
+  // ----------------
+  .navigation-container {
+    border-top: 1px solid #ccc404;
+    border-bottom-color: #abb1ae;
+    background: transparent url(../img/navbar-bg.gif) repeat-x center center;
+    .navigation-inner > ul > li { background: none; }
+  }
+  
+  // Buttons
+  // ----------------
+  
+  .btn-apply {
+  	filter: none;
+  	background: #ffec05 left bottom repeat-x url(../img/bg-btn-lg-yellow.png);
+  	&:hover {
+  		filter: none;
+  		background-image: none;
+  		background-color: #ffee6c;
+  	}
+  }
+  
+  .btn-work {
+  	filter: none;
+  	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);
+  	&:hover {
+  		filter: none;
+  		background-image: none;
+  		background-color: #fff;
+  	}
+  }
+  
+  
+  hr.soften {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    *display : list-item;
+    *list-style : url(../img/hr-bevel-short.png) inside;
+    *filter : alpha(opacity=0);
+    *margin-left: -10px;
+    *width : 0;
+    *border:none;
+  }
+}
