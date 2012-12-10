@@ -2,8 +2,293 @@
   // All IE
 }
 
-.lt-ie7 {
-  // IE6 and below
+/** IE9 AND BELOW **/
+.lt-ie9 {
+  
+  // < :first-child and :last-child selectors not supported
+  .row-fluid .primary-content-area,
+  .row-fluid .footer-faculty-links,
+  .row-fluid .footer-copyright {
+    margin-left:  0;
+  }
+  
+  .person-search, .subscribe-form, icon-field {
+    position: relative;
+    i {
+      position: absolute;
+      color: #ccc;
+      #em > .position(top,6,@baseFontSizepx);
+      #em > .position(left,10,@baseFontSizepx);
+      z-index: 100;
+    }
+    input {
+      #em > .padding(left,30,@baseFontSizepx);
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      padding: 6px 10px;
+    }
+  }
+  
+  // No media queries, set container widths
+  .row-fluid {
+      .feature-area {
+        width: @desktop_FeatureFluid;
+      }
+      .audience-area {
+        width: @desktop_AudienceFluid;
+      }
+      .primary-content-area {
+        width: @desktop_PriColFluid;
+      }
+      .secondary-content-area {
+        width: @desktop_SecColFluid;
+      }
+      .sidebar {
+        width: @desktop_SidebarFluid;
+      }
+  }
+  
+  // Set a semi-transparent background for captions
+  .hover-caption-container .caption {
+    overflow: auto;
+    filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0)";
+  }
+  
+  // Modal window shows on IE, get rid of that
+  .hide, .modal.hide {
+    display: none;
+  }
+  
+  .page-breadcrumb, .breadcrumb {
+    display: none;
+  }
+  
+  // blade.less overrides - IE7/8
+  .blade-container {
+    .dropdown-toggle {
+      display: none;
+    }
+    ul.quick-links {
+      display:  inline-block;
+      .ie7-inline-block();
+      list-style: none;
+      margin: 2px 0 0 0;
+      padding: 0;
+      li {
+        display:  inline-block;
+        .ie7-inline-block();
+        margin-right: -4px;
+        padding: 0px;
+        &:last-child {
+          a { border: 0px }
+        }
+        a {
+          display:  block;
+          padding: 0px 10px;
+          border-right: 1px solid #eee;
+        }
+      }  
+    }
+    .icon-bar {
+      display: none;
+    }
+    .quick-links-container .quick-links-button {
+      display: none;
+    }
+  }
+  
+  // banner.less overrides
+  .banner-container {
+    .banner-inner {
+      h1 {
+        left: 0px;
+        font-size: 2em;
+      } 
+    }
+    .oval-container {
+      display: none;
+    }
+    .shadow-container {
+      display: none;
+    }
+    .oval {
+      display: none;
+    }
+    
+    nav.audience-navigation {
+      position: absolute;
+      right: 0px;
+      bottom: 20px;
+      z-index: 50;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      ul li {
+        display: block;
+        position: relative;
+        float: left;
+        margin-left: 20px;
+      }
+      ul li a {
+        color: #fff;
+        font-family: @headingsFontFamily;
+        font-weight: @headingsFontWeight;
+      }
+      ul li a:hover {
+        text-decoration: underline;
+      }
+    }
+    .banner-logo {
+      position: absolute;
+      z-index: 999;
+      top: 20px;
+    }
+    .banner-inner h1 {
+      display: none;
+    }
+  }
+  
+  // navigation.less overrrides 
+  .navigation-container {
+    @navWidth:       729px;
+    
+    @wuNav:          129px;
+    @fpNav:          180px;
+    @rsNav:          90px;
+    @adNav:          100px;
+    @clNav:          106px;
+    @neNav:          124px;
+    @margNav:        20px;
+    @borderNav:      1px;
+    
+    @wuNavFluid:     percentage(@wuNav/@navWidth);
+    @fpNavFluid:     percentage(@fpNav/@navWidth);
+    @rsNavFluid:     percentage(@rsNav/@navWidth);
+    @adNavFluid:     percentage(@adNav/@navWidth);
+    @clNavFluid:     percentage(@clNav/@navWidth);
+    @neNavFluid:     percentage(@neNav/@navWidth);
+    @margNavFluid:   percentage(@margNav/@navWidth);
+    @borderNavFluid: percentage(@borderNav/@navWidth);
+    
+    border-bottom: 1px solid #ccc; 
+    
+    .navigation-inner > ul > li {
+      display: block;
+      .clearfix();
+      margin-right: 0px;
+    } 
+    
+    .navigation-inner ul li ul li a {
+      display: block;
+    }
+    
+    .navigation-inner ul li {
+      position: relative;
+      padding: 0;
+      a { 
+        margin-right: 0px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    
+    .navigation-inner ul li ul li {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+      float: left;
+      text-align: center;
+      display: block;
+      margin-right: 0px;
+      border-left: 1px solid #f9fffc;
+      border-right: 1px solid #c9cfcc;
+      text-align: center;
+      &.audience-link {
+        display: none;
+      }
+    }
+    
+    .navigation-inner ul.main-navigation > li:hover > a {
+      background-color: #f6fcf9;
+      background-color: rgba(255,255,255,0.5);
+    }
+    
+    .navigation-inner ul.main-navigation > li:hover > a:active {
+      background-color: rgba(0,30,0,0.1);
+      border-top: 1px solid rgba(0,0,0,0.25);
+      padding-top: 11px;
+      .box-shadow(inset 0px 1px 6px rgba(0,0,0,0.25));
+      color: @grayDark;
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.65);
+      margin-left: -1px;
+      border-left: 1px solid #a2a7a3;
+    }
+    
+    .navigation-inner ul li .navigation-toggle {
+      display: none;
+    }
+    
+    .main-navigation.collapse {
+      display:block;
+      height: auto!important;
+      overflow: visible!important;
+    }
+    
+    .navigation-inner ul li ul {
+      display: block;
+      width: 940px;
+      border: none;
+      li {
+        border: none;
+      }
+      .nav1 {
+        width: @wuNavFluid;
+      }
+      .nav2 {
+        width: @fpNavFluid;
+      }
+      .nav3 {
+        width: @rsNavFluid;
+      }
+      .nav4 {
+        width: @adNavFluid;
+      }
+      .nav5 {
+        width: @clNavFluid;
+      }
+      .nav6 {
+        width: @neNavFluid;
+      }
+    }
+  }
+  
+  // campus-life overrides
+  .campuslife {
+  	.sidebar {
+  		.links ul li a {
+  			line-height: 135%;
+  			padding-top: 0.4em;
+  			padding-bottom: 0.4em;
+  		}
+  		.date {
+  			line-height: 1em;
+  			margin-bottom: 0.5em;
+  			margin-top: 0.5em;
+  			font-size: 0.9em;
+  			color: @lightText;
+  		}
+  		.givingcontent div {
+  			margin: 1em auto 0.5em auto;
+  		}
+  	}
+  }
 }
 
 .lt-ie8 {
@@ -85,67 +370,8 @@
   
 }
 
-.lt-ie9 {
-  // IE8 and below
-  
-  // < IE9 does not support :first-child and :last-child selectors
-  .row-fluid .primary-content-area,
-  .row-fluid .footer-faculty-links,
-  .row-fluid .footer-copyright {
-    margin-left:  0;
-  }
-  
-  .person-search, .subscribe-form, icon-field {
-    position: relative;
-    i {
-      position: absolute;
-      color: #ccc;
-      #em > .position(top,6,@baseFontSizepx);
-      #em > .position(left,10,@baseFontSizepx);
-      z-index: 100;
-    }
-    input {
-      #em > .padding(left,30,@baseFontSizepx);
-    }
-    button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 30px;
-      padding: 6px 10px;
-    }
-  }
-  
-  // No media queries, set container widths
-  .row-fluid {
-      .feature-area {
-        width: @desktop_FeatureFluid;
-      }
-      .audience-area {
-        width: @desktop_AudienceFluid;
-      }
-      .primary-content-area {
-        width: @desktop_PriColFluid;
-      }
-      .secondary-content-area {
-        width: @desktop_SecColFluid;
-      }
-      .sidebar {
-        width: @desktop_SidebarFluid;
-      }
-  }
-  
-  // Set a semi-transparent background for captions
-  .hover-caption-container .caption {
-    overflow: auto;
-    filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0)";
-  }
-  
-  // Modal window shows on IE, get rid of that
-  .hide, .modal.hide {
-    display: none;
-  }
-  
+.lt-ie7 {
+  // IE6 and below
 }
 
 .ie7 {
@@ -167,6 +393,108 @@
 }
 
 .ie9 {
+
+  // Buttons.less Overrides
+  // ------------------------
+  .btn {
+  	filter: none;
+  	outline: none;
+  }
+  .btn-grey {
+  	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-grey.png);
+  	&:hover,&:active {
+  		background-image: none;
+  		background-color: #f3f7f5;
+  	}
+  }
+  .btn-work, .btn-give, .btn-apply {
+  	box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.1), inset 0px 1px 4px rgba(255,255,255,0.65);
+  }
+  .btn-apply {
+  	outline: none;
+  	background: #ffec05 left bottom repeat-x url(../img/bg-btn-lg-yellow.png);
+  	&:hover,&:active {
+  		background-image: none;
+  		background-color: #ffee6c;
+  	}
+  }
+  .btn-apply.btn-micro, .btn-apply.btn-small {
+  	filter: none;
+  	background: #ffec05 left bottom repeat-x url(../img/bg-btn-sm-yellow.png);
+  	&:hover,&:active {
+  		background-image: none;
+  		background-color: #ffee6c;
+  	}
+  }
+  .btn-work {
+  	filter: none;
+  	outline: none;
+  	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);
+  	&:hover,&:active{
+  		background-image: none;
+  		background-color: #f3f7f5;
+  	}
+  }
+  .explore-box .btn {
+  	filter: none;
+  	background: #00bd6e left bottom repeat-x url(../img/bg-btn-sm-green.png);
+  	&:hover,&:active{
+  		background-image: none;
+  		background-color: #00a249;
+  	}
+  }
+  
+  // scaffolding.less Overrides
+  // ------------------------
+  .frame, .extrude {
+  	.box-shadow(0 1px 4px 1px rgba(0, 30, 15, 0.2));
+  }
+  
+  // type.less Overrides
+  // ------------------------
+  h5.sidebar-title {
+  	margin-left: -9px;
+  	filter: none;
+  	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
+  }
+
+  // link-module.less Overrides
+  // ------------------------ 
+  .link-mod-container {
+    li.link-mod-active h4 a {
+      filter:none;
+      background-image:url('../img/link-mod-active-bg.png');
+    }
+    li.link-mod-active::before {
+      display:none;
+    }
+    li.link-mod-active h4 a::after {
+      font-family:FontAwesome;
+      font-syle:normal;
+      font-weight:normal;
+      text-decoration:inherit;
+      margin-top:10px;
+      margin-left:10px;
+      content:"\f0da";
+    }
+  }
+  
+  // make-a-gift.less Overrides
+  // ------------------------ 
+  .make-a-gift .btn-give.btn-micro, .btn-give {
+  	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);
+  	&:hover {
+  		background-image: none;
+  		background-color: #f3f7f5;
+  	}
+  }
+  
+  // admissions.less overrides
+  // ------------------------ 
+  .admissions .btn-apply:after {
+  	font-size: 0.7em;
+  	margin-right: -2px;
+  }
   
 }
 
