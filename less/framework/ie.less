@@ -1,0 +1,169 @@
+.ie {
+  // All IE
+}
+
+.lt-ie7 {
+  // IE6 and below
+}
+
+.lt-ie8 {
+  // IE7 and below
+  
+  ul.quick-links li, 
+  .blade-search,
+  ul.quick-links-container,
+  ul.quick-links-container li,
+  .latest-news div.news-heading h3, 
+  .latest-news div.news-heading a,
+  .latest-news ul.news-list li.news-row span.news-date,
+  ul.footer-quick-links,
+  ul.footer-quick-links li,
+  {
+    .ie7-inline-block();  
+  } 
+  
+  // Fix extra space on global navigation
+  .navigation-container {
+    height: 40px;
+  }
+ 
+  // Align search with links
+  .blade-search {
+    top: -15px;
+  }
+  
+  li.expanded a.accordion-toggle{padding-bottom:10px!important;height:22px;}
+  li.expanded a.accordion-toggle:hover{background-color:none;}
+  .sidebar .links-module .links li a{
+  	padding-top:0px;
+  }
+  
+  .sidebar .links-module .links li a:hover{
+  	border-bottom:0px;
+  	margin-bottom:0px;
+  }
+  
+  // base.less overrides
+  // -----------------------
+  
+  .image-caption-container {
+    .caption {
+      position: static;
+      padding: 6px 0px 3px 0px;
+      background: #fff;
+      color: @lightText;
+      text-shadow: none;
+      a {
+        color: @linkColor;
+      }
+      p,h3 {
+        padding: 0px;
+        margin-bottom: 0;
+        line-height: 1.4em;
+      }
+    }
+  }
+  
+  .content-top-row {
+    #em > .size(width,@desktop_RowWidth,@baseFontSizepx);
+    .border-radius(4px);
+    .tab-content {
+      overflow: auto;
+      min-height: 260px;
+      #em > .size(height,260,@baseFontSizepx);
+    }
+  }
+  
+  .navigation-inner ul li a,
+  ul.quick-links li {
+    margin-right: 0px;
+  }
+  
+  
+}
+
+.lt-ie9 {
+  // IE8 and below
+  
+  // < IE9 does not support :first-child and :last-child selectors
+  .row-fluid .primary-content-area,
+  .row-fluid .footer-faculty-links,
+  .row-fluid .footer-copyright {
+    margin-left:  0;
+  }
+  
+  .person-search, .subscribe-form, icon-field {
+    position: relative;
+    i {
+      position: absolute;
+      color: #ccc;
+      #em > .position(top,6,@baseFontSizepx);
+      #em > .position(left,10,@baseFontSizepx);
+      z-index: 100;
+    }
+    input {
+      #em > .padding(left,30,@baseFontSizepx);
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      padding: 6px 10px;
+    }
+  }
+  
+  // No media queries, set container widths
+  .row-fluid {
+      .feature-area {
+        width: @desktop_FeatureFluid;
+      }
+      .audience-area {
+        width: @desktop_AudienceFluid;
+      }
+      .primary-content-area {
+        width: @desktop_PriColFluid;
+      }
+      .secondary-content-area {
+        width: @desktop_SecColFluid;
+      }
+      .sidebar {
+        width: @desktop_SidebarFluid;
+      }
+  }
+  
+  // Set a semi-transparent background for captions
+  .hover-caption-container .caption {
+    overflow: auto;
+    filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0)";
+  }
+  
+  // Modal window shows on IE, get rid of that
+  .hide, .modal.hide {
+    display: none;
+  }
+  
+}
+
+.ie7 {
+  // alignment for sidebar title
+  h5.sidebar-title {
+  	padding-top: 6px;
+  	padding-bottom: 9px;
+  }
+}
+
+.ie8 {
+  // alignment for sidebar title
+  h5.sidebar-title {
+  	margin-top: -9px;
+  	margin-right: -9px;
+  	padding-top: 9px;
+  	padding-bottom: 6px;
+  }
+}
+
+.ie9 {
+  
+}
+
