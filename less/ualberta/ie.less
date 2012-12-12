@@ -130,36 +130,72 @@
   }
   
   // why-ualberta.less - ie7/ie8
-  .why-ualberta .content-top-row {
-    background: none;
-  }
-  .why-ualberta .fma-container {
-    background: transparent url(../img/ieWhirl-8kb.jpg) no-repeat top left;
-    #em > .size(width,940,@baseFontSizepx);
-    #em > .size(height,300,@baseFontSizepx);
-    margin: 0 auto;
-    .ualberta-minute {
-      font-size: 1em;
+  .why-ualberta {
+    .content-top-row {
+      background: none;
     }
-    .student-video-container .frame,
-    .hr-video-container .frame {
-      #em > .size(width,230,@baseFontSizepx);
+    .fma-container {
+      background: transparent url(../img/ieWhirl-8kb.jpg) no-repeat top left;
+      width: 940px;
+      height: 300px;
+      margin: 0 auto;
+      .ualberta-minute {
+        font-size: 1em;
+      }
+      .thumbnail-slide {
+        margin-top: 1%;
+      }
+      .thumbnail-container .frame {
+        #em > .size(width,230,@baseFontSizepx);
+      }
+      .fma-slide {
+        width:  100%;
+      }
+      .ualberta-minute {
+        font-size: 0.85714285714286em;
+        #em > .size(height,300,12);
+        min-height: 300px;
+        background: url(../img/ieWhyUalberta-33k.gif) no-repeat top left;
+        .circle, .context {
+          display: none;
+        }
+        .ualberta-link {
+          position: relative;
+          width: 940px;
+          height: 300px;
+          display: block;
+          i { display: none; }
+          span {
+             position: absolute;
+             width: 205px;
+             top: 260px;
+             left: 50%;
+             margin-left: -113px;
+             &:hover {
+               text-decoration:none;
+             }
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
     }
-    .fma-slide {
-      width:  100%;
-    }
-    .ualberta-minute {
-      font-size: 0.85714285714286em;
-      #em > .size(height,300,12);
-      min-height: 300px;
-    }
-  }
-  .why-ualberta .fma-tabs-container .fma-tabs {
-    width: auto;
-    li {
-      display: inline-block;
-      .ie7-inline-block();
-      width: 33%;
+    .fma-tabs-container .container {
+      width: 940px;
+      .fma-tabs {
+        width: auto;
+        li {
+          display: inline-block;
+          .ie7-inline-block();
+          width: 314px;
+          margin-right: -5px;
+          *margin-right:-1px;
+        }
+        li a {
+          border-right: 1px solid #ccc;
+        }
+      }
     }
   }
 }

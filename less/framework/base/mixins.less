@@ -581,15 +581,15 @@
 .btnLightShinyBackground(@backgroundColor: #F7FCF9, @textColor: #666, @textShadow:1px 1px 1px #fff) {
   text-shadow: @textShadow;
   background-color: @backgroundColor;
-  background: -o-linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
+  background-image: -o-linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
 			-o-linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.35) 50%, transparent 50%);
-  background: -webkit-linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
+  background-image: -webkit-linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
 			-webkit-linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.35) 50%, transparent 50%);
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(0,0,0,0.1))), 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(0,0,0,0.1))), 
     -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.15)), color-stop(0.5, rgba(255,255,255,0.35)), color-stop(0.5, transparent), to(transparent));
-  background: -moz-linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
+  background-image: -moz-linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
   			-moz-linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.35) 50%, transparent 50%);
-  background: linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
+  background-image: linear-gradient(transparent 90%, rgba(0,0,0,0.1)), 
 			linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.35) 50%, transparent 50%);
   .box-shadow(0px 1px 4px rgba(0,0,0,0.2), inset 0px 1px 4px rgba(255,255,255,0.65));
   border: 1px solid;

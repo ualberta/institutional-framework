@@ -63,7 +63,23 @@
 }
 
 .btn {
-  .standard-button(#ffdb05, #007c41);
+  border: 1px solid;
+  font-size: 1.2em;
+  line-height: 1em;
+  padding: 0.8em 1.5em 0.6em 1.5em; 
+  .border-radius(7px); 
+  font-family: @heavyFontFamily;
+  font-weight: @heavyFontWeight;
+  text-decoration: none; 
+  font-weight:500;  
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-shadow:  none;
+    text-decoration: none;
+  }
 }
 
 .btn-green {
