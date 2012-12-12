@@ -19,6 +19,7 @@
     #gradient > .vertical(#00AF5C,#007C41);
     margin:  -1px -5px 0px -5px;
     padding-left: 14px;
+    padding-right: 45px;
     border-left: 1px solid transparent;
     border-top: none;
     border-bottom: 1px solid #007C41;
@@ -28,7 +29,7 @@
   & > li > a {
     display: block;
     .gradient-row();
-    padding: 7px 10px;
+    padding: 7px 40px 7px 10px;
     font-weight: bold;
   }
   & li ul {
@@ -56,9 +57,9 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    margin: 0;
+    margin: 0 0 -12px 0;
     padding: 12px 0 0px 0;
-    height: 22px;
+    height: 100%;
     width: 35px;
     color:  @linkColor;
     border-left: 1px solid #dfe9e3;
@@ -69,15 +70,12 @@
     text-align: center;
     vertical-align: middle;
     font-size:0.9em;
-    
-    .box-shadow(inset 0px 0px 6px #fff);
   }
   & li.expanded a.accordion-toggle {
     background: none;
     border: none;
     color: #fff;
-    height: 23px;
-    .box-shadow(inset 0px 0px 6px darken(#007C41,5%));
+    height: 100%;
     margin-right: -5px;
     padding-right: 5px;
     padding-left: 5px;
