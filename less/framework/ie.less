@@ -285,7 +285,6 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   .campuslife {
   	.sidebar {
   		.links ul li a {
-  			line-height: 135%;
   			padding-top: 0.4em;
   			padding-bottom: 0.4em;
   		}
@@ -466,6 +465,21 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   	padding-top: 9px;
   	padding-bottom: 6px;
   }
+  // alignment for sidebar hovers 
+ .sidebar .links-module .links li a {
+ 	&:hover {
+ 		margin-right: -9px;
+ 	}
+ }
+ // admissions.less overrides
+ // ------------------------ 
+ .admissions .btn-micro.btn-apply {
+ 	&:after { 
+ 		font-size: 1.4em;
+ 		margin-right: -2px;
+ 	}  
+ }
+ 
  //Video Icon//
   .hover-caption-container  i{
     position:absolute; 
@@ -550,7 +564,7 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   	filter: none;
   	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
   }
-
+  
   // link-module.less Overrides
   // ------------------------ 
   .link-mod-container {
@@ -581,13 +595,14 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   		background-color: #f3f7f5;
   	}
   }
-  
   // admissions.less overrides
   // ------------------------ 
-  .admissions .btn-apply:after {
-  	font-size: 0.7em;
-  	margin-right: -2px;
+  .admissions .btn-micro.btn-apply {
+  	&:after { 
+  		font-size: 0.7em;
+  		margin-right: -2px;
+  	}  
   }
-  
 }
+
 
