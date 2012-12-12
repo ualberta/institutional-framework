@@ -275,7 +275,6 @@
   .campuslife {
   	.sidebar {
   		.links ul li a {
-  			line-height: 135%;
   			padding-top: 0.4em;
   			padding-bottom: 0.4em;
   		}
@@ -407,6 +406,14 @@
   	padding-top: 9px;
   	padding-bottom: 6px;
   }
+  // alignment for sidebar hovers 
+ .sidebar .links-module .links li a {
+ 	&:hover {
+ 		margin-right: -9px;
+ 	}
+ }
+    
+ 
  //Video Icon//
   .hover-caption-container  i{
     position:absolute; 
@@ -489,9 +496,6 @@
   	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
   }
   
-  // link-bucket.less Overrides
-  // ------------------------
-
   // link-module.less Overrides
   // ------------------------ 
   .link-mod-container {
