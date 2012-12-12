@@ -74,7 +74,7 @@ ghpages:
 	@mkdir -p ${PAGESDIR}/html
 	@mkdir -p ${PAGESDIR}/js
 	@recess --compile ./less/faculty.less > ./css/faculty.css
-	@recess --compile ${PROTOTYPE_LESS} > ./css/ualberta.css
+	@lessc ${PROTOTYPE_LESS} > ./css/ualberta.css
 	@lessc ./less/ualberta-ie.less > ./css/ualberta-ie.css
 	@cp -r ./css ${PAGESDIR}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
