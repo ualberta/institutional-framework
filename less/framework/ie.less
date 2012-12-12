@@ -4,7 +4,13 @@
 
 /** BELOW IE9 **/
 .lt-ie9 {
-  
+// Homepage
+  .ualberta-home .row-fluid .primary-content-area{
+	   width:57%;
+   }
+   .ualberta-home .row-fluid .secondary-content-area{
+	   width:40%;
+   }
   // < :first-child and :last-child selectors not supported
   .row-fluid .primary-content-area,
   .row-fluid .footer-faculty-links,
@@ -12,7 +18,7 @@
     margin-left:  0;
   }
   
-  .person-search, .subscribe-form, icon-field {
+  .person-search, icon-field {
     position: relative;
     i {
       position: absolute;
@@ -55,6 +61,10 @@
       }
   }
   
+  //Remove dotted lines on forms
+input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus, button{ 
+	outline : none;
+}
   // Set a semi-transparent background for captions
   .hover-caption-container .caption {
     overflow: auto;
@@ -272,6 +282,7 @@
     }
   }
   
+<<<<<<< HEAD
   
   // buttons.less overrides
   .btn {
@@ -311,6 +322,25 @@
   		background-image: none;
   		background-color: #f3f7f5;
   		border-color: #ccc;
+=======
+  // campus-life overrides
+  .campuslife {
+  	.sidebar {
+  		.links ul li a {
+  			padding-top: 0.4em;
+  			padding-bottom: 0.4em;
+  		}
+  		.date {
+  			line-height: 1em;
+  			margin-bottom: 0.5em;
+  			margin-top: 0.5em;
+  			font-size: 0.9em;
+  			color: @lightText;
+  		}
+  		.givingcontent div {
+  			margin: 1em auto 0.5em auto;
+  		}
+>>>>>>> 72c6e882e950b2f5c00ed1d95884ed816ed2303a
   	}
   }
   
@@ -490,6 +520,7 @@
 .lt-ie8 {
   // IE7 and below
   
+  // Homepage
   ul.quick-links li, 
   .blade-search,
   ul.quick-links-container,
@@ -512,8 +543,11 @@
   .blade-search {
     top: -15px;
   }
-  
-  li.expanded a.accordion-toggle{padding-bottom:10px!important;height:22px;}
+  .accordion-list > li.expanded > a:first-child{
+	 margin:-1px -10px 0px;
+	 padding-left:-10px;
+  }
+  li.expanded a.accordion-toggle{padding-bottom:11px!important;height:22px;}
   li.expanded a.accordion-toggle:hover{background-color:none;}
   .sidebar .links-module .links li a{
   	padding-top:0px;
@@ -571,6 +605,32 @@
 }
 
 .ie7 {
+// Homepage explore bar
+.explore-bar-container ul li i{
+	background-image:url('../img/explore-bg.jpg');
+	width:65px;
+	height:42px;
+	padding-top:25px;
+	font-size:2em;
+	padding-left:3px;
+}
+.explore-bar-container ul li i:hover{
+	background-image:url('../img/explore-bg.jpg');
+	background-position:0px -68px;
+}
+.explore-bar-container{
+	height:100px;
+}
+	//Homepage
+    .ualberta-home .row-fluid .main-content{
+	  width:76%;
+	  margin-right:0.625em;
+  }
+ .ualberta-home .row-fluid {
+ .primary-content-area, .secondary-content-area{
+	 margin-top:1.250em;
+ }
+ }
   // alignment for sidebar title
   h5.sidebar-title {
   	padding-top: 6px;
@@ -594,6 +654,25 @@
 }
 
 .ie8 {
+// Homepage explore bar
+.explore-bar-container ul li i{
+	background-image:url('../img/explore-bg.jpg');
+	width:68px;
+	height:39px;
+	padding-top:28px;
+	font-size:3em;
+}
+.explore-bar-container ul li i:hover{
+	background-image:url('../img/explore-bg.jpg');
+	background-position:0px -68px;
+}
+.explore-bar-container{
+	height:125px;
+}
+ // Homepage
+ .ualberta-home .row-fluid .main-content{
+	  width:79.8%;
+  }
   // alignment for sidebar title
   h5.sidebar-title {
   	margin-top: -9px;
@@ -601,6 +680,21 @@
   	padding-top: 9px;
   	padding-bottom: 6px;
   }
+  // alignment for sidebar hovers 
+ .sidebar .links-module .links li a {
+ 	&:hover {
+ 		margin-right: -9px;
+ 	}
+ }
+ // admissions.less overrides
+ // ------------------------ 
+ .admissions .btn-micro.btn-apply {
+ 	&:after { 
+ 		font-size: 1.4em;
+ 		margin-right: -2px;
+ 	}  
+ }
+ 
  //Video Icon//
   .hover-caption-container  i{
     position:absolute; 
@@ -616,6 +710,8 @@
     width:27%;
     line-height:1em;
   }
+  
+
 }
 
 .ie9 {
@@ -679,13 +775,11 @@
   // type.less Overrides
   // ------------------------
   h5.sidebar-title {
+  	margin-left: -9px;
   	filter: none;
   	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
   }
   
-  // link-bucket.less Overrides
-  // ------------------------
-
   // link-module.less Overrides
   // ------------------------ 
   .link-mod-container {
@@ -716,13 +810,14 @@
   		background-color: #f3f7f5;
   	}
   }
-  
   // admissions.less overrides
   // ------------------------ 
-  .admissions .btn-apply:after {
-  	font-size: 0.7em;
-  	margin-right: -2px;
+  .admissions .btn-micro.btn-apply {
+  	&:after { 
+  		font-size: 0.7em;
+  		margin-right: -2px;
+  	}  
   }
-  
 }
+
 
