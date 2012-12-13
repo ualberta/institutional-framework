@@ -276,7 +276,7 @@
 // CSS image replacement
 // -------------------------
 // Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
-.hide-text {
+.hide-text() {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -324,7 +324,7 @@
 // --------------------------------------------------
 
 // Block level inputs
-.input-block-level {
+.input-block-level() {
   display: block;
   width: 100%;
   min-height: 30px;        // Make inputs at least the height of their button counterpart
@@ -776,6 +776,16 @@
   background: -o-linear-gradient(top, rgba(0, 124, 65, 0), rgba(0, 124, 65, 0.05) 83%, rgba(0, 124, 65, 0.1));
   background: -moz-linear-gradient(top, rgba(0, 124, 65, 0), rgba(0, 124, 65, 0.05) 83%, rgba(0, 124, 65, 0.1));
   background: linear-gradient(top, rgba(0, 124, 65, 0), rgba(0, 124, 65, 0.05) 83%, rgba(0, 124, 65, 0.1));
+}
+
+// Elements for depth
+
+.extrude() {
+  #em > .padding(10,@baseFontSizepx);
+  background: #fff;
+  border: none;
+  .border-radius(3px);
+  .box-shadow(0 1px 4px rgba(0, 30, 15, 0.2));
 }
 
 

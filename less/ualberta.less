@@ -9,7 +9,9 @@
 
 /******** FRAMEWORK BASE START *********/
 
-@import "framework.less";
+// Core variables and mixins
+@import "framework/base/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "framework/base/mixins.less";
 
 /******** FRAMEWORK BASE END *********/
 
@@ -41,8 +43,5 @@
 @import "ualberta/modules/find-a-person.less";
 @import "ualberta/modules/daily-news.less";
 
-// ualberta.ca specific ie fixes
-@import "ualberta/ie.less";
-
 // Utility classes
-@import "framework/base/utilities.less"; // Has to be last to override when necessary
+@import "framework/base/utilities.less"; // Has to be last to override when necessary 
