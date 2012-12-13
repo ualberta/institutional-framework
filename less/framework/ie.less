@@ -294,7 +294,6 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   	outline: none;
   	filter: none;
   	background: #ffec05 left bottom repeat-x url(../img/bg-btn-lg-yellow.png);
-  	border-color: darken(@yellow, 10%);
   	&:hover {
   		background-image: none;
   		background-color: #ffee6c;
@@ -307,6 +306,18 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);
   	&:hover {
   		filter: none;
+  		background-image: none;
+  		background-color: #f3f7f5;
+  		border-color: #ccc;
+  	}
+  }
+  .make-a-gift .btn-give.btn-micro, .btn-give {
+  	filter: none;
+  	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);
+  	font-size: 0.9em;
+  	padding-top: 1em;
+  	padding-bottom: 0.7em;
+  	&:hover {
   		background-image: none;
   		background-color: #f3f7f5;
   		border-color: #ccc;
@@ -574,10 +585,6 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
 }
 
 .ie7 {
-
-// Font Awesome IE7
- @import "base/font-awesome-ie7.less";
-
 // Homepage explore bar
 .explore-bar-container ul li i{
 	background-image:url('../img/explore-bg.jpg');
@@ -649,7 +656,6 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   // alignment for sidebar title
   h5.sidebar-title {
   	margin-top: -9px;
-  	margin-right: -9px;
   	padding-top: 9px;
   	padding-bottom: 6px;
   }
@@ -748,7 +754,7 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   // type.less Overrides
   // ------------------------
   h5.sidebar-title {
-  	margin-left: -9px;
+//  	margin-left: -9px;
   	filter: none;
   	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
   }
