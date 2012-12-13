@@ -37,7 +37,9 @@
     }
   }
   ul.news-list {
+
     li.news-row {
+	  clear:both;
       .news-thumbnail {
         display: inline-block;
         float: left;
@@ -49,9 +51,7 @@
         color: @lightText;
         font-size:  @base13px;
       }
-      h4 {
-        font-size: @base16px;
-        line-height: 1.57em;
+      .small-image{
       }
       span.news-date {
         color: #999;
@@ -97,6 +97,9 @@
   }
 }
 
+.module-image-callout{
+	margin-bottom:20px;
+}
 .content-inner .latest-news .news-separator {
   margin-top: 20px;
 }
@@ -108,4 +111,3 @@
     margin: 0 0 10px 0;
   }
 }
-

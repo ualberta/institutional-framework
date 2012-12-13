@@ -13,7 +13,7 @@
 .dropdown-toggle {
   display: inline-block;
   .ie7-inline-block();
-  padding: 6px 10px 1px;
+  padding: 6px 10px 3px;
   background: #f6f6f6;
   margin-top: -8px;
   border-radius: 4px;
@@ -79,7 +79,7 @@ ul.quick-links-container {
   i {
     position: absolute;
     left: 5px;
-    top: 5px;
+    top: 7px;
     font-size:1.5em;
     line-height:1em;
     color:  #ccc;
@@ -87,7 +87,7 @@ ul.quick-links-container {
   }
   
   input.search-query {
-    width: 143px;
+    width: 130px;
     padding-left:  25px;
   }
 }
@@ -105,11 +105,28 @@ ul.quick-links-container {
      -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
           box-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
 }
-
 .icon-bar + .icon-bar {
   margin-top: 3px;
 }
-
 .quick-links-container .quick-links-button {
   display: none;
+}
+.blade-search input {
+  .border-radius(4px 0px 0px 4px);
+  width: 75%;
+  margin-right: 0;
+  height: 1.688em;
+  padding-left: 2.142857142857143em;
+}
+.blade-search .btn {
+  top: auto;
+  right: 0;
+  width: auto;
+  margin: 0;
+  .border-radius(0px 4px 4px 0px);
+ .box-shadow(none);
+  text-align: center;
+  margin-left: -5px;
+  height: 2.25em;
+  padding:0.6em 0.8em;
 }
