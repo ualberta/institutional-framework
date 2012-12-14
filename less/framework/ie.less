@@ -328,6 +328,7 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   .accordion-list {
     li.expanded a.accordion-toggle {
     	background-image:url(../img/expand.png);
+    	background-repeat: no-repeat;
       filter:none;
       color:#00974F;
       border: none;
@@ -389,7 +390,6 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
        color: #fff; 
        #gradient > .vertical(#00AF5C,#007C41);
        margin:  -1px -1px 0px -5px;
-       padding-left: 14px;
        .border-radius(5px 0px 0px 5px);
       }
       ul.link-mod-items {
@@ -574,9 +574,7 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
     margin-right: 0px;
   }
   
-  .accordion-list a.accordion-toggle {
-    height: 20px;
-  }
+
   
 }
 
@@ -585,6 +583,13 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
 }
 
 .ie7 {
+// Active Accordion list
+.accordion-list > li.expanded > a:first-child{
+	padding-left:20px;
+}
+  .accordion-list a.accordion-toggle {
+    height: 20px;
+  }
 // Homepage explore bar
 .explore-bar-container ul li i{
 	background-image:url('../img/explore-bg.jpg');
@@ -630,6 +635,9 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
     pointer-events:none;
     width:27%;
     line-height:1em;
+  }
+   .why-ualberta .fma-container .hover-caption-container  i{
+    width:30%;
   }
 }
 
@@ -683,8 +691,9 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
     width:27%;
     line-height:1em;
   }
-  
-
+ .why-ualberta .fma-container .hover-caption-container  i{
+    width:30%;
+  }
 }
 
 .ie9 {
