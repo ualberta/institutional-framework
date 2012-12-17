@@ -1,0 +1,43 @@
+.news-article {
+  p.teaser {
+    #em > .font-size(16,@baseFontSizepx);
+    color: @lightText;
+    margin-bottom: 1.57em/2;
+  }
+  p.caption {
+    width: auto;
+    padding: 10px;
+    margin-bottom: 0;
+    #em > .font-size(13,@baseFontSizepx);
+  }
+  article .story {
+    margin-top: 1.57em/2;
+  }
+  article .story p {
+    #em > .font-size(16,@baseFontSizepx);
+    line-height: 1.57em;
+  }
+  h1.page-title {
+    margin: 0.1em auto;
+    font-size: 2.1em;
+    line-height: 1em;
+    border: none;
+  }
+  .sidebar {
+    #em > .margin(top, 66, @baseFontSizepx);
+  }
+}
+
+@media (min-width: 75em) {
+  .news-article {
+    .primary-content-area {
+      width: 82.905982905983%;
+    }
+  }
+}
+
+@media (max-width: 61.1875em) and (min-width: 43.125em){
+	.news-article .sidebar {
+		#em > .position(top, 42, @baseFontSizepx);
+	}
+}

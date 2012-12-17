@@ -616,7 +616,7 @@
             <hr class="soften" />
             <h3>Centres &amp; Institutes</h3>
               <p>Explore our connections with communities of research and practice.</p>
-	            <button class="btn btn-grey btn-small" href="#">View our Centres and Institutes</button>
+	            <a class="btn btn-grey btn-small" href="#">View our Centres and Institutes</a>
 	        </div>  
           <!-- End Centres & Institutes -->
 
@@ -625,7 +625,7 @@
             <hr class="soften" />
             <h3>Professional Development</h3>
               <p>Stay current on knowledge and develop practical skills in your chosen field.</p>
-	            <button class="btn btn-grey btn-small" href="#">View our career development opportunities</button>
+	            <a class="btn btn-grey btn-small" href="#">View our career development opportunities</a>
           </div>
           <!-- End Professional Development -->
           
@@ -699,18 +699,16 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
-<script src="./compiled/js/bootstrap.min.js"></script>
-<script src="./js/bootstrap-collapse.js"></script>
-<script src="./js/bootstrap-transition.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.livesearch.js"></script>
+<script src="https://raw.github.com/ualberta/institutional-framework/production/js/ualberta/institutional.js"></script>
   <script>
-  
     $(document).ready(function() {
       $('.accordion-toggle').click(function() {
         $(this).parent().toggleClass('expanded');
         return false;
       });
     });
-    
   </script>
   <!-- end scripts -->
 
