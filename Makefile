@@ -92,6 +92,7 @@ ghpages:
 	@echo "Minifying and copying javascript...          ${CHECK} Done"
 	@cp ./*.html ${PAGESDIR}/
 	@cp -r ./img ${PAGESDIR}
+	@cp -r ./js/ualberta ${PAGESDIR}/js
 	@cp -r ./font ${PAGESDIR}
 	@cp -r ./html ${PAGESDIR}
 	@mv ${PAGESDIR}/homepage.html ${PAGESDIR}/index.html
