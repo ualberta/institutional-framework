@@ -44,6 +44,9 @@
     background-repeat: repeat-x;
     background-position: 50% 135%;
   }
+  .row-fluid .primary-content-area {
+    margin-bottom: 0;
+  }
 }
 
 .ualberta-home .sidebar {
@@ -197,6 +200,9 @@
       .secondary-content-area {
         width: @dTop_SecColFluid;
         margin-left: @dTop_innerGutterFluid;
+        & > hr.soften:first-child {
+          display:none;
+        }
       }
       .sidebar {
         width: @dTop_SidebarFluid;

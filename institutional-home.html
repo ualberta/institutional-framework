@@ -110,9 +110,7 @@
       <nav id="main-nav" class="navigation-inner">
         <ul>
           <li>
-            <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation">
-              Show Navigation <i class="icon-toggle-nav"></i>
-            </a>
+            <a class="navigation-toggle">Show Navigation <i class="icon-toggle-nav"></i></a>
             <ul class="main-navigation collapse">
               <li class="nav1" role="menuitem"><a href="#">Why UAlberta?</a></li>
               <li class="nav2" role="menuitem"><a href="#">Faculties &amp; Programs</a></li>
@@ -331,8 +329,14 @@
               <div class="module-heading">
                 <h3>Latest News</h3>
                   <!-- Link or button to toggle dropdown -->
-                  <a href="#" class="heading-link" data-toggle="dropdown" rel="tooltip" title="Subscribe to RSS feed"><i class="icon-rss"></i></a>
-                  <a href="#" class="heading-link" data-toggle="dropdown" rel="tooltip" title="Daily News Email"><i class="icon-envelope"></i></a>
+                  <ul class="module-actions">
+                    <li>
+                      <a href="#" class="heading-link btn btn-grey" rel="tooltip" title="Subscribe to RSS feed"><i class="icon-rss"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" class="heading-link btn btn-grey" rel="tooltip" title="Daily News Email"><i class="icon-envelope"></i></a>
+                    </li>
+                  </ul>
               </div>
               <ul class="news-list data-list">
                 <li class="news-row">
@@ -382,6 +386,7 @@
               </div>
             </div> 
             <div class="secondary-content-area span">
+              <hr class="soften" />
               <div class="campus-notices">
                 <div class="module-top">
                   <h3>Campus Notices</h3>
@@ -492,12 +497,11 @@
   <!-- scripts concatenated and minified via build script -->
 <script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
 <script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.tweet.js"></script>
+<script src="./js/ualberta/institutional.js"></script>
 <script src="./js/ualberta/jquery.flexslider-min.js"></script>
   <script>
     (function($) {
       $(document).ready(function() {
-      
-      $('.heading-link').tooltip();
       
       $("#explore-bar").flexslider({
       	animation: "slide",
@@ -592,23 +596,6 @@
         loading_text: "loading tweets...",
         template: "{text} {time}<br/>{reply_action} {retweet_action} {favorite_action}"
       });
-
-      $(document).on("click", ".video-modal-link", function () {
-        var videoSrc = $(this).attr('href');
-        // no modal for mobile
-        if($(window).width() < 500) {
-          window.location = videoSrc;
-        }
-        $('#videoModal iframe').attr('src', videoSrc);
-        $('#videoModal .modal-header h3').text($(this).data('title'));
-      });
-      
-
-      $('#videoModal').bind('hidden', function () {
-        $('#videoModal iframe').attr('src', '');
-      });
-
-      $('.start').removeClass('start');
 
     });
     })(jQuery);
