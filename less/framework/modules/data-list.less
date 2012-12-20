@@ -11,8 +11,9 @@
     h4 {
       font-size: 1em;
       font-family: @sansFontFamily;
-      line-height: 1em;
+      line-height: 1.57em;
       margin:  0px;
+      font-weight:bold;
       a {
         padding: 0;
         border: 0;
@@ -37,7 +38,7 @@
       border-bottom: none;
     }
     &:hover {
-      background-color:#FFF5B8;
+       #translucent > .background(@lightYellow, 15%);
       margin-left: -10px;
       margin-right:  -10px;
       padding-left: 9px;
@@ -45,7 +46,8 @@
       border-color: #E1D8A4;
       border-style: solid;
       margin-bottom: -1px;
-      text-decoration:none;
+      .border-radius(4px);
+      border-width: 1px 1px;
     }
     &.bottom-row {
       border-top-style: dotted;
