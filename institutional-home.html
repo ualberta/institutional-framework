@@ -21,8 +21,9 @@
   <!-- The Sheets -->
   <link href="./css/framework.css" rel="stylesheet">
   <link href="./css/ualberta.css" rel="stylesheet">
+  <link href="./css/explore-icons.css" rel="stylesheet">
   <!--[if IE]><link href="./css/framework-ie.css" rel="stylesheet"><link href="./css/ualberta-ie.css" rel="stylesheet"><![endif]-->
-   
+  <!--[if IE 7]><link href="./css/explore-icons-ie7.css" rel="stylesheet"><![endif]-->
     
   <!-- The Favicon -->
   <link rel="shortcut icon" href="./ico/favicon.ico">
@@ -70,10 +71,11 @@
             </li>
           </ul>
         </nav>
-       <div class="blade-search">
-          <i class="icon-search"></i>
-          <input type="search" class="search-query" placeholder="search">
-        </div> 
+        <div class="blade-search">
+           <i class="icon-search"></i>
+           <input type="search" class="search-query" placeholder="search">
+           <button type="submit" class="btn btn-grey btn-small">Search</button>
+        </div>
       </div>
     </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
 
@@ -213,61 +215,62 @@
   <div class="content-container container">    
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
       <div class="main-content span">
+      
         <div class="row-fluid">
-          <div class="extrude explore-bar-container span12">
-            <a href="#" class="eb-prev eb-control"><i class="icon-chevron-left"></i></a> 
-            <ul class="explore-bar">
+          <div class="module-container extrude ph-explore span12">
+          <div id="explore-bar" class="explore-bar-container">
+            <ul class="explore-bar slides">
               <li>
                 <a href="#">
-                  <i class="icon-map-marker"></i>
+                  <i class="icon-exp-maps"></i>
                   <span>Maps</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-calendar"></i>
+                  <i class="icon-exp-events"></i>
                   <span>Events</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-trophy"></i>
+                  <i class="icon-exp-athletics"></i>
                   <span>Athletics</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-book"></i>
+                  <i class="icon-exp-bookstore"></i>
                   <span>Bookstore</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-flag"></i>
+                  <i class="icon-exp-rec"></i>
                   <span>Recreation Services</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-heart"></i>
+                  <i class="icon-exp-wellness"></i>
                   <span>Wellness</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-fire"></i>
+                  <i class="icon-exp-students"></i>
                   <span>Students' Union</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-group"></i>
+                  <i class="icon-exp-community"></i>
                   <span>Community Relations</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-sitemap"></i>
+                  <i class="icon-exp-governance"></i>
                   <span>Governance</span>
                 </a>
               </li>
@@ -275,53 +278,53 @@
 
               <li>
                 <a href="#">
-                  <i class="icon-list-alt"></i>
+                  <i class="icon-exp-programs"></i>
                   <span>Programs</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-globe"></i>
+                  <i class="icon-exp-international"></i>
                   <span>International Impact</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-legal"></i>
+                  <i class="icon-exp-pres"></i>
                   <span>President</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-home"></i>
+                  <i class="icon-exp-museum"></i>
                   <span>Museums</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <i class="icon-briefcase"></i>
+                  <i class="icon-exp-grad"></i>
                   <span>Graduate Students' Association</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="icon-bullhorn"></i>
+                  <i class="icon-exp-media"></i>
                   <span>Media Relations</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <i class="icon-leaf"></i>
+                  <i class="icon-exp-sustainability"></i>
                   <span>Sustainability</span>
                 </a>
               </li>
-
             </ul>
-            <a href="#" class="eb-next eb-control"><i class="icon-chevron-right"></i></a> 
           </div>
         </div>
+        </div>
+        <hr class="soften explore-separator">
         <div class="row-fluid">
           <div class="primary-content-area span">
             <div class="module-container latest-news">
@@ -489,11 +492,26 @@
   <!-- scripts concatenated and minified via build script -->
 <script src="https://raw.github.com/ualberta/institutional-framework/production/js/bootstrap.min.js"></script>
 <script src="https://raw.github.com/ualberta/institutional-framework/master/js/ualberta/jquery.tweet.js"></script>
+<script src="./js/ualberta/jquery.flexslider-min.js"></script>
   <script>
     (function($) {
       $(document).ready(function() {
       
       $('.heading-link').tooltip();
+      
+      $("#explore-bar").flexslider({
+      	animation: "slide",
+        itemWidth: 93,
+        minItems: 4,
+        maxItems: 7,
+        itemMargin: 0,
+        controlNav: false,
+        slideshow: false,
+        animationLoop: true,
+        prevText: "",
+        nextText: "",
+        touch: true
+      });
       
       // FMA MODULE
       

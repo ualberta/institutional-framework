@@ -32,6 +32,18 @@
   .fma-container {
     margin-top: 1.57em;
   }
+  div.content-inner hr.explore-separator {
+    margin-top: 1.57em;
+  }
+  .content-top-row {
+    .box-shadow(inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
+    border-bottom: 1px solid rgba(0, 50, 25, 0.35);
+    border-top: 1px solid rgba(0, 50, 25, 0.25);
+    background-color: rgba(255, 200, 10, 0.1);
+    background-image: url('../img/whirl-bg.png');
+    background-repeat: repeat-x;
+    background-position: 50% 135%;
+  }
 }
 
 .ualberta-home .sidebar {
@@ -47,6 +59,8 @@
   .button-container {
     float: none;
     text-align: center;
+    margin-top: 2em;
+    font-size: 0.85em;
     a.btn {
       margin:  5px;
     }
@@ -59,7 +73,6 @@
 .ualberta-home .content-top-row {
   margin-top: 1.57em; 
   padding: 1em 0em; 
-  background-position: bottom left;
 }
 .explore-bar {
   margin-bottom: 1.57em;
@@ -108,7 +121,14 @@
     width: 25%; 
   }
   .ualberta-home .content-top-row {
-    background-position: 80px 95px;
+    .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
+    background-image: none;
+  }
+  .ualberta-home .why-ualberta-row {
+    .button-container {
+      font-size: 1em;
+      margin-top: 1em;
+    }
   }
   
   .ualberta-home .fma-container .fma-slide .fma-caption {
@@ -146,7 +166,7 @@
       }
     }
     .frame {
-      display:inline-block; float:left; width:20%; margin-right:2%; margin-bottom: 1em;
+      display:inline-block; float:left; width:24%; margin-right:2%; margin-bottom: 1em;
     }
     p.description {
       width: 54%;
@@ -182,45 +202,35 @@
         width: @dTop_SidebarFluid;
       }
     }
-  }
-  
-  .why-ualberta-row {
-    p.description {
-      width: 54%;
-      margin-left: 22%;
-    }
-    h3 {
-      margin-left: 22%;
-    }
-    & > .span {
-      padding: 0 15px;
-    }
-    .button-container {
-      right: 15px;
-    }
-  }
-  
-  .why-ualberta-row {
-    & > .span {
-      margin-bottom: -6px;
-    }
-    h3 { 
-      position: relative;  
-      top: -9px;
-    }
-    div.frame {
-      margin-bottom: 0;
-    }
-    p.description {
-      position: relative;
-      top: -13px;
-      margin-bottom: 0;
-    }
-    .button-container {
-      top: -2px;
+    .why-ualberta-row {
+      p.description {
+        width: 54%;
+        margin-left: 23.1%;
+        position: relative;
+        top: -13px;
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-left: 23.1%;
+        position: relative;  
+        top: -9px;
+      }
+      & > .span {
+        padding: 0 15px;
+      }
+      .button-container {
+        right: 15px;
+        margin-top: 0.5em;
+        top: -2px;
+      }
+      & > .span {
+        margin-bottom: -6px;
+      }
+      div.frame {
+        margin-bottom: 0;
+      }
     }
   }
-  
 }
 
 @media (min-width: 75em) {
@@ -241,6 +251,7 @@
     }
     .frame {
       margin-top: 6px;
+      width: 20%;
     }
     p.description {
       top: -12px;
@@ -278,16 +289,46 @@
   .why-ualberta-row {
     .frame {
       width: 34%;
-      float: left;
-      margin-right: 20px;
+      float: right;
+      margin-right: 0px;
+      margin-left: 20px;
+    }
+  }
+  .ualberta-home {
+    .content-top-row {
+      background-position: 50% 300%;
     }
   }
 }
 
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
-  .ualberta-home .sidebar {
-    top: 20px;
-    right:  0px;
-    position: absolute;
+  // main column: 75.26041666666666%
+  // margin: 2.7624309392265194%
+  .ualberta-home {
+    .why-ualberta-row {
+      .button-container {
+        width: 22.135416666666664%;
+        min-width: 156px;
+      }
+      h3,p.description {
+        margin-left: 28.42%;
+        width: (50.26041666666666% - 2.7624309392265194%);
+      }
+      .frame {
+        width: 25%;
+        margin-top: 1em;
+        margin-left: 0;
+        float: left;
+      }
+    }
+    .sidebar {
+      top: 0px;
+      right:  0px;
+      position: absolute;
+    } 
   }
+}
+
+@media (max-width: 530px) {
+
 }
