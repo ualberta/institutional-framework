@@ -11,6 +11,7 @@ ul.leftnav{
 }
 ul.leftnav li h3 a{
 	padding-left:0px;
+	font-size:0.9em;
 }
 ul.leftnav li a{
 	border-bottom:1px dotted @grayLight;
@@ -41,4 +42,15 @@ ul.leftnav li a:hover{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0f0f0', endColorstr='#ffffffff', GradientType=0);
   text-decoration:none;
   }
- 
+ ul.leftnav li.leftnav-active{
+  *background-color: #f8f8f8;
+  background-image: -moz-linear-gradient(top, #f0f0f0, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0f0f0), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #ffffff);
+  background-image: -o-linear-gradient(top, #f0f0f0, #ffffff);
+  background-image: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0f0f0', endColorstr='#ffffffff', GradientType=0);
+  text-decoration:none;
+  color:#000;
+ }

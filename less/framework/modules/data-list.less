@@ -11,12 +11,12 @@
     h4 {
       font-size: 1em;
       font-family: @sansFontFamily;
-      font-weight: bold;
-      line-height: 1.57em;
+      line-height: 1em;
       margin:  0px;
       a {
         padding: 0;
         border: 0;
+        display:block;
       }
     }
     p {
@@ -37,16 +37,15 @@
       border-bottom: none;
     }
     &:hover {
-      #translucent > .background(@lightYellow, 15%);
+      background-color:#FFF5B8;
       margin-left: -10px;
       margin-right:  -10px;
       padding-left: 9px;
       padding-right: 9px;
-      .border-radius(4px);
-      border-width: 1px 1px;
       border-color: #E1D8A4;
       border-style: solid;
       margin-bottom: -1px;
+      text-decoration:none;
     }
     &.bottom-row {
       border-top-style: dotted;
