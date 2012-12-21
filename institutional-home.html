@@ -131,10 +131,20 @@
   </header> <!-- End Header -->
   
   <div class="content-wrapper ualberta-home">
-    <div id="fma-carousel">
+    <div id="fma-carousel" class="fma-container container">
       <ul class="slides">
-        <li>
-          
+        <li class="responsive-feature">
+          <span class="image-shadow">
+            <img class="fma-background" src="./img/feature-responsive-grey.jpg" />
+          </span>
+          <div class="fma-content">
+            <h3>UAlberta Responsive Design</h3>
+            <p class="feature-copy">Our website now adjusts to your device.</p>
+            <div class="fma-buttons">
+              <a href="https://ualberta-beta.sitecore.ualberta.ca/homepagefeatures/ualbertabeta.aspx" class="btn btn-green btn-micro">Find Out More</a>
+              <a href="http://www.uofa.ualberta.ca/feedback.aspx" class="btn btn-grey btn-micro">Give Feedback</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -473,80 +483,7 @@
         nextText: "",
         touch: true
       });
-      
-      // FMA MODULE
-      
-      // init
-      var fmaContainer = $('.fma-container');
-      var fmaSlides = fmaContainer.find('.fma-slide');
-      var fmaTabs = fmaContainer.find('.fma-tabs li');
-
-      // setActive
-      fmaTabs.click(function() {
-        setActive($(this).index());
-        return false;
-      });
-      
-      fmaSlides.click(function() {
-        setActive($(this).index());
-        return false;
-      });
-      
-      fmaTabs.hover(function() {
-        toggleHover($(this).index());
-      }, function() {
-        toggleHover($(this).index());
-      });
-      
-      fmaSlides.hover(function() {
-        toggleHover($(this).index());
-      }, function() {
-        toggleHover($(this).index());
-      });
-      
-      var getSlidesWidth = function() {
-        var slidesWidth = 0;
-        fmaSlides.each(function() {
-          slidesWidth += $(this).width();
-        });
-        return slidesWidth;
-      }
-      
-      var totalWidth = getSlidesWidth();
-      
-      var setActive = function(i) {
-        
-        var leftPoint = fmaSlides.eq(i).position().left;
-        var containerWidth = $('.fma-slide-wrapper').width();
-        var slidePosition = 0;
-      
-        fmaSlides.removeClass('fma-active');
-        fmaSlides.eq(i).addClass('fma-active');
-        fmaTabs.removeClass('fma-button-active');
-        fmaTabs.eq(i).addClass('fma-button-active');
-        
-        if(i==0) {
-          $('.fma-slide-scroller').css('left','0px');
-        }
-        else if(i==(fmaSlides.length-1)) {
-          slidePosition = containerWidth-getSlidesWidth();
-          $('.fma-slide-scroller').css('left',slidePosition+'px');
-        } else {
-          slidePosition = ((containerWidth-fmaSlides.eq(i).width())/2)-leftPoint;
-          $('.fma-slide-scroller').css('left',slidePosition+'px');
-        }
-        
-        return false;
-      }
-      
-      var toggleHover = function(i) {
-        fmaSlides.eq(i).toggleClass('fma-hover');
-        fmaTabs.eq(i).toggleClass('fma-button-hover');
-        return false;
-      }   
-      
-      setActive(0);
-      
+           
       $(".twitter-feed").tweet({
         count: 3,
         username: "UAlberta",

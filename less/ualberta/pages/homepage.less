@@ -31,6 +31,50 @@
 .ualberta-home {
   .fma-container {
     margin-top: 1.57em;
+    
+    ul.slides {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      
+      li {
+        margin: 0;
+        position: relative;
+        min-height: 281px;
+      }
+      .responsive-feature {
+        .fma-content {
+          position: absolute;
+          top: -57px;
+          left: 0;
+          margin-top: 50%;
+          vertical-align: middle;
+          width: 50%;
+          text-align: center;
+          
+          h3 {
+            color: #007c41;
+            font-size: 32px;
+            margin: 10px;
+          }
+          p.feature-copy {
+            font-size: 22px;
+            width: 100%;
+            margin: 0 auto 10px;
+            line-height: 1.5em;
+          }
+        }
+      }
+      .btn + .btn {
+        margin-left: 10px;
+      }
+    }
+    .image-shadow::before {
+      .border-radius(4px);
+    }
+    img.fma-background {
+      .border-radius(4px);
+    }
   }
   div.content-inner hr.explore-separator {
     margin-top: 1.57em;
@@ -311,6 +355,39 @@
   // main column: 75.26041666666666%
   // margin: 2.7624309392265194%
   .ualberta-home {
+    .fma-container {
+      margin-top: 0;
+      ul.slides img.fma-background {
+        max-width: 980px;
+        .border-radius(0px);
+      }
+      ul.slides .image-shadow {
+        position: relative;
+        left: 50%;
+        margin-left: -480px;
+      }
+      ul.slides .image-shadow::before {
+        .border-radius(0px);
+      }
+      ul.slides .responsive-feature {
+        .fma-content {
+          position: absolute;
+          top: -57px;
+          left: 0;
+          margin-top: 50%;
+          vertical-align: middle;
+          width: 50%;
+          text-align: center;
+          
+          h3 {
+            font-size: 25px;
+          }
+          p.feature-copy {
+            font-size: 18px;
+          }
+        }
+      }
+    }
     .why-ualberta-row {
       .button-container {
         width: 22.135416666666664%;
