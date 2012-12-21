@@ -30,13 +30,17 @@
 
 .ualberta-home {
   .fma-container {
-    margin-top: 1.57em;
-    
+    margin-top: 0em;
+    .image-shadow {
+      float: right;
+    }
+    ul.slides img.fma-background {
+      max-width: 980px;
+    }
     ul.slides {
       margin: 0;
       padding: 0;
       list-style: none;
-      
       li {
         margin: 0;
         position: relative;
@@ -45,35 +49,30 @@
       .responsive-feature {
         .fma-content {
           position: absolute;
-          top: -57px;
+          bottom: -12px;
           left: 0;
-          margin-top: 50%;
-          vertical-align: middle;
-          width: 50%;
-          text-align: center;
-          
+          background: rgba(0, 0, 0, 0.65);
+          width: 100%;
           h3 {
-            color: #007c41;
-            font-size: 32px;
-            margin: 10px;
+            color: #ffdb05;
+            margin: 10px 10px 0px;
+            text-shadow: 0px 1px 6px #000;
           }
           p.feature-copy {
-            font-size: 22px;
             width: 100%;
-            margin: 0 auto 10px;
+            margin: 4px 10px 0px;
             line-height: 1.5em;
+            color: #fff;
+            text-shadow: 0px 1px 4px #000;
           }
+        }
+        .fma-buttons {
+          margin: 10px;
         }
       }
       .btn + .btn {
         margin-left: 10px;
       }
-    }
-    .image-shadow::before {
-      .border-radius(4px);
-    }
-    img.fma-background {
-      .border-radius(4px);
     }
   }
   div.content-inner hr.explore-separator {
@@ -164,9 +163,7 @@
 
 
 @media (min-width: 43.125em) {
-  .ualberta-home .fma-tabs-container ul li { 
-    width: 25%; 
-  }
+
   .ualberta-home .content-top-row {
     .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
     background-image: none;
@@ -175,6 +172,39 @@
     .button-container {
       font-size: 1em;
       margin-top: 1em;
+    }
+  }
+  
+  .ualberta-home .fma-container {
+    .image-shadow {
+      float: none;
+    }
+    ul.slides .responsive-feature {
+      .fma-content {
+        position: absolute;
+        top: -57px;
+        left: 0;
+        bottom: auto;
+        margin-top: 50%;
+        vertical-align: middle;
+        width: 50%;
+        text-align: center;
+        background: none;
+        h3 {
+          color: #007c41;
+          font-size: 32px;
+          margin: 10px;
+          text-shadow: none;
+        }
+        p.feature-copy {
+          font-size: 22px;
+          width: 100%;
+          margin: 0 auto 10px;
+          line-height: 1.5em;
+          color: @lightText;
+          text-shadow: none;
+        }
+      }
     }
   }
   
@@ -250,6 +280,16 @@
       }
       .sidebar {
         width: @dTop_SidebarFluid;
+      }
+    }
+    .fma-container {
+      margin-top: 1.57em;
+      .image-shadow::before {
+        .border-radius(4px);
+      }
+      ul.slides img.fma-background {
+        .border-radius(4px);
+        max-width: 100%;
       }
     }
     .why-ualberta-row {
@@ -356,11 +396,6 @@
   // margin: 2.7624309392265194%
   .ualberta-home {
     .fma-container {
-      margin-top: 0;
-      ul.slides img.fma-background {
-        max-width: 980px;
-        .border-radius(0px);
-      }
       ul.slides .image-shadow {
         position: relative;
         left: 50%;
