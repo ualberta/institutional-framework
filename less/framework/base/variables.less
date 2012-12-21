@@ -325,12 +325,14 @@
 // LAYOUT
 // --------------------------
 @highRes_RowWidth:           @gridRowWidth1200;
+@highRes_OneColPriColWidth:        950px;
 @highRes_PriColWidth:        581px;
 @highRes_SecColWidth:        359px;
 @highRes_SidebarWidth:       170px;
 @highRes_FeatureWidth:       @highRes_PriColWidth;
 @highRes_AudienceWidth:      @highRes_SecColWidth+@highRes_SidebarWidth+30;
 
+@highRes_OneColPriColFluid:        percentage(@highRes_OneColPriColWidth/@highRes_RowWidth);
 @highRes_PriColFluid:        percentage(@highRes_PriColWidth/@highRes_RowWidth);
 @highRes_SecColFluid:        percentage(@highRes_SecColWidth/@highRes_RowWidth);
 @highRes_SidebarFluid:       percentage(@highRes_SidebarWidth/@highRes_RowWidth);
@@ -339,12 +341,14 @@
 
 
 @desktop_RowWidth:           @gridRowWidth;
+@desktop_OneColPriColWidth:        750px;
 @desktop_PriColWidth:        451px;
 @desktop_SecColWidth:        279px;
 @desktop_SidebarWidth:       170px;
 @desktop_FeatureWidth:       @desktop_PriColWidth;
 @desktop_AudienceWidth:      @desktop_SecColWidth+@desktop_SidebarWidth+20;
 
+@desktop_OneColPriColFluid:        percentage(@desktop_OneColPriColWidth/@desktop_RowWidth);
 @desktop_PriColFluid:        percentage(@desktop_PriColWidth/@desktop_RowWidth);
 @desktop_SecColFluid:        percentage(@desktop_SecColWidth/@desktop_RowWidth);
 @desktop_SidebarFluid:       percentage(@desktop_SidebarWidth/@desktop_RowWidth);
@@ -352,11 +356,13 @@
 @desktop_AudienceFluid:      percentage(@desktop_AudienceWidth/@desktop_RowWidth);
 
 @tablet_RowWidth:           768px;
+@tablet_OneColPriColWidth:        570px;
 @tablet_PriColWidth:        578px;
 @tablet_SecColWidth:        279px;
 @tablet_SecColMargin:       20px;
 @tablet_SidebarWidth:       170px;
 
+@tablet_OneColPriColFluid:        percentage(@tablet_OneColPriColWidth/@tablet_RowWidth);
 @tablet_PriColFluid:        percentage(@tablet_PriColWidth/@tablet_RowWidth);
 @tablet_SecColFluid:        percentage(@tablet_SecColWidth/@tablet_PriColWidth);
 @tablet_SecColMarginFluid:  percentage(@tablet_SecColMargin/@tablet_PriColWidth);

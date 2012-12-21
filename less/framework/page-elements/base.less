@@ -39,7 +39,14 @@ a:focus {
     }
     
   }
-
+ .row-fluid.one-col{
+	  .primary-content-area{
+      width: @tablet_OneColPriColFluid;
+    }
+    .sidebar{
+	    position:inherit;
+    }
+ }
 }
 
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
@@ -166,6 +173,11 @@ a:focus {
         width: @desktop_SidebarFluid;
       }
   }
+  .row-fluid.one-col{
+	    .primary-content-area {
+        width: @desktop_OneColPriColFluid;
+      }
+  }
   .content-top-row {
     #em > .size(width,@desktop_RowWidth,@baseFontSizepx);
     .border-radius(4px);
@@ -205,5 +217,10 @@ a:focus {
     .sidebar {
       width: @highRes_SidebarFluid;
     }
+  }
+  .row-fluid.one-col{
+	  .primary-content-area{
+		 width: @highRes_OneColPriColFluid;
+	  }
   }
 }
