@@ -1,5 +1,9 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
+.accordion-list>li>a{background-color:none;}
+.lt-ie9 .hover-caption-container i{position:absolute;font-size:6em;color:#fff;left:50%;margin-left:-0.35em;top:10%;margin-top:0.2em;text-shadow:0px 0px 10px #000;opacity:0.4;filter:alpha(opacity=40);pointer-events:none;width:27%;line-height:1em;}
+.lt-ie9 .why-ualberta .fma-container .hover-caption-container i{width:30%;}
+.lt-ie9 .sidebar-content{height:100%!important;}
 .lt-ie9 .ualberta-home .row-fluid .primary-content-area{width:57%;}
 .lt-ie9 .ualberta-home .row-fluid .secondary-content-area{width:40%;}
 .lt-ie9 .row-fluid .primary-content-area,.lt-ie9 .row-fluid .footer-faculty-links,.lt-ie9 .row-fluid .footer-copyright{margin-left:0;}
@@ -84,25 +88,16 @@
 .lt-ie8 .image-caption-container .caption p,.lt-ie8 .image-caption-container .caption h3{padding:0px;margin-bottom:0;line-height:1.4em;}
 .lt-ie8 .content-top-row{width:67.14285714285714em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.lt-ie8 .content-top-row .tab-content{overflow:auto;min-height:260px;height:18.571428571428573em;}
 .lt-ie8 .navigation-inner ul li a,.lt-ie8 ul.quick-links li{margin-right:0px;}
+.ie7 *{zoom:1;}
+.ie7 .icon-rss{font-family:FontAwesome;font-style:normal;font-weight:normal;}
 .ie7 .accordion-list>li.expanded>a:first-child{padding-left:20px;}
 .ie7 .accordion-list a.accordion-toggle{height:20px;}
-.ie7 .explore-bar-container ul li i{background-image:url('../img/explore-bg.jpg');width:65px;height:42px;padding-top:25px;font-size:2em;padding-left:3px;}
-.ie7 .explore-bar-container ul li i:hover{background-image:url('../img/explore-bg.jpg');background-position:0px -68px;}
-.ie7 .explore-bar-container{height:100px;}
-.ie7 .ualberta-home .row-fluid .main-content{width:76%;margin-right:0.625em;}
-.ie7 .ualberta-home .row-fluid .primary-content-area,.ie7 .ualberta-home .row-fluid .secondary-content-area{margin-top:1.250em;}
 .ie7 h5.sidebar-title{padding-top:6px;padding-bottom:9px;}
 .ie7 .hover-caption-container i{position:absolute;font-size:6em;color:#fff;left:40%;margin-left:-0.35em;top:20%;margin-top:0.2em;text-shadow:0px 0px 10px #000;opacity:0.4;filter:alpha(opacity=40);pointer-events:none;width:27%;line-height:1em;}
 .ie7 .why-ualberta .fma-container .hover-caption-container i{width:30%;}
 .ie8 .daily-news .module-heading a.heading-link{margin-left:5px;}
-.ie8 .explore-bar-container ul li i{background-image:url('../img/explore-bg.jpg');width:68px;height:39px;padding-top:28px;font-size:3em;}
-.ie8 .explore-bar-container ul li i:hover{background-image:url('../img/explore-bg.jpg');background-position:0px -68px;}
-.ie8 .explore-bar-container{height:125px;}
-.ie8 .ualberta-home .row-fluid .main-content{width:79.8%;}
 .ie8 h5.sidebar-title{margin-top:-9px;padding-top:9px;padding-bottom:6px;}
 .ie8 .admissions .btn-micro.btn-apply:after{font-size:1.4em;margin-right:-2px;}
-.ie8 .hover-caption-container i{position:absolute;font-size:6em;color:#fff;left:50%;margin-left:-0.35em;top:10%;margin-top:0.2em;text-shadow:0px 0px 10px #000;opacity:0.4;filter:alpha(opacity=40);pointer-events:none;width:27%;line-height:1em;}
-.ie8 .why-ualberta .fma-container .hover-caption-container i{width:30%;}
 .ie9 .btn{filter:none;outline:none;}
 .ie9 .btn-grey{background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-grey.png);}.ie9 .btn-grey:hover,.ie9 .btn-grey:active{background-image:none;background-color:#f3f7f5;}
 .ie9 .btn-work,.ie9 .btn-give,.ie9 .btn-apply{box-shadow:0px 1px 4px 1px rgba(0, 0, 0, 0.1),inset 0px 1px 4px rgba(255, 255, 255, 0.65);}

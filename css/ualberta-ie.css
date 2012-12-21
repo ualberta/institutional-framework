@@ -1,6 +1,16 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
+.lt-ie9 .thumbnail-container .hover-caption-container i{top:35%;line-height:1em;width:30%;}
+.lt-ie9 hr.secondary-hr{display:none;}
 .lt-ie9 .make-a-gift .btn-give.btn-micro{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);font-size:0.9em;padding-top:1em;padding-bottom:0.7em;}.lt-ie9 .make-a-gift .btn-give.btn-micro:hover{background-image:none;background-color:#f3f7f5;border-color:#ccc;}
+.lt-ie9 .ualberta-home .fma-container{margin-top:1.57em;}.lt-ie9 .ualberta-home .fma-container .image-shadow::before{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.lt-ie9 .ualberta-home .fma-container ul.slides img.fma-background{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;max-width:100%;}
+.lt-ie9 .ualberta-home .why-ualberta-row p.description{width:54%;margin-left:23.1%;position:relative;top:-13px;margin-bottom:0;}
+.lt-ie9 .ualberta-home .why-ualberta-row h3{margin-left:23.1%;position:relative;top:-9px;}
+.lt-ie9 .ualberta-home .why-ualberta-row >.span{padding:0 15px;}
+.lt-ie9 .ualberta-home .why-ualberta-row .button-container{right:15px;margin-top:0.5em;top:-2px;}
+.lt-ie9 .ualberta-home .why-ualberta-row >.span{margin-bottom:-6px;}
+.lt-ie9 .ualberta-home .why-ualberta-row div.frame{margin-bottom:0;}
 .lt-ie9 .campuslife .fma-prospective{position:relative;}.lt-ie9 .campuslife .fma-prospective br{display:none;}
 .lt-ie9 .campuslife .fma-prospective .explore-box h3{font-size:2.25em;margin:0.25em 0em 0.35em 0em;font-family:DIN Regular;color:#ffdb05;}
 .lt-ie9 .campuslife .sidebar .links ul li a{line-height:135%;padding-top:0.4em;padding-bottom:0.4em;}
@@ -21,6 +31,27 @@
 .lt-ie9 .prospective-student .fma-prospective span.image-shadow{position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;}
 .lt-ie9 .prospective-student .fma-container{padding:0px 10px;}
 .lt-ie9 .news-and-events .goto-events{display:none;}
+.lt-ie9 .ualberta-home .ph-explore{padding-left:0;padding-right:0;}
+.lt-ie9 .ualberta-home .content-top-row{background-image:none;}
+.lt-ie9 .ualberta-home .container{width:940px;}
+.lt-ie9 .ualberta-home .main-content{margin-left:0;}
+.lt-ie9 .ualberta-home .row-fluid .main-content{width:750px;}
+.lt-ie9 .ualberta-home .row-fluid .primary-content-area{width:451px;}
+.lt-ie9 .ualberta-home .row-fluid .secondary-content-area{width:279px;margin-left:20px;}.lt-ie9 .ualberta-home .row-fluid .secondary-content-area >hr.soften:first-child{display:none;}
+.lt-ie9 .ualberta-home .row-fluid .sidebar{width:170px;}
+.lt-ie9 .ualberta-home .fma-container .image-shadow{float:none;}
+.lt-ie9 .ualberta-home .fma-container ul.slides .responsive-feature .fma-content{position:absolute;top:85px;left:0;bottom:auto;vertical-align:middle;width:50%;text-align:center;background:none;}.lt-ie9 .ualberta-home .fma-container ul.slides .responsive-feature .fma-content h3{color:#007c41;font-size:32px;margin:10px;text-shadow:none;}
+.lt-ie9 .ualberta-home .fma-container ul.slides .responsive-feature .fma-content p.feature-copy{font-size:22px;width:100%;margin:0 auto 10px;line-height:1.5em;color:#6a7870;text-shadow:none;}
+.lt-ie9 .ualberta-home .why-ualberta-row .button-container{font-size:1em;width:20%;position:absolute;float:right;}.lt-ie9 .ualberta-home .why-ualberta-row .button-container a.btn{display:block;margin:3px 0px 5px 0px;font-size:1em;padding-top:12px;padding-bottom:8px;line-height:1em;}
+.lt-ie9 .ualberta-home .why-ualberta-row .frame{display:inline-block;float:left;width:24%;margin-right:2%;margin-bottom:1em;}
+.lt-ie9 .ualberta-home .why-ualberta-row p.description{position:relative;margin-left:24%;font-size:1em;line-height:1.57em;}
+.lt-ie9 .ualberta-home .why-ualberta-row h3{margin-left:24%;}
+.lt-ie9 .ualberta-home .why-ualberta-row .extrude{min-height:135px;}
+.lt-ie9 .ualberta-home .explore-bar-container{width:662px;height:126px;margin:-10px auto;}.lt-ie9 .ualberta-home .explore-bar-container .flex-viewport{margin-top:5px;}
+.lt-ie9 .ualberta-home .explore-bar-container ul.explore-bar li i{background-color:#fff;background-image:url('../img/explore-bg.jpg');background-repeat:no-repeat;width:50px;*width:47px;height:37px;padding-top:13px;font-size:2em;padding-left:1px;*padding-left:5px;}.lt-ie9 .ualberta-home .explore-bar-container ul.explore-bar li i::before{margin-top:0px;margin-left:2px;}
+.lt-ie9 .ualberta-home .explore-bar-container ul.explore-bar li i:hover{background-image:url('../img/explore-bg.jpg');background-position:0px -51px;}
+.lt-ie9 .ualberta-home .explore-bar-container ul.flex-direction-nav a{height:60px;padding:55px 0px 10px 0px;text-align:center;width:40px;overflow:hidden;}
+.lt-ie9 .ualberta-home .explore-bar-container ul li i:hover{background-image:url('../img/explore-bg.jpg');background-position:0px -68px;}
 .lt-ie9 .why-ualberta .content-top-row{background:none;}
 .lt-ie9 .why-ualberta .fma-container{background:transparent url(../img/ieWhirl-8kb.jpg) no-repeat top left;width:940px;height:300px;margin:0 auto;}.lt-ie9 .why-ualberta .fma-container .ualberta-minute{font-size:1em;}
 .lt-ie9 .why-ualberta .fma-container .thumbnail-slide{margin-top:1%;}
@@ -30,5 +61,7 @@
 .lt-ie9 .why-ualberta .fma-container .ualberta-minute .ualberta-link{position:relative;width:940px;height:300px;display:block;}.lt-ie9 .why-ualberta .fma-container .ualberta-minute .ualberta-link i{display:none;}
 .lt-ie9 .why-ualberta .fma-container .ualberta-minute .ualberta-link span{position:absolute;width:205px;top:260px;left:50%;margin-left:-113px;}.lt-ie9 .why-ualberta .fma-container .ualberta-minute .ualberta-link span:hover{text-decoration:none;}
 .lt-ie9 .why-ualberta .fma-container .ualberta-minute .ualberta-link:hover{text-decoration:none;}
-.lt-ie9 .why-ualberta .fma-tabs-container .container{width:940px;}.lt-ie9 .why-ualberta .fma-tabs-container .container .fma-tabs{width:auto;}.lt-ie9 .why-ualberta .fma-tabs-container .container .fma-tabs li{display:inline-block;*display:inline;*zoom:1;width:314px;margin-right:-5px;*margin-right:-1px;}
+.lt-ie9 .why-ualberta .fma-tabs-container .container{width:940px;}.lt-ie9 .why-ualberta .fma-tabs-container .container .fma-tabs{width:auto;}.lt-ie9 .why-ualberta .fma-tabs-container .container .fma-tabs li{display:inline-block;*display:inline;*zoom:1;width:317px;margin-right:-5px;*margin-right:-1px;}
 .lt-ie9 .why-ualberta .fma-tabs-container .container .fma-tabs li a{border-right:1px solid #ccc;}
+.ie7 .ualberta-home .why-ualberta-row .span{padding-left:0;padding-right:0;}
+.ie7 .ualberta-home .why-ualberta-row p.description{width:48%;}
