@@ -59,6 +59,7 @@ production:
 	@mkdir -p ${PRODDIR}
 	@mkdir -p ${PRODDIR}/css
 	@mkdir -p ${PRODDIR}/img
+	@mkdir -p ${PRODDIR}/ico
 	@cp -r ./css ${PRODDIR}
 	@cp -r ./img ${PRODDIR}
 	@echo "Copying css and images...                   ${CHECK} Done"
@@ -66,6 +67,7 @@ production:
 	@uglifyjs -nc ${PRODDIR}/js/bootstrap.js > ${PRODDIR}/js/bootstrap.min.js
 	@mkdir -p ${PRODDIR}/js
 	@cp -r ./js ${PRODDIR}
+	@cp -r ./ico ${PRODDIR}
 	@echo "Minifying and copying javascript...         ${CHECK} Done"
 	(cd ../production; git add .; git commit -a -m prod; git push origin production --force)
 	

@@ -1,5 +1,7 @@
 
 .lt-ie9 {
+
+  hr.secondary-hr { display: none; }
  
   // make-a-gift.less - ie7/ie8
   // --------------------------
@@ -13,6 +15,47 @@
       background-image: none;
       background-color: #f3f7f5;
       border-color: #ccc;
+    }
+  }
+  
+  .ualberta-home {
+    .fma-container {
+      margin-top: 1.57em;
+      .image-shadow::before {
+        .border-radius(4px);
+      }
+      ul.slides img.fma-background {
+        .border-radius(4px);
+        max-width: 100%;
+      }
+    }
+    .why-ualberta-row {
+      p.description {
+        width: 54%;
+        margin-left: 23.1%;
+        position: relative;
+        top: -13px;
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-left: 23.1%;
+        position: relative;  
+        top: -9px;
+      }
+      & > .span {
+        padding: 0 15px;
+      }
+      .button-container {
+        right: 15px;
+        margin-top: 0.5em;
+        top: -2px;
+      }
+      & > .span {
+        margin-bottom: -6px;
+      }
+      div.frame {
+        margin-bottom: 0;
+      }
     }
   }
   
@@ -168,7 +211,163 @@
     }
   }
   
-  // why-ualberta.less - ie7/ie8
+  // homepage.less - ie7/ie8
+  .ualberta-home {
+  
+    .ph-explore {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+    .content-top-row {
+      background-image: none;
+    }
+  
+    .container { width: 940px; }
+  
+    .main-content { margin-left: 0; }
+    
+    .row-fluid {
+      .main-content {
+        width: 750px;
+      }
+      .primary-content-area {
+        width: 451px;
+      }
+      .secondary-content-area {
+        width: 279px;
+        margin-left: 20px;
+        & > hr.soften:first-child {
+          display:none;
+        }
+      }
+      .sidebar {
+        width: 170px;
+      }
+    }
+  
+    // Feature Space
+    .fma-container {
+      .image-shadow {
+        float: none;
+      }
+      ul.slides .responsive-feature {
+        .fma-content {
+          position: absolute;
+          top: 85px;
+          left: 0;
+          bottom: auto;
+          //margin-top: 50%;
+          vertical-align: middle;
+          width: 50%;
+          text-align: center;
+          background: none;
+          h3 {
+            color: #007c41;
+            font-size: 32px;
+            margin: 10px;
+            text-shadow: none;
+          }
+          p.feature-copy {
+            font-size: 22px;
+            width: 100%;
+            margin: 0 auto 10px;
+            line-height: 1.5em;
+            color: @lightText;
+            text-shadow: none;
+          }
+        }
+      }
+    }
+    
+    // Why UAlberta Piece
+    .why-ualberta-row {
+      .button-container {
+        font-size: 1em;
+        width:  20%;
+        position: absolute;
+        float: right;
+        a.btn {
+          display: block;
+          margin: 3px 0px 5px 0px;
+          font-size:  1em;
+          padding-top: 12px; 
+          padding-bottom: 8px;
+          line-height: 1em;
+        }
+      }
+      .frame {
+        display:inline-block; 
+        float:left; 
+        width:24%; 
+        margin-right:2%; 
+        margin-bottom: 1em;
+      }
+      p.description {
+        position: relative;
+        margin-left: 24%;
+        font-size: 1em;
+        line-height: 1.57em;
+      }
+      h3 {
+        margin-left: 24%;
+      }
+      .extrude {
+        min-height: 135px;
+      }
+    }
+    
+    // Explore bar
+    .explore-bar-container {
+      width: 662px;
+      height: 126px;
+      margin: -10px auto;
+      .flex-viewport {
+        margin-top: 5px;
+      }
+      ul.explore-bar li i {
+        background-color: #fff;
+        background-image:url('../img/explore-bg.jpg');
+        background-repeat: no-repeat;
+        width:50px;
+        *width:47px;
+        height:37px;
+        padding-top:13px;
+        font-size: 2em;
+        padding-left: 1px;
+        *padding-left: 5px;
+        &::before {
+          margin-top:0px;
+          margin-left: 2px;
+        }
+        &:hover{
+          	background-image:url('../img/explore-bg.jpg');
+          	background-position:0px -51px;
+        }
+      }
+    }
+    .explore-bar-container {
+    	ul.flex-direction-nav a {
+    	  height:60px;
+    	  padding:  55px 0px 10px 0px;
+    	  text-align: center;
+    	  width: 40px;
+    	  overflow: hidden;
+    	  &.flex-prev {
+    	    //left: -34px;
+    	  }
+    	  &.flex-next {
+    	    //right: -34px;
+    	  }
+    	}
+    }
+    .explore-bar-container ul li i:hover{
+    	background-image:url('../img/explore-bg.jpg');
+    	background-position:0px -68px;
+    }
+  }
+  
+  // why-ualberta.less - ie7/ie8  
   .why-ualberta {
     .content-top-row {
       background: none;
@@ -234,6 +433,17 @@
         li a {
           border-right: 1px solid #ccc;
         }
+      }
+    }
+  }
+}
+
+.ie7 {
+  .ualberta-home {
+    .why-ualberta-row {
+      .span { padding-left: 0; padding-right: 0; }
+      p.description {
+        width: 48%;
       }
     }
   }
