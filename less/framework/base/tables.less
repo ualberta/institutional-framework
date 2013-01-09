@@ -46,7 +46,7 @@ table {
   }
   // Account for multiple tbody instances
   tbody + tbody {
-    border-top: 2px solid @tableBorder;
+    border-top: 1px solid @tableBorder;
   }
 }
 
@@ -163,6 +163,10 @@ table {
     tr:hover td,
     tr:hover th {
       background-color: @tableBackgroundHover;
+      background-color: rgba(255, 245, 184, 0.15);
+      border-color: #E1D8A4;
+      border-bottom:  1px solid #E1D8A4;
+      margin-bottom: -1px;
     }
   }
 }
@@ -243,3 +247,10 @@ table [class*=span],
     background-color: darken(@infoBackground, 5%);
   }
 }
+
+// TABLE HEADINGS
+.table thead th h3{
+  margin: 0;
+  font-size: 1.2em;
+}
+
