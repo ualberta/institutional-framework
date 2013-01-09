@@ -155,7 +155,7 @@
         <div class="span">
             <div class="frame">
               <div class="hover-caption-container">
-                <a href="#" class="image-shadow">
+                <a href="http://www.youtube.com/embed/cBgIkhinRww?autoplay=1" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="UAlberta in a Minute Video">
                   <img src="./img/yualberta.png" />
                 </a>
                 <i class="icon-play-circle"></i>
@@ -299,7 +299,7 @@
                       <a href="http://feeds.feedburner.com/UofAExpressNewsArticles" class="heading-link btn btn-grey" rel="tooltip" title="Subscribe to RSS feed"><i class="icon-rss"></i></a>
                     </li>
                     <li>
-                      <a href="http://www.news.ualberta.ca/DailyNewsSubscribe.aspx" class="heading-link btn btn-grey" rel="tooltip" title="Daily News Email"><i class="icon-envelope"></i></a>
+                      <a href="http://ualberta-beta.ualberta.ca/news/dailynewssubscribe" class="heading-link btn btn-grey" rel="tooltip" title="Daily News Email"><i class="icon-envelope"></i></a>
                     </li>
                   </ul>
               </div>
@@ -337,7 +337,7 @@
       <div class="span sidebar"> <!-- Sidebar Start -->
         <div class="extrude twitter-module">
           <h5 class="sidebar-title collapsed"  data-toggle="collapse" data-target=".twitter-collapser">
-            <a href="#maps"><i class="icon-twitter"></i> Twitter</a>
+            <a href="http://twitter.com/#!/ualberta"><i class="icon-twitter"></i> Twitter</a>
           </h5>
           <div class="sidebar-content twitter-collapser collapse">
             <div class="twitter-feed"></div>
@@ -350,7 +350,7 @@
         </div>
       <div class="extrude links-module">
           <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".social-media-links">
-            <a href="#calendar"><i class="icon-comments"></i> Keep In Touch</a>
+            <a href="http://www.ualberta-beta.ualberta.ca/keepintouch"><i class="icon-comments"></i> Keep In Touch</a>
           </h5>
           <div class="sidebar-content social-media-links links collapse">
             <ul>
@@ -516,7 +516,7 @@
       $("#explore-bar").flexslider({
       	animation: "slide",
         itemWidth: 93,
-        minItems: 4,
+        minItems: 3,
         maxItems: 7,
         itemMargin: 0,
         controlNav: false,
@@ -572,6 +572,22 @@
           
        }, 5);
       
+      // Video Modal
+      // -------------------
+      $(document).on("click", ".video-modal-link", function () {
+        var videoSrc = $(this).attr('href');
+        // no modal for mobile
+        if($(window).width() < 500) {
+          window.location = videoSrc;
+        }
+        $('#videoModal iframe').attr('src', videoSrc);
+        $('#videoModal .modal-header h3').text($(this).data('title'));
+      });
+
+      $('#videoModal').bind('hidden', function () {
+        $('#videoModal iframe').attr('src', '');
+      });
+      
       var options ={};
       options.selector = '.search-query'; 
       options.googleId = '006931257102525869171:dkneho8bkag'; 
@@ -586,4 +602,3 @@
 
 </body>
 </html>
-

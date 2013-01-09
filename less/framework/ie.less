@@ -25,6 +25,14 @@
  .why-ualberta .fma-container .hover-caption-container  i{
     width:30%;
   }
+  
+  .data-list li.bottom-row a {
+    background: #ddd; 
+    &:hover {
+      background: #fff;
+    } 
+  }
+  
 .sidebar-content{
 	height:100%!important;
 }
@@ -527,6 +535,9 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   .fma-tabs-container li{
 	  width:316px;
   }
+  // Fix disappearing elements
+  * { zoom: 1; }
+  
   // Homepage
   ul.quick-links li, 
   .blade-search,
@@ -601,8 +612,31 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
     margin-right: 0px;
   }
   
-
+  // IE7 ICON FIXES
+  // -------------------
   
+  @import "base/font-awesome-ie7.less";
+  
+  // This is the hackiest thing I've ever done.  IE7 made me do it.
+  // This evaluates an expression in IE7 and inserts the icon HTML.
+  // Don't ever do this unless there is no other reasonable way.
+  .btn-apply, .btn-give, .btn-work {
+     *zoom: ~"expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += ' <i class=\"icon-circle-arrow-right\"></i>')";
+     position: relative;
+  }
+  .btn-apply i, .btn-give i, .btn-work i {
+    position: absolute;
+    right:  8px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .btn-apply.btn-micro i, .btn-give.btn-micro i, .btn-work.btn-micro i {
+    position: absolute;
+    right:  0px;
+    top: 6px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .lt-ie7 {
