@@ -1,38 +1,65 @@
 .secondary-content-area {
-  a.hide-text {
-    .hide-text();
-  	width: 24px;
-  	height: 24px;
-  	display: inline-block;
-  	margin-right: 5px;
-  	padding: 10px 0 0 0;
-  	.opacity(85);
-  }
-  a.hide-text:hover {
-  	.opacity(100);
-  }
-  a.facebook {
-  	background: url(../img/icon_facebook.png) 0 0 no-repeat;
-  }
-  a.twitter {
-  	background: url(../img/icon_twitter.png) 0 0 no-repeat;
-  }
-  a.tumblr {
-  	background: url(../img/icon_tumblr.png) 0 0 no-repeat;
-  }
-  a.foursquare {
-  	background: url(../img/icon_foursquare.png) 0 0 no-repeat;
-  }
-  a.youtube {
-  	background: url(../img/icon_youtube.png) 0 0 no-repeat;
-  }
-  a.rss {
-  	background: url(../img/icon_rss.png) 0 0 no-repeat;
-  }
-  .social-media-list li {
-  	display: inline;
-  	height: 24px;
-  	width: 29px;
+  .social-media-list {
+    position: relative;
+    li a {
+      .hide-text();
+    	width: 24px;
+    	height: 24px;
+    	display: inline-block;
+    	margin-right: 5px;
+    	padding: 10px 0 0 0;
+    	.opacity(85);
+    }
+    a.hide-text:hover {
+    	.opacity(100);
+    }
+    [class^="icon-"]::before,
+    [class*=" icon-"]::before {
+      content: none;
+      display: none;
+    } 
+    a.icon-facebook {
+    	background: url(../img/icon_facebook.png) no-repeat top left;
+    	&:before {
+    	  content: none;
+    	}
+    }
+    a.icon-twitter {
+    	background: url(../img/icon_twitter.png) no-repeat top left;
+    	&:before {
+    	  content: none;
+    	}
+    }
+    a.icon-tumblr {
+    	background: url(../img/icon_tumblr.png) no-repeat top left;
+    	&:before {
+    	  content: none;
+    	}
+    }
+    a.icon-foursquare {
+    	background: url(../img/icon_foursquare.png) no-repeat top left;
+    	&:before {
+    	  content: none;
+    	}
+    }
+    a.icon-youtube {
+    	background: url(../img/icon_youtube.png) no-repeat top left;
+    	&:before {
+    	  content: none;
+    	}
+    }
+    a.icon-rss {
+    	background: url(../img/icon_rss.png) no-repeat top left;
+    	&:before {
+    	  content: none;
+    	}
+    }
+    li {
+    	display: inline-block;
+    	*display: inline;
+    	height: 24px;
+    	width: 29px;
+  	}
 	}
 }
 .keepintouch-icon a{
