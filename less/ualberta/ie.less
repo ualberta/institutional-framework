@@ -5,6 +5,7 @@
 	 line-height:1em;
 	 width:30%;
  }
+
   hr.secondary-hr { display: none; }
 
   // make-a-gift.less - ie7/ie8
@@ -446,6 +447,7 @@
     }
 }
 
+// IE 7
 .lt-ie8 {
   .ualberta-home {
     .why-ualberta-row {
@@ -454,9 +456,25 @@
         width: 48%;
       }
     }
-  }
   .thumbnail-container .hover-caption-container i{
 	 top:20%;
 	 left:40%;
 	}
+.daily-news .subscribe-form .btn,
+  .find-a-person .person-search .btn {
+    margin-top: 2px;
+    outline: none;
+  }
+  
+  .daily-news .subscribe-form input {
+    padding-top: 0.57em;
+    padding-bottom: 0em;
+    padding-right: 0;
+  }
+  .daily-news .subscribe-form input.email-input {
+    padding-top: 0.57em;
+    padding-bottom: 0em;
+    padding-right: 0;
+  }
+}
 }

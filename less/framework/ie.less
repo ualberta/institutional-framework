@@ -1,5 +1,12 @@
-.ie {
+.lt-ie10 {
   // All IE
+  .accordion-list li a.accordion-toggle {
+    height: 22px;
+  }
+  .accordion-list li.expanded a.accordion-toggle {
+    background: none;
+    filter: none;
+  }
 }
 
 /** BELOW IE9 **/
@@ -636,6 +643,19 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
     top: 6px;
     font-size: 18px;
     line-height: 18px;
+  }
+  a.accordion-toggle.icon-plus {
+    .ie7icon('&#xf067;');
+    color: #007c41;
+    height: 22px;
+  }
+  .accordion-list ul li div {
+    display: inline;
+    position: relative;
+  }
+  
+  .module-container {
+    margin-bottom: 0px;
   }
 }
 
