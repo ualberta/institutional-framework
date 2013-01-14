@@ -4,7 +4,7 @@
     background-repeat: repeat-x;
     background-position: bottom left;
     .box-shadow(inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
-    border-bottom: 1px solid rgba(0, 50, 25, 0.35);
+    // border-bottom: 1px solid rgba(0, 50, 25, 0.35);
     border-top: 1px solid rgba(0, 50, 25, 0.25);
     background-color: rgba(255, 200, 10, 0.1);
   }
@@ -30,7 +30,7 @@
     .student-experience, .working-here {
       text-align: center;
       font-size:  1em;
-      margin-top: 2%;
+      margin-top: 1%;
       h3 {
         font-size:  2em;
         margin: 0.8em 0em 0.25em 0em;
@@ -326,10 +326,21 @@
 }
 
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
-  .why-ualberta .content-container{
-   
-  }
   .why-ualberta .sidebar {
-    top: 371px;
+    top: 445px;
+  }
+}
+
+@media (min-width: 23.125em) and (max-width: 61.1875em) {
+  .why-ualberta .secondary-content-area .module-container {
+    .frame {
+      max-width: 50%;
+      margin-left: 1em;
+      margin-bottom: 1em;
+      float: right;
+    }
+    hr {
+      clear: right;
+    }
   }
 }

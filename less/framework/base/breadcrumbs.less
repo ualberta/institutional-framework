@@ -2,19 +2,22 @@ ul.breadcrumbs {
 	margin-left:0px;
 	font-size:0.75em;
 }
-ul.breadcrumbs li{
+ul.breadcrumbs li{ 
 	display:inline-block;
+	.ie7-inline-block();
 }
 ul.breadcrumbs li a{
-	padding-right:5px;
+	padding-right:10px;
 }
 ul.breadcrumbs li:first-child {
   padding-left: 0;
 }
 ul.breadcrumbs li:after {
   content: "/";
+  display: inline-block;
+  padding-right: 6px;
 }
-ul.breadcrumbs li:last-child:after {
-  content: "";
+ul.breadcrumbs li.bc-here:after {
+  content: none;
 }
  

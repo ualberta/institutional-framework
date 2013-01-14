@@ -66,19 +66,8 @@
     }
   }
 	.sidebar {
-		.links ul li a {
-			padding-top: 0.6em;
-			padding-bottom: 0.4em;
-		}
-		.date {
-			line-height: 1em;
-			margin-bottom: 0.5em;
-			margin-top: 0.5em;
-			font-size: 0.9em;
-			color: @lightText;
-		}
 		.givingcontent div {
-			margin: 1em auto 0.5em auto;
+			margin: 1em auto 0.25em auto;
 		}
 	}
 }
@@ -105,8 +94,8 @@
 }
 
 @media (min-width: 43.125em) and (max-width:61.1875em) {
-  .sidebar {
-    top: 350px;
+  .campuslife .sidebar {
+    top: 429px;
   }
 }
 
@@ -179,5 +168,21 @@
         }
       }
     } 
+  }
+}
+
+// 440px - 690px
+// Adjust video thumbnail size and float it to the right
+@media (min-width: 27.5em) and (max-width: 61.1875em) {
+  .campuslife .secondary-content-area .module-container {
+    .frame {
+      max-width: 50%;
+      margin-left: 1em;
+      margin-bottom: 1em;
+      float: right;
+    }
+    hr {
+      clear: right;
+    }
   }
 }
