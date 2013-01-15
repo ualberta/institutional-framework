@@ -1,6 +1,7 @@
 .module-container {
   //.clearfix();
   .module-heading {
+    position: relative;
     h3 { 
       float: left; 
       margin-right: 10px;
@@ -20,5 +21,13 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 61.25em) and (max-width: 74.9375em) {
+  .module-container .module-heading .module-actions {
+    position: absolute;
+    right: -9px;
+    top: 0px;
   }
 }
