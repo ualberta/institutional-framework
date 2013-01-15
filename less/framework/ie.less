@@ -7,6 +7,10 @@
     background: none;
     filter: none;
   }
+  input[type='text'] {
+    padding-top: 0.58em;
+    padding-bottom: 0em;
+  }
 }
 
 /** BELOW IE9 **/
@@ -34,22 +38,24 @@
   }
   
   .data-list li.bottom-row a {
-    background: #ddd; 
+    background: #eee;
+    border-top: 1px solid #ddd; 
     &:hover {
       background: #fff;
     } 
   }
+
   
 .sidebar-content{
 	height:100%!important;
 }
 // Homepage
-  .ualberta-home .row-fluid .primary-content-area{
-	   width:57%;
-   }
-   .ualberta-home .row-fluid .secondary-content-area{
-	   width:40%;
-   }
+.ualberta-home .row-fluid .primary-content-area{
+   width:57%;
+ }
+ .ualberta-home .row-fluid .secondary-content-area{
+   width:40%;
+ }
   // < :first-child and :last-child selectors not supported
   .row-fluid .primary-content-area,
   .row-fluid .footer-faculty-links,
@@ -57,7 +63,7 @@
     margin-left:  0;
   }
   
-  .person-search, icon-field {
+  .person-search, .icon-field {
     position: relative;
     i {
       position: absolute;
@@ -66,9 +72,6 @@
       #em > .position(left,10,@baseFontSizepx);
       margin: 0;
       z-index: 100;
-    }
-    input {
-      #em > .padding(8,8,0,30,@baseFontSizepx);
     }
     button {
       position: absolute;
@@ -81,6 +84,7 @@
     .sidebar h6{
 	    margin:0.625em 0em 0em 0em;
     } 
+    
   // No media queries, set container widths
   .row-fluid {
       .feature-area {
@@ -150,6 +154,14 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
     }
     .quick-links-container .quick-links-button {
       display: none;
+    }
+    .blade-search {
+      i.icon-search {
+        display: none;
+      }
+      input.search-query {
+        padding-left: 10px;
+      }
     }
   }
   
@@ -267,7 +279,8 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
       }
     }
     
-    .navigation-inner ul.main-navigation > li:hover > a {
+    .navigation-inner ul.main-navigation > li:hover > a,
+    .navigation-inner ul.main-navigation > li.nav-current > a {
       background-color: #f6fcf9;
       background-color: rgba(255,255,255,0.5);
     }
@@ -354,7 +367,6 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   .make-a-gift .btn-give.btn-micro, .btn-give {
   	filter: none;
   	background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);
-  	font-size: 0.9em;
   	padding-top: 1em;
   	padding-bottom: 0.7em;
   	&:hover {
@@ -362,6 +374,10 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   		background-color: #f3f7f5;
   		border-color: #ccc;
   	}
+  }
+  
+  .make-a-gift .btn-give.btn-micro {
+  	font-size: 0.9em;
   }
   
   // accordion-list.less overrides - ie7/8
@@ -456,7 +472,7 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
         bottom: 0px;
         left: 10px;
         z-index:  15;
-        padding: 5px 6px 3px 25px;
+        padding-left: 25px;
         width: 128px;
         font-size: 12px;
         line-height: 1em;
@@ -539,11 +555,17 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
 
 // IE7 and below
 .lt-ie8 {
-.filter-dropdown{
-	width:180px;
-}
+
+  .filter-dropdown{
+  	width:180px;
+  }
   // Fix disappearing elements
   * { zoom: 1; }
+  
+  // IE7 Breadcrumb Separator
+  ul.breadcrumbs li{ 
+  	*zoom: ~"expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += '/&nbsp;&nbsp;&nbsp;')";
+  }
   
   // Homepage
   ul.quick-links li, 
@@ -574,14 +596,15 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   }
   li.expanded a.accordion-toggle{padding-bottom:11px!important;height:22px;}
   li.expanded a.accordion-toggle:hover{background-color:none;}
-  .sidebar .links-module .links li a{
-  	padding-top:0px;
-  }
   
-  .sidebar .links-module .links li a:hover{
-  	border-bottom:0px;
-  	margin-bottom:0px;
-  }
+  //.sidebar .links-module .links li a{
+  	//padding-top:0px;
+  //}
+  
+  //.sidebar .links-module .links li a:hover{
+  	//border-bottom:0px;
+  	//margin-bottom:0px;
+  //}
   
   // base.less overrides
   // -----------------------
@@ -605,14 +628,11 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   }
   
   .content-top-row {
-    #em > .size(width,@desktop_RowWidth,@baseFontSizepx);
-    .border-radius(4px);
-    .tab-content {
-      overflow: auto;
-      min-height: 260px;
-      #em > .size(height,260,@baseFontSizepx);
-    }
+    width: auto;
+    margin: 0;
+    line-height: 0;
   }
+
   
   .navigation-inner ul li a,
   ul.quick-links li {
@@ -659,8 +679,22 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   }
 }
 
-.lt-ie7 {
-  // IE6 and below
+.lt-ie9 {
+  .prospective-student,
+  .why-ualberta,
+  .campuslife {
+    .content-top-row {
+      #em > .size(width,@desktop_RowWidth,@baseFontSizepx);
+      margin: 5px auto;
+      line-height: 1.42em;
+      .border-radius(4px);
+      .tab-content {
+        overflow: auto;
+        min-height: 260px;
+        #em > .size(height,260,@baseFontSizepx);
+      }
+    }
+  }
 }
 
 .ie7 {

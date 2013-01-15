@@ -76,17 +76,19 @@ ul.footer-quick-links {
   list-style: none;
   margin: 0 0 12px -10px;
   padding: 0;
+  .clearfix();
   #em > .font-size(13,14);
   li {
-    display:  inline-block;
+    display: inline-block;
+    .ie7-inline-block();
     margin-right: -4px;
     padding: 0px;
     line-height:  1em;
-    
+    float: left;
+    margin-bottom: 10px;
     &:last-child {
       a { border: 0px }
     }
-    
     a {
       display:  block;
       padding: 0px 10px;
@@ -95,7 +97,9 @@ ul.footer-quick-links {
     }
   
   }
-  
+  & + p {
+    margin-top: 1em;
+  }
 }
 
 .btn-social-media {

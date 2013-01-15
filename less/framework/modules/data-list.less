@@ -38,7 +38,8 @@
       border-bottom: none;
     }
     &:hover {
-       #translucent > .background(@lightYellow, 15%);
+      background-color: #F6F8ED;
+      background-color: rgba(255, 245, 184, 0.15);
       margin-left: -10px;
       margin-right:  -10px;
       padding-left: 9px;
@@ -82,5 +83,51 @@
         }
       }
     }
+  }
+}
+
+.sidebar {
+  .data-list {
+    margin-bottom:0px;
+    li {
+      border: 0;
+      padding: 0;
+      line-height: 1.57em;
+      &:first-child {
+        padding:0;
+      }
+      a { 
+        display: block;
+        padding-top: 5px; 
+        padding-bottom: 3px;  
+        border-top: 1px dotted #E0E0E0;
+    	    line-height: 135%;
+        &:hover {
+          background: #FFF5B8;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-top: 1px solid desaturate(darken(#FFF5B8,10%),50%);
+          //margin-bottom: -1px;
+          border-bottom: 1px solid desaturate(darken(#FFF5B8,10%),50%);
+          text-decoration:  none;
+        }
+      }
+      &:first-child a { 
+        border-top-color: transparent; 
+        &:hover {
+          border-top-color: desaturate(darken(#FFF5B8,10%),50%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 29.875em) {
+  .data-list li:hover {
+    .border-radius(0px);
+    border-left: none;
+    border-right: none;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -1,10 +1,10 @@
 .lt-ie9 {
- //why Ualberta feature video icon
-.thumbnail-container .hover-caption-container i{
-	 top:0%;
-	 line-height:1em;
-	 width:30%;
- }
+   //why Ualberta feature video icon
+  .thumbnail-container .hover-caption-container i{
+  	 top:0%;
+  	 line-height:1em;
+  	 width:30%;
+   }
 
   hr.secondary-hr { display: none; }
 
@@ -75,6 +75,7 @@
      .explore-box {
        h3 {
          font-size: 2.25em;
+         *line-height: 1em; // fix ie7 cut off text
          margin:  0.25em 0em 0.35em 0em;
          font-family: DIN Regular;
          color: @yellow;
@@ -179,6 +180,7 @@
         margin-right:  auto;
         h3 {
           font-size: 2.5em;
+          *line-height: 1em; // fix ie7 cut off text
           font-family: DIN Regular;
           margin:  0.35em 0em;
         }
@@ -371,6 +373,18 @@
     	background-position:0px -68px;
     }
   }
+  
+  // full-width.less - ie7/ie8
+
+  .content-wrapper.full-width .row-fluid {
+    .primary-content-area {
+      width:  (47.97872340425532%+29.680851063829788%);
+    }
+    .secondary-content-area {
+      display: none;
+    }
+  }
+
   
   // why-ualberta.less - ie7/ie8  
   .why-ualberta {

@@ -11,21 +11,6 @@ $(document).ready(function() {
 		globalNav.find('.navigation-toggle').click(function() {
 		  globalNav.find('.main-navigation').toggleClass('in');
 		});
-		
-    $(document).on("click", ".video-modal-link", function () {
-      var videoSrc = $(this).attr('href');
-      // no modal for mobile
-      if($(window).width() < 500) {
-        window.location = videoSrc;
-      }
-      $('#videoModal iframe').attr('src', videoSrc);
-      $('#videoModal .modal-header h3').text($(this).data('title'));
-    });
-    
-  
-    $('#videoModal').bind('hidden', function () {
-      $('#videoModal iframe').attr('src', '');
-    });
   
     $('.start').removeClass('start');
 }); 

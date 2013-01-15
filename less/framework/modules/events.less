@@ -12,6 +12,44 @@
       border-bottom: none;
     }
   }
+  .events-list {
+    li.events-row {
+      border-top: 1px dotted #e0e0e0;
+      &:first-child {
+        border-top-color:transparent;
+      }
+      a {
+        border: 0;
+        padding-bottom: 0;
+        &:hover {
+          margin:0;
+          padding-left: 0;
+          padding-right: 0;
+          border: none;
+          background: none;
+          text-decoration: underline;  
+           
+        }
+      }
+      .date {
+        line-height: 1.57em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        font-size: 0.9em;
+        color: @lightText;
+      }
+      &:hover {
+        //margin:0;
+        background: #FFF5B8;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-top: 1px solid desaturate(darken(#FFF5B8,10%),50%);
+        margin-bottom: -1px;
+        border-bottom: 1px solid desaturate(darken(#FFF5B8,10%),50%);
+        .border-radius(0px);
+      }
+    }
+  }
 }
 
 .secondary-content-area {
