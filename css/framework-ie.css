@@ -1,15 +1,18 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
+.lt-ie9 .accordion-list li a.accordion-toggle{height:22px;}
+.lt-ie9 .accordion-list li.expanded a.accordion-toggle{background:none;filter:none;}
+.lt-ie9 input[type='text']{padding-top:0.58em;padding-bottom:0em;}
 .accordion-list>li>a{background-color:none;}
 .lt-ie9 .hover-caption-container i{position:absolute;font-size:6em;color:#fff;left:50%;margin-left:-0.35em;top:10%;margin-top:0.2em;text-shadow:0px 0px 10px #000;opacity:0.4;filter:alpha(opacity=40);pointer-events:none;width:27%;line-height:1em;}
 .lt-ie9 .why-ualberta .fma-container .hover-caption-container i{width:30%;}
+.lt-ie9 .data-list li.bottom-row a{background:#eee;border-top:1px solid #ddd;}.lt-ie9 .data-list li.bottom-row a:hover{background:#fff;}
 .lt-ie9 .sidebar-content{height:100%!important;}
 .lt-ie9 .ualberta-home .row-fluid .primary-content-area{width:57%;}
 .lt-ie9 .ualberta-home .row-fluid .secondary-content-area{width:40%;}
 .lt-ie9 .row-fluid .primary-content-area,.lt-ie9 .row-fluid .footer-faculty-links,.lt-ie9 .row-fluid .footer-copyright{margin-left:0;}
-.lt-ie9 .person-search,.lt-ie9 icon-field{position:relative;}.lt-ie9 .person-search i,.lt-ie9 icon-field i{position:absolute;color:#ccc;top:0.7857142857142857em;left:0.7142857142857143em;margin:0;z-index:100;}
-.lt-ie9 .person-search input,.lt-ie9 icon-field input{padding:0.5714285714285714em 0.5714285714285714em 0em 2.142857142857143em;}
-.lt-ie9 .person-search button,.lt-ie9 icon-field button{position:absolute;top:0;right:0;height:30px;padding:6px 10px;}
+.lt-ie9 .person-search,.lt-ie9 .icon-field{position:relative;}.lt-ie9 .person-search i,.lt-ie9 .icon-field i{position:absolute;color:#ccc;top:0.7857142857142857em;left:0.7142857142857143em;margin:0;z-index:100;}
+.lt-ie9 .person-search button,.lt-ie9 .icon-field button{position:absolute;top:0;right:0;height:30px;padding:6px 10px;}
 .lt-ie9 .sidebar h6{margin:0.625em 0em 0em 0em;}
 .lt-ie9 .row-fluid .feature-area{width:47.97872340425532%;}
 .lt-ie9 .row-fluid .audience-area{width:49.8936170212766%;}
@@ -25,6 +28,8 @@
 .lt-ie9 .blade-container ul.quick-links li a{display:block;padding:0px 10px;border-right:1px solid #eee;}
 .lt-ie9 .blade-container .icon-bar{display:none;}
 .lt-ie9 .blade-container .quick-links-container .quick-links-button{display:none;}
+.lt-ie9 .blade-container .blade-search i.icon-search{display:none;}
+.lt-ie9 .blade-container .blade-search input.search-query{padding-left:10px;}
 .lt-ie9 .banner-container .banner-inner h1{left:0px;font-size:2em;}
 .lt-ie9 .banner-container .oval-container{display:none;}
 .lt-ie9 .banner-container .shadow-container{display:none;}
@@ -40,7 +45,7 @@
 .lt-ie9 .navigation-container .navigation-inner ul li ul li a{display:block;}
 .lt-ie9 .navigation-container .navigation-inner ul li{position:relative;padding:0;}.lt-ie9 .navigation-container .navigation-inner ul li a{margin-right:0px;}.lt-ie9 .navigation-container .navigation-inner ul li a:hover{text-decoration:none;}
 .lt-ie9 .navigation-container .navigation-inner ul li ul li{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;float:left;text-align:center;display:block;margin-right:0px;border-left:1px solid #f9fffc;border-right:1px solid #c9cfcc;text-align:center;}.lt-ie9 .navigation-container .navigation-inner ul li ul li.audience-link{display:none;}
-.lt-ie9 .navigation-container .navigation-inner ul.main-navigation>li:hover>a{background-color:#f6fcf9;background-color:rgba(255, 255, 255, 0.5);}
+.lt-ie9 .navigation-container .navigation-inner ul.main-navigation>li:hover>a,.lt-ie9 .navigation-container .navigation-inner ul.main-navigation>li.nav-current>a{background-color:#f6fcf9;background-color:rgba(255, 255, 255, 0.5);}
 .lt-ie9 .navigation-container .navigation-inner ul.main-navigation>li:hover>a:active{background-color:rgba(0, 30, 0, 0.1);border-top:1px solid rgba(0, 0, 0, 0.25);padding-top:11px;-webkit-box-shadow:inset 0px 1px 6px rgba(0, 0, 0, 0.25);-moz-box-shadow:inset 0px 1px 6px rgba(0, 0, 0, 0.25);box-shadow:inset 0px 1px 6px rgba(0, 0, 0, 0.25);color:#44524a;text-shadow:1px 1px 1px rgba(255, 255, 255, 0.65);margin-left:-1px;border-left:1px solid #a2a7a3;}
 .lt-ie9 .navigation-container .navigation-inner ul li .navigation-toggle{display:none;}
 .lt-ie9 .navigation-container .main-navigation.collapse{display:block;height:auto!important;overflow:visible!important;}
@@ -55,7 +60,8 @@
 .lt-ie9 .btn-work,.lt-ie9 .btn-give{border:1px solid #e0e0e0;}
 .lt-ie9 .btn-apply{outline:none;filter:none;background:#ffec05 left bottom repeat-x url(../img/bg-btn-lg-yellow.png);border-color:#d1b300;}.lt-ie9 .btn-apply:hover{background-image:none;background-color:#ffee6c;border-color:#ccc;}
 .lt-ie9 .btn-work{outline:none;filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);}.lt-ie9 .btn-work:hover{filter:none;background-image:none;background-color:#f3f7f5;border-color:#ccc;}
-.lt-ie9 .make-a-gift .btn-give.btn-micro,.lt-ie9 .btn-give{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);font-size:0.9em;padding-top:1em;padding-bottom:0.7em;}.lt-ie9 .make-a-gift .btn-give.btn-micro:hover,.lt-ie9 .btn-give:hover{background-image:none;background-color:#f3f7f5;border-color:#ccc;}
+.lt-ie9 .make-a-gift .btn-give.btn-micro,.lt-ie9 .btn-give{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);padding-top:1em;padding-bottom:0.7em;}.lt-ie9 .make-a-gift .btn-give.btn-micro:hover,.lt-ie9 .btn-give:hover{background-image:none;background-color:#f3f7f5;border-color:#ccc;}
+.lt-ie9 .make-a-gift .btn-give.btn-micro{font-size:0.9em;}
 .lt-ie9 .accordion-list li.expanded a.accordion-toggle{background-image:url(../img/expand.png);background-repeat:no-repeat;filter:none;color:#00974F;border:none;height:23px;box-shadow:none;margin-right:-10px;padding-right:5px;padding-left:5px;padding-top:0px;padding-bottom:24px;-webkit-border-radius:0px 4px 4px 0px;-moz-border-radius:0px 4px 4px 0px;border-radius:0px 4px 4px 0px;}.lt-ie9 .accordion-list li.expanded a.accordion-toggle:hover{background-color:none;}
 .lt-ie9 .link-mod-container{position:relative;list-style:none;margin:0;padding:0 0 50px 0;border:1px solid #dfe9e3;min-height:400px;}.lt-ie9 .link-mod-container h4{line-height:1.2em;}
 .lt-ie9 .link-mod-container .icon-filter{position:absolute;bottom:12px;left:15px;color:#ccc;z-index:16;}
@@ -64,7 +70,7 @@
 .lt-ie9 .link-mod-container>li.link-mod-active h4 a{color:#fff;*background-color:#00964f;background-image:-moz-linear-gradient(top, #00af5c, #007c41);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#00af5c), to(#007c41));background-image:-webkit-linear-gradient(top, #00af5c, #007c41);background-image:-o-linear-gradient(top, #00af5c, #007c41);background-image:linear-gradient(to bottom, #00af5c, #007c41);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00af5c', endColorstr='#ff007c41', GradientType=0);margin:-1px -1px 0px -5px;-webkit-border-radius:5px 0px 0px 5px;-moz-border-radius:5px 0px 0px 5px;border-radius:5px 0px 0px 5px;}
 .lt-ie9 .link-mod-container>li.link-mod-active ul.link-mod-items{display:block;}
 .lt-ie9 .link-mod-container li.link-mod-active h4 a:after{content:"\f0da";font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;float:right;}
-.lt-ie9 .link-mod-container li.link-mod-filter{border-bottom:none;z-index:14;margin:0;border:0;color:#666;float:none;}.lt-ie9 .link-mod-container li.link-mod-filter input{position:absolute;bottom:0px;left:10px;z-index:15;padding:5px 6px 3px 25px;width:128px;font-size:12px;line-height:1em;}
+.lt-ie9 .link-mod-container li.link-mod-filter{border-bottom:none;z-index:14;margin:0;border:0;color:#666;float:none;}.lt-ie9 .link-mod-container li.link-mod-filter input{position:absolute;bottom:0px;left:10px;z-index:15;padding-left:25px;width:128px;font-size:12px;line-height:1em;}
 .lt-ie9 .link-mod-container>li ul.link-mod-items li{border-bottom:1px solid #dfe9e3;}.lt-ie9 .link-mod-container>li ul.link-mod-items li a{display:block;padding:8px;background:none;}
 .lt-ie9 .link-mod-container>li ul.link-mod-items li a:hover{background:#FFF5B8;text-decoration:none;border-color:#e1d8a4;}
 .lt-ie9 .link-mod-container .link-mod-result-title{color:#44524a;padding:10px;*background-color:#fffadc;background-image:-moz-linear-gradient(top, #ffffff, #fff5b8);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#fff5b8));background-image:-webkit-linear-gradient(top, #ffffff, #fff5b8);background-image:-o-linear-gradient(top, #ffffff, #fff5b8);background-image:linear-gradient(to bottom, #ffffff, #fff5b8);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fffff5b8', GradientType=0);}
@@ -76,18 +82,239 @@
 .lt-ie9 .link-mod-container li.link-mod-filter{float:none;}
 .lt-ie9 .link-mod-container li.link-mod-active h4 a::after{font-style:normal;font-family:FontAwesome;float:right;content:"\f0da";text-decoration:inherit;}
 .lt-ie9 .link-mod-container .icon-filter{bottom:10px;bottom:0.6428571428571429em;}
+.lt-ie8 .filter-dropdown{width:180px;}
+.lt-ie8 *{zoom:1;}
+.lt-ie8 ul.breadcrumbs li{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += '/&nbsp;&nbsp;&nbsp;');}
 .lt-ie8 ul.quick-links li,.lt-ie8 .blade-search,.lt-ie8 ul.quick-links-container,.lt-ie8 ul.quick-links-container li,.lt-ie8 .latest-news div.news-heading h3,.lt-ie8 .latest-news div.news-heading a,.lt-ie8 .latest-news ul.news-list li.news-row span.news-date,.lt-ie8 ul.footer-quick-links,.lt-ie8 ul.footer-quick-links li{*display:inline;*zoom:1;}
 .lt-ie8 .navigation-container{height:40px;}
 .lt-ie8 .blade-search{top:-15px;}
 .lt-ie8 .accordion-list>li.expanded>a:first-child{margin:-1px -10px 0px;padding-left:-10px;}
 .lt-ie8 li.expanded a.accordion-toggle{padding-bottom:11px!important;height:22px;}
 .lt-ie8 li.expanded a.accordion-toggle:hover{background-color:none;}
-.lt-ie8 .sidebar .links-module .links li a{padding-top:0px;}
-.lt-ie8 .sidebar .links-module .links li a:hover{border-bottom:0px;margin-bottom:0px;}
 .lt-ie8 .image-caption-container .caption{position:static;padding:6px 0px 3px 0px;background:#fff;color:#6a7870;text-shadow:none;}.lt-ie8 .image-caption-container .caption a{color:#007c41;}
 .lt-ie8 .image-caption-container .caption p,.lt-ie8 .image-caption-container .caption h3{padding:0px;margin-bottom:0;line-height:1.4em;}
-.lt-ie8 .content-top-row{width:67.14285714285714em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.lt-ie8 .content-top-row .tab-content{overflow:auto;min-height:260px;height:18.571428571428573em;}
+.lt-ie8 .content-top-row{width:auto;margin:0;line-height:0;}
 .lt-ie8 .navigation-inner ul li a,.lt-ie8 ul.quick-links li{margin-right:0px;}
+.lt-ie8 [class^="icon-"],.lt-ie8 [class*=" icon-"]{font-family:FontAwesome;font-style:normal;font-weight:normal;}
+.lt-ie8 .btn.dropdown-toggle [class^="icon-"],.lt-ie8 .btn.dropdown-toggle [class*=" icon-"]{line-height:1.4em;}
+.lt-ie8 .icon-large{font-size:1.3333em;}
+.lt-ie8 .icon-glass{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf000;&nbsp;');}
+.lt-ie8 .icon-music{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf001;&nbsp;');}
+.lt-ie8 .icon-search{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf002;&nbsp;');}
+.lt-ie8 .icon-envelope{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf003;&nbsp;');}
+.lt-ie8 .icon-heart{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004;&nbsp;');}
+.lt-ie8 .icon-star{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf005;&nbsp;');}
+.lt-ie8 .icon-star-empty{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf006;&nbsp;');}
+.lt-ie8 .icon-user{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf007;&nbsp;');}
+.lt-ie8 .icon-film{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf008;&nbsp;');}
+.lt-ie8 .icon-th-large{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf009;&nbsp;');}
+.lt-ie8 .icon-th{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00a;&nbsp;');}
+.lt-ie8 .icon-th-list{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00b;&nbsp;');}
+.lt-ie8 .icon-ok{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00c;&nbsp;');}
+.lt-ie8 .icon-remove{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00d;&nbsp;');}
+.lt-ie8 .icon-zoom-in{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00e;&nbsp;');}
+.lt-ie8 .icon-zoom-out{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf010;&nbsp;');}
+.lt-ie8 .icon-off{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf011;&nbsp;');}
+.lt-ie8 .icon-signal{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf012;&nbsp;');}
+.lt-ie8 .icon-cog{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf013;&nbsp;');}
+.lt-ie8 .icon-trash{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf014;&nbsp;');}
+.lt-ie8 .icon-home{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf015;&nbsp;');}
+.lt-ie8 .icon-file{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf016;&nbsp;');}
+.lt-ie8 .icon-time{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf017;&nbsp;');}
+.lt-ie8 .icon-road{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf018;&nbsp;');}
+.lt-ie8 .icon-download-alt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf019;&nbsp;');}
+.lt-ie8 .icon-download{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01a;&nbsp;');}
+.lt-ie8 .icon-upload{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01b;&nbsp;');}
+.lt-ie8 .icon-inbox{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01c;&nbsp;');}
+.lt-ie8 .icon-play-circle{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01d;&nbsp;');}
+.lt-ie8 .icon-repeat{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01e;&nbsp;');}
+.lt-ie8 .icon-refresh{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf021;&nbsp;');}
+.lt-ie8 .icon-list-alt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf022;&nbsp;');}
+.lt-ie8 .icon-lock{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf023;&nbsp;');}
+.lt-ie8 .icon-flag{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf024;&nbsp;');}
+.lt-ie8 .icon-headphones{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf025;&nbsp;');}
+.lt-ie8 .icon-volume-off{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf026;&nbsp;');}
+.lt-ie8 .icon-volume-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf027;&nbsp;');}
+.lt-ie8 .icon-volume-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf028;&nbsp;');}
+.lt-ie8 .icon-qrcode{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf029;&nbsp;');}
+.lt-ie8 .icon-barcode{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02a;&nbsp;');}
+.lt-ie8 .icon-tag{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02b;&nbsp;');}
+.lt-ie8 .icon-tags{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02c;&nbsp;');}
+.lt-ie8 .icon-book{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02d;&nbsp;');}
+.lt-ie8 .icon-bookmark{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02e;&nbsp;');}
+.lt-ie8 .icon-print{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02f;&nbsp;');}
+.lt-ie8 .icon-camera{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf030;&nbsp;');}
+.lt-ie8 .icon-font{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf031;&nbsp;');}
+.lt-ie8 .icon-bold{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf032;&nbsp;');}
+.lt-ie8 .icon-italic{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf033;&nbsp;');}
+.lt-ie8 .icon-text-height{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf034;&nbsp;');}
+.lt-ie8 .icon-text-width{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf035;&nbsp;');}
+.lt-ie8 .icon-align-left{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036;&nbsp;');}
+.lt-ie8 .icon-align-center{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf037;&nbsp;');}
+.lt-ie8 .icon-align-right{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf038;&nbsp;');}
+.lt-ie8 .icon-align-justify{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf039;&nbsp;');}
+.lt-ie8 .icon-list{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03a;&nbsp;');}
+.lt-ie8 .icon-indent-left{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03b;&nbsp;');}
+.lt-ie8 .icon-indent-right{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03c;&nbsp;');}
+.lt-ie8 .icon-facetime-video{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03d;&nbsp;');}
+.lt-ie8 .icon-picture{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03e;&nbsp;');}
+.lt-ie8 .icon-pencil{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf040;&nbsp;');}
+.lt-ie8 .icon-map-marker{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf041;&nbsp;');}
+.lt-ie8 .icon-adjust{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf042;&nbsp;');}
+.lt-ie8 .icon-tint{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf043;&nbsp;');}
+.lt-ie8 .icon-edit{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf044;&nbsp;');}
+.lt-ie8 .icon-share{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf045;&nbsp;');}
+.lt-ie8 .icon-check{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf046;&nbsp;');}
+.lt-ie8 .icon-move{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf047;&nbsp;');}
+.lt-ie8 .icon-step-backward{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf048;&nbsp;');}
+.lt-ie8 .icon-fast-backward{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf049;&nbsp;');}
+.lt-ie8 .icon-backward{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04a;&nbsp;');}
+.lt-ie8 .icon-play{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04b;&nbsp;');}
+.lt-ie8 .icon-pause{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04c;&nbsp;');}
+.lt-ie8 .icon-stop{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04d;&nbsp;');}
+.lt-ie8 .icon-forward{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04e;&nbsp;');}
+.lt-ie8 .icon-fast-forward{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf050;&nbsp;');}
+.lt-ie8 .icon-step-forward{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf051;&nbsp;');}
+.lt-ie8 .icon-eject{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf052;&nbsp;');}
+.lt-ie8 .icon-chevron-left{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf053;&nbsp;');}
+.lt-ie8 .icon-chevron-right{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf054;&nbsp;');}
+.lt-ie8 .icon-plus-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf055;&nbsp;');}
+.lt-ie8 .icon-minus-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf056;&nbsp;');}
+.lt-ie8 .icon-remove-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf057;&nbsp;');}
+.lt-ie8 .icon-ok-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf058;&nbsp;');}
+.lt-ie8 .icon-question-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf059;&nbsp;');}
+.lt-ie8 .icon-info-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05a;&nbsp;');}
+.lt-ie8 .icon-screenshot{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05b;&nbsp;');}
+.lt-ie8 .icon-remove-circle{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05c;&nbsp;');}
+.lt-ie8 .icon-ok-circle{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05d;&nbsp;');}
+.lt-ie8 .icon-ban-circle{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05e;&nbsp;');}
+.lt-ie8 .icon-arrow-left{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf060;&nbsp;');}
+.lt-ie8 .icon-arrow-right{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf061;&nbsp;');}
+.lt-ie8 .icon-arrow-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf062;&nbsp;');}
+.lt-ie8 .icon-arrow-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf063;&nbsp;');}
+.lt-ie8 .icon-share-alt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf064;&nbsp;');}
+.lt-ie8 .icon-resize-full{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf065;&nbsp;');}
+.lt-ie8 .icon-resize-small{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf066;&nbsp;');}
+.lt-ie8 .icon-plus{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf067;&nbsp;');}
+.lt-ie8 .icon-minus{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf068;&nbsp;');}
+.lt-ie8 .icon-asterisk{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf069;&nbsp;');}
+.lt-ie8 .icon-exclamation-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06a;&nbsp;');}
+.lt-ie8 .icon-gift{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06b;&nbsp;');}
+.lt-ie8 .icon-leaf{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06c;&nbsp;');}
+.lt-ie8 .icon-fire{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06d;&nbsp;');}
+.lt-ie8 .icon-eye-open{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06e;&nbsp;');}
+.lt-ie8 .icon-eye-close{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf070;&nbsp;');}
+.lt-ie8 .icon-warning-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf071;&nbsp;');}
+.lt-ie8 .icon-plane{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf072;&nbsp;');}
+.lt-ie8 .icon-calendar{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf073;&nbsp;');}
+.lt-ie8 .icon-random{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf074;&nbsp;');}
+.lt-ie8 .icon-comment{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf075;&nbsp;');}
+.lt-ie8 .icon-magnet{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf076;&nbsp;');}
+.lt-ie8 .icon-chevron-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf077;&nbsp;');}
+.lt-ie8 .icon-chevron-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf078;&nbsp;');}
+.lt-ie8 .icon-retweet{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf079;&nbsp;');}
+.lt-ie8 .icon-shopping-cart{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07a;&nbsp;');}
+.lt-ie8 .icon-folder-close{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07b;&nbsp;');}
+.lt-ie8 .icon-folder-open{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07c;&nbsp;');}
+.lt-ie8 .icon-resize-vertical{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07d;&nbsp;');}
+.lt-ie8 .icon-resize-horizontal{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07e;&nbsp;');}
+.lt-ie8 .icon-bar-chart{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf080;&nbsp;');}
+.lt-ie8 .icon-twitter-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf081;&nbsp;');}
+.lt-ie8 .icon-facebook-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf082;&nbsp;');}
+.lt-ie8 .icon-camera-retro{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf083;&nbsp;');}
+.lt-ie8 .icon-key{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf084;&nbsp;');}
+.lt-ie8 .icon-cogs{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf085;&nbsp;');}
+.lt-ie8 .icon-comments{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf086;&nbsp;');}
+.lt-ie8 .icon-thumbs-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf087;&nbsp;');}
+.lt-ie8 .icon-thumbs-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf088;&nbsp;');}
+.lt-ie8 .icon-star-half{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf089;&nbsp;');}
+.lt-ie8 .icon-heart-empty{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08a;&nbsp;');}
+.lt-ie8 .icon-signout{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08b;&nbsp;');}
+.lt-ie8 .icon-linkedin-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08c;&nbsp;');}
+.lt-ie8 .icon-pushpin{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08d;&nbsp;');}
+.lt-ie8 .icon-external-link{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08e;&nbsp;');}
+.lt-ie8 .icon-signin{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf090;&nbsp;');}
+.lt-ie8 .icon-trophy{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf091;&nbsp;');}
+.lt-ie8 .icon-github-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf092;&nbsp;');}
+.lt-ie8 .icon-upload-alt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf093;&nbsp;');}
+.lt-ie8 .icon-lemon{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf094;&nbsp;');}
+.lt-ie8 .icon-phone{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf095;&nbsp;');}
+.lt-ie8 .icon-check-empty{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf096;&nbsp;');}
+.lt-ie8 .icon-bookmark-empty{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf097;&nbsp;');}
+.lt-ie8 .icon-phone-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf098;&nbsp;');}
+.lt-ie8 .icon-twitter{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf099;&nbsp;');}
+.lt-ie8 .icon-facebook{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09a;&nbsp;');}
+.lt-ie8 .icon-github{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09b;&nbsp;');}
+.lt-ie8 .icon-unlock{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09c;&nbsp;');}
+.lt-ie8 .icon-credit-card{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09d;&nbsp;');}
+.lt-ie8 .icon-rss{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09e;&nbsp;');}
+.lt-ie8 .icon-hdd{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a0;&nbsp;');}
+.lt-ie8 .icon-bullhorn{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a1;&nbsp;');}
+.lt-ie8 .icon-bell{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a2;&nbsp;');}
+.lt-ie8 .icon-certificate{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a3;&nbsp;');}
+.lt-ie8 .icon-hand-right{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a4;&nbsp;');}
+.lt-ie8 .icon-hand-left{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a5;&nbsp;');}
+.lt-ie8 .icon-hand-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a6;&nbsp;');}
+.lt-ie8 .icon-hand-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a7;&nbsp;');}
+.lt-ie8 .icon-circle-arrow-left{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a8;&nbsp;');}
+.lt-ie8 .icon-circle-arrow-right{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a9;&nbsp;');}
+.lt-ie8 .icon-circle-arrow-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0aa;&nbsp;');}
+.lt-ie8 .icon-circle-arrow-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ab;&nbsp;');}
+.lt-ie8 .icon-globe{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ac;&nbsp;');}
+.lt-ie8 .icon-wrench{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ad;&nbsp;');}
+.lt-ie8 .icon-tasks{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ae;&nbsp;');}
+.lt-ie8 .icon-filter{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b0;&nbsp;');}
+.lt-ie8 .icon-briefcase{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b1;&nbsp;');}
+.lt-ie8 .icon-fullscreen{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b2;&nbsp;');}
+.lt-ie8 .icon-group{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c0;&nbsp;');}
+.lt-ie8 .icon-link{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c1;&nbsp;');}
+.lt-ie8 .icon-cloud{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c2;&nbsp;');}
+.lt-ie8 .icon-beaker{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c3;&nbsp;');}
+.lt-ie8 .icon-cut{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c4;&nbsp;');}
+.lt-ie8 .icon-copy{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c5;&nbsp;');}
+.lt-ie8 .icon-paper-clip{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c6;&nbsp;');}
+.lt-ie8 .icon-save{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c7;&nbsp;');}
+.lt-ie8 .icon-sign-blank{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c8;&nbsp;');}
+.lt-ie8 .icon-reorder{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c9;&nbsp;');}
+.lt-ie8 .icon-list-ul{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ca;&nbsp;');}
+.lt-ie8 .icon-list-ol{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cb;&nbsp;');}
+.lt-ie8 .icon-strikethrough{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cc;&nbsp;');}
+.lt-ie8 .icon-underline{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cd;&nbsp;');}
+.lt-ie8 .icon-table{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ce;&nbsp;');}
+.lt-ie8 .icon-magic{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d0;&nbsp;');}
+.lt-ie8 .icon-truck{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d1;&nbsp;');}
+.lt-ie8 .icon-pinterest{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d2;&nbsp;');}
+.lt-ie8 .icon-pinterest-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d3;&nbsp;');}
+.lt-ie8 .icon-google-plus-sign{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d4;&nbsp;');}
+.lt-ie8 .icon-google-plus{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d5;&nbsp;');}
+.lt-ie8 .icon-money{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d6;&nbsp;');}
+.lt-ie8 .icon-caret-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d7;&nbsp;');}
+.lt-ie8 .icon-caret-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d8;&nbsp;');}
+.lt-ie8 .icon-caret-left{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d9;&nbsp;');}
+.lt-ie8 .icon-caret-right{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0da;&nbsp;');}
+.lt-ie8 .icon-columns{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0db;&nbsp;');}
+.lt-ie8 .icon-sort{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dc;&nbsp;');}
+.lt-ie8 .icon-sort-down{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dd;&nbsp;');}
+.lt-ie8 .icon-sort-up{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0de;&nbsp;');}
+.lt-ie8 .icon-envelope-alt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e0;&nbsp;');}
+.lt-ie8 .icon-linkedin{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e1;&nbsp;');}
+.lt-ie8 .icon-undo{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e2;&nbsp;');}
+.lt-ie8 .icon-legal{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e3;&nbsp;');}
+.lt-ie8 .icon-dashboard{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e4;&nbsp;');}
+.lt-ie8 .icon-comment-alt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e5;&nbsp;');}
+.lt-ie8 .icon-comments-alt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e6;&nbsp;');}
+.lt-ie8 .icon-bolt{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e7;&nbsp;');}
+.lt-ie8 .icon-sitemap{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e8;&nbsp;');}
+.lt-ie8 .icon-umbrella{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e9;&nbsp;');}
+.lt-ie8 .icon-paste{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ea;&nbsp;');}
+.lt-ie8 .icon-user-md{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf200;&nbsp;');}
+.lt-ie8 .btn-apply,.lt-ie8 .btn-give,.lt-ie8 .btn-work{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += ' <i class=\"icon-circle-arrow-right\"></i>');position:relative;}
+.lt-ie8 .btn-apply i,.lt-ie8 .btn-give i,.lt-ie8 .btn-work i{position:absolute;right:8px;font-size:18px;line-height:18px;}
+.lt-ie8 .btn-apply.btn-micro i,.lt-ie8 .btn-give.btn-micro i,.lt-ie8 .btn-work.btn-micro i{position:absolute;right:0px;top:6px;font-size:18px;line-height:18px;}
+.lt-ie8 a.accordion-toggle.icon-plus{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf067;&nbsp;');color:#007c41;height:22px;}
+.lt-ie8 .accordion-list ul li div{display:inline;position:relative;}
+.lt-ie8 .module-container{margin-bottom:0px;}
+.lt-ie9 .prospective-student .content-top-row,.lt-ie9 .why-ualberta .content-top-row,.lt-ie9 .campuslife .content-top-row{width:67.14285714285714em;margin:5px auto;line-height:1.42em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.lt-ie9 .prospective-student .content-top-row .tab-content,.lt-ie9 .why-ualberta .content-top-row .tab-content,.lt-ie9 .campuslife .content-top-row .tab-content{overflow:auto;min-height:260px;height:18.571428571428573em;}
 .ie7 *{zoom:1;}
 .ie7 .icon-rss{font-family:FontAwesome;font-style:normal;font-weight:normal;}
 .ie7 .accordion-list>li.expanded>a:first-child{padding-left:20px;}
