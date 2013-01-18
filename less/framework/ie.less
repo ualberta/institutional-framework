@@ -1,5 +1,4 @@
-.lt-ie9 {
-  // All IE
+.lt-ie10 {
   .accordion-list li a.accordion-toggle {
     height: 22px;
   }
@@ -7,17 +6,18 @@
     background: none;
     filter: none;
   }
-  input[type='text'] {
-    padding-top: 0.58em;
-    padding-bottom: 0em;
+  .accordion-list > li > a{
+  	background-color:none;
   }
 }
 
 /** BELOW IE9 **/
-.accordion-list > li > a{
-	background-color:none;
-}
+
 .lt-ie9 {
+  input[type='text'] {
+    padding-top: 0.58em;
+    padding-bottom: 0em;
+  }
  //Video Icon//
   .hover-caption-container  i{
     position:absolute; 
@@ -45,6 +45,11 @@
     } 
   }
 
+.blade-inner {
+  nav, input, button.global-search-btn {
+    font-size: 0.85714285714286em;
+  }
+}
   
 .sidebar-content{
 	height:100%!important;

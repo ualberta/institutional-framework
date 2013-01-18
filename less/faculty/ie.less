@@ -1,0 +1,181 @@
+// INTERNET EXPLORER 8 AND BELOW
+// --------------------------------------------------
+.lt-ie9 {
+
+  // Banner
+  // ---------------------
+  .banner-container .banner-inner h1 {
+    display: block;
+  }
+
+  // Navigation
+  // ---------------------
+  // See ./faculty/nav.less for comments
+  
+  @totalNavWidth: 441px;
+  
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: percentage(64/@totalNavWidth);
+      }
+      .nav2 {
+        width: percentage(72/@totalNavWidth);
+      }
+      .nav3 {
+        width: percentage(96/@totalNavWidth);
+      }
+      .nav4 {
+        width: percentage(68/@totalNavWidth);
+      }
+      .nav5 {
+        width: percentage(91/@totalNavWidth);
+      }
+      .nav6 {
+        width: percentage(50/@totalNavWidth);
+      }
+    }
+  }
+  
+  .navigation-inner ul.section-navigation li{
+  	border:none;
+  	float:none;
+  	margin-left:-5px;
+  }
+  .navigation-inner ul.section-navigation li:hover{
+  	margin-left:-5px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu{
+    right:-480px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
+    right: -300px;
+    left: auto;
+    width: 500px;
+    & .section-navigation {
+      width: 46%;
+    }
+  }
+  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
+    right:-350px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
+    right:-150px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
+    width: 500px;
+  }
+  .navigation-inner .sub-menu .section-title{
+    text-align:left;
+  }
+  .navigation-inner .sub-menu ul li a {
+    text-align:left;
+  }
+  .navigation-inner .sub-menu .section-description {
+    text-align:left;
+  }
+  .navigation-inner .main-navigation > li .sub-menu {
+    display: none;
+  }
+  .navigation-inner .main-navigation > li:hover .sub-menu {
+    display: block;
+    width:  600px;
+    height: auto;
+  }
+  .navigation-inner .sub-menu {
+    position: absolute;
+    top: 39px;
+    left: -1px;
+    z-index: 100;
+    width:  600px;
+    height: auto;
+    background: #ccc;
+    .border-radius(0px 0px 4px 4px);
+    padding: 10px;
+    #gradient > .vertical-three-colors(#fbfbfb, #ffffff, 33%, #E7EDE7);
+    .box-shadow(inset 0px 0px 5px #aabaaa, 0px 1px 10px rgba(0,0,0,0.15));
+    border: 1px solid #ccd6cc;
+    border-bottom: 2px solid #bbcbbb;
+    border-top: 1px solid #acb1af;
+    .transition(opacity 0.1s linear);
+    display: none;
+  }
+  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu {
+    right: -450px;
+    left: auto;
+  }
+  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
+    right: -250px;
+    left: auto;
+    width: 400px;
+    & .section-navigation {
+      width: 96%;
+    }
+  }
+  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu {
+    right: -200px;
+    left: auto;
+  }
+  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu {
+    right: -100px;
+    left: auto;
+  }
+  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
+    right: -5px;
+    left: auto;
+  }
+  .navigation-inner .sub-menu ul,
+  .navigation-inner .sub-menu ul li,
+  .navigation-inner .sub-menu ul li a {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation-inner .sub-menu .section-title {
+    font-weight: bold;
+    font-size:  14px;
+    border-bottom: 1px dotted @grayDark;
+    line-height:  1em;
+    margin: 0 0 4px 0;
+    padding: 5px 0px;
+    text-shadow:  none;
+  }
+  .navigation-inner .sub-menu .section-navigation,
+  .navigation-inner .sub-menu .section-description {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+  }
+  .navigation-inner .sub-menu .section-navigation {
+    margin-right:2%;
+  }
+  .navigation-inner .sub-menu .section-description {
+    padding: 4px 0 2px 2%;
+    margin-top: -3px;
+    border-left: 1px dotted @grayDark;
+  }
+  .navigation-inner .sub-menu ul li a {
+    font-family: sans-serif;
+    text-transform: none;
+    border: none;
+    padding: 4px 0px;
+    color: @linkColor;
+    line-height: 1.2em;
+    
+    &:hover {
+      padding-left:10px;
+      margin-left: -11px;
+      #gradient > .horizontal(rgba(255,219,5,0.65), rgba(255,219,5,0));
+      border-left: 1px solid darken(#ffdb05,3%);
+      text-shadow: none;
+    }
+  }
+  // End Navigation
+}
+
+// INTERNET EXPLORER 7 AND BELOW
+// --------------------------------------------------
+.lt-ie8 {
+  
+}

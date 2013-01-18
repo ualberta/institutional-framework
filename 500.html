@@ -1,0 +1,282 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie-9 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!-- The Meta: These two must be before <title> -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- The Title -->
+  <title>HTTP 500 Internal Server Error</title>
+  
+  <!-- The Other Meta -->
+  <meta name="description" content="University of Alberta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- The Sheets -->
+  <link href="./css/framework.css" rel="stylesheet">
+  <link href="./css/ualberta.css" rel="stylesheet">
+  <!--[if IE]><link href="./css/framework-ie.css" rel="stylesheet"><link href="./css/ualberta-ie.css" rel="stylesheet"><![endif]-->    
+  <!-- The Favicon -->
+  <link rel="shortcut icon" href="./ico/favicon.ico">
+  
+  <!-- Le fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+  
+  <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+  <!-- Burn IE6 with fire -->
+  <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header> <!-- Start Header -->
+  
+    <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
+      <div class="blade-inner">
+        <a class="brand" href="#">
+          <!-- for faculties only <img src="./img/logo2.svg" alt="University of Alberta" /> -->
+        </a>
+        <nav class="blade-navigation">
+          <ul class="quick-links-container">
+            <li id="ql" class="dropdown">
+              <a href="#" id="ql-toggle" class="btn btn-grey btn-small hidden-desktop" data-toggle="dropdown">
+                <span class="quick-links-text">
+                  Quick Links <b class="caret"></b>
+                </span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+                <span class="icon-bar quick-links-button"></span>
+              </a>
+              <ul class="quick-links" role="menu" aria-labelledby="ql-toggle">
+                <li role="menuitem"><a href="http://webapps.srv.ualberta.ca/search/">Find a Person</a></li>
+                <li role="menuitem"><a href="http://onecard.ualberta.ca/">ONEcard</a></li>
+                <li role="menuitem"><a href="https://www.beartracks.ualberta.ca/">Bear Tracks</a></li>
+                <li role="menuitem"><a href="http://www.campusmap.ualberta.ca/">Maps</a></li>
+                <li role="menuitem"><a href="http://apps.ualberta.ca/">Email &amp; Apps</a></li>
+                <li role="menuitem"><a href="https://eclass.srv.ualberta.ca/portal/">eClass</a></li>
+                <li role="menuitem"><a href="http://www.library.ualberta.ca/">Libraries</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="blade-search">
+           <i class="icon-search"></i>
+           <input type="search" class="search-query" placeholder="search">
+           <button type="submit" class="btn btn-grey btn-small global-search-btn">Search</button>
+        </div>
+      </div>
+    </div> <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
+
+    <div class="banner-container"> <!-- Start Banner -->
+      <div class="banner-inner">
+        <h1>
+          <span class="identifier"></span>
+          <span class="site-title">University of Alberta</span>
+        </h1>
+        <div class="banner-logo">
+          <img src="./img/logo-reverse.svg" class="site-logo" alt="Site Logo" />
+        </div>
+        <nav class="audience-navigation">
+          <ul>
+            <li role="menuitem"><a href="http://ualberta-beta.ualberta.ca/prospective.aspx">Prospective Students</a></li>
+            <li role="menuitem"><a href="http://ualberta-beta.ualberta.ca/students.aspx">Current Students</a></li>
+            <li role="menuitem"><a href="http://ualberta-beta.ualberta.ca/facultyandstaff.aspx">Faculty &amp; Staff</a></li>
+            <li role="menuitem"><a href="http://www.alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="shadow-container"></div>
+      <div class="oval-container">
+        <div class="oval oval1"></div>
+        <div class="oval oval2"></div>
+        <div class="oval oval3"></div>
+        <div class="oval oval4"></div>
+      </div>
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
+      <nav id="main-nav" class="navigation-inner">
+        <ul>
+          <li>
+            <a class="navigation-toggle">Show Navigation <i class="icon-toggle-nav"></i></a>
+            <ul class="main-navigation collapse">
+              <li class="nav1" role="menuitem"><a href="//why-beta.ualberta.ca/">Why UAlberta?</a></li>
+              <li class="nav2" role="menuitem"><a href="http://ualberta-beta.ualberta.ca/faculties.aspx">Faculties &amp; Programs</a></li>
+              <li class="nav3" role="menuitem"><a href="http://www.research.ualberta.ca/">Research</a></li>
+              <li class="nav4" role="menuitem"><a href="//admission-beta.ualberta.ca/">Admissions</a></li>
+              <li class="nav5" role="menuitem"><a href="//campuslife-beta.ualberta.ca/">Campus Life</a></li>
+              <li class="nav6" role="menuitem"><a href="//news-beta.ualberta.ca/">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="//prospective-beta.ualberta.ca/">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="//students-beta.ualberta.ca/">Current Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="http://ualberta-beta.ualberta.ca/facultyandstaff.aspx">Faculty &amp; Staff</a></li>
+              <li role="menuitem" class="audience-link"><a href="http://www.alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- End Navigation -->
+    
+  </header> <!-- End Header -->
+  
+  <div class="content-wrapper">
+    <div class="page-title-row">
+        <div class="title-container container">
+            <h2 class="page-title">
+                Sorry, the server is having trouble processing the page you requested.
+            </h2>
+        </div>
+    </div>
+    <div class="content-container container">
+        <div class="content-inner row-fluid">
+            <p>Some common reasons for this include:</p>
+            <ul>
+                <li>The server is misconfigured.</li>
+                <li>The server cannot handle the workload currently placed upon it.</li>
+            </ul>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                In the vast majority of cases, a server administrator must diagnose the problem
+                and take steps to fix it. If you would like, please report this incident via e-mail
+                to <a href="mailto:webmaster@ualberta.ca">webmaster@ualberta.ca</a>. We appreciate
+                your patience while we work to restore the system to working order!</p>
+        </div>
+    </div>
+  </div>
+     
+    <div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
+      <div class="footer-container container"> <!-- Footer Container Start -->
+        <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+        
+          <div class="span12 footer-copyright">
+            <ul class="footer-quick-links">
+					    <li><a href="//ualberta-beta.ualberta.ca/contactualberta">Contact Us</a></li>
+              <li><a href="//ualberta-beta.ualberta.ca/contactualberta/feedback">Feedback</a></li>
+					    <li><a href="http://www.registrar.ualberta.ca/calendar/">University Calendar</a></li>
+					    <li><a href="http://www.careers.ualberta.ca/">Careers</a></li>
+					    <li><a href="http://www.rms.ualberta.ca/en/EmergNumbers.aspx">Emergency</a></li>
+					    <li><a href="https://policiesonline.ualberta.ca">Policies</a></li>
+					    <li><a href="http://www.weatheroffice.gc.ca/city/pages/ab-50_metric_e.html" target="_blank">Weather</a></li>
+					    <li><a href="http://www.edmonton.ca/" target="_blank">Edmonton</a></li>
+					    <li><a href="//ualberta-beta.ualberta.ca/privacy">Privacy</a></li>
+					    <li><a href="//ualberta-beta.ualberta.ca/keepintouch">Keep in Touch</a></li>
+					    <li><a href="#">Back to Top</a></li>
+            </ul>
+            <p>
+              © 2013 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
+            </p>
+          </div>
+        </div> <!-- Footer Inner End -->
+      </div>  <!-- Footer Container End -->
+    </div> <!-- Footer Bottom Row End -->
+  </footer> <!-- Footer End -->
+ 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/ualberta/institutional.js"></script>
+<script>
+    var UAlberta = UAlberta || {};
+    UAlberta.Sitecore = UAlberta.Sitecore || {};
+    
+    UAlberta.Sitecore.GlobalSearch = (function ($) {
+    
+        function KeyValue(key, value) {
+            this.key = key;
+            this.value = value;
+        }
+    
+        function search(options) {
+    
+            options.query = escape(jQuery(options.selector).val());
+    
+            var params = [];
+            params.push(new KeyValue("cx", options.googleId));
+            params.push(new KeyValue("q", options.query));
+            params.push(new KeyValue("cof", "FORID%3A11#1150"));
+    
+            var resultUrl = options.resultUrl;
+    
+            for (var ndx in params) {
+                var param = params[ndx];
+                if (param && param.key && param.value) {
+                    resultUrl = updateQueryString(param.key, param.value, resultUrl);
+                }
+            }
+    
+            window.location.href = resultUrl;
+            return false;
+    
+        };
+    
+        function updateQueryString(key, value, url) {
+            if (!url) url = window.location.href;
+            var re = new RegExp("([?|&])" + key + "=.*?(&|#|$)", "gi");
+    
+            if (url.match(re)) {
+                if (value) return url.replace(re, '$1' + key + "=" + value + '$2');
+                else return url.replace(re, '$2');
+            } else {
+                if (value) {
+                    var separator = url.indexOf('?') !== -1 ? '&' : '?',
+                        hash = url.split('#');
+                    url = hash[0] + separator + key + '=' + value;
+                    if (hash[1]) url += '#' + hash[1];
+                    return url;
+                } else return url;
+            }
+        }
+    
+        function init(customOptions) {
+            var options = {};
+            options.selector = '.search-query';
+            options.btnSelector = '.global-search-btn';
+            options.googleId = '';
+            options.query = '';
+            options.resultUrl = '';
+    
+            //override defaults.
+            options = $.extend({}, options, customOptions);
+    
+    
+            if (!options.resultUrl || !options.selector || !options.googleId) {
+                //if missing a required value, dont attach handler.
+                return;
+            }
+    
+            $(options.selector).keydown(function (a) {
+                if (a.keyCode == 13 || window.event.keyCode == 13 || a.which == 13) {
+                    a.preventDefault();
+                    return search(options);
+                }
+    
+            });
+    
+            $(options.btnSelector).click(function (a) {
+                a.preventDefault();
+                return search(options);
+            });
+    
+        }
+    
+        return {
+            init: init
+        }
+    })(jQuery);
+  </script>
+  <!-- end scripts -->
+
+</body>
+</html>

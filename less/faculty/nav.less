@@ -1,62 +1,81 @@
-@media (min-width: 61.25em) and (max-width: 74.9375em) {
-  .navigation-inner ul li a {
-    padding-left: 30px;
-    padding-right:  30px;
-  }  
-}
 @media (min-width: 43.125em) {
-.navigation-inner ul.section-navigation li{
-	border:none;
-	float:none;
-	margin-left:-5px;
-}
-.navigation-inner ul.section-navigation li:hover{
-	margin-left:-5px;
-}
- .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu{
- right:-480px;
- }
+
+//*****************************************
+//** NAVIGATION
+//******************************************
+//   Medicine Nav Widths:
+//      About Us:        64
+//      Programs:        72
+//      Departments:     96
+//      Research:        68
+//      Communities:     91
+//      Alumni:          50
+//      ------------------------
+//      TOTAL:           441
+//*****************************************/
+  
+  @totalNavWidth: 441px;
+  
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: percentage(64/@totalNavWidth);
+      }
+      .nav2 {
+        width: percentage(72/@totalNavWidth);
+      }
+      .nav3 {
+        width: percentage(96/@totalNavWidth);
+      }
+      .nav4 {
+        width: percentage(68/@totalNavWidth);
+      }
+      .nav5 {
+        width: percentage(91/@totalNavWidth);
+      }
+      .nav6 {
+        width: percentage(50/@totalNavWidth);
+      }
+    }
+  }
+  
+  .navigation-inner ul.section-navigation li {
+  	border:none;
+  	float:none;
+  	margin-left:-5px;
+  }
+  
+  .navigation-inner ul.section-navigation li:hover{
+  	margin-left:-5px;
+  }
+  
+  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu{
+    right: -431px;
+  }
 
   .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
-    right: -300px;
-    left: auto;
-    width: 500px;
-    & .section-navigation {
-      width: 46%;
-    }
-    }
- .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
- right:-350px;
- 
- }
- .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
- right:-150px;
- 
- }
+    display: none;
+  }
+    
+  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
+    right:(-239px-135px);
+  }
+  
+  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
+    right:-133px;
+  }
+  
   .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
-    width: 500px;
+    right: -1px;
   }
-  .navigation-inner .sub-menu .section-title{
-	  text-align:left;
-  }
+  
   .navigation-inner .sub-menu ul li a {
 	  text-align:left;
   }
+  
   .navigation-inner .sub-menu .section-description{
 	  text-align:left;
   }
-  }
   
-@media (min-width: 43.125em) and (max-width: 831px) {
-	.navigation-inner ul li ul li a{
-		padding-left: 18px;
-		padding-right:  18px;
-	}
 }
 
-@media (min-width: 832px) and (max-width: 61.1875em) {
-	.navigation-inner ul li ul li a{
-		padding-left: 30px;
-		padding-right:  30px;
-	}
-}

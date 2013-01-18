@@ -112,14 +112,14 @@
           <li>
             <a class="navigation-toggle">Show Navigation <i class="icon-toggle-nav"></i></a>
             <ul class="main-navigation collapse">
-              <li class="nav1" role="menuitem"><a href="http://ualberta-beta.ualberta.ca/why.aspx">Why UAlberta?</a></li>
+              <li class="nav1" role="menuitem"><a href="//why-beta.ualberta.ca/">Why UAlberta?</a></li>
               <li class="nav2" role="menuitem"><a href="http://ualberta-beta.ualberta.ca/faculties.aspx">Faculties &amp; Programs</a></li>
               <li class="nav3" role="menuitem"><a href="http://www.research.ualberta.ca/">Research</a></li>
-              <li class="nav4" role="menuitem"><a href="http://ualberta-beta.ualberta.ca/admissions.aspx">Admissions</a></li>
-              <li class="nav5" role="menuitem"><a href="http://ualberta-beta.ualberta.ca/campuslife.aspx">Campus Life</a></li>
-              <li class="nav6" role="menuitem"><a href="http://ualberta-beta.ualberta.ca/news.aspx">News &amp; Events</a></li>
-              <li role="menuitem" class="audience-link"><a href="http://ualberta-beta.ualberta.ca/prospective.aspx">Prospective Students</a></li>
-              <li role="menuitem" class="audience-link"><a href="http://ualberta-beta.ualberta.ca/students.aspx">Current Students</a></li>
+              <li class="nav4" role="menuitem"><a href="//admission-beta.ualberta.ca/">Admissions</a></li>
+              <li class="nav5" role="menuitem"><a href="//campuslife-beta.ualberta.ca/">Campus Life</a></li>
+              <li class="nav6" role="menuitem"><a href="//news-beta.ualberta.ca/">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="//prospective-beta.ualberta.ca/">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="//students-beta.ualberta.ca/">Current Students</a></li>
               <li role="menuitem" class="audience-link"><a href="http://ualberta-beta.ualberta.ca/facultyandstaff.aspx">Faculty &amp; Staff</a></li>
               <li role="menuitem" class="audience-link"><a href="http://www.alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
             </ul>
@@ -157,8 +157,8 @@
               <div class="hover-caption-container">
                 <a href="http://www.youtube.com/embed/cBgIkhinRww?autoplay=1" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="UAlberta in a Minute Video">
                   <img src="./img/yualberta.png" />
+                  <i class="icon-play-circle"></i>
                 </a>
-                <i class="icon-play-circle"></i>
                 <div class="caption">
                   <p>Watch UAlberta in 1 Minute Video</p>
                 </div>
@@ -375,20 +375,20 @@
         
           <div class="span12 footer-copyright">
             <ul class="footer-quick-links">
-					    <li><a href="http://www.uofa.ualberta.ca/en/ContactUAlberta.aspx">Contact Us</a></li>
-              <li><a href="http://www.uofa.ualberta.ca/feedback.aspx">Feedback</a></li>
+					    <li><a href="//ualberta-beta.ualberta.ca/contactualberta">Contact Us</a></li>
+              <li><a href="//ualberta-beta.ualberta.ca/contactualberta/feedback">Feedback</a></li>
 					    <li><a href="http://www.registrar.ualberta.ca/calendar/">University Calendar</a></li>
 					    <li><a href="http://www.careers.ualberta.ca/">Careers</a></li>
 					    <li><a href="http://www.rms.ualberta.ca/en/EmergNumbers.aspx">Emergency</a></li>
-					    <li><a href="http://www.uofaweb.ualberta.ca/policies/">Policies</a></li>
+					    <li><a href="https://policiesonline.ualberta.ca">Policies</a></li>
 					    <li><a href="http://www.weatheroffice.gc.ca/city/pages/ab-50_metric_e.html" target="_blank">Weather</a></li>
 					    <li><a href="http://www.edmonton.ca/" target="_blank">Edmonton</a></li>
-					    <li><a href="http://www.uofa.ualberta.ca/privacy.aspx">Privacy</a></li>
-					    <li><a href="http://www.uofa.ualberta.ca/keepintouch.aspx">Keep in Touch</a></li>
+					    <li><a href="//ualberta-beta.ualberta.ca/privacy">Privacy</a></li>
+					    <li><a href="//ualberta-beta.ualberta.ca/keepintouch">Keep in Touch</a></li>
 					    <li><a href="#">Back to Top</a></li>
             </ul>
             <p>
-              © 2012 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
+              © 2013 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
             </p>
           </div>
         </div> <!-- Footer Inner End -->
@@ -512,6 +512,9 @@
     (function($) {
       $(document).ready(function() {
     
+      // collapser
+      $('.collapse').collapse();
+      
       
       $("#explore-bar").flexslider({
       	animation: "slide",

@@ -55,6 +55,7 @@ production:
 	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
 	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
 	@lessc -x ./less/faculty.less > ./css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
 	@echo "Compiling faculty base less...               ${CHECK} Done"
 	@mkdir -p ${PRODDIR}
 	@mkdir -p ${PRODDIR}/css
@@ -105,6 +106,30 @@ push-gh-pages:
 	
 push-production:
 	(cd ../production; git add .; git commit -a -m prod; git push origin production)
+	
+faculty:
+	@mkdir -p ../faculty
+	@mkdir -p ../faculty/css
+	@lessc -x ./less/framework.less > ../faculty/css/framework.css
+	@lessc -x ./less/framework-ie.less > ../faculty/css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ../faculty/css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ../faculty/css/faculty-ie.css
+	@echo "Compiling faculty less files...     ${CHECK} Done"
+	
+homepage:
+	@mkdir -p ../homepage
+	@mkdir -p ../homepage/css
+	@mkdir -p ../homepage/js
+	@mkdir -p ../homepage/img
+	@lessc -x ./less/framework.less > ../homepage/css/framework.css
+	@lessc -x ./less/framework-ie.less > ../homepage/css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ./less/ualberta.less > ../homepage/css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ../homepage/css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@cp ./institutional-home.html ../homepage
+	@mv ../homepage/institutional-home.html ../homepage/index.html
 
 #
 # WATCH LESS FILES
