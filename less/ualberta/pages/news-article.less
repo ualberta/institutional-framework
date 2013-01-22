@@ -1,4 +1,10 @@
 .news-article {
+  .page-title-row .page-title {
+    display: none;
+  }
+  .content-inner {
+    position: relative;
+  }
   p.teaser {
     #em > .font-size(16,@baseFontSizepx);
     color: @lightText;
@@ -10,7 +16,7 @@
     margin-bottom: 0;
     #em > .font-size(13,@baseFontSizepx);
   }
-  article {
+  .article-content {
     position: relative;
   }
   article header .date {
@@ -19,14 +25,24 @@
     margin-top: -8px;
   }
   article .story > p {
-    #em > .font-size(16,@baseFontSizepx);
-    line-height: 1.57em;
+    //#em > .font-size(16,@baseFontSizepx);
+    //line-height: 1.57em;
+  }
+  article .frame {
+    //width:50%;
+    //margin-left: 1em;
+    //float: right;
   }
   article .frame + p {
     margin-top: 1.57em/2;
   }
   article p a {
     text-decoration: underline;
+  }
+  aside {
+    h3 {
+      padding-top: 0;
+    }
   }
   h1.page-title {
     margin: 0.1em auto;
@@ -45,13 +61,6 @@
   }
 }
 
-@media (min-width: 43.125em) {
-  .news-article {
-    .sidebar {
-      #em > .margin(top, 89, @baseFontSizepx);
-    }
-  }
-}
 
 @media (min-width: 61.25em) {
   .news-article {
@@ -64,8 +73,11 @@
     aside {
       position: absolute;
       width: 30%;
-      top: 6.425em;
+      top: 0em;
       right: 0;
+    }
+    .sidebar {
+      #em > .margin(top, 89, @baseFontSizepx);
     }
     hr.soften.first {
       display: none;
@@ -84,15 +96,9 @@
     aside {
       position: absolute;
       width: 27%;
-      top: 6.425em;
+      top: 0em;
       right: 0;
     }
   }
 }
 
-
-@media (max-width: 61.1875em) and (min-width: 43.125em){
-	.news-article .sidebar {
-		#em > .position(top, 42, @baseFontSizepx);
-	}
-}
