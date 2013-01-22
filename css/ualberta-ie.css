@@ -1,5 +1,8 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
+.lt-ie10 .our-campus-cnt-left{width:500px;padding-right:0px;float:right;}
+.lt-ie10 .our-campus-cnt-right{width:200px;float:right;}
+.lt-ie10 .our-campus-cnt-right ul{margin-left:0px;}
 .lt-ie9 .thumbnail-container .hover-caption-container i{top:0%;line-height:1em;width:30%;}
 .lt-ie9 hr.secondary-hr{display:none;}
 .lt-ie9 .make-a-gift .btn-give.btn-micro{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);font-size:0.9em;padding-top:1em;padding-bottom:0.7em;}.lt-ie9 .make-a-gift .btn-give.btn-micro:hover{background-image:none;background-color:#f3f7f5;border-color:#ccc;}
@@ -32,7 +35,7 @@
 .lt-ie9 .prospective-student .fma-container{padding:0px 10px;}
 .lt-ie9 .news-and-events .goto-events{display:none;}
 .lt-ie9 .ualberta-home .ph-explore{padding-left:0;padding-right:0;}
-.lt-ie9 .ualberta-home .content-top-row{background-image:none;}
+.lt-ie9 .ualberta-home .content-top-row{background:url(../img/homepage/why-bg.jpg) no-repeat top center;height:157px;}
 .lt-ie9 .ualberta-home .container{width:940px;}
 .lt-ie9 .ualberta-home .main-content{margin-left:0;}
 .lt-ie9 .ualberta-home .row-fluid .main-content{width:750px;}
@@ -66,7 +69,8 @@
 .lt-ie9 .fma-tabs-container{border:none;}
 .lt-ie9 .fma-tabs-container .container{width:940px;}.lt-ie9 .fma-tabs-container .container .fma-tabs{width:auto;}.lt-ie9 .fma-tabs-container .container .fma-tabs li{display:inline-block;*display:inline;*zoom:1;width:317px;*width:314px;margin-right:-5px;*margin-right:-1px;}
 .lt-ie9 .fma-tabs-container .container .fma-tabs li a{border-right:1px solid #ccc;}
-.lt-ie8 .ualberta-home .why-ualberta-row .span{padding-left:0;padding-right:0;}
+.lt-ie8 .ualberta-home .fma-container{margin-bottom:1.57em;}.lt-ie8 .ualberta-home .fma-container h3{line-height:1em;}
+.lt-ie8 .ualberta-home .why-ualberta-row .span{padding-right:0;}
 .lt-ie8 .ualberta-home .why-ualberta-row p.description{width:48%;}
 .lt-ie8 .ualberta-home .thumbnail-container .hover-caption-container i{top:20%;left:40%;}
 .lt-ie8 .ualberta-home .daily-news .subscribe-form .btn,.lt-ie8 .ualberta-home .find-a-person .person-search .btn{margin-top:2px;outline:none;}
