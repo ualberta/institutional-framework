@@ -1,7 +1,7 @@
 # Designer Documentation
 
- 1. Setup (Mac OSX only)
-    + Install Required Software
+ 1. [Setup (Mac OSX)](#setup)
+    + [Install Required Software](#install-required-software)
     + Git Repository Setup
  2. Github and Code Modification Procedure
     + Repository Setup
@@ -18,7 +18,7 @@
     + Providing Fallbacks For Older Browsers
     + Targeting Internet Explorer
  5. Make File
- 6. Copying CSS to Production / Delivery
+ 6. Copying CSS to QA, Management, and Delivery Servers
  7. Changing the Homepage
 
 ----------
@@ -305,13 +305,32 @@ You can use any of the above classes to target various versions of Internet Expl
 ## Using the MakeFile
 Using the MakeFile you are able to execute various commands that will automate some tedious tasks for you.  The available triggers for the make file are described below:
 
-  + `make less`
+  + `make less` - Compiles all of the less master files into the ./css/ directory in the repository.
+  + `make homepage` - Copies 
   + `make production`
   + `make ghpages`
   + `make everything`
 
 In order to be able to execute these commands, you will need to have followed the steps in the Setup section.
 
-## Copying CSS to Production and Delivery Servers
+## Copying CSS to QA, Content Management, and Content Delivery Servers
+There are three different environments where the css from the institutional-framework repository will live:
 
-## Changes to the Homepage
+	+ **QA**: This environment is for testing.  Any large changes to the code base should be tested in this environment before copying to content management or delivery.
+	+ **Content Management**: This is the environment where all content editing happens.  Any code pushed to this environment will be visible to anyone using Sitecore 3 on their preview URL (ie: https://sitename.sitecore.ualberta.ca/).
+	+ **Content Delivery**: This environment is where the code for the live site lives.  **Never upload untested code to this environment**
+	
+Only the University Digital Strategy team can push css to these environments. If you are part of the University Digital Strategy team, refer to the internal documentation for the procedure to push to the above environments.
+
+## Changes to the UAlberta.ca Homepage
+The ualberta.ca homepage is the `/html/institutional-home.html` file in the repository.  Edit this file, and when you are ready to preview the changes run this command in the `~/Documents/github/institutional-framework/master` directory:
+
+		make homepage
+		
+This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage` directory, push to the gh-pages branch, and give you a URL to preview the homepage.  After going through the necessary testing phases, you can overwrite the files on the server with your new homepage files.
+
+## Todo
+The following sections still need to be added to this document:
+  + Setup (Windows)
+  + Using the Github App (Video Tutorial)
+  + Using the LESS App (Video Tutorial)
