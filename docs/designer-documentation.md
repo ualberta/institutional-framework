@@ -1,12 +1,8 @@
 # Designer Documentation
 
-----------
-
- 1. Setup
-    + Mac OSX
-        + Install Software
-        + Command Line Configuration
-        + Github App Configuration
+ 1. Setup (Mac OSX only)
+    + Install Required Software
+    + Git Repository Setup
  2. Github and Code Modification Procedure
     + Repository Setup
     + Getting Code    
@@ -16,23 +12,30 @@
     + Less File / Folder Structure
  4. Stylesheets and Modifying CSS
     + Using LESS
+    + Compiling LESS Files Into CSS
+    + Variables
+    + Mixins
+    + Providing Fallbacks For Older Browsers
     + Targeting Internet Explorer
-    + Providing Fallbacks Through Modernizr
  5. Make File
+ 6. Copying CSS to Production / Delivery
+ 7. Changing the Homepage
 
 ----------
 
 ## Setup
 
 ### Install Required Software
+You will need to install the following software on your computer to contribute to the Sitecore 3 Framework Design project.  The last two items on the list are only required if you wish to use a GUI instead of the command line.
+
 - [xCode](https://developer.apple.com/xcode/)
     - If you are using xCode on Lion, after you install it you will have to go to "Preferences > Downloads", and click the install button beside "Command Line Tools".  This will install the tools required to run the make file.
 - [nodejs](http://nodejs.org/)
 - [Git command line application](http://code.google.com/p/git-osx-installer/downloads/list)
-- [Github App](http://mac.github.com/)
-- Less App (Optional)
+- [Github App](http://mac.github.com/) (Optional)
+- [Less App](http://incident57.com/less/) (Optional)
 
-### Install Command Line Tools
+#### Install Command Line Tools
 After installing node.js, you will want to install the Less, JSHint, Recess, and uglify-js packages globally with the following command:
 
     npm install -g less jshint recess uglify-js
@@ -291,9 +294,24 @@ Depending on which version of Internet Explorer the user is using, there will be
     </tr>
   </tbody>
 </table>
+**All additions to an `ie.less` file MUST be wrapped in one of the classes from the above table.**
 
-You can use any of the above classes to target various versions of Internet Explorer in the same manner you would target features in the fallbacks.less file.  Every project should have its own IE file:
+You can use any of the above classes to target various versions of Internet Explorer in the same manner you would target features in the `fallbacks.less` file.  Every project should have its own IE file:
 
   + `/less/framework/ie.less` - IE styling specified in this file will apply to any site build using the framework (faculty, institutional, etc)
   + `/less/ualberta/ie.less` - IE styling specified here apply to institutional only
   + `/less/faculty/ie.less` - IE styling specified here apply to faculty pages only
+  
+## Using the MakeFile
+Using the MakeFile you are able to execute various commands that will automate some tedious tasks for you.  The available triggers for the make file are described below:
+
+  + `make less`
+  + `make production`
+  + `make ghpages`
+  + `make everything`
+
+In order to be able to execute these commands, you will need to have followed the steps in the Setup section.
+
+## Copying CSS to Production and Delivery Servers
+
+## Changes to the Homepage
