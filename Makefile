@@ -126,14 +126,17 @@ homepage:
 	@mkdir -p ../homepage/css
 	@mkdir -p ../homepage/js
 	@mkdir -p ../homepage/img
+	@mkdir -p ../homepage/ico
+	@mkdir -p ../homepage/font
 	@lessc -x ./less/framework.less > ../homepage/css/framework.css
 	@lessc -x ./less/framework-ie.less > ../homepage/css/framework-ie.css
 	@echo "Compiling framework base less...             ${CHECK} Done"
 	@lessc -x ./less/ualberta.less > ../homepage/css/ualberta.css
 	@lessc -x ./less/ualberta-ie.less > ../homepage/css/ualberta-ie.css
 	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
-	@cp ./institutional-home.html ../homepage
-	@mv ../homepage/institutional-home.html ../homepage/index.html
+	@cp -r ./img/homepage/ ../homepage/img/
+	@cp ./html/homepage/index.html ../homepage/index-preview.html
+	@cp ./html/homepage/notices.html ../homepage/notices.html
 
 #
 # WATCH LESS FILES

@@ -2,7 +2,7 @@
 
  1. [Setup (Mac OSX)](#setup)
     + [Install Required Software](#install-required-software)
-    + Git Repository Setup
+    + [Git Repository Setup](#git-repository-setup)
  2. Github and Code Modification Procedure
     + Repository Setup
     + Getting Code    
@@ -306,10 +306,9 @@ You can use any of the above classes to target various versions of Internet Expl
 Using the MakeFile you are able to execute various commands that will automate some tedious tasks for you.  The available triggers for the make file are described below:
 
   + `make less` - Compiles all of the less master files into the ./css/ directory in the repository.
-  + `make homepage` - Copies 
-  + `make production`
-  + `make ghpages`
-  + `make everything`
+  + `make homepage` - Compiles and copies ualberta.ca html/css to the homepage directory
+  + `make production` - Compiles all code in the repository an pushes it to the production branch of the repository
+  + `make ghpages` - Compiles all code in the repository an pushes it to the gh-pages branch of the repository
 
 In order to be able to execute these commands, you will need to have followed the steps in the Setup section.
 
@@ -327,7 +326,7 @@ The ualberta.ca homepage is the `/html/institutional-home.html` file in the repo
 
 		make homepage
 		
-This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage` directory, push to the gh-pages branch, and give you a URL to preview the homepage.  After going through the necessary testing phases, you can overwrite the files on the server with your new homepage files.
+This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage` directory.  This will name the index file `index-preview.html`, so you can easily upload and preview the file.  After going through the necessary testing phases, you can overwrite the index file on the server with your new homepage files.
 
 ## Todo
 The following sections still need to be added to this document:
