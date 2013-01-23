@@ -38,11 +38,15 @@ build:
 #
 
 less:
-	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
-	@recess --compile ./less/ualberta-ie7.less > ./compiled/css/ualberta-ie7.css
+	@recess --compile ./less/framework.less > ./css/framework.css
+	@recess --compile ./less/framework-base.less > ./css/framework-base.css
+	@recess --compile ./less/framework-ie.less > ./css/framework-ie.css
+	@recess --compile ./less/ualberta.less > ./css/ualberta.css
+	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@recess --compile ./less/faculty.less > ./css/faculty.css
+	@recess --compile ./less/faculty-ie.less > ./css/faculty-ie.css
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
-	
-	
+
 #
 # COMPILE PRODUCTION BRANCH
 #
@@ -93,7 +97,7 @@ ghpages:
 	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PAGESDIR}/js/bootstrap.js
 	@uglifyjs -nc ${PAGESDIR}/js/bootstrap.js > ${PAGESDIR}/js/bootstrap.min.js
 	@echo "Minifying and copying javascript...          ${CHECK} Done"
-	@cp ./*.html ${PAGESDIR}/
+	@cp ./html/*.html ${PAGESDIR}/
 	@cp -r ./img ${PAGESDIR}
 	@cp -r ./js/ualberta ${PAGESDIR}/js
 	@cp -r ./font ${PAGESDIR}
