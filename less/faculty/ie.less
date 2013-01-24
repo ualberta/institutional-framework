@@ -1,7 +1,19 @@
 // INTERNET EXPLORER 8 AND BELOW
 // --------------------------------------------------
 .lt-ie9 {
-
+.row-fluid .sidebar{
+	float:right;
+}
+.row-fluid.secondary .primary-content-area-container {
+	width:81.9%;
+	float:left;
+}
+.row-fluid.secondary .secondary-content-area{
+	width:36%;
+}
+.row-fluid.secondary .primary-content-area{
+	width:60%;
+}
   // Banner
   // ---------------------
   .banner-container .banner-inner h1 {
@@ -128,7 +140,7 @@
   .navigation-inner .sub-menu ul li,
   .navigation-inner .sub-menu ul li a {
     display: block;
-    width: auto;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -210,5 +222,37 @@
 // INTERNET EXPLORER 7 AND BELOW
 // --------------------------------------------------
 .lt-ie8 {
-  
+  .content-top-row{
+	  line-height:1.5em;
+  }
+  .image-caption-container .caption a{
+	  color:#ffdb05;
+  }
+  .image-caption-container .caption{
+	  padding:5px;
+  }
+  .flexslider .flex-control-nav li{
+	  display:inline;
+  }
+  .navigation-inner .main-navigation > li .sub-menu{
+	  text-align: left;
+  }
+  .sub-menu{
+	  text-align:left;
+  }
+  .content-wrapper{
+	  z-index:-1;
+  }
+   .navigation-inner .sub-menu ul{
+	   float:left;
+   }
+  .navigation-inner .sub-menu .section-description{
+	  float:right;
+  }
+  .flexslider .flex-direction-nav LI A.flex-prev{
+	  
+  }
+  ul.faculty-links li{
+	  list-style-type: circle;
+  }
 }
