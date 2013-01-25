@@ -1,0 +1,63 @@
+<div id="content">
+	<h3>Blade</h3>
+	<h4>Summary</h4>
+	<p>The blade occupies the top 60 pixels of every page and contains "Quick Links" to commonly used pages and a search box.  On pages that are not the ualberta.ca institutional pages, the University of Alberta logo sits at the left position of the blade.</p>
+	<hr class="soften">
+	<h4>Devices</h4>
+	<div class="row-fluid">
+		<div class="span4">
+			<h5>Mobile</h5>
+			<p>Quick Links collapse to a 3 bar icon and search collapses to a magnifying glass icon which expands on <code>:focus</code>.</p>
+		</div>
+		<div class="span4">
+			<h5>Tablet</h5>
+			<p>Quick links collapse into a button labelled "Quick Links".  Search remains unchanged.</p>
+		</div>
+		<div class="span4">
+			<h5>Desktop</h5>
+			<p>Quick links are fully expanded and search form has a button.</p>
+		</div>
+	</div>
+	
+</div>
+
+<!-- preview markup -->
+<div id="content-preview">
+
+	<header> <!-- Start Header -->
+		<div class="blade-container"><!-- Start Blade -->
+	    <div class="blade-inner">
+	      <a class="brand" href="#"></a>
+	      <nav class="blade-navigation">
+	        <ul class="quick-links-container">
+	          <li id="ql" class="dropdown">
+	            <a href="#" id="ql-toggle" class="btn btn-grey btn-small hidden-desktop" data-toggle="dropdown">
+	              <span class="quick-links-text">
+	                Quick Links <b class="caret"></b>
+	              </span>
+	              <span class="icon-bar quick-links-button"></span>
+	              <span class="icon-bar quick-links-button"></span>
+	              <span class="icon-bar quick-links-button"></span>
+	            </a>
+	            <ul class="quick-links" role="menu" aria-labelledby="ql-toggle">
+	              <li role="menuitem"><a href="http://webapps.srv.ualberta.ca/search/">Find a Person</a></li>
+	              <li role="menuitem"><a href="http://onecard.ualberta.ca/">ONEcard</a></li>
+	              <li role="menuitem"><a href="https://www.beartracks.ualberta.ca/">Bear Tracks</a></li>
+	              <li role="menuitem"><a href="http://www.campusmap.ualberta.ca/">Maps</a></li>
+	              <li role="menuitem"><a href="http://apps.ualberta.ca/">Email &amp; Apps</a></li>
+	              <li role="menuitem"><a href="https://eclass.srv.ualberta.ca/portal/">eClass</a></li>
+	              <li role="menuitem"><a href="http://www.library.ualberta.ca/">Libraries</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </nav>
+	      <div class="blade-search">
+	         <i class="icon-search"></i>
+	         <input type="search" class="search-query" placeholder="search">
+	         <button type="submit" class="btn btn-grey btn-small global-search-btn">Search</button>
+	      </div>
+	    </div>
+	  </div>
+	</header> <!-- End Header -->
+	
+</div>

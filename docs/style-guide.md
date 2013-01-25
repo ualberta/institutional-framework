@@ -1,9 +1,36 @@
 
+
+Layouts
+	Breakpoints
+		Desktop (Large)
+		Desktop (Small)
+		Tablet
+		Mobile
+	Homepage
+	Secondary Pages
+	Tertiary Pages
+
+Page Elements
+	Blade
+		Institutional
+		Other
+	Banner
+		Institutional
+		Faculty
+		Department
+	Global Navigation
+		Faculties
+	Page Heading
+	Footer
+
+Typography
+
 Navigation
 	Breadcrumb
 	Global Navigation
 	Left Navigation
 	Sub menus
+	Audience Navigation
 	
 Links
 	Default Links
@@ -17,7 +44,7 @@ Buttons
 	Feature Area Buttons
 	Form Button
 	
-Sidebar
+Featured Messaging Areas
 
 Images
 
