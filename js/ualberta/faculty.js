@@ -11,4 +11,6 @@ $(document).ready(function() {
 		globalNav.find('.navigation-toggle').click(function() {
 		  globalNav.find('.main-navigation').toggleClass('in');
 		});
+		
+		$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
 }); 

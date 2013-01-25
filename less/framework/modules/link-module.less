@@ -311,3 +311,27 @@
     }
   }
 }
+
+/*Faculty*/
+@media (min-width: 30em){
+ .row-fluid.secondary{
+	 .link-mod-container {
+    &>li {
+      width:@linkModTabletLeftWidth;
+    }
+    &>li ul.link-mod-items {
+      width: @linkModTabletRightWidth;
+      left: @linkModTabletIndent;
+    }
+    &>li.link-mod-filter {
+      input {
+        width:@linkModTabletFilterWidth;
+      }
+      &:before {
+        margin-right:@linkModTabletRightWidth;
+        padding-right: 8px;
+      }
+    }
+  }
+}
+}

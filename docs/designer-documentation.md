@@ -328,6 +328,7 @@ The ualberta.ca homepage is the `/html/institutional-home.html` file in the repo
 		
 This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage` directory.  This will name the index file `index-preview.html`, so you can easily upload and preview the file.  After going through the necessary testing phases, you can overwrite the index file on the server with your new homepage files.
 
+
 ## Todo
 The following sections still need to be added to this document:
   + Setup (Windows)

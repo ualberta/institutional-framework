@@ -24,14 +24,34 @@
     color: @lightText;
     margin-top: -8px;
   }
-  article .story > p {
-    //#em > .font-size(16,@baseFontSizepx);
-    //line-height: 1.57em;
-  }
   article .frame.small-image {
     width:50%;
     margin-left: 1em;
     float: right;
+  }
+  article .image-caption-container {
+	  .caption {
+	    position: static;
+	    padding: 6px 0px 3px 0px;
+	    background: #fff;
+	    color: #666;
+	    text-shadow: none;
+	    a {
+	      color: @linkColor;
+	    }
+	    p{
+	      padding: 0px;
+	      margin-bottom: 0;
+	      line-height: 1.4em;
+	    }
+	    h3{
+	      padding:0px;
+	      line-height:1em;
+	    }
+	  }
+  }
+  article .image-caption-container .image-shadow {
+  	padding-bottom:  1px;
   }
   article .frame + p {
     margin-top: 1.57em/2;
