@@ -133,6 +133,71 @@
   		padding-left: 29px;
   	}
   	
+
+  		#preview {
+  			margin-top: 10px;
+  			margin-bottom: 10px;
+  		}
+  	
+  		#preview-pane {
+  			position: fixed;
+  			width: 100%;
+  			bottom: 0;
+  			left: 0;
+  			text-align: center;
+  			background: rgba(0,0,0,0.85);
+  		}
+  		
+  		#preview-pane h3,
+  		#preview-pane ul {
+  			text-align: left;
+  			color: #fff;
+  		}
+  		
+  		.preview-title-row {
+  			position: relative;
+  			border-bottom: 1px solid #666;
+  		}
+  		
+  		.preview-title-row h3,
+  		.preview-title-row ul {
+  			float: left;
+  			margin: 0;
+  			margin-top: 10px;
+  			margin-bottom: 5px;
+  		}
+  		
+  		.preview-title-row ul {
+  			margin-top: 3px;
+  		}
+  		
+  		.preview-title-row li {
+  			margin-left: 10px;
+  		}
+  		.preview-title-row li a {
+  			color: #fff;
+  		}
+  		
+  		.preview-title-row button.close {
+  			position: absolute;
+  			top: 5px;
+  			right: 10px;
+  			color: #fff;
+  			text-shadow: 1px 1px 1px #000;
+  			opacity: 0.75;
+  		}
+  		
+  		.preview-title-row button.close:hover {
+  			opacity: 1;
+  		}
+  		
+  		.preview-title-row button.close:after {
+  			content: "\d7";
+  		}
+  		
+  		.preview-title-row button.close.closed:after {
+  			content: "\2b";
+  		}
   
   </style>
   
@@ -235,6 +300,10 @@
 									<ul>
 										<li><a href="blade.html">Blade</a></li>
 										<li><a href="banner.html">Banner</a></li>
+										<li><a href="navigation.html">Navigation</a></li>
+										<li><a href="breadcrumb.html">Breadcrumb</a></li>
+										<li><a href="page-title.html">Page Title</a></li>
+										<li><a href="footer.html">Footer</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -255,52 +324,29 @@
 	</div>
   
   <div id="preview-pane">
-  	<div class="container">
-    <h3>Preview</h3>
-	    <ul id="device-preview" class="nav nav-tabs">
-	    	<li><a id="mobile-portrait-preview" href="#mobile-portrait-preview">Mobile (Portrait)</a></li>
-	    	<li><a id="mobile-landscape-preview" href="#mobile-landscape-preview">Mobile (Landscape)</a></li>
-	    	<li><a id="tablet-preview" href="#tablet-preview">Tablet</a></li>
-	    	<li class="active"><a id="desktop-preview" href="#desktop-preview">Desktop (Small)</a></li>
-	    	<li><a id="desktop-large-preview" href="#desktop-large-preview">Desktop (Large)</a></li>
-	    </ul>
-    </div>
-    <iframe id="preview" scrolling="no" style="border:1px solid #eee; width: 980px;">
+  	<div class="preview-title-row">
+	  	<div class="container">
+	  		<div class="row-fluid">
+			    <h3>Preview</h3>
+			    <ul id="device-preview" class="nav nav-pills">
+			    	<li><a id="mobile-portrait-preview" href="#mobile-portrait-preview">Mobile (Portrait)</a></li>
+			    	<li><a id="mobile-landscape-preview" href="#mobile-landscape-preview">Mobile (Landscape)</a></li>
+			    	<li><a id="tablet-preview" href="#tablet-preview">Tablet</a></li>
+			    	<li class="active"><a id="desktop-preview" href="#desktop-preview">Desktop (Small)</a></li>
+			    	<li><a id="desktop-large-preview" href="#desktop-large-preview">Desktop (Large)</a></li>
+			    </ul>
+			  </div>
+			</div>
+			<button type="button" class="close" id="preview-toggle"></button>
+		</div>
+    <iframe id="preview" scrolling="no" style="border: 1px solid #000; width: 980px;">
     	<html><head></head><body></body></html>
     </iframe>
   </div>
   
-  <footer>
-	  <div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
-	    <div class="footer-container container"> <!-- Footer Container Start -->
-	      <div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
-	      
-	        <div class="span12 footer-copyright">
-	          <ul class="footer-quick-links">
-					    <li><a href="http://ualberta-beta.ualberta.ca/contactualberta">Contact Us</a></li>
-	            <li><a href="https://www.surveymonkey.com/s/ualbertabeta">Feedback</a></li>
-					    <li><a href="http://www.registrar.ualberta.ca/calendar/">University Calendar</a></li>
-					    <li><a href="http://www.careers.ualberta.ca/">Careers</a></li>
-					    <li><a href="http://www.rms.ualberta.ca/en/EmergNumbers.aspx">Emergency</a></li>
-					    <li><a href="https://policiesonline.ualberta.ca">Policies</a></li>
-					    <li><a href="http://www.weatheroffice.gc.ca/city/pages/ab-50_metric_e.html" target="_blank">Weather</a></li>
-					    <li><a href="http://www.edmonton.ca/" target="_blank">Edmonton</a></li>
-					    <li><a href="http://ualberta-beta.ualberta.ca/privacy">Privacy</a></li>
-					    <li><a href="http://ualberta-beta.ualberta.ca/keepintouch">Keep in Touch</a></li>
-					    <li><a href="#">Back to Top</a></li>
-	          </ul>
-	          <p>
-	            © 2013 University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3
-	          </p>
-	        </div>
-	      </div> <!-- Footer Inner End -->
-	    </div>  <!-- Footer Container End -->
-	  </div> <!-- Footer Bottom Row End -->
-  </footer> <!-- Footer End -->
-  
   <div id="videoModal" class="modal hide fade">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
       <h3>Video Modal</h3>
     </div>
     <div class="modal-body">
@@ -325,9 +371,16 @@
 		leftNav.find("a").click(function() {
 		  $("#content-pane").load('./content/'+$(this).attr("href")+' #content');
 			$("#preview").contents().find("body").load('./content/'+$(this).attr("href")+' #content-preview',function() {
-				$("#preview").css('height', $("#preview").contents().find("#content-preview").height()+'px');
+				var iframeHeight = $("#preview").contents().find("#content-preview").height();
+				$("#preview").css('height', iframeHeight+'px');
+				$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
 			});
 			return false;
+		});
+		
+		$('#preview-toggle').click(function() {
+			$('#preview').toggle();
+			$(this).toggleClass('closed');
 		});
 		
 		$('#mobile-portrait-preview').click(function() {
