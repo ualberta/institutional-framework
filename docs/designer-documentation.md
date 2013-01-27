@@ -266,6 +266,8 @@ Every project folder inside the `/less/` folder will have a `fallbacks.less` fil
 #### Targeting Internet Explorer
 Targeting Internet Explorer is done in a similar way to the fallbacks.  Note that any display issues that happen because Internet Explorer does not support a specific feature should be fixed in a `fallbacks.less` file.  Issues fixed in the `ie.less` files should only be display issues specific to different versions of Internet Explorer.
 
+Note that versions of Internet Explorer less than 9 do not support media queries.  A fixed width layout is used for Internet Explorer 8 and below. 
+
 Depending on which version of Internet Explorer the user is using, there will be different classes that are added to the `<html>` class:
 
 <table>
@@ -327,6 +329,7 @@ The ualberta.ca homepage is the `/html/institutional-home.html` file in the repo
 		make homepage
 		
 This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage` directory.  This will name the index file `index-preview.html`, so you can easily upload and preview the file.  After going through the necessary testing phases, you can overwrite the index file on the server with your new homepage files.
+
 
 ## Todo
 The following sections still need to be added to this document:

@@ -1,0 +1,416 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie10" lang="en"> <![endif]-->
+<!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>  
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <!-- Meta: These two must be before <title> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- Title -->
+  <title>University of Alberta</title>
+  
+  <!-- Other Meta -->
+  <meta name="description" content="University of Alberta">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+<!-- The Sheets -->
+<link type="text/css" href="../../css/framework.css" rel="stylesheet">
+<link type="text/css" href="../../css/ualberta.css" rel="stylesheet">
+<link type="text/css" href="../../css/explore-icons.css" rel="stylesheet">
+
+<!-- IE Stylesheets -->
+<!--[if IE]><link type="text/css" href="../../css/framework-ie.css" rel="stylesheet"><link type="text/css" href="../../css/ualberta-ie.css" rel="stylesheet"><![endif]-->
+    
+  <!-- The Favicon -->
+  <link rel="shortcut icon" href="/~publicas/beta/ico/favicon.ico">
+  
+  <!-- Touch Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/~publicas/beta/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/~publicas/beta/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/~publicas/beta/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/~publicas/beta/ico/apple-touch-icon-57-precomposed.png">
+  
+  <!-- Head Scripts: MODERNIZR/ANALYTICS ONLY!  All others before </body> -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  
+  <style>
+  
+  	#preview {
+  		transition: width 0.3s ease;
+  		-moz-transition: width 0.3s ease;
+  		-webkit-transition: width 0.3s ease;
+  	}
+  	
+  	#device-preview {
+  		position: relative;
+  		top: 1px;
+  	}
+  	
+  	.banner-inner h1 {
+  		display: block;
+  	}
+  	
+  	span.identifier {
+  	  display:  block;
+  	  text-transform:uppercase;
+  	  font-family: "DIN Regular";
+  	  font-weight:  normal;
+  	  color: #fff;
+  	  font-size: 0.6em;
+  	  line-height: 1.1em;
+  	  position: relative;
+  	  z-index: 20;
+  	  top: 0.5em;
+  	}
+  	
+  	span.identifier + span.site-title {
+  		display: block;
+  		position: relative;
+  		top: 0.25em;
+  	}
+  	
+  	div.content-inner hr.soften {
+  		margin-top: 1.57em;
+  	}
+  	
+  	#content-pane h3 {
+	  		margin-top: 4px;
+  	}
+  
+  	
+  	#navigation-pane ul {
+  		list-style: none;
+  		margin: 0;
+  		padding: 0;
+  	}
+  	
+  	#navigation-pane li {
+  		
+  	}
+  	
+  	#navigation-pane li a {
+  		display: block;
+  		border-bottom: 1px dotted #ddd;
+  		padding: 5px 0px;
+  		font-weight: bold;
+  	}
+  	
+		#navigation-pane li a:hover {
+			display: block;
+			background-color: #F6F8ED;
+			background-color: rgba(255, 245, 184, 0.15);
+			border: 1px solid #E1D8A4;
+			margin: -1px -10px 0px -10px;
+			padding-left: 9px;
+			padding-right: 9px;
+			border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+		}
+		
+		#navigation-pane li ul li a {
+			font-weight: normal;
+			padding-left: 10px;
+		}
+		
+		#navigation-pane li ul li a:hover {
+			padding-left: 19px;
+		}
+  	
+  	#navigation-pane li ul li ul li a {
+  		font-weight: normal;
+  		padding-left: 20px;
+  	}
+  	
+  	#navigation-pane li ul li ul li a:hover {
+  		padding-left: 29px;
+  	}
+  	
+
+  		#preview {
+  			margin-top: 10px;
+  			margin-bottom: 10px;
+  		}
+  	
+  		#preview-pane {
+  			position: fixed;
+  			width: 100%;
+  			bottom: 0;
+  			left: 0;
+  			text-align: center;
+  			background: rgba(0,0,0,0.85);
+  		}
+  		
+  		#preview-pane h3,
+  		#preview-pane ul {
+  			text-align: left;
+  			color: #fff;
+  		}
+  		
+  		.preview-title-row {
+  			position: relative;
+  			border-bottom: 1px solid #666;
+  		}
+  		
+  		.preview-title-row h3,
+  		.preview-title-row ul {
+  			float: left;
+  			margin: 0;
+  			margin-top: 10px;
+  			margin-bottom: 5px;
+  		}
+  		
+  		.preview-title-row ul {
+  			margin-top: 3px;
+  		}
+  		
+  		.preview-title-row li {
+  			margin-left: 10px;
+  		}
+  		.preview-title-row li a {
+  			color: #fff;
+  		}
+  		
+  		.preview-title-row button.close {
+  			position: absolute;
+  			top: 5px;
+  			right: 10px;
+  			color: #fff;
+  			text-shadow: 1px 1px 1px #000;
+  			opacity: 0.75;
+  		}
+  		
+  		.preview-title-row button.close:hover {
+  			opacity: 1;
+  		}
+  		
+  		.preview-title-row button.close:after {
+  			content: "\d7";
+  		}
+  		
+  		.preview-title-row button.close.closed:after {
+  			content: "\2b";
+  		}
+  
+  </style>
+  
+  
+</head>
+<body>
+  <!-- Burn IE6 with fire -->
+  <!--[if lt IE 7]><p class=alert>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header> <!-- Start Header -->
+  
+<div class="blade-container"><!-- Start Blade -->
+  <div class="blade-inner">
+    <a class="brand" href="#"></a>
+    <nav class="blade-navigation">
+      <ul class="quick-links-container">
+        <li id="ql" class="dropdown">
+          <a id="ql-toggle" class="btn btn-grey btn-small hidden-desktop" data-toggle="dropdown">
+            <span class="quick-links-text">
+              Quick Links <b class="caret"></b>
+            </span>
+            <span class="icon-bar quick-links-button"></span>
+            <span class="icon-bar quick-links-button"></span>
+            <span class="icon-bar quick-links-button"></span>
+          </a>
+          <ul class="quick-links" role="menu" aria-labelledby="ql-toggle">
+            <li role="menuitem"><a href="http://webapps.srv.ualberta.ca/search/">Find a Person</a></li>
+            <li role="menuitem"><a href="http://onecard.ualberta.ca/">ONEcard</a></li>
+            <li role="menuitem"><a href="https://www.beartracks.ualberta.ca/">Bear Tracks</a></li>
+            <li role="menuitem"><a href="http://www.campusmap.ualberta.ca/">Maps</a></li>
+            <li role="menuitem"><a href="http://apps.ualberta.ca/">Email &amp; Apps</a></li>
+            <li role="menuitem"><a href="https://eclass.srv.ualberta.ca/portal/">eClass</a></li>
+            <li role="menuitem"><a href="http://www.library.ualberta.ca/">Libraries</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="blade-search">
+       <i class="icon-search"></i>
+       <input type="search" class="search-query" placeholder="search">
+       <button type="submit" class="btn btn-grey btn-small global-search-btn">Search</button>
+    </div>
+  </div>
+</div>
+
+    <div class="banner-container"> <!-- Start Banner -->
+      <div class="banner-inner">
+        <h1>
+          <span class="identifier">University Relations</span>
+          <span class="site-title">University Digital Strategy</span>
+        </h1>
+      </div>
+      <div class="shadow-container"></div>
+      <div class="oval-container">
+        <div class="oval oval1"></div>
+        <div class="oval oval2"></div>
+        <div class="oval oval3"></div>
+        <div class="oval oval4"></div>
+      </div>
+    </div> <!-- End Banner -->
+  
+    <div class="navigation-container"> <!-- Start Navigation -->
+      <nav id="main-nav" class="navigation-inner">
+        <ul>
+          <li>
+            <a class="navigation-toggle">Show Navigation <i class="icon-toggle-nav"></i></a>
+            <ul class="main-navigation collapse">
+              <li class="nav1" role="menuitem"><a href="http://why-beta.ualberta.ca/">Why UAlberta?</a></li>
+              <li class="nav2" role="menuitem"><a href="http://faculties-beta.ualberta.ca/">Faculties &amp; Programs</a></li>
+              <li class="nav3" role="menuitem"><a href="http://www.research.ualberta.ca/">Research</a></li>
+              <li class="nav4" role="menuitem"><a href="http://admission-beta.ualberta.ca/">Admissions</a></li>
+              <li class="nav5" role="menuitem"><a href="http://campuslife-beta.ualberta.ca/">Campus Life</a></li>
+              <li class="nav6" role="menuitem"><a href="http://news-beta.ualberta.ca/">News &amp; Events</a></li>
+              <li role="menuitem" class="audience-link"><a href="http://prospective-beta.ualberta.ca/">Prospective Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="http://students-beta.ualberta.ca/">Current Students</a></li>
+              <li role="menuitem" class="audience-link"><a href="http://facultystaff-beta.ualberta.ca/">Faculty &amp; Staff</a></li>
+              <li role="menuitem" class="audience-link"><a href="http://www.alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- End Navigation -->
+    
+  </header> <!-- End Header -->
+  
+	<div class="content-wrapper style-guide">
+		<div class="page-title-row">
+		    <div class="title-container container">
+		        <h2 class="page-title">Web Style Guide</h2>
+		    </div>
+		</div>
+	  <div class="content-container container">    
+	  	<div class="content-inner row-fluid">
+	  		<div class="main-content span">
+					<div class="row-fluid">
+						<div id="navigation-pane" class="span3">
+							<ul>
+								<li>
+								<a href="page-elements.html">Page Elements</a>
+									<ul>
+										<li><a href="blade.html">Blade</a></li>
+										<li><a href="banner.html">Banner</a></li>
+										<li><a href="navigation.html">Navigation</a></li>
+										<li><a href="breadcrumb.html">Breadcrumb</a></li>
+										<li><a href="page-title.html">Page Title</a></li>
+										<li><a href="footer.html">Footer</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="span9">
+							<div class="row-fluid">
+							  <div class="span12">
+									<div id="content-pane">
+									
+									</div>
+							  </div> 
+							</div>
+						</div>
+					</div>
+	      </div>
+	    </div>
+	  </div> <!-- Container End -->
+	</div>
+  
+  <div id="preview-pane">
+  	<div class="preview-title-row">
+	  	<div class="container">
+	  		<div class="row-fluid">
+			    <h3>Preview</h3>
+			    <ul id="device-preview" class="nav nav-pills">
+			    	<li><a id="mobile-portrait-preview" href="#mobile-portrait-preview">Mobile (Portrait)</a></li>
+			    	<li><a id="mobile-landscape-preview" href="#mobile-landscape-preview">Mobile (Landscape)</a></li>
+			    	<li><a id="tablet-preview" href="#tablet-preview">Tablet</a></li>
+			    	<li class="active"><a id="desktop-preview" href="#desktop-preview">Desktop (Small)</a></li>
+			    	<li><a id="desktop-large-preview" href="#desktop-large-preview">Desktop (Large)</a></li>
+			    </ul>
+			  </div>
+			</div>
+			<button type="button" class="close" id="preview-toggle"></button>
+		</div>
+    <iframe id="preview" scrolling="no" style="border: 1px solid #000; width: 980px;">
+    	<html><head></head><body></body></html>
+    </iframe>
+  </div>
+  
+  <div id="videoModal" class="modal hide fade">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+      <h3>Video Modal</h3>
+    </div>
+    <div class="modal-body">
+      <div class="video-mod-container">
+        <iframe type="text/html" src="" style="min-width: 300px; min-height: 100px;" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+ 
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- scripts concatenated and minified via build script -->
+<script src="http://www.ualberta.ca/~publicas/beta/js/bootstrap.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("link[type='text/css']").clone().appendTo($("#preview").contents().find("head"));
+		
+		var leftNav = $("#navigation-pane");
+		
+		leftNav.find("a").click(function() {
+		  $("#content-pane").load('./content/'+$(this).attr("href")+' #content');
+			$("#preview").contents().find("body").load('./content/'+$(this).attr("href")+' #content-preview',function() {
+				var iframeHeight = $("#preview").contents().find("#content-preview").height();
+				$("#preview").css('height', iframeHeight+'px');
+				$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
+			});
+			return false;
+		});
+		
+		$('#preview-toggle').click(function() {
+			$('#preview').toggle();
+			$(this).toggleClass('closed');
+		});
+		
+		$('#mobile-portrait-preview').click(function() {
+			$('#preview').css('width', '320px');
+		});
+		
+		$('#mobile-landscape-preview').click(function() {
+			$('#preview').css('width', '480px');
+		});
+		
+		$('#tablet-preview').click(function() {
+			$('#preview').css('width', '768px');
+		});
+		
+		$('#desktop-preview').click(function() {
+			$('#preview').css('width', '980px');
+		});
+		
+		$('#desktop-large-preview').click(function() {
+			$('#preview').css('width', '1200px');
+		});
+		
+		$('#device-preview a').click(function (e) {
+		  e.preventDefault();
+		  $(this).tab('show');
+		})
+		
+	});
+</script>
+
+
+</body>
+</html>
