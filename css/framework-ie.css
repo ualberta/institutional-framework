@@ -22,7 +22,6 @@
 .lt-ie9 .row-fluid .primary-content-area{width:47.97872340425532%;}
 .lt-ie9 .row-fluid .secondary-content-area{width:29.680851063829788%;}
 .lt-ie9 .row-fluid .sidebar{width:18.085106382978726%;}
-.lt-ie9 .row-fluid.tertiary .span12.primary-content-area{width:100%;}
 .lt-ie9 input[type="submit"]:focus,.lt-ie9 input[type="button"]:focus,.lt-ie9 input[type="text"]:focus,.lt-ie9 button{outline:none;}
 .lt-ie9 .hover-caption-container .caption{overflow:auto;filter:progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0);}
 .lt-ie9 .hide,.lt-ie9 .modal.hide{display:none;}
@@ -86,6 +85,7 @@
 .lt-ie9 .link-mod-container li.link-mod-filter{float:none;}
 .lt-ie9 .link-mod-container li.link-mod-active h4 a::after{font-style:normal;font-family:FontAwesome;float:right;content:"\f0da";text-decoration:inherit;}
 .lt-ie9 .link-mod-container .icon-filter{bottom:10px;bottom:0.6428571428571429em;}
+.lt-ie8 .thumbnail-container a i{cursor:pointer;}
 .lt-ie8 .inline-search input[type='text']{padding-top:0.6em;}
 .lt-ie8 .daily-news .subscribe-form .btn{border:none;height:2.8em;}
 .lt-ie8 .filter-dropdown{width:180px;}

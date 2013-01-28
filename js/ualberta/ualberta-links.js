@@ -1,8 +1,6 @@
 /* =============================================================
- * bootstrap-collapse.js v2.1.1
- * http://twitter.github.com/bootstrap/javascript.html#collapse
+ * ualberta-links.js
  * =============================================================
- * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +21,7 @@
   "use strict"; // jshint ;_;
 
 
- /* COLLAPSE PUBLIC CLASS DEFINITION
+ /* LINKMOD PUBLIC CLASS DEFINITION
   * ================================ */
 
   var Linkmod = function (element, options) {
@@ -120,7 +118,7 @@
   }
 
 
- /* COLLAPSIBLE PLUGIN DEFINITION
+ /* LINK MOD PLUGIN DEFINITION
   * ============================== */
 
   $.fn.linkmod = function (option) {
@@ -140,7 +138,7 @@
   $.fn.linkmod.Constructor = Linkmod
 
 
- /* COLLAPSIBLE DATA-API
+ /* LINKMOD DATA-API
   * ==================== */
 
   $(function () {
