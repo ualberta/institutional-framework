@@ -138,7 +138,6 @@ homepage:
 	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
 	@cp -r ./img/homepage/ ../homepage/img/
 	@cp ./html/homepage/index.html ../homepage/index-preview.html
-	@cp ./html/homepage/notices.html ../homepage/notices.html
 
 #
 # WATCH LESS FILES
