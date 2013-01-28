@@ -52,6 +52,7 @@ less:
 #
 
 production:
+	@mkdir -p ./css
 	@mkdir -p ${PRODDIR}
 	@mkdir -p ${PRODDIR}/css
 	@mkdir -p ${PRODDIR}/img
