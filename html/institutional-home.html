@@ -20,25 +20,65 @@
   <meta name="description" content="University of Alberta">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  
+  
   <!-- The Sheets -->
-  <link href="./css/framework.css" rel="stylesheet">
-  <link href="./css/ualberta.css" rel="stylesheet">
-  <link href="./css/explore-icons.css" rel="stylesheet">
+  <link href="/~publicas/beta/css/framework.css" rel="stylesheet">
+  <link href="/~publicas/beta/css/ualberta.css" rel="stylesheet">
+  <link href="/~publicas/beta/css/explore-icons.css" rel="stylesheet">
   
   <!-- IE Stylesheets -->
-  <!--[if IE]><link href="./css/framework-ie.css" rel="stylesheet"><link href="./css/ualberta-ie.css" rel="stylesheet"><![endif]-->
-  <!--[if IE 7]><link href="./css/explore-icons-ie7.css" rel="stylesheet"><![endif]-->
+  <!--[if IE]><link href="/~publicas/beta/css/framework-ie.css" rel="stylesheet"><link href="/~publicas/beta/css/ualberta-ie.css" rel="stylesheet"><![endif]-->
+  <!--[if IE 7]><link href="/~publicas/beta/css/explore-icons-ie7.css" rel="stylesheet"><![endif]-->
     
   <!-- The Favicon -->
-  <link rel="shortcut icon" href="./ico/favicon.ico">
+  <link rel="shortcut icon" href="/~publicas/beta/ico/favicon.ico">
   
   <!-- Touch Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/~publicas/beta/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/~publicas/beta/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/~publicas/beta/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/~publicas/beta/ico/apple-touch-icon-57-precomposed.png">
   
-  <!-- Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+  <!-- Head Scripts: ANALYTICS/MODERNIZR ONLY!  All others before </body> -->
+  <script type="text/javascript">
+  // Begin Kiss Metrics code
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || '7144689afbf119479885dce1508584f0d51ffd59';
+  function _kms(u){
+  setTimeout(function(){
+  var d = document, f = d.getElementsByTagName('script')[0],
+  s = d.createElement('script');
+  s.type = 'text/javascript'; s.async = true; s.src = u;
+  f.parentNode.insertBefore(s, f);
+  }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+  // End Kiss Metrics code
+  </script>
+  
+  <script type="text/javascript">
+  // Begin Google Analytics code
+  var _gaq = _gaq || [];
+  _gaq.push(['default._setAccount', 'UA-12324208-6']);
+  _gaq.push(['default._setDomainName', '.ualberta.ca']);
+  _gaq.push(['default._setAllowLinker', true]);
+  _gaq.push(['default._setAllowAnchor', true]);
+  _gaq.push(['default._trackPageview']);
+  _gaq.push(['rollup._require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+  _gaq.push(['rollup._setAccount', 'UA-12324208-6']);
+  _gaq.push(['rollup._setDomainName', '.ualberta.ca']);
+  _gaq.push(['rollup._setAllowLinker', true]);
+  _gaq.push(['rollup._setAllowAnchor', true]);
+  _gaq.push(['rollup._trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  // End Google Analytics code
+  </script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   
 </head>
@@ -140,13 +180,13 @@
       <ul class="slides">
         <li class="responsive-feature">
           <span class="image-shadow">
-            <img class="fma-background" src="./img/feature-responsive-grey.jpg" />
+            <img class="fma-background" src="./img/features/feature-responsive-grey.jpg" />
           </span>
           <div class="fma-content">
             <h3>UAlberta Responsive Design</h3>
             <p class="feature-copy">Our website now adjusts to your device.</p>
             <div class="fma-buttons">
-              <a href="http://ualberta-beta.ualberta.ca/homepagefeatures/ualbertabeta.aspx" class="btn btn-green btn-micro">Find Out More</a>
+              <a href="http://ualberta-beta.ualberta.ca/ualbertabeta.aspx" class="btn btn-green btn-micro">Find Out More</a>
               <a href="https://www.surveymonkey.com/s/ualbertabeta" class="btn btn-grey btn-micro">Give Feedback</a>
             </div>
           </div>
@@ -161,7 +201,7 @@
             <div class="frame">
               <div class="hover-caption-container">
                 <a href="http://www.youtube.com/embed/cBgIkhinRww?autoplay=1" class="image-shadow video-modal-link" data-target="#videoModal" data-toggle="modal" data-title="UAlberta in a Minute Video">
-                  <img src="./img/yualberta.png" />
+                  <img src="/~publicas/beta/img/homepage/yualberta.png" />
                   <i class="icon-play-circle"></i>
                 </a>
                 
@@ -181,8 +221,7 @@
       </div>
     </div>
   </div>
-
-
+  
   <div class="content-container container">    
     <div class="content-inner row-fluid"> <!-- Second Row Start -->
       <div class="main-content span">
@@ -277,7 +316,7 @@
                 </a>
               </li>
               <li>
-                <a href="http://ualberta-beta.ualberta.ca/news/mediarelations">
+                <a href="http://news-beta.ualberta.ca/mediarelations">
                   <i class="icon-exp-media"></i>
                   <span>Media Relations</span>
                 </a>
@@ -305,7 +344,7 @@
                       <a href="http://feeds.feedburner.com/UofAExpressNewsArticles" class="heading-link btn btn-grey" rel="tooltip" title="Subscribe to RSS feed"><i class="icon-rss"></i></a>
                     </li>
                     <li>
-                      <a href="http://ualberta-beta.ualberta.ca/news/dailynewssubscribe" class="heading-link btn btn-grey" rel="tooltip" title="Daily News Email"><i class="icon-envelope"></i></a>
+                      <a href="http://news-beta.ualberta.ca/dailynewssubscribe" class="heading-link btn btn-grey" rel="tooltip" title="Daily News Email"><i class="icon-envelope"></i></a>
                     </li>
                   </ul>
               </div>
@@ -320,22 +359,8 @@
                 <div class="module-top">
                   <h3>Campus Notices</h3>
                 </div>
-                <ul class="data-list">
-                  <li>
-                    <a href="http://www.registrarsoffice.ualberta.ca/graduationconvocation/in-memoriam.aspx">
-                      Lowering the University banner as a sign of mourning
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://communityrelations.ualberta.ca/CommunityConnectionsAwards.aspx">
-                      Call out for Community Connection Awards nominees
-                    </a>
-                  </li>     
-                  <li>
-                    <a href="http://www.facilities.ualberta.ca/FacilitiesNotices/2013/January/Noticeregarding114Streetlaneclosure.aspx">
-                      Update Jan. 11: PAW Centre construction impacts
-                    </a>
-                  </li>            
+                <ul id="notice-list" class="data-list">
+          
                 </ul>
               </div>
               <div id="colloquy-blog" class="colloquy-blog">
@@ -370,11 +395,11 @@
           </h5>
           <div class="sidebar-content social-media-links links collapse in">
             <ul>
-              <li><a href="http://www.facebook.com/ualberta"><img src="img/icon_facebook.png"/> Facebook</a></li>
-              <li><a href="https://foursquare.com/ualberta"><img src="img/icon_foursquare.png"/> Foursquare</a></li>
-              <li><a href="http://greenandgoldforever.tumblr.com/"><img src="img/icon_tumblr.png"/> Tumblr</a></li>
-              <li><a href="http://twitter.com/#!/ualberta"><img src="img/icon_twitter.png"/> Twitter</a></li>
-              <li><a href="http://www.youtube.com/user/UniversityofAlberta"><img src="img/icon_youtube.png"/> YouTube</a></li>
+              <li><a href="http://www.facebook.com/ualberta"><img src="/~publicas/beta/img/icons/icon_facebook.png"/> Facebook</a></li>
+              <li><a href="https://foursquare.com/ualberta"><img src="/~publicas/beta/img/icons/icon_foursquare.png"/> Foursquare</a></li>
+              <li><a href="http://greenandgoldforever.tumblr.com/"><img src="/~publicas/beta/img/icons/icon_tumblr.png"/> Tumblr</a></li>
+              <li><a href="http://twitter.com/#!/ualberta"><img src="/~publicas/beta/img/icons/icon_twitter.png"/> Twitter</a></li>
+              <li><a href="http://www.youtube.com/user/UniversityofAlberta"><img src="/~publicas/beta/img/icons/icon_youtube.png"/> YouTube</a></li>
             </ul>
           </div>
         </div>
@@ -392,7 +417,7 @@
           <div class="span12 footer-copyright">
             <ul class="footer-quick-links">
 					    <li><a href="http://ualberta-beta.ualberta.ca/contactualberta">Contact Us</a></li>
-              <li><a href="http://ualberta-beta.ualberta.ca/contactualberta/feedback">Feedback</a></li>
+              <li><a href="https://www.surveymonkey.com/s/ualbertabeta">Feedback</a></li>
 					    <li><a href="http://www.registrar.ualberta.ca/calendar/">University Calendar</a></li>
 					    <li><a href="http://www.careers.ualberta.ca/">Careers</a></li>
 					    <li><a href="http://www.rms.ualberta.ca/en/EmergNumbers.aspx">Emergency</a></li>
@@ -428,10 +453,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <!-- scripts concatenated and minified via build script -->
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/ualberta/jquery.tweet.js"></script>
-<script src="./js/ualberta/institutional.js"></script>
-<script src="./js/ualberta/jquery.flexslider-min.js"></script>
+<script src="/~publicas/beta/js/bootstrap.min.js"></script>
+<script src="/~publicas/beta/js/ualberta/jquery.tweet.js"></script>
+<script src="/~publicas/beta/js/ualberta/institutional.js"></script>
+<script src="/~publicas/beta/js/ualberta/jquery.flexslider-min.js"></script>
 <script>
 	var UAlberta = UAlberta || {};
 	UAlberta.Sitecore = UAlberta.Sitecore || {};
@@ -554,16 +579,24 @@
       // --------------------
       var newsEl = $('#news').find('.data-list');
       
-      $.getJSON('http://www.news.ualberta.ca/scripts/newsheadlines2.aspx?callback=?',
+      $.getJSON('//www.ualberta-beta.ualberta.ca/Services/NewsService.svc/headlines?format=json&callback=?',
           function(data) {
               newsEl.removeClass('loading');
-              for(var i=0; i < data.items.length; i++)
+              for(var i=0; i < data.length; i++)
               {
-                  newsEl.append('<li class="news-row"><div class="news-description"><h4><a href="'+data.items[i].Link+'">'+data.items[i].Headline+'</a></h4><p class="news-teaser">'+data.items[i].Teaser+'</p></div></li>');
+                  newsEl.append('<li class="news-row"><div class="news-description"><h4><a href="'+data[i].link+'">'+data[i].title+'</a></h4><p class="news-teaser">'+data[i].description+'</p></div></li>');
               }
-              newsEl.append('<li class="news-row bottom-row"><a href="http://ualberta-beta.ualberta.ca/news.aspx">Read more news</a></li>');
+              newsEl.append('<li class="news-row bottom-row"><a href="http://news-beta.ualberta.ca/">Read more news</a></li>');
           }
       );
+      
+			// Fetch Notices
+			// --------------------
+			var noticeEl = $('#notice-list');
+			
+			noticeEl.load('notices.html', function() {
+				noticeEl.removeClass('loading');
+			});
       
       // Colloquy Blog
       // --------------------
@@ -613,7 +646,21 @@
 			});
     })(jQuery);
   </script>
+  <script type="text/javascript">
+  // Begin Crazy Egg code
+  setTimeout(function(){var a=document.createElement("script");
+  var b=document.getElementsByTagName("script")[0];
+  a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/7135.js?"+Math.floor(new Date().getTime()/3600000);
+  a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  // End Crazy Egg code
+  </script>
+  <script type="text/javascript">
+  // Begin Qualaroo code
+  var _kiq = _kiq || [];
+  </script>
+  <script type="text/javascript" src="//s3.amazonaws.com/ki.js/22238/4tc.js" async="true">
+  // End Qualaroo code
+  </script>
   <!-- end scripts -->
-
 </body>
 </html>

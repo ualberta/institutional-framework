@@ -52,6 +52,11 @@ less:
 #
 
 production:
+	@mkdir -p ${PRODDIR}
+	@mkdir -p ${PRODDIR}/css
+	@mkdir -p ${PRODDIR}/img
+	@mkdir -p ${PRODDIR}/ico
+	@mkdir -p ${PRODDIR}/js
 	@lessc -x ./less/framework.less > ./css/framework.css
 	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
 	@echo "Compiling framework base less...             ${CHECK} Done"
@@ -61,16 +66,11 @@ production:
 	@lessc -x ./less/faculty.less > ./css/faculty.css
 	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
 	@echo "Compiling faculty base less...               ${CHECK} Done"
-	@mkdir -p ${PRODDIR}
-	@mkdir -p ${PRODDIR}/css
-	@mkdir -p ${PRODDIR}/img
-	@mkdir -p ${PRODDIR}/ico
 	@cp -r ./css ${PRODDIR}
 	@cp -r ./img ${PRODDIR}
 	@echo "Copying css and images...                   ${CHECK} Done"
 	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PRODDIR}/js/bootstrap.js
 	@uglifyjs -nc ${PRODDIR}/js/bootstrap.js > ${PRODDIR}/js/bootstrap.min.js
-	@mkdir -p ${PRODDIR}/js
 	@cp -r ./js ${PRODDIR}
 	@cp -r ./ico ${PRODDIR}
 	@echo "Minifying and copying javascript...         ${CHECK} Done"

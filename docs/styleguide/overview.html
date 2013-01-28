@@ -42,165 +42,42 @@
   
   <style>
   
-  	#preview {
-  		transition: width 0.3s ease;
-  		-moz-transition: width 0.3s ease;
-  		-webkit-transition: width 0.3s ease;
-  	}
-  	
-  	#device-preview {
-  		position: relative;
-  		top: 1px;
-  	}
-  	
-  	.banner-inner h1 {
-  		display: block;
-  	}
-  	
-  	span.identifier {
-  	  display:  block;
-  	  text-transform:uppercase;
-  	  font-family: "DIN Regular";
-  	  font-weight:  normal;
-  	  color: #fff;
-  	  font-size: 0.6em;
-  	  line-height: 1.1em;
-  	  position: relative;
-  	  z-index: 20;
-  	  top: 0.5em;
-  	}
-  	
-  	span.identifier + span.site-title {
-  		display: block;
-  		position: relative;
-  		top: 0.25em;
-  	}
-  	
-  	div.content-inner hr.soften {
-  		margin-top: 1.57em;
-  	}
-  	
-  	#content-pane h3 {
-	  		margin-top: 4px;
-  	}
+  .banner-inner h1 {
+  	display: block;
+  }
   
-  	
-  	#navigation-pane ul {
-  		list-style: none;
-  		margin: 0;
-  		padding: 0;
-  	}
-  	
-  	#navigation-pane li {
-  		
-  	}
-  	
-  	#navigation-pane li a {
-  		display: block;
-  		border-bottom: 1px dotted #ddd;
-  		padding: 5px 0px;
-  		font-weight: bold;
-  	}
-  	
-		#navigation-pane li a:hover {
-			display: block;
-			background-color: #F6F8ED;
-			background-color: rgba(255, 245, 184, 0.15);
-			border: 1px solid #E1D8A4;
-			margin: -1px -10px 0px -10px;
-			padding-left: 9px;
-			padding-right: 9px;
-			border-radius: 4px;
-			-moz-border-radius: 4px;
-			-webkit-border-radius: 4px;
-		}
-		
-		#navigation-pane li ul li a {
-			font-weight: normal;
-			padding-left: 10px;
-		}
-		
-		#navigation-pane li ul li a:hover {
-			padding-left: 19px;
-		}
-  	
-  	#navigation-pane li ul li ul li a {
-  		font-weight: normal;
-  		padding-left: 20px;
-  	}
-  	
-  	#navigation-pane li ul li ul li a:hover {
-  		padding-left: 29px;
-  	}
-  	
-
-  		#preview {
-  			margin-top: 10px;
-  			margin-bottom: 10px;
-  		}
-  	
-  		#preview-pane {
-  			position: fixed;
-  			width: 100%;
-  			bottom: 0;
-  			left: 0;
-  			text-align: center;
-  			background: rgba(0,0,0,0.85);
-  		}
-  		
-  		#preview-pane h3,
-  		#preview-pane ul {
-  			text-align: left;
-  			color: #fff;
-  		}
-  		
-  		.preview-title-row {
-  			position: relative;
-  			border-bottom: 1px solid #666;
-  		}
-  		
-  		.preview-title-row h3,
-  		.preview-title-row ul {
-  			float: left;
-  			margin: 0;
-  			margin-top: 10px;
-  			margin-bottom: 5px;
-  		}
-  		
-  		.preview-title-row ul {
-  			margin-top: 3px;
-  		}
-  		
-  		.preview-title-row li {
-  			margin-left: 10px;
-  		}
-  		.preview-title-row li a {
-  			color: #fff;
-  		}
-  		
-  		.preview-title-row button.close {
-  			position: absolute;
-  			top: 5px;
-  			right: 10px;
-  			color: #fff;
-  			text-shadow: 1px 1px 1px #000;
-  			opacity: 0.75;
-  		}
-  		
-  		.preview-title-row button.close:hover {
-  			opacity: 1;
-  		}
-  		
-  		.preview-title-row button.close:after {
-  			content: "\d7";
-  		}
-  		
-  		.preview-title-row button.close.closed:after {
-  			content: "\2b";
-  		}
+  span.identifier {
+    display:  block;
+    text-transform:uppercase;
+    font-family: "DIN Regular";
+    font-weight:  normal;
+    color: #fff;
+    font-size: 0.6em;
+    line-height: 1.1em;
+    position: relative;
+    z-index: 20;
+    top: 0.5em;
+  }
+  
+  .properties {
+  	font-size: 13px;
+  }
+  
+  span.identifier + span.site-title {
+  	display: block;
+  	position: relative;
+  	top: 0.25em;
+  }
+  
+  .preview-box {
+  	 border: 2px solid #333; padding: 0px 10px;
+  }
+  
+  .preview-box.image-box {
+  	 padding: 0;
+  }
   
   </style>
-  
   
 </head>
 <body>
@@ -289,76 +166,118 @@
 		        <h2 class="page-title">Web Style Guide</h2>
 		    </div>
 		</div>
-	  <div class="content-container container">    
-	  	<div class="content-inner row-fluid">
-	  		<div class="main-content span">
-					<div class="row-fluid">
-						<div id="navigation-pane" class="span3">
-							<ul>
-								<li>
-								<a href="page-elements.html">Page Elements</a>
-									<ul>
-										<li><a href="blade.html">Blade</a></li>
-										<li><a href="banner.html">Banner</a></li>
-										<li><a href="navigation.html">Global Navigation</a></li>
-										<li><a href="dropdown-nav.html">Dropdown Menus</a></li>
-										<li><a href="breadcrumb.html">Breadcrumb</a></li>
-										<li><a href="left-nav.html">Left Navigation</a></li>
-										<li><a href="page-title.html">Page Title</a></li>
-										<li><a href="sidebar-items.html">Sidebar Items</a></li>
-										<li><a href="footer.html">Footer</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="span9">
-							<div class="row-fluid">
-							  <div class="span12">
-									<div id="content-pane">
-									
-									</div>
-							  </div> 
-							</div>
-						</div>
-					</div>
-	      </div>
+		
+	  <div class="content-container container">   
+	   
+	  	<div class="row-fluid">
+	  		<h3>Typography</h3>
+	  	</div>
+	  	
+	  	
+	  	<!-- Headings --> 
+	  	<div class="row-fluid">
+	  		<h4>Headings</h4>
+	  	</div>
+	  	<div class="row-fluid">
+	  		<div class="style-description span8">
+	  			<ul class="unstyled row-fluid">
+	  				<li class="span4">
+	  					<h5>Heading One <code>&lt;h1&gt;</code></h5>
+	  					<ul id="typ-h1" class="properties data-list"></ul>
+	  				</li>
+	  				<li class="span4">
+	  					<h5>Heading Two <code>&lt;h2&gt;</code></h5>
+	  					<ul id="typ-h2" class="properties data-list"></ul>
+	  				</li>
+	  				<li class="span4">
+	  					<h5>Heading Three <code>&lt;h3&gt;</code></h5>
+	  					<ul id="typ-h3" class="properties data-list"></ul>
+	  				</li>
+	  			</ul>
+	  			<ul class="unstyled row-fluid">
+	  				<li class="span4">
+	  					<h5>Heading Four <code>&lt;h4&gt;</code></h5>
+	  					<ul id="typ-h4" class="properties data-list"></ul>
+	  				</li>
+	  				<li class="span4">
+	  					<h5>Heading Five <code>&lt;h5&gt;</code></h5>
+	  					<ul id="typ-h5" class="properties data-list"></ul>
+	  				</li>
+	  				<li class="span4">
+	  					<h5>Heading Six <code>&lt;h6&gt;</code></h5>
+	  					<ul id="typ-h6" class="properties data-list"></ul>
+	  				</li>
+	  			</ul>
+	  			
+	  		</div>
+	  		<div id="headings" class="preview-box span4">
+	  			<h1>Heading One</h1>
+	  			<h2>Heading Two</h2>
+	  			<h3>Heading Three</h3>
+	  			<h4>Heading Four</h4>
+	  			<h5>Heading Five</h5>
+	  			<h6>Heading Six</h6>
+	  		</div>
+	  	</div>
+	  	<!-- End Headings -->
+	  	
+			<!-- Headings --> 
+			<div class="row-fluid">
+				<h4>Paragraphs</h4>
+			</div>
+			<div class="row-fluid">
+				<div class="style-description span8">
+					<ul class="unstyled row-fluid">
+						<li class="span4">
+							<h5>Heading One</h5>
+							<ul id="typ-h1" class="properties data-list"></ul>
+						</li>
+						<li class="span4">
+							<h5>Heading Two</h5>
+							<ul id="typ-h2" class="properties data-list"></ul>
+						</li>
+						<li class="span4">
+							<h5>Heading Three</h5>
+							<ul id="typ-h3" class="properties data-list"></ul>
+						</li>
+					</ul>
+					<ul class="unstyled row-fluid">
+						<li class="span4">
+							<h5>Heading Four</h5>
+							<ul id="typ-h4" class="properties data-list"></ul>
+						</li>
+						<li class="span4">
+							<h5>Heading Five</h5>
+							<ul id="typ-h5" class="properties data-list"></ul>
+						</li>
+						<li class="span4">
+							<h5>Heading Six</h5>
+							<ul id="typ-h6" class="properties data-list"></ul>
+						</li>
+					</ul>
+					
+				</div>
+				<div id="paragraphs" class="preview-box span4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur massa quis pretium. Nulla facilisi. Phasellus tempus tincidunt dui eget molestie. Maecenas posuere tortor a eros interdum vel lacinia nisl ultrices. Quisque ullamcorper arcu eu odio vulputate ut condimentum tellus euismod. In et commodo purus. Fusce gravida venenatis lacinia.</p>
+				</div>
+			</div>
+			<!-- End Headings -->
+	  	
+	  	<div class="row-fluid">
+	  		<h4>Site Title</h4>
+	  	</div>
+	  	<div class="row-fluid">
+	  		<div class="style-description span6">
+	  			
+	  		</div>
+	  		<div class="preview-box span6">
+					preview content
+	  		</div>
 	    </div>
+	    
 	  </div> <!-- Container End -->
 	</div>
   
-  <div id="preview-pane">
-  	<div class="preview-title-row">
-	  	<div class="container">
-	  		<div class="row-fluid">
-			    <h3>Preview</h3>
-			    <ul id="device-preview" class="nav nav-pills">
-			    	<li><a id="mobile-portrait-preview" href="#mobile-portrait-preview">Mobile (Portrait)</a></li>
-			    	<li><a id="mobile-landscape-preview" href="#mobile-landscape-preview">Mobile (Landscape)</a></li>
-			    	<li><a id="tablet-preview" href="#tablet-preview">Tablet</a></li>
-			    	<li class="active"><a id="desktop-preview" href="#desktop-preview">Desktop (Small)</a></li>
-			    	<li><a id="desktop-large-preview" href="#desktop-large-preview">Desktop (Large)</a></li>
-			    </ul>
-			  </div>
-			</div>
-			<button type="button" class="close" id="preview-toggle"></button>
-		</div>
-    <iframe id="preview" scrolling="no" style="border: 1px solid #000; width: 980px;">
-    	<html><head></head><body></body></html>
-    </iframe>
-  </div>
-  
-  <div id="videoModal" class="modal hide fade">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-      <h3>Video Modal</h3>
-    </div>
-    <div class="modal-body">
-      <div class="video-mod-container">
-        <iframe type="text/html" src="" style="min-width: 300px; min-height: 100px;" frameborder="0"></iframe>
-      </div>
-    </div>
-  </div>
- 
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
@@ -367,55 +286,25 @@
 
 <script>
 	$(document).ready(function() {
-		$("link[type='text/css']").clone().appendTo($("#preview").contents().find("head"));
 		
-		var leftNav = $("#navigation-pane");
+		var typeProperties = ["color", "font-family", "font-size", "font-weight", "line-height", "margin-top", "margin-bottom"];
 		
-		leftNav.find("a").click(function() {
-		  $("#content-pane").load('./content/'+$(this).attr("href")+' #content');
-			$("#preview").contents().find("body").load('./content/'+$(this).attr("href")+' #content-preview',function() {
-				var iframeHeight = $("#preview").contents().find("#content-preview").height();
-				$("#preview").css('height', iframeHeight+'px');
-				$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
-			});
-			return false;
-		});
+		var getProperties = function(el, props) {
+			var thisEl = el;
+			var i;
+			var propertyList = '';
+			for (i = 0; i < props.length; ++i) {
+				propertyList += '<li><strong>'+props[i]+':</strong> '+thisEl.css(props[i])+'</li>';
+			}
+			return propertyList;
+		};
 		
-		$('.variant').live('hover', function() { 
-		
-			// highlight component
-		
-		});
-		
-		$('#preview-toggle').click(function() {
-			$('#preview').toggle();
-			$(this).toggleClass('closed');
-		});
-		
-		$('#mobile-portrait-preview').click(function() {
-			$('#preview').css('width', '320px');
-		});
-		
-		$('#mobile-landscape-preview').click(function() {
-			$('#preview').css('width', '480px');
-		});
-		
-		$('#tablet-preview').click(function() {
-			$('#preview').css('width', '768px');
-		});
-		
-		$('#desktop-preview').click(function() {
-			$('#preview').css('width', '980px');
-		});
-		
-		$('#desktop-large-preview').click(function() {
-			$('#preview').css('width', '1200px');
-		});
-		
-		$('#device-preview a').click(function (e) {
-		  e.preventDefault();
-		  $(this).tab('show');
-		})
+		$('#typ-h1').html(getProperties($('#headings h1'), typeProperties));
+		$('#typ-h2').html(getProperties($('#headings h2'), typeProperties));
+		$('#typ-h3').html(getProperties($('#headings h3'), typeProperties));
+		$('#typ-h4').html(getProperties($('#headings h4'), typeProperties));
+		$('#typ-h5').html(getProperties($('#headings h5'), typeProperties));
+		$('#typ-h6').html(getProperties($('#headings h6'), typeProperties));
 		
 	});
 </script>
