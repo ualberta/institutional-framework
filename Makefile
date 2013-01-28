@@ -123,6 +123,7 @@ faculty:
 	@echo "Compiling faculty less files...     ${CHECK} Done"
 	
 homepage:
+	@mkdir -p ./css
 	@mkdir -p ../homepage
 	@mkdir -p ../homepage/css
 	@mkdir -p ../homepage/js
