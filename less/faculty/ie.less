@@ -1,10 +1,21 @@
 // INTERNET EXPLORER 9
 // --------------------------------------------------
 .ie9 {
-.image-caption-container .caption {
-	-ms-filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+@media (max-width: 74.9375em) and (min-width: 61.25em) {
+	.image-caption-container .caption {
+		-ms-filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	}
 }
+
+@media (max-width: 500px) {
+	.image-caption-container .caption {
+		-ms-filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	}
+}
+
 .link-mod-container > li.link-mod-active h4 a::after{
 	top:0px;
 }
