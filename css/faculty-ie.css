@@ -16,8 +16,8 @@
 .lt-ie9 ul.main-navigation li.nav6 .sub-menu{left:-515px;}
 .lt-ie9 .row-fluid.secondary .feature-area{width:100%;}
 .lt-ie9 .row-fluid .sidebar{float:right;}
-.lt-ie9 .row-fluid.secondary .primary-content-area-container{width:81.9%;float:left;}
-.lt-ie9 .row-fluid.secondary .secondary-content-area{width:36%;}
+.lt-ie9 .row-fluid.secondary .primary-content-area-container{width:81%;float:left;}
+.lt-ie9 .row-fluid.secondary .secondary-content-area{width:37%;}
 .lt-ie9 .row-fluid.secondary .primary-content-area{width:60%;}
 .lt-ie9 .banner-container .banner-inner h1{display:block;}
 .lt-ie9 .navigation-container .navigation-inner ul li ul .nav1{width:14.512471655328799%;}
@@ -62,3 +62,5 @@
 .lt-ie8 .flexslider .flex-direction-nav LI A.flex-prev{background-image:url('../img/prev-arrow.png');width:31px;height:46px;}
 .lt-ie8 .flexslider .flex-direction-nav LI A.flex-next{background-image:url('../img/next-arrow.png');width:31px;height:46px;}
 .lt-ie8 ul.faculty-links{margin-left:0px;}
+.lt-ie8 .image-caption-container .caption{position:absolute;filter:progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0);width:auto;}
+.lt-ie8 .flexslider .flex-control-nav{bottom:15px;}
