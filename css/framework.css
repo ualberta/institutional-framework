@@ -744,8 +744,8 @@ ul.footer-quick-links +p{margin-top:1em;}
 .sidebar .events-module ul li:last-child{border-bottom:none;}
 .sidebar .events-list li.events-row{border-top:1px dotted #e0e0e0;}.sidebar .events-list li.events-row:first-child{border-top-color:transparent;}
 .sidebar .events-list li.events-row a{border:0;padding-bottom:0;}.sidebar .events-list li.events-row a:hover{margin:0;padding-left:0px;padding-right:0;border:none;background:none;text-decoration:underline;}
-.sidebar .events-list li.events-row a li.bottom-row:hover{padding-left:0px;}
-.sidebar .events-list li.events-row a li.bottom-row a:hover{padding-left:10px;}
+.sidebar .events-list li.events-row a li.events-row.bottom-row:hover{padding-left:0px;}
+.sidebar .events-list li.events-row a li.bottom-row a:hover{padding-left:10px;text-decoration:none;}
 .sidebar .events-list li.events-row .date{line-height:1.57em;margin-bottom:0.5em;margin-top:0.5em;font-size:0.9em;color:#6a7870;}
 .sidebar .events-list li.events-row:hover{background:#FFF5B8;padding-left:10px;padding-right:10px;border-top:1px solid #e1d8a4;margin-bottom:-1px;border-bottom:1px solid #e1d8a4;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}
 .secondary-content-area .event-module li{position:relative;min-height:60px;}.secondary-content-area .event-module li h4{padding-left:60px;margin-top:0.3em;}
@@ -806,9 +806,9 @@ html[xmlns] .slides{display:block;}
 .flexslider .flex-control-nav{position:absolute;bottom:-26px;text-align:center;width:100%;cursor:pointer;}.flexslider .flex-control-nav li{display:inline-block;margin-right:6px;}
 .flexslider .flex-control-nav a{width:12px;height:12px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:#ddd;display:block;text-indent:-9999px;-webkit-box-shadow:inset 0px 0px 3px rgba(0, 0, 0, 0.5), 1px 1px 1px #ffffff;-moz-box-shadow:inset 0px 0px 3px rgba(0, 0, 0, 0.5), 1px 1px 1px #ffffff;box-shadow:inset 0px 0px 3px rgba(0, 0, 0, 0.5), 1px 1px 1px #ffffff;}.flexslider .flex-control-nav a:hover{background-color:#ffdb05;}
 .flexslider .flex-control-nav a.flex-active{background-color:#007c41;}
-.flexslider .flex-direction-nav li a{position:absolute;top:50%;margin-top:-22px;opacity:0;filter:alpha(opacity=0);-webkit-transition:all 0.15s ease;-moz-transition:all 0.15s ease;-o-transition:all 0.15s ease;transition:all 0.15s ease;font-size:0;line-height:0;color:#fff;text-shadow:1px 1px 6px rgba(0, 0, 0, 0.35);}.flexslider .flex-direction-nav li a:before{font-family:FontAwesome;font-weight:normal;font-style:normal;display:inline-block;text-decoration:none;font-size:44px;line-height:44px;height:44px;width:44px;text-align:center;}
-.flexslider .flex-direction-nav li a.flex-prev{left:-44px;}.flexslider .flex-direction-nav li a.flex-prev:before{content:"\f053";}
-.flexslider .flex-direction-nav li a.flex-next{right:-44px;}.flexslider .flex-direction-nav li a.flex-next:before{content:"\f054";}
+.flexslider .flex-direction-nav li a{position:absolute;top:50%;margin-top:-22px;opacity:0;filter:alpha(opacity=0);-webkit-transition:all 0.15s ease;-moz-transition:all 0.15s ease;-o-transition:all 0.15s ease;transition:all 0.15s ease;font-size:0;line-height:0;color:transparent;}.flexslider .flex-direction-nav li a:before{font-family:FontAwesome;font-weight:normal;font-style:normal;display:inline-block;text-decoration:none;font-size:44px;line-height:44px;height:44px;width:44px;text-align:center;}
+.flexslider .flex-direction-nav li a.flex-prev{left:-44px;}.flexslider .flex-direction-nav li a.flex-prev:before{content:"\f053";text-shadow:1px 1px 6px rgba(0, 0, 0, 0.35);color:#fff;}
+.flexslider .flex-direction-nav li a.flex-next{right:-44px;}.flexslider .flex-direction-nav li a.flex-next:before{content:"\f054";text-shadow:1px 1px 6px rgba(0, 0, 0, 0.35);color:#fff;}
 .flexslider:hover .flex-direction-nav li a{opacity:0.75;filter:alpha(opacity=75);}.flexslider:hover .flex-direction-nav li a.flex-prev{left:10px;}
 .flexslider:hover .flex-direction-nav li a.flex-next{right:10px;}
 .flexslider:hover .flex-direction-nav li a:hover{opacity:1;filter:alpha(opacity=100);}
