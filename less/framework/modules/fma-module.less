@@ -78,8 +78,7 @@ html[xmlns] .slides {display: block;}
       .transition(all 0.15s ease);
       font-size: 0;
       line-height: 0;
-      color: #fff;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.35);
+      color: transparent;
       &:before {
         font-family: FontAwesome;
         font-weight: normal;
@@ -94,11 +93,11 @@ html[xmlns] .slides {display: block;}
       }
       &.flex-prev {
         left: -44px;
-        &:before { content: "\f053"; }
+        &:before { content: "\f053"; text-shadow: 1px 1px 6px rgba(0,0,0,0.35);color:#fff;}
       }
       &.flex-next {
         right: -44px;
-        &:before { content: "\f054"; }
+        &:before { content: "\f054"; text-shadow: 1px 1px 6px rgba(0,0,0,0.35); color:#fff;}
       }
     }
   }
