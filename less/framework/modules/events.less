@@ -23,12 +23,18 @@
         padding-bottom: 0;
         &:hover {
           margin:0;
-          padding-left: 10px;
+          padding-left: 0px;
           padding-right: 0;
           border: none;
           background: none;
           text-decoration: underline;  
            
+        }
+        li.bottom-row:hover{
+	        padding-left:0px;
+        }
+        li.bottom-row a:hover{
+	        padding-left:10px;
         }
       }
       .date {
@@ -41,7 +47,7 @@
       &:hover {
         //margin:0;
         background: #FFF5B8;
-        padding-left: 0px;
+        padding-left: 10px;
         padding-right: 10px;
         border-top: 1px solid desaturate(darken(#FFF5B8,10%),50%);
         margin-bottom: -1px;
