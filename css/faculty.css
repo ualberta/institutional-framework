@@ -72,7 +72,7 @@ ul.news-list{list-style-type:none;margin:0px;padding:0px;}
 .ui-multiselect-menu{display:none;padding:3px;position:absolute;z-index:10000;text-align:left;}
 .ui-multiselect-checkboxes{position:relative ;overflow-y:scroll;}
 .ui-multiselect-checkboxes label{cursor:default;display:block;border:1px solid transparent;padding:3px 1px;}
-.ui-multiselect-checkboxes label input{position:relative;top:1px;}
+.ui-multiselect-checkboxes label input{position:relative;top:-5px;margin-right:5px;}
 .ui-multiselect-checkboxes li{clear:both;font-size:0.9em;padding-right:3px;}
 .ui-multiselect-checkboxes li.ui-multiselect-optgroup-label{text-align:center;font-weight:bold;border-bottom:1px solid;}
 .ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a{display:block;padding:3px;margin:1px 0;text-decoration:none;}
@@ -84,6 +84,7 @@ ul.news-list{list-style-type:none;margin:0px;padding:0px;}
 .event-detail .event-categories a{padding-right:5px;}
 .events-date{font-size:0.95em;display:block;}
 .events-location{font-size:1.2em;display:block;}
+.category-event label{margin-top:5px;}
 @media (min-width:75em){.content-top-row .tab-content{height:284px;}}@media (min-width:61.25em) and (max-width:74.938em){.content-top-row .tab-content{height:250px;}}.pull-right{float:right;}
 .pull-left{float:left;}
 .hide{display:none;}

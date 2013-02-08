@@ -632,7 +632,7 @@ a.btn{display:inline-block;*display:inline;*zoom:1;}
 .btn-small{font-size:1em;}
 .btn-micro{font-size:0.815em;text-transform:uppercase;}
 .sidebar .btn{display:block;margin-bottom:18px;}
-.sidebar .btn-grey{text-align:left;padding-left:0.65em;padding-right:0.65em;}
+.sidebar .btn-grey{padding-left:0.65em;padding-right:0.65em;}
 .close{float:right;font-size:20px;font-weight:bold;line-height:1.42857142857143em;color:#000000;text-shadow:0 1px 0 #ffffff;opacity:0.2;filter:alpha(opacity=20);}.close:hover{color:#000000;text-decoration:none;cursor:pointer;opacity:0.4;filter:alpha(opacity=40);}
 button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-appearance:none;}
 ul.breadcrumbs{margin-left:0px;font-size:0.9285714285714286em;}
