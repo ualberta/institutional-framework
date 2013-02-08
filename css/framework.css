@@ -852,6 +852,7 @@ ul.accordion-list li.expanded div{display:block;padding:10px;}
 .data-list-navigation a.jp-current{font-weight:bold;color:#3d4a43;}
 .data-list{clear:left;list-style:none;margin:0px 0 1.57em 0;padding:0;}.data-list li{*zoom:1;padding:5px 0px;border-top:1px dotted #e0e0e0;color:#637169;}.data-list li:before,.data-list li:after{display:table;content:"";line-height:0;}
 .data-list li:after{clear:both;}
+.data-list li a{display:block;}
 .data-list li h4{font-size:1em;font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.57em;margin:0px;font-weight:bold;}.data-list li h4 a{padding:0;border:0;display:block;}
 .data-list li p{color:#637169;font-size:0.92857142857143em;margin-bottom:0;}
 .data-list li:first-child{border-top-color:transparent;}
