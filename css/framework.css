@@ -769,7 +769,7 @@ ul.footer-quick-links +p{margin-top:1em;}
 .latest-news ul.news-list li.news-row.small-image .news-thumbnail{width:12%;margin:0 10px 5px 0px;min-width:81px;}
 .latest-news ul.news-list li.news-row.headline .news-thumbnail{display:none;}
 .latest-news ul.news-list li.news-row.headline h4{display:inline-block;margin-right:5px;}
-.latest-news ul.news-list li.news-row.headline .news-teaser{color:#637169;margin-top:3px;font-size:0.85714285714286em;}
+.latest-news ul.news-list li.news-row.headline .news-teaser{color:#3d4a43;margin-top:3px;font-size:0.85714285714286em;}
 .latest-news hr.soften{width:100%!important;}
 .module-image-callout{margin-bottom:20px;}
 .content-inner .latest-news .news-separator{margin-top:20px;}
