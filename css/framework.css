@@ -99,7 +99,7 @@ h4 small{font-size:14px;}
 h2.page-title{margin:0.8em auto 0 auto;font-size:2.1em;line-height:1em;border:none;}
 h3{font-size:1.6em;}
 h5.sidebar-title{line-height:1.2em;font-size:1.2em;margin:-10px -10px 5px -10px;padding:10px 10px 5px 10px;border-bottom:1px solid #dfe9e3;font-family:"DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:normal;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;*background-color:#f7f9f8;background-image:-moz-linear-gradient(top, #ffffff, #eef3f0);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eef3f0));background-image:-webkit-linear-gradient(top, #ffffff, #eef3f0);background-image:-o-linear-gradient(top, #ffffff, #eef3f0);background-image:linear-gradient(to bottom, #ffffff, #eef3f0);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeef3f0', GradientType=0);text-shadow:1px 1px 0px #fff;}h5.sidebar-title i{float:right;}
-h5.sidebar-title a{color:#3d4a43;text-decoration:none;}h5.sidebar-title a:hover{color:#007c41;}
+h5.sidebar-title a{color:#3d4a43;text-decoration:none;display:block;}h5.sidebar-title a:hover{color:#007c41;}
 .primary-content-area h2,.secondary-content-area h2,.primary-content-area h3,.secondary-content-area h3{border:none;}
 .primary-content-area h3{padding-top:0.625em;}
 .primary-content-area h3:first-child{padding-top:0px;}

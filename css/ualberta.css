@@ -213,12 +213,12 @@ ul.our-programs li{padding:0.7142857142857143em;background:#fff;border:none;-web
 ul.our-programs p.description{color:#637169;font-size:0.92857142857143em;padding-right:75px;}
 ul.our-programs p.button-container{margin:0;}
 ul.our-programs .btn{margin-right:6px;margin-bottom:5px;}
-ul.our-programs .symbol{position:absolute;right:10px;top:20px;display:block;width:75px;height:55px;opacity:0.5;background-repeat:no-repeat;background-position:center center;}
-ul.our-programs .undergraduate .symbol{background-image:url(../img/undergraduate-icon.png);}
-ul.our-programs .graduate .symbol{background-image:url(../img/graduate-icon.png);}
-ul.our-programs .international .symbol{background-image:url(../img/international-icon.png);}
-ul.our-programs .continuing-studies .symbol{background-image:url(../img/continuing-studies-icon.png);}
-ul.our-programs .open-studies .symbol{background-image:url(../img/open-studies-icon.png);}
+ul.our-programs .symbol{position:absolute;right:10px;top:20px;display:block;width:75px;height:55px;opacity:0.5;background-repeat:no-repeat;background-position:center center;background-image:url(../img/admissions-icons.png);}
+ul.our-programs .undergraduate .symbol{background-position:100px 0px;}
+ul.our-programs .graduate .symbol{background-position:100px 0px;}
+ul.our-programs .international .symbol{background-position:100px 0px;}
+ul.our-programs .continuing-studies .symbol{background-position:100px 0px;}
+ul.our-programs .open-studies .symbol{background-position:100px 0px;}
 .secondary-content-area .social-media-list{position:relative;}.secondary-content-area .social-media-list li a{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;width:24px;height:24px;display:inline-block;margin-right:5px;padding:10px 0 0 0;opacity:0.85;filter:alpha(opacity=85);}
 .secondary-content-area .social-media-list a.hide-text:hover{opacity:1;filter:alpha(opacity=100);}
 .secondary-content-area .social-media-list [class^="icon-"]::before,.secondary-content-area .social-media-list [class*=" icon-"]::before{content:none;display:none;}
