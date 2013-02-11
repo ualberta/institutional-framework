@@ -1,10 +1,5 @@
-@highRes_RowWidth:           @gridRowWidth1200;
 @highRes_NCWidth:        582px;
 @highRes_CSJWidth:        347px;
-
-
-@highRes_NCFluid:        percentage(@highRes_NCWidth/@highRes_RowWidth);
-@highRes_CSJFluid:        percentage(@highRes_CSJWidth/@highRes_RowWidth);
 
 @desktop_RowWidth:           @gridRowWidth;
 @desktop_NCWidth:        582px;
@@ -34,13 +29,13 @@
 	   width:66.75em;
 }
 .vt-nc{
-	width:@highRes_NCFluid;
+
 }
 .vt-csj{
-	width:@highRes_CSJFluid;
+
 }
 .vt-ac{
-	width:@highRes_CSJFluid;
+
 }
 .vt-nc, .vt-csj, .vt-ac{
 	position:relative;
@@ -71,13 +66,13 @@
 }
 @media (min-width: 61.25em) {
 .vt-nc{
-	width:@highRes_NCFluid;
+	width:@highRes_NCWidth;
 }
 .vt-csj{
-	width:@highRes_CSJFluid;
+	width:@highRes_CSJWidth;
 }
 .vt-ac{
-	width:@highRes_CSJFluid;
+	width:@highRes_CSJWidth;
 }
 }
 
