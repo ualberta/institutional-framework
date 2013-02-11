@@ -1,15 +1,3 @@
-@highRes_NCWidth:        582px;
-@highRes_CSJWidth:        347px;
-
-@desktop_RowWidth:           @gridRowWidth;
-@desktop_NCWidth:        582px;
-@desktop_CSJWidth:        200px;
-
-@desktop_NCFluid:        percentage(@desktop_NCWidth/@desktop_RowWidth);
-@desktop_CSJFluid:        percentage(@desktop_CSJWidth/@desktop_RowWidth);
-
-
-
 .virtual-tour{
 	 background: none repeat scroll 0 0 #F7F6F6;
      .border-radius(4px);
@@ -40,9 +28,6 @@
 .vt-nc, .vt-csj, .vt-ac{
 	position:relative;
 }
-.vt-ac{
-	margin-top:16px;
-}
 
 .vt{
 	.caption {
@@ -64,15 +49,75 @@
     }
    }
 }
-@media (min-width: 61.25em) {
+
+@media (min-width: 20em) and (max-width:39.938em){
 .vt-nc{
-	width:@highRes_NCWidth;
+	width:88%;
 }
 .vt-csj{
-	width:@highRes_CSJWidth;
+	width:43%;
+	float:left;
+	margin-right:10px;
+	margin-top:16px;
 }
 .vt-ac{
-	width:@highRes_CSJWidth;
+	width:43%;
+	margin-top:16px;
+}
+}
+@media (min-width: 40em) and (max-width:57.438em){
+.vt-nc{
+	width:88%;
+}
+.vt-csj{
+	width:43%;
+	float:left;
+	margin-right:10px;
+	margin-top:16px;
+}
+.vt-ac{
+	width:43%;
+	margin-top:16px;
+}
+}
+@media (min-width: 57.500em) and (max-width:74.938em){
+.vt-nc{
+	width:88%;
+}
+.vt-csj{
+	width:40%;
+}
+.vt-ac{
+	width:40%;
+	margin-top:16px;
+}
+}
+@media (min-width: 57.500em) and (max-width:74.938em){
+.vt-nc{
+	width:58%;
+}
+.vt-csj{
+	width:40%;
+}
+.vt-ac{
+	width:40%;
+	margin-top:16px;
+}
+}
+
+@media (min-width: 75em) {
+.vt-nc{
+	width:580px;
+	float:left;
+}
+.vt-csj{
+	width:347px;
+	float:right;
+}
+.vt-ac{
+	width:347px;
+	float:right;
+	margin-top:16px;
 }
 }
 
