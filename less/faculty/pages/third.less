@@ -74,7 +74,7 @@ min-height: 0px;
   }
 
   }
-@media (min-width: 43.125em) {
+@media (min-width: 43.125em){
 	.row-fluid.tertiary{
   		.primary-content-area-container{
 	  	width: @tablet_PriContFluidThird;
@@ -112,7 +112,7 @@ min-height: 0px;
       }
   }
 }
-@media (min-width: 61.25em) {
+@media (min-width: 61.25em) and (max-width:74.938em){
   hr.soften {
     width: auto;
   }
@@ -143,7 +143,22 @@ min-height: 0px;
     }
 }
 
-
+@media (min-width: 75em) {
+  .content-top-row {
+    .tab-content {
+      min-height: 264px;
+      height: 264px;
+    }
+  }
+  .row-fluid.tertiary{
+     .primary-content-area {
+      width: @highRes_PriColFluidThird;
+    }
+    .sidebar {
+      width: @highRes_SidebarFluid;
+    }
+  }
+}
 @media(min-width:320px){
 	    .row-fluid .span12.primary-content-area{
 	    width:100%;
