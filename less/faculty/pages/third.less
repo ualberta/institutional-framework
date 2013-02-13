@@ -1,5 +1,5 @@
 @highRes_RowWidth:           @gridRowWidth1200;
-@highRes_PriContWidthThird:        1300px;
+@highRes_PriContWidthThird:        970px;
 @highRes_PriColWidthThird:        850px;
 @highRes_SidebarWidth:       170px;
 
@@ -68,13 +68,13 @@ overflow: hidden;
 min-height: 0px;
 }
   }
-  @media (min-width:891px){
+  @media (min-width:55.688em){
 	  .inthissection .section-nav{
 	  display:none;
   }
 
   }
-@media (min-width: 43.125em){
+@media (min-width: 43.125em) {
 	.row-fluid.tertiary{
   		.primary-content-area-container{
 	  	width: @tablet_PriContFluidThird;
@@ -87,7 +87,7 @@ min-height: 0px;
     }
   }
  }
-@media (min-width: 43.125em) and (max-width: 890px) {
+@media (min-width: 43.125em) and (max-width: 55.625em) {
 .row-fluid.tertiary {
     .inthissection,
     .primary-content-area{
@@ -96,7 +96,7 @@ min-height: 0px;
      }
   }
 }
-@media (min-width: 891px) and (max-width: 61.1875em) {
+@media (min-width: 55.688em) and (max-width: 61.1875em) {
   .row-fluid.tertiary{
       .primary-content-area-container {
         width: @desktop_PriContFluidThird;
@@ -151,7 +151,11 @@ min-height: 0px;
     }
   }
   .row-fluid.tertiary{
-     .primary-content-area {
+    .primary-content-area-container {
+      width: @highRes_PriContFluidThird;
+
+    }
+   .primary-content-area {
       width: @highRes_PriColFluidThird;
     }
     .sidebar {
