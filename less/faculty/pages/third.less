@@ -96,8 +96,44 @@ min-height: 0px;
      }
   }
 }
+@media (min-width: 55.688em) and (max-width: 61.1875em) {
+  .row-fluid.tertiary{
+      .primary-content-area-container {
+        width: @desktop_PriContFluidThird;
+        float:left;
+      }
+   .primary-content-area{
+       width: @desktop_PriColFluidThird;
+       margin-left:20px;
+   }
+      .sidebar {
+        width: @desktop_SidebarFluid;
+        position:inherit;
+      }
+  }
+}
 
 
+@media (min-width: 75em) {
+  .content-top-row {
+    .tab-content {
+      min-height: 264px;
+      height: 264px;
+    }
+  }
+  .row-fluid.tertiary{
+    .primary-content-area-container {
+      width: @highRes_PriContFluidThird;
+
+    }
+   .primary-content-area {
+      width: @highRes_PriColFluidThird;
+    }
+    .sidebar {
+      width: @highRes_SidebarFluid;
+    }
+  }
+}
 @media(min-width:320px){
 	    .row-fluid .span12.primary-content-area{
 	    width:100%;
