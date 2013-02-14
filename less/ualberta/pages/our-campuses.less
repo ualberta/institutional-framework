@@ -8,26 +8,7 @@
     border-top: 1px solid rgba(0, 50, 25, 0.25);
     background-color: rgba(255, 200, 10, 0.1);
   }
-  .our-campuses .content-top-row > div {
-    position: relative;
-    overflow: hidden;
-    .secondary-link {
-      margin-left: 10px;
-      border-left: 1px solid rgba(0, 0, 0, 0.2);
-      padding-left: 10px;
-      position: relative;
-      top: 2px;
-    }
-    .fma-slide {
-      overflow: hidden;
-      position: absolute;
-      top: 600px;
-      .transition(all 0.3s ease-in-out);
-    }
-    .fma-slide.fma-active {
-      top: 0px;
-    }
-    .student-experience, .working-here {
+    .virtual-thumbs{
       text-align: center;
       font-size:  1em;
       margin-top: 1%;
@@ -39,10 +20,6 @@
         display: inline-block;
         .ie7-inline-block();
         margin-right: 1%;
-      }
-      .student-video-container, 
-      .hr-video-container {
-        margin-bottom: 15px;
       }
     }
   }
@@ -60,7 +37,7 @@
     background-position: -600px 250px;
   }
   
-  .our-campuses .fma-container {
+  .our-campuses .content-top-row > div {
     width: 100%;
     #em > .size(height,255,@baseFontSizepx);
     .fma-slide {
@@ -229,7 +206,7 @@
 }
 
 @media (min-width: 61.25em) {
-  .our-campuses .fma-container {
+  .our-campuses .content-top-row > div {
     #em > .size(height,300,@baseFontSizepx);
     .ualberta-minute {
       font-size: 1em;
@@ -251,7 +228,7 @@
     background-position: center 103px;
   }
 
-  .our-campuses .fma-container .thumbnail-slide {
+  .our-campuses .content-top-row > div .thumbnail-slide {
     margin-top: 5%;
     h3, p {
       padding:  0 10px;
