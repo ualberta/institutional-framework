@@ -1,0 +1,346 @@
+.our-campuses {
+  .content-top-row {
+    background-image: url('../img/whirl-bg.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    .box-shadow(inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
+    // border-bottom: 1px solid rgba(0, 50, 25, 0.35);
+    border-top: 1px solid rgba(0, 50, 25, 0.25);
+    background-color: rgba(255, 200, 10, 0.1);
+  }
+  .our-campuses .content-top-row > div {
+    position: relative;
+    overflow: hidden;
+    .secondary-link {
+      margin-left: 10px;
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+      padding-left: 10px;
+      position: relative;
+      top: 2px;
+    }
+    .fma-slide {
+      overflow: hidden;
+      position: absolute;
+      top: 600px;
+      .transition(all 0.3s ease-in-out);
+    }
+    .fma-slide.fma-active {
+      top: 0px;
+    }
+    .student-experience, .working-here {
+      text-align: center;
+      font-size:  1em;
+      margin-top: 1%;
+      h3 {
+        font-size:  2em;
+        margin: 0.8em 0em 0.25em 0em;
+      }
+      .frame {
+        display: inline-block;
+        .ie7-inline-block();
+        margin-right: 1%;
+      }
+      .student-video-container, 
+      .hr-video-container {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 43.125em) {
+
+  .our-campuses .content-top-row {
+    background-position: 0px 100px;
+    .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
+    
+  }
+  
+  .content-top-row.start {
+    background-position: -600px 250px;
+  }
+  
+  .our-campuses .fma-container {
+    width: 100%;
+    #em > .size(height,255,@baseFontSizepx);
+    .fma-slide {
+      width:  100%;
+    }
+    .student-video-container .frame,
+    .hr-video-container .frame {
+      width: 165px;
+    }
+    .ualberta-minute {
+      font-size: 0.85714285714286em;
+      #em > .size(height,300,12);
+      min-height: 300px;
+      .circle {
+        position: absolute;
+        width:  12em; 
+        height:8em; 
+        z-index: 10;
+        .border-radius(500px);
+        text-align: center;
+        font-family: @heavyFontFamily;
+        font-weight: @heavyFontWeight;
+        color: #fff;
+        padding-top: 4em;
+        font-size:  1em;
+        line-height: 1.4em;
+        #gradient > .directional(lighten(@linkColor,10%), @linkColor, -45deg);
+        .box-shadow(0px 1px 6px rgba(0,0,0,0.25));
+        .opacity(90);
+        text-transform: uppercase;
+        //.transition(all 1s ease);
+        span {
+         display: block;
+         line-height: 1em;
+        }
+      }
+      .circle.student-groups {
+        left: 44%;
+        margin-left: -6em;
+        top:  80px;
+        .transition(all 2s ease 1s);
+        .big { font-size:2.3em; }
+        .small { font-size:  1.3em; }
+      }
+      .circle.fellowships {
+        left: 18%;
+        margin-left: -6em;
+        padding-top: 3.25em;
+        height: 8.75em;
+        font-size: 1.7em;
+        top: 60px;
+        .transition(all 3s ease);
+        .big { font-size:1.5em; }
+        .small { font-size:  1.1em; }
+      }
+      .circle.funding {
+        left: 61.5%;
+        top: 20px;
+        margin-left: -6em;
+        padding-top: 2.75em;
+        height: 9.25em;
+        font-size: 0.8em;
+        .transition(all 1.5s ease 2s);
+        .big { font-size:2.3em; }
+        .small { font-size:  1.3em; }
+      }
+      .circle.alumni {
+        left: 82.5%;
+        top: 60px;
+        margin-left: -6em;
+        padding-top: 3.25em;
+        height:  8.75em;
+        font-size: 1.2em;
+        .transition(all 3s ease 1.5s);
+        .big { font-size:2.75em; }
+        .medium { font-size:  1.5em; }
+        .small { font-size:  0.95em; }
+      }
+      .circle.subtle {
+        left: 55%;
+        top: -11em;
+        width: 5em;
+        height: 3em;
+        margin-left: -3em;
+        font-size: 0.8em;
+        padding-top: 2em;
+        #gradient > .directional(rgba(255,255,255,1), rgba(255,255,255,0.5), 45deg);
+        color:@linkColor;
+        .transition(all 2.5s linear 0.5s);
+        .opacity(50);
+        z-index: 1;
+        i { font-size: 2.5em; }
+      }
+      
+      .circle.subtle.i2 {
+        left: 30%;
+        color: #007c41;
+        top: -60px;
+        .transition(all 2s linear 2s);
+      }
+      .icon-play-circle {
+        position: relative;
+        font-size: 15em;
+        color: white;
+        z-index: 101;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        top: 40px;
+        line-height: 1em;
+        left: auto;
+        .opacity(35);
+        display: block;
+      }
+      .ualberta-link {
+        display: block;
+        height: 300px;
+        position: relative;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        z-index: 102;
+        .opacity(100);
+        .transition(all 0.75s ease 4.25s);
+        text-align: center;
+        span {
+          display: inline-block;
+          position: relative;
+          top: 300px;
+          z-index: 102;
+          .opacity(0);
+          .transition(all 0.5s ease 0s);
+        }
+        &:hover {
+          text-decoration: none;
+          span {
+            top: 15px;
+            .opacity(100);
+          }
+        }
+      }
+      &:hover {
+        .hover-box {
+          height: 300px;
+        }
+        .icon-play-circle {
+          .opacity(100);
+          .transition(all 0.25s ease 0s);
+        }
+      }
+    }
+    .ualberta-minute.start {
+      .circle {
+        top: 310px;
+      }
+      .circle.subtle.i2 {
+        top: 310px;
+      }
+      .ualberta-link {
+        top: 310px;
+        .opacity(0);
+        span {
+          
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  .our-campuses .fma-container {
+    #em > .size(height,300,@baseFontSizepx);
+    .ualberta-minute {
+      font-size: 1em;
+    }
+    .student-video-container .frame,
+    .hr-video-container .frame {
+      width: 230px;
+    }
+  }
+  .our-campuses .content-top-row {
+    background-position: left bottom;
+    .transition(background 5s ease-out);
+  }
+}
+
+@media (max-width: 43.0625em) {
+
+  .our-campuses .content-top-row {
+    background-position: center 103px;
+  }
+
+  .our-campuses .fma-container .thumbnail-slide {
+    margin-top: 5%;
+    h3, p {
+      padding:  0 10px;
+    }
+    .thumbnail-container {
+     display: none;
+    }   
+  }
+  
+  .our-campuses .fma-container .working-here {
+    margin-top: 5%;
+    h3, p {
+      padding:  0 10px;
+    }
+    .hr-video-container {
+     display: none;
+    }   
+  }
+
+  .our-campuses .fma-container {
+    overflow: visible;
+    min-height: 200px;
+    .secondary-link {
+      border: none;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .our-campuses .fma-container .fma-slide {
+    position:  relative;
+  }
+  .fma-slide {
+    display: none;
+  }
+  .fma-slide.fma-active {
+    display: block;
+  }
+  .our-campuses .fma-container .ualberta-minute {
+    padding:  0px 0px 60px 0px;
+    p.circle { margin:  0.35em 10px 0.35em 10px; padding-bottom:  0.25em; border-bottom:  1px solid rgba(0,0,0,0.05); }
+    p.context {
+      margin-top: 1em;
+      font-weight: bold;
+      margin: 10px 10px 0px 10px;
+    }
+    .ualberta-link {
+      position: absolute;
+      bottom: 15px;
+      left:  10px;
+      span {
+        display: inline-block;
+      }
+      i {
+        display:none
+      }
+    }
+  }
+  .circle.subtle {
+    display: none;
+  }
+  
+  .our-campuses .fma-tabs-container .fma-tabs {
+    width: auto;
+  }
+}
+
+@media (min-width: 43.125em) {
+  p.context {
+    display: none;
+  }
+}
+
+@media (min-width: 43.125em) and (max-width: 61.1875em) {
+  .our-campuses .sidebar {
+    top: 445px;
+  }
+}
+
+@media (min-width: 23.125em) and (max-width: 61.1875em) {
+  .our-campuses .secondary-content-area .module-container {
+    .frame {
+      max-width: 50%;
+      margin-left: 1em;
+      margin-bottom: 1em;
+      float: right;
+    }
+    hr {
+      clear: right;
+    }
+  }
+}
