@@ -30,10 +30,12 @@
 	    font-size:16px;
 	    line-height:0em;
     }
+    .caption a{
+	   font-size:13px;
+    }
     .caption a:hover{
     	color:#007C41;
 	    text-decoration:underline;
-	    font-size:13px;
     }
     .unguided-btns a{
 	    margin:0px 5px 5px 0px;
@@ -64,14 +66,7 @@
 @media (min-width: 61.25em) {
   .our-campuses .content-top-row > div {
     #em > .size(height,220,@baseFontSizepx);
-    .ualberta-minute {
-      font-size: 1em;
-    }
-    .student-video-container .frame,
-    .hr-video-container .frame {
-      width: 230px;
-    }
-  }
+   }
   .our-campuses .content-top-row {
     background-position: left bottom;
     .transition(background 5s ease-out);
@@ -113,23 +108,15 @@
 	  display:none;
   }
 }
+@media (min-width: 25.313em) and (max-width: 43.063em) {
+	.our-campuses .primary-content-area .span6{
+		width:50%;
+		float:left;
+	}
+}
 
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
   .our-campuses .sidebar {
-    top: 445px;
-  }
-}
-
-@media (min-width: 23.125em) and (max-width: 61.1875em) {
-  .our-campuses .secondary-content-area .module-container {
-    .frame {
-      max-width: 50%;
-      margin-left: 1em;
-      margin-bottom: 1em;
-      float: right;
-    }
-    hr {
-      clear: right;
-    }
+    top: 345px;
   }
 }
