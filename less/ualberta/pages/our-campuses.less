@@ -8,13 +8,13 @@
     border-top: 1px solid rgba(0, 50, 25, 0.25);
     background-color: rgba(255, 200, 10, 0.1);
   }
-  .nc-frame{
+  .nc-frame .frame{
 	  width:529px;
   }
-  .csj-frame{
+  .csj-frame .frame{
 	  width:250px;
   }
-  .aug-frame{
+  .aug-frame .frame{
 	  width:250px;
   }
     .virtual-thumbs{
@@ -31,23 +31,19 @@
         margin-right: 1%;
       }
     }
-    .hover-caption-container .caption{
-	    pointer-events:inherit;
-	    padding:5px 0px;
-    }
-    .caption h4{
-	    font-size:16px;
+       .caption h4{
+	    font-size:1.5em;
 	    line-height:0em;
     }
-    .caption a{
-	   font-size:13px;
-    }
-    .caption a{
-	    color:#fff;
-    }
-    .caption a:hover{
-    	text-decoration:underline;
-    	color:#fff;
+    .virtual-thumbs{
+	    .hover-caption-container .caption{
+		     padding:5px 0px;
+		     bottom:0px;
+	    }
+	    .hover-caption-container:hover .caption{
+		 bottom:0px;   
+	    }
+
     }
     .unguided-btns a{
 	    margin:0px 5px 5px 0px;
