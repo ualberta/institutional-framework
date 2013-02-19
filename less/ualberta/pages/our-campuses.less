@@ -8,6 +8,15 @@
     border-top: 1px solid rgba(0, 50, 25, 0.25);
     background-color: rgba(255, 200, 10, 0.1);
   }
+  .nc-frame{
+	  width:529px;
+  }
+  .csj-frame{
+	  width:250px;
+  }
+  .aug-frame{
+	  width:250px;
+  }
     .virtual-thumbs{
       text-align: center;
       font-size:  1em;
@@ -17,7 +26,7 @@
         margin: 0.8em 0em 0.25em 0em;
       }
       .frame {
-        display: inline-block;
+        float:left;
         .ie7-inline-block();
         margin-right: 1%;
       }
@@ -68,11 +77,14 @@
 
 @media (min-width: 61.25em) {
   .our-campuses .content-top-row > div {
-    #em > .size(height,220,@baseFontSizepx);
+    #em > .size(height,320,@baseFontSizepx);
    }
   .our-campuses .content-top-row {
     background-position: left bottom;
     .transition(background 5s ease-out);
+  }
+  .our-campuses  .thumbnail-container{
+	  width:58.25em;
   }
 }
 
