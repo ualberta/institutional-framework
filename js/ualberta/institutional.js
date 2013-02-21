@@ -6,12 +6,6 @@ $(document).ready(function() {
 		$('.content-wrapper').css('min-height', bodyMinHeight+'px');
 		$('.content-container.container').css('min-height', $('.sidebar').height()+'px');
 		$('.heading-link').tooltip();
-		
-		var globalNav = $('#main-nav');
-		
-		globalNav.find('.navigation-toggle').click(function() {
-		  globalNav.find('.main-navigation').toggleClass('in');
-		});
   
     $('.start').removeClass('start');
     
