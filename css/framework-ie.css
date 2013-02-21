@@ -1,7 +1,7 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
 .ie10 .flex-direction-nav li a:hover{text-decoration:none;}
-.lt-ie10 .accordion-list li a.accordion-toggle{height:22px;}
+.lt-ie10 .accordion-list li a.accordion-toggle{height:14px;}
 .lt-ie10 .accordion-list li.expanded a.accordion-toggle{background:none;filter:none;}
 .lt-ie10 .accordion-list>li>a{background-color:none;}
 .lt-ie10 .link-mod-container>li.link-mod-active h4 a{background-color:#127c38;}
@@ -89,6 +89,8 @@
 .lt-ie9 .link-mod-container li.link-mod-filter{float:none;}
 .lt-ie9 .link-mod-container li.link-mod-active h4 a::after{font-style:normal;font-family:FontAwesome;float:right;content:"\f0da";text-decoration:inherit;}
 .lt-ie9 .link-mod-container .icon-filter{bottom:10px;bottom:0.6428571428571429em;}
+.lt-ie8 .ui-multiselect-checkboxes label input{float:left;}
+.lt-ie8 .ui-multiselect-checkboxes label input span{font-size:0.8em;line-height:1.2em;}
 .lt-ie8 .thumbnail-container a i{cursor:pointer;}
 .lt-ie8 .inline-search input[type='text']{padding-top:0.6em;}
 .lt-ie8 .daily-news .subscribe-form .btn{border:none;height:2.8em;}
