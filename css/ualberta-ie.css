@@ -77,7 +77,7 @@
 .lt-ie9 .fma-tabs-container{border:none;}
 .lt-ie9 .fma-tabs-container .container{width:940px;}.lt-ie9 .fma-tabs-container .container .fma-tabs{width:auto;}.lt-ie9 .fma-tabs-container .container .fma-tabs li{display:inline-block;*display:inline;*zoom:1;width:317px;*width:314px;margin-right:-5px;*margin-right:-1px;}
 .lt-ie9 .fma-tabs-container .container .fma-tabs li a{border-right:1px solid #ccc;}
-.lt-ie8 .our-campuses .thumbnail-container.nc-frame{width:620px;float:left;display:inline;}
+.lt-ie8 .our-campuses .thumbnail-container .nc-frame{width:620px;float:left;display:inline;}
 .lt-ie8 .our-campuses .thumbnail-container .nc-frame .frame{width:auto;float:left;}
 .lt-ie8 .our-campuses .thumbnail-container .csj-frame .frame{width:280px;float:right;}
 .lt-ie8 .our-campuses .thumbnail-container .aug-frame .frame{width:280px;margin-top:5px;float:right;}
