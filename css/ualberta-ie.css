@@ -1,5 +1,9 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
+.ie10 .csj-frame{float:right;}
+.ie10 .aug-frame{float:right;}
+.lt-ie10 .csj-frame{float:right;}
+.lt-ie10 .aug-frame{float:right;}
 .lt-ie10 .our-campus-cnt-left{width:500px;padding-right:0px;float:right;}
 .lt-ie10 .our-campus-cnt-right{width:200px;float:right;}
 .lt-ie10 .our-campus-cnt-right ul{margin-left:0px;}
