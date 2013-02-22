@@ -4,6 +4,9 @@
 .ie10 .aug-frame{float:right;}
 .lt-ie10 .csj-frame{float:right;}
 .lt-ie10 .aug-frame{float:right;}
+.lt-ie9 .our-campuses .content-top-row{background-position:0px 100px;-webkit-box-shadow:inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;-moz-box-shadow:inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;box-shadow:inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;}
+.lt-ie9 .content-top-row.start{background-position:-600px 250px;}
+.lt-ie9 .our-campuses .content-top-row>div{width:100%;padding-bottom:15px;}.lt-ie9 .our-campuses .content-top-row>div .fma-slide{width:100%;}
 .lt-ie9 .ut-header{display:none;}
 .lt-ie9 .our-campuses .thumbnail-container .nc-frame .frame{width:620px;float:left;}
 .lt-ie9 .our-campuses .thumbnail-container .csj-frame .frame{width:280px;float:right;}
