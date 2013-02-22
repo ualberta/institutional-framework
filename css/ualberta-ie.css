@@ -4,6 +4,11 @@
 .ie10 .aug-frame{float:right;}
 .lt-ie10 .csj-frame{float:right;}
 .lt-ie10 .aug-frame{float:right;}
+.lt-ie9 .ut-header{display:none;}
+.lt-ie9 .our-campuses .thumbnail-container .nc-frame .frame{width:620px;float:left;}
+.lt-ie9 .our-campuses .thumbnail-container .csj-frame .frame{width:280px;float:right;}
+.lt-ie9 .our-campuses .thumbnail-container .aug-frame .frame{width:280px;margin-top:5px;float:right;}
+.lt-ie9 .unguided-btns{display:none;}
 .lt-ie9 .thumbnail-container .hover-caption-container i{top:0%;line-height:1em;width:30%;}
 .lt-ie9 hr.secondary-hr{display:none;}
 .lt-ie9 .make-a-gift .btn-give.btn-micro{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);font-size:0.9em;padding-top:1em;padding-bottom:0.7em;}.lt-ie9 .make-a-gift .btn-give.btn-micro:hover{background-image:none;background-color:#f3f7f5;border-color:#ccc;}
