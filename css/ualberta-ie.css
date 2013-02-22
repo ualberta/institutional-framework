@@ -4,7 +4,7 @@
 .ie10 .aug-frame{float:right;}
 .lt-ie10 .csj-frame{float:right;}
 .lt-ie10 .aug-frame{float:right;}
-.lt-ie9 .our-campuses .content-top-row{width:950px;background-image:url("..//img/ieWhirl-8kb.jpg");}
+.lt-ie9 .our-campuses .content-top-row{width:940px;background-image:url("../img/ieWhirl-8kb.jpg");background-position-x:inherit;background-position-y:inherit;background-repeat:no-repeat;background-color:#adc4a7;}
 .lt-ie9 .our-campuses .content-top-row>div{width:100%;padding-bottom:15px;}.lt-ie9 .our-campuses .content-top-row>div .fma-slide{width:100%;}
 .lt-ie9 .ut-header{display:none;}
 .lt-ie9 .our-campuses .thumbnail-container .nc-frame .frame{width:620px;float:left;}
