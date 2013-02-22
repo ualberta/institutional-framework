@@ -1,6 +1,5 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
-@media (min-width:61.25em) and (max-width:74.9375em){.navigation-inner ul li a{padding-left:30px;padding-right:30px;}}h1{font-size:30px;}
 ul.module-tertiary-links{padding:0px;margin:0px;list-style:none;}ul.module-tertiary-links li{border-bottom:1px dotted #E0E0E0;padding:5px 0px;}ul.module-tertiary-links li:hover{background-color:#F6F8ED;background-color:rgba(255, 245, 184, 0.15);border:1px solid #E1D8A4;padding-left:9px;padding-right:9px;margin-left:-10px;margin-right:-10px;margin-top:-1px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
 .module-tertiary-links a:hover{text-decoration:none;}
 .module-tertiary-links h4 a{display:block;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:bold;}
