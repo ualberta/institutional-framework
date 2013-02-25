@@ -7,9 +7,9 @@
 .lt-ie9 .our-campuses .content-top-row{width:940px;background-image:url("../img/ieWhirl-8kb.jpg");background-position-x:inherit;background-position-y:inherit;background-repeat:no-repeat;background-color:#adc4a7;}
 .lt-ie9 .our-campuses .content-top-row>div{width:100%;padding-bottom:15px;}.lt-ie9 .our-campuses .content-top-row>div .fma-slide{width:100%;}
 .lt-ie9 .ut-header{display:none;}
-.lt-ie9 .our-campuses .thumbnail-container .nc-frame .frame{width:620px;float:left;}
-.lt-ie9 .our-campuses .thumbnail-container .csj-frame .frame{width:280px;float:right;}
-.lt-ie9 .our-campuses .thumbnail-container .aug-frame .frame{width:280px;margin-top:5px;float:right;}
+.lt-ie9 .our-campuses .thumbnail-container .nc-frame .frame{width:578px;float:left;margin-left:15px;}
+.lt-ie9 .our-campuses .thumbnail-container .csj-frame .frame{width:250px;float:right;margin-right:15px;}
+.lt-ie9 .our-campuses .thumbnail-container .aug-frame .frame{width:250px;margin-top:5px;float:right;margin-right:15px;}
 .lt-ie9 .unguided-btns{display:none;}
 .lt-ie9 .thumbnail-container .hover-caption-container i{top:0%;line-height:1em;width:30%;}
 .lt-ie9 hr.secondary-hr{display:none;}
@@ -78,10 +78,14 @@
 .lt-ie9 .fma-tabs-container .container{width:940px;}.lt-ie9 .fma-tabs-container .container .fma-tabs{width:auto;}.lt-ie9 .fma-tabs-container .container .fma-tabs li{display:inline-block;*display:inline;*zoom:1;width:317px;*width:314px;margin-right:-5px;*margin-right:-1px;}
 .lt-ie9 .fma-tabs-container .container .fma-tabs li a{border-right:1px solid #ccc;}
 .lt-ie8 .our-campuses .content-top-row{margin-left:260px;background-image:none;background-color:transparent;margin-left:260px;}
-.lt-ie8 .our-campuses .thumbnail-container .nc-frame{width:620px;float:left;display:inline;}
+.lt-ie8 .our-campuses .virtual-thumbs .frame a{line-height:1.5em;}
+.lt-ie8 .our-campuses .caption h4{line-height:auto;}
+.lt-ie8 .our-campuses .thumbnail-container .nc-frame{width:610px;float:left;display:inline;margin-left:15px;}
 .lt-ie8 .our-campuses .thumbnail-container .nc-frame .frame{width:auto;float:left;}
 .lt-ie8 .our-campuses .thumbnail-container .csj-frame .frame{width:280px;float:right;}
 .lt-ie8 .our-campuses .thumbnail-container .aug-frame .frame{width:280px;margin-top:5px;float:right;}
+.lt-ie8 .our-campuses ul.calgary-list li{margin-left:0px;padding-left:0px;}
+.lt-ie8 .our-campuses ul.enterprise-list li{margin-left:0px;padding-left:0px;}
 .lt-ie8 .ualberta-home .fma-container{margin-bottom:1.57em;}.lt-ie8 .ualberta-home .fma-container h3{line-height:1em;}
 .lt-ie8 .ualberta-home .why-ualberta-row .span{padding-right:0;}
 .lt-ie8 .ualberta-home .why-ualberta-row p.description{width:48%;}
