@@ -4,6 +4,7 @@
 .ie10 .aug-frame{float:right;}
 .lt-ie10 .csj-frame{float:right;}
 .lt-ie10 .aug-frame{float:right;}
+.lt-ie9 .virtual-tour .tour{margin-top:0px;}
 .lt-ie9 .our-campuses .content-top-row{background-image:none;}
 .lt-ie9 .our-campuses .content-top-row .virtual-thumbs{background-image:url("../img/ieWhirl-8kb.jpg");background-position-x:inherit;background-position-y:inherit;background-repeat:no-repeat;background-color:#adc4a7;}
 .lt-ie9 .our-campuses .content-top-row>div{width:100%;padding-bottom:15px;}.lt-ie9 .our-campuses .content-top-row>div .fma-slide{width:100%;}
@@ -78,6 +79,7 @@
 .lt-ie9 .fma-tabs-container{border:none;}
 .lt-ie9 .fma-tabs-container .container{width:940px;}.lt-ie9 .fma-tabs-container .container .fma-tabs{width:auto;}.lt-ie9 .fma-tabs-container .container .fma-tabs li{display:inline-block;*display:inline;*zoom:1;width:317px;*width:314px;margin-right:-5px;*margin-right:-1px;}
 .lt-ie9 .fma-tabs-container .container .fma-tabs li a{border-right:1px solid #ccc;}
+.lt-ie8 .virtual-btn{line-height:2em;}
 .lt-ie8 .our-campuses .virtual-thumbs .frame a{line-height:1.5em;}
 .lt-ie8 .our-campuses .caption h4{line-height:1em;}
 .lt-ie8 .our-campuses .thumbnail-container .nc-frame{width:610px;float:left;display:inline;margin-left:0px;}
