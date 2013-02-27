@@ -30,6 +30,7 @@ nav.audience-navigation ul li a:hover{text-decoration:underline;}
 .why-ualberta-row{position:relative;}.why-ualberta-row .button-container{float:none;text-align:center;margin-top:2em;font-size:0.85em;}.why-ualberta-row .button-container a.btn{margin:5px;}
 .why-ualberta-row .hover-caption-container .caption{font-size:0.875em;bottom:0px;}
 .why-ualberta-row .hover-caption-container .caption i{font-size:1.3em;top:7px;opacity:100;margin-left:0.35em;}
+.why-ualberta-row .hover-caption-container .caption a{color:#fff;}
 .ualberta-home .content-top-row{margin-top:1.57em;padding:1em 0em;}
 .explore-bar{margin-bottom:1.57em;}
 .social-media-links img{width:16px;height:16px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;vertical-align:middle;margin-right:4px;margin-bottom:1px;}
