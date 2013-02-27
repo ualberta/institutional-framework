@@ -4,6 +4,8 @@
 .ie10 .aug-frame{float:right;}
 .lt-ie10 .csj-frame{float:right;}
 .lt-ie10 .aug-frame{float:right;}
+.lt-ie9 .ualberta-home .why-ualberta-row .hover-caption-container .caption{overflow:hidden;}
+.lt-ie9 .ualberta-home .why-ualberta-row .hover-caption-container .caption i{margin-left:0.7em;top:0px;}
 .lt-ie9 .virtual-tour .tour{margin-top:0px;}
 .lt-ie9 .our-campuses .content-top-row{background-image:none;}
 .lt-ie9 .our-campuses .content-top-row .virtual-thumbs{background-image:url("../img/ieWhirl-8kb.jpg");background-position-x:inherit;background-position-y:inherit;background-repeat:no-repeat;background-color:#adc4a7;}
