@@ -720,7 +720,7 @@ ul.footer-quick-links +p{margin-top:1em;}
 .youtube-footer span{top:-3px;}
 .module-container .module-heading{position:relative;}.module-container .module-heading h3{float:left;margin-right:10px;}
 .module-container .module-heading .module-actions{list-style:none;margin:0;padding:0;}.module-container .module-heading .module-actions li{display:inline-block;*display:inline;*zoom:1;padding:0 6px;border-left:1px dotted #e0e0e0;margin:-4px -4px 0 0px;}.module-container .module-heading .module-actions li a{padding:7px 5px 3px 5px;}
-@media (min-width:61.25em) and (max-width:74.9375em){.module-container .module-heading .module-actions{position:absolute;right:-9px;top:0px;}}.sidebar .twitter-module .twitter-feed{font-size:1em;}
+@media (min-width:61.25em) and (max-width:74.9375em){.module-container .module-heading .module-actions{position:absolute;right:-9px;top:0px;}}.sidebar .twitter-module .twitter-feed{font-size:1em;word-wrap:break-word;}
 .sidebar .twitter-module .twitter-feed ul{margin:0 0 10px 0;}
 .sidebar .twitter-module .twitter-feed .tweet_action{font-size:1em;color:#637169;display:inline-block;*display:inline;*zoom:1;margin-right:3px;font-size:11px;}.sidebar .twitter-module .twitter-feed .tweet_action i{font-size:12px;}
 .sidebar .twitter-module .twitter-feed .tweet_time a{font-size:11px;color:#637169;}
