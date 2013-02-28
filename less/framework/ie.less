@@ -746,14 +746,16 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   }
   
   .module-container .module-heading .module-actions {
-    position: absolute;
+    position: static;
     right: -9px;
     top: 0px;
   }
 }
 
 .ie7 {
-
+ul.nav-tabs li.active{
+	background-color:#fff;
+}
   * { zoom: 1; }
   
   .icon-rss {
