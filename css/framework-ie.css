@@ -89,6 +89,9 @@
 .lt-ie9 .link-mod-container li.link-mod-filter{float:none;}
 .lt-ie9 .link-mod-container li.link-mod-active h4 a::after{font-style:normal;font-family:FontAwesome;float:right;content:"\f0da";text-decoration:inherit;}
 .lt-ie9 .link-mod-container .icon-filter{bottom:10px;bottom:0.6428571428571429em;}
+.lt-ie9 .fma-container.flexslider .flex-control-nav li{*display:inline;*zoom:1;}
+.lt-ie9 .fma-container.flexslider .flex-control-nav a{width:14px;height:14px;background:transparent url(../img/flexslider-control-nav.gif) no-repeat -28px 0px;}.lt-ie9 .fma-container.flexslider .flex-control-nav a:hover{background-position:0px 0px;}
+.lt-ie9 .fma-container.flexslider .flex-control-nav a.flex-active{background-position:-14px 0px;}
 .lt-ie8 .ui-multiselect-checkboxes label input{float:left;}
 .lt-ie8 .ui-multiselect-checkboxes label input span{font-size:0.8em;line-height:1.2em;}
 .lt-ie8 .thumbnail-container a i{cursor:pointer;}

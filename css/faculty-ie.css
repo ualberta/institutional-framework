@@ -60,8 +60,8 @@
 .lt-ie8 .sub-menu{text-align:left;}
 .lt-ie8 .navigation-inner .sub-menu ul{float:left;}
 .lt-ie8 .navigation-inner .sub-menu .section-description{float:right;}
-.lt-ie8 .flexslider .flex-direction-nav LI A.flex-prev{background-image:url('../img/prev-arrow.png');width:31px;height:46px;}
-.lt-ie8 .flexslider .flex-direction-nav LI A.flex-next{background-image:url('../img/next-arrow.png');width:31px;height:46px;}
+.lt-ie8 .flexslider .flex-direction-nav li a.flex-prev{background-image:url('../img/prev-arrow.png');width:31px;height:46px;}
+.lt-ie8 .flexslider .flex-direction-nav li a.flex-next{background-image:url('../img/next-arrow.png');width:31px;height:46px;}
 .lt-ie8 ul.faculty-links{margin-left:0px;}
 .lt-ie8 .image-caption-container .caption{position:absolute;filter:progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0);width:98%;}
 .lt-ie8 .flexslider .flex-control-nav{bottom:15px;}

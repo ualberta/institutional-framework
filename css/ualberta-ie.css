@@ -55,9 +55,9 @@
 .lt-ie9 .ualberta-home .row-fluid .secondary-content-area{width:279px;margin-left:20px;}.lt-ie9 .ualberta-home .row-fluid .secondary-content-area >hr.soften:first-child{display:none;}
 .lt-ie9 .ualberta-home .row-fluid .sidebar{width:170px;}
 .lt-ie9 .ualberta-home .fma-container .image-shadow{float:none;}
-.lt-ie9 .ualberta-home .fma-container ul.slides .responsive-feature .fma-content{position:absolute;top:85px;left:0;bottom:auto;vertical-align:middle;width:50%;text-align:center;background:none;}.lt-ie9 .ualberta-home .fma-container ul.slides .responsive-feature .fma-content h3{color:#007c41;font-size:32px;margin:10px;text-shadow:none;}
-.lt-ie9 .ualberta-home .fma-container ul.slides .responsive-feature .fma-content p.feature-copy{font-size:22px;width:100%;margin:0 auto 10px;line-height:1.5em;color:#637169;text-shadow:none;}
-.lt-ie9 .ualberta-home .ualberta-home .fma-container ul.slides .responsive-feature.state-of-the-u .fma-content{left:340px;}
+.lt-ie9 .ualberta-home .fma-container ul.slides li .fma-content{position:absolute;top:85px;left:0;bottom:auto;vertical-align:middle;width:50%;text-align:center;background:none;}.lt-ie9 .ualberta-home .fma-container ul.slides li .fma-content h3{color:#007c41;font-size:32px;margin:10px;text-shadow:none;}
+.lt-ie9 .ualberta-home .fma-container ul.slides li .fma-content p.feature-copy{font-size:22px;width:100%;margin:0 auto 10px;line-height:1.5em;color:#637169;text-shadow:none;}
+.lt-ie9 .ualberta-home .fma-container.flexslider{*margin-bottom:0;}.lt-ie9 .ualberta-home .fma-container.flexslider .flex-control-nav{*bottom:15px;}
 .lt-ie9 .ualberta-home .why-ualberta-row .button-container{font-size:1em;width:20%;position:absolute;float:right;}.lt-ie9 .ualberta-home .why-ualberta-row .button-container a.btn{display:block;margin:3px 0px 5px 0px;font-size:1em;padding-top:12px;padding-bottom:8px;line-height:1em;}
 .lt-ie9 .ualberta-home .why-ualberta-row .frame{display:inline-block;float:left;width:24%;margin-right:2%;margin-bottom:1em;}
 .lt-ie9 .ualberta-home .why-ualberta-row p.description{position:relative;margin-left:24%;font-size:1em;line-height:1.57em;}
@@ -82,6 +82,7 @@
 .lt-ie9 .fma-tabs-container{border:none;}
 .lt-ie9 .fma-tabs-container .container{width:940px;}.lt-ie9 .fma-tabs-container .container .fma-tabs{width:auto;}.lt-ie9 .fma-tabs-container .container .fma-tabs li{display:inline-block;*display:inline;*zoom:1;width:317px;*width:314px;margin-right:-5px;*margin-right:-1px;}
 .lt-ie9 .fma-tabs-container .container .fma-tabs li a{border-right:1px solid #ccc;}
+.lt-ie9 .ualberta-home .fma-container ul.slides li.sirish .fma-content{left:370px;top:140px;width:43%;}
 .lt-ie8 .virtual-btn{line-height:2em;}
 .lt-ie8 .our-campuses .virtual-thumbs .frame a{line-height:1.5em;}
 .lt-ie8 .our-campuses .caption h4{line-height:1em;}
@@ -98,4 +99,3 @@
 .lt-ie8 .ualberta-home .daily-news .subscribe-form .btn,.lt-ie8 .ualberta-home .find-a-person .person-search .btn{margin-top:2px;outline:none;}
 .lt-ie8 .ualberta-home .daily-news .subscribe-form input{padding-top:0.57em;padding-bottom:0em;padding-right:0;}
 .lt-ie8 .ualberta-home .daily-news .subscribe-form input.email-input{padding-top:0.57em;padding-bottom:0em;padding-right:0;}
-.ualberta-home .fma-container ul.slides .responsive-feature.state-of-the-u .fma-content{left:340px;}
