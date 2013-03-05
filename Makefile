@@ -146,6 +146,24 @@ homepage:
 	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
 	@cp -r ./img/homepage/ ../homepage/img/
 	@cp ./html/homepage/index.html ../homepage/index-preview.html
+	
+homepage-preview:
+	@mkdir -p ./css
+	@mkdir -p ../homepage-preview
+	@mkdir -p ../homepage-preview/css
+	@mkdir -p ../homepage-preview/js
+	@mkdir -p ../homepage-preview/img
+	@mkdir -p ../homepage-preview/ico
+	@mkdir -p ../homepage-preview/font
+	@lessc -x ./less/framework.less > ../homepage-preview/css/framework.css
+	@lessc -x ./less/framework-ie.less > ../homepage-preview/css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ./less/ualberta.less > ../homepage-preview/css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ../homepage-preview/css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@cp -r ./img/homepage/ ../homepage-preview/img/
+	@sed 's/publicas\/uofa\/css\//publicas\/uofa\/preview\/css\//g' ./html/homepage/index.html > ../homepage-preview/index.html
+	
 
 #
 # WATCH LESS FILES

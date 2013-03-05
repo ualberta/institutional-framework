@@ -36,12 +36,13 @@
 /** BELOW IE9 **/
 
 .lt-ie9 {
+
   input[type='text'] {
     padding-top: 0.58em;
     padding-bottom: 0em;
   }
 
- //Video Icon//
+  //Video Icon//
   .hover-caption-container  i{
     position:absolute; 
     font-size: 6em; 
@@ -56,10 +57,12 @@
     width:27%;
     line-height:1em;
   }
-    .hover-caption-container i:hover{
-	    cursor:pointer;
-    }
- .why-ualberta .fma-container .hover-caption-container  i{
+  
+  .hover-caption-container i:hover{
+		cursor:pointer;
+  }
+  
+  .why-ualberta .fma-container .hover-caption-container i {
     width:30%;
   }
   
@@ -71,22 +74,25 @@
     } 
   }
 
-.blade-inner {
-  nav, input, button.global-search-btn {
-    font-size: 0.85714285714286em;
-  }
-}
+	.blade-inner {
+	  nav, input, button.global-search-btn {
+	    font-size: 0.85714285714286em;
+	  }
+	}
   
-.sidebar-content{
-	height:100%!important;
-}
-// Homepage
-.ualberta-home .row-fluid .primary-content-area{
-   width:57%;
- }
- .ualberta-home .row-fluid .secondary-content-area{
-   width:40%;
- }
+	.sidebar-content{
+		height:100%!important;
+	}
+	
+	// Homepage
+	.ualberta-home .row-fluid .primary-content-area{
+	  width:57%;
+	}
+	
+ 	.ualberta-home .row-fluid .secondary-content-area{
+  	width:40%;
+ 	}
+ 	
   // < :first-child and :last-child selectors not supported
   .row-fluid .primary-content-area,
   .row-fluid .footer-faculty-links,
@@ -112,33 +118,35 @@
       padding: 6px 10px;
     }
   }
-    .sidebar h6{
-	    margin:0.625em 0em 0em 0em;
-    } 
+  
+  .sidebar h6{
+    margin:0.625em 0em 0em 0em;
+  } 
     
   // No media queries, set container widths
   .row-fluid {
-      .feature-area {
-        width: @desktop_FeatureFluid;
-      }
-      .audience-area {
-        width: @desktop_AudienceFluid;
-      }
-      .primary-content-area {
-        width: @desktop_PriColFluid;
-      }
-      .secondary-content-area {
-        width: @desktop_SecColFluid;
-      }
-      .sidebar {
-        width: @desktop_SidebarFluid;
-      }
+    .feature-area {
+      width: @desktop_FeatureFluid;
+    }
+    .audience-area {
+      width: @desktop_AudienceFluid;
+    }
+    .primary-content-area {
+      width: @desktop_PriColFluid;
+    }
+    .secondary-content-area {
+      width: @desktop_SecColFluid;
+    }
+    .sidebar {
+      width: @desktop_SidebarFluid;
+    }
   }
   
   //Remove dotted lines on forms
-input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus, button{ 
-	outline : none;
-}
+	input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus, button{ 
+		outline : none;
+	}
+	
   // Set a semi-transparent background for captions
   .hover-caption-container .caption {
     overflow: auto;
@@ -581,6 +589,24 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus
   		bottom:10px;
   		#em > .position(bottom,9,@baseFontSizepx);
   }
+  
+  // HOMEPAGE CAROUSEL - ie7/8
+  .fma-container.flexslider {
+  	.flex-control-nav li {
+  		.ie7-inline-block();
+  	}
+  	.flex-control-nav a {
+  		width: 14px;
+  		height: 14px;
+  		background: transparent url(../img/flexslider-control-nav.gif) no-repeat -28px 0px;
+  		&:hover {
+  			background-position: 0px 0px;
+  		}
+  		&.flex-active {
+  			background-position: -14px 0px;
+  		}
+  	}
+  } 
   
 }
 

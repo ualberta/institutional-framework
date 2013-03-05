@@ -27,12 +27,7 @@
 @dTop_innerGutterFluid:   percentage(@dTop_Gutter/@dTop_Content);
 
 .ualberta-home {
-	.fma-container ul.slides .responsive-feature.state-of-the-u{
-	   .fma-content{
-		   left:340px;
-		  }
-		 }
-	.fma-container ul.slides .responsive-feature.sirish{
+	.fma-container ul.slides li.sirish{
 		.fma-content{
 			margin-top:-38px;
 			left:480px;
@@ -42,6 +37,10 @@
 			}
 		}
 	}
+	.fma-container.flexslider ul.slides img {
+		width: auto;
+	}
+	
   .fma-container {
     margin-top: 0em;
     .image-shadow {
@@ -64,7 +63,7 @@
         position: relative;
         min-height: 281px;
       }
-      .responsive-feature {
+      li {
         overflow: hidden;
         .fma-content {
           position: absolute;
@@ -94,7 +93,13 @@
       }
       .state-of-the-u .btn + .btn{
 	      margin:5px 0px 0px 5px;
-	  }
+	  	}
+    }
+    &.flexslider {
+    	text-align: center;
+    	margin: 1.57em auto 2.57em;
+    	background: none;
+    	.box-shadow(0px 2px 2px #fff);
     }
   }
   div.content-inner hr.explore-separator {
@@ -194,6 +199,17 @@
   }
 }
 
+@media (max-width: 43.124em) {
+	// Feature Preset Classes
+	.fma-container.flexslider {
+		.image-left .image-shadow {
+			float: left;
+		}
+		.image-right .image-shadow {
+			float: right;
+		}
+	}
+}
 
 @media (min-width: 43.125em) {
 
@@ -208,11 +224,20 @@
     }
   }
   
+  .fma-container.flexslider {
+  	.image-left .image-shadow {
+  		float: none;
+  	}
+  	.image-right .image-shadow {
+  		float: none;
+  	}
+  }
+  
   .ualberta-home .fma-container {
     .image-shadow {
       float: none;
     }
-    ul.slides .responsive-feature {
+    ul.slides li {
       .fma-content {
         position: absolute;
         top: 50%;
@@ -238,6 +263,33 @@
           text-shadow: none;
         }
       }
+    }
+    ul.slides .caption-left {
+    	.fma-content {
+    		position: absolute;
+    		top: 50%;
+    		left: 0;
+    		bottom: auto;
+    		margin-top: -57px;
+    		vertical-align: middle;
+    		width: 50%;
+    		text-align: center;
+    		background: none;
+    	}
+    }
+    ul.slides .caption-right {
+    	.fma-content {
+    		position: absolute;
+    		top: 50%;
+    		right: 0;
+    		left: auto;
+    		bottom: auto;
+    		margin-top: -57px;
+    		vertical-align: middle;
+    		width: 50%;
+    		text-align: center;
+    		background: none;
+    	}
     }
   }
   
@@ -437,7 +489,7 @@
       ul.slides .image-shadow::before {
         .border-radius(0px);
       }
-      ul.slides .responsive-feature {
+      ul.slides li {
         .fma-content {
           position: absolute;
           left: 0;
@@ -476,45 +528,34 @@
       position: absolute;
     }
   }
-   .ualberta-home .fma-container ul.slides .responsive-feature.state-of-the-u .fma-content{
-	    left:60px;
-	    width:100%;
-    }
-  .ualberta-home .fma-container ul.slides .responsive-feature.sirish .fma-content{
+
+  .ualberta-home .fma-container ul.slides li.sirish .fma-content {
 	    left:370px;
 	    width:40%;
-    }
+  }
 }
+
 @media (min-width: 43.125em) and (max-width: 54.563em) {
-	 .ualberta-home .fma-container ul.slides .responsive-feature.sirish .fma-content{
+	 .ualberta-home .fma-container ul.slides li.sirish .fma-content{
 	    left:300px;
 	    width:55%;
     }
 }
+
 @media (min-width: 54.625em) and (max-width: 61.1875em) {
-	 .ualberta-home .fma-container ul.slides .responsive-feature.sirish .fma-content{
+	 .ualberta-home .fma-container ul.slides li.sirish .fma-content{
 	    left:380px;
 	    width:45%;
     }
 }
-@media (max-width: 530px) {
 
-}
-
-/*State of the university*/
 @media (max-width: 43.063em) {
-	.ualberta-home .fma-container ul.slides .responsive-feature.state-of-the-u{
-	   .fma-content{
-		   left:0px;
-		   }
-	 }
-	 .ualberta-home .fma-container ul.slides .responsive-feature.sirish{
-	   .fma-content{
-		   width:100%;	
-		   left:0px;	   
-		   margin-top:0px;
-	  }
-}
-
+	.ualberta-home .fma-container ul.slides li.sirish {
+		.fma-content {
+			width:100%;	
+			left:0px;	   
+			margin-top:0px;
+		}
+	}
 }
 

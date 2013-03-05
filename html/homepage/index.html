@@ -196,9 +196,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   </header> <!-- End Header -->
   
   <div class="content-wrapper ualberta-home">
-    <div id="fma-carousel" class="fma-container container">
+    <div id="fma-carousel" class="fma-container container flexslider">
       <ul class="slides">
-        <li class="responsive-feature ga_ualberta_fma sirish">
+        <li class="ga_ualberta_fma image-left caption-right sirish">
           <span class="image-shadow">
             <img class="fma-background" src="/~publicas/uofa/img/features/feature-sirish-shah.jpg" />
           </span>
@@ -210,7 +210,19 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
             </div>
           </div>
         </li>
-          </ul>
+        <li class="ga_ualberta_fma image-right caption-left">
+          <span class="image-shadow">
+            <img class="fma-background" src="/~publicas/uofa/img/features/pride-week-feature.jpg" />
+          </span>
+          <div class="fma-content">
+            <h3>Second Slide</h3>
+            <!--<p class="feature-copy">Watch and Read Sirish Shah's Story</p>-->
+            <div class="fma-buttons">
+              <a href="http://whatsnext.ualberta.ca/oil-sands-technology-is-saving-millions-of-lives.aspx" class="btn btn-green btn-micro">Watch and Read Sirish Shah's Story</a>
+            </div>
+          </div>
+        </li>
+       </ul>
     </div>
   <div class="content-top-row">
     <div class="content-container container"> 
@@ -584,11 +596,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         touch: true
       });
       
+      $("#fma-carousel").flexslider();
+      
            
       $(".twitter-feed").tweet({
         count: 3,
         username: "UAlberta",
-        loading_text: "loading tweets...",
+        loading_text: "loading",
         template: "{text} {time}<br/>{reply_action} {retweet_action} {favorite_action}"
       });
       
