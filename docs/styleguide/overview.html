@@ -59,8 +59,18 @@
     top: 0.5em;
   }
   
-  .properties {
-  	font-size: 13px;
+  .highlight {
+  	position: relative;
+  }
+  
+  .highlight:after {
+  	content: " ";
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+  	border: 2px solid rgba(255,0,0,0.75)!important;
   }
   
   span.identifier + span.site-title {
@@ -69,12 +79,23 @@
   	top: 0.25em;
   }
   
-  .preview-box {
-  	 border: 2px solid #333; padding: 0px 10px;
+  hr.soften {
+  	 margin: 1.57em 0;
   }
   
-  .preview-box.image-box {
+  .preview-box {
+  	 border: 2px solid #333; padding: 0px 10px;
+  	 overflow: auto;
+  	 margin-top: 0.78em;
+  }
+  
+  .preview-box.image-box,
+  .preview-box.content-box {
   	 padding: 0;
+  }
+  
+  .elements img {
+  	border: 2px solid #333;
   }
   
   </style>
@@ -168,44 +189,54 @@
 		</div>
 		
 	  <div class="content-container container">   
+	  <h3>Colors</h3>
+		  <div class="row-fluid">
+		  	
+		  	<ul class="data-list span6" style="margin-left:0">
+		  		<li><strong>Primary Green (Link Color):</strong> #007c41  <a style="width:18px; height:18px; display:block; float: right; background-color:#007c41"></a></li>
+		  		<li><strong>Primary Gold:</strong> #ffdb095 <a style="width:18px; height:18px; display:block; float: right; background-color:#ffdb05"></a></li>
+		  		<li><strong>Text Color:</strong> #44524A  <a style="width:18px; height:18px; display:block; float: right; background-color:#44524A"></a></li>
+		  		<li><strong>Link Hover Color:</strong> #003019  <a style="width:18px; height:18px; display:block; float: right; background-color:#003019"></a></li>
+		  		<li><strong>Light Text:</strong> #6A7870 <a style="width:18px; height:18px; display:block; float: right; background-color:#6A7870"></a></li>
+		  		<li><strong>Data List Hover Background:</strong> rgba(255, 245, 184, 0.15)  <a style="width:18px; height:18px; display:block; float: right; background-color:rgba(255,245,184,0.15)"></a></li>
+		  		<li><strong>Data List / Sidebar Link Hover Border Color:</strong> #E1D8A4 <a style="width:18px; height:18px; display:block; float: right; background-color:#E1D8A4"></a></li>
+		  		<li><strong>Sidebar Link Hover Background Color:</strong> #FFF5B8 <a style="width:18px; height:18px; display:block; float: right; background-color:#FFF5B8"></a></li>
+		  		
+		  	</ul>
+		  </div>
+		  
+		  <hr class="soften">
 	   
 	  	<div class="row-fluid">
 	  		<h3>Typography</h3>
 	  	</div>
+
 	  	
-	  	
-	  	<!-- Headings --> 
-	  	<div class="row-fluid">
-	  		<h4>Headings</h4>
-	  	</div>
+	  	<!-- Standard Headings --> 
 	  	<div class="row-fluid">
 	  		<div class="style-description span8">
+	  			<h4>Default Headings</h4>
+	  			<p>Headings are used in the page content to facilitate scanning and identifying content that follows the heading.  Note that using h1 and h2 in the page content is discouraged unless they are wrapped in a section or article tag.  h1 and h2 are reserved for Site and Page title, so in page content you should start with h3.</p>
 	  			<ul class="unstyled row-fluid">
-	  				<li class="span4">
+	  				<li data-selector="#headings h1" class="style-item span4">
 	  					<h5>Heading One <code>&lt;h1&gt;</code></h5>
-	  					<ul id="typ-h1" class="properties data-list"></ul>
 	  				</li>
-	  				<li class="span4">
+	  				<li data-selector="#headings h2" class="style-item span4">
 	  					<h5>Heading Two <code>&lt;h2&gt;</code></h5>
-	  					<ul id="typ-h2" class="properties data-list"></ul>
 	  				</li>
-	  				<li class="span4">
+	  				<li data-selector="#headings h3" class="style-item span4">
 	  					<h5>Heading Three <code>&lt;h3&gt;</code></h5>
-	  					<ul id="typ-h3" class="properties data-list"></ul>
 	  				</li>
 	  			</ul>
 	  			<ul class="unstyled row-fluid">
-	  				<li class="span4">
+	  				<li data-selector="#headings h4" class="style-item span4">
 	  					<h5>Heading Four <code>&lt;h4&gt;</code></h5>
-	  					<ul id="typ-h4" class="properties data-list"></ul>
 	  				</li>
-	  				<li class="span4">
+	  				<li data-selector="#headings h5" class="style-item span4">
 	  					<h5>Heading Five <code>&lt;h5&gt;</code></h5>
-	  					<ul id="typ-h5" class="properties data-list"></ul>
 	  				</li>
-	  				<li class="span4">
+	  				<li data-selector="#headings h6" class="style-item span4">
 	  					<h5>Heading Six <code>&lt;h6&gt;</code></h5>
-	  					<ul id="typ-h6" class="properties data-list"></ul>
 	  				</li>
 	  			</ul>
 	  			
@@ -219,61 +250,139 @@
 	  			<h6>Heading Six</h6>
 	  		</div>
 	  	</div>
-	  	<!-- End Headings -->
+	  	<!-- End Standard Headings -->
 	  	
-			<!-- Headings --> 
+	  	<hr class="soften">
+	  	
+	  	<!-- Start Site Title -->
+	  	<div class="row-fluid">
+	  		<h4>Site Headings</h4>
+	  		<p>The site heading will consist of at minimum a site title.  In addition to the site title, an identifier may be used to indicate this site belongs to a larger area.
+	  	</div>
+	  	<div class="row-fluid">
+	  		<div class="style-description span6">
+	  			<ul class="unstyled row-fluid">
+	  				<li data-selector="#site-titles .identifier" class="style-item span6">
+	  					<h5>Identifier</h5>
+	  				</li>
+	  				<li data-selector="#site-titles .site-title" class="style-item span6">
+	  					<h5>Site Title</h5>
+	  				</li>
+	  			</ul>
+	  		</div>
+	  		<div id="site-titles" class="preview-box content-box span6">
+	  			<header> <!-- Start Header -->
+	  			  <div class="banner-container"> <!-- Start Banner -->
+	  			    <div class="banner-inner">
+	  			      <h1>
+	  			        <span class="identifier">Faculty of Science</span>
+	  			        <span class="site-title">Department of Computer Science</span>
+	  			      </h1>
+	  			      <nav class="audience-navigation">
+	  			        <ul>
+	  			          <li role="menuitem"><a>Prospective Students</a></li>
+	  			          <li role="menuitem"><a>Current Students</a></li>
+	  			          <li role="menuitem"><a>Faculty &amp; Staff</a></li>
+	  			          <li role="menuitem"><a>Alumni &amp; Friends</a></li>
+	  			        </ul>
+	  			      </nav>
+	  			    </div>
+	  			    <div class="shadow-container"></div>
+	  			    <div class="oval-container">
+	  			      <div class="oval oval1"></div>
+	  			      <div class="oval oval2"></div>
+	  			      <div class="oval oval3"></div>
+	  			      <div class="oval oval4"></div>
+	  			    </div>
+	  			  </div>
+	  			</header>
+	  		</div>
+	  	</div>
+	  	<!-- End Site Title -->
+	
+	  	<hr class="soften">
+	  	
+			<!-- Sidebar Titles --> 
 			<div class="row-fluid">
-				<h4>Paragraphs</h4>
+				<h4>Sidebar Title</h4>
+				Any sidebar module (with the exclusion of buttons) will require a heading.  The sidebar heading has the standard gradient bar in its background, and will usually contain an icon on the right.
 			</div>
 			<div class="row-fluid">
 				<div class="style-description span8">
 					<ul class="unstyled row-fluid">
-						<li class="span4">
-							<h5>Heading One</h5>
-							<ul id="typ-h1" class="properties data-list"></ul>
-						</li>
-						<li class="span4">
-							<h5>Heading Two</h5>
-							<ul id="typ-h2" class="properties data-list"></ul>
-						</li>
-						<li class="span4">
-							<h5>Heading Three</h5>
-							<ul id="typ-h3" class="properties data-list"></ul>
+						<li data-selector="#sidebar-headings .sidebar-title" class="style-item span8">
+							<h5>Sidebar Title</h5>
 						</li>
 					</ul>
-					<ul class="unstyled row-fluid">
-						<li class="span4">
-							<h5>Heading Four</h5>
-							<ul id="typ-h4" class="properties data-list"></ul>
-						</li>
-						<li class="span4">
-							<h5>Heading Five</h5>
-							<ul id="typ-h5" class="properties data-list"></ul>
-						</li>
-						<li class="span4">
-							<h5>Heading Six</h5>
-							<ul id="typ-h6" class="properties data-list"></ul>
-						</li>
-					</ul>
-					
 				</div>
-				<div id="paragraphs" class="preview-box span4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur massa quis pretium. Nulla facilisi. Phasellus tempus tincidunt dui eget molestie. Maecenas posuere tortor a eros interdum vel lacinia nisl ultrices. Quisque ullamcorper arcu eu odio vulputate ut condimentum tellus euismod. In et commodo purus. Fusce gravida venenatis lacinia.</p>
+				<div id="sidebar-headings" class="preview-box span4" style="padding:10px">
+					<div class="extrude">
+						<h5 class="sidebar-title" style="font-size:14px">Sidebar Title</h5>
+					</div>
 				</div>
 			</div>
 			<!-- End Headings -->
-	  	
-	  	<div class="row-fluid">
-	  		<h4>Site Title</h4>
-	  	</div>
-	  	<div class="row-fluid">
-	  		<div class="style-description span6">
-	  			
-	  		</div>
-	  		<div class="preview-box span6">
-					preview content
-	  		</div>
-	    </div>
+			
+			<!-- Page Elements -->
+			<div class="row-fluid elements">
+				<h3>Page Elements</h3>
+				
+				<h4>Blade</h4>
+				<h5>Institutional</h5>
+				<img src="./img/blade-2.jpg" />
+				<h5>Other</h5>
+				<img src="./img/blade-1.jpg" />
+				
+				<hr class="soften">
+				
+				<h4>Banner</h4>
+				<h5>Institutional</h5>
+				<img src="./img/banner-1.jpg" />
+				<h5>Faculty</h5>
+				<img src="./img/banner-2.jpg" />
+				<h5>Other w/ Identifier</h5>
+				<img src="./img/banner-3.jpg" />
+				
+				<hr class="soften">
+				
+				<h4>Navigation</h4>
+				<img src="./img/nav-1.jpg" />
+				
+				<hr class="soften">
+				
+				<h4>Dropdown Navigation</h4>
+				<img src="./img/subnav-1.jpg" />
+				
+				<hr class="soften">
+				
+				<h4>Accordion</h4>
+				<img src="./img/accordion-1.jpg" />
+				
+				<hr class="soften">
+				
+				<h4>Programs</h4>
+				<h5>Primary Content Area</h5>
+				<img src="./img/programs-1.jpg" />
+				<h5>Primary Content Area</h5>
+				<img src="./img/programs-2.jpg" />
+				
+				<hr class="soften">
+				
+				<h4>Data Lists</h4>
+				<p>Data lists are used to show different types of data.  They can display a list of links, events, news, etc.</p>
+				<h5>Simple Links</h5>
+				<img src="./img/datalist-1.jpg" />
+				<h5>Link w/ Date</h5>
+				<img src="./img/datalist-2.jpg" />
+				<h5>Link w/ Image, Date, and Description</h5>
+				<img src="./img/datalist-3.jpg" />
+				
+				<hr class="soften">
+				
+				<h4>Sidebar Items</h4>
+				<img src="./img/sidebar-1.jpg" />
+				
+			</div>
 	    
 	  </div> <!-- Container End -->
 	</div>
@@ -287,7 +396,7 @@
 <script>
 	$(document).ready(function() {
 		
-		var typeProperties = ["color", "font-family", "font-size", "font-weight", "line-height", "margin-top", "margin-bottom"];
+		var typeProperties = ["color", "font-family", "font-size", "font-weight", "line-height"];
 		
 		var getProperties = function(el, props) {
 			var thisEl = el;
@@ -299,12 +408,18 @@
 			return propertyList;
 		};
 		
-		$('#typ-h1').html(getProperties($('#headings h1'), typeProperties));
-		$('#typ-h2').html(getProperties($('#headings h2'), typeProperties));
-		$('#typ-h3').html(getProperties($('#headings h3'), typeProperties));
-		$('#typ-h4').html(getProperties($('#headings h4'), typeProperties));
-		$('#typ-h5').html(getProperties($('#headings h5'), typeProperties));
-		$('#typ-h6').html(getProperties($('#headings h6'), typeProperties));
+		$('.style-item').each(function() {
+			$(this).append('<ul class="data-list">'+getProperties($($(this).data("selector")), typeProperties)+'</ul>');
+		});
+		
+		$('.style-item').hover(function() {
+			$($(this).data("selector")).addClass("highlight");
+		},
+		function() {
+			$($(this).data("selector")).removeClass("highlight");
+		});
+		
+		
 		
 	});
 </script>
