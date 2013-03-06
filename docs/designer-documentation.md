@@ -318,18 +318,20 @@ In order to be able to execute these commands, you will need to have followed th
 ## Copying CSS to QA, Content Management, and Content Delivery Servers
 There are three different environments where the css from the institutional-framework repository will live:
 
-	+ **QA**: This environment is for testing.  Any large changes to the code base should be tested in this environment before copying to content management or delivery.
-	+ **Content Management**: This is the environment where all content editing happens.  Any code pushed to this environment will be visible to anyone using Sitecore 3 on their preview URL (ie: https://sitename.sitecore.ualberta.ca/).
-	+ **Content Delivery**: This environment is where the code for the live site lives.  **Never upload untested code to this environment**
+  + **QA**: This environment is for testing.  Any large changes to the code base should be tested in this environment before copying to content management or delivery.
+  + **Content Management**: This is the environment where all content editing happens.  Any code pushed to this environment will be visible to anyone using Sitecore 3 on their preview URL (ie: https://sitename.sitecore.ualberta.ca/).
+  + **Content Delivery**: This environment is where the code for the live site lives.  **Never upload untested code to this environment**
 	
 Only the University Digital Strategy team can push css to these environments. If you are part of the University Digital Strategy team, refer to the internal documentation for the procedure to push to the above environments.
 
 ## Changes to the UAlberta.ca Homepage
-The ualberta.ca homepage is the `/html/homepage/index.html` file in the repository.  Edit this file, and when you are ready to preview the changes run this command in the `~/Documents/github/institutional-framework/master` directory:
+The ualberta.ca homepage is the `/html/homepage/index.html` file in the repository.  Edit this file, and when you are ready to preview the changes run this command in the `institutional-framework` directory:
 
 		make homepage-preview
 		
-This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage-preview` directory.  This will name the index file `index.html` in the `homepage-preview` directory, so you can easily upload and preview the file in a preview folder on the server.  After going through the necessary testing phases, you can run `make homepage` and replace the index file on the server with the new homepage file in the `homepage` directory.
+This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage-preview` directory.  This will name the index file `index.html` in the `homepage-preview` directory, so you can easily upload and preview the file in a preview folder on the server.  The preview URL is currently (http://www.ualberta.ca/~publicas/uofa/preview/index.html)[http://www.ualberta.ca/~publicas/uofa/preview/index.html]
+
+After going through the necessary testing phases, you can run `make homepage` and replace the index file on the server with the new homepage file in the `homepage` directory.
 
 
 ## Todo
