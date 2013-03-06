@@ -329,7 +329,7 @@ The ualberta.ca homepage is the `/html/homepage/index.html` file in the reposito
 
 		make homepage-preview
 		
-This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage-preview` directory.  This will name the index file `index.html` in the `homepage-preview` directory, so you can easily upload and preview the file in a preview folder on the server.  The preview URL is currently (http://www.ualberta.ca/~publicas/uofa/preview/index.html)[http://www.ualberta.ca/~publicas/uofa/preview/index.html]
+This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage-preview` directory.  This will name the index file `index.html` in the `homepage-preview` directory, so you can easily upload and preview the file in a preview folder on the server.  The preview URL is currently http://www.ualberta.ca/~publicas/uofa/preview/index.html
 
 After going through the necessary testing phases, you can run `make homepage` and replace the index file on the server with the new homepage file in the `homepage` directory.
 
