@@ -337,6 +337,18 @@ After going through the necessary testing phases, you can run the following comm
 		
 Which will copy the html file and compiled css to the homepage directory.  Upload the index-preview.html file, confirm everything looks correct, and replace the old index after creating a backup of it. 
 
+### Steps to modify the homepage
+  1. Obtain the latest version of the master branch. (Click "Sync Branch" while in the master branch)
+  2. Make changes to the homepage file in `/html/homepage/index.html`
+  3. Make CSS modifications for the homepage in `/less/ualberta/pages/homepage.less`
+  4. To preview changes, right click the folder where your master branch is located (`/institutional-framework/`) in finder, and choose "New Terminal at Folder".
+  5. In the Terminal window type `make homepage-preview`. This will create a new folder beside your master branch named `homepage-preview`
+  6. Upload the modified HTML and CSS files to the gpu.srv.ualberta.ca folder in the `~/public_html/uofa/preview/` folder.
+  7. Preview the homepage at http://www.ualberta.ca/~publicas/uofa/preview/index.html and make sure it is displaying correctly in all supported browsers.
+  8. Repeat steps 2-7 until all required modifications have been made to the homepage.
+  9. In the terminal windows from earlier, type the command `make homepage`.  This will make a folder named `homepage` containing the final versions of the homepage files.
+  10. Upload `index-preview.html` and any modified CSS to the `~/public_html/uofa/` folder on gpu.srv.ualberta.ca and make sure `index-preview.html` works as expected.
+  11. Overwrite `index.html` with `index-preview.html` after making a backup.
 
 ## Todo
 The following sections still need to be added to this document:

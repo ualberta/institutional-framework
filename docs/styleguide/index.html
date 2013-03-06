@@ -132,8 +132,13 @@
   	#navigation-pane li ul li ul li a:hover {
   		padding-left: 29px;
   	}
+  	#navigation-pane li ul {
+  		display: none;
+  	}
+  	#navigation-pane li.nav-active ul {
+  		display: block;
+  	}
   	
-
   		#preview {
   			margin-top: 10px;
   			margin-bottom: 10px;
@@ -296,6 +301,25 @@
 						<div id="navigation-pane" class="span3">
 							<ul>
 								<li>
+									<a href="base-elements.html">Base Styles</a>
+									<ul>
+										<li><a href="colors.html">Colors</a></li>
+										<li><a href="typography.html">Typography</a></li>
+										<li><a href="dropdown-nav.html">Imagery</a></li>
+										<li><a href="dropdown-nav.html">Tables</a></li>
+										<li><a href="dropdown-nav.html">Forms</a></li>
+										<li><a href="dropdown-nav.html">Patterns</a></li>
+									</ul>
+								</li>
+								<li>
+								<a href="layouts.html">Layouts</a>
+									<ul>
+										<li><a href="colors.html">Institutional Homepage</a></li>
+										<li><a href="banner.html">Institutional Landing</a></li>
+										<li><a href="navigation.html">Institutional Generic</a></li>
+									</ul>
+								</li>
+								<li class="nav-active">
 								<a href="page-elements.html">Page Elements</a>
 									<ul>
 										<li><a href="blade.html">Blade</a></li>
@@ -367,17 +391,48 @@
 
 <script>
 	$(document).ready(function() {
+		var typeProperties = ["color", "font-family", "font-size", "font-weight", "line-height"];
+		
+		var getProperties = function(el, props) {
+			var thisEl = el;
+			var i;
+			var propertyList = '';
+			for (i = 0; i < props.length; ++i) {
+				propertyList += '<li><strong>'+props[i]+':</strong> '+thisEl.css(props[i])+'</li>';
+			}
+			return propertyList;
+		};
+	
 		$("link[type='text/css']").clone().appendTo($("#preview").contents().find("head"));
 		
 		var leftNav = $("#navigation-pane");
 		
 		leftNav.find("a").click(function() {
-		  $("#content-pane").load('./content/'+$(this).attr("href")+' #content');
-			$("#preview").contents().find("body").load('./content/'+$(this).attr("href")+' #content-preview',function() {
-				var iframeHeight = $("#preview").contents().find("#content-preview").height();
-				$("#preview").css('height', iframeHeight+'px');
-				$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
+		  $("#content-pane").load('./content/'+$(this).attr("href")+' #content', function() {
+			  $('#content-pane .style-item').each(function() {
+			  	$(this).append('<ul class="data-list">'+getProperties($($(this).data("selector")), typeProperties)+'</ul>');
+			  });
+			  
+			  $('#content-pane .style-item').hover(function() {
+			  	$($(this).data("selector")).addClass("highlight");
+			  },
+			  function() {
+			  	$($(this).data("selector")).removeClass("highlight");
+			  });
+		  });
+			$("#preview").contents().find("body").load('./content/'+$(this).attr("href")+' #content-preview',function(response, status, xhr) {
+				var contentPreview = $("#preview").contents().find("#content-preview");
+				if(contentPreview.length > 0) {
+					$('#preview-pane').show();
+					var iframeHeight = contentPreview.height();
+					$("#preview").css('height', iframeHeight+'px');
+					$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
+				} else {
+					$('#preview-pane').hide();
+				}
 			});
+			$(this).parent().toggleClass('nav-active');
+			
 			return false;
 		});
 		
@@ -391,6 +446,7 @@
 			$('#preview').toggle();
 			$(this).toggleClass('closed');
 		});
+		
 		
 		$('#mobile-portrait-preview').click(function() {
 			$('#preview').css('width', '320px');
