@@ -309,6 +309,7 @@ Using the MakeFile you are able to execute various commands that will automate s
 
   + `make less` - Compiles all of the less master files into the ./css/ directory in the repository.
   + `make homepage` - Compiles and copies ualberta.ca html/css to the homepage directory
+  + `make homepage-preview` - Compiles and copies ualberta.ca html/css to the homepage-preview directory
   + `make production` - Compiles all code in the repository an pushes it to the production branch of the repository
   + `make ghpages` - Compiles all code in the repository an pushes it to the gh-pages branch of the repository
 
@@ -324,11 +325,11 @@ There are three different environments where the css from the institutional-fram
 Only the University Digital Strategy team can push css to these environments. If you are part of the University Digital Strategy team, refer to the internal documentation for the procedure to push to the above environments.
 
 ## Changes to the UAlberta.ca Homepage
-The ualberta.ca homepage is the `/html/institutional-home.html` file in the repository.  Edit this file, and when you are ready to preview the changes run this command in the `~/Documents/github/institutional-framework/master` directory:
+The ualberta.ca homepage is the `/html/homepage/index.html` file in the repository.  Edit this file, and when you are ready to preview the changes run this command in the `~/Documents/github/institutional-framework/master` directory:
 
-		make homepage
+		make homepage-preview
 		
-This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage` directory.  This will name the index file `index-preview.html`, so you can easily upload and preview the file.  After going through the necessary testing phases, you can overwrite the index file on the server with your new homepage files.
+This will compile all of the files required for the homepage into the `~/Documents/github/institutional-framework/homepage-preview` directory.  This will name the index file `index.html` in the `homepage-preview` directory, so you can easily upload and preview the file in a preview folder on the server.  After going through the necessary testing phases, you can run `make homepage` and replace the index file on the server with the new homepage file in the `homepage` directory.
 
 
 ## Todo
