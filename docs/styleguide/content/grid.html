@@ -1,0 +1,89 @@
+<div id="content">
+	<style>
+		#grid-example .row-fluid {
+			background-color: rgba(255,125,255,0.2);
+			padding: 10px 0;
+		}
+		
+		#grid-example [class*="span"] {
+			background-color: rgba(0,255,255,0.2);
+		}
+	</style>
+	<h3>Grid</h3>
+		<p>You can utilize the grid system that is built into the framework to arrange content in various ways that may better suit the content you are displaying.</p>
+		<p>The grid system consists of 12 fluid columns fit into a container.  To use the grid, create a row and then create the columns you desire within the row.  You can use the preset span classes (.span1, .span2, .span3, etc) to make an element span multiple columns. The total number of columns spanned per row should be 12. The grid behaves differently at different resolutions.</p>
+		<div class="row-fluid">
+			<div class="span3">
+				<h4>Mobile</h4>
+				<ul class="properties-list">
+					<li><strong>Row Width:</strong> 100%</li>
+					<li><strong>Columns:</strong> 1</li>
+					<li><strong>Column Width:</strong> 100%</li>
+					<li><strong>Gutters:</strong> none</li>
+				</ul>
+			</div>
+			<div class="span3">
+				<h4>Tablet</h4>
+				<ul class="properties-list">
+					<li><strong>Row Width:</strong> 100%</li>
+					<li><strong>Columns:</strong> 12</li>
+					<li><strong>Column Width:</strong> ~5.80%</li>
+					<li><strong>Gutters:</strong> ~2.76%</li>
+				</ul>
+			</div>
+			<div class="span3">
+				<h4>Desktop</h4>
+				<ul class="properties-list">
+					<li><strong>Row Width:</strong> 980px</li>
+					<li><strong>Columns:</strong> 12</li>
+					<li><strong>Column Width:</strong> ~6.38%</li>
+					<li><strong>Gutters:</strong> ~2.13%</li>
+				</ul>
+			</div>
+			<div class="span3">
+				<h4>High Resolution</h4>
+				<ul class="properties-list">
+					<li><strong>Row Width:</strong> 1170px</li>
+					<li><strong>Columns:</strong> 12</li>
+					<li><strong>Column Width:</strong> ~5.98%</li>
+					<li><strong>Gutters:</strong> ~2.56%</li>
+				</ul>
+			</div>
+	</div>
+	
+	<hr class="soften" />
+	
+	<!-- Form Layout --> 
+	<h4>Creating Rows and Columns</h4>
+	<p>The following example shows one way three rows with different columns can be built. The first row contains 3 equally sized columns that each span 4 rows.  The second row contains two columns that span 6 rows.  The last row contains two columns, one of which spans 8 columns, and one which spans 4 columns.</p>
+	<h5>Example</h5>
+	<div id="grid-example">
+		<div class="row-fluid">
+			<span class="span4">.span4</span>
+			<span class="span4">.span4</span>
+			<span class="span4">.span4</span>
+		</div>
+		<div class="row-fluid">
+			<span class="span6">.span6</span>
+			<span class="span6">.span6</span>
+		</div>
+		<div class="row-fluid">
+			<span class="span8">.span8</span>
+			<span class="span4">.span4</span>
+		</div>
+	</div>
+	<h5>Markup</h5>
+	<pre>&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;span4&quot;&gt;.span4&lt;/div&gt;
+	&lt;div class=&quot;span4&quot;&gt;.span4&lt;/div&gt;
+	&lt;div class=&quot;span4&quot;&gt;.span4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;span6&quot;&gt;.span6&lt;/div&gt;
+	&lt;div class=&quot;span6&quot;&gt;.span6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;span8&quot;&gt;.span8&lt;/div&gt;
+	&lt;div class=&quot;span4&quot;&gt;.span4&lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>

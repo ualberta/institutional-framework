@@ -1,15 +1,57 @@
 <div id="content">
+	<style>
+	.inset {
+		margin-top:10px;
+		-webkit-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px white;
+		-moz-box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px #ffffff;
+		box-shadow: inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 2px 2px white;
+		background-image: none;
+		border-bottom: 1px solid rgba(0, 50, 25, 0.35);
+		border-top: 1px solid rgba(0, 50, 25, 0.25);
+		background-color: rgba(255, 200, 10, 0.1);
+		padding: 10px;
+		border-radius: 4px;
+	}
+	</style>
 
 	<h3>Patterns</h3>
 	
 	<hr class="soften" />
 	
 	<h4>Extruded Container</h4>
-		
+	<p>The extruded container is used to to bring elements out of the page.  The extruded container is used to hold images, videos, program types, sidebar modules, and more.  Use the .extrude class for content pieces, and the .frame class for images and videos.
+	<div class="row-fluid">
+		<div class="span6">
+			<h5>Example</h5>
+			<div class="extrude">
+				Container
+			</div>
+		</div>
+		<div class="span6">
+			<h5>Markup</h5>
+			<pre>&lt;div class="extrude"&gt;Container&lt;/div&gt;</pre>
+		</div>
+	</div>
+	
 	<hr class="soften" />
 	
 	<h4>Inset Container</h4>
 	
+	<p>The inset container gives the area the look that it is sunk into the page to draw the eye.  The inset container is used primarily for feature areas.</p>
+	<div class="row-fluid">
+		<div class="span6">
+			<h5>Example</h5>
+			<div class="inset">
+				Container
+			</div>
+		</div>
+		<div class="span6">
+			<h5>Markup</h5>
+			<pre>&lt;div class="inset"&gt;Container&lt;/div&gt;</pre>
+		</div>
+	</div>
+	
+
 	<hr class="soften" />
 	
 	<h4>Data Lists</h4>
