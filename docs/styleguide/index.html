@@ -42,6 +42,50 @@
   
   <style>
   
+  	pre {
+  		overflow: scroll;
+  		border:  1px solid #ddd;
+  		padding: 10px;
+  		background: #fff;
+  	}
+  
+  	.highlight {
+  		position: relative;
+  	}
+  	
+  	.highlight:after {
+  		content: " ";
+  		position: absolute;
+  		left: -10px;
+  		right: -10px;
+  		top: -10px;
+  		bottom: -10px;
+  		border: 2px solid rgba(255,0,0,0.75)!important;
+  	}
+  	
+  	.properties-list {
+  		color:#6A7870;
+  		list-style-position: outside; 
+  		margin-left: 0px; 
+  		list-style: none;
+  		font-size: 12px;
+  	}
+  	
+  	.properties-list li {
+  		margin-bottom:6px;
+  	}
+  	
+  	.preview-box {
+  		 border: 2px solid #333; padding: 10px 10px 0px 10px;
+  		 overflow: auto;
+  		 margin-top: 0em;
+  	}
+  	
+  	.preview-box.image-box,
+  	.preview-box.content-box {
+  		 padding: 0;
+  	}
+  
   	#preview {
   		transition: width 0.3s ease;
   		-moz-transition: width 0.3s ease;
@@ -51,6 +95,11 @@
   	#device-preview {
   		position: relative;
   		top: 1px;
+  	}
+  	
+  	h5 code {
+  		display:inline-block; font-weight: normal; font-size: 12px; padding: 4px 5px; background: rgba(255, 245, 184, 0.15);
+			border: 1px solid #E1D8A4; border-radius: 4px;
   	}
   	
   	.banner-inner h1 {
@@ -305,10 +354,10 @@
 									<ul>
 										<li><a href="colors.html">Colors</a></li>
 										<li><a href="typography.html">Typography</a></li>
-										<li><a href="dropdown-nav.html">Imagery</a></li>
-										<li><a href="dropdown-nav.html">Tables</a></li>
-										<li><a href="dropdown-nav.html">Forms</a></li>
-										<li><a href="dropdown-nav.html">Patterns</a></li>
+										<li><a href="buttons.html">Buttons</a></li>
+										<li><a href="tables.html">Tables</a></li>
+										<li><a href="forms.html">Forms</a></li>
+										<li><a href="patterns.html">Patterns</a></li>
 									</ul>
 								</li>
 								<li>
@@ -410,7 +459,7 @@
 		leftNav.find("a").click(function() {
 		  $("#content-pane").load('./content/'+$(this).attr("href")+' #content', function() {
 			  $('#content-pane .style-item').each(function() {
-			  	$(this).append('<ul class="data-list">'+getProperties($($(this).data("selector")), typeProperties)+'</ul>');
+			  	$(this).append('<ul class="properties-list">'+getProperties($($(this).data("selector")), typeProperties)+'</ul>');
 			  });
 			  
 			  $('#content-pane .style-item').hover(function() {
