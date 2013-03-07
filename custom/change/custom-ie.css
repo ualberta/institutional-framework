@@ -11,9 +11,9 @@
 .lt-ie9 .navigation-inner .sub-menu .section-title{font-weight:bold;font-size:14px;border-bottom:1px dotted #ccc;line-height:1em;margin:0 0 4px 0;padding:5px 0px;text-shadow:none;}
 .lt-ie9 .navigation-inner .sub-menu .section-navigation,.lt-ie9 .navigation-inner .sub-menu .section-description{display:inline-block;vertical-align:top;width:47%;}
 .lt-ie9 .navigation-inner .sub-menu .section-navigation{margin-right:2%;}
-.lt-ie9 .navigation-inner .sub-menu .section-description{padding:4px 0 2px 2%;margin-top:-3px;border-left:1px dotted #ccc;}
-.lt-ie9 .navigation-inner .sub-menu ul li a{font-family:sans-serif;text-transform:none;border:none;padding:4px 0px;color:#007C41;line-height:1.2em;}
-.lt-ie9 .navigation-inner .sub-menu ul li:hover{padding-left:12px;margin-left:-13px;border-left:1px solid #ccc;text-shadow:none;}
+.lt-ie9 .navigation-inner .sub-menu .section-description{padding:4px 0 2px 2%;margin-top:-3px;}
+.lt-ie9 .navigation-inner .sub-menu ul li a{font-family:sans-serif;text-transform:none;border:none;padding:4px 0px;line-height:1.2em;width:47%;display:block;background-color:green;}
+.lt-ie9 .navigation-inner .sub-menu ul li:hover{padding-left:12px;margin-left:-13px;text-shadow:none;}
 .lt-ie8 .navigation-inner .main-navigation>li .sub-menu{text-align:left;}
 .lt-ie8 .sub-menu{text-align:left;}
 .lt-ie8 .navigation-inner .sub-menu ul{float:left;}
