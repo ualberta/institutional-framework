@@ -39,11 +39,23 @@
   .content-top-row{
 	  width:940px;
   }
-  .homepage .slide{
+  .homepage .change-header{
 	  display:inline-block;
   }
+  .homepage .image-caption-container .caption{
+	  display:none;
+  }
   .join-the-convo-btn{
-	  margin-top:15px;
+	  margin-top:20px;
+  }
+  .navigation-inner .sub-menu .section-title {
+    font-weight: bold;
+    font-size:  14px;
+    border-bottom: 1px dotted @grayDark;
+    line-height:  1em;
+    margin: 0 0 4px 0;
+    padding: 5px 0px;
+    text-shadow:  none;
   }
   .navigation-inner .sub-menu .section-navigation,
   .navigation-inner .sub-menu .section-description {
@@ -54,6 +66,28 @@
   .navigation-inner .sub-menu .section-navigation {
     margin-right:2%;
   }
+  .navigation-inner .sub-menu .section-description {
+    padding: 4px 0 2px 2%;
+    margin-top: -3px;
+    border-left: 1px dotted @grayDark;
+  }
+  .navigation-inner .sub-menu ul li a {
+    font-family: sans-serif;
+    text-transform: none;
+    border: none;
+    padding: 4px 0px;
+    color: @linkColor;
+    line-height: 1.2em;
+    }
+    
+   .navigation-inner .sub-menu ul li:hover {
+      padding-left:12px;
+      margin-left: -13px;
+      #gradient > .horizontal(rgba(255,219,5,0.65), rgba(255,219,5,0));
+      border-left: 1px solid darken(#ffdb05,3%);
+      text-shadow: none;
+    }
+  // End Navigation
 
  }
  
