@@ -20,43 +20,28 @@
     .navigation-inner ul li ul {
       .nav1 {
         width: percentage(110/@totalNavWidth);
-          .section-navigation li{
-	        width:100%;
-	        text-align:left;
-	        margin-left:-11px;
-        }
-
       }
       .nav2 {
         width: percentage(120/@totalNavWidth);
-          .section-navigation li{
-	        width:100%;
-	        text-align:left;
-	        margin-left:-11px;
-        }
-
       }
       .nav3 {
         width: percentage(99/@totalNavWidth);
-          .section-navigation li{
-	        width:100%;
-	        text-align:left;
-	        margin-left:-11px;
-        }
-
       }
       .nav4 {
         width: percentage(110/@totalNavWidth);
-        .section-navigation li{
+          }
+       .section-navigation li{
 	        width:100%;
 	        text-align:left;
 	        margin-left:-11px;
-        }
-      }
+	        border-left:0px;
     }
   }
  }
-  
+   .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu{
+    right: -303px;
+  }
+
  .horizontal-line{
 	 margin-top:10px;
  } 
@@ -68,7 +53,9 @@
   background: #fff;
   border: none;
   .border-radius(3px);
-  .box-shadow(0 1px 4px rgba(0, 30, 15, 0.2));
+  .box-shadow(0 1px 2px rgba(0, 30, 15, 0.2));
+  margin-bottom:15px;
+  padding:0px 5px;
 }
 .homepage  .join-the-convo-img{
 	text-align:center;
@@ -80,15 +67,15 @@
 .homepage .feature-caption{
 	display:none;
 }
-
-@media (min-width: 33.500em) and (max-width: 43.063em) {
-.homepage .join-the-convo{
-	width:310px;
 }
+@media (min-width: 33.500em) and (max-width: 43.063em) {
+	.homepage .join-the-convo{
+	width:310px;
+	}
 }
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
-.row-fluid .sidebar{
+	.row-fluid .sidebar{
 	width:21%;
 	position:inherit;
-}
+	}
 }
