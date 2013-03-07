@@ -7,7 +7,6 @@
 .lt-ie9 .content-top-row{width:940px;}
 .lt-ie9 .homepage .change-header{display:inline-block;}
 .lt-ie9 .homepage .image-caption-container .caption{display:none;}
-.lt-ie9 .join-the-convo-btn{margin-top:20px;}
 .lt-ie9 .navigation-inner .sub-menu .section-title{font-weight:bold;font-size:14px;border-bottom:1px dotted #ccc;line-height:1em;margin:0 0 4px 0;padding:5px 0px;text-shadow:none;}
 .lt-ie9 .navigation-inner .sub-menu .section-navigation,.lt-ie9 .navigation-inner .sub-menu .section-description{display:inline-block;vertical-align:top;width:47%;}
 .lt-ie9 .navigation-inner .sub-menu .section-navigation{margin-right:2%;}
@@ -20,3 +19,4 @@
 .lt-ie8 .sub-menu{text-align:left;}
 .lt-ie8 .navigation-inner .sub-menu ul{float:left;}
 .lt-ie8 .navigation-inner .sub-menu .section-description{float:right;}
+.lt-ie8 .content-top-row{margin-right:auto;margin-left:auto;}
