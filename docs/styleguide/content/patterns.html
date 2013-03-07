@@ -54,15 +54,124 @@
 
 	<hr class="soften" />
 	
-	<h4>Data Lists</h4>
+	<h4>Lists of Links</h4>
+	<p>Lists of links that occur in the main content area of the page should be contained in a data list. If there is a link to view more of whatever is listed, then the bottom-row class should be utilized.</p> 
+	<div class="row-fluid">
+		<div class="span6">
+			<h5>Example</h5>
+			<ul class="data-list">
+			    <li><a href="#">Costs, Tuition, and Fees</a></li>
+			    <li><a href="#">Major Deadlines</a></li>
+			    <li><a href="#">Registrar </a></li>
+			    <li class="bottom-row"><a href="#">View the Calendar</a></li>
+			</ul>
+		</div>
+		<div class="span6">
+			<h5>Markup</h5>
+			<pre>&lt;ul class=&quot;data-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Costs, Tuition, and Fees&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Major Deadlines&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Registrar &lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;bottom-row&quot;&gt;&lt;a href=&quot;#&quot;&gt;View the Calendar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+		</div>
+	</div>
 	
 	<hr class="soften" />
 	
-	<h4>Gradients</h4>
+	<h4>Lists of Links with Descriptions</h4>
+	<p>This pattern is most commonly used with news articles or events, where the link is the article or event name and the text that follows is a brief description of what the user can expect to find if they click the link. Similar to the list of links, the .bottom-row class can be used to provide a link to view more.</p> 
+	
+	<div class="row-fluid">
+		<div class="span6">
+			<h5>Example</h5>
+			<ul class="news-list data-list">
+				<li class="news-row">
+					<div class="news-description">
+						<h4>
+							<a href="#">Title Link One</a>
+						</h4>
+						<p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum. Sed semper gravida leo et porttitor.</p>
+					</div>
+				</li>
+				<li class="news-row">
+					<div class="news-description">
+						<h4>
+							<a href="#">Title Link Two</a>
+						</h4>
+						<p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum. Sed semper gravida leo et porttitor.</p>
+					</div>
+				</li>
+				<li class="bottom-row"><a href="#">View More</a></li>
+			</ul>
+		</div>
+		<div class="span6">
+			<h5>Markup</h5>
+			<pre>&lt;ul class=&quot;news-list data-list&quot;&gt;
+	&lt;li class=&quot;news-row&quot;&gt;
+		&lt;div class=&quot;news-description&quot;&gt;
+			&lt;h4&gt;&lt;a href=&quot;#&quot;&gt;Title Link&lt;/a&gt;&lt;/h4&gt;
+			&lt;p class=&quot;news-teaser&quot;&gt;Teaser&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;bottom-row&quot;&gt;&lt;a href=&quot;#&quot;&gt;View More&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+		</div>
+	</div>
 	
 	<hr class="soften" />
 	
-	<h4>Programs</h4>
+	<h4>Media Items</h4>
+	<p>The media item pattern consists of a thumbnail image, heading link, date, and description. The pattern can be used to display news items, posts by users, events, videos, or similar content.</p> 
+	
+	<div class="row-fluid">
+		<div class="span6 latest-news">
+			<h5>Example</h5>
+			<ul class="news-list data-list">
+      	<li class="news-row small-image">
+        	<div class="frame news-thumbnail">
+          	<a href="#" class="image-shadow">
+            	<img src="http://placehold.it/81x78">
+            </a>
+          </div>
+          <div class="news-description">
+          	<h4><a href="#">Title One</a></h4>
+            <span class="news-date">Posted on February 28, 2013</span>
+            <p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum.</p>
+          </div>
+        </li>
+        <li class="news-row small-image">
+        	<div class="frame news-thumbnail">
+          	<a href="#" class="image-shadow">
+            	<img src="http://placehold.it/81x78">
+            </a>
+          </div>
+          <div class="news-description">
+          	<h4><a href="#">Title Two</a></h4>
+            <span class="news-date">Posted on February 28, 2013</span>
+            <p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum.</p>
+          </div>
+        </li>
+    	</ul>
+		</div>
+		<div class="span6">
+			<h5>Markup</h5>
+			<pre>&lt;ul class=&quot;news-list data-list&quot;&gt;
+	&lt;li class=&quot;news-row small-image&quot;&gt;
+  	&lt;div class=&quot;frame news-thumbnail&quot;&gt;
+    	&lt;a href=&quot;#&quot; class=&quot;image-shadow&quot;&gt;
+      	&lt;img src=&quot;http://placehold.it/81x78&quot;&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;news-description&quot;&gt;
+    	&lt;h4&gt;&lt;a href=&quot;#&quot;&gt;Title&lt;/a&gt;&lt;/h4&gt;
+      &lt;span class=&quot;news-date&quot;&gt;Date&lt;/span&gt;
+      &lt;p class=&quot;news-teaser&quot;&gt;Description&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+		</div>
+	</div>
 	
 	<hr class="soften" />
 		
