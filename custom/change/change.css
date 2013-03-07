@@ -1,0 +1,109 @@
+/*
+ * UAlberta Faculty CSS
+ *
+ * Copyright 2012 UAlberta
+ */
+/******** FRAMEWORK BASE START *********/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/******** FRAMEWORK BASE END *********/
+@media (min-width: 43.125em) {
+  .navigation-container .navigation-inner ul li ul .nav1 {
+    width: 24.94331065759637%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav1 .section-navigation li {
+    width: 100%;
+    text-align: left;
+    margin-left: -11px;
+  }
+  .navigation-container .navigation-inner ul li ul .nav2 {
+    width: 27.2108843537415%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav2 .section-navigation li {
+    width: 100%;
+    text-align: left;
+    margin-left: -11px;
+  }
+  .navigation-container .navigation-inner ul li ul .nav3 {
+    width: 22.448979591836736%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav3 .section-navigation li {
+    width: 100%;
+    text-align: left;
+    margin-left: -11px;
+  }
+  .navigation-container .navigation-inner ul li ul .nav4 {
+    width: 24.94331065759637%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav4 .section-navigation li {
+    width: 100%;
+    text-align: left;
+    margin-left: -11px;
+  }
+}
+.horizontal-line {
+  margin-top: 10px;
+}
+h1.hp-header {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.homepage .join-the-convo {
+  padding-bottom: 10px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 30, 15, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 30, 15, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 30, 15, 0.2);
+}
+.homepage .join-the-convo-img {
+  text-align: center;
+}
+.homepage .join-the-convo a {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.homepage .feature-caption {
+  display: none;
+}
+@media (min-width: 33.5em) and (max-width: 43.063em) {
+  .homepage .join-the-convo {
+    width: 310px;
+  }
+}
+@media (min-width: 43.125em) and (max-width: 61.1875em) {
+  .row-fluid .sidebar {
+    width: 21%;
+    position: inherit;
+  }
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}
+.affix {
+  position: fixed;
+}
