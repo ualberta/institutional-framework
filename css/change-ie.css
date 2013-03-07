@@ -88,21 +88,13 @@
   text-transform: none;
   border: none;
   padding: 4px 0px;
-  color: #007c41;
+  color: #007C41;
   line-height: 1.2em;
 }
 .lt-ie9 .navigation-inner .sub-menu ul li:hover {
   padding-left: 12px;
   margin-left: -13px;
-  background-color: rgba(255, 219, 5, 0);
-  background-image: -moz-linear-gradient(left, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 219, 5, 0.65)), to(rgba(255, 219, 5, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));
-  background-image: -o-linear-gradient(left, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));
-  background-image: linear-gradient(to right, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ffdb05', endColorstr='#00ffdb05', GradientType=1);
-  border-left: 1px solid #f5d100;
+  border-left: 1px solid #ccc;
   text-shadow: none;
 }
 .lt-ie8 .navigation-inner .main-navigation > li .sub-menu {
