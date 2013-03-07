@@ -1,32 +1,4 @@
 <div id="content">
-<style>
-.highlight {
-	position: relative;
-}
-
-.highlight:after {
-	content: " ";
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	border: 2px solid rgba(255,0,0,0.75)!important;
-}
-
-.preview-box {
-	 border: 2px solid #333; padding: 0px 10px;
-	 overflow: auto;
-	 margin-top: 0em;
-}
-
-.preview-box.image-box,
-.preview-box.content-box {
-	 padding: 0;
-}
-
-</style>
-
 	<h3>Typography</h3>
 	<hr class="soften" />
 	<h4>Headings</h4>
@@ -98,15 +70,97 @@
 	
 	<hr class="soften" />
 	
+	<!-- Paragraphs -->
 	<h4>Paragraphs</h4>
+	<div class="row-fluid">
+		<div class="style-description span8">
+			<p>Paragraphs use the default text color, and should ideally not exceed 80 characters per line to facilitate readability. There is a intro-text class that can be used for a larger text size to emphasize a certain piece of text.  This is useful for news teasers and summary paragraphs.  A lighter secondary text paragraph can be used for pieces of information that are not critical such as dates or teasers in data lists.</p>
+			<ul class="unstyled row-fluid">
+				<li data-selector="#standard-paragraph" class="style-item span4">
+					<h5>Standard Paragraph <code>&lt;p&gt;</code></h5>
+				</li>
+				<li data-selector="#introduction-paragraph" class="style-item span4">
+					<h5>Introduction Paragraph <code>&lt;p class="intro-text"&gt;</code></h5>
+				</li>
+				<li data-selector="#secondary-paragraph" class="style-item span4">
+					<h5>Secondary Paragraph <code>&lt;p class="secondary-text"&gt;</code></h5>
+				</li>
+			</ul>
+		</div>
+		<div id="paragraphs" class="preview-box span4" style="padding-top:10px">
+			<p id="standard-paragraph">
+				The quick brown fox jumps over the lazy dog.
+			</p>
+			<p id="introduction-paragraph" style="font-size: 1.1428571428571428em; color: #6A7870;">
+				The quick brown fox jumps over the lazy dog.
+			</p>
+			<p id="secondary-paragraph" style="color: #6A7870;">
+				The quick brown fox jumps over the lazy dog.
+			</p>
+		</div>
+	</div>
+	<!-- End Paragraphs -->
 	
 	<hr class="soften" />
 	
+	<!-- Lists -->
 	<h4>Lists</h4>
-	
-	<hr class="soften" />
-	
-	<h4>Blockquotes</h4>
+	<div class="row-fluid">
+		<div class="style-description span8">
+			<p>There are a variety of lists should be used when displaying choices, events, news, definitions, steps, links or any type of data where common sense dictates to use one.</p>
+			<ul class="unstyled row-fluid">
+				<li data-selector="#unordered-list" class="style-item span4">
+					<h5>Unordered List <code>&lt;ul&gt;</code></h5>
+					<p>Default list for content when orering is not important.</p>
+				</li>
+				<li data-selector="#ordered-list" class="style-item span4">
+					<h5>Ordered List <code>&lt;ol&gt;</code></h5>
+					<p>Default ordered list, used for outlining a list of steps or other times when numbering is important.</p>
+				</li>
+				<li data-selector="#definition-list" class="style-item span4">
+					<h5>Definition List <code>&lt;dl&gt;</code></h5>
+					<p>List used for words and their definitions</p>
+				</li>
+			</ul>
+			<ul class="unstyled row-fluid">
+				<li data-selector="#unstyled-list" class="style-item span6">
+					<h5>Unstyled List <code>&lt;ul class="unstyled"&gt;</code></h5>
+					<p>Use for standard lists where no bullet or marker is required.</p>
+				</li>
+				<li data-selector="#data-list li" class="style-item span6">
+					<h5>Data List <code>&lt;ul class="data-list"&gt;</code></h5>
+					<p>Typically used for lists of links, but can also be used for text, events, and media items.</p>
+				</li>
+			</ul>
+		</div>
+		<div id="lists" class="preview-box span4" style="padding-top:10px">
+			<ul id="unordered-list">
+				<li>Item One</li>
+				<li>Item Two</li>
+				<li>Item Three</li>
+			</ul>
+			<ol id="ordered-list">
+				<li>Item One</li>
+				<li>Item Two</li>
+				<li>Item Three</li>
+			</ol>
+			<dl id="definition-list">
+			  <dt><dfn>Word</dfn></dt>
+			  <dd>This is the definition for the word</dd>
+			</dl>
+			<ul id="unstyled-list" class="unstyled">
+				<li>Item One</li>
+				<li>Item Two</li>
+				<li>Item Three</li>
+			</ul>
+			<ul id="data-list" class="data-list">
+				<li>Item One</li>
+				<li>Item Two</li>
+				<li>Item Three</li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Lists -->
 	
 	<hr class="soften" />
 	

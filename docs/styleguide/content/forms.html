@@ -1,0 +1,87 @@
+<div id="content">
+	<h3>Forms</h3>
+	<hr class="soften" />
+	
+	<!-- Form Layout --> 
+	<h4>Form Layout</h4>
+	<p>The standard form layout should have a fieldset with a legend that accurately labels the fields inside the fieldset.  Text, textarea, and select fields should have a label above them and placeholder text that describes which type of data should be entered in the field. Radio buttons and checkboxes should have labels on the right side of the field.  Success notifications or validation errors should appear to the right of the corresponding field when used. </p>
+	<div class="row-fluid">
+		<div class="span6">
+			<h5>Example</h5>
+					<form>
+            <fieldset>
+              <legend>Sign Up For Our Newsletter</legend>
+              <label>Your Name</label>
+              <input type="text" placeholder="First Last">
+              <label>Email Address</label>
+              <input type="text" placeholder="Enter your email address">
+              <label>Country</label>
+              <select>
+              	<option>Canada</option>
+              	<option>Not Canada</option>
+              </select>
+              <label class="checkbox">
+                <input type="checkbox"> Plain Text Only
+              </label>
+            </fieldset>
+            <button type="submit" class="btn btn-grey btn-small">Submit</button>
+          </form>
+		</div>
+		<div class="span6">
+			<h5>Markup</h5>
+			<pre>&lt;form&gt;
+   &lt;fieldset&gt;
+	  &lt;legend&gt;Sign Up For Our Newsletter&lt;/legend&gt;
+	  &lt;label&gt;Your Name&lt;/label&gt;
+	  &lt;input type=&quot;text&quot; placeholder=&quot;First Last&quot;&gt;
+	  &lt;label&gt;Email Address&lt;/label&gt;
+	  &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email address&quot;&gt;
+	  &lt;label&gt;Country&lt;/label&gt;
+	  &lt;select&gt;
+	  	&lt;option&gt;Canada&lt;/option&gt;
+	  	&lt;option&gt;Not Canada&lt;/option&gt;
+	  &lt;/select&gt;
+	  &lt;label class=&quot;checkbox&quot;&gt;
+	    &lt;input type=&quot;checkbox&quot;&gt; Plain Text Only
+	  &lt;/label&gt;
+   &lt;/fieldset&gt;
+   &lt;button type=&quot;submit&quot; class=&quot;btn btn-grey btn-small&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</pre>
+		</div>
+	</div>
+	<!-- End Form Layout -->
+	
+	<hr class="soften" />
+	
+	<!-- Inline Forms --> 
+	<h4>Inline Forms</h4>
+	<p>If a form only requires one visible field it should be displayed inline with the button. The form should have a heading, and at very least a placeholder describing what type of data to ender in the field. Examples of this type of form include search forms, find a person, or newsletter subscribe forms. Icons may be used to help inform the user the form's purpose.</p>
+	<div class="row-fluid">
+		<div class="span6">
+			<h5>Example</h5>
+			<div id="inline-form">
+				<div class="inline-search">
+					<i class="icon-search"></i>
+					<input type="search" placeholder="enter a search query">
+					<button class="btn btn-grey btn-small">Search</button>
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<h5>Markup</h5>
+			<pre>&lt;div class=&quot;inline-search&quot;&gt;
+    &lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;
+    &lt;input type=&quot;search&quot;&gt;
+    &lt;button class=&quot;btn btn-grey btn-small&quot;&gt;Search&lt;/button&gt;
+&lt;/div&gt;</pre>
+		</div>
+	</div>
+	<!-- End Inline Forms -->
+	
+	<hr class="soften" />
+
+	
+</div>
+
+
+

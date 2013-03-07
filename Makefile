@@ -38,14 +38,15 @@ build:
 #
 
 less:
-	@recess --compile ./less/framework.less > ./css/framework.css
-	@recess --compile ./less/framework-base.less > ./css/framework-base.css
-	@recess --compile ./less/framework-ie.less > ./css/framework-ie.css
-	@recess --compile ./less/ualberta.less > ./css/ualberta.css
-	@recess --compile ./less/ualberta-ie.less > ./css/ualberta-ie.css
-	@recess --compile ./less/faculty.less > ./css/faculty.css
-	@recess --compile ./less/faculty-ie.less > ./css/faculty-ie.css
-	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ${PROTOTYPE_LESS} > ./css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ./css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
+	@echo "Compiling faculty base less...               ${CHECK} Done"
 
 #
 # COMPILE PRODUCTION BRANCH

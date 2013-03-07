@@ -12,28 +12,35 @@ form {
 }
 
 fieldset {
-  padding: 0;
-  margin: 0;
+  padding: 0 0 5px 0;
+  margin: 0 0 8px 0;
   border: 0;
+  border-bottom: 1px dotted #ddd;
 }
 
 // Groups of fields with labels on top (legends)
 legend {
   display: block;
   width: 100%;
-  padding: 0;
-  margin-bottom: @baseLineHeight;
-  font-size: @baseFontSize * 1.5;
-  line-height: @baseLineHeight * 2;
+  padding: 0 0 5px 0;
+  margin-bottom: 0.75em;
+  font-size: 1em;
+  line-height: 1.57em;
   color: @grayDark;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ddd;
+  float: left;
+  font-weight: bold;
 
   // Small
   small {
     font-size: @baseLineHeight * .75;
     color: @grayLight;
   }
+}
+
+legend + label {
+	clear: both;
 }
 
 // Set font for forms
@@ -83,7 +90,7 @@ input[type="color"],
   #em > .padding(4, 6, 14);
   #em > .margin(bottom, 9, 14);
   #em > .font-size(14, 14);
-  line-height: @baseLineHeight;
+  line-height: 1em;
   color: @gray;
   .border-radius(@inputBorderRadius);
 }
@@ -133,7 +140,7 @@ input[type="color"],
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: -4px 5px 0 0;
   *margin-top: 0; /* IE7 */
   margin-top: 1px \9; /* IE8-9 */
   line-height: normal;
