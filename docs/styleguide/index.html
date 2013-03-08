@@ -377,11 +377,11 @@
 										<li><a href="blade.html">Blade</a></li>
 										<li><a href="banner.html">Banner</a></li>
 										<li><a href="navigation.html">Global Navigation</a></li>
-										<li><a href="dropdown-nav.html">Dropdown Menus</a></li>
+										<li><a href="dropdown-menus.html">Dropdown Menus</a></li>
 										<li><a href="breadcrumb.html">Breadcrumb</a></li>
 										<li><a href="left-nav.html">Left Navigation</a></li>
-										<li><a href="page-title.html">Page Title</a></li>
 										<li><a href="sidebar-items.html">Sidebar Items</a></li>
+										<li><a href="faculty-footer.html">Faculty Footer</a></li>
 										<li><a href="footer.html">Footer</a></li>
 									</ul>
 								</li>
@@ -454,6 +454,13 @@
 			}
 			return propertyList;
 		};
+		
+		var sizePreview = function() {
+			var contentPreview = $("#preview").contents().find("#content-preview");
+			var iframeHeight = contentPreview.height();
+			$("#preview").css('height', iframeHeight+'px');
+			$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
+		}
 	
 		$("link[type='text/css']").clone().appendTo($("#preview").contents().find("head"));
 		
@@ -518,12 +525,20 @@
 		
 		$('#desktop-large-preview').click(function() {
 			$('#preview').css('width', '1200px');
+			
 		});
 		
 		$('#device-preview a').click(function (e) {
 		  e.preventDefault();
 		  $(this).tab('show');
-		})
+		});
+		
+		$('#preview').on(
+		    "transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd",
+		    function() {
+		        sizePreview();
+		    }
+		);
 		
 	});
 </script>
