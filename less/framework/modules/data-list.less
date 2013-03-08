@@ -45,8 +45,8 @@
       background-color: rgba(255, 245, 184, 0.15);
       margin-left: -10px;
       margin-right:  -10px;
-      padding-left: 9px!important;
-      padding-right: 9px!important;
+      padding-left: 9px;
+      padding-right: 9px;
       border-color: #E1D8A4;
       border-style: solid;
       margin-bottom: -1px;
@@ -96,9 +96,13 @@
       border: 0;
       padding: 0;
       line-height: 1.57em;
+      overflow:hidden;
       &:first-child {
         padding:0;
       }
+       &:hover{
+	       padding:0px 10px;
+       }
       a { 
         display: block;
         padding-top: 5px; 
@@ -107,8 +111,8 @@
     	    line-height: 135%;
         &:hover {
           background: #FFF5B8;
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-left: 0px;
+          padding-right: 0px;
           border-top: 1px solid desaturate(darken(#FFF5B8,10%),50%);
           //margin-bottom: -1px;
           border-bottom: 1px solid desaturate(darken(#FFF5B8,10%),50%);
