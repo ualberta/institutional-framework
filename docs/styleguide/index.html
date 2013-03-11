@@ -188,6 +188,28 @@
   		display: block;
   	}
   	
+  	#navigation-pane .current-page {
+  		border-radius: 4px;
+  		color: white;
+  		background-image: -moz-linear-gradient(top, #00AF5C, #007C41);
+  		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00AF5C), to(#007C41));
+  		background-image: -webkit-linear-gradient(top, #00AF5C, #007C41);
+  		background-image: -o-linear-gradient(top, #00AF5C, #007C41);
+  		background-image: linear-gradient(to bottom, #00AF5C, #007C41);
+  		background-repeat: repeat-x;
+  		margin: 0px -10px;
+  		padding-left: 10px;
+  		padding-right: 10px;
+  		border: none;
+  	}
+  	
+  	#navigation-pane .current-page:hover {
+  		border: none;
+  		margin: 0px -10px;
+  		padding-left: 10px;
+  		padding-right: 10px;
+  	}
+  	
   		#preview {
   			margin-top: 10px;
   			margin-bottom: 10px;
@@ -491,7 +513,8 @@
 				}
 			});
 			$(this).parent().toggleClass('nav-active');
-			
+			leftNav.find("a").removeClass('current-page');
+			$(this).addClass('current-page');
 			return false;
 		});
 		
