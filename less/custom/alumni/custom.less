@@ -105,10 +105,18 @@
 	margin-left: 0.2em;
 }
 
-/* fixed the gap at top of sidebar in tablet view */
+/* Tablet overrides */
+/* fixed the gap at top of sidebar */
+/* made the column widths the same in a 2-column subcontainer */
 @media (max-width: 61.1875em) and (min-width: 43.125em) {
 	.homepage .sidebar {
 		top: 20px;
+	}
+	.row-fluid.secondary .secondary-content-area .module-container {
+		width: 48.61878453038674%;
+	}
+	.events .row-fluid.secondary .secondary-content-area .module-container {
+		width: 100%;
 	}
 }
 
