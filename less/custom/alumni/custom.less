@@ -105,13 +105,31 @@
 	margin-left: 0.2em;
 }
 
+/* Tablet overrides */
+/* fixed the gap at top of sidebar */
+/* made the column widths the same in a 2-column subcontainer */
 @media (max-width: 61.1875em) and (min-width: 43.125em) {
 	.homepage .sidebar {
 		top: 20px;
 	}
+	.row-fluid.secondary .secondary-content-area .module-container {
+		width: 48.61878453038674%;
+	}
+	.events .row-fluid.secondary .secondary-content-area .module-container {
+		width: 100%;
+	}
 }
 
+
 @media (min-width: 75em) {
+     .events .row-fluid.tertiary {
+           .sidebar {
+               width: 14.529914529914532%;
+            }
+          .primary-content-area-container {
+               width: 82.90598290598291%;
+          }
+     }
      .events .primary-content-area .row-fluid .span6 {
           width: 29.059829059829063%;
      }
@@ -119,14 +137,35 @@
           width: 68.37606837606837%;
      }
 }
-
-@media (min-width: 43.125em) {
-     .row-fluid.tertiary {
-           .sidebar {
-               width: 14.529914529914532%; 
-            }
-          .row-fluid.tertiary .primary-content-area-container {
-               width: 82.90598290598291%;
+@media (min-width: 61.25em) {
+     .events .row-fluid.tertiary {
+          .sidebar {
+               width: 18.085106382978726%;
           }
-     } 
+          .primary-content-area-container {
+               width: 79.7872340425532%;
+          }
+      }
+     .events .primary-content-area .row-fluid .span6 {
+          width: 28.617021276595743%;
+     }
+     .events .primary-content-area .row-fluid .span6:first-child {
+          width: 68.40425531914893%;
+     }
+}
+@media (min-width: 43.125em) {
+     .events .row-fluid.tertiary {
+          .sidebar {
+               width: 22.135416666666664%;
+          }
+          .primary-content-area-container {
+               width: 75.52083333333334%;
+          }
+     }
+     .events .primary-content-area .row-fluid .span6 {
+          width: 100%;
+     }
+     .events .primary-content-area .row-fluid .span6:first-child {
+          width: 100%;
+     }
 }
