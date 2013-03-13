@@ -219,8 +219,8 @@
   			height: 0; 
   			border-left: 5px solid transparent;
   			border-right: 5px solid transparent;
-  			border-top: 5px solid #007c41;
-  			border-bottom: 0px;
+  			border-bottom: 5px solid #007c41;
+  			border-top: 0px;
   			display:block;
   			float: right;
   			margin-top: 0.7em;
@@ -231,8 +231,8 @@
   			height: 0; 
   			border-left: 5px solid transparent;
   			border-right: 5px solid transparent;
-  			border-bottom: 5px solid #007c41;
-  			border-top: 0px;
+  			border-top: 5px solid #007c41;
+  			border-bottom: 0px;
   	}
   	
   	#navigation-pane .current-page span.toggle {
@@ -426,7 +426,7 @@
 										<li><a href="ins-generic.html">Institutional Generic</a></li>
 									</ul>
 								</li>
-								<li class="nav-active">
+								<li>
 								<a href="page-elements.html">Page Elements<span class="toggle open"></span></a>
 									<ul>
 										<li><a href="blade.html">Blade</a></li>
@@ -606,6 +606,8 @@
 		        sizePreview();
 		    }
 		);
+		
+		leftNav.find("a:first").click();
 		
 	});
 </script>
