@@ -157,10 +157,14 @@ homepage-preview:
 	@lessc -x ./less/framework.less > ../homepage-preview/css/framework.css
 	@lessc -x ./less/framework-ie.less > ../homepage-preview/css/framework-ie.css
 	@echo "Compiling framework base less...             ${CHECK} Done"
-	@lessc -x ./less/ualberta.less > ../homepage-preview/css/ualberta.css
+	@lessc -x ./less/ualberta-homepage.less > ../homepage-preview/css/ualberta-homepage.css
 	@lessc -x ./less/ualberta-ie.less > ../homepage-preview/css/ualberta-ie.css
 	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
 	@cp -r ./img/homepage/ ../homepage-preview/img/
+	@cat ../homepage-preview/css/framework.css ../homepage-preview/css/ualberta-homepage.css ./css/explore-icons.css > ../homepage-preview/css/homepage.css
+	@cat ../homepage-preview/css/framework-ie.css ../homepage-preview/css/ualberta-ie.css > ../homepage-preview/css/homepage-ie.css
+	@cat ${PAGESDIR}/js/bootstrap.min.js ./js/ualberta/jquery.flexslider-min.js ./js/ualberta/jquery.tweet-min.js ./js/ualberta/institutional.js ./js/homepage/footer.js > ../homepage-preview/js/homepage-footer.js
+	@cat ./js/homepage/head.js > ../homepage-preview/js/homepage-head.js
 	@sed 's/publicas\/uofa\/css\//publicas\/uofa\/preview\/css\//g' ./html/homepage/index.html > ../homepage-preview/index.html
 	
 
