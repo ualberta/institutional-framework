@@ -55,12 +55,12 @@
   .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu{
   	  left: -2px;
   }
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-  	  right: -330px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-  	  right: -165px;
-  }
+//  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
+//  	  right: -330px;
+//  }
+//  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
+//  	  right: -165px;
+//  }
   .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
     right: -1px;
   }
@@ -76,38 +76,9 @@
   }
   
 }
-
 .events .rss a.btn {
 	margin-top: 1em;
 }
-@media (min-width:43.125em) and (max-width:61.188em){
-	.navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-		right:-270px;
-	}
-	.navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-		right:-36px;
-	}
-}
-@media (min-width:61.250em){
-    
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-    right:-265px;
-  }
-  
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-    right:-133px;
-  }
-}
-@media (min-width:75em){
-    
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-    right:-330px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-    right:-165px;
-  }
-}
-
 .social-media-links {
   img {
     width:  16px;
@@ -125,10 +96,10 @@
 	margin-left: 0.2em;
 }
 
-/* Tablet overrides */
 /* fixed the gap at top of sidebar */
 /* made the column widths the same in a 2-column subcontainer */
-@media (max-width: 61.1875em) and (min-width: 43.125em) {
+/* customized the positioning for big menus */
+@media (min-width: 43.125em) and (max-width: 61.1875em){
 	.homepage .sidebar {
 		top: 20px;
 	}
@@ -137,6 +108,12 @@
 	}
 	.events .row-fluid.secondary .secondary-content-area .module-container {
 		width: 100%;
+	}
+	.navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
+		right:-270px;
+	}
+	.navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
+		right:-130px;
 	}
 }
 
@@ -173,6 +150,13 @@
      .events .primary-content-area .row-fluid .span6:first-child {
           width: 68.40425531914893%;
      }
+     .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
+       right:-265px;
+     }
+     
+     .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
+       right:-133px;
+     }
 }
 
 
@@ -190,5 +174,11 @@
      }
      .events .primary-content-area .row-fluid .span6:first-child {
           width: 68.37606837606837%;
+     }  
+     .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
+         right:-330px;
+     }
+     .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
+         right:-165px;
      }
 }
