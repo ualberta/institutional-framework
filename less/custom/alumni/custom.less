@@ -53,14 +53,8 @@
 	  left: -2px;
   }
   .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu{
-  	  left: -2px;
+  	  right: -420px;
   }
-//  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-//  	  right: -330px;
-//  }
-//  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-//  	  right: -165px;
-//  }
   .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
     right: -1px;
   }
@@ -96,27 +90,7 @@
 	margin-left: 0.2em;
 }
 
-/* fixed the gap at top of sidebar */
-/* made the column widths the same in a 2-column subcontainer */
-/* customized the positioning for big menus */
-@media (min-width: 43.125em) and (max-width: 61.1875em){
-	.homepage .sidebar {
-		top: 20px;
-	}
-	.row-fluid.secondary .secondary-content-area .module-container {
-		width: 48.61878453038674%;
-	}
-	.events .row-fluid.secondary .secondary-content-area .module-container {
-		width: 100%;
-	}
-	.navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-		right:-270px;
-	}
-	.navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-		right:-130px;
-	}
-}
-
+// Everything wider than mobile
 @media (min-width: 43.125em) {
      .events .row-fluid.tertiary {
           .sidebar {
@@ -134,7 +108,28 @@
      }
 }
 
+// Tablet portrait
+@media (min-width: 43.125em) and (max-width: 61.1875em){
+// fixed the gap at top of sidebar
+	.homepage .sidebar {
+		top: 20px;
+	}
+// made the column widths the same in a 2-column subcontainer
+	.row-fluid.secondary .secondary-content-area .module-container {
+		width: 48.61878453038674%;
+	}
+	.events .row-fluid.secondary .secondary-content-area .module-container {
+		width: 100%;
+	}
+	.navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
+		right:-270px;
+	}
+	.navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
+		right:-130px;
+	}
+}
 
+// Everything wider than tablet
 @media (min-width: 61.25em) {
      .events .row-fluid.tertiary {
           .sidebar {
@@ -159,7 +154,7 @@
      }
 }
 
-
+// Widest desktop or high-res
 @media (min-width: 75em) {
      .events .row-fluid.tertiary {
            .sidebar {
@@ -175,6 +170,10 @@
      .events .primary-content-area .row-fluid .span6:first-child {
           width: 68.37606837606837%;
      }  
+     .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu{
+         right: auto;
+         left: -2px;
+     }
      .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
          right:-330px;
      }
