@@ -343,7 +343,7 @@
   
 <div class="blade-container"><!-- Start Blade -->
   <div class="blade-inner">
-    <a class="brand" href="#"></a>
+    <a class="brand" style="display: block;" href="http://www.ualberta.ca/"><img src="http://why.ualberta.ca/design/img/logo2.svg" alt="University of Alberta"></a>
     <nav class="blade-navigation">
       <ul class="quick-links-container">
         <li id="ql" class="dropdown">
@@ -424,43 +424,43 @@
 						<div id="navigation-pane" class="span3">
 							<ul>
 								<li>
-									<a href="base-styles.html">Base Styles<span class="toggle open"></span></a>
+									<a href="#base-styles">Base Styles<span class="toggle open"></span></a>
 						
 									<ul>
-										<li><a href="grid.html">Grid System</a></li>
-										<li><a href="colors.html">Colors</a></li>
-										<li><a href="typography.html">Typography</a></li>
-										<li><a href="images.html">Images</a></li>
-										<li><a href="buttons.html">Buttons</a></li>
-										<li><a href="tables.html">Tables</a></li>
-										<li><a href="forms.html">Forms</a></li>
-										<li><a href="patterns.html">Patterns</a></li>
+										<li><a href="#grid">Grid System</a></li>
+										<li><a href="#colors">Colors</a></li>
+										<li><a href="#typography">Typography</a></li>
+										<li><a href="#images">Images</a></li>
+										<li><a href="#buttons">Buttons</a></li>
+										<li><a href="#tables">Tables</a></li>
+										<li><a href="#forms">Forms</a></li>
+										<li><a href="#patterns">Patterns</a></li>
 									</ul>
 								</li>
 								<li>
-								<a href="layouts.html">Layouts<span class="toggle open"></span></a>
+								<a href="#layouts">Layouts<span class="toggle open"></span></a>
 									<ul>
-										<li><a href="ins-home.html">Institutional Homepage</a></li>
-										<li><a href="ins-landing.html">Institutional Landing</a></li>
-										<li><a href="ins-generic.html">Institutional Generic</a></li>
+										<li><a href="#ins-home">Institutional Homepage</a></li>
+										<li><a href="#ins-landing">Institutional Landing</a></li>
+										<li><a href="#ins-generic">Institutional Generic</a></li>
 									</ul>
 								</li>
 								<li>
-								<a href="page-elements.html">Page Elements<span class="toggle open"></span></a>
+								<a href="#page-elements">Page Elements<span class="toggle open"></span></a>
 									<ul>
-										<li><a href="blade.html">Blade</a></li>
-										<li><a href="banner.html">Banner</a></li>
-										<li><a href="navigation.html">Global Navigation</a></li>
-										<li><a href="dropdown-menus.html">Dropdown Menus</a></li>
-										<li><a href="breadcrumb.html">Breadcrumb</a></li>
-										<li><a href="left-nav.html">Left Navigation</a></li>
-										<li><a href="sidebar-items.html">Sidebar Items</a></li>
-										<li><a href="faculty-footer.html">Faculty Footer</a></li>
-										<li><a href="footer.html">Footer</a></li>
+										<li><a href="#blade">Blade</a></li>
+										<li><a href="#banner">Banner</a></li>
+										<li><a href="#navigation">Global Navigation</a></li>
+										<li><a href="#dropdown-menus">Dropdown Menus</a></li>
+										<li><a href="#breadcrumb">Breadcrumb</a></li>
+										<li><a href="#left-nav">Left Navigation</a></li>
+										<li><a href="#sidebar-items">Sidebar Items</a></li>
+										<li><a href="#faculty-footer">Faculty Footer</a></li>
+										<li><a href="#footer">Footer</a></li>
 									</ul>
 								</li>
 								<li>
-								<a href="components.html">Components</a>
+								<a href="#components">Components</a>
 								</li>
 							</ul>
 						</div>
@@ -519,7 +519,17 @@
 <script src="http://www.ualberta.ca/~publicas/beta/js/bootstrap.min.js"></script>
 
 <script>
-	$(document).ready(function() {
+	/*
+	 * jQuery hashchange event - v1.3 - 7/21/2010
+	 * http://benalman.com/projects/jquery-hashchange-plugin/
+	 * 
+	 * Copyright (c) 2010 "Cowboy" Ben Alman
+	 * Dual licensed under the MIT and GPL licenses.
+	 * http://benalman.com/about/license/
+	 */
+	(function($,e,b){var c="hashchange",h=document,f,g=$.event.special,i=h.documentMode,d="on"+c in e&&(i===b||i>7);function a(j){j=j||location.href;return"#"+j.replace(/^[^#]*#?(.*)$/,"$1")}$.fn[c]=function(j){return j?this.bind(c,j):this.trigger(c)};$.fn[c].delay=50;g[c]=$.extend(g[c],{setup:function(){if(d){return false}$(f.start)},teardown:function(){if(d){return false}$(f.stop)}});f=(function(){var j={},p,m=a(),k=function(q){return q},l=k,o=k;j.start=function(){p||n()};j.stop=function(){p&&clearTimeout(p);p=b};function n(){var r=a(),q=o(m);if(r!==m){l(m=r,q);$(e).trigger(c)}else{if(q!==m){location.href=location.href.replace(/#.*/,"")+q}}p=setTimeout(n,$.fn[c].delay)}$.browser.msie&&!d&&(function(){var q,r;j.start=function(){if(!q){r=$.fn[c].src;r=r&&r+a();q=$('<iframe tabindex="-1" title="empty"/>').hide().one("load",function(){r||l(a());n()}).attr("src",r||"javascript:0").insertAfter("body")[0].contentWindow;h.onpropertychange=function(){try{if(event.propertyName==="title"){q.document.title=h.title}}catch(s){}}}};j.stop=k;o=function(){return a(q.location.href)};l=function(v,s){var u=q.document,t=$.fn[c].domain;if(v!==s){u.title=h.title;u.open();t&&u.write('<script>document.domain="'+t+'"<\/script>');u.close();q.location.hash=v}}})();return j})()})(jQuery,this);	
+		
+		$(document).ready(function() {
 		var typeProperties = ["color", "font-family", "font-size", "font-weight", "line-height"];
 		
 		var getProperties = function(el, props) {
@@ -543,35 +553,6 @@
 		
 		var leftNav = $("#navigation-pane");
 		
-		leftNav.find("a").click(function() {
-		  $("#content-pane").load('./content/'+$(this).attr("href")+' #content', function() {
-			  $('#content-pane .style-item').each(function() {
-			  	$(this).append('<ul class="properties-list">'+getProperties($($(this).data("selector")), typeProperties)+'</ul>');
-			  });
-			  
-			  $('#content-pane .style-item').hover(function() {
-			  	$($(this).data("selector")).addClass("highlight");
-			  },
-			  function() {
-			  	$($(this).data("selector")).removeClass("highlight");
-			  });
-		  });
-			$("#preview").contents().find("body").load('./content/'+$(this).attr("href")+' #content-preview',function(response, status, xhr) {
-				var contentPreview = $("#preview").contents().find("#content-preview");
-				if(contentPreview.length > 0) {
-					$('#preview-pane').show();
-					var iframeHeight = contentPreview.height();
-					$("#preview").css('height', iframeHeight+'px');
-					$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
-				} else {
-					$('#preview-pane').hide();
-				}
-			});
-			$(this).parent().addClass('nav-active');
-			leftNav.find("a").removeClass('current-page');
-			$(this).addClass('current-page');
-			return false;
-		});
 		
 		$('.variant').live('hover', function() { 
 		
@@ -617,8 +598,41 @@
 		        sizePreview();
 		    }
 		);
-		
-		leftNav.find("a:first").click();
+
+		$(window).hashchange( function(){
+		  var hash = location.hash;
+		  if(hash === '')
+		  	hash = "#base-styles";
+			$("#content-pane").load('./content/'+hash.substring(1)+'.html #content', function() {
+			  $('#content-pane .style-item').each(function() {
+			  	$(this).append('<ul class="properties-list">'+getProperties($($(this).data("selector")), typeProperties)+'</ul>');
+			  });
+			  
+			  $('#content-pane .style-item').hover(function() {
+			  	$($(this).data("selector")).addClass("highlight");
+			  },
+			  function() {
+			  	$($(this).data("selector")).removeClass("highlight");
+			  });
+			});
+			$("#preview").contents().find("body").load('./content/'+hash.substring(1)+'.html #content-preview',function(response, status, xhr) {
+				var contentPreview = $("#preview").contents().find("#content-preview");
+				if(contentPreview.length > 0) {
+					$('#preview-pane').show();
+					var iframeHeight = contentPreview.height();
+					$("#preview").css('height', iframeHeight+'px');
+					$('.style-guide').css('margin-bottom', (80+iframeHeight)+'px');
+				} else {
+					$('#preview-pane').hide();
+				}
+			});
+			leftNav.find("a").each(function() {
+				var that = $(this);
+				that[ that.attr( 'href' ) === hash ? 'addClass' : 'removeClass' ]( 'current-page' ).parent().addClass('nav-active');;
+			});
+		});
+
+		$(window).hashchange();
 		
 	});
 </script>
