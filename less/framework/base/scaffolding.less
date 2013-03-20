@@ -109,3 +109,22 @@ a:hover {
 .gradient-selected {
 	.selected-gradient();
 }
+
+p.intro-text {
+	font-size: 1.1428571428571428em; 
+	color: #6A7870;
+}
+
+p.secondary-text {
+	color: #6A7870;
+}
+
+.rounded {
+	.border-radius(4px);
+	&.image-shadow:before {
+		.border-radius(4px);
+	}
+	&.image-shadow img {
+		.border-radius(4px);
+	}
+}

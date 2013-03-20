@@ -1,14 +1,12 @@
 @bannerHeight: 6.42857142857143em;
 
 .banner-container {
-  //background:  #48986D; 
-  background: #78c89d;
+  background: #007c41;
   height:  @bannerHeight;
   border-bottom: 3px solid #ffdb05;
   color: #fff;
   overflow: hidden;
   position: relative;
-  .box-shadow(inset 0px 0px 30px #007c41);
 }
 
 .banner-inner {
@@ -22,76 +20,25 @@
     bottom: -5px;
     left: 10px;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35);
+    a {
+      color:  #fff;
+      text-decoration: none;
+      &:hover {
+        color: @yellow;
+      }
+    }
   } 
   
 }
 
 .oval-container {
-  width: 100%;
-  height: @bannerHeight;
-  overflow: hidden;
-  position: absolute;
-  top: 0; left: 0;
-  z-index: 10;
+  display: none;
 }
 
 .shadow-container {
-  width: 100%;
-  height: @bannerHeight;
-  overflow: hidden;
-  position: absolute;
-  top: 0; left: 0;
-  z-index: 11;
-  .box-shadow(inset 0px 2px 3px rgba(0,30,0,0.25));
+  display: none;
 }
 
 .oval {
-  .transform-origin(center center);
-  #gradient .horizontal-three-colors(#007c41, rgba(0,124,65,0), 50%, #007c41);
-  height: 700%;
-  width: 145.569620253165%;
-  .border-radius(100%);
-  position: absolute;
-
-}
-
-.oval1 {
-  //display: none;
-  top: -270%;
-  left: -22%;
-  .rotate(-21deg);
-  z-index: 10;
-  //animation: animationName 5s ease-in-out 0s infinite alternate;
-  //-webkit-animation: animationName 5s ease-in-out 0s infinite alternate;
-}
-
-.oval2 {
-  //display:  none;
-  .rotate(7deg);
-  top: -160%;
-  left: -35%;
-  z-index: 9;
-  //animation: animationName 120s ease-in-out 0s infinite alternate;
-  //-webkit-animation: animationName 1s ease-in-out 0s infinite alternate;
-}
-
-.oval3 {
-  //display: none;
-  .rotate(-27deg);
-  top: 140%;
-  left: -5%;
-  z-index: 8;
-  //animation: animationName 30s ease-in-out 0s infinite alternate;
-  //-webkit-animation: animationName 3s ease-in-out 0s infinite alternate;
-}
-
-.oval4 {
-  //display: none;
-  .rotate(-49deg);
-  height: 800%;
-  top: -90%;
-  left: -28%;
-  z-index: 7;
-  //animation: animationName 90s ease-in-out 0s infinite alternate;
-  //-webkit-animation: animationName 9s ease-in-out 0s infinite alternate;
+  display: none;
 }

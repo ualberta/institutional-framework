@@ -1,63 +1,84 @@
 <div id="content">
 	<h3>Images</h3>
-	<hr class="soften" />
+	<p>Images should be used sparingly on the page, and only when they compliment the content. Images that are poor quality, obvious stock images, excessively large, or distasteful are not to be used.</p>
+	<p>Images change size based on the container they are in.  The image size also will adjust based on the device that it is viewed on.  When choosing an image to use make sure it is an appropriate size and aspect ratio to be displayed on all devices.</p> 
+	<p>Images should not be used to display text content, only photos and figures. Any text required should be placed over the image in HTML so it remains accessible and searchable.</p>
+	<div class="row-fluid">
+
+	</div>
 	
-		<!-- Standard Table --> 
-	<h4>Standard Table</h4>
-	<h5><code>&lt;table class="table table-striped table-hover"&gt;</code></h5>
-	<p>The default table is used for showing data when appropriate.  As tables typically contain several rows, the table should be zebra striped and have a hover state to enhance readability.</p>
+	<hr class="soften" />
+	 
+	<h4>Image Frame</h4>
+
 	<div class="row-fluid">
 		<div class="style-description span6">
-			<ul class="unstyled row-fluid">
-				<li data-selector="#table-heading" class="style-item">
-					<h5>Table Heading <code>&lt;th&gt;&lt;h3&gt;Heading&lt;/h3&gt;&lt;/th&gt;</code></h5>
-				</li>
-				<li>
-					<h5>Table Row <code>&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;</code></h5>
-					<ul class="properties-list">
-						<li><strong>background-color:</strong> transparent</li>
-						<li><strong>background-color2:</strong> rgba(249, 249, 249, 0.65)</li>
-						<li><strong>border-top:</strong> 1px solid #ddd</li>
-						<li><strong>hover-background:</strong> rgba(255, 245, 184, 0.15)</li>
-						<li><strong>hover-border:</strong> #E1D8A4</li>
-					</ul>
-				</li>
-			</ul>
+				<p>Wrapping an image in a div with the "frame" class will add a white border with rounded corners and a shadow to an image.  Also, wrapping the image in an "image-shadow" gives the image an inset appearance.</p>
+			<pre>
+&lt;div class=&quot;frame&quot;&gt;
+  &lt;a class=&quot;image-shadow&quot;&gt;&lt;img src=&quot;#url&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
 		</div>
-		<div id="tables" class="preview-box span6">
-			<table id="standard-table" class="table table-striped table-hover">
-			  <thead>
-			    <tr>
-				    <th><h3 id="table-heading">First Column</h3></th>
-				    <th><h3>Second Column</h3></th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			  	<tr>
-			  		<td id="table-row">Row Data</td>
-						<td>Row Data</td>
-			  	</tr>
-			  	<tr>
-			  		<td>Row Data</td>
-			  		<td>Row Data</td>
-			  	</tr>
-			  	<tr>
-			  		<td>Row Data</td>
-			  		<td>Row Data</td>
-			  	</tr>
-			  	<tr>
-			  		<td>Row Data</td>
-			  		<td>Row Data</td>
-			  	</tr>
-			  </tbody>
-			</table>
+		<div class="span6">
+			<div class="frame">
+				<a class="image-shadow">
+					<img src="http://www.placehold.it/500x290" />
+				</a>
+			</div>
 		</div>
 	</div>
+	
+	<h5>With a Caption</h5>
+		<div class="row-fluid">
+			<div class="style-description span6">
+					<p>Captions are encouraged on images to give a short summary of the image, or if the image is a link, what the user can expect to see when they click on it.</p>
+				<pre>&lt;div class=&quot;frame&quot;&gt;
+  &lt;div class=&quot;image-caption-container&quot;&gt;
+    &lt;a class=&quot;image-shadow&quot;&gt;
+      &lt;img src=&quot;http://www.placehold.it/500x290&quot; /&gt;
+    &lt;/a&gt;
+    &lt;p class=&quot;caption&quot;&gt;
+      This is a sample caption for an image with a frame.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+			</div>
+			<div class="span6">
+				<div class="frame">
+					<div class="image-caption-container">
+						<a class="image-shadow">
+							<img src="http://www.placehold.it/500x290" />
+						</a>
+						<p class="caption">
+							This is a sample caption for an image with a frame.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	<!-- End Standard Headings -->
 	
 	<hr class="soften" />
+	 
+	<h4>Inset Image</h4>
 
+	<div class="row-fluid">
+		<div class="style-description span6">
+				<p>Images can also be given an inset appearance without a frame, using the "image-shadow" class.  Adding the "rounded" class will add rounded corners.</p>
+				
+			<pre>
+&lt;div class=&quot;span4&quot;&gt;
+  &lt;a class=&quot;image-shadow rounded&quot;&gt;&lt;img src=&quot;#url&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+		</div>
+		<div class="span6">
+			<a class="image-shadow rounded">
+				<img src="http://www.placehold.it/500x290" />
+			</a>
+		</div>
+	</div>
 	
+	<hr class="soften" />
 </div>
 
 

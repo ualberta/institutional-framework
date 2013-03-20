@@ -166,6 +166,7 @@ homepage-preview:
 	@cat ${PAGESDIR}/js/bootstrap.min.js ./js/ualberta/jquery.flexslider-min.js ./js/ualberta/jquery.tweet-min.js ./js/ualberta/institutional.js ./js/homepage/footer.js > ../homepage-preview/js/homepage-footer.js
 	@cat ./js/homepage/head.js > ../homepage-preview/js/homepage-head.js
 	@sed 's/publicas\/uofa\/css\//publicas\/uofa\/preview\/css\//g' ./html/homepage/index.html > ../homepage-preview/index.html
+	@sed 's/publicas\/uofa\/css\//publicas\/uofa\/preview\/css\//g' ./html/homepage/index-optimized.html > ../homepage-preview/index-optimized.html
 	
 
 #
