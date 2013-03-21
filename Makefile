@@ -140,10 +140,12 @@ homepage:
 	@lessc -x ./less/framework.less > ../homepage/css/framework.css
 	@lessc -x ./less/framework-ie.less > ../homepage/css/framework-ie.css
 	@echo "Compiling framework base less...             ${CHECK} Done"
-	@lessc -x ./less/ualberta.less > ../homepage/css/ualberta.css
+	@lessc -x ./less/ualberta-homepage.less > ../homepage/css/ualberta-homepage.css
 	@lessc -x ./less/ualberta-ie.less > ../homepage/css/ualberta-ie.css
 	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
 	@cp -r ./img/homepage/ ../homepage/img/
+	@cat ../homepage/css/framework.css ../homepage/css/ualberta-homepage.css ./css/explore-icons.css > ../homepage/css/homepage.css
+	@cat ../homepage/css/framework-ie.css ../homepage/css/ualberta-ie.css > ../homepage/css/homepage-ie.css
 	@cp ./html/homepage/index.html ../homepage/index-preview.html
 	
 homepage-preview:

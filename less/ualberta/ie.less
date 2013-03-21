@@ -334,63 +334,70 @@
       ul.slides li {
         .fma-content {
           position: absolute;
-          top: 85px;
+          top: auto;
           left: 0;
-          bottom: auto;
+					right: auto;
+          bottom: 15px;
           //margin-top: 50%;
           vertical-align: middle;
-          width: 50%;
-          text-align: center;
+          text-align: left;
           background: none;
+          padding: 0px 15px;
+          width: auto;
           h3 {
-            color: #007c41;
-            font-size: 32px;
-            margin: 10px;
+            color: #ffdb05;
+            font-size: 25px;
             text-shadow: none;
           }
           p.feature-copy {
-            font-size: 22px;
-            width: 100%;
+            font-size: 16px;
             margin: 0 auto 10px;
             line-height: 1.5em;
-            color: @lightText;
+            color: #fff;
             text-shadow: none;
           }
         }
-         .fma-content.shade{
-	  	   background:transparent;
-	  	   filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; 
-	  	  width:auto;
-	  	  padding:5px;
-	  	  h3 {
-		 	color: #ffdb05;
-	  		}
-	 	  p.feature-copy{
-		 	color:#fff;
-		 	margin:0px 10px 0px 10px;
-	 		}
+        .fma-content.shade{
+	  	  	background:transparent;
+	  			filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; 
+	  	  	h3 {
+		 				color: #ffdb05;
+	  			}
+	 	  		p.feature-copy {
+		 				color:#fff;
+		 				text-shadow: none;
+	 				}
   	   	}
-  	   	.fma-content.track{
-  		  top:52%;
-  		  text-align:left;
+  	   	&.caption-right-bottom .fma-content {
+  	   		top: auto;
+  	   		left: auto;
+  	   		right: 0px;
+  	   		bottom: 15px;
+  	   		text-align: right;
+  	   		*width: 400px; //ie7
+  	   		p, h3 {
+  	   			text-align: right;
+  	   		}
+  	   	}
+  	   	&.caption-left-bottom .fma-content {
+  	   		top: auto;
+  	   		left: 0;
+  	   		right: auto;
+  	   		bottom: 15px;
+  	   		text-align: left;
+  	   		*width:400px; //ie7
+  	   		p, h3 {
+  	   			text-align: left;
+  	   		}
+  	   	}
   		}
-  	}
+
       &.flexslider {
       	*margin-bottom: 0;
       	.flex-control-nav {
       		*bottom: 15px;
       	}
       }
-      ul.slides li.pride-week{
-	        .fma-content{
-		        text-align:right;
-		        left:537px;
-		        top:110px;
-		      p.feature-copy{
-			      margin-left:-10px;
-		      }
-	        }
-        }
     }
 
     // Why UAlberta Piece
@@ -601,10 +608,6 @@
 	background-image:url('../img/next-arrow.png');
 	top:150px;
 	}
-
-	.fma-container ul.slides li.pride-week .fma-content{
-		left:620px;
-}
 }
 .virtual-btn{
 	line-height:2em;
