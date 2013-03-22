@@ -1,0 +1,167 @@
+BUILDDIR=../tmp
+HOMEPAGEDIR=../homepage
+PAGESDIR=../gh-pages
+PRODDIR=../production
+DATE=$(shell date +%I:%M%p)
+USER=$(shell whoami)
+CHECK=\033[32m✔\033[39m
+HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+
+
+#
+# BUILD DEFAULT
+#
+
+build:
+	@jshint js/*.js --config js/.jshintrc
+	@jshint js/tests/unit/*.js --config js/.jshintrc
+	@echo "Running JSHint on javascript...             ${CHECK} Done"
+	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ${PROTOTYPE_LESS} > ./css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ./css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
+	@echo "Compiling faculty base less...               ${CHECK} Done"
+	@cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > compiled/js/bootstrap.js
+	@uglifyjs -nc compiled/js/bootstrap.js > ./js/bootstrap.min.js
+	@echo "Compiling and minifying javascript...       ${CHECK} Done"
+	@echo "\n${HR}"
+	@echo "Bootstrap successfully built at ${DATE}."
+	
+#
+# BUILD LESS ONLY
+#
+
+less:
+	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ${PROTOTYPE_LESS} > ./css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ./css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
+	@echo "Compiling faculty base less...               ${CHECK} Done"
+
+#
+# COMPILE PRODUCTION BRANCH
+#
+
+production:
+	@mkdir -p ./css ./custom ${PRODDIR} ${PRODDIR}/css ${PRODDIR}/font ${PRODDIR}/img ${PRODDIR}/ico ${PRODDIR}/js ${PRODDIR}/custom
+	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ${PROTOTYPE_LESS} > ./css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ./css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
+	@echo "Compiling faculty base less...               ${CHECK} Done"
+	@for file in `find ./less/custom -type f -name '*.less'`; do lessFilePath="$$file"; cssFilePath="$${lessFilePath/.\/less/.}"; cssFilePath="$${cssFilePath/%.less/.css}"; mkdir -p $$(dirname "$$cssFilePath"); lessc -x "$$lessFilePath" > "$$cssFilePath"; done
+	@echo "Compiling custom less...                     ${CHECK} Done"
+	@cp -r ./custom ${PRODDIR}
+	@echo "Copying custom files...                      ${CHECK} Done"
+	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PRODDIR}/js/bootstrap.js
+	@uglifyjs -nc ${PRODDIR}/js/bootstrap.js > ${PRODDIR}/js/bootstrap.min.js
+	@cp -r ./js ${PRODDIR}
+	@echo "Minifying and copying javascript...          ${CHECK} Done"
+	@cp -r ./css ${PRODDIR}
+	@cp -r ./img ${PRODDIR}
+	@cp -r ./ico ${PRODDIR}
+	@cp -r ./font ${PRODDIR}
+	@echo "Copying css, images, icons, and fonts...     ${CHECK} Done"
+	(cd ../production; git add .; git commit -a -m prod; git push origin production --force)
+	
+#
+# COMPILE GH-PAGES
+#
+
+ghpages:
+	@mkdir -p ${PAGESDIR} ${PAGESDIR}/html ${PAGESDIR}/js
+	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ./less/ualberta.less > ./css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ./css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
+	@echo "Compiling faculty base less...               ${CHECK} Done"
+	@cp -r ./css ${PAGESDIR}
+	@echo "Copying CSS to pages directory...            ${CHECK} Done"
+	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PAGESDIR}/js/bootstrap.js
+	@uglifyjs -nc ${PAGESDIR}/js/bootstrap.js > ${PAGESDIR}/js/bootstrap.min.js
+	@echo "Minifying and copying javascript...          ${CHECK} Done"
+	@cp -r ./img ${PAGESDIR}
+	@cp -r ./js/ualberta ${PAGESDIR}/js
+	@cp -r ./font ${PAGESDIR}
+	@cp -r ./html ${PAGESDIR}
+	@echo "Copying html files...                        ${CHECK} Done"
+
+push-gh-pages:
+	(cd ../institutional-framework-pages; git add .; git commit -a -m pages; git push origin gh-pages)
+	
+push-production:
+	(cd ../production; git add .; git commit -a -m prod; git push origin production)
+	
+faculty:
+	@mkdir -p ../faculty
+	@mkdir -p ../faculty/css
+	@lessc -x ./less/framework.less > ../faculty/css/framework.css
+	@lessc -x ./less/framework-ie.less > ../faculty/css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ../faculty/css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ../faculty/css/faculty-ie.css
+	@echo "Compiling faculty less files...     ${CHECK} Done"
+	
+homepage:
+	@mkdir -p ${HOMEPAGEDIR} ${HOMEPAGEDIR}/css ./css
+	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ./less/ualberta-homepage.less > ./css/ualberta-homepage.css
+	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@echo "Compiling ualberta homepage less...     ${CHECK} Done"
+	@cp -r ./img/homepage/ ${HOMEPAGEDIR}/img/
+	@cat ./css/framework.css ./css/ualberta-homepage.css ./css/explore-icons.css > ${HOMEPAGEDIR}/css/homepage.css
+	@cat ./css/framework-ie.css ./css/ualberta-ie.css > ${HOMEPAGEDIR}/css/homepage-ie.css
+	@cp ./html/homepage/index.html ../homepage/index-preview.html
+	
+homepage-preview:
+	@mkdir -p ./css
+	@mkdir -p ../homepage-preview
+	@mkdir -p ../homepage-preview/css
+	@mkdir -p ../homepage-preview/js
+	@mkdir -p ../homepage-preview/img
+	@mkdir -p ../homepage-preview/ico
+	@mkdir -p ../homepage-preview/font
+	@lessc -x ./less/framework.less > ../homepage-preview/css/framework.css
+	@lessc -x ./less/framework-ie.less > ../homepage-preview/css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ./less/ualberta-homepage.less > ../homepage-preview/css/ualberta-homepage.css
+	@lessc -x ./less/ualberta-ie.less > ../homepage-preview/css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@cp -r ./img/homepage/ ../homepage-preview/img/
+	@cat ../homepage-preview/css/framework.css ../homepage-preview/css/ualberta-homepage.css ./css/explore-icons.css > ../homepage-preview/css/homepage.css
+	@cat ../homepage-preview/css/framework-ie.css ../homepage-preview/css/ualberta-ie.css > ../homepage-preview/css/homepage-ie.css
+	@cat ${PAGESDIR}/js/bootstrap.min.js ./js/ualberta/jquery.flexslider-min.js ./js/ualberta/jquery.tweet-min.js ./js/ualberta/institutional.js ./js/homepage/footer.js > ../homepage-preview/js/homepage-footer.js
+	@cat ./js/homepage/head.js > ../homepage-preview/js/homepage-head.js
+	@sed 's/publicas\/uofa\/css\//publicas\/uofa\/preview\/css\//g' ./html/homepage/index.html > ../homepage-preview/index.html
+	@sed 's/publicas\/uofa\/css\//publicas\/uofa\/preview\/css\//g' ./html/homepage/index-optimized.html > ../homepage-preview/index-optimized.html
+	
+
+#
+# WATCH LESS FILES
+#
+
+watch:
+	@echo "Watching less files..."; \
+	watchr -e "watch('less/.*\.less') { system 'make less' }"
+
+
+
+.PHONY: watch ghpages less
