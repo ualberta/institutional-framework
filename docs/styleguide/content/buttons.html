@@ -8,7 +8,7 @@
 	<p>Buttons are used to indicate to the user that they can perform an action. Text inside of buttons should follow title casing.</p>
 	<hr class="soften" />
 	<h4>Primary Calls to Action</h4>
-	<p>The following example shows one way three rows with different columns can be built. The first row contains 3 equally sized columns that each span 4 rows.  The second row contains two columns that span 6 rows.  The last row contains two columns, one of which spans 8 columns, and one which spans 4 columns.</p>
+	<p>There are three buttons that have been designated as our "Primary Calls to Action". Buttons that represent one of these calls to action have unique styling reserved for them, and should not be used for other buttons.</p>
 	<div id="button-example">
 		<div class="row-fluid">
 			<div class="span4">
@@ -29,6 +29,26 @@
 				<a href="#" class="btn btn-apply btn-small">Apply Now</a><br />
 				<a href="#" class="btn btn-apply btn-micro">Apply Now</a>
 			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span6 good not-code">
+			<h5>Good:</h5>
+	
+	    	<a href="#" class="btn btn-grey btn-small" style="margin-bottom:1em">Send Message</a>
+
+			<ul class="unstyled">
+				<li><i class="icon-ok"></i>Uses standard styling because it is not a primary call to action</li>
+				<li><i class="icon-ok"></i>Uses title casing</li>
+			</ul>
+		</div>
+		<div class="span6 bad not-code">
+			<h5>Bad:</h5>
+			<a href="#" class="btn btn-grey btn-small btn-give" style="margin-bottom:1em">Send message</a>
+			<ul class="unstyled">
+				<li><i class="icon-remove"></i>Uses styling reserved for primary calls to action</li>
+				<li><i class="icon-remove"></i>Does not use title casing</li>
+			</ul>
 		</div>
 	</div>
 	<hr class="soften" />

@@ -44,4 +44,35 @@
 	<hr class="soften" />
 	<h4>Overriding and Creating Styles</h4>
 	<p>In some cases you may wish to override the default styles provided with the framework, or add some of your own. Sitecore provides the ability to specify a stylesheet that contains your overrides and new styles. <strong>Do not use inline styles</strong>, as these add time to page load, increase difficulty of making changes at a later date, interfere with print styling, and can negatively impact search rankings. Also, as a best practice we strive to keep the presentation layer separate from the content.</p>
+	<p>The following example shows how to properly create an indented red paragraph:
+	<p style="color:red; margin:0em 4em;">
+	   A beautiful red sentence.
+	</p>
+	<div class="row-fluid">
+			<div class="span6 good">
+				<h5>Good:</h5>
+				<pre class="prettyprint">&lt;p class=&quot;error-message&quot;&gt;
+   A beautiful red sentence.
+&lt;/p&gt;</pre>
+	<p class="filename">document.html</p>
+	<pre class="prettyprint">.error-message {
+   color:red;
+   margin:0em 4em;
+}</pre>
+	<p class="filename">my-site.css</p>
+	<ul class="unstyled">
+		<li><i class="icon-ok"></i>Custom styling is achieved with classes and a CSS file.</li>
+	</ul>
+			</div>
+		<div class="span6 bad">
+			<h5>Bad:</h5>
+			<pre class="prettyprint">&lt;p style=&quot;color:red; margin:0em 4em;&quot;&gt;
+   A beautiful red sentence.
+&lt;/p&gt;</pre>
+			<p class="filename">document.html</p>
+			<ul class="unstyled">
+				<li><i class="icon-remove"></i>Custom styling achieved with inline style attribute.</li>
+			</ul>
+		</div>
+	</div>
 </div>

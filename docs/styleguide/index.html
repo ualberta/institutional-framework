@@ -39,14 +39,92 @@
   
   <!-- Head Scripts: MODERNIZR/ANALYTICS ONLY!  All others before </body> -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-  
   <style>
   
-  	pre {
+  	body {
+  		margin-bottom: 1.57em;
+  	}
+  
+  	.not-code .extrude {
+  		margin-bottom: 1em;
+  	}
+  
+  	pre.prettyprint {
   		overflow: auto;
-  		border:  1px solid #ddd;
-  		padding: 10px;
+  		border:  1px solid #ddd!important;
+  		padding: 10px!important;
   		background: #fff;
+  		font-size: 1.25em;
+  		line-height: 1.57em;
+  		margin-top: 0;
+  	}
+  	
+  	pre.prettyprint + p.filename {
+  		margin-bottom: 1.57em;
+  	}
+  	
+  	p.filename {
+  		background: #DDD;
+  		color: #666;
+  		padding: 0 5px;
+  		font-weight: bold;
+  		font-size: 11px;
+  		margin-top: -1.33em;
+  	}
+  	
+  	.bad, .good {
+  		position: relative; 
+  		padding: 10px; 
+  		margin-top: 1.57em; 
+  		pointer-events: none;
+  	}
+  	
+  	.bad:after, .good:after {
+  		content: "";
+  		position: absolute;
+  		top: 0;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+
+  	}
+  	
+  	.bad:after {
+			background: rgba(255,0,0,0.05);
+			border: 1px solid rgba(255,0,0,0.15);
+  	}
+  	
+  	.good:after {
+  		background: rgba(0,255,0,0.05);
+  		border: 1px solid rgba(0,255,0,0.15);
+  	}
+  	
+  	.bad ul i {
+  		color: red;
+  		margin-right: 5px;
+  		position: absolute;
+  		left: -20px;
+  		top: 1px;
+  	}
+  	
+  	.good ul i {
+  		color: green;
+  		margin-right: 5px;
+  		position: absolute;
+  		left: -20px;
+  	}
+  	
+  	.good h5,
+  	.bad h5 {
+  		margin-top: 0.2em;
+  	}
+  	
+  	.bad ul, .good ul {
+  		margin-left: 20px;
+  	}
+  	
+  	.bad ul li, .good ul li {
+  		position: relative;
   	}
   
   	.highlight {
@@ -630,6 +708,7 @@
 				var that = $(this);
 				that[ that.attr( 'href' ) === hash ? 'addClass' : 'removeClass' ]( 'current-page' ).parent().addClass('nav-active');;
 			});
+			$.getScript("https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js");
 		});
 
 		$(window).hashchange();
