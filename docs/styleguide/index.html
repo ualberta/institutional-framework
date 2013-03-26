@@ -48,7 +48,45 @@
   	.not-code .extrude {
   		margin-bottom: 1em;
   	}
-  
+  	
+  	.principles {
+  		list-style: none;
+  		margin: 0;
+  	}
+  	.principles li ul {
+  		margin-left: 1.3em;
+  	}
+  	.principles li .message {
+	  	position: relative;
+	  	margin: 0.79em 0;
+	  	color: rgba(0,0,0,0.65);
+  		padding: 1em 1em 1em 3.25em;
+  		border-radius: 4px;
+  		-webkit-border-radius: 4px;
+  		-moz-border-radius: 4px;
+  		font-size: 1.3em;
+  	}
+  	.principles li i {
+  		position: absolute;
+  		left: 0.55em;
+  		font-size: 1.5em;
+  	}
+  	.principles .do .message {
+  		background: rgba(0,255,0,0.1);
+  		border: 1px solid rgba(0,155,0,0.25);
+  		text-shadow: 1px 1px 1px rgba(0,155,0,0.35);
+  	}
+  	.principles .do i {
+  		color: green;
+  	}
+  	.principles .dont .message {
+  		background: rgba(255,0,0,0.1);
+  		border: 1px solid rgba(155,0,0,0.25);
+  		text-shadow: 1px 1px 1px rgba(155,0,0,0.35);
+  	}
+  	.principles li.dont i {
+  		color: red;
+  	}
   	pre.prettyprint {
   		overflow: auto;
   		border:  1px solid #ddd!important;
@@ -105,6 +143,26 @@
   		position: absolute;
   		left: -20px;
   		top: 1px;
+  	}
+  	
+  	ul.checklist li {
+  		position: relative;
+  		margin-left: 20px;
+  	}
+  	
+  	ul.checklist i.icon-remove {
+  		color: red;
+  		margin-right: 5px;
+  		position: absolute;
+  		left: -20px;
+  		top: 1px;
+  	}
+  	
+  	ul.checklist i.icon-ok {
+  		color: green;
+  		margin-right: 5px;
+  		position: absolute;
+  		left: -20px;
   	}
   	
   	.good ul i {
@@ -502,8 +560,10 @@
 						<div id="navigation-pane" class="span3">
 							<ul>
 								<li>
+									<a href="#guidelines">Guidelines</a>
+								</li>
+								<li>
 									<a href="#base-styles">Base Styles<span class="toggle open"></span></a>
-						
 									<ul>
 										<li><a href="#grid">Grid System</a></li>
 										<li><a href="#colors">Colors</a></li>
@@ -516,11 +576,19 @@
 									</ul>
 								</li>
 								<li>
-								<a href="#layouts">Layouts<span class="toggle open"></span></a>
+								<a href="#layouts">Institutional Layouts<span class="toggle open"></span></a>
 									<ul>
 										<li><a href="#ins-home">Institutional Homepage</a></li>
 										<li><a href="#ins-landing">Institutional Landing</a></li>
 										<li><a href="#ins-generic">Institutional Generic</a></li>
+									</ul>
+								</li>
+								<li>
+								<a href="#fac-layouts">Faculty Layouts<span class="toggle open"></span></a>
+									<ul>
+										<li><a href="#fac-home">Faculty Homepage</a></li>
+										<li><a href="#fac-landing">Faculty Landing</a></li>
+										<li><a href="#fac-generic">Faculty Generic</a></li>
 									</ul>
 								</li>
 								<li>
@@ -680,7 +748,7 @@
 		$(window).hashchange( function(){
 		  var hash = location.hash;
 		  if(hash === '')
-		  	hash = "#base-styles";
+		  	hash = "#guidelines";
 			$("#content-pane").load('./content/'+hash.substring(1)+'.html #content', function() {
 			  $('#content-pane .style-item').each(function() {
 			  	$(this).append('<ul class="properties-list">'+getProperties($($(this).data("selector")), typeProperties)+'</ul>');
