@@ -7,6 +7,10 @@
 .lt-ie10 .link-mod-container>li.link-mod-active h4 a{background-color:#127c38;}
 .lt-ie10 .module-container .module-heading .module-actions li{padding-left:5px;}
 .lt-ie10 .flex-direction-nav li a:hover{text-decoration:none;}
+.lt-ie10 div.scfForm input{padding-top:0;padding-bottom:0;}
+.lt-ie10 div.scfForm .scfSubmitButtonBorder input{padding-top:0.8em;padding-bottom:0.6em;}
+.lt-ie10 div.scfForm .scfCheckBoxListGeneralPanel input{margin-top:3px;}
+.lt-ie10 div.scfForm .scfRadioButtonListGeneralPanel input{margin-top:2px;}
 .ie9 h5.sidebar-title{width:100%;}
 .lt-ie9 input[type='text']{padding-top:0.58em;padding-bottom:0em;}
 .lt-ie9 .hover-caption-container i{position:absolute;font-size:6em;color:#fff;left:50%;margin-left:-0.35em;top:10%;margin-top:0.2em;text-shadow:0px 0px 10px #000;opacity:0.4;filter:alpha(opacity=40);pointer-events:none;width:27%;line-height:1em;}
