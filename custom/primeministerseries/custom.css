@@ -1,4 +1,8 @@
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
 .banner-container{display:none;}
 .navigation-container{display:none;}
 .brand{display:block;}
 .hp-feature .feature-caption{display:none;}
+.hp-feature img{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.secondary-feature{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
