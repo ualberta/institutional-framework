@@ -27,6 +27,15 @@
 @dTop_innerGutterFluid:   percentage(@dTop_Gutter/@dTop_Content);
 
 .ualberta-home {
+// Temporary dino button
+	.explore-bar-container ul.explore-bar li i.icon-exp-dino {
+		background-image: url(http://www.ualberta.ca/~publicas/uofa/img/icons/icon-dino-grey.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.explore-bar-container ul.explore-bar li i.icon-exp-dino:hover {
+		background-image: url(http://www.ualberta.ca/~publicas/uofa/img/icons/icon-dino.svg);
+	}
 	ul.slides .image-shadow:before{
 		right:0;
 	}
@@ -193,14 +202,6 @@
     &:active {
       .box-shadow(none);
     }
-  }
-  .icon-exp-dino {
-  	background-image: url(~publicas/uofa/img/icons/icon-dino.svg);
-  	background-position: center;
-  	background-repeat: no-repeat;
-  }
-  .icon-exp-dino:hover {
-  	background-image: url(~publicas/uofa/img/icons/icon-dino-grey.svg);
   }
 }
 
@@ -410,7 +411,7 @@
 @media (min-width: 61.25em) {
   
   .ualberta-home {
-    .row-fluid {
+      .row-fluid {
       .main-content {
         width: @dTop_ContentFluid;
       }
@@ -474,6 +475,13 @@
   }
 
 }
+
+@media (max-width: 75em) {
+	.ualberta-home .explore-bar-container ul.explore-bar li i.icon-exp-dino {
+		background-size: 80%;
+	}
+}
+
 @media (min-width:61.250em) and (max-width:74.938em){
   .ualberta-home .fma-container ul.slides li.pride-week .fma-content{
   	top:65%;
