@@ -18,6 +18,7 @@
 .lt-ie9 .thumbnail-container .hover-caption-container i{top:0%;line-height:1em;width:30%;}
 .lt-ie9 hr.secondary-hr{display:none;}
 .lt-ie9 .make-a-gift .btn-give.btn-micro{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);font-size:0.9em;padding-top:1em;padding-bottom:0.7em;}.lt-ie9 .make-a-gift .btn-give.btn-micro:hover{background-image:none;background-color:#f3f7f5;border-color:#ccc;}
+.lt-ie9 .ualberta-home div.explore-bar-container ul.explore-bar li i.icon-exp-dino{background-image:url(http://www.ualberta.ca/~publicas/uofa/img/icons/icon-dino-ie.png);background-position:0 0;}.lt-ie9 .ualberta-home div.explore-bar-container ul.explore-bar li i.icon-exp-dino:hover{background-position:0px -51px;}
 .lt-ie9 .ualberta-home .fma-container{margin-top:1.57em;}.lt-ie9 .ualberta-home .fma-container .image-shadow::before{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
 .lt-ie9 .ualberta-home .fma-container ul.slides img.fma-background{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;max-width:100%;}
 .lt-ie9 .ualberta-home .why-ualberta-row p.description{width:54%;margin-left:23.1%;position:relative;top:-13px;margin-bottom:0;}

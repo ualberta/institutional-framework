@@ -5,5 +5,6 @@
 .brand{display:block;}
 .hp-feature .feature-caption{display:none;}
 .hp-feature img{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
-.secondary-feature img{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
-.brian-mulroney-feature{background-image:url('../../img/primeministerseries/brian-mulroney.jpg');display:block;width:auto;height:350px;}
+.brian-mulroney-feature{background-image:url('../../img/primeministerseries/brian-mulroney.jpg');display:block;width:auto;height:350px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.bm-text{float:left;margin:112px 0px 0px 77px;}
+.bm-img{float:right;}
