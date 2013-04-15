@@ -21,13 +21,38 @@
 	background-image:url('../../img/primeministerseries/brian-mulroney.jpg');
 	display:block;
 	width:auto;
-	height:350px;
-	.border-radius(4px);
+	overflow:auto;
 }
-.bm-text{
+@media (max-width:25em){
+.brian-mulroney-feature{
+	//height:150px;
+}
+.bm-text img{
+	margin:40px 0px 0px 13px;
+	width:90%;
+}
+}
+@media (min-width:25.063em) and (max-width:33.438em){
+.brian-mulroney-feature{
+	//height:200px;
+}
+.bm-text img{
+	margin:40px 0px 0px 13px;
+	width:90%;
+}
+}
+@media (min-width:33.500em) and (max-width:43.063em){
+.brian-mulroney-feature{
+	//height:250px;
+}
+}
+
+@media (min-width:75.000em){
+.bm-text img{
 	float:left;
-	margin:112px 0px 0px 77px;
+	margin:112px 0px 0px 71px;
 }
-.bm-img{
+.bm-img img{
 	float:right;
+}
 }
