@@ -4,4 +4,6 @@
 .lt-ie9 .secondary-feature-cnt{position:relative;}
 .lt-ie9 .bm-text{float:left;width:52%;margin:95px 0px 0px 65px;}
 .lt-ie9 .bm-img{width:40%;float:right;}
+.lt-ie9 .no-inlinesvg .blade-inner .brand-img img{display:none;}
+.lt-ie9 .no-inlinesvg .blade-inner .brand{background:transparent url(../../img/ua_logo.png) no-repeat center center;width:12.14em;height:2.85em;}
 .ie7 .sidebar-videos .no-boxshadow .image-shadow{border:none;}
