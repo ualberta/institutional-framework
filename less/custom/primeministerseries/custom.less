@@ -1,7 +1,9 @@
  // Core variables and mixins
  @import "../../framework/base/variables.less"; // Modify this for custom colors, font-sizes, etc
  @import "../../framework/base/mixins.less";
-
+ul.breadcrumbs{
+	display:none;
+}
 .banner-container{
 	display:none;
 }
@@ -25,6 +27,14 @@
 }
 .bm-img{
 	float:right;
+}
+.sidebar-videos{
+	.hover-caption-container .caption{
+		line-height:1.2em;
+	}
+	.hover-caption-container i{
+		font-size:4em;
+	}
 }
 @media (max-width:36.500em){
 .bm-img{
@@ -61,5 +71,8 @@
 .bm-text{
 	float:left;
 	margin:112px 0px 0px 71px;
+}
+.bm-text img{
+	width:658px;
 }
 }
