@@ -912,3 +912,4 @@ ul.accordion-list li.expanded div{display:block;padding:10px;}
 .no-cssgradients .btn-work,.no-cssgradients .btn-give{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-lg-greygloss.png);}.no-cssgradients .btn-work:hover,.no-cssgradients .btn-give:hover{filter:none;background-image:none;background-color:#fff;}
 .no-cssgradients .btn-green{filter:none;background:#007c41;}
 .no-cssgradients hr.soften{text-align:center;border-top:1px solid #ccc;border-bottom:1px solid #fff;*display:list-item;*list-style:url(../img/hr-bevel-short.png) inside;*filter:alpha(opacity=0);*margin-left:-10px;*width:0;*border:none;}
+.touch .hover-caption-container .caption{bottom:0;}
