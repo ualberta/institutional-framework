@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'explore-icons';
+  src: url("../font/explore-icons.eot");
+  src: url("../font/explore-icons.eot?#iefix") format('embedded-opentype'), url("../font/explore-icons.woff") format('woff'), url("../font/explore-icons.ttf") format('truetype'), url("../font/explore-icons.svg#explore-icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-exp"]:before,
+[class*=" icon-exp"]:before {
+  font-family: 'explore-icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: inherit;
+}
+
+.icon-exp-summer:before { content: '\4d'; } /* 'M' */
+.icon-exp-wellness:before { content: '\46'; } /* 'F' */
+.icon-exp-maps:before { content: '\47'; } /* 'G' */
+.icon-exp-students:before { content: '\4f'; } /* 'O' */
+.icon-exp-museum:before { content: '\50'; } /* 'P' */
+.icon-exp-rec:before { content: '\51'; } /* 'Q' */
+.icon-exp-pres:before { content: '\52'; } /* 'R' */
+.icon-exp-governance:before { content: '\4a'; } /* 'J' */
+.icon-exp-international:before { content: '\4e'; } /* 'N' */
+.icon-exp-sustainability:before { content: '\44'; } /* 'D' */
+.icon-exp-grad:before { content: '\45'; } /* 'E' */
+.icon-exp-media:before { content: '\4c'; } /* 'L' */
+.icon-exp-athletics:before { content: '\48'; } /* 'H' */
+.icon-exp-community:before { content: '\4b'; } /* 'K' */
+.icon-exp-programs:before { content: '\41'; } /* 'A' */
+.icon-exp-events:before { content: '\43'; } /* 'C' */
+.icon-exp-bookstore:before { content: '\49'; } /* 'I' */
+.icon-exp-cal:before { content: '\42'; } /* 'B' */
+.icon-exp-dino:before { content: '\53'; } /* 'S' */
