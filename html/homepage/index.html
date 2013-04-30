@@ -6,9 +6,6 @@
 <!--[if IE 10]>    <html class="no-js ie10" lang="en"> <![endif]-->
 <!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head> 
-<script type="text/javascript">
-var _uofapreloadtimestamp = (new Date()).getTime();
-</script> 
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
   <!-- Meta: These two must be before <title> -->
@@ -82,12 +79,6 @@ _gaq.push(['rollup._setAllowLinker', true]);
 _gaq.push(['rollup._setAllowAnchor', true]);
 _gaq.push(['rollup._setSiteSpeedSampleRate', 100]);
 _gaq.push(['rollup._trackPageview']);
-_gaq.push(['timing._setAccount', 'UA-12324208-6']);
-_gaq.push(['timing._setDomainName', '.ualberta.ca']);
-_gaq.push(['timing._setAllowLinker', true]);
-_gaq.push(['timing._setAllowAnchor', true]);
-_gaq.push(['timing._setSiteSpeedSampleRate', 100]);
-_gaq.push(['timing._trackPageview', location.pathname + '?load=start']);
 (function() {
 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -709,13 +700,6 @@ var _kiq = _kiq || [];
 <script type="text/javascript" src="//s3.amazonaws.com/ki.js/22238/4tc.js" async>
 // End Qualaroo code
 </script>
-<script type="text/javascript">
-window.onload = function() {
-	var _uofafinishedtimestamp = (new Date()).getTime();
-	var _uofaloadtime = _uofafinishedtimestamp - _uofapreloadtimestamp;
-	_gaq.push(['timing._trackPageview', location.pathname + '?load=end']);
-	_gaq.push(['timing._trackEvent', 'page loaded', location.href, '', _uofaloadtime, true]);
-};
-</script>
+
 <script src="//www.ualberta.ca/~publicas/uofa/ga/ualberta/scroll90b.js"></script></body>
 </html>
