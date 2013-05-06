@@ -80,7 +80,7 @@ production:
 	@echo "Compiling custom less...                     ${CHECK} Done"
 	@cp -r ./custom ${PRODDIR}
 	@echo "Copying custom files...                      ${CHECK} Done"
-	@cat js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ${PRODDIR}/js/bootstrap.js
+	@cat js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-tab.js > ${PRODDIR}/js/bootstrap.js
 	@uglifyjs -nc ${PRODDIR}/js/bootstrap.js > ${PRODDIR}/js/bootstrap.min.js
 	@cp -r ./js ${PRODDIR}
 	@echo "Minifying and copying javascript...          ${CHECK} Done"
