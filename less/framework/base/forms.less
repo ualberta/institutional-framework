@@ -421,6 +421,10 @@ select:focus:required:invalid {
 .datepicker {
 	padding: 4px;
 	.border-radius(4px);
+	&.dropdown-menu {
+		background-color: #fff;
+		border-color: #ccc;
+	}
 	&-inline {
 		width: 220px;
 	}
@@ -434,8 +438,6 @@ select:focus:required:invalid {
 	&-dropdown {
 		top: 0;
 		left: 0;
-		background-color: #fff;
-		border-color: #ccc;
 		&:before {
 			content: '';
 			display: inline-block;
