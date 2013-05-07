@@ -419,11 +419,22 @@ select:focus:required:invalid {
 // DATE PICKER
 
 .datepicker {
+	/* Adds formatting to the input box */
+	input[type="text"], .uneditable-input {
+	  display: inline-block;
+	  height: 18px;
+	  padding: 4px;
+	  margin-bottom: 9px;
+	  font-size: 13px;
+	  line-height: 18px;
+	  color: #555555;
+	}
 	padding: 4px;
 	.border-radius(4px);
 	&.dropdown-menu {
 		background-color: #fff;
 		border-color: #ccc;
+		padding: 4px;
 	}
 	&-inline {
 		width: 220px;
