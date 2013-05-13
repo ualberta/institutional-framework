@@ -423,9 +423,9 @@ select:focus:required:invalid {
 	
 	input[type="text"], .uneditable-input {
 	  display: inline-block;
-	  height: 18px;
+	  height: @baseLineHeight;
 	  margin-bottom: 9px;
-	  line-height: 18px;
+	  line-height: @baseLineHeight;
 	  color: #555555;
 	  width: auto;
 	}
@@ -618,7 +618,7 @@ select:focus:required:invalid {
 .input-prepend {
 	font-size: 1em;
 	.add-on {
-		height: 18px;
+		height: @baseLineHeight;
 	}
 	&.date {
 		.add-on i {
@@ -662,7 +662,7 @@ select:focus:required:invalid {
 .bootstrap-timepicker {
     position: relative;
 	input[type="text"] {
-	  height: 18px;
+	  height: @baseLineHeight;
 	}
     &.pull-right {
         .bootstrap-timepicker-widget {
