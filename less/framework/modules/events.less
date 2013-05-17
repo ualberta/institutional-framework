@@ -125,6 +125,9 @@
 		table, thead, tbody, th, td, tr { 
 			display: block; 
 		}
+		.table-bordered {
+			border: none;
+		}
 		/* Hide table headers (but not display: none;, for accessibility) */
 		thead tr { 
 			position: absolute;
@@ -137,7 +140,6 @@
 		td { 
 			/* Behave  like a "row" */
 			border: none;
-			border-bottom: 1px solid #eee; 
 			position: relative;
 		}
 	}
