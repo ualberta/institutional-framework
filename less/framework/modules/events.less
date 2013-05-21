@@ -169,6 +169,10 @@
 		.table-bordered {
 			border: none;
 		}
+		&.pending {
+			td:nth-of-type(2):before { content: "Event name"; }
+			td:nth-of-type(3):before { content: "Action"; }
+		}
 	}
 }
 @media (min-width: 43.0625em) {
