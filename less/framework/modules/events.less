@@ -126,6 +126,9 @@
 			display: block; 
 		}
 		table {
+			&.table {
+				margin-bottom: 0;
+			}
 			width: auto;
 			/* Hide table headers (but not display: none;, for accessibility) */
 			thead tr { 
@@ -182,6 +185,9 @@
 }
 @media (min-width: 43.0625em) {
 	.events-approval table{
+		&.table {
+			margin-bottom: 0;
+		}
 		tr:last-child {
 			border: none;
 			margin-bottom: 0;
