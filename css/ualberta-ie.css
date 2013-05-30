@@ -89,6 +89,7 @@
 .lt-ie9 .fma-tabs-container .container .fma-tabs li a{border-right:1px solid #ccc;}
 .lt-ie9 .ualberta-home .fma-container ul.slides li.sirish .fma-content{left:370px;top:140px;width:43%;}
 .lt-ie9 .ualberta-home .fma-container ul.slides li.sirish h3{color:#007c41;}
+.lt-ie9 .convocation-feature header{background:transparent url('http://www.ualberta.ca/~publicas/uofa/img/spring-convo-2013-ribbon-v2.png') no-repeat top left;position:absolute;top:10px;height:125px;width:318px;overflow:hidden;left:0px;}
 .lt-ie8 .ualberta-home .flexslider .flex-direction-nav li a.flex-prev{width:31px;height:46px;background-image:url('../img/prev-arrow.png');top:150px;}
 .lt-ie8 .ualberta-home .flexslider .flex-direction-nav li a.flex-next{width:31px;height:46px;background-image:url('../img/next-arrow.png');top:150px;}
 .lt-ie8 .virtual-btn{line-height:2em;}
@@ -107,3 +108,4 @@
 .lt-ie8 .ualberta-home .daily-news .subscribe-form .btn,.lt-ie8 .ualberta-home .find-a-person .person-search .btn{margin-top:2px;outline:none;}
 .lt-ie8 .ualberta-home .daily-news .subscribe-form input{padding-top:0.57em;padding-bottom:0em;padding-right:0;}
 .lt-ie8 .ualberta-home .daily-news .subscribe-form input.email-input{padding-top:0.57em;padding-bottom:0em;padding-right:0;}
+.lt-ie8 .convocation-feature nav{left:0px;}
