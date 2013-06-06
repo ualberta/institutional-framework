@@ -50,7 +50,7 @@
 .lt-ie9 .banner-container nav.audience-navigation ul li a{color:#fff;font-family:"DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:normal;}
 .lt-ie9 .banner-container nav.audience-navigation ul li a:hover{text-decoration:underline;}
 .lt-ie9 .banner-container .banner-logo{position:absolute;z-index:999;top:20px;}
-.lt-ie9 .banner-container .banner-inner h1{display:none;}
+.lt-ie9 .banner-container .banner-inner .site-title{display:none;}
 .lt-ie9 .navigation-container{border-bottom:1px solid #ccc;}.lt-ie9 .navigation-container .navigation-inner>ul>li{display:block;*zoom:1;margin-right:0px;}.lt-ie9 .navigation-container .navigation-inner>ul>li:before,.lt-ie9 .navigation-container .navigation-inner>ul>li:after{display:table;content:"";line-height:0;}
 .lt-ie9 .navigation-container .navigation-inner>ul>li:after{clear:both;}
 .lt-ie9 .navigation-container .navigation-inner ul li ul li a{display:block;}

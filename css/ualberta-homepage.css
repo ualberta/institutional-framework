@@ -47,7 +47,7 @@ ul.breadcrumbs {
   margin-top: 1.57em;
   color: #637169;
 }
-.banner-inner h1 {
+.banner-inner .site-title {
   display: none;
 }
 nav.audience-navigation {
@@ -437,6 +437,9 @@ nav.audience-navigation ul li a:hover {
     text-align: left;
   }
 }
+h1.hp-h1 {
+  display: none;
+}
 @media (min-width: 61.25em) {
   .ualberta-home .row-fluid .main-content {
     width: 79.7872340425532%;
@@ -795,6 +798,11 @@ nav.audience-navigation ul li a:hover {
 @media (max-width: 20.188em) {
   a.read {
     margin-bottom: 5px;
+  }
+}
+@media (max-width: 43.124em) {
+  .fma-container.flexslider .tyler-heal .image-shadow img {
+    margin-right: -100px;
   }
 }
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
