@@ -1,0 +1,59 @@
+//*****************************************
+//** PRINT STYLES
+//******************************************
+//   Hide these:
+//      blade
+//      search box
+//      audience links
+//      header background
+//      horizontal navigation
+//      breadcrumbs
+//      section navigation
+//      sidebar
+//      footer
+//*****************************************/
+
+@media print {
+	body {
+		font: 12pt "Times New Roman", Times, serif;
+	}
+	body, .banner-container {
+		color: #000;
+		background: none;
+		border: 0;
+		margin: 0.5in; /* printer will still assign margins so this may be too huge on top of that */
+	}
+	img {
+		max-width: 100% !important;
+	}
+	.blade-navigation, .blade-search, .banner-logo, nav.audience-navigation, .navigation-container, .breadcrumbs, .inthissection, .sidebar, footer {
+		display: none;
+	}
+	.banner-inner .site-title {
+		color: #000;
+		font-size: 10pt;
+		bottom: 0;
+		position: relative;
+		padding: 0;
+		text-shadow: none;
+/*		Remove the left margin */
+/*		left: 12px; */
+		margin: 14pt 0 6pt 0;
+	}
+	.banner-container, .banner-inner {
+		height: auto;
+	}
+	.content-inner {
+		margin: 0;
+	}
+	h1.page-title {
+		margin: 0 auto;
+	}
+/* Remove the side margins */
+	.blade-inner, .container {
+/*		padding: 0 10px; */
+		padding: 0;
+	}
+}
+  
+  
