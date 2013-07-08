@@ -15,13 +15,14 @@
 
 @media print {
 	body {
-		font: 12pt "Times New Roman", Times, serif;
+		font: 12pt Georgia, "Times New Roman", Times, serif;
 	}
 	body, .banner-container {
 		color: #000;
 		background: none;
 		border: 0;
-		margin: 0.5in; /* printer will still assign margins so this may be too huge on top of that */
+/*		printer will assign margins */
+/*		margin: 0.5in; */ 
 	}
 	img {
 		max-width: 100% !important;
@@ -46,13 +47,31 @@
 	.content-inner {
 		margin: 0;
 	}
-	h1.page-title {
-		margin: 0 auto;
-	}
 /* Remove the side margins */
 	.blade-inner, .container {
 /*		padding: 0 10px; */
 		padding: 0;
+	}
+	h1.page-title {
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 21pt;
+	}
+	h2 {
+		font-size: 18pt;	
+	}
+	h3 {
+		font-size: 16pt;
+	}
+	h4 {
+		font-size: 14pt;
+		}
+	h5, h6 {
+		font-size: 12pt;
+	}
+	h6 {
+		font-style: italic;
 	}
 }
   
