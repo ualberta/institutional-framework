@@ -14,6 +14,7 @@
 //*****************************************/
 
 @media print {
+<<<<<<< HEAD
 	body {
 		font: 12pt Georgia, "Times New Roman", Times, serif;
 	}
@@ -73,6 +74,64 @@
 	h6 {
 		font-style: italic;
 	}
+=======
+
+/* Hide navigation elements, header, footer, sidebar */
+nav.blade-navigation, .blade-search, .banner-logo, .oval, nav.audience-navigation, .navigation-container, .breadcrumbs, .span3.inthissection, .sidebar, footer, hr.softline {
+    display: none;
+  }
+
+body {
+    font: 11pt Georgia, "Times New Roman", Times, serif;
+    line-height: 150%;
+    color: #000;
+  }
+.brand img {
+    width: 140pt;
+  }
+.blade-inner {
+	border-bottom: 1px solid #ccc;
 }
-  
-  
+.banner-inner {
+	margin: 14pt 0 0 0;
+}
+.banner-inner .site-title {
+    color: #000;
+    line-height: 125%;
+    text-decoration: none;
+    font-family: "DIN Medium","Helvetica Neue",Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+ h1, h2, h3, h4, h5, h6 {
+ 	font-family: "DIN Medium","Helvetica Neue",Helvetica, Arial, sans-serif;
+ 	line-height: 125%;
+ 	padding-top: 0;
+ 	margin-top: 18pt;
+ 	padding-bottom: 0;
+ 	margin-bottom: 11pt;
+ 	font-weight: bold;
+ }
+  h1.page-title {
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 21pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  h3 {
+    font-size: 16pt;
+  }
+  h4 {
+    font-size: 14pt;
+  }
+  h5 {
+    font-size: 12pt;
+  }
+  h6 {
+    font-size: 11pt;
+  }
+>>>>>>> chowk-print-styles
+}
