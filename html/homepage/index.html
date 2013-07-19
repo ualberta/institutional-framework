@@ -477,7 +477,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 <!-- scripts concatenated and minified via build script -->
 <script src="/~publicas/uofa/js/bootstrap.min.js"></script>
-<script src="/~publicas/uofa/js/ualberta/jquery.tweet.js"></script>
 <script src="/~publicas/uofa/js/ualberta/institutional.js"></script>
 <script src="/~publicas/uofa/js/ualberta/jquery.flexslider-min.js"></script>
 <script>
@@ -591,14 +590,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       });
       
       $("#fma-carousel").flexslider();
-      
-           
-      $(".twitter-feed").tweet({
-        count: 3,
-        username: "UAlberta",
-        loading_text: "loading",
-        template: "{text} {time}<br/>{reply_action} {retweet_action} {favorite_action}"
-      });
       
       // Fetch News
       // --------------------
