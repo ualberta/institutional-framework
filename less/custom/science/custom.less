@@ -107,7 +107,10 @@
 // Make sure inline links are underlined
 .primary-content-area, .sidebar { 
 	p a { 
-		text-decoration:underline; 
+		text-decoration: underline; 
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 // Remove button underlines
