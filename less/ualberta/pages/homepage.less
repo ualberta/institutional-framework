@@ -611,13 +611,66 @@
 // ------------------------------------------
 // Dino 101, July 26, 2013
 // ----------------------------------------
+
+
+@media (max-width: 61.1875em) {
+	.ualberta-home {
+		&.content-wrapper {
+			background: #f6f6f6 url(/~publicas/uofa/img/features/fma-dino1-sm.jpg) no-repeat top center;
+			background-size: 980px auto;
+		}
+		#fma-carousel {
+			height: 257px;
+		}
+		.fma-container.flexslider {
+			margin-top: 0;
+			box-shadow: none;
+		}
+		.content-top-row {
+			background-color: rgba(236, 235, 212, 0.6);
+			.box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.4), 0px 2px 2px white);
+			border-top: 1px solid rgba(0, 50, 25, 0.35);
+		}
+	}
+}
+@media (max-width: 43.0625em) {
+	.ualberta-home {
+		&.content-wrapper {
+			background-position: top right;
+		}
+		.content-top-row {
+			background-color: none;
+			.box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0), inset 0px 0px 6px rgba(0,0,0,0.4), 0px 2px 2px white);
+		}
+	}
+}
+@media (min-width: 61.25em) {
+	.ualberta-home {
+		&.content-wrapper {
+			background: #f6f6f6 url(/~publicas/uofa/img/features/fma-dino1.jpg) no-repeat top center;
+			background-size: auto 415px;
+		}
+		#fma-carousel {
+			height: 300px;
+		}
+		.fma-container.flexslider {
+			margin-top: 0;
+			box-shadow: none;
+		}
+		.content-top-row {
+			background-color: rgba(236, 235, 212, 0.6);
+			.box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.4), 0px 2px 2px white);
+			border-top: 1px solid rgba(0, 50, 25, 0.35);
+		}
+	}
+}
 @media (min-width: 75em) {
 	.ualberta-home {
 		&.content-wrapper {
-			background: url(/~publicas/uofa/img/features/fma-dino1.jpg) no-repeat;
+			background-size: auto;
 		}
-		.fma-carousel {
-			width: 300px;
+		#fma-carousel {
+			height: 370px;
 		}
 	}
 }
