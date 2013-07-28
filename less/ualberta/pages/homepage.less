@@ -612,11 +612,24 @@
 // Dino 101, July 26, 2013
 // ----------------------------------------
 
-.ualberta-home #fma-carousel h3 a {
-	display: block;
+.ualberta-home .dino-logo {
+	position: absolute;
+	right: 15px;
+	bottom: 0;
 	width: 121px;
-	height: 179px;
-	background: url(/~publicas/uofa/img/features/fma-dino-logo.png) no-repeat;
+	h3 {
+		margin-bottom: 0;
+		a {
+			display: block;
+			width: 121px;
+			height: 179px;
+			background: url(/~publicas/uofa/img/features/fma-dino-logo.png) no-repeat top center;
+			.opacity(90);
+			&:hover {
+				.opacity(100);
+			}
+		}
+	}
 	span {
 		margin-left: -9999em;
 	}
@@ -624,16 +637,24 @@
 
 @media (max-width: 61.1875em) {
 	.ualberta-home {
+		.dino-logo {
+			right: 9px;
+			h3 a {
+				height: 120px;
+				background-size: auto 120px;
+			}
+		}
 		&.content-wrapper {
 			background: #f6f6f6 url(/~publicas/uofa/img/features/fma-dino1-sm.jpg) no-repeat top center;
 			background-size: 980px auto;
 		}
 		#fma-carousel {
-			height: 257px;
+			height: 271px;
 		}
 		.fma-container.flexslider {
 			margin-top: 0;
-			box-shadow: none;
+			margin-bottom: 0;
+			.box-shadow(0 0 0 #fff);
 		}
 		.content-top-row {
 			background-color: rgba(235, 236, 194, 0.6);
@@ -657,19 +678,28 @@
 	.ualberta-home {
 		&.content-wrapper {
 			background: #f6f6f6 url(/~publicas/uofa/img/features/fma-dino1.jpg) no-repeat top center;
-			background-size: auto 415px;
+			background-size: auto 430px;
 		}
 		#fma-carousel {
-			height: 300px;
+			height: 315px;
 		}
 		.fma-container.flexslider {
 			margin-top: 0;
-			box-shadow: none;
+			margin-bottom: 0;
+			.box-shadow(0 0 0 #fff);
 		}
 		.content-top-row {
 			background-color: rgba(235, 236, 194, 0.6);
 			.box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.4), 0px 2px 2px white);
 			border-top: 1px solid rgba(0, 50, 25, 0.35);
+		}
+	}
+}
+@media (min-width: 61.25em) and (max-width: 74.938em) {
+	.ualberta-home {
+		.dino-logo h3 a {
+			height: 135px;
+			background-size: auto 135px;
 		}
 	}
 }
@@ -679,7 +709,7 @@
 			background-size: auto;
 		}
 		#fma-carousel {
-			height: 370px;
+			height: 385px;
 		}
 	}
 }
