@@ -181,6 +181,28 @@ html[xmlns] .slides {display: block;}
     } 
   }
 }
+.fma-small-dino.image-caption-container .caption {
+	background: url(-/media/digitallearning/dino101/fma-dino-logo-small-green.png) no-repeat top right;
+	p {
+		width: 65%;
+	}
+}
+
+@media (max-width: 31.188em) {
+	.fma-small-dino.image-caption-container .caption {
+		background-size: 
+			33% auto;
+		h3, p {
+			width: 65%;
+		}
+	}
+}
+
+@media (min-width: 31.250em) and (max-width: 43.0625em) {
+	.fma-small-dino.image-caption-container .caption {
+		background: rgba(0,0,0,0.45) url(-/media/digitallearning/dino101/fma-dino-logo-small.png) no-repeat top right;
+	}
+}
 
 @media (min-width: 43.125em)
 {
@@ -236,6 +258,9 @@ html[xmlns] .slides {display: block;}
     width: 878px;
     height: 313px;
   }
+  .fma-small-dino.image-caption-container .caption {
+  	background: rgba(0,0,0,0.45) url(-/media/digitallearning/dino101/fma-dino-logo-small.png) no-repeat top right;
+  }
 }
 
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
@@ -245,5 +270,8 @@ html[xmlns] .slides {display: block;}
   .thumbnail-container .frame,
   .thumbnail-container .frame {
     width: 165px;
+  }
+  .fma-small-dino.image-caption-container .caption {
+  	background: rgba(0,0,0,0.45) url(-/media/digitallearning/dino101/fma-dino-logo-small.png) no-repeat top right;
   }
 }
