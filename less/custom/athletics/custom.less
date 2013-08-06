@@ -49,7 +49,9 @@
 }
  
 
-/********* Highlighted Games*********/
+/*** Highlighted Games Module ***/
+
+
 
 .highlighted-games {
 	padding: 0;
@@ -68,7 +70,18 @@
 		vertical-align: top;
 	}
 	
-	.extrude.score-module:hover {
+	.extrude.score-module.played-game {
+		background: #e8eeea;
+		border: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 0px 2px rgba(0, 30, 15, 0.4);
+		-moz-box-shadow: 0 0px 2px rgba(0, 30, 15, 0.4);
+		box-shadow: 0px 0px 2px rgba(0, 30, 15, 0.4);
+	}
+	
+	.extrude.score-module:hover, .extrude.score-module.played-game:hover {
 		background: #fff5b8;
 	}
 	
@@ -149,11 +162,45 @@
 	
 }
 
+@media (max-width: 31.25em) {
+
+	.flexslider .flex-direction-nav li a {
+		margin-top: -22px;
+	}
+
+}
+
+
+
+/*** END Highlighted Games Module ***/
+
+
+
+/*** Schedule ***/
+
+.the-games {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
 
 
 
-/************ END Highlighted Games Module ******************/
+
+
+/*** Other Athletic fixes ***/
+
+
+.fma-background {
+    max-height: 350px;
+    overflow: hidden;
+}
+
+/*** END Other Athletic Fixes ***/
+
+
+
 
 
 
