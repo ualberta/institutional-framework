@@ -257,16 +257,16 @@
 
 /*** Athletics Homepage News ***/
 
-.data-list li {
+.front-news-list li {
     position: relative;
     min-height: 97px;
 }
 
-.data-list h4, .data-list p {
+.front-news-list h4, .front-news-list p {
     padding: 0 0 0 100px;
 }
 
-.data-thumbnail {
+.front-news-thumbnail {
     width: 12%;
     margin: 0 10px 5px 0;
     min-width: 81px;
@@ -276,13 +276,13 @@
     position: absolute;
 }
 
-.data-thumbnail a {
+.front-news-thumbnail a {
     min-width: 81px; 
     height: 78px; 
     overflow: hidden;
 }
 
-.data-thumbnail a img {
+.front-news-thumbnail a img {
     max-width: none;
     height: 78px;
 	margin: 0 0 0 -35%;
@@ -290,6 +290,57 @@
 
 /*** END Athletics Homepage News ***/
 
+
+/*** Athletics Roster Page ***/
+
+.roster ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.roster ul li ul li {
+    width: 30%;
+    display: inline-block;
+    border: 0;
+    vertical-align: top;
+}
+.roster .link-name {
+    background: #FFF;
+    color: #007c41;
+    font-weight: bold;      
+    background-image: -moz-linear-gradient(top, #ffffff, #eef3f0); 
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eef3f0)); 
+    background-image: -webkit-linear-gradient(top, #ffffff, #eef3f0); 
+    background-image: -o-linear-gradient(top, #ffffff, #eef3f0); 
+    background-image: linear-gradient(to bottom, #ffffff, #eef3f0); 
+    background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeef3f0', GradientType=0); text-shadow: 1px 1px 0px #fff;
+    padding: 1%;
+    cursor: pointer;
+}
+.roster ul li {
+    border-bottom: 1px solid #dfe9e3;
+    border-left: 1px solid #dfe9e3;
+    border-right: 1px solid #dfe9e3;
+}
+.roster ul li:first-child {
+    border-left: 0;
+    border-right: 0;
+}
+.roster ul li ul .hidden {
+    display: none;
+}
+.roster ul .bio {
+    background: #fff;
+    padding: 2%;
+    overflow: hidden;
+}
+.roster .bio img {
+    max-width: 30%;
+    float: left;
+    margin-right: 2%;
+}
+
+/*** END Roster Page ***/
 
 
 /*** Other Athletic fixes ***/
