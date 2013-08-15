@@ -8,8 +8,8 @@
 //		Connect:        	69
 //      Giving:  			73
 //      Scores & Schedules:	98
-//      Benefits:        	62
-//      Events:          	77
+//      Teams:        		62
+//      Tickets:          	77
 //      
 //      ------------------------
 //      TOTAL:           	441
@@ -20,22 +20,22 @@
   .navigation-container {
     .navigation-inner ul li ul {
       .nav1 {
-        width: percentage(62/@totalNavWidth);
-      }
-      .nav2 {
         width: percentage(69/@totalNavWidth);
       }
+      .nav2 {
+        width: percentage(62/@totalNavWidth);
+      }
       .nav3 {
-        width: percentage(73/@totalNavWidth);
+        width: percentage(98/@totalNavWidth);
       }
       .nav4 {
-        width: percentage(98/@totalNavWidth);
+        width: percentage(77/@totalNavWidth);
       }
       .nav5 {
         width: percentage(62/@totalNavWidth);
       }
       .nav6 {
-        width: percentage(77/@totalNavWidth);
+        width: percentage(73/@totalNavWidth);
       }
     }
   }
@@ -201,11 +201,23 @@ a .icon-sport {
 
 .banner-logo {
 	display: inline-block;
-	background: url("/design/img/athletics-banner-logos.png") no-repeat center -38px;
+	background: url("/design/img/athletics-banner-logos2.png") no-repeat center -38px;
 	height: 174px;
 	width: 274px;
 	float: right;
 }
+
+@media (max-width: 61.1875em) {
+	.banner-logo {
+		display: inline-block;
+		background: url("/design/img/athletics-banner-logos2.png") no-repeat center -5px;
+		height: 87px;
+		width: 137px;
+		float: right;
+		background-size: cover;
+	}
+}
+	
 
 .primary-content-area .flexslider {
     margin-bottom: 20px;
@@ -242,7 +254,7 @@ a .icon-sport {
 
 .promotional-item img {
     margin: 10px;
-    width: 165px;
+    width: 145px;
 }
 
 .home-ad .promotional-item, .sidebar .promotional-item {
@@ -429,6 +441,7 @@ a .icon-sport {
     display: inline-block;
     border: 0;
     vertical-align: top;
+	padding-right: 2%;
 }
 .roster .link-name {
     background: #FFF;
