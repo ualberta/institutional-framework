@@ -630,6 +630,19 @@
 		display: block;
 		vertical-align: bottom;
 	}
+	
+.score-schedule-page .event-list .events-description .WL {
+    color: #007c41;
+    font-family: "DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: normal;
+    font-size: 1.6em;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.score-schedule-page .event-list .events-description {
+    position: relative;
+}
 
 
 /*** Athletics Roster Page ***/
@@ -701,6 +714,27 @@
     display: inline-block;
     border-bottom: #ccc solid 1px;
     border-left: #ccc solid 1px;
+}
+
+.game-page .box-score table {
+    width: 100%;
+    text-align: left;
+    margin: 20px 0;
+    background: #FFFFFF; 
+    border: 1px solid #D4DBD7; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px;
+    border-collapse: inherit;
+}
+
+.game-page .box-score th {
+    border-bottom: 1px solid #D4DBD7;
+    padding: 7px;
+}
+
+.game-page .box-score td {
+    padding: 7px;
 }
 
 
@@ -868,30 +902,36 @@
 	
 
 
-	#flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+	#flip-scroll .cf:after, .flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 	#flip-scroll * html .cf { zoom: 1; }
+	.flip-scroll * html .cf { zoom: 1; }
 	#flip-scroll *:first-child+html .cf { zoom: 1; }
+	.flip-scroll *:first-child+html .cf { zoom: 1; }
 	
-	#flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+	#flip-scroll table, .flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
  
 	#flip-scroll th,
-	#flip-scroll td { margin: 0; vertical-align: top; }
-	#flip-scroll th { text-align: left; }
+	#flip-scroll td,
+	.flip-scroll th,
+	.flip-scroll td { margin: 0; vertical-align: top; }
+	#flip-scroll th, .flip-scroll th { text-align: left; }
 	
-	#flip-scroll { display: block; position: relative; width: 100%; }
-	#flip-scroll thead { display: block; float: left; background: #FFF; }
-	#flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
-	#flip-scroll thead tr { display: block; }
-	#flip-scroll th { display: block; text-align: right; }
-	#flip-scroll tbody tr { display: inline-block; vertical-align: top; }
-	#flip-scroll td { display: block; min-height: 1.25em; text-align: left; }
+	#flip-scroll, .flip-scroll { display: block; position: relative; width: 100%; }
+	#flip-scroll thead, .flip-scroll thead { display: block; float: left; background: #FFF; }
+	#flip-scroll tbody, .flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+	#flip-scroll thead tr, .flip-scroll thead tr { display: block; }
+	#flip-scroll th, .flip-scroll th { display: block; text-align: right; }
+	#flip-scroll tbody tr, .flip-scroll tbody tr { display: inline-block; vertical-align: top; }
+	#flip-scroll td, .flip-scroll td { display: block; min-height: 1.25em; text-align: left; }
 	
  
-	#flip-scroll th { border-bottom: 0; border-left: 0; }
-	#flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
-	#flip-scroll tbody tr { border-left: 1px solid #babcbf; }
+	#flip-scroll th, .flip-scroll th { border-bottom: 0; border-left: 0; }
+	#flip-scroll td, .flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+	#flip-scroll tbody tr, .flip-scroll tbody tr { border-left: 1px solid #babcbf; }
 	#flip-scroll th:last-child,
-	#flip-scroll td:last-child { border-bottom: 0; }
+	#flip-scroll td:last-child,
+	.flip-scroll th:last-child,
+	.flip-scroll td:last-child { border-bottom: 0; }
 		
 	
 }
