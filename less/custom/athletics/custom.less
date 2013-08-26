@@ -562,6 +562,42 @@
 		}
 }
 
+	/*** END Sidebar Schedule ***/
+	
+	.sidebar .schedule-teams a {
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 100%;
+	}
+	
+	.sidebar .schedule-module {
+		padding: 8px;
+	}
+	
+	.sidebar .the-games {
+		margin-bottom: 25px;
+	}
+	
+	@media (min-width: 43.0625em) {
+		 .sidebar .schedule-module.upcoming-game {
+			 background: #FFFFFF;
+		 }
+		 
+		 .sidebar .schedule-module.played-game {
+			 background: #e8eeea;
+		 }
+		 
+		 .sidebar .schedule-module.upcoming-game:hover ,.sidebar .schedule-module.played-game:hover {
+			 background: #fff5b8;
+		 }
+ 
+	}
+	
+	/*** END Sidebar Schedule ***/
+
 
 /*** END Schedule ***/
 
@@ -686,7 +722,7 @@
 }
 
 .media-gallery .events-description .frame {
-	margin:0 10px 5px 0;
+	margin: -4px 10px 5px 0;
 	max-width: 81px;
 	display:inline-block;
 	float:left;top:9px;
@@ -730,6 +766,49 @@
 		text-align: center;
 	}
 }
+
+		/*** Sidebar Media Gallery ***/
+		
+		@media (min-width: 43.0625em) { 
+			.sidebar .media-gallery .event-list .frame {
+				display: none;
+			}
+			.sidebar .media-gallery .event-list h4, .sidebar .media-gallery .event-list span {
+				padding: 0;
+			}
+			
+			.sidebar .media-gallery .events-row {
+				position: relative;
+				min-height: 100%;
+				padding-bottom: 10px;
+			}
+			
+			.sidebar .media-gallery .events-row:first-child {
+				padding-bottom: 10px;
+			}
+		}
+		
+		.sidebar .media-gallery .data-list li:hover {
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-bottom: 0;
+		}
+		
+		.sidebar .media-gallery .data-list li a:hover {
+			margin-left: -10px;
+			margin-right: -10px; 
+			margin-bottom: -1px;
+		}
+		
+		.sidebar .media-gallery .frame a {
+			border-top: none;
+			padding: 0;
+		}
+		.sidebar .media-gallery .data-list li .frame a:hover {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
 
 
 
