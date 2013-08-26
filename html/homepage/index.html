@@ -20,13 +20,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- The Sheets -->
-  <link href="/~publicas/uofa/css/homepage.css" rel="stylesheet">
-  <!-- Switched this out so browser has to make a fresh call to get styles for Dino -->
-  <!--<link href="/~publicas/uofa/css/homepage-aug12-2013.css" rel="stylesheet">-->
+  <link href="/~publicas/uofa/preview/css/homepage.css" rel="stylesheet">
   
   <!-- IE Stylesheets -->
-  <!--[if IE]><link href="/~publicas/uofa/css/homepage-ie.css" rel="stylesheet"><![endif]-->
-  <!--[if IE 7]><link href="/~publicas/uofa/css/explore-icons-ie7.css" rel="stylesheet"><![endif]-->
+  <!--[if IE]><link href="/~publicas/uofa/preview/css/homepage-ie.css" rel="stylesheet"><![endif]-->
+  <!--[if IE 7]><link href="/~publicas/uofa/preview/css/explore-icons-ie7.css" rel="stylesheet"><![endif]-->
     
   <!-- The Favicon -->
   <link rel="shortcut icon" href="/~publicas/uofa/ico/favicon.ico">
@@ -185,66 +183,39 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   </header> <!-- End Header -->
   <div class="content-wrapper ualberta-home">
     <div id="fma-carousel" class="fma-container container flexslider">
-    
       <ul class="slides">
-      <li class="ga_ualberta_fma start caption-left-bottom welcome-back-feature image-right">
+         <li class="ga_ualberta_fma start caption-left-bottom welcome-back-feature image-right">
          <span class="image-shadow">
            <img class="fma-background" src="/~publicas/uofa/img/features/welcome-back.jpg" alt="Welcome Back" />
          </span>
          <header>
-            <a href="http://www.convocation.ualberta.ca" class="convo-link">-</a>
+            <a href="http://students.ualberta.ca" class="convo-link">-</a>
 			<nav>
 				<ul class="convo-btns">
-				<li><a class="bookstore-button" href="http://www.bookstore.ualberta.ca/index.cfm?index=TEXTSEARCH/HOME"><strong>-</strong>Parking</a></li>
-				<li><a class="residence-button" href="http://residence.ualberta.ca"><strong>-</strong>Dates</a></li>
-				<li><a class="onecard-button" href="http://onecard.ualberta.ca"><strong>-</strong>Packet info</a></li>
-				<li><a class="upass-button" href="http://upass.ualberta.ca"><strong>-</strong>Watch</a></li>
-				<li><a class="events-button" href="http://students.ualberta.ca/events"><strong>-</strong>Share</a></li>
+				<li><a class="bookstore-button" href="http://www.bookstore.ualberta.ca/index.cfm?index=TEXTSEARCH/HOME"><strong>-</strong>Bookstore</a></li>
+				<li><a class="residence-button" href="http://residence.ualberta.ca"><strong>-</strong>Residence</a></li>
+				<li><a class="onecard-button" href="http://onecard.ualberta.ca"><strong>-</strong>Onecard</a></li>
+				<li><a class="upass-button" href="http://upass.ualberta.ca"><strong>-</strong>U-Pass</a></li>
+				<li><a class="events-button" href="http://students.ualberta.ca/events"><strong>-</strong>Events</a></li>
 				</ul>
 			</nav>
 		</header>
          <div class="fma-content shade">
            <h3>Forever Green and Gold</h3>
-           <p>School pride is in the air as UAlberta community converges on campus.</p>
+           <p class="feature-copy">School pride is in the air as UAlberta community converges on campus.</p>
             <div class="fma-buttons">
-                  <a href="http://uofa.ualberta.ca/convocation/convocation-in-photos#lucas"class="btn btn-grey btn-micro read">Read her story</a>
-             <a href="http://students.ualberta.ca" class="btn btn-green btn-micro">Find Information</a>
+                  <a href="http://uofa.ualberta.ca/convocation/convocation-in-photos#lucas"class="btn btn-grey btn-micro read">Find Information</a>
+             <a href="http://students.ualberta.ca" class="btn btn-green btn-micro">Read Story</a>
              </div>
          </div>
-      </li>
-    </ul>
+      </li>            
+     </ul>
 
     </div>
   <div class="content-top-row">
     <div class="content-container container"> 
-      <div class="why-ualberta-row row-fluid ga_ualberta_why-ualberta">
-      
-<!-- Back to School feature -->
-      <div class="span">
-          <div class="frame">
-            <div class="hover-caption-container">
-              <a href="http://www.students.ualberta.ca/">
-                <img src="/~publicas/uofa/img/backtoschool_flag.jpg" alt="Week of Welcome" />
-              </a>
-              
-              <div class="caption">
-                <p><a href="http://www.students.ualberta.ca/">Sign up for orientation <i class="icon-chevron-right"></i></a></p>
-              </div>
-            </div>
-          </div>
-          <h3>Dino 101 Online Course</h3>
-          
-          <p class="pull-left span6">
-  UAlberta is offering Dino 101, a high quality and rigorous massive open online course (MOOC) that teaches learners the scientific method through the universal appeal of dinosaurs. Learn more.
-          </p>
-                   
-        <div class="button-container pull-right">
-          <a href="http://admission.ualberta.ca/" class="btn btn-apply km_1000_ualberta">Apply Now</a>
-          <a href="http://www.careers.ualberta.ca/" class="btn btn-work km_1001_ualberta">Careers</a>
-          <a href="http://www.giving.ualberta.ca/" class="btn btn-give km_1002_ualberta">Give to the U of A</a>
-        </div>
-      </div> 
-        <!--<div class="span">
+      <div class="why-ualberta-row row-fluid ga_ualberta_why-ualberta"> 
+        <div class="span">
             <div class="frame">
               <div class="hover-caption-container">
                 <a href="http://campuslife.ualberta.ca/ourcampuses/">
@@ -256,14 +227,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                 </div>
               </div>
             </div>
-            <h3>Why UAlberta?</h3>
-            <p class="description">UAlberta is considered among the world’s leading public research- and teaching-intensive universities. As <strong>one of Canada’s top universities</strong>, we’re known for excellence across the humanities, sciences, creative arts, business, engineering, and health sciences. </p>
+            <h3>Dino 101 Online Course</h3>
+            <p class="description">UAlberta is offering Dino 101, a high quality and rigorous massive open online course (MOOC) that teaches learners the scientific method through the universal appeal of dinosaurs. Learn more.</p>
           <div class="button-container pull-right">
             <a href="http://admission.ualberta.ca/" class="btn btn-apply km_1000_ualberta">Apply Now</a>
             <a href="http://www.careers.ualberta.ca/" class="btn btn-work km_1001_ualberta">Careers</a>
             <a href="http://www.giving.ualberta.ca/" class="btn btn-give km_1002_ualberta">Give to the U of A</a>
           </div>
-        </div>-->
+        </div>
       </div>
     </div>
   </div>
@@ -502,7 +473,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   </div>
  
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <!-- scripts concatenated and minified via build script -->
 <script src="/~publicas/uofa/js/bootstrap.min.js"></script>
@@ -618,7 +589,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         touch: true
       });
       
-//      $("#fma-carousel").flexslider();
+      $("#fma-carousel").flexslider();
       
       // Fetch News
       // --------------------
