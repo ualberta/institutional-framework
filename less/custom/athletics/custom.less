@@ -431,6 +431,11 @@ margin-left: 6px;
     text-align: left;
 }
 
+	.w-primary-promo .promotional-item img {
+		width: auto;
+		margin: 0;
+	}
+
 .sidebar .promotional-item {
     text-align: left;
     padding: 0;
@@ -454,6 +459,11 @@ margin-left: 6px;
 .front-news-list li {
     position: relative;
     min-height: 97px;
+}
+
+.front-news-row.bottom-row {
+    height: auto;
+    min-height: 0;
 }
 
 .front-news-list h4, .front-news-list p {
@@ -833,6 +843,13 @@ margin-left: 6px;
     width: 55%;
     float: right;
     margin: 0 0 10px 10px;
+}
+
+@media (min-width: 75em){
+
+	.story .featured-news .image-caption-container .image-shadow img {
+		min-height: 237px;
+	}
 }
 
 .game-page {
