@@ -1,6 +1,6 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
-@media (max-width:74.9375em) and (min-width:61.25em){.ie9 .image-caption-container .caption{-ms-filter:progid:dximagetransform.microsoft.gradient(enabled=false);filter:progid:dximagetransform.microsoft.gradient(enabled=false);}}@media (max-width:500px){.ie9 .image-caption-container .caption{-ms-filter:progid:dximagetransform.microsoft.gradient(enabled=false);filter:progid:dximagetransform.microsoft.gradient(enabled=false);}}.ie9 .link-mod-container>li.link-mod-active h4 a::after{top:0px;}
+@media (max-width:74.9375em) and (min-width:61.25em){.ie9 .image-caption-container .caption{-ms-filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);}}@media (max-width:500px){.ie9 .image-caption-container .caption{-ms-filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);}}.ie9 .link-mod-container>li.link-mod-active h4 a::after{top:0px;}
 .lt-ie9 .tab-content{height:230px;}
 .lt-ie9 .row-fluid.tertiary .link-mod-container{width:32.4em;}
 .lt-ie9 .row-fluid.tertiary .span12.primary-content-area{width:100%;margin-left:0;}
@@ -52,6 +52,8 @@
 .lt-ie9 .navigation-inner .sub-menu .section-description{padding:4px 0 2px 2%;margin-top:-3px;border-left:1px dotted #3d4a43;}
 .lt-ie9 .navigation-inner .sub-menu ul li a{font-family:sans-serif;text-transform:none;border:none;padding:4px 0px;color:#007c41;line-height:1.2em;}
 .lt-ie9 .navigation-inner .sub-menu ul li:hover{padding-left:12px;margin-left:-13px;background-color:rgba(255, 219, 5, 0);background-image:-moz-linear-gradient(left, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));background-image:-webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 219, 5, 0.65)), to(rgba(255, 219, 5, 0)));background-image:-webkit-linear-gradient(left, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));background-image:-o-linear-gradient(left, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));background-image:linear-gradient(to right, rgba(255, 219, 5, 0.65), rgba(255, 219, 5, 0));background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ffdb05', endColorstr='#00ffdb05', GradientType=1);border-left:1px solid #f5d100;text-shadow:none;}
+.lt-ie9 .fma-small-dino.image-caption-container .caption .caption-text{width:60%;float:left;}
+.lt-ie9 .fma-small-dino.image-caption-container .caption .logo-link{background:url(-/media/digitallearning/dino101/fma-dino-logo-small.png) no-repeat top right;height:65px;width:38%;float:left;}
 .lt-ie8 header{z-index:1;position:relative;}
 .lt-ie8 .content-top-row{line-height:1.5em;}
 .lt-ie8 .image-caption-container .caption a{color:#ffdb05;}
