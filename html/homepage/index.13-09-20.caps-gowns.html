@@ -100,6 +100,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       .ualberta-home .fma-container ul.slides img.fma-background {
         margin-top: 0;
       }
+      
+      
     }
     
     @media screen and (max-width: 30em) {
@@ -116,10 +118,17 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       }
     }
     
-    @media screen and (min-width: 61.25em) {
-      .ualberta-home .fma-container ul.slides .charlene-shannon-feature .fma-content {
-        width:25em;
+    @media screen and (min-width: 43.125em) {
+      .ualberta-home .fma-container ul.slides li.caps-gowns-feature .fma-content.shade {
+        width:19em;
+        bottom:0;
+        border-radius: 0 4px 0 0;
+        -moz-border-radius: 0 4px 0 0;
       }
+    }
+    
+    @media screen and (min-width: 61.25em) {
+
       
       .ualberta-home .why-ualberta-row p.description {
         margin-top:0.57em;
@@ -224,15 +233,16 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   <div class="content-wrapper ualberta-home">
     <div id="fma-carousel" class="fma-container container flexslider">
       <ul class="slides">
-        <li class="ga_ualberta_fma start caption-left-bottom charlene-shannon-feature image-right">
+        <li class="ga_ualberta_fma start caption-left-bottom caps-gowns-feature image-right">
          <span class="image-shadow">
-           <img class="fma-background" src="/~publicas/uofa/img/features/fma-celebrate-charlene-shannon.jpg" alt="Shannon Erichsen and Charlene Nielsen" />
+           <img class="fma-background" src="/~publicas/uofa/img/features/feature-caps-gowns.jpg" alt="Caps and Gowns, Then and Now" />
          </span>
          <div class="fma-content shade">
-           <h3>Celebrate! Teaching. Learning. Research.</h3>
-           <p class="feature-copy">Shannon Erichsen and Charlene Nielsen, <br />Support Staff Research Enhancement Award</p>
+           <h3>Caps and Gowns, Then and Now</h3>
+           <p class="feature-copy">Class of ‘63 relives convocation during Alumni Weekend</p>
             <div class="fma-buttons">
-              <a href="http://news.ualberta.ca/newsarticles/2013/september/award-winning-support-staff-help-researchers-hit-their-stride" class="btn btn-green btn-micro">Read their story</a>
+              <a href="http://www.newtrail.ualberta.ca/en/FeatureStories/FeatureStoriesCurrent/CapsAndGownsThenAndNow.aspx" class="btn btn-green btn-micro">Read story</a>
+              <a href="http://alumni.ualberta.ca/events/alumni-weekend" class="btn btn-grey btn-micro">Alumni Weekend 2013</a>
             </div>
          </div>
         </li>                 

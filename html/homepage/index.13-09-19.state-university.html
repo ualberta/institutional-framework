@@ -93,6 +93,29 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       .flexslider .slides>li { display:block; }
       
       .ualberta-home .fma-container ul.slides .fma-content h3 { line-height:1em; }
+      
+      .ualberta-home .fma-container ul.slides li.state-uni-feature .fma-content.shade {
+        border-radius: 4px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 23em;
+        text-align: center;
+        height: 10em;
+        margin: auto;
+        background:none;
+      }
+      
+      .ualberta-home .fma-container ul.slides li.state-uni-feature .fma-content.shade h3 {
+        text-shadow: 0px 2px 8px #FFF;
+        color:#007c41;
+      }
+      
+      .ualberta-home .fma-container ul.slides li.state-uni-feature .fma-content.shade .feature-copy {
+        color: #000;
+        text-shadow: 0px 2px 1px #FFF;
+      }
 
     }
 
@@ -116,11 +139,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       }
     }
     
-    @media screen and (min-width: 61.25em) {
-      .ualberta-home .fma-container ul.slides .charlene-shannon-feature .fma-content {
-        width:25em;
+    @media screen and (min-width: 43.125em) {
+      .ualberta-home .fma-container ul.slides li.david-percy-feature .fma-content.shade {
+        width:22em;
       }
-      
+    }
+    
+    @media screen and (min-width: 61.25em) {
       .ualberta-home .why-ualberta-row p.description {
         margin-top:0.57em;
       }
@@ -224,15 +249,16 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   <div class="content-wrapper ualberta-home">
     <div id="fma-carousel" class="fma-container container flexslider">
       <ul class="slides">
-        <li class="ga_ualberta_fma start caption-left-bottom charlene-shannon-feature image-right">
+        <li class="ga_ualberta_fma start caption-left-bottom state-uni-feature image-right">
          <span class="image-shadow">
-           <img class="fma-background" src="/~publicas/uofa/img/features/fma-celebrate-charlene-shannon.jpg" alt="Shannon Erichsen and Charlene Nielsen" />
+           <img class="fma-background" src="/~publicas/uofa/img/features/feature-state-of-the-u.jpg" alt="State of the University" />
          </span>
          <div class="fma-content shade">
-           <h3>Celebrate! Teaching. Learning. Research.</h3>
-           <p class="feature-copy">Shannon Erichsen and Charlene Nielsen, <br />Support Staff Research Enhancement Award</p>
+           <h3>State of the University</h3>
+           <p class="feature-copy">President Indira Samarasekera presents three-year action plan</p>
             <div class="fma-buttons">
-              <a href="http://news.ualberta.ca/newsarticles/2013/september/award-winning-support-staff-help-researchers-hit-their-stride" class="btn btn-green btn-micro">Read their story</a>
+              <a href="http://www.president.ualberta.ca/Multimedia/September%202013%20State%20of%20the%20University%20Address.aspx" class="btn btn-green btn-micro">Watch Webcast</a>
+              <a href="http://news.ualberta.ca/newsarticles/2013/september/state-of-the-university-be-open-to-change" class="btn btn-grey btn-micro">Read the Recap</a>
             </div>
          </div>
         </li>                 
