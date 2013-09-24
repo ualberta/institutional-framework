@@ -85,6 +85,39 @@ production:
 	@cp -r ./js ${PRODDIR}
 	@echo "Minifying and copying javascript...          ${CHECK} Done"
 	(cd ../production; git add .; git commit -a -m prod; git push origin production --force)
+
+production-no-push:
+	@mkdir -p ./css
+	@mkdir -p ./custom
+	@mkdir -p ${PRODDIR}
+	@mkdir -p ${PRODDIR}/css
+	@mkdir -p ${PRODDIR}/font
+	@mkdir -p ${PRODDIR}/img
+	@mkdir -p ${PRODDIR}/ico
+	@mkdir -p ${PRODDIR}/js
+	@mkdir -p ${PRODDIR}/custom
+	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
+	@echo "Compiling framework base less...             ${CHECK} Done"
+	@lessc -x ${PROTOTYPE_LESS} > ./css/ualberta.css
+	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
+	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
+	@lessc -x ./less/faculty.less > ./css/faculty.css
+	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
+	@echo "Compiling faculty base less...               ${CHECK} Done"
+	@cp -r ./css ${PRODDIR}
+	@cp -r ./img ${PRODDIR}
+	@cp -r ./ico ${PRODDIR}
+	@cp -r ./font ${PRODDIR}
+	@echo "Copying css, images, icons, and fonts...     ${CHECK} Done"
+	@for file in `find ./less/custom -type f -name '*.less'`; do lessFilePath="$$file"; cssFilePath="$${lessFilePath/.\/less/.}"; cssFilePath="$${cssFilePath/%.less/.css}"; mkdir -p $$(dirname "$$cssFilePath"); lessc -x "$$lessFilePath" > "$$cssFilePath"; done
+	@echo "Compiling custom less...                     ${CHECK} Done"
+	@cp -r ./custom ${PRODDIR}
+	@echo "Copying custom files...                      ${CHECK} Done"
+	@cat js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-tab.js > ${PRODDIR}/js/bootstrap.js
+	@uglifyjs -nc ${PRODDIR}/js/bootstrap.js > ${PRODDIR}/js/bootstrap.min.js
+	@cp -r ./js ${PRODDIR}
+	@echo "Minifying and copying javascript...          ${CHECK} Done"
 	
 #
 # COMPILE GH-PAGES

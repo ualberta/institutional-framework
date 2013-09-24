@@ -86,7 +86,7 @@
   //
   .font-size(@sizeVal, @baseVal) {
     @emValue: (@sizeVal/@baseVal);
-    font-size: ~"@{emValue}em";
+    font-size: unit(@emValue,em); 
   }
   
   // Width and Height
@@ -99,17 +99,17 @@
   .size(@widthValue, @heightValue, @baseVal) when (isnumber(@widthValue)) {
     @emWidthValue: (@widthValue/@baseVal);
     @emHeightValue: (@heightValue/@baseVal);
-    width: ~"@{emWidthValue}em";  
-    height: ~"@{emHeightValue}em";
+    width: unit(@emWidthValue,em); 
+    height: unit(@emHeightValue,em); 
   }
   
   .size(width, @widthValue, @baseVal) {
     @emWidthValue: (@widthValue/@baseVal);
-    width: ~"@{emWidthValue}em";  
+    width: unit(@emWidthValue,em); 
   }
   .size(height, @heightValue, @baseVal) {
     @emHeightValue: (@heightValue/@baseVal);
-    height: ~"@{emHeightValue}em";  
+    height: unit(@emHeightValue,em);  
   }
   
   // Positioning
@@ -123,25 +123,25 @@
   //
   .position(top, @pos:0, @baseVal) {
     @emVal: (@pos/@baseVal);
-    top: ~"@{emVal}em"; 
+    top: unit(@emVal,em); 
   }
   .position(right, @pos:0, @baseVal) {
     @emVal: (@pos/@baseVal);
-    right: ~"@{emVal}em";   
+    right: unit(@emVal,em);   
   }
   .position(bottom, @pos:0, @baseVal) {
     @emVal: (@pos/@baseVal);
-    bottom: ~"@{emVal}em"; 
+    bottom: unit(@emVal,em); 
   }
   .position(left, @pos:0, @baseVal) {
     @emVal: (@pos/@baseVal);
-    left: ~"@{emVal}em"; 
+    left: unit(@emVal,em); 
   }
   .position(@posx:0, @posy:0, @baseVal) when (isnumber(@posx)) {
     @emx: (@posx/@baseVal);
     @emy: (@posy/@baseVal);
-    top: ~"@{emy}em";
-    left: ~"@{emx}em"; 
+    top: unit(@emy,em);
+    left: unit(@emx,em); 
   }
   
   // Margins
@@ -158,41 +158,41 @@
   //
   .margin(@size, @baseVal) {
     @emValue: (@size/@baseVal);
-    margin: ~"@{emValue}em";
+    margin: unit(@emValue,em);
   }
   .margin(top, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    margin-top: ~"@{emValue}em";
+    margin-top: unit(@emValue,em);
   }
   .margin(left, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    margin-left: 1em*@emValue;
+    margin-left: unit(@emValue,em);
   }
   .margin(right, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    margin-right: ~"@{emValue}em";
+    margin-right: unit(@emValue,em);
   }
   .margin(bottom, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    margin-bottom: ~"@{emValue}em";
+    margin-bottom: unit(@emValue,em);
   }
   .margin(@tb, @rl, @baseVal) when (isnumber(@tb)) {
     @tbr: (@tb/@baseVal);
     @rlr: (@rl/@baseVal);
-    margin: ~"@{tbr}em @{rlr}em";
+    margin: unit(@tbr,em) unit(@rlr,em);
   }
   .margin(@t, @rl, @b, @baseVal) {
     @tr: (@t/@baseVal);
     @rlr: (@rl/@baseVal);
     @br: (@b/@baseVal);
-    margin: ~"@{tr}em @{rlr}em @{br}em";
+    margin: unit(@tr,em) unit(@rlr,em) unit(@br,em);
   }
   .margin(@t, @r, @b, @l, @baseVal) {
     @tr: (@t/@baseVal);
     @rr: (@r/@baseVal);
     @br: (@b/@baseVal);
     @lr: (@l/@baseVal);
-    margin: ~"@{tr}em @{rr}em @{br}em @{lr}em";
+    margin: unit(@tr,em) unit(@rr,em) unit(@br,em) unit(@lr,em);
   }
   
   
@@ -210,41 +210,41 @@
   //
   .padding(@size, @baseVal) {
     @emValue: (@size/@baseVal);
-    padding: ~"@{emValue}em";
+    padding: unit(@emValue,em);
   }
   .padding(top, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    padding-top: ~"@{emValue}em";
+    padding-top:unit(@emValue,em);
   }
   .padding(left, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    padding-left: ~"@{emValue}em";
+    padding-left: unit(@emValue,em);
   }
   .padding(right, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    padding-right: ~"@{emValue}em";
+    padding-right: unit(@emValue,em);
   }
   .padding(bottom, @size, @baseVal) {
     @emValue: (@size/@baseVal);
-    padding-bottom: ~"@{emValue}em";
+    padding-bottom: unit(@emValue,em);
   }
   .padding(@tb, @rl, @baseVal) when (isnumber(@tb)) {
     @tbr: (@tb/@baseVal);
     @rlr: (@rl/@baseVal);
-    padding: ~"@{tbr}em @{rlr}em";
+    padding: unit(@tbr,em) unit(@rlr,em);
   }
   .padding(@t, @rl, @b, @baseVal) {
     @tr: (@t/@baseVal);
     @rlr: (@rl/@baseVal);
     @br: (@b/@baseVal);
-    padding: ~"@{tr}em @{rlr}em @{br}em";
+    padding: unit(@tr,em) unit(@rlr,em) unit(@br,em);
   }
   .padding(@t, @r, @b, @l, @baseVal) {
     @tr: (@t/@baseVal);
     @rr: (@r/@baseVal);
     @br: (@b/@baseVal);
     @lr: (@l/@baseVal);
-    padding: ~"@{tr}em @{rr}em @{br}em @{lr}em";
+    padding: unit(@tr,em) unit(@rr,em) unit(@br,em) unit(@lr,em);
   }
   
 }
