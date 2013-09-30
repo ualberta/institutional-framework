@@ -3,8 +3,8 @@
 .homepage .tab-content .data-list{margin-bottom:0.8em;}
 .homepage .tab-content h5{margin-bottom:0.2em;}
 .navigation-inner .section-description a{padding:0;display:inline;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none;text-decoration:underline;}.navigation-inner .section-description a:hover{text-decoration:none;}
-.primary-content-area p a{text-decoration:underline;}
-.primary-content-area p.button-container a{text-decoration:none;}
+.primary-content-area p a,.secondary-content-area p a,.sidebar p a{text-decoration:underline;}
+.primary-content-area p.button-container a,.secondary-content-area p.button-container a,.sidebar p.button-container a{text-decoration:none;}
 .social-media-links img{width:16px;height:16px;margin-right:4px;margin-bottom:1px;}
 .btn-etrail,.btn-travelevents{margin-bottom:1em;}
 .btn-social-media.ftr-flickr,.btn-social-media.ftr-youtube{padding-bottom:3px;}.btn-social-media.ftr-flickr span,.btn-social-media.ftr-youtube span{top:-5px;}
