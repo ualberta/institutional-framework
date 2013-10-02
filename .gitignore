@@ -1,9 +1,5 @@
 *.espressostorage
 .DS_Store
-*.css
 *.mno
-ualberta.css
-
 *.psd
-
 codekit-config.json

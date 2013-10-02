@@ -1,0 +1,11 @@
+.ie10 .bm-text{width:50%;}
+@media (min-width:75em){.ie9 .bm-text{width:50%;}}
+.lt-ie9 .content-top-row{width:67.14em;margin-left:auto;margin-right:auto;}
+.lt-ie9 .secondary-feature-cnt{position:relative;}
+.lt-ie9 .bm-text{float:left;width:52%;margin:95px 0px 0px 65px;}
+.lt-ie9 .bm-img{width:40%;float:right;}
+.lt-ie9 .hp-text{width:50%;margin:65px 0px 0px 55px;}
+.lt-ie9 .hp-img{width:40%;}
+.ie7 .sidebar-videos .no-boxshadow .image-shadow{border:none;}
+.no-inlinesvg .blade-inner .brand img{display:none;}
+.no-inlinesvg .blade-inner .brand{background:transparent url(../../img/ua_logo.png) no-repeat center center;width:12.14em;height:2.85em;}
