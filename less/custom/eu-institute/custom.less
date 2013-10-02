@@ -1,0 +1,39 @@
+@media (min-width: 43.125em) {
+
+//*****************************************
+//** NAVIGATION
+//******************************************
+//   EUCE Nav Widths: 
+//
+//		ASSOCIATES & FELLOWS:		98
+//		OPPORTUNITIES:        		83
+//      RESEARCH & PUBLICATIONS:  	98
+//      RESOURCES:        			79
+//      CONTACT US:          		83
+//      
+//      ------------------------
+//      TOTAL:           			441
+//*****************************************/
+  
+  @totalNavWidth: 441px;
+  
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: percentage(98/@totalNavWidth);
+      }
+      .nav2 {
+        width: percentage(83/@totalNavWidth);
+      }
+      .nav3 {
+        width: percentage(98/@totalNavWidth);
+      }
+      .nav4 {
+        width: percentage(79/@totalNavWidth);
+      }
+      .nav5 {
+        width: percentage(83/@totalNavWidth);
+      }
+    }
+  }	
+}
