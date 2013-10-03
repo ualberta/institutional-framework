@@ -1,0 +1,478 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie-9 ie9" lang="en"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie10" lang="en"> <![endif]-->
+<!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <!-- The Meta: These two must be before title -->
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- HTML5 Shiv (for IE) -->
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- The Title -->
+    <title>
+    Department
+    </title>
+    <!-- The Other Meta -->
+    <meta name="description" content="University of Alberta" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Canonical URL -->
+    <link href="http://www.med.ualberta.ca/communities/ihi" rel="canonical" />
+    <!-- The Sheets -->
+    <link href="../css/framework.css" type="text/css" rel="stylesheet" media="screen"/>
+    <link href="../css/faculty.css" type="text/css" rel="stylesheet" media="screen"/>
+    <!--[if IE]>
+    <link href="../css/framework-ie.css" type="text/css" rel="stylesheet" media="screen"/>
+    <![endif]-->
+    <!--[if IE]>
+    <link href="../css/faculty-ie.css" type="text/css" rel="stylesheet" media="screen"/>
+    <![endif]--><link rel="shortcut icon" href="http://sc3-cdn.ualberta.ca/design/ico/favicon.ico" /><meta name="google-site-verification" content="Rx4OrbN7WUyBILkpOzk-GFIjK2xGNpXVV01HRMEAwLs" /><meta name="CODE_LANGUAGE" content="C#" /><meta name="vs_defaultClientScript" content="JavaScript" /><meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/design/ico/apple-touch-icon-144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/design/ico/apple-touch-icon-114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/design/ico/apple-touch-icon-72-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="/design/ico/apple-touch-icon-57-precomposed.png" />
+    <!-- The Head Scripts: MODERNIZR ONLY!  All others before </body> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if(!window.Modernizr){
+    document.write('<script src="http://sc3-cdn.ualberta.ca/cassette.axd/script/1wajlQB2YCG_9-jjDoR-Vf5dSl8=/Scripts/Common/modernizr.2.6.2.min.js" type="text/javascript"><\/script>');
+    }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if(!window.jQuery){
+    document.write('<script src="http://sc3-cdn.ualberta.ca/cassette.axd/script/CqlOcqAWfbAAw7M8wHEja0DfoOQ=/Scripts/Common/jquery.1.7.2.min.js" type="text/javascript"><\/script>');
+    }
+    </script>
+    <link rel="stylesheet" href="http://sc3-cdn.ualberta.ca/design/custom/medicine/custom.css" media="screen"></link>
+    <link rel="stylesheet" href="http://sc3-cdn.ualberta.ca/design/custom/medicine/custom-ie.css" media="screen"></link>
+    <!--[if IE]><![endif]-->
+    <!-- The Print Sheets -->
+    <link href="http://sc3-cdn.ualberta.ca/cassette.axd/stylesheet/WhUVKnFSXdrPKp4v8SdovtfrBl8=/printStyle" type="text/css" rel="stylesheet" media="print"/></head>
+    <body>
+        <!-- Burn IE6 with fire -->
+        <!--[if lt IE 7]><p class="alert">Hold on. It looks like you might have an older version of your web browser. Be sure to use the latest version to enjoy all the features on the UAlberta site.</p><![endif]-->
+        <form method="post" action="/communities/ihi" id="mainform">
+
+            <header>
+                
+                <!-- The Blade -->
+                <div class="blade-container"><!-- Blade: http://www.imdb.com/title/tt0120611/ -->
+                <div class="blade-inner">
+                    <a class="brand" href="http://ualberta.ca">
+                    <img src="../img/logo2.svg" alt="University of Alberta" /> <!-- For Faculties only -->
+                    </a>
+                    <nav class="blade-navigation">
+                        <ul class="quick-links-container">
+                            <li id="ql" class="dropdown">
+                                <a href="#" id="ql-toggle" class="btn btn-grey btn-small hidden-desktop" data-toggle="dropdown">
+                                <span class="quick-links-text">
+                                Quick Links <b class="caret"></b>
+                                </span>
+                                <span class="icon-bar quick-links-button"></span>
+                                <span class="icon-bar quick-links-button"></span>
+                                <span class="icon-bar quick-links-button"></span>
+                                </a>
+                                
+                                <ul class="quick-links" role="menu" aria-labelledby="ql-toggle">
+                                    <li role="menuitem"><a href="http://webapps.srv.ualberta.ca/search/" target="">Find a Person</a></li>
+                                    <li role="menuitem"><a href="http://onecard.ualberta.ca/" target="">ONEcard</a></li>
+                                    <li role="menuitem"><a href="https://www.beartracks.ualberta.ca/" target="">Bear Tracks</a></li>
+                                    <li role="menuitem"><a href="http://www.campusmap.ualberta.ca/" target="">Maps</a></li>
+                                    <li role="menuitem"><a href="http://apps.ualberta.ca/" target="">Email & Apps</a></li>
+                                    <li role="menuitem"><a href="https://eclass.srv.ualberta.ca/portal/" target="">eClass</a></li>
+                                    <li role="menuitem"><a href="http://www.library.ualberta.ca/" target="">Libraries</a></li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="blade-search">
+                        <i class="icon-search"></i>
+                        <input type="search" class="search-query" placeholder="search">
+                        <button type="button" class="btn btn-grey btn-small global-search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Blade: http://www.imdb.com/title/tt0359013/ -->
+            <div class="banner-container"> <!-- Start Banner -->
+            <div class="banner-inner">
+                <a href="http://www.med.ualberta.ca" class="site-title">Faculty of 
+                Blank</a>
+                <div class="banner-logo">
+                    <span class="site-logo"></span>
+                    <!-- Only used for faculties with approved logos -->
+                    
+                </div>
+                <nav class="audience-navigation"><!-- Start Audience Nav -->
+                
+                </nav><!-- End Audience Nav -->
+            </div>
+            <div class="shadow-container"></div>
+            <div class="oval-container">
+                <div class="oval oval1"></div>
+                <div class="oval oval2"></div>
+                <div class="oval oval3"></div>
+                <div class="oval oval4"></div>
+            </div>
+            </div> <!-- End Banner -->
+            <div class="navigation-container"> <!-- Start Global Navigation -->
+            <nav id="main-nav" class="navigation-inner">
+                <ul>
+                    <li>
+                        <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation"><span>Show Navigation</span><i class="icon-toggle-nav"></i>
+                        </a>
+                        <ul id="nav-list" class="main-navigation in collapse">
+                            
+                            <li role="menuitem" class="nav1">
+                                <a href="http://www.med.ualberta.ca/about">About Us</a>
+                                <div id="pnlSubMenu" class="sub-menu">
+                                    
+                                    <div class="sub-menu-content">
+                                        <ul class="section-navigation"><li><a href="http://www.med.ualberta.ca/about/deanmessage">Dean's Message</a></li><li><a href="http://www.med.ualberta.ca/about/vision-mission-goals">Vision, Mission and Goals</a></li><li><a href="http://www.med.ualberta.ca/about/leadership">Organizational Charts</a></li><li><a href="http://www.med.ualberta.ca/about/governance">Faculty Governance</a></li><li><a href="http://www.med.ualberta.ca/about/faculty">Faculty Affairs</a></li><li><a href="http://www.med.ualberta.ca/about/policies">Policies and Procedures</a></li><li><a href="http://www.med.ualberta.ca/about/internationalrelations">International Relations</a></li><li><a href="http://www.med.ualberta.ca/about/whyfomd">Why Our Faculty?</a></li><li><a href="http://www.med.ualberta.ca/about/facilities">Facilities</a></li><li><a href="http://www.med.ualberta.ca/about/contactfomd">Contact the Faculty of Medicine & Dentistry</a></li></ul>
+                                        <div id="phCustomContent" class="section-description"><p><img height="225" width="400" alt="Dr Sarah" src="-/media/AEEECF2FE23C49098374E7CC84BF84C4.ashx" /></p>
+                                        <p>Dr. Sarah Forgie, associate professor infectious diseases, is one of the faculty&rsquo;s five 3M national teaching award winners and one of the more than 600 tenure track faculty members.</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                            <li role="menuitem" class="nav2">
+                                <a href="http://www.med.ualberta.ca/programs">Programs and Education</a>
+                                <div id="pnlSubMenu" class="sub-menu">
+                                    
+                                    <div class="sub-menu-content">
+                                        <ul class="section-navigation"><li><a href="http://www.med.ualberta.ca/programs/overview">About Us</a></li><li><a href="http://www.med.ualberta.ca/programs/law">Support and Wellness for Students and Residents</a></li><li><a href="http://www.med.ualberta.ca/programs/resources">Educational Resources</a></li><li><a href="http://www.med.ualberta.ca/programs/dentalhygiene">Diploma and B.Sc. in Dental Hygiene</a></li><li><a href="http://www.med.ualberta.ca/programs/dds">Doctor of Dental Surgery</a></li><li><a href="http://www.med.ualberta.ca/programs/md">MD Program</a></li><li><a href="http://www.med.ualberta.ca/programs/md-phd">MD/PhD</a></li><li><a href="http://www.med.ualberta.ca/programs/mdstir">MD with Special Training in Research</a></li><li><a href="http://www.med.ualberta.ca/programs/md-mba">MD/MBA</a></li><li><a href="http://www.med.ualberta.ca/programs/mls">Medical Laboratory Science</a></li><li><a href="http://www.med.ualberta.ca/programs/residency">Postgraduate Medical Education</a></li><li><a href="http://www.med.ualberta.ca/programs/graduatestudies">Graduate Studies</a></li><li><a href="http://www.med.ualberta.ca/programs/continuingeducation">Continuing Education</a></li><li><a href="http://www.med.ualberta.ca/programs/radth">Radiation Therapy</a></li><li><a href="http://www.med.ualberta.ca/programs/actech">Academic Technologies</a></li><li><a href="http://www.med.ualberta.ca/programs/visiting">Visiting Students</a></li><li><a href="http://www.med.ualberta.ca/programs/aimg">Alberta International Medical Graduate</a></li><li><a href="http://www.med.ualberta.ca/programs/scholarship">Health Professions Education Scholarship</a></li><li><a href="http://www.med.ualberta.ca/programs/ahhm">Arts & Humanities in Health & Medicine</a></li></ul>
+                                        <div id="phCustomContent" class="section-description"><p><img height="238" alt="Two medical students participating in learning activities." width="423" src="-/media/FF974C7E4C8B48DBBFFB162840AA018C.ashx" /></p>
+                                        <p>Former medical student Cameron Sklar examines a patient in a youth clinic he helped develop in a rural community through a faculty initiative called the Integrated Community Clerkship.</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                            <li role="menuitem" class="nav3">
+                                <a href="http://www.med.ualberta.ca/departments">Departments</a>
+                                <div id="pnlSubMenu" class="sub-menu">
+                                    
+                                    <div class="sub-menu-content">
+                                        <ul class="section-navigation"><li><a href="http://www.med.ualberta.ca/departments/dept">Departments</a></li><li><a href="http://www.med.ualberta.ca/departments/division">Divisions</a></li><li><a href="http://www.med.ualberta.ca/departments/institute">Institutes</a></li><li><a href="http://www.med.ualberta.ca/departments/centre">Centres</a></li><li><a href="http://www.med.ualberta.ca/departments/group">Groups</a></li></ul>
+                                        <div id="phCustomContent" class="section-description"><p><img alt="" height="238" width="423" src="-/media/61B677A229094E44AD5CB5E53FC7EFBC.ashx" /></p>
+                                        <p>The Faculty of Medicine &amp; Dentistry has 20 departments, five stand-alone divisions, eight research groups and 15 centres and institutes.</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                            <li role="menuitem" class="nav4">
+                                <a href="http://www.med.ualberta.ca/research">Research</a>
+                                <div id="pnlSubMenu" class="sub-menu">
+                                    
+                                    <div class="sub-menu-content">
+                                        <ul class="section-navigation"><li><a href="http://www.med.ualberta.ca/research/aboutus">About Us</a></li><li><a href="http://www.med.ualberta.ca/research/awards">Research Awards</a></li><li><a href="http://www.med.ualberta.ca/research/fundingopportunities">Funding Opportunities</a></li><li><a href="http://www.med.ualberta.ca/research/researchchairs">Research Chairs</a></li><li><a href="http://www.med.ualberta.ca/research/cihr">Grant Assist Program (Health Sciences)</a></li><li><a href="http://www.med.ualberta.ca/research/collip">Collip Club</a></li><li><a href="http://www.med.ualberta.ca/research/corefacilities">Core Research Facilities</a></li><li><a href="http://www.med.ualberta.ca/research/groups">Groups, Centres and Institutes</a></li><li><a href="http://www.med.ualberta.ca/research/faculty">Resources for Faculty Members</a></li><li><a href="http://www.med.ualberta.ca/research/graduate">Resources for Graduate Students</a></li><li><a href="http://www.med.ualberta.ca/research/student">Resources for Medical Students</a></li><li><a href="http://www.med.ualberta.ca/research/studentships"> Undergraduate Summer Students' Research Program</a></li><li><a href="http://www.med.ualberta.ca/research/contact">Contact Us</a></li></ul>
+                                        <div id="phCustomContent" class="section-description"><p><img alt="Dr. Jason Dyck is the recipient of the 2013 FoMD Tier II Basic Science Mentoring Award" src="-/media/5C24A83C0C02423DA497E143EA68B595.ashx"></p>
+                                        <p>Dr. Jason Dyck is the recipient of the 2013 FoMD Tier II Basic Science Mentoring Award</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                            <li role="menuitem" class="nav5">
+                                <a href="http://www.med.ualberta.ca/communities">Communities</a>
+                                <div id="pnlSubMenu" class="sub-menu">
+                                    
+                                    <div class="sub-menu-content">
+                                        <ul class="section-navigation"><li><a href="http://www.med.ualberta.ca/communities/community">The Division of Community Engagement</a></li><li><a href="http://www.med.ualberta.ca/communities/engagedresearch">Community Engaged Research</a></li><li><a href="http://www.med.ualberta.ca/communities/globalhealth">Global Health</a></li><li><a href="http://www.med.ualberta.ca/communities/ihi">Indigenous Health Initiatives</a></li><li><a href="http://www.med.ualberta.ca/communities/innercity">Inner City</a></li><li><a href="http://www.med.ualberta.ca/communities/ruralregional">Rural & Regional Health</a></li><li><a href="http://www.med.ualberta.ca/communities/minimed">Mini Medical School</a></li><li><a href="http://www.med.ualberta.ca/communities/hom">History of Medicine Interest Group</a></li></ul>
+                                        <div id="phCustomContent" class="section-description"><p><img alt="Two students participating in an Indigenous Health Initiatives program" src="-/media/FD86D3BD05134723BDC093D3079AE769.ashx" style="vertical-align: middle;" /></p>
+                                        <p>Shea Eagle Bear and Alan Pickard are enrolled in the Indigenous Health Initiatives Program, which supports Aboriginal students and promotes health care to Indigenous People in Canada.</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                            <li role="menuitem" class="nav6">
+                                <a href="http://www.med.ualberta.ca/alumni">Alumni</a>
+                                <div id="pnlSubMenu" class="sub-menu">
+                                    
+                                    <div class="sub-menu-content">
+                                        <ul class="section-navigation"><li><a href="http://www.med.ualberta.ca/alumni/weekend">Alumni Weekend</a></li><li><a href="http://www.med.ualberta.ca/alumni/alumni">Alumni Affairs</a></li><li><a href="http://www.med.ualberta.ca/alumni/reunions">Reunions</a></li><li><a href="http://www.med.ualberta.ca/alumni/distinguishedalumni">Distinguished Alumni</a></li><li><a href="http://www.med.ualberta.ca/alumni/alumninewsletter">Alumni Newsletter</a></li><li><a href="http://www.med.ualberta.ca/alumni/contact">Contact Us</a></li></ul>
+                                        <div id="phCustomContent" class="section-description"><p><img height="238" width="423" alt="Two doctors examine a young boy." src="-/media/3EE3CF270E144A148B14175CF99A4DA6.ashx" /></p>
+                                        <p>Alumnus Dr. Ray Comeau (MD &rsquo;80) and student Roshan Abraham travelled to Kenya to work with patients with anthrax, leukemia, tuberculosis and other chronic conditions.</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            </div><!-- End Global Navigation -->
+        </header>
+        
+        <div id="layoutcontainer" class="content-wrapper">
+            <div class="content-container container">
+                <div class="content-inner row-fluid">
+                    <div class="span12">
+                        <div class="row-fluid intro">
+                                        
+                                                <ul class="breadcrumbs">
+                                                    
+                                                <li class=""><a href="https://science-beta.sitecore.ualberta.ca/">Home</a></li>
+                                            
+                                                <li class=""><a href="https://science-beta.sitecore.ualberta.ca/programs">Departments</a></li>
+                                            
+                                                <li class="bc-here">Department Name</li>
+                                            
+                                                </ul>       
+                                    </div>
+                        <div class="row-fluid site-title" style="font-size: 1.2em; padding: 0; margin: 0; line-height: 120%;">Department Name</div>
+                        
+                        <hr class="softline">
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <ul class="leftnav in collapse" style="height: auto;">
+                                            <li>
+                                                <a href="#">Page Title</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="#">Page Title</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="#">Page Title</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="#">Page Title</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="#">Page Title</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="#">Page Title</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="#">Page Title</a>
+                                                
+                                            </li>
+                                                
+                                </ul>
+                            </div>
+                            <div class="span7">
+                            
+                              <div class="VIC-promotional-area">
+                                <style>
+                              
+                                  /** Put your styling here **/
+                                  
+                                </style> 
+                                
+                                
+                              </div>
+                              
+                              <div class="VIC-video">
+                                <style>
+                              
+                                  /** Put your styling here **/
+                                  
+                                </style> 
+                                
+                                
+                              </div>
+                              
+                              <div class="JAY-contact-info">
+                                <style>
+                              
+                                  /** Put your styling here **/
+                                  
+                                </style> 
+                                
+                                
+                              </div>
+                              
+                              <div class="KAREN-profile">
+                                <style>
+                              
+                                  /** Put your styling here **/
+                                  
+                                </style> 
+                                
+                                
+                              </div>
+                              
+                              <div class="LANE-fancy-list">
+                                <style>
+                              
+                                  /** Put your styling here **/
+                                  
+                                </style> 
+                                
+                                
+                              </div>
+                              
+                              <div class="rich-text">
+                              
+                                <style>
+                              
+                                  /** Put your styling here **/
+                                  
+                                </style> 
+                                <h1 class="page-title">Page Title</h1>
+                                <p>Curabitur purus lacus, facilisis eget ligula eget, condimentum lobortis tortor. Maecenas convallis dignissim viverra. Ut in leo non magna porta tempus. Donec mollis eget metus nec scelerisque. In at lacus ac dui bibendum ultricies. Vestibulum non urna volutpat, eleifend nulla sed, viverra erat. In tincidunt lectus eget sagittis scelerisque. Morbi sed pretium metus. Etiam interdum egestas tortor, in <a href="#">porta turpis interdum</a> at. Aenean hendrerit justo et nisi ultrices pulvinar. Nam suscipit dolor et congue interdum. Sed scelerisque sapien ante, sed aliquam neque pretium at. Cras tempor dui ac magna consequat, sit amet sollicitudin urna porta. Mauris congue, dui quis laoreet sagittis, tortor sem posuere arcu, non accumsan risus elit posuere nulla. Pellentesque interdum a urna nec tempus. Nulla tincidunt odio sed egestas pretium.</p>
+                                <h2>This One is a Secondary Title</h2>
+                                <p>Sed quis laoreet ante. Nunc sed pharetra risus, quis auctor arcu. Mauris mattis mollis tortor sed posuere. Pellentesque metus dolor, molestie sed aliquam vitae, elementum nec tellus. Ut faucibus ultricies magna, eget imperdiet ante convallis sed. Nunc molestie tortor nec turpis cursus, eu pharetra dui facilisis. Nulla a luctus turpis, vitae molestie sem. Nulla facilisi. Donec tempor massa ac lectus aliquam posuere. Praesent quis faucibus nunc. Ut justo elit, elementum ac ultrices in, volutpat sit amet leo. Nunc sed dapibus tellus. Mauris a nibh non dolor pellentesque dignissim in sit amet tellus.</p>
+                                <img src="http://placehold.it/300x300" />
+                                <h3>Now We're Tertiary</h3>
+                                <p>Ut euismod, sem ac euismod egestas, nibh tellus hendrerit tortor, id auctor velit eros eget quam. Ut venenatis, mi aliquet dapibus fermentum, diam felis sagittis arcu, vitae ultrices purus arcu posuere turpis. Aenean euismod viverra purus id fringilla. Proin vestibulum tempus arcu eget placerat. Aliquam tempus elit et sapien dictum, id gravida lorem tempus. Sed adipiscing laoreet leo, vel placerat arcu viverra et. Sed scelerisque nisl lobortis sem faucibus suscipit. Maecenas viverra lacinia pretium. Nunc ornare eleifend massa, at dapibus purus tempor quis. Donec a laoreet mi. Integer placerat euismod arcu, a tristique quam consectetur at.</p>
+                                <h4>Quaternary</h4>
+                                <h5>Quinary</h5>
+                                <h6>Senary</h6>
+                              </div>
+                            </div>
+                            <div class="span2 sidebar">
+                            <div class="extrude ">
+                                <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target="#ctl14_ctl00_phsidebar_1_content">Sidebar item title</h5>
+                                <div id="ctl14_ctl00_phsidebar_1_content" class="sidebar-content sidebar-collapse in collapse" style="height: auto;">
+                                    <div>
+                                <p>Here is some placement text.</p>
+                            </div>
+                            
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-green">Call to action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div id="phfooter_0_pnlFooterTop" class="top-footer-row">
+            <!-- Footer start -->
+            <div class="footer-container container"><!-- Footer Top Row Start -->
+            <div class="footer-inner row-fluid"><!-- Footer Container Start -->
+            
+            <div class="span6 footer-faculty-links"> <!-- Footer Top Row Left Column Start -->
+            <h3>Faculty of Blank</h3>
+            <div class="row-fluid">
+                <div class="span5">
+                    
+                    <ul class="faculty-links">
+                        
+                        <li><a href='http://www.med.ualberta.ca/findapersoninfaculty' target=''>Find a person at the Faculty</a></li>
+                        
+                        <li><a href='http://webapps.srv.ualberta.ca/search/' target='_blank'>Find a person at UAlberta</a></li>
+                        
+                        <li><a href='http://medit.med.ualberta.ca/' target='_blank'>Faculty IT Service Desk</a></li>
+                        
+                        <li><a href='http://apps.ualberta.ca/' target='_blank'>Apps at UAlberta</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                <div class="span7">
+                    
+                    <ul class="unstyled social-media">
+                        
+                        <li><a class='btn-social-media youtube-footer' href='http://www.youtube.com/user/FoMDcommsteam?feature=mhee' target='_blank'><i class='icon-youtube'></i><span>YouTube</span></a></li>
+                        
+                        <li><a class='btn-social-media flickr-footer' href='http://www.flickr.com/photos/fomd/sets/' target='_blank'><i class='icon-flickr'></i><span>Flickr</span></a></li>
+                        
+                        <li><a class='btn-social-media ' href='https://www.facebook.com/UofAMedicineDentistry' target='_blank'><i class='icon-facebook'></i><span>Facebook</span></a></li>
+                        
+                        <li><a class='btn-social-media ' href='https://twitter.com/UAlberta_FoMD' target='_blank'><i class='icon-twitter'></i><span>Twitter</span></a></li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="span6 vcard"> <!-- Footer Top Row Right Column Start -->
+        <h3>Faculty Contact Information</h3>
+        <div class="row-fluid">
+            <div class="span6"> <!-- Use hCard Microformat for contact info: http://microformats.org/wiki/hcard -->
+            <p class="adr">
+            <span class="street-address">2J2.00 <br/>WC Mackenzie Health Sciences Centre</span><br/>
+            <span class="locality">Edmonton</span>,
+            <span class="region">Alberta</span><br/>
+            <span class="country-name">Canada</span>
+            <span class="postal-code">T6G 2R7</span><br/>
+            </p>
+            
+        </div>
+        <div class="span6">
+            <p class="tel">
+            <div><strong><abbr title="Telephone">Tel:</abbr> </strong><span>1-780-492-6621</span></div>
+            <div id="phfooter_0_Div1"><strong>Fax: </strong><span>1-780-492-7303</span></div>
+            </p>
+            <p><strong>Email: </strong><a href="mailto:media@med.ualberta.ca" id="phfooter_0_email" class="email">media@med.ualberta.ca</a></p>
+            <p class="note"><a href="http://www.med.ualberta.ca/about/contactfomd">Contact us</a></p>
+        </div>
+    </div>
+</div>
+
+</div><!-- Footer Container End -->
+</div><!-- Footer Top Row End -->
+</div>
+<div class="bottom-footer-row"> <!-- Footer Bottom Row Start -->
+<div class="footer-container container"> <!-- Footer Container Start -->
+<div class="footer-inner row-fluid"> <!-- Footer Inner Start -->
+
+<div class="span12 footer-copyright">
+<ul class="footer-quick-links">
+    
+    
+    
+    <li><a href="http://uofa.ualberta.ca/contactualberta" target="">Contact Us</a></li>
+    
+    <li><a href="https://www.surveymonkey.com/s/ualberta-web-feedback" target="">Feedback</a></li>
+    
+    <li><a href="http://www.registrar.ualberta.ca/calendar/" target="">University Calendar</a></li>
+    
+    <li><a href="http://www.careers.ualberta.ca/" target="">Careers</a></li>
+    
+    <li><a href="http://www.rms.ualberta.ca/en/EmergNumbers.aspx" target="">Emergency</a></li>
+    
+    <li><a href="https://policiesonline.ualberta.ca/" target="_blank">Policies</a></li>
+    
+    <li><a href="http://www.weatheroffice.gc.ca/city/pages/ab-50_metric_e.html" target="">Weather</a></li>
+    
+    <li><a href="http://www.edmonton.ca/" target="">Edmonton</a></li>
+    
+    <li><a href="http://uofa.ualberta.ca/privacy" target="">Privacy</a></li>
+    
+    <li><a href="http://uofa.ualberta.ca/keepintouch" target="">Keep in Touch</a></li>
+    
+    
+    
+    <li><a href="#">Back to Top</a></li>
+</ul>
+<p>
+&copy; 2013 <span id="phfooter_0_ualberta_address">University of Alberta 116 St. and 85 Ave., <br class="visible-phone" />Edmonton, AB, Canada T6G 2R3</span>
+</p>
+</div>
+
+</div> <!-- Footer Inner End -->
+</div>  <!-- Footer Container End -->
+</div> <!-- Footer Bottom Row End -->
+
+</footer>
+</form>
+<!-- use Google CDN's jQuery with a protocol relative URL -->
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+<!-- scripts concatenated and minified via build script-->
+<script src="http://sc3-cdn.ualberta.ca/cassette.axd/script/eq-vosa6VP8rXC3nQB8ZexCWVkg=/allScripts" type="text/javascript"></script>
+
+<!-- end scripts -->
+<script type="text/javascript" src="http://www.med.ualberta.ca/-/media/javascript/analytics-functions-footer.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){var sectionNavTitle = $('.section-nav .navigation-toggle span');$('.leftnav').on('show', function() {sectionNavTitle.html('Hide Section Navigation');});$('.leftnav').on('hide', function() {sectionNavTitle.html('Show Section Navigation');});$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });});UAlberta.Sitecore.GlobalSearch.init({ 'googleId': '006931257102525869171:dkneho8bkag ', 'resultUrl': 'http://www.med.ualberta.ca/searchresults' });
+</script>
+</body>
+</html>
