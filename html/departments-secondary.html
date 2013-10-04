@@ -118,7 +118,7 @@
             <nav id="main-nav" class="navigation-inner">
                 <ul>
                     <li>
-                        <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation"><span>Show Navigation</span><i class="icon-toggle-nav"></i>
+                        <a id="showNav" class="navigation-toggle collapsed"><span>Show Navigation</span><i class="icon-toggle-nav"></i>
                         </a>
                         <ul id="nav-list" class="main-navigation in collapse">
                             
@@ -228,38 +228,401 @@
                         
                         <hr class="softline">
                         <div class="row-fluid">
-                            <div class="span3">
-                                <ul class="leftnav in collapse" style="height: auto;">
-                                            <li>
-                                                <a href="#">Page Title</a>
-                                                
+                            <div class="LANE-left-nav span3">
+                                <style>
+                                    .nav-wrapper {
+                                      -webkit-box-sizing: border-box;
+                                      -moz-box-sizing: border-box;
+                                      box-sizing: border-box;
+                                    }
+                                    .nav-wrapper.on {
+                                      -webkit-transform: translate(0, 0);
+                                      -moz-transform: translate(0, 0);
+                                      -o-transform: translate(0, 0);
+                                      -ms-transform: translate(0, 0);
+                                      transform: translate(0, 0);
+                                    }
+                                    .nav-wrapper h2 {
+                                      font-size: 1em;
+                                      margin: 0.5em 0;
+                                      padding: 0.5em 1.5em;
+                                      line-height: 1em;
+                                    }
+                                    .nav-wrapper .nav-close {
+                                      display: none;
+                                    }
+                                    .nav-wrapper ul {
+                                      list-style: none;
+                                      margin: 0;
+                                      padding: 0;
+                                    }
+                                    .nav-wrapper ul li a {
+                                      position: relative;
+                                      display: block;
+                                    }
+                                    .nav-wrapper ul.level-0 ul {
+                                      display: none;
+                                    }
+                                    .nav-wrapper ul li.nav-expand > ul {
+                                      display: block;
+                                    }
+                                    .nav-wrapper .nav-toggle {
+                                      font-size: 1.9em;
+                                      font-weight: bold;
+                                      font-family: DINComp, sans-serif;
+                                      font-style: normal;
+                                      position: absolute;
+                                      right: 0;
+                                      top: 0;
+                                      bottom: 0;
+                                      margin: auto;
+                                      padding: 0.5em;
+                                      display: block;
+                                      width: 1em;
+                                      text-align: center;
+                                    }
+                                    .nav-wrapper a .nav-toggle:after {
+                                      content: "+";
+                                    }
+                                    .nav-wrapper li.nav-expand > a .nav-toggle:after {
+                                      content: "-";
+                                    }
+                                    .nav-wrapper .nav-parent {
+                                      padding-right: 5em;
+                                    }
+                                    .nav-wrapper ul li.nav-current > a:after {
+                                      content: "";
+                                      position: absolute;
+                                      border: 0.5em solid transparent;
+                                      border-left: 0.5em solid #007c41;
+                                    }
+                                    @media screen and (max-width: 43.125em) {
+                                      .nav-wrapper {
+                                        position: absolute;
+                                        top: 0;
+                                        left:0;
+                                        z-index: 9999;
+                                        background: #343c37;
+                                        width: 100%;
+                                        padding-right: 1px;
+                                        padding-bottom: 0px;
+                                        -webkit-box-shadow: 1px 0 1em 0 #343c37;
+                                        -moz-box-shadow: 1px 0 1em 0 #343c37;
+                                        box-shadow: 1px 0 1em 0 #343c37;
+                                        -webkit-transform-origin: 0 0;
+                                        -moz-transform-origin: 0 0;
+                                        -o-transform-origin: 0 0;
+                                        -ms-transform-origin: 0 0;
+                                        transform-origin: 0 0;
+                                        -webkit-transform: translate(-110%, 0);
+                                        -moz-transform: translate(-110%, 0);
+                                        -o-transform: translate(-110%, 0);
+                                        -ms-transform: translate(-110%, 0);
+                                        transform: translate(-110%, 0);
+                                        -webkit-backface-visibility: hidden;
+                                        -moz-backface-visibility: hidden;
+                                        backface-visibility: hidden;
+                                        transition: transform 0.4s cubic-bezier(0, 0, 0, 1);
+                                        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0, 0, 0, 1);
+                                        -moz-transition: -moz-transform 0.4s cubic-bezier(0, 0, 0, 1);
+                                        -ms-transition: -ms-transform 0.4s cubic-bezier(0, 0, 0, 1);
+                                        -o-transition: -o-transform 0.4s cubic-bezier(0, 0, 0, 1);
+                                      }
+                                      .nav-wrapper.on {
+                                        -webkit-transform: translate(0, 0);
+                                        -moz-transform: translate(0, 0);
+                                        -o-transform: translate(0, 0);
+                                        -ms-transform: translate(0, 0);
+                                        transform: translate(0, 0);
+                                      }
+                                      .nav-wrapper h2 {
+                                        color: #94a29d;
+                                        font-size: 1em;
+                                        margin: 0;
+                                        padding: 1.15em 1.5em 1em;
+                                        line-height: 1em;
+                                        border-top:2px solid rgba(255,255,255,0.1);
+                                        
+                                      }
+                                      ul.level-0 {
+                                        
+
+                                      }
+                                      .nav-wrapper .nav-close {
+                                        display: block;
+                                        position: absolute;
+                                        right: 1em;
+                                        margin-top: -2.65em;
+                                        font-size: 0.85em;
+                                        color: #fff;
+                                      }
+                                      .nav-wrapper ul li a {
+                                        color: #ffffff;
+                                        border-left: 0.5em solid rgba(255, 219, 5, 0.85);
+                                        padding: 1em;
+                                        background: #3d4643;
+                                        margin-bottom: 1px;
+                                      }
+                                      .nav-wrapper ul li a:hover {
+                                        text-decoration: none;
+                                      }
+                                      .nav-wrapper ul.level-1 li a {
+                                        border-left: 1.5em solid rgba(0, 0, 0, 0.15);
+                                        background: rgba(0, 0, 0, 0);
+                                      }
+                                      .nav-wrapper ul.level-2 li a {
+                                        border-left-width: 2.5em;
+                                        background: rgba(0, 0, 0, 0.1);
+                                      }
+                                      .nav-wrapper ul.level-3 li a {
+                                        border-left-width: 3.5em;
+                                        background: rgba(0, 0, 0, 0.2);
+                                      }
+                                      .nav-wrapper .nav-toggle {
+                                        border-left: 1px solid #343c37;
+                                      }
+                                      .nav-wrapper .nav-parent {
+                                        padding-right: 5em;
+                                      }
+                                      .nav-wrapper ul li.nav-current > a,
+                                      .nav-wrapper ul li.nav-current > a:hover {
+                                        font-weight: bold;
+                                      }
+                                      .nav-wrapper ul.level-1 li.nav-current > a:before {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        background: #ffdb05;
+                                        border-top: 1px solid #343c37;
+                                        border-bottom: 1px solid #343c37;
+                                        width: 1.5em;
+                                        height: 0.425em;
+                                        left: -1.5em;
+                                        top: 1.5em;
+                                        z-index: 5;
+                                      }
+                                      .nav-wrapper ul.level-2 li.nav-current > a:before {
+                                        width: 2.5em;
+                                        left: -2.5em;
+                                      }
+                                      .nav-wrapper ul.level-3 li.nav-current > a:before {
+                                        width: 3.5em;
+                                        left: -3.5em;
+                                      }
+                                      .nav-wrapper ul li.nav-current > a:after {
+                                        left: 0em;
+                                        top: 1.25em;
+                                        border-left-color: #ffdb05;
+                                      }
+                                      .nav-wrapper ul.level-0.faculty-level li a {
+                                        border-left-color: rgba(0, 124, 65, 0.85);
+                                      }
+                                    }
+                                    @media screen and (min-width: 43.15em) {
+
+                                      .nav-wrapper {
+                                        margin-right:1em;
+                                      }
+                                      .nav-wrapper h2 {
+                                        display: none;
+                                      }
+
+                                      .nav-wrapper ul li a {
+                                        display: block;
+                                        border-bottom: 1px dotted #DDD;
+                                        padding: 0.4em 0;
+                                        
+                                      }
+                                      .nav-wrapper ul.level-1 li a {
+                                        font-weight: normal;
+                                        padding-left: 1em;
+                                      }
+                                      .nav-wrapper ul.level-1 li a:hover,
+                                      .nav-wrapper ul.level-1 li.nav-current > a {
+                                        padding-left: 1.92857142857143em;
+                                      }
+                                      .nav-wrapper ul.level-2 li a {
+                                        padding-left: 2em;
+                                      }
+                                      .nav-wrapper ul.level-2 li a:hover,
+                                      .nav-wrapper ul.level-2 li.nav-current > a {
+                                        padding-left: 2.92857142857143em;
+                                      }
+                                      .nav-wrapper ul.level-3 li a {
+                                        font-weight: normal;
+                                        padding-left: 3em;
+                                      }
+                                      .nav-wrapper ul.level-3 li a:hover,
+                                      .nav-wrapper ul.level-3 li.nav-current > a {
+                                        padding-left: 3.92857142857143em;
+                                      }
+                                      .nav-wrapper ul li a:hover {
+                                        display: block;
+                                        background-color: #F6F8ED;
+                                        background-color: rgba(255, 245, 184, 0.15);
+                                        border: 1px solid #E1D8A4;
+                                        margin: -1px -1em 0;
+                                        padding-left: 0.92857142857143em;
+                                        padding-right: 1em;
+                                        border-radius: 4px;
+                                        -moz-border-radius: 4px;
+                                        -webkit-border-radius: 4px;
+                                      }
+                                      .nav-wrapper .nav-parent {
+                                        padding-right: 1.5em;
+                                      }
+                                      .nav-wrapper .nav-parent:hover {
+                                        padding-right: 2.5em;
+
+                                      }
+                                      .nav-wrapper .nav-toggle {
+                                        line-height: 1em;
+                                        padding: 0em;
+                                        top: 0.1em;
+                                        right: 0;
+                                        text-align: right;
+                                      }
+                                      .nav-wrapper a:hover .nav-toggle {
+                                        right: 0.48928571428571505em;
+                                      }
+                                      .nav-wrapper ul li.nav-expand > a {
+                                        font-weight: bold;
+                                      }
+                                      .nav-wrapper ul li.nav-current > a {
+                                        position: relative;
+                                        border-radius: 4px;
+                                        color: #FFF;
+                                        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIiIHN0b3AtY29sb3I9IiMwMEFGNUMiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iIiBzdG9wLWNvbG9yPSIjMDA3QzQxIiBzdG9wLW9wYWNpdHk9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+);
+                                        background-image: -moz-linear-gradient(top, #00AF5C, #007C41);
+                                        background-image: -webkit-linear-gradient(top, #00AF5C, #007C41);
+                                        background-image: -o-linear-gradient(top, #00AF5C, #007C41);
+                                        background-image: linear-gradient(top, #00AF5C, #007C41);
+                                        background-repeat: repeat-x;
+                                        margin: -1px -1em 0;
+                                        padding-left: 1em;
+                                        padding-right: 1em;
+                                        border: none;
+                                        font-weight: bold;
+                                      }
+                                      .nav-wrapper ul li.nav-current > a:hover {
+                                        text-decoration: none;
+                                      }
+                                      .nav-wrapper ul li.nav-current > a:after {
+                                        right: -1em;
+                                        top: 0.65em;
+                                      }
+                                      .nav-wrapper ul li.nav-current > .nav-parent i.nav-toggle {
+                                        right: 0.48928571428571505em;
+                                      }
+                                      .nav-wrapper ul li.nav-current > a .nav-toggle {
+                                        display: none;
+                                      }
+                                      .nav-wrapper ul.level-0.faculty-level {
+                                        display: none;
+                                      }
+                                    }
+                                    .nav-wrapper ul li.nav-current > ul {
+                                      display: block;
+                                    }
+
+                                </style>
+                                <div class="nav-wrapper left-navigation">
+                                  <h2 style="">Department of Pediatrics</h2>
+                                  <a id="navClose" class="nav-close" href="#">close</a>
+                                  <ul class="level-0">
+                                    <li>
+                                        <a class="nav-parent" href="#">About the Department<i class="nav-toggle"></i></a>
+                                          <ul class="level-1">
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Chair's Message</a></li>
+                                            <li><a href="#">Vision and Mission</a></li>
+                                            <li><a class="nav-parent" href="#">Partners<i class="nav-toggle"></i></a>
+                                                <ul class="level-2">
+                                                    <li><a href="#">AHS and Capital Health</a></li>
+                                                    <li><a href="#">Hospitals</a></li>
+                                                </ul>
                                             </li>
-                                            <li>
-                                                <a href="#">Page Title</a>
-                                                
+                                            <li><a class="nav-parent" href="#">Facilties<i class="nav-toggle"></i></a>
+                                                <ul class="level-2">
+                                                    <li><a href="#">Teaching Facilities</a></li>
+                                                    <li><a href="#">Research Facilities</a></li>
+                                                    <li><a href="#">Hospitals</a></li>
+                                                </ul>
                                             </li>
+                                          </ul>
+                                    </li>
+                                    <li>
+                                      <a class="nav-parent" href="#">Pediatric Programs and Education<i class="nav-toggle"></i></a>
+                                      <ul class="level-1">
+                                        <li><a href="#">Undergraduate Studies</a></li>
+                                        <li><a href="#">Post Graduate Studies</a></li>
+                                        <li><a href="#">Graduate Studies</a></li>
+                                        <li><a href="#">Post Doctoral Fellows</a></li>
+                                        <li><a href="#">Grand Rounds</a></li>
+                                        <li><a href="#">How to Apply</a></li>
+                                        <li><a href="#">Electives</a></li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-parent" href="#">People<i class="nav-toggle"></i></a>
+                                        <ul class="level-1">
+                                            <li><a href="#">Faculty Profiles</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">Academic Alternate Reimbursement Program</a></li>
+                                            <li><a href="#">Faculty Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-parent" href="#">Pediatric Research<i class="nav-toggle"></i></a>
+                                        <ul class="level-1">
                                             <li>
-                                                <a href="#">Page Title</a>
-                                                
+                                                <a class="nav-parent" href="#">Funding<i class="nav-toggle"></i></a>
+                                                <ul class="level-2">
+                                                    <li><a href="#">Grants</a></li>
+                                                    <li><a href="#">Trainee Support</a></li>
+                                                    <li><a href="#">Other Funding Sources</a></li>
+                                                </ul>
                                             </li>
-                                            <li>
-                                                <a href="#">Page Title</a>
-                                                
-                                            </li>
-                                            <li>
-                                                <a href="#">Page Title</a>
-                                                
-                                            </li>
-                                            <li>
-                                                <a href="#">Page Title</a>
-                                                
-                                            </li>
-                                            <li>
-                                                <a href="#">Page Title</a>
-                                                
-                                            </li>
-                                                
-                                </ul>
+                                            <li><a href="#">Research Areas</a></li>
+                                            <li><a href="#">Trainee Research</a></li>
+                                            <li><a href="#">Graduate Studies</a></li>
+                                            <li><a href="#">Faculty Profiles</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-parent" href="#">Divisions<i class="nav-toggle"></i></a>
+                                        <ul class="level-1">
+                                            <li><a href="#">Cardiology</a></li>
+                                            <li><a href="#">Critical Care (PICU)</a></li>
+                                            <li><a href="#">Dermatology</a></li>
+                                            <li><a href="#">Emergency Medicine</a></li>
+                                            <li><a href="#">Endocrinology / Metabolism</a></li>
+                                            <li><a href="#">Gastroenterology and Nutrition</a></li>
+                                            <li><a href="#">General and Community Pediatrics</a></li>
+                                            <li><a href="#">Hematology / Oncology &amp; Palliative Care</a></li>
+                                            <li><a href="#">Hospital Medicine</a></li>
+                                            <li><a href="#">Immunology and Allergy</a></li>
+                                            <li><a href="#">Infectious Disease</a></li>
+                                            <li><a href="#">Neonatal-Perinatal Care (NICU)</a></li>
+                                            <li><a href="#">Nephrology</a></li>
+                                            <li><a href="#">Neurosciences</a></li>
+                                            <li><a href="#">Respiratory, Pulmonary and Asthma</a></li>
+                                            <li><a href="#">Rheumatology</a></li>
+                                            <li><a href="#">Vascular Patency and Thrombosis</a></li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                                  <h2 style="">Faculty of Rehab Medicine</h2>
+                                  <a class="nav-close" href="#">close</a>
+                                  <ul class="level-0 faculty-level">
+                                    <li><a href="#">About Us</a></li> 
+                                    <li><a href="#">Programs and Education</a></li>
+                                    <li><a href="#">Departments</a></li>
+                                    <li><a href="#">Research</a></li>
+                                    <li><a href="#">Communities</a></li>
+                                    <li><a href="#">Alumni</a></li>
+                                  </ul>
+                                </div>
                             </div>
                             <div class="span7">
                             
@@ -595,7 +958,16 @@
 <!-- end scripts -->
 <script type="text/javascript" src="http://www.med.ualberta.ca/-/media/javascript/analytics-functions-footer.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){var sectionNavTitle = $('.section-nav .navigation-toggle span');$('.leftnav').on('show', function() {sectionNavTitle.html('Hide Section Navigation');});$('.leftnav').on('hide', function() {sectionNavTitle.html('Show Section Navigation');});$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });});UAlberta.Sitecore.GlobalSearch.init({ 'googleId': '006931257102525869171:dkneho8bkag ', 'resultUrl': 'http://www.med.ualberta.ca/searchresults' });
+$(document).ready(function(){
+$('.nav-toggle').on('click', function(ev) {
+  $(this).parent().toggleClass('expanded');
+  $(this).parent().parent().toggleClass('nav-expand');
+});
+
+$('#showNav, .nav-close').on('click', function(ev) {
+  $('.nav-wrapper').toggleClass('on');
+});
+    var sectionNavTitle = $('.section-nav .navigation-toggle span');$('.leftnav').on('show', function() {sectionNavTitle.html('Hide Section Navigation');});$('.leftnav').on('hide', function() {sectionNavTitle.html('Show Section Navigation');});$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });});UAlberta.Sitecore.GlobalSearch.init({ 'googleId': '006931257102525869171:dkneho8bkag ', 'resultUrl': 'http://www.med.ualberta.ca/searchresults' });
 </script>
 </body>
 </html>
