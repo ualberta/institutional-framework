@@ -386,22 +386,23 @@
                                 <style>
                               
                                   /** Put your styling here **/
-                                  .profile-name {
+                                  .profile-title {
                                       font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                       margin-bottom: 0.3em;
+                                      font-size: 1.2em;
                                    }
                                    .profile-teaser {
-                                       padding: 10px 10px 0 0;
+                                       padding: 0.3em 0.3em 0 0;
+                                       font-size: 0.85em;
+                                       line-height: 135%;
+                                   }
+                                   .profile-teaser.span8 {
+                                   	    margin-left: 0.8em;
                                    }
                                    .profile-teaser h3 {
                                    	   margin-bottom: 0;
-                                   	   font-size: 1.4em;
+                                   	   font-size: 1.6em;
                                    }
-                                  /*  @media (min-width: 43.125em) and (max-width: 61.1875em) {
-                                      .profile [class*="span"]  {
-                                         width: 100%;
-                                         margin-left: 0;
-                                      } */
                                    @media (min-width: 43.125em) and (max-width: 61.1875em) {
                                        .profile [class*="span"]  {
                                           width: 100%;
@@ -415,7 +416,7 @@
                                        <!-- How do we handle responsive images? I repurposed a span but do we have a better way? -->
                                        <div class="profile-teaser span8">
                                        	<h3><a href="#">Ramona Quimby, BA, MA, PhD</a></h3>
-                                       	<p class="profile-name">Research chair</p>
+                                       	<p class="profile-title">Professor of Blank</p>
                                        	<p>Duis porta cursus purus, nec iaculis tellus vestibulum id. Lorem ipsum dolor sit amet versus pascale laudes. <a href="#">Read more</a>.</p>
                                        </div>
                                        
