@@ -302,21 +302,25 @@
                                       margin-top: 0.2em;
                                    }
                                    .profile-teaser {
-                                       float: left;
                                        padding: 12px 12px 12px 0;
                                    }
                                    .profile-teaser h3 {
                                    	   margin-bottom: 0;
                                    }
+                                   @media (min-width: 43.125em) and (max-width: 61.1875em) {
+                                      .profile [class*="span"]  {
+                                         width: 100%;
+                                         margin-left: 0;
+                                      }
+                                   }
                                 </style> 
                                 <div class="frame">
-                                    <div id="pnlStaticImageContainer" class="hover-caption-container">
+                                    <div id="pnlStaticImageContainer" class="hover-caption-container profile">
                                        <a href="#"><img src="https://dev.sitecore.ualberta.ca/-/media/dev/profile-placement.png" class="span8"></a>
                                        <div class="profile-teaser span4">
                                        	<h3><a href="#">Ramona Quimby, BA, MA, PhD</a></h3>
                                        	<p class="profile-name">Research chair</p>
-                                       	<p>Duis porta cursus purus, nec iaculis tellus vestibulum id. (This section needs to drop underneath picture in tablet.)</p>
-                                       	<p><a href="#">link</a></p>
+                                       	<p>Duis porta cursus purus, nec iaculis tellus vestibulum id. (This section needs to drop underneath picture in tablet.) <a href="#">Read more</a>.</p>
                                        </div>
                                        
                                     
