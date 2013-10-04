@@ -47,6 +47,7 @@
 .promotional-item{background:#fff;border:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 4px rgba(0, 30, 15, 0.2);-moz-box-shadow:0 1px 4px rgba(0, 30, 15, 0.2);box-shadow:0 1px 4px rgba(0, 30, 15, 0.2);text-align:center;}
 .promotional-item img{margin:10px;width:90px;}
 @media (max-width:61.1875em){.promotional-item img{margin:10px;width:60px;}}.home-ad .promotional-item,.sidebar .promotional-item{background:none;border:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+.home-ad .promotional-item{width:100%;height:251px;overflow:hidden;}
 .home-ad .promotional-item img{width:auto;}
 @media (min-width:61.25em){.home-ad .promotional-item img{padding:0;margin:0;width:300px;}}.w-primary-promo .promotional-item{padding:10px;text-align:left;}
 .w-primary-promo .promotional-item img{width:auto;margin:0;}
