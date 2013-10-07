@@ -4957,8 +4957,6 @@ button.close {
   font-weight: 500;
   text-decoration: none;
   display: block;
-}
-.extrude-btn.grey {
   border: 1px solid #dfe9e3;
   border-bottom-color: #b8cec1;
   border-right-color: #d0dfd6;
@@ -4973,7 +4971,7 @@ button.close {
   color: #007c41;
   text-shadow: 0px 1px 1px #ffffff;
 }
-.extrude-btn.grey:hover {
+.extrude-btn:hover {
   *background-color: #f8faf9;
   background-image: -moz-linear-gradient(top, #ffffff, #f1f5f3);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f1f5f3));
@@ -4985,32 +4983,9 @@ button.close {
   text-decoration: none;
   color: #007c41;
 }
-.extrude-btn.green {
-  *background-color: #00964f;
-  background-image: -moz-linear-gradient(top, #00af5c, #007c41);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00af5c), to(#007c41));
-  background-image: -webkit-linear-gradient(top, #00af5c, #007c41);
-  background-image: -o-linear-gradient(top, #00af5c, #007c41);
-  background-image: linear-gradient(to bottom, #00af5c, #007c41);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00af5c', endColorstr='#ff007c41', GradientType=0);
-  color: #FFF;
-  text-shadow: 0px 1px 1px #055E33);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #00AF5C #007C41 #006D39 #00AF5C;
-}
-.extrude-btn.green:hover {
-  *background-color: #00934d;
-  background-image: -moz-linear-gradient(top, #008144, #00a557);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#008144), to(#00a557));
-  background-image: -webkit-linear-gradient(top, #008144, #00a557);
-  background-image: -o-linear-gradient(top, #008144, #00a557);
-  background-image: linear-gradient(to bottom, #008144, #00a557);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff008144', endColorstr='#ff00a557', GradientType=0);
-  color: #fff;
-  text-decoration: none;
+.extrude-btn.last {
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: -6px;
 }
 @media (max-width: 43.063em) {
   .extrude-btn {
