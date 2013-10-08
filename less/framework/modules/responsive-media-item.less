@@ -151,40 +151,10 @@
 .span12.rmi-cont{
 	margin:0px;
 }
-// One box
-.rmi-one{
-	.rmi-box{
-		width:100%;
-		margin:15px 0px 0px 0px;
-		overflow:auto;
-	}
-	.rmi-thumbnail{
-		position:inherit;
-		margin:-10px 0px 0px -10px;
-		overflow:inherit;
-		left:0px;
-		width:55%;
-		float:left;
-		padding-top:0px;
-		height:200px;
-		border-radius:4px 0px 0px 0px;
-	}
-	.rmi-thumbnail:before{
-		position:inherit;
-	}
-	.rmi-thumbnail img{
-		border-radius:4px 0px 0px 0px;
-	}
-	.rmi-content{
-		padding:0px;
-		width:44%;
-		float:right;
-	}
-}
 // Two boxes
 .rmi-two{
 	.rmi-box{
-		width:48.57%;
+		width:48.4%;
 		margin:15px 0px 0px 0px;
 	}
 	.rmi-box:last-child{margin-left:15px;}
@@ -192,7 +162,7 @@
 // Three Boxes
 .rmi-three{
 	.rmi-box{
-		width:31.4%;
+		width:31.2%;
 		margin:15px 15px 0px 0px;
 	}
 	.rmi-box:last-child{margin-right:0px;}
@@ -249,88 +219,7 @@
 }
 }
 
-@media (min-width:1200px){
-.rmi-two{
-	.rmi-box{
-		width:48.57%;
-		margin:15px 0px 0px 0px;
-	}
-}
-}
 
-@media (min-width:320px) and (max-width:540px) {
-	.rmi-one .rmi-thumbnail{
-		position:static;
-		width:100%;
-		float:none;
-		display:inline-block;
-		height:auto;
-		margin:0px;
-	}
-	.rmi-one .rmi-thumbnail img{
-		border-radius:0px;
-	}
-	.rmi-one .rmi-thumbnail{
-		border-radius:0px;
-	}
-	.rmi-thumbnail img{
-		margin-left:0px;
-		width:100%;
-		border-radius:0px;
-	}
-	.rmi-one .rmi-content{
-		float:none;
-		width:100%;
-		padding:0px 0px 10px 0px;
-	}
-}
-@media (min-width:541px) and (max-width:689px) {
-	.rmi-one .rmi-thumbnail img{
-		max-width:100%;
-		margin-left:0px;
-		padding:10px;
-	}
-	.rmi-one .rmi-thumbnail{
-		height:auto;
-	}
-	.rmi-one .rmi-content{
-		padding-bottom:10px;
-	}
-}
-@media (min-width:690px) and (max-width:930px) {
-.rmi-one .rmi-thumbnail{
-		position:static;
-		width:100%;
-		float:none;
-		display:inline-block;
-		height:auto;
-		margin:0px;
-	}
-	.rmi-one .rmi-thumbnail img{
-		border-radius:0px;
-		position:static;
-	}
-	.rmi-one .rmi-thumbnail{
-		border-radius:0px;
-	}
-	.rmi-thumbnail img{
-		margin-left:0px;
-		width:100%;
-		border-radius:0px;
-	}
-	.rmi-one .rmi-content{
-		float:none;
-		width:100%;
-		padding:0px 0px 10px 0px;
-	}
-}
-@media (min-width:931px) and (max-width:1199px) {
-	.rmi-one .rmi-thumbnail img{
-		max-width:100%;
-		margin-left:0px;
-		padding:10px;
-	}
-}
 @media (min-width:536px) and (max-width:689px) {
 	.rmi-two, .rmi-three{
 	 .rmi-box:last-child{
@@ -357,3 +246,15 @@
 	}
 	}
 }
+ @media (min-width: 21.938em) and (max-width: 29.938em) {
+   .column.sidebar .extrude.rmi-box{
+			margin-left:20%;
+			max-width:100%;
+		}
+  }
+   @media (min-width: 30.000em) and (max-width:32.688em) {
+   .column.sidebar .extrude.rmi-box{
+			margin-left:13%;
+			max-width:100%;
+		}
+  }
