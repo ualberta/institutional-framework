@@ -247,6 +247,35 @@
 
                                     .sidebar {margin-top:0;}
 
+                                    .sidebar .extrude .cta {
+                                        display: block;
+                                        background: #FCFEFD;
+                                        margin-left: -10px;
+                                        margin-right: -10px;
+                                        margin-bottom: -7px;
+                                        border-radius: 0 0 4px 4px;
+                                        padding: 0.5em 10px 0.35em 25px;
+                                        border-top: 1px dotted #E0E4E0;
+                                        position:relative;
+                                    }
+
+                                    .sidebar .extrude .cta:hover {
+                                        background:#FFF5B8;
+                                        border-top-color:#E1D8A4;
+                                    }
+
+                                    .sidebar .extrude .cta:after {
+                                        content: "";
+                                        position: absolute;
+                                        border: 0.35em solid transparent;
+                                        border-left: 0.35em solid #007c41;
+                                        left:10px;
+                                        top:0;
+                                        bottom:0;
+                                        height:0px;
+                                        margin:auto;
+                                    }
+
                                     .column {
                                         display: block;
                                         width: 100%;
@@ -1217,6 +1246,7 @@
                                                 <div class="caption" style="padding-left: 10px; padding-right: 10px;">Find your way around campus with Google Maps.</div>
                                             </div>
                                             <p>Explore all six UAlberta campuses for directions, buildings and services with our Campus Maps.</p>
+                                            <a class="cta" href="#">Explore our campuses</a>
                                         </div>
                                     </div>
                                 </div>
