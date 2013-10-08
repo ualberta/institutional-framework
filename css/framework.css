@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
 audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
 audio:not([controls]){display:none;}
@@ -967,6 +968,8 @@ ul.accordion-list li.expanded div{display:block;padding:10px;}
 .no-cssgradients hr.soften{text-align:center;border-top:1px solid #ccc;border-bottom:1px solid #fff;*display:list-item;*list-style:url(../img/hr-bevel-short.png) inside;*filter:alpha(opacity=0);*margin-left:-10px;*width:0;*border:none;}
 .touch .hover-caption-container .caption{bottom:0;}
 =======
+=======
+>>>>>>> 50bd8ceca7fda44d688a1c0ee3c19140d122b2ab
 /******** FRAMEWORK COMMON ELEMENTS START *********/
 /******** FRAMEWORK BASE START *********/
 article,
@@ -9768,5 +9771,9 @@ ul.accordion-list li.expanded div {
 .touch .hover-caption-container .caption {
   bottom: 0;
 }
+<<<<<<< HEAD
+/******** FRAMEWORK COMMON ELEMENTS END *********/
+>>>>>>> 50bd8ceca7fda44d688a1c0ee3c19140d122b2ab
+=======
 /******** FRAMEWORK COMMON ELEMENTS END *********/
 >>>>>>> 50bd8ceca7fda44d688a1c0ee3c19140d122b2ab
