@@ -227,15 +227,63 @@
                         <div class="row-fluid site-title">Department of Master</div>
                         <hr class="separator">
                         <div class="row-fluid">
-                            <div class="LANE-left-nav navigation column">
+                            <div class="LANE-left-nav navigation column placeholder">
                                 <style>
+
+                                .content-wrapper .site-title { 
+                                    font-size: 1.25em;
+                                    padding: 0;
+                                    margin: 1em 0 0 0;
+                                    line-height: 120%;
+                                    display: block;
+                                }
 
                                     .placeholder {
                                         background: linear-gradient(45deg, white 25%,
-                                        #eee 25%, #eee 50%, 
+                                        #f4f4f4 25%, #f4f4f4 50%, 
                                         white 50%, white 75%, 
-                                        #eee 75%);
+                                        #f4f4f4 75%);
                                         background-size:100px 100px;
+                                        min-height:500px;
+                                        height:500px;
+                                        box-shadow: inset 0 0 0 0.5em rgba(0,0,0,0.2);
+                                        position:relative;
+                                    }
+
+                                    .placeholder .label {
+                                        display:block;
+                                        color:rgba(0,0,0,0.2);
+                                        font-weight:bold;
+                                        font-size:2em;
+                                        position:absolute;
+                                        left:0;
+                                        right:0;
+                                        top:1em;
+                                        text-align:center;
+                                        line-height:1.2em;
+                                    }
+
+                                    .placeholder .list {
+                                        
+                                        list-style:none;
+                                        margin:0;
+                                        padding:0;
+                                        padding-top:5em;
+                                        width:100%;
+                                    }
+
+                                    .placeholder .list li {
+                                        width:50%;
+                                        margin:0.25em auto;
+                                        background:#fff;
+                                        padding:0.5em;
+                                        border-bottom:2px solid rgba(0,0,0,0.1);
+                                    }
+
+                                    .placeholder.promotional-area {
+                                        height:300px;
+                                        min-height:1px;
+                                        margin-bottom:1em;
                                     }
 
                                     hr { border-top-color:#e0e0e0;}
@@ -434,6 +482,9 @@
                                       border-left: 0.5em solid #007c41;
                                     }
                                     @media screen and (max-width: 43.125em) {
+                                        .placeholder.navigation.column { display:none;}
+                                        .placeholder .list li { width:75%; }
+
                                       .nav-wrapper {
                                         position: absolute;
                                         top: 0;
@@ -665,523 +716,48 @@
                                     
 
                                 </style>
-                                <div class="nav-wrapper left-navigation">
-                                  <h2 style="">Department of Pediatrics</h2>
-                                  <a class="nav-close" href="#">close</a>
-                                  <ul class="level-0">
-                                    <li>
-                                        <a class="nav-parent" href="#">About the Department<i class="nav-toggle"></i></a>
-                                          <ul class="level-1">
-                                            <li><a href="#">Contact Us</a></li>
-                                            <li><a href="#">Chair's Message</a></li>
-                                            <li><a href="#">Vision and Mission</a></li>
-                                            <li><a class="nav-parent" href="#">Partners<i class="nav-toggle"></i></a>
-                                                <ul class="level-2">
-                                                    <li><a href="#">AHS and Capital Health</a></li>
-                                                    <li><a href="#">Hospitals</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="nav-parent" href="#">Facilties<i class="nav-toggle"></i></a>
-                                                <ul class="level-2">
-                                                    <li><a href="#">Teaching Facilities</a></li>
-                                                    <li><a href="#">Research Facilities</a></li>
-                                                    <li><a href="#">Hospitals</a></li>
-                                                </ul>
-                                            </li>
-                                          </ul>
-                                    </li>
-                                    <li class="nav-current">
-                                      <a class="nav-parent" href="#">Pediatric Programs and Education<i class="nav-toggle"></i></a>
-                                      <ul class="level-1">
-                                        <li><a href="#">Undergraduate Studies</a></li>
-                                        <li><a href="#">Post Graduate Studies</a></li>
-                                        <li><a href="#">Graduate Studies</a></li>
-                                        <li><a href="#">Post Doctoral Fellows</a></li>
-                                        <li><a href="#">Grand Rounds</a></li>
-                                        <li><a href="#">How to Apply</a></li>
-                                        <li><a href="#">Electives</a></li>
-                                      </ul>
-                                    </li>
-                                    <li>
-                                        <a class="nav-parent" href="#">People<i class="nav-toggle"></i></a>
-                                        <ul class="level-1">
-                                            <li><a href="#">Faculty Profiles</a></li>
-                                            <li><a href="#">Careers</a></li>
-                                            <li><a href="#">Academic Alternate Reimbursement Program</a></li>
-                                            <li><a href="#">Faculty Development</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="nav-parent" href="#">Pediatric Research<i class="nav-toggle"></i></a>
-                                        <ul class="level-1">
-                                            <li>
-                                                <a class="nav-parent" href="#">Funding<i class="nav-toggle"></i></a>
-                                                <ul class="level-2">
-                                                    <li><a href="#">Grants</a></li>
-                                                    <li><a href="#">Trainee Support</a></li>
-                                                    <li><a href="#">Other Funding Sources</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Research Areas</a></li>
-                                            <li><a href="#">Trainee Research</a></li>
-                                            <li><a href="#">Graduate Studies</a></li>
-                                            <li><a href="#">Faculty Profiles</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="nav-parent" href="#">Divisions<i class="nav-toggle"></i></a>
-                                        <ul class="level-1">
-                                            <li><a href="#">Cardiology</a></li>
-                                            <li><a href="#">Critical Care (PICU)</a></li>
-                                            <li><a href="#">Dermatology</a></li>
-                                            <li><a href="#">Emergency Medicine</a></li>
-                                            <li><a href="#">Endocrinology / Metabolism</a></li>
-                                            <li><a href="#">Gastroenterology and Nutrition</a></li>
-                                            <li><a href="#">General and Community Pediatrics</a></li>
-                                            <li><a href="#">Hematology / Oncology &amp; Palliative Care</a></li>
-                                            <li><a href="#">Hospital Medicine</a></li>
-                                            <li><a href="#">Immunology and Allergy</a></li>
-                                            <li><a href="#">Infectious Disease</a></li>
-                                            <li><a href="#">Neonatal-Perinatal Care (NICU)</a></li>
-                                            <li><a href="#">Nephrology</a></li>
-                                            <li><a href="#">Neurosciences</a></li>
-                                            <li><a href="#">Respiratory, Pulmonary and Asthma</a></li>
-                                            <li><a href="#">Rheumatology</a></li>
-                                            <li><a href="#">Vascular Patency and Thrombosis</a></li>
-                                        </ul>
-                                    </li>
-                                  </ul>
-                                  <h2 style="">Faculty of Rehab Medicine</h2>
-                                  <a class="nav-close" href="#">close</a>
-                                  <ul class="level-0 faculty-level">
-                                    <li><a href="#">About Us</a></li> 
-                                    <li><a href="#">Programs and Education</a></li>
-                                    <li><a href="#">Departments</a></li>
-                                    <li><a href="#">Research</a></li>
-                                    <li><a href="#">Communities</a></li>
-                                    <li><a href="#">Alumni</a></li>
-                                  </ul>
-                                </div>
+                                <span class="label">Department Navigation</span>
                             </div> 
                             <div class="content column">
-                                
+                                <div class="placeholder promotional-area">
+                                    <span class="label">Promotional Area</span>
 
+                                    <ul class="list">
+                                        <li><strong>Video</strong></li>
+                                        <li><strong>Single Feature</strong> (Image, Headline, Description, Link)</li>
+                                        <li><strong>Feature Carousel</strong></li>
+                                        <li><strong>Responsive Media Items / Tiles</strong> (Featured programs, news, events etc.)</li>
+                                    </ul>
+                                </div>
+                                <div class="placeholder">
+                                    <span class="label">Content Area</span>
+                                    <ul class="list">
+                                        <li><strong>Rich Text</strong></li>
+                                        <li><strong>Video</strong></li>
+                                        <li><strong>Responsive Media Items / Tiles</strong> (Featured programs, news, events etc.)</li>
+                                        <li><strong>Personal Profile</strong> (Featured person, professor, student, etc.)</li>
+                                        <li><strong>Contact Information</strong> (Person, or department)</li>
+                                        <li><strong>Map</strong></li>
+                                    </ul>
+                                </div>
 
-                              <div class="VIC-promotional-area">
-                                <style>
-                              
-                                  /** Put your styling here **/
-                                  
-                                </style> 
-                                    <div class="flexslider departments">
-                                        <div class="slides">
-                                            <div class='slide image-caption-container'><a href='http://www.med.ualberta.ca/news/2013/october/t1-mri' class='image-shadow'>
-                                            <img class='fma-background' src="http://placehold.it/800x400" /></a>
-                                            <div class="feature-caption caption">
-                                                <h3><a href='#'>Title</a></h3>
-                                                <p>Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                                </div>
-                                            </div>    
-                                        </div><!--Slides-->
-                                    </div>
-                                
-                              </div>
-
-                              <hr />
-
-                              <div class="rich-text content">
-                              
-                                <style>
-                              
-                                .content > h1 {
-                                    margin: 0.1em auto 0.4em auto;
-                                    font-size: 1.8em;
-                                    line-height: 1.2em;
-                                    border: none;
-                                }
-
-                                .content > h2 {
-                                    margin: 1.57em auto 0.4em auto;
-                                    font-size: 1.6em;
-                                    line-height: 1.2em;
-                                    border: none;
-                                }
-
-                                .content > h3 {
-                                    margin: 1.57em auto 0.4em auto;
-                                    font-size: 1.4em;
-                                    line-height: 1.2em;
-                                    border: none;
-                                }
-
-                                .content > h4 {
-                                    margin: 1.57em auto 0.4em auto;
-                                    font-size: 1.15em;
-                                    line-height: 1.2em;
-                                    border: none;
-                                }
-
-                                .content > h5 {
-                                    margin: 1.57em auto 0.4em auto;
-                                }
-
-                                .content > h6 {
-                                    margin: 1.57em auto 0.4em auto;
-                                }
-
-                                .content p a { text-decoration: underline;}
-
-                                .image-right {
-                                    float:right;
-                                    width:45%;
-                                    margin-left:1em;
-                                }
-
-                                .image-left {
-                                    float:left;
-                                    margin-top:0.25em;
-                                    margin-right:1em;
-                                    margin-bottom:0.5em;
-                                }
-
-                                span.image {
-                                    position:relative;
-                                    display:block;
+                            </div>
+                            <div class="column sidebar placeholder">
+                                <span class="label">Sidebar</span>
+                                <ul class="list">
+                                    <li><strong>Generic Sidebar Module</strong></li>
+                                    <li><strong>Personal Profile</strong> (Featured person, professor, student, etc.)</li>
+                                    <li><strong>RSS Feeds</strong></li>
+                                    <li><strong>Upcoming Events</strong></li>
+                                    <li><strong>News</strong></li>
+                                    <li><strong>Button</strong></li>
                                     
-                                }
-
-                                span.image:after {
-                                    content:"";
-                                    border:1px solid rgba(0,0,0,0.1);
-                                    border-top-color:rgba(0,0,0,0.05);
-                                    position:absolute;
-                                    top:0;bottom:0;left:0;right:0;
-                                    z-index:5;
-                                    border-radius:4px;
-                                }
-
-                                span.image img {
-                                    border-radius:4px;
-                                    box-shadow: 0 1px 0 #fff;
-                                }
-
-                                .content p.teaser {
-                                    font-size:1.2em;
-                                    line-height:1.42em;
-                                    margin: 0.9em 0 1.2em;   
-                                    opacity: 0.8;                             
-                                }
-
-                                ul.content-list, ol.content-list {
-                                   margin-top: 1.57em;
-                                   margin-bottom: 1.57em;
-                                   margin-left: 1.78571428571429em;
-                                }
-
-                                ul.content-list li, ol.content-list li {
-                                    padding-top:0.15em;
-                                    padding-bottom:0.15em;
-                                }
-                                  
-                                </style> 
-                                <h1 class="page-title">Master Page</h1>
-                                <p class="teaser">Aenean hendrerit justo et nisi ultrices pulvinar. Nam suscipit dolor et congue interdum. Sed scelerisque sapien ante, sed aliquam neque pretium at. Cras tempor dui ac magna consequat, sit amet sollicitudin urna porta.</p>
-                                <p>Curabitur purus lacus, facilisis eget ligula eget, condimentum lobortis tortor. Maecenas convallis dignissim viverra. Ut in leo non magna porta tempus. Donec mollis eget metus nec scelerisque. In at lacus ac dui bibendum ultricies. Vestibulum non urna volutpat, eleifend nulla sed, viverra erat. In tincidunt lectus eget sagittis scelerisque. Morbi sed pretium metus. Etiam interdum egestas tortor, in <a href="#">porta turpis interdum</a> at. Aenean hendrerit justo et nisi ultrices pulvinar. Nam suscipit dolor et congue interdum. Sed scelerisque sapien ante, sed aliquam neque pretium at. Cras tempor dui ac magna consequat, sit amet sollicitudin urna porta. Mauris congue, dui quis laoreet sagittis, tortor sem posuere arcu, non accumsan risus elit posuere nulla. Pellentesque interdum a urna nec tempus. Nulla tincidunt odio sed egestas pretium.</p>
-                                <h2>This One is a Secondary Title</h2>
-                                <p>Sed quis laoreet ante. Nunc sed pharetra risus, quis auctor arcu. Mauris mattis mollis tortor sed posuere. Pellentesque metus dolor, molestie sed aliquam vitae, elementum nec tellus. Ut faucibus ultricies magna, eget imperdiet ante convallis sed. Nunc molestie tortor nec turpis cursus, eu pharetra dui facilisis. Nulla a luctus turpis, vitae molestie sem. Nulla facilisi. Donec tempor massa ac lectus aliquam posuere. Praesent quis faucibus nunc. Ut justo elit, elementum ac ultrices in, volutpat sit amet leo. Nunc sed dapibus tellus. Mauris a nibh non dolor pellentesque dignissim in sit amet tellus.</p>
-                                
-                                <h3>Now We're Tertiary</h3>
-                                <span class="image image-right"><img src="http://placehold.it/400x300" /></span>
-                                <p>Ut euismod, sem ac euismod egestas, nibh tellus hendrerit tortor, id auctor velit eros eget quam. Ut venenatis, mi aliquet dapibus fermentum, diam felis sagittis arcu, vitae ultrices purus arcu posuere turpis. Aenean euismod viverra purus id fringilla. Proin vestibulum tempus arcu eget placerat. Aliquam tempus elit et sapien dictum, id gravida lorem tempus. Sed adipiscing laoreet leo, vel placerat arcu viverra et. Sed scelerisque nisl lobortis sem faucibus suscipit. Maecenas viverra lacinia pretium. Nunc ornare eleifend massa, at dapibus purus tempor quis. Donec a laoreet mi. Integer placerat euismod arcu, a tristique quam consectetur at.</p>
-                                <h4>Quaternary</h4>
-                                <p>Sed quis laoreet ante. Nunc sed pharetra risus, quis auctor arcu. Mauris mattis mollis tortor sed posuere. Pellentesque metus dolor, molestie sed aliquam vitae, elementum nec tellus. Ut faucibus ultricies magna, eget imperdiet ante convallis sed. Nunc molestie tortor nec turpis cursus, eu pharetra dui facilisis. Nulla a luctus turpis, vitae molestie sem. Nulla facilisi.</p>
-                                <ul class="content-list">
-                                    <li>List Item One
-                                        <ul><li>Sub list item</li></ul>
-                                    </li>
-                                    <li>List Item Two</li>
-                                    <li>List Item Three</li>
-                                    <li>List Item Four</li>
-                                    <li>List Item Five</li>
                                 </ul>
-                                <p>Nunc sed pharetra risus, quis auctor arcu. Mauris mattis mollis tortor sed posuere. Pellentesque metus dolor, molestie sed aliquam vitae, elementum nec tellus. Ut faucibus ultricies magna, eget imperdiet ante convallis sed. Nunc molestie tortor nec turpis cursus, eu pharetra dui facilisis. Nulla a luctus turpis, vitae molestie sem.</p>
-                                <h5>Quinary</h5>
-                                <span class="image image-left"><img src="http://placehold.it/100x100" /></span>
-                                <p>Sed quis laoreet ante. Nunc sed pharetra risus, quis auctor arcu. Mauris mattis mollis tortor sed posuere. Pellentesque metus dolor, molestie sed aliquam vitae, elementum nec tellus. Ut faucibus ultricies magna, eget imperdiet ante convallis sed. Nunc molestie tortor nec turpis cursus, eu pharetra dui facilisis. </p><p>Aenean hendrerit justo et nisi ultrices pulvinar. Nam suscipit dolor et congue interdum. Sed scelerisque sapien ante, sed aliquam neque pretium at. Cras tempor dui ac magna consequat, sit amet sollicitudin urna porta. Mauris congue, dui quis laoreet sagittis, tortor sem posuere arcu, non accumsan risus elit posuere nulla.</p>
-                                <h6>Senary</h6>
-                                <p>Sed quis laoreet ante. Nunc sed pharetra risus, quis auctor arcu. </p>
-                              </div>
-                              <hr />
-                              <div class="VIC-video">
-                                <style>
-                              
-                                  /** Put your styling here **/
-                                  
-                                </style> 
-                                
-                                
-                              </div>
-                              
-                              <div class="KAREN-profile">
-                                <style>
-                              
-                                  /** Put your styling here **/
-                                  .profile-title {
-                                      font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                                      margin-bottom: 0.3em;
-                                      font-size: 1.2em;
-                                   }
-                                   .profile-teaser {
-                                       padding: 0.3em 0.3em 0 0;
-                                       font-size: 0.85em;
-                                       line-height: 135%;
-                                   }
-                                   .profile-teaser.span8 {
-                                   	    margin-left: 0.8em;
-                                   }
-                                   .profile-teaser h3 {
-                                   	   margin-bottom: 0;
-                                       margin-top:0;
-                                   	   font-size: 1.6em;
-                                   }
-                                   @media (min-width: 43.125em) and (max-width: 61.1875em) {
-                                       .profile [class*="span"]  {
-                                          width: 100%;
-                                          margin-left: 0;
-                                       }
-                                   }
-                                </style> 
-                                <div class="frame">
-                                    <div id="pnlStaticImageContainer" class="hover-caption-container profile">
-                                       <a href="#"><img src="https://dev.sitecore.ualberta.ca/-/media/dev/profile-placement.png" class="span4"></a>
-                                       <!-- How do we handle responsive images? I repurposed a span but do we have a better way? -->
-                                       <div class="profile-teaser span8">
-                                       	<h3><a href="#">Ramona Quimby, BA, MA, PhD</a></h3>
-                                       	<p class="profile-title">Professor of Blank</p>
-                                       	<p>Duis porta cursus purus, nec iaculis tellus vestibulum id. Lorem ipsum dolor sit amet versus pascale laudes. <a href="#">Read more</a>.</p>
-                                       </div>
-                                       
-                                    
-                                </div>
-                                </div>
-                                
-                              </div>
-                              <hr />
-                              <div class="LANE-fancy-list">
-                                <style>
-                              
-                                  /** Put your styling here **/
-                                  
-                                </style> 
-                                TODO: Styled List
-                                
-                              </div>
-                              <hr />
-                              <div class="row-fluid">
-                                <div class="span12 rmi-cont rmi-one">
-                                    <div class="extrude rmi-box">
-                                        <div class="rmi-thumbnail">
-                                            <a href="#" target="_blank"><img src="http://placehold.it/740x416"></a>
-                                        </div>
-                                        <div class="rmi-content">
-                                            <h3>Geologic Time Scale</h3>
-                                            <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                <a href="#">Click here to view more</a>
-                                        </div>
-                                    </div>
-                                </div><!--rmi-one-->
-                            </div>
-                            <hr />
-                            <div class="row-fluid">
-                                <div class="span12 rmi-cont rmi-two">
-                                    <div class="extrude rmi-box">
-                                        <div class="rmi-thumbnail">
-                                            <a href="#" target="_blank"><img src="http://placehold.it/400x225"><i class="icon-play-circle"></i></a>
-                                        </div>
-                                        <div class="rmi-content">
-                                            <h3>Geologic Time Scale</h3>
-                                            <p>Navigate through the history of earth and explore important events in time.</p>
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2Ftimescale%2Ftimescale.html" target="_blank" class="rmi-bottom-link">Launch the Geologic Time Scale</a>
-                                        </div>
-                                    </div>
-                                    <div class="extrude rmi-box">
-                                        <div class="rmi-thumbnail">
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2F3DViewer%2Fviewer.html?showhelp=1&amp;lesson=12" target="_blank"><img src="http://s.cdpn.io/44759/3d-viewer.jpg?w=1200" data-imgsize-smallmobile="http://s.cdpn.io/44759/3d-viewer.jpg?w=480" data-imgsize-mobile="http://s.cdpn.io/44759/3d-viewer.jpg?w=690" data-imgsize-tablet="http://s.cdpn.io/44759/3d-viewer.jpg?w=980" data-imgsize-desktop="http://s.cdpn.io/44759/3d-viewer.jpg?w=1200" alt=""></a>
-                                            </div>
-                                        <div class="rmi-content">
-                                            <h3>3D Fossil Viewer</h3>
-                                            <p>Browse through your file cabinet to view 3D models and information about several fossils.</p>
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2F3DViewer%2Fviewer.html?showhelp=1&amp;lesson=12" target="_blank" class="rmi-bottom-link">Launch the 3D Fossil Viewer</a>
-                                        </div>
-                                    </div>
-                            </div><!--rmi-two-->
-                        </div>
-                        <hr />
-                        <div class="row-fluid">
-                            <div class="span12 rmi-cont rmi-three">
-                                    <div class="extrude rmi-box">
-                                        <div class="rmi-thumbnail">
-                                            <a href="#" target="_blank"><img src="http://s.cdpn.io/44759/3d-viewer.jpg"></a>
-                                        </div>
-                                        <div class="rmi-content">
-                                            <h3>Geologic Time Scale</h3>
-                                            <p>Navigate through the history of earth and explore important events in time.</p>
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2Ftimescale%2Ftimescale.html" target="_blank" class="rmi-bottom-link">Launch </a>
-
-                                        </div>
-                                    </div>
-                                    <div class="extrude rmi-box">
-                                        <div class="rmi-thumbnail">
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2F3DViewer%2Fviewer.html?showhelp=1&amp;lesson=12" target="_blank"><img src="http://s.cdpn.io/44759/3d-viewer.jpg?w=1200" data-imgsize-smallmobile="http://s.cdpn.io/44759/3d-viewer.jpg?w=480" data-imgsize-mobile="http://s.cdpn.io/44759/3d-viewer.jpg?w=690" data-imgsize-tablet="http://s.cdpn.io/44759/3d-viewer.jpg?w=980" data-imgsize-desktop="http://s.cdpn.io/44759/3d-viewer.jpg?w=1200" alt=""></a>
-                                            </div>
-                                        <div class="rmi-content">
-                                            <h3>3D Fossil Viewer</h3>
-                                            <p>Browse through your file cabinet to view 3D models and information about several.</p>
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2Ftimescale%2Ftimescale.html" target="_blank" class="rmi-bottom-link">Launch </a>
-
-                                        </div>
-                                    </div>
-                                    <div class="extrude rmi-box">
-                                        <div class="rmi-thumbnail">
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2F3DViewer%2Fviewer.html?showhelp=1&amp;lesson=12" target="_blank"><img src="http://s.cdpn.io/44759/3d-viewer.jpg?w=1200" data-imgsize-smallmobile="http://s.cdpn.io/44759/3d-viewer.jpg?w=480" data-imgsize-mobile="http://s.cdpn.io/44759/3d-viewer.jpg?w=690" data-imgsize-tablet="http://s.cdpn.io/44759/3d-viewer.jpg?w=980" data-imgsize-desktop="http://s.cdpn.io/44759/3d-viewer.jpg?w=1200" alt=""></a>
-                                            </div>
-                                        <div class="rmi-content">
-                                            <h3>3D Fossil Viewer</h3>
-                                            <p>Browse through your file cabinet to view 3D models and information about several.</p>
-                                            <a href="https://d396qusza40orc.cloudfront.net/dino101%2Ftimescale%2Ftimescale.html" target="_blank" class="rmi-bottom-link">Link</a>
-
-                                        </div>
-                                    </div>
-                            </div><!--rmi-three-->
-                        </div>
-                        <hr />
-                              <div class="JAY-contact-info">
-                                <style>
-                                
-                                .content-wrapper .site-title { 
-                                    font-size: 1.25em;
-                                    padding: 0;
-                                    margin: 1em 0 0 0;
-                                    line-height: 120%;
-                                    display: block;
-                                }
-                                
-                                .JAY-contact-info {
-                                    margin: 0 0 10px 0;
-                                    height: auto;
-                                }
-                                
-                                    .JAY-contact-info h4 {
-                                        border-bottom: 1px dotted #e0e0e0;
-                                        padding-bottom: 0.4em;
-                                        margin-bottom:0.6em;
-                                        
-                                    }
-                                    
-                                    .JAY-contact-info .the-info {
-                                        width: 50%;
-                                        display: inline-block;
-                                        vertical-align: top;
-                                        margin-right: 2%;
-                                    }
-
-                                    .JAY-contact-info .the-info.person {
-                                        width:66%;
-                                    }
-                                    
-                                        .JAY-contact-info .the-info span {
-                                            width: 33%;
-                                            display: inline-block;
-                                            font-weight: bold;
-                                        }
-                                    
-                                    .JAY-contact-info .contact-map {
-                                        display: inline-block;
-                                        width: 47%;
-                                    }
-
-                                    .JAY-contact-info .contact-photo {
-                                        width:25%;
-                                        margin-top:0.25em;
-                                    }
-
-                                    
-                                    .sidebar .JAY-contact-info {
-                                        width: 98%; 
-                                    }
-                              
-                                  /** Put your styling here **/
-                                  
-                                </style>
-                                
-                                
-                                 <h4>Department Contact Information</h4>
-                                 
-                                 <div class="the-info department">   
-                                    <p>1098 Research Transition Facility <br>
-                                    8308-114 Street <br>
-                                    University of Alberta <br>
-                                    Edmonton, Alberta, Canada T6G 2V2</p>
-                                    <p><span>Phone:</span> (780) 492-2541<br>
-                                    <span>Fax:</span> (780) 492-8259 <br>
-                                    <span>Email:</span> <a class="ApplyClass" href="mailto:bmegrad@ualberta.ca%20">bmegrad@ualberta.ca</a></p>
-                                </div>
-                                
-                                <div class="contact-map">
-                                    <iframe width="100%" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=8308-114%2BStreet%2B%2BUniversity%2Bof%2BAlberta%2B%2BEdmonton%2C%2BAlberta%2C%2BCanada%2BT6G%2B2V2&ie=UTF8&z=14&t=m&iwloc=near&output=embed"></iframe>
-                                </div>
-                                
-                              </div>
-                              
-                            <hr />
-
-                              <div class="JAY-contact-info">
-                              
-                                <h4>Jay Runham</h4>
-                                 <div class="the-info person">
-                                    <p>Title and Position</p>
-                                    <p><span>Office:</span> (780) 492-2541 <br>
-                                    <span>Mobile:</span> (780) 492-8259 <br>
-                                    <span>Email:</span> <a class="ApplyClass" href="mailto:jrunham@ualberta.ca%20">jrunham@ualberta.ca</a></p>
-                                    <p>Bio Text and description stuff. Sed adipiscing laoreet leo, vel placerat arcu viverra et. Sed scelerisque nisl lobortis sem faucibus suscipit. Maecenas viverra lacinia pretium. Nunc ornare eleifend massa, at dapibus purus tempor quis.</p>
-                                    
-                                 </div>
-                                 
-                                    <span class="image image-right contact-photo"><img src="http://placehold.it/300x300" alt="Person Name"></span>
-                                    
-                           
-                              </div>
-                              <hr />
-                            </div>
-                            <div class="column sidebar">
-                                <div class="extrude campus-maps">
-                                    <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target="#ctl14_ctl00_phsidebar_1_content"><a href="http://campuslife.ualberta.ca/ourcampuses" target=""><i class="icon-map-marker"></i></a>Our Campuses</h5>
-                                    <div id="ctl14_ctl00_phsidebar_1_content" class="sidebar-content sidebar-collapse collapse" style="height: 0px;">
-                                        <div>
-                                            <div class="hover-caption-container" style="margin-left: -10px; margin-right: -10px; margin-top: -5px;">
-                                                <a href="http://maps.ualberta.ca"><img src="http://www.placehold.it/375x150" alt="Campus Maps Content"></a>
-                                                <div class="caption" style="padding-left: 10px; padding-right: 10px;">Find your way around campus with Google Maps.</div>
-                                            </div>
-                                            <p>Explore all six UAlberta campuses for directions, buildings and services with our Campus Maps.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="extrude">
-                                <h5 class="sidebar-title">Sidebar item title</h5>
-                                <div id="ctl14_ctl00_phsidebar_1_content" class="sidebar-content">
-                                    <div>
-                                <p>Here is some placement text.</p>
-                            </div>
-                            
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn-green">Call to action</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
     <footer>
