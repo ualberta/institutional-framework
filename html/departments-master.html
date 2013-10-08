@@ -916,9 +916,11 @@
                                 <style>
                               
                                   /** Put your styling here **/
+                                  
+                                  /* Profile styles */
                                   .profile-title {
                                       font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                                      margin-bottom: 0.3em;
+                                      margin-top: 0.3em;
                                       font-size: 1.2em;
                                    }
                                    .profile-teaser {
@@ -939,8 +941,77 @@
                                           width: 100%;
                                           margin-left: 0;
                                        }
-                                   }
+                                    }
+                                   /* Table styles */
+                                   	.table-programs thead tr th:first-child {
+                                   		width: 30%;
+                                   		-webkit-border-top-left-radius: 3px;
+                                   		-moz-border-radius-topleft: 3px;
+                                   		border-top-left-radius: 3px;
+                                   	}
+                                   	.table-programs thead tr th:last-child {
+                                   		-webkit-border-top-right-radius: 3px;
+                                   		-moz-border-radius-topright: 3px;
+                                   		border-top-right-radius: 3px;
+                                   	}
+                                   	.table-programs thead tr td:first-child {
+                                   	    width: 30%;
+                                   	}
+                                   	.table-programs thead {
+                                   		*background-color: #f7f9f8;
+                                   		background-image: -moz-linear-gradient(top, #ffffff, #eef3f0);
+                                   		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eef3f0));
+                                   		background-image: -webkit-linear-gradient(top, #ffffff, #eef3f0);
+                                   		background-image: -o-linear-gradient(top, #ffffff, #eef3f0);
+                                   		background-image: linear-gradient(to bottom, #ffffff, #eef3f0);
+                                   		background-repeat: repeat-x;
+                                   		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeef3f0', GradientType=0);
+                                   		text-shadow: 1px 1px 0px #fff;
+                                   	}
+                                   	.table-programs thead th {
+                                   		padding-bottom: 0.3em;
+                                   	}
+                                   	.table-programs thead th h3 {
+                                   	    font-size: 1.1em;
+                                   	}
+                                   	.table-programs li {
+                                   		/* margin-bottom: 0.3em; */
+                                   	}
+                                   	
+                                   	
                                 </style> 
+                                <h2>Bachelor of Science programs</h2>
+                                <table class="table table-striped  extrude table-programs">
+                                    	    <thead>
+                                    		    <tr>
+                                    			    <th><h3>Area of Study</h3></th>
+                                    			    <th><h3>Majors</h3></th>
+                                    		    </tr>
+                                    	    </thead>
+                                    	<tbody>
+                                    	    <tr><td><a href="#">Agricultural/Food Business Management</a></td>
+                                    	    <td>
+                                    	    	<ul>
+                                    	    	<li><a href="#">Agricultural Business Management</a></li>
+                                    	    	<li><a href="#">Food Business Management</a></li>
+                                    	    	</ul></td></tr>
+                                    	    <tr><td><a href="#">Agriculture</a></td><td>
+                                    	    	<ul>
+                                    	    	<li><a href="#">Agricultural and Resource Economics</a></li>
+                                    	    	<li><a href="#">Animal Science</a></li>
+                                    	    	<li><a href="#">Crop Science</a></li>
+                                    	    	<li><a href="#">Sustainable Agricultural Systems</a></li>
+                                    	    	<li><a href="#">Pre-Veterinary Medicine</a></li>
+                                    	    	</ul></td></tr>
+                                    	    <tr><td><a href="#">Animal Health</a></td><td><ul>
+                                    	    <li><a href="#">Companion and Performance Animals</a></li>
+                                    	    <li><a href="#">Food Animals</a></li>
+                                    	    <li><a href="#">Food Safety and Quality</a></li>
+                                    	    <li><a href="#">Pre-Veterinary Medicine</a></li>
+                                    	    </ul></td></tr>
+                                    	    </tbody>
+                                        </table>
+                                        
                                 <div class="frame">
                                     <div id="pnlStaticImageContainer" class="hover-caption-container profile">
                                        <a href="#"><img src="https://dev.sitecore.ualberta.ca/-/media/dev/profile-placement.png" class="span4"></a>
