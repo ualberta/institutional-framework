@@ -408,6 +408,7 @@
                                             box-sizing: border-box;
                                             -moz-box-sizing: border-box;
                                             -webkit-box-sizing: border-box;
+                                             -moz-box-sizing:border-box;
                                         }
 
                                         .container, .blade-inner, .banner-inner, .navigation-inner, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom {
@@ -415,6 +416,7 @@
                                             box-sizing: border-box;
                                             -moz-box-sizing: border-box;
                                             -webkit-box-sizing: border-box;
+                                            -moz-box-sizing:border-box;
                                             width:100%;
                                             max-width: 105em;
                                         }
@@ -837,11 +839,91 @@
 
 
                               <div class="VIC-promotional-area">
-                                <style>
-                              
-                                  /** Put your styling here **/
-                                  
-                                </style> 
+                                <style>         
+									.image-caption-container .caption{
+										background-image:linear-gradient(to bottom, rgba(15, 19, 20, 0.5), rgba(26, 16, 15, 0.5));
+										padding:10px 0px;
+										 -webkit-box-sizing: border-box;
+                                        -moz-box-sizing: border-box;
+                                        box-sizing: border-box;
+									}
+									@media (max-width: 31.250em) {
+										.image-caption-container .caption{
+											background-image:none;
+											}
+									}	
+
+							  .span12.rmi-cont{
+								  margin:0px;
+								  }
+						.rmi-two .rmi-box:last-child{
+							 		margin-left:15px;
+							 		}
+							 		.rmi-three .rmi-box:last-child{
+										margin-right:0px;
+									}			
+							@media (max-width:389px){
+								.rmi-two .rmi-box:last-child{
+										margin-left:0;
+									 }
+								 }
+							@media (min-width:390px) and (max-width:534px){
+								.rmi-two .rmi-box:last-child{
+										margin-left:20%;
+									 }
+								 }
+								@media (min-width:535px) and (max-width:689px){
+								.rmi-two .rmi-box:last-child{
+										margin-left:14%;
+									 }
+								 }	 
+							@media (min-width:690px) and (max-width:849px){
+									 .rmi-two .rmi-box{
+										 width:100%;
+										 margin:15px 0px 0px 0px;
+									 }
+									 .rmi-two .rmi-box:last-child{
+										 margin-left:0px;
+									 }
+									 .rmi-three .rmi-box{
+										 width:100%;
+										 margin:15px 0px 0px 0px;
+									 }
+								 }
+							@media (min-width:850px) and (max-width:979px){
+								  .rmi-two .rmi-box{
+									width:48%;
+									margin:15px 0px 0px 0px;
+									}
+									.rmi-three .rmi-box{
+									width:48%;
+									margin:15px 0px 0px 0px;
+									}
+									.rmi-three .rmi-box:first-child{
+										margin-right:15px;
+									}
+								}
+							@media (min-width:980px) and (max-width:1199px){
+								  .rmi-two .rmi-box{
+									width:47.8%;
+									margin:15px 0px 0px 0px;
+									}
+									.rmi-three .rmi-box{
+										width:30.2%;
+									margin:15px 15px 0px 0px;
+									}
+								}
+			
+							@media (min-width:1200px){
+								  .rmi-two .rmi-box{
+									width:48.3%;
+									margin:15px 0px 0px 0px;
+									}
+								 .rmi-three .rmi-box{
+									width:30.2%;
+									}
+								}
+							</style> 
                                     <div class="flexslider departments">
                                         <div class="slides">
                                             <div class='slide image-caption-container'><a href='http://www.med.ualberta.ca/news/2013/october/t1-mri' class='image-shadow'>
@@ -983,14 +1065,35 @@
                               <hr />
                               <div class="VIC-video">
                                 <style>
-                              
-                                  /** Put your styling here **/
-                                  
+                                  .vid-promo i{
+											position: absolute;
+											font-size: 6em;
+											color: #fff;
+											left: 50%;
+											margin-left: -.35em;
+											top: 50%;
+											margin-top: -.25em;
+											text-shadow: 0 0 10px #000;
+											opacity: .4;
+											filter: alpha(opacity=40);
+											pointer-events: none;
+										}
+										.vid i:hover{
+											filter: alpha(opacity=1);
+										}
+									.vid-promo-img{
+										postion:relative;
+									}
                                 </style> 
-                                
-                                
+                                <div class="vid-promo">
+                                <div class="span12">
+                                	<div class="vid-promo-img">         
+                                		<a target="_blank" href="#"><img src="http://placehold.it/740x416" class="span5"><i class="icon-play-circle"></i></a>
+									</div>
+                                </div>
                               </div>
-                              
+                              </div>
+                                 <hr />
                               <div class="KAREN-profile">
                                 <style>
                               
@@ -1114,12 +1217,11 @@
                                 
                               </div>
                               <hr />
-
                               <div class="row-fluid">
                                 <div class="span12 rmi-cont rmi-two">
                                     <div class="extrude rmi-box">
                                         <div class="rmi-thumbnail">
-                                            <a href="#" target="_blank"><img src="http://placehold.it/740x416"><i class="icon-play-circle"></i></a>
+                                            <a href="#" target="_blank"><img src="http://placehold.it/740x416"></a>
                                         </div>
                                         <div class="rmi-content">
                                             <h3>Geologic Time Scale</h3>
@@ -1177,6 +1279,7 @@
                                     </div>
                             </div><!--rmi-three-->
                         </div>
+                        
                         <hr />
                               <div class="JAY-contact-info">
                                 <style>
@@ -1371,6 +1474,40 @@
 								.featured-person p{
 										line-height:1.35em;
 								}
+								/* Sidebar button inside extrude */
+								.extrude-btn{
+									padding:5px 10px; 
+									margin:0px -11px;
+									font-family: @heavyFontFamily;
+									font-weight: @heavyFontWeight;
+									font-size: 1em;
+									line-height: 1em;
+									font-weight:500;  
+									text-decoration: none; 
+									display:block;
+									border: 1px solid #dfe9e3;
+									border-bottom-color: darken(#dfe9e3, 13%);
+									border-right-color: darken(#dfe9e3, 5%);
+									#gradient > .vertical(#f4f4f4, #dfe9e3);
+									color: #007c41; 
+									text-shadow: 0px 1px 1px lighten(#dfe9e3, 25%); 
+									&:hover {
+										#gradient > .vertical(lighten(#f4f4f4,6%), lighten(#dfe9e3,6%));
+										text-decoration: none;
+										color: #007c41; 
+										}
+								}
+								.extrude-btn.last{
+									border-radius:0px 0px 4px 4px;
+									margin-bottom:-6px;
+								}
+								@media (max-width: 43.063em) {
+									.extrude-btn{
+										margin:0px;
+										display:inline;
+										.border-radius(7px); 
+										}
+									}
 							</style>
 							
                             </div>
