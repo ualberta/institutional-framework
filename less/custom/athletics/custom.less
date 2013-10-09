@@ -328,9 +328,6 @@ margin-left: 6px;
     
 }
 
-.span6.feature-area, .span6.feature-area .flexslider {
-    height: 325px; 
-}
     
 .span6.feature-area {
     width: 66%;
@@ -338,6 +335,38 @@ margin-left: 6px;
 
 .span6.audience-area {
     width: 30%
+}
+
+.span6.feature-area, .span6.feature-area .flexslider {
+    height: 300px; 
+}
+	.span6.feature-area .slide {max-height: 300px;}
+
+@media (max-width: 61.1875em) {
+    .span6.feature-area, .span6.audience-area {
+        width: 75%;
+        display: block;
+    }
+}
+
+@media (max-width: 43.0625em) {
+    .span6.feature-area, .span6.audience-area {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 74.9375em) and (min-width: 61.25em) {
+    
+    .image-caption-container .caption {
+        position: absolute;
+    }
+}
+
+@media (max-width: 500px) {
+    .image-caption-container .caption {
+        position: absolute;
+    }
 }
 
 .front-news-list {
