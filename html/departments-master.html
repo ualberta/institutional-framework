@@ -1032,35 +1032,58 @@
                               <hr />
                               <div class="VIC-video">
                                 <style>
-                                  .vid-promo i{
-											position: absolute;
-											font-size: 6em;
-											color: #fff;
-											left: 50%;
-											margin-left: -.35em;
-											top: 50%;
-											margin-top: -.25em;
-											text-shadow: 0 0 10px #000;
-											opacity: .4;
-											filter: alpha(opacity=40);
-											pointer-events: none;
-										}
-										.vid i:hover{
-											filter: alpha(opacity=1);
-										}
-									.vid-promo-img{
-										postion:relative;
-									}
-                                </style> 
-                                <div class="vid-promo">
-                                <div class="span12">
-                                	<div class="vid-promo-img">         
-                                		<a target="_blank" href="#"><img src="http://placehold.it/740x416" class="span5"><i class="icon-play-circle"></i></a>
-									</div>
-                                </div>
+                                 .video-promo.span12{
+	                                 margin-left:0%;
+                                 }
+                                 .video-thumbnail-shadow{
+	                                position:relative;
+	                                display:block;
+                                 }
+								 .video-thumbnail a:hover{
+	                                text-decoration:none;
+                                 }
+                                 .video-thumbnail:hover i{
+	                                 opacity:1;
+                                 }
+                               .video-thumbnail img{
+	                               border-radius:4px;
+	                              box-shadow: 0 1px 0 #fff;                               
+	                             }
+                                 .video-thumbnail i{
+	                                  color: #FFFFFF;
+									  font-size: 6em;
+									  left: 50%;
+									  margin-left: -0.35em;
+									  margin-top: -0.25em;
+									  opacity: 0.4;
+									  pointer-events: none;
+									  position: absolute;
+									  text-shadow: 0 0 10px #000000;
+									  top: 58%;
+                                 }
+                                 .video-thumbnail i:hover{
+	                                 opacity:0.7;
+                                 }
+                                 .span6.video-desc{
+	                                 margin-left:0;
+                                 }
+                                 </style> 
+                                 <div class="video-promo span12">
+                                 <div class="span6 video-desc">
+								 	<h3>Video Module</h3>
+								 	<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. <a href="#">Read more</a></p>
+								 </div>
+								 <div class="span6 video-thumbnail">
+									 <a target="_blank" href="#" class="video-thumbnail-shadow">
+										 <img src="http://placehold.it/740x416">
+										 <i class="icon-play-circle"></i>
+									</a>
+								</div>
+                                 </div>
                               </div>
-                              </div>
-                                 <hr />
+								 <div class="clearfix"></div>
+                                <hr />
+                               
                               <div class="KAREN-profile">
                                 <style>
                               
