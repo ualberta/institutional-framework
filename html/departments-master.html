@@ -247,16 +247,24 @@
 
                                     .sidebar {margin-top:0;}
 
+                                    .sidebar p {
+                                        margin:0.714285714285715em 0;
+                                        line-height:1.57em;
+                                    }
+
                                     .sidebar .extrude .cta {
                                         display: block;
-                                        background: #FCFEFD;
+                                        font-weight:bold;
+                                        background: rgba(239, 248, 243, 0.74);
                                         margin-left: -0.8333333333333334em;
                                         margin-right: -0.8333333333333334em;
                                         margin-bottom: -7px;
+                                        margin-top:4px;
                                         border-radius: 0 0 4px 4px;
                                         padding: 5px 0.8333333333333334em 5px 25px;
                                         border-top: 1px dotted #E0E4E0;
                                         position:relative;
+                                        border-bottom: 2px solid rgba(119, 185, 83, 0.13);
                                     }
 
                                     .sidebar .extrude .cta:hover {
@@ -270,7 +278,7 @@
                                         border: 0.35em solid transparent;
                                         border-left: 0.35em solid #007c41;
                                         left:10px;
-                                        top:-1px;
+                                        top:0;
                                         bottom:0;
                                         height:0px;
                                         margin:auto;
@@ -280,6 +288,22 @@
                                         margin-left: -0.83334em; 
                                         margin-right: -0.83334em; 
                                         margin-top: -5px;
+                                    }
+
+                                    .sidebar .events-module span.date {
+                                        font-size:0.9em;
+                                    }
+
+                                    .sidebar .links-module div ul li a:hover {
+                                        margin-left: -0.83334em;
+                                        margin-right: -0.83334em;
+                                        padding-left: 0.83334em;
+                                        padding-right: 0.83334em;
+                                    }
+
+                                    .sidebar h5.sidebar-title {
+                                        margin: -0.64285714285714em -0.64285714285714em 5px -0.64285714285714em;
+                                        padding: 0.71428571428571em 0.71428571428571em 5px 0.71428571428571em;
                                     }
 
                                     .column {
@@ -296,15 +320,23 @@
                                         min-height:1px;
                                     }
 
-                                    .column.sidebar .extrude,
-                                    .column.sidebar .btn {
-                                        box-sizing: border-box;
-                                        -webkit-box-sizing: border-box;
-                                        max-width: 47.5%;
-                                        margin-right:2.5%;
-                                        display:inline-block;
-                                        vertical-align:top;
+                                    @media screen and (min-width: 375px) and (max-width: 979px) {
+                                        .column.sidebar .extrude,
+                                        .column.sidebar .btn {
+                                            box-sizing: border-box;
+                                            -moz-box-sizing: border-box;
+                                            -webkit-box-sizing: border-box;
+                                            width: 47.5%;
+                                            margin-right:2.5%;
+                                            display:inline-block;
+                                            vertical-align:top;
+                                        }
+
+                                        .column.sidebar .extrude:nth-child(even) {
+                                            margin-right: 0;
+                                        }
                                     }
+
 
                                     .flexslider {
                                         border-radius: 0;
@@ -374,12 +406,14 @@
                                             width:100%;
                                             padding:0 2em;
                                             box-sizing: border-box;
+                                            -moz-box-sizing: border-box;
                                             -webkit-box-sizing: border-box;
                                         }
 
                                         .container, .blade-inner, .banner-inner, .navigation-inner, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom {
                                             padding:0 2em;
                                             box-sizing: border-box;
+                                            -moz-box-sizing: border-box;
                                             -webkit-box-sizing: border-box;
                                             width:100%;
                                             max-width: 105em;
@@ -1243,9 +1277,11 @@
                               <hr />
                             </div>
                             <div class="column sidebar">
+
+
                                 <div class="extrude campus-maps">
                                     <h5 class="sidebar-title"><a href="http://campuslife.ualberta.ca/ourcampuses" target=""><i class="icon-map-marker"></i></a>Our Campuses</h5>
-                                    <div id="ctl14_ctl00_phsidebar_1_content" class="sidebar-content">
+                                    <div class="sidebar-content">
                                         <div>
                                             <div class="hover-caption-container image full">
                                                 <a href="http://maps.ualberta.ca"><img src="http://www.placehold.it/375x150" alt="Campus Maps Content"></a>
@@ -1256,38 +1292,81 @@
                                         </div>
                                     </div>
                                 </div>
-                            <div class="extrude">
-                                <h5 class="sidebar-title">Sidebar item title</h5>
-                                <div id="ctl14_ctl00_phsidebar_1_content" class="sidebar-content">
-                                    <div>
-                                <p>Here is some placement text.</p>
-                                     <a href="#" class="extrude-btn last">More Events</a>
+
+
+                            <div class="extrude information-box">
+                                <h5 class="sidebar-title">Information Box</h5>
+                                <div class="sidebar-content">
+                                    <p>Curabitur purus lacus, facilisis eget ligula eget, condimentum lobortis tortor. Maecenas convallis dignissim viverra. Ut in leo non magna porta tempus. Donec mollis eget metus nec scelerisque. In at lacus ac dui bibendum ultricies.</p>
+                                     <a href="#" class="cta">Learn more</a>
+							     </div>
                             </div>
-							</div>
-							
+
+                            <div class="extrude links-module">
+                                <h5 class="sidebar-title">Links</h5>
+                                <div class="sidebar-content links">
+                                    <ul>
+                                        <li><a href="#">External Link</a></li>
+                                        <li><a href="#">External Link 2</a></li>
+                                        <li><a href="#">External Link 3</a></li>
+                                        <li><a href="#">External Link 4</a></li>
+                                        <li><a href="#">External Link 5</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                                      <div class="extrude featured-person">
+
+                            <div class="extrude links-module news-module">
+                                <h5 class="sidebar-title">Latest News</h5>
+                                <div class="sidebar-content links">
+                                    <ul>
+                                        <li><a href="#">U of A Bar Serves Up Memories</a></li>
+                                        <li><a href="#">Alumni Contribute $348.5B Annually to Global Economy</a></li>
+                                        <li><a href="#">Turns Out It Is Your Dad's Week of Welcome</a></li>
+                                        <li><a href="#">Med students don white coats to mark start of professional journey</a></li>
+                                        <li><a href="#">Donation will help bring new medical technology to market</a></li>
+                                    </ul>
+                                    <a href="#" class="cta">View all news</a>
+                                </div>
+                            </div>
+
+                            <div class="extrude links-module events-module">
+                                <h5 class="sidebar-title">Upcoming Events</h5>
+                                <div class="sidebar-content links">
+                                    <ul>
+                                        <li><a href="#">U of A Bar Serves Up Memories</br><span class="date">October 18, 2013</span></a></li>
+                                        <li><a href="#">Alumni Contribute $348.5B Annually to Global Economy</br><span class="date">November 5, 2013</span></a></li>
+                                        <li><a href="#">Turns Out It Is Your Dad's Week of Welcome</br><span class="date">December 20, 2013</span></a></li>
+                                        <li><a href="#">Med students don white coats to mark start of professional journey</br><span class="date">January 24, 2014</span></a></li>
+                                        <li><a href="#">Donation will help bring new medical technology to market</br><span class="date">February 2, 2014</span></a></li>
+                                    </ul>
+                                    <a style="line-height:1.57em" href="#" class="cta">View all events</a>
+                                </div>
+                            </div>
+
+                            <div class="extrude featured-person">
                                 <h5 class="sidebar-title">Featured Professor</h5>
-                                <div id="ctl14_ctl00_phsidebar_1_content" class="sidebar-content">
+                                <div class="sidebar-content">
                                     <div>
-                                    <img src="http://placehold.it/350x150">
-										<h3 class="name-title"><a href="#">Ramona Quimby, BA, MA, PhD</a></h3>
+                                    <div class="image full"><img src="http://placehold.it/375x150"></div>
+										<h3 class="name-title">Ramona Quimby, BA, MA, PhD</h3>
                                     <p class="profile-title">Professor of Blank</p>
                                 <p>Duis porta cursus purus, nec iaculis tellus vestibulum id. Lorem ipsum dolor sit amet versus pascale laudes.
 </p>
-                                     <a href="#" class="extrude-btn last">Read More</a>
+                                     <a href="#" class="cta">View professor page</a>
                             </div>
                             
 							</div>
 							<style>
 								h3.name-title{
-									font-weight:bold;
+                                    margin-top:0.5em;
+									
 									font-size:1.2em;
 									margin-bottom:0px;
 								}
 								.sidebar .profile-title{
 									font-size:1.1em;
 									margin-top:0px;
+                                    color: #637169;
 								}
 								.featured-person p{
 										line-height:1.35em;
