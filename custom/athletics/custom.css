@@ -245,14 +245,14 @@
   width: 66%;
 }
 .span6.audience-area {
-  width: 30%;
+  width: 31.4%
+;
 }
-.span6.feature-area,
 .span6.feature-area .flexslider {
-  height: 300px;
+  height: 325px;
 }
 .span6.feature-area .slide {
-  max-height: 300px;
+  max-height: 325px;
 }
 @media (max-width: 61.1875em) {
   .span6.feature-area,
@@ -271,11 +271,81 @@
 @media (max-width: 74.9375em) and (min-width: 61.25em) {
   .image-caption-container .caption {
     position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 19;
+    width: 100%;
+    background: none;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.85)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
+    color: #fff;
+    padding: 10px 0;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
+  }
+  .image-caption-container .caption a {
+    color: #ffdb05;
+  }
+  .image-caption-container .caption {
+    color: #fff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
+  }
+  .image-caption-container .caption p,
+  .image-caption-container .caption h3 {
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1.2em;
+    position: relative;
+  }
+  .content-top-row .tab-content {
+    height: 325px;
   }
 }
 @media (max-width: 500px) {
   .image-caption-container .caption {
     position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 19;
+    width: 100%;
+    background: none;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.85)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
+    color: #fff;
+    padding: 10px 0;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
+  }
+  .image-caption-container .caption a {
+    color: #ffdb05;
+  }
+  .image-caption-container .caption {
+    color: #fff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
+  }
+  .image-caption-container .caption p,
+  .image-caption-container .caption h3 {
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1.2em;
+    position: relative;
+  }
+  .span6.feature-area .flexslider {
+    max-height: 245px;
+    height: 245px;
+  }
+  .span6.feature-area .slide {
+    max-height: 245px;
   }
 }
 .front-news-list {
