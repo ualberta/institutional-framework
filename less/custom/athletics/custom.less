@@ -156,11 +156,11 @@
 			font-weight: bold;
 		}
 		
-			.score-hover-links a {
+			.score-hover-links, .score-hover-links a {
 				display: none;
 			}
 			
-			.extrude.score-module:hover .score-hover-links a {
+			.extrude.score-module:hover .score-hover-links, .extrude.score-module:hover .score-hover-links a {
 				display: inline-block;
 			}
 		
@@ -477,34 +477,33 @@ margin-left: 6px;
 
 .athlete-of-the-week li { 
 	position:relative;
-	min-height:97px; }
+}
 	
-.athlete-of-the-week .data-description { padding:0 0 0 105px; }
+.athlete-of-the-week .data-description { padding:0; }
 
 .athlete-of-the-week .data-list li h4 {
 	line-height: 1.2em;
 	font-size: 1.2em;
-	margin: 0px 0px 0px 90px;
-	padding: 10px 10px 5px 10px;
+	margin: 0px;
+	padding: 5px 0;
 	font-family: "DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: normal;
 	text-shadow: 1px 1px 0 #fff;
 }
 
+.athlete-of-the-week .data-list li p {
+	padding: 5px 0;
+}
+
 .athlete-of-the-week .data-thumbnail {
-	width:12%;
-	margin:2px 10px 5px 0;
-	min-width:81px;
+	margin: 0px 0px 5px 0;
 	display:inline-block;
-	float:left;
-	top:5px;
-	position:absolute;
 }
 
 .athlete-of-the-week .data-thumbnail a {
-	min-width:81px;
-	height:78px;
-	overflow:hidden; 
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 35%; 
 }
 
 
@@ -622,7 +621,7 @@ margin-left: 6px;
     overflow: hidden;
 }
 
-.front-news-thumbnail a img {
+.front-news-thumbnail a img, .athlete-of-the-week .data-thumbnail a img {
     max-width: none;
     height: 78px;
 	margin: 0 0 0 -35%;
@@ -1004,9 +1003,9 @@ margin-left: 6px;
 
 @media (min-width: 75em){
 
-	.story .featured-news .image-caption-container .image-shadow img {
+	/**** .story .featured-news .image-caption-container .image-shadow img {
 		min-height: 237px;
-	}
+	} ****/
 }
 
 .game-page {
