@@ -23,6 +23,14 @@
     text-align: left;
   }
 }
+@media (min-width: 61.188em) {
+  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu {
+    right: -359px;
+  }
+  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu {
+    right: -196px;
+  }
+}
 /*** Teams Nav dropdown ***/
 .nav2 .sub-menu-content {
   height: 230px;
@@ -247,14 +255,18 @@
   width: 66%;
 }
 .span6.audience-area {
-  width: 31.4%
-;
+  width: 31.4%;
+  margin-bottom: 40px;
 }
 .span6.feature-area .flexslider {
   height: 325px;
+  margin-bottom: 40px;
 }
 .span6.feature-area .slide {
   max-height: 325px;
+}
+.span6.feature-area .image-caption-container .caption p {
+  display: none;
 }
 @media (max-width: 61.1875em) {
   .span6.feature-area,
@@ -305,7 +317,8 @@
     position: relative;
   }
   .content-top-row .tab-content {
-    height: 325px;
+    height: 247px;
+    min-height: 247px;
   }
 }
 @media (max-width: 500px) {
@@ -371,6 +384,32 @@
 .twitter-follow-button {
   width: 100% !important;
 }
+@media (max-width: 43.0625em) {
+  .primary-content-area .row-fluid .span6 {
+    width: 100%;
+  }
+}
+@media (min-width: 43.0625em) and (max-width: 61.1875em) {
+  .primary-content-area .row-fluid .span6:first-child {
+    width: 52%;
+  }
+  .primary-content-area .row-fluid .span6:nth-child(2) {
+    width: 45%;
+  }
+}
+@media (min-width: 61.1875em) {
+  .primary-content-area .row-fluid .span6 {
+    width: 100%;
+  }
+}
+@media (min-width: 74.9375em) {
+  .primary-content-area .row-fluid .span6:first-child {
+    width: 52%;
+  }
+  .primary-content-area .row-fluid .span6:nth-child(2) {
+    width: 45%;
+  }
+}
 /*** END Home Page ***/
 /*** Athlete of the Week ***/
 .athlete-of-the-week li {
@@ -415,12 +454,12 @@
   box-shadow: 0 1px 4px rgba(0, 30, 15, 0.2);
   text-align: center;
 }
-.promotional-item img {
+.promo-footer .promotional-item img {
   margin: 10px;
   width: 90px;
 }
 @media (max-width: 61.1875em) {
-  .promotional-item img {
+  .promo-footer .promotional-item img {
     margin: 10px;
     width: 60px;
   }
@@ -919,6 +958,35 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
 }
 /*** END Feature Image Caption ***/
+/*** Top Banner Customization ***/
+@media (max-width: 43.0625em) {
+  .banner-container {
+    background: #007c41 url("/design/img/athletics-web-banner.png") no-repeat -396px -38px;
+  }
+}
+@media (min-width: 61.1875em) {
+  .shadow-container {
+    padding-right: 250px;
+    margin-right: -250px;
+  }
+}
+@media (max-width: 61.1875em) {
+  .shadow-container {
+    padding-right: 470px;
+    margin-right: -470px;
+  }
+}
+@media (min-width: 74.9375em) {
+  .shadow-container {
+    padding-right: 470px;
+    margin-right: -470px;
+  }
+}
+.shadow-container {
+  display: inline-block;
+  background: url("/design/img/athletics-web-banner.png") no-repeat center -38px;
+}
+/*** END Top Banner Customization ***/
 @media only screen and (max-width: 870px) {
   /***  Responsive Tables ***/
   #no-more-tables,
