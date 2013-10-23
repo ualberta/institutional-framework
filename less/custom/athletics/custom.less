@@ -346,11 +346,17 @@ margin-left: 6px;
 }
 
 .span6.feature-area .flexslider {
-    height: 325px; 
+    height: 325px;
+	margin-bottom: 40px; 
 }
 	.span6.feature-area .slide {
-    max-height: 325px;
-}
+    	max-height: 325px;
+	}
+	
+	.span6.feature-area	.image-caption-container .caption p {
+		display: none;
+	}
+
 
 @media (max-width: 61.1875em) {
     .span6.feature-area, .span6.audience-area {
@@ -405,7 +411,8 @@ margin-left: 6px;
     }
     
     .content-top-row .tab-content {
-        height: 325px;
+        height: 247px;
+		min-height: 247px;
     }
 }
 
@@ -538,13 +545,13 @@ margin-left: 6px;
     text-align: center;
 }
 
-.promotional-item img {
+.promo-footer .promotional-item img {
     margin: 10px;
     width: 90px;
 }
 
 @media (max-width: 61.1875em) {
-	.promotional-item img {
+	.promo-footer .promotional-item img {
 		margin: 10px;
 		width: 60px;
 	}
