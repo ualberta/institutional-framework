@@ -1,5 +1,6 @@
 @media (min-width: 43.125em) {
   .navigation-container .navigation-inner ul li ul .nav1 {
+<<<<<<< HEAD
     width: 22.22222222222222%;
   }
   .navigation-container .navigation-inner ul li ul .nav2 {
@@ -13,5 +14,23 @@
   }
   .navigation-container .navigation-inner ul li ul .nav5 {
     width: 18.820861678004537%;
+=======
+    width: 11.791383219954648%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav2 {
+    width: 11.791383219954648%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav3 {
+    width: 11.791383219954648%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav4 {
+    width: 11.791383219954648%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav5 {
+    width: 26.53061224489796%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav6 {
+    width: 26.303854875283445%;
+>>>>>>> EUCE-changes
   }
 }
