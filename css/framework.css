@@ -4982,8 +4982,9 @@ a.btn {
   margin: auto;
 }
 .btn-work:after,
-.btn-give:after {
-  height: 0.75em;
+.btn-give:after,
+btn-apply {
+  font-size: 1em;
 }
 .close {
   float: right;
