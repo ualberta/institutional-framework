@@ -76,6 +76,11 @@
 .sidebar p a {
   text-decoration: underline;
 }
+.primary-content-area p a:hover,
+.secondary-content-area p a:hover,
+.sidebar p a:hover {
+  text-decoration: none;
+}
 .primary-content-area p.button-container a,
 .secondary-content-area p.button-container a,
 .sidebar p.button-container a {
