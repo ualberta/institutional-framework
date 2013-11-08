@@ -1235,7 +1235,7 @@ h3 {
 h5.sidebar-title {
   line-height: 1.2em;
   font-size: 1.2em;
-  margin: -10px -10px 5px -10px;
+  margin: -10px -10px 0px -10px;
   padding: 10px 10px 5px 10px;
   border-bottom: 1px solid #dfe9e3;
   font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4915,13 +4915,75 @@ a.btn {
   font-size: 0.815em;
   text-transform: uppercase;
 }
-.sidebar .btn {
+/*.sidebar .btn {
   display: block;
   margin-bottom: 18px;
 }
+
 .sidebar .btn-grey {
   padding-left: 0.65em;
   padding-right: 0.65em;
+}*/
+.sidebar .extrude .btn {
+  display: block;
+  font-weight: bold;
+  background: rgba(239, 248, 243, 0.74);
+  margin-left: -0.8333333333333334em;
+  margin-right: -0.8333333333333334em;
+  margin-bottom: -7px;
+  margin-top: 4px;
+  border-radius: 0 0 4px 4px;
+  padding: 5px 0.8333333333333334em 5px 25px;
+  border-top: 1px dotted #E0E4E0;
+  position: relative;
+  border-bottom: 2px solid rgba(119, 185, 83, 0.13);
+  border-left: none;
+  border-right: none;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8571428571428571em;
+  text-align: left;
+}
+.sidebar .extrude .btn:hover {
+  background: #FFF5B8;
+  border-top-color: #E1D8A4;
+}
+.sidebar .extrude .btn:after {
+  content: "";
+  position: absolute;
+  border: 0.35em solid transparent;
+  border-left: 0.35em solid #007c41;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  height: 0px;
+  margin: auto;
+}
+.sidebar .extrude .btn-green {
+  box-shadow: none;
+  text-shadow: none;
+  color: #007C41;
+}
+.sidebar .extrude .btn-grey {
+  box-shadow: none;
+  text-shadow: none;
+  color: #007C41;
+}
+.sidebar .extrude .btn-green:after,
+.sidebar .extrude .btn-grey:after {
+  content: "";
+  position: absolute;
+  border: 0.5em solid transparent;
+  border-left: 0.5em solid #007c41;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  height: 0px;
+  margin: auto;
+}
+.btn-work:after,
+.btn-give:after,
+btn-apply {
+  font-size: 1em;
 }
 .close {
   float: right;

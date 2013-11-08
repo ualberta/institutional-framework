@@ -48,6 +48,18 @@
 	
 }
 
+@media (min-width: 61.188em) {
+
+    .navigation-inner .main-navigation>li:nth-child(4):hover .sub-menu {
+        right: -359px;
+    }
+
+    .navigation-inner .main-navigation>li:nth-child(5):hover .sub-menu {
+        right: -196px;
+    }
+}
+
+
 
 /*** Teams Nav dropdown ***/
 
@@ -156,11 +168,11 @@
 			font-weight: bold;
 		}
 		
-			.score-hover-links a {
+			.score-hover-links, .score-hover-links a {
 				display: none;
 			}
 			
-			.extrude.score-module:hover .score-hover-links a {
+			.extrude.score-module:hover .score-hover-links, .extrude.score-module:hover .score-hover-links a {
 				display: inline-block;
 			}
 		
@@ -329,16 +341,22 @@ margin-left: 6px;
 }
 
 .span6.audience-area {
-    width: 31.4%
-;
+    width: 31.4%;
+	margin-bottom: 40px;
 }
 
 .span6.feature-area .flexslider {
-    height: 325px; 
+    height: 325px;
+	margin-bottom: 40px; 
 }
 	.span6.feature-area .slide {
-    max-height: 325px;
-}
+    	max-height: 325px;
+	}
+	
+	.span6.feature-area	.image-caption-container .caption p {
+		display: none;
+	}
+
 
 @media (max-width: 61.1875em) {
     .span6.feature-area, .span6.audience-area {
@@ -364,11 +382,11 @@ margin-left: 6px;
 		z-index: 19;
 		width: 100%;
         background: none;
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.85)));
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
-		background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
-		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.85)));
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+		background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
 		background-repeat: repeat-x;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
 		color: #fff;
@@ -393,7 +411,8 @@ margin-left: 6px;
     }
     
     .content-top-row .tab-content {
-        height: 325px;
+        height: 247px;
+		min-height: 247px;
     }
 }
 
@@ -406,11 +425,11 @@ margin-left: 6px;
 		z-index: 19;
 		width: 100%;
         background: none;
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.85)));
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
-		background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
-		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.85)));
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+		background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
 		background-repeat: repeat-x;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
 		color: #fff;
@@ -469,6 +488,39 @@ margin-left: 6px;
     width: 100% !important;
 }
 
+
+@media (max-width: 43.0625em) {
+    .primary-content-area .row-fluid .span6 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 43.0625em) and (max-width: 61.1875em) {
+    .primary-content-area .row-fluid .span6:first-child {
+        width: 52%;
+    }
+
+    .primary-content-area .row-fluid .span6:nth-child(2) {
+        width: 45%;
+    }
+}
+
+@media (min-width: 61.1875em) {
+    .primary-content-area .row-fluid .span6 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 74.9375em) {
+    .primary-content-area .row-fluid .span6:first-child {
+        width: 52%;
+    }
+
+    .primary-content-area .row-fluid .span6:nth-child(2) {
+        width: 45%;
+    }   
+}
+
 /*** END Home Page ***/
 
 
@@ -477,34 +529,37 @@ margin-left: 6px;
 
 .athlete-of-the-week li { 
 	position:relative;
-	min-height:97px; }
+}
 	
-.athlete-of-the-week .data-description { padding:0 0 0 105px; }
+.athlete-of-the-week .data-description { padding:0; }
 
 .athlete-of-the-week .data-list li h4 {
 	line-height: 1.2em;
 	font-size: 1.2em;
-	margin: 0px 0px 0px 90px;
-	padding: 10px 10px 5px 10px;
+	margin: 0px;
+	padding: 5px 0;
 	font-family: "DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: normal;
 	text-shadow: 1px 1px 0 #fff;
 }
 
+.athlete-of-the-week .data-list li p {
+	padding: 5px 0;
+}
+
 .athlete-of-the-week .data-thumbnail {
-	width:12%;
-	margin:2px 10px 5px 0;
-	min-width:81px;
+	margin: 0px 0px 5px 0;
 	display:inline-block;
-	float:left;
-	top:5px;
-	position:absolute;
 }
 
 .athlete-of-the-week .data-thumbnail a {
-	min-width:81px;
-	height:78px;
-	overflow:hidden; 
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 35%; 
+}
+
+.athlete-of-the-week .data-thumbnail a img {
+	width: 100%;
 }
 
 
@@ -523,13 +578,13 @@ margin-left: 6px;
     text-align: center;
 }
 
-.promotional-item img {
+.promo-footer .promotional-item img {
     margin: 10px;
     width: 90px;
 }
 
 @media (max-width: 61.1875em) {
-	.promotional-item img {
+	.promo-footer .promotional-item img {
 		margin: 10px;
 		width: 60px;
 	}
@@ -1004,9 +1059,9 @@ margin-left: 6px;
 
 @media (min-width: 75em){
 
-	.story .featured-news .image-caption-container .image-shadow img {
+	/**** .story .featured-news .image-caption-container .image-shadow img {
 		min-height: 237px;
-	}
+	} ****/
 }
 
 .game-page {
@@ -1134,6 +1189,63 @@ margin-left: 6px;
 /*** END Media Gallery ***/
 
 
+
+/*** Feature Image Caption ***/
+
+.feature-caption.caption {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.85)));
+background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
+    
+    
+}
+
+/*** END Feature Image Caption ***/
+
+
+/*** Top Banner Customization ***/
+
+
+
+@media (max-width: 43.0625em) {
+    .banner-container {
+        background: #007c41 url("/design/img/athletics-web-banner.png") no-repeat -396px -38px;
+		}
+}
+
+@media (min-width: 61.1875em) {
+    .shadow-container {  
+        padding-right: 250px;
+        margin-right: -250px;
+    }
+}
+
+@media (max-width: 61.1875em) {
+    .shadow-container {  
+        padding-right: 470px;
+        margin-right: -470px;
+    }    
+}
+
+@media (min-width: 74.9375em) {
+    .shadow-container {  
+        padding-right: 470px;
+        margin-right: -470px;
+    }
+}
+
+
+.shadow-container {
+        display: inline-block; 
+        background: url("/design/img/athletics-web-banner.png") no-repeat center -38px;
+}
+
+
+/*** END Top Banner Customization ***/
 
 
 @media only screen and (max-width: 870px) {

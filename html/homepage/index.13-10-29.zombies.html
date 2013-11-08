@@ -38,131 +38,80 @@
   <!-- Head Scripts: ANALYTICS/MODERNIZR ONLY!  All others before </body> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   
-  <!-- Page sepecific styling -->
+  <!-- Page specific styling -->
   <style>
-  .ualberta-home .fma-container ul.slides li .fma-content h3 {
-  	line-height: 120%;
-  }
-      @media screen {
+    @media screen {
+    
+      /*.flexslider .slides>li { display:block; } */
       
-        /*.flexslider .slides>li { display:block; } */
-        
-        .ualberta-home .fma-container ul.slides .fma-content h3 { line-height:1em; }
-  
-      }
-  
-      @media screen and (max-width: 43.063em) {
-        .ualberta-home .fma-container ul.slides img.fma-background {
-          margin-top: 0;
-        }
-      }
-      
-      @media screen and (max-width: 30em) {
-        .ualberta-home .why-ualberta-row .frame {
-          padding:0;
-          margin-top:-1em;
-          margin-left:-10px;
-          margin-right:-10px;
-        }
-        
-        .ualberta-home .why-ualberta-row .frame img {
-          width:100%;
-          max-width:120%;
-        }
-        .fma-container.flexslider .image-left.feature-healthycampus .image-shadow {
-        	float: left;
-        	right: 40%;
-        }
-      }
-      
-      @media screen and (max-width: 43.1em) {
-      
-        .ualberta-home .fma-container ul.slides li .fma-content p.feature-copy {
-          width: 75%;
-          margin: 0.2em auto;
-        }
-      }
-       
-      @media screen and (min-width: 43.125em) {
-        .ualberta-home .fma-container ul.slides li.center-content .fma-content {
-          top:0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          width: 22em;
-          height:10em;
-          text-align: center;
-          margin: auto;
-        }
-  
-        .ualberta-home .fma-container ul.slides li .fma-content .fma-buttons {
-          font-size:1.2em; /* Bigger buttons on feature area */
-        }
-        .ualberta-home .fma-container ul.slides li.feature-healthycampus .fma-content { 
-        	width: 32em;
-        }
-        .ualberta-home .fma-container ul.slides li.feature-healthycampus .fma-content.shade { 
-        	background: rgba(0,0,0,0.45);
-        }
-      }
-      @media screen and (min-width: 43.125em) and (max-width: 61.1875em) {
-      	.ualberta-home .fma-container ul.slides li.feature-healthycampus .fma-content { 
-      		width: 30em;
-      	}
-      }
-      @media screen and (min-width: 61.25em) {
-        .ualberta-home .why-ualberta-row p.description {
-          margin-top:0.57em;
-        }
-      }
-       /*Festival of ideas*/
-     @media screen and (min-width: 43.125em) and (max-width:57.500em) {
-     	.ualberta-home .fma-container ul.slides li.festival-of-ideas .fma-content.shade{
-	     	background:rgba(0, 0, 0, 0.9);
-	     	border-radius:0px;
-     	}
-	 	.ualberta-home .fma-container ul.slides li.festival-of-ideas.caption-left-bottom .fma-content.shade{
-		 	bottom:0px;
-		 	position:relative;
-	 	}
-     }
-     @media screen and (min-width: 43.125em) and (max-width:45em) {
-     	.ualberta-home .fma-container ul.slides li.festival-of-ideas .image-shadow{
-	     	margin-left:-620px;
-     	}
-     }
-     @media screen and (min-width: 45.063em) and (max-width:50.938em) {
-     	.ualberta-home .fma-container ul.slides li.festival-of-ideas .image-shadow{
-	     	margin-left:-580px;
-     	}
-     }
-     @media screen and (min-width: 45.063em) and (max-width:57.500em) {
-     	.ualberta-home .fma-container ul.slides li.festival-of-ideas .image-shadow{
-	     	margin-left:-528px;
-     	}
-     }
-      @media screen and (min-width: 57.563em) and (max-width:74.938em) {
-     .ualberta-home .fma-container ul.slides li.caption-left-bottom.festival-of-ideas .fma-content.shade{
-	     width:33%;
-	     bottom:30px;
-     }
-     }
-    @media screen and (min-width: 75em) {
-     .ualberta-home .fma-container ul.slides li.caption-left-bottom.festival-of-ideas .fma-content.shade{
-	     width:27%;
-	     bottom:30px;
-     }
-     }
+      .ualberta-home .fma-container ul.slides .fma-content h3 { line-height:1em; }
 
-     .lt-ie9 .ualberta-home .fma-container ul.slides li.caption-left-bottom.festival-of-ideas .fma-content.shade{
-	     width:350px;
-	     bottom:30px;
-     }
-/*Ualberta intranet*/
-.ualberta-intranet p a{
-	color:#ffdb05;
-}
-        </style>
+    }
+
+    @media screen and (max-width: 43.063em) {
+      .ualberta-home .fma-container ul.slides img.fma-background {
+        margin-top: 0;
+      }
+      .fma-container.flexslider .image-left.zombies .image-shadow {
+      	float: right;
+      	position: relative;
+      	left: 40%;
+      }
+      
+    }
+    
+    @media screen and (max-width: 30em) {
+      .ualberta-home .why-ualberta-row .frame {
+        padding:0;
+        margin-top:-1em;
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      
+      .ualberta-home .why-ualberta-row .frame img {
+        width:100%;
+        max-width:120%;
+      }
+      
+      .fma-container.flexslider .image-left.zombies .image-shadow {
+      	float: right;
+      	position: relative;
+      	left: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 43.1em) {
+    
+      .ualberta-home .fma-container ul.slides li .fma-content p.feature-copy {
+        width: 75%;
+        margin: 0.2em auto;
+      }
+    }
+     
+    @media screen and (min-width: 43.125em) {
+      .ualberta-home .fma-container ul.slides li.center-content .fma-content {
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 22em;
+        height:10em;
+        text-align: center;
+        margin: auto;
+      }
+
+      .ualberta-home .fma-container ul.slides li .fma-content .fma-buttons {
+        font-size:1.2em; /* Bigger buttons on feature area */
+      }
+      .ualberta-home .fma-container ul.slides li.feature-u-school .fma-content { width: 18em; }
+    }
+    
+    @media screen and (min-width: 61.25em) {
+      .ualberta-home .why-ualberta-row p.description {
+        margin-top:0.57em;
+      }
+    }
+      </style>
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -270,29 +219,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="content-wrapper ualberta-home">
     <div id="fma-carousel" class="fma-container container flexslider">
       <ul class="slides"> 
-         <li class="ga_ualberta_fma start caption-right-bottom feature-saw image-right ualberta-intranet">
+      <li class="ga_ualberta_fma caption-right-bottom feature-saw image-left zombies">
          <span class="image-shadow">
-           <img class="fma-background" src="/~publicas/uofa/img/features/modo-feature1.jpg" alt="UAlberta Intranet" />
+           <img class="fma-background" src="/~publicas/uofa/img/features/feature-zombies.jpg" alt="Zombies" />
          </span>
          <div class="fma-content shade">
-           <h3>My UAlberta Intranet Launches</h3>
-           <p class="feature-copy">Download or upgrade now.<br />More info: <a href="http://news.ualberta.ca">news.ualberta.ca</a></p>
+           <h3>Costumes Won't Help You</h3>
+           <p class="feature-copy">Get a flu shot.</p>
             <div class="fma-buttons">
-              <a href="https://itunes.apple.com/ca/app/ualberta/id380096985" class="btn btn-green btn-micro">iPhone App</a>
-              <a href="https://play.google.com/store/apps/details?id=com.ualberta.ualberta.android" class="btn btn-green btn-micro">Android App</a>
-              <a href="http://myualberta.ualberta.ca" class="btn btn-green btn-micro">Intranet</a>
-            </div>
-         </div>
-        </li>  
-      <li class="ga_ualberta_fma caption-right-bottom image-left feature-healthycampus">
-         <span class="image-shadow">
-           <img class="fma-background" src="/~publicas/uofa/img/features/feature-healthycampus2.jpg" alt="Healthy Campus Symposium" />
-         </span>
-         <div class="fma-content shade">
-           <h3>Healthy Campus Symposium: Saturday, Nov. 16</h3>
-           <p class="feature-copy">Create a healthier campus and make a meaningful difference by attending the Healthy Campus Symposium.</p>
-            <div class="fma-buttons">
-              <a href="http://www.studenthealth.ualberta.ca/Heroes%20For%20Health.aspx" class="btn btn-green btn-micro">Learn more</a>
+              <a href="http://uwell.ualberta.ca/FluSeason/GettingYourInfluenzaVaccine.aspx" class="btn btn-green btn-micro">Learn more</a>
             </div>
          </div>
         </li>
