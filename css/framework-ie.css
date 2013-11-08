@@ -22,7 +22,7 @@
 .lt-ie9 .ualberta-home .row-fluid .primary-content-area{width:57%;}
 .lt-ie9 .ualberta-home .row-fluid .secondary-content-area{width:40%;}
 .lt-ie9 .row-fluid .primary-content-area,.lt-ie9 .row-fluid .footer-faculty-links,.lt-ie9 .row-fluid .footer-copyright{margin-left:0;}
-.lt-ie9 .person-search,.lt-ie9 .icon-field{position:relative;}.lt-ie9 .person-search i,.lt-ie9 .icon-field i{position:absolute;color:#ccc;top:unit(0.7857142857142857px, em);left:unit(0.7142857142857143px, em);margin:0;z-index:100;}
+.lt-ie9 .person-search,.lt-ie9 .icon-field{position:relative;}.lt-ie9 .person-search i,.lt-ie9 .icon-field i{position:absolute;color:#ccc;top:0.7857142857142857em;left:0.7142857142857143em;margin:0;z-index:100;}
 .lt-ie9 .person-search button,.lt-ie9 .icon-field button{position:absolute;top:0;right:0;height:30px;padding:6px 10px;}
 .lt-ie9 .sidebar h6{margin:0.625em 0em 0em 0em;}
 .lt-ie9 .row-fluid .feature-area{width:47.97872340425532%;}
@@ -41,6 +41,12 @@
 .lt-ie9 .blade-container .quick-links-container .quick-links-button{display:none;}
 .lt-ie9 .blade-container .blade-search i.icon-search{display:none;}
 .lt-ie9 .blade-container .blade-search input.search-query{padding-left:10px;}
+.lt-ie9 .blade-container .quick-links li:first-child a{color:#007c41;font-weight:bold;}
+.lt-ie9 .blade-container .blade-inner{height:2.85714285714286em;}
+.lt-ie9 .blade-container .blade-navigation{position:absolute;left:14em;right:12.5em;}
+.lt-ie9 .blade-container .blade-search{width:13em;height:2em;position:absolute;right:0;top:0;bottom:0;margin:auto;}
+.lt-ie9 .blade-container .blade-search input.search-query{width:6.667em;}
+.lt-ie9 .blade-container .blade-inner button.global-search-btn{font-size:0.82em;margin-top:-1px;}
 .lt-ie9 .banner-container .banner-inner h1{left:0px;font-size:2em;}
 .lt-ie9 .banner-container .oval-container{display:none;}
 .lt-ie9 .banner-container .shadow-container{display:none;}
@@ -92,7 +98,7 @@
 .lt-ie9 .link-mod-container>li:last-child input{width:128px;}
 .lt-ie9 .link-mod-container li.link-mod-filter{float:none;}
 .lt-ie9 .link-mod-container li.link-mod-active h4 a::after{font-style:normal;font-family:FontAwesome;float:right;content:"\f0da";text-decoration:inherit;}
-.lt-ie9 .link-mod-container .icon-filter{bottom:10px;bottom:unit(0.6428571428571429px, em);}
+.lt-ie9 .link-mod-container .icon-filter{bottom:10px;bottom:0.6428571428571429em;}
 .lt-ie9 .fma-container.flexslider .flex-control-nav li{*display:inline;*zoom:1;}
 .lt-ie9 .fma-container.flexslider .flex-control-nav a{width:14px;height:14px;background:transparent url(../img/flexslider-control-nav.gif) no-repeat -28px 0px;}.lt-ie9 .fma-container.flexslider .flex-control-nav a:hover{background-position:0px 0px;}
 .lt-ie9 .fma-container.flexslider .flex-control-nav a.flex-active{background-position:-14px 0px;}
@@ -333,7 +339,7 @@
 .lt-ie8 a.accordion-toggle.icon-plus{*zoom:expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf067;&nbsp;');color:#007c41;height:22px;}
 .lt-ie8 .accordion-list ul li div{display:inline;position:relative;}
 .lt-ie8 .module-container{margin-bottom:0px;}
-.lt-ie9 .prospective-student .content-top-row,.lt-ie9 .why-ualberta .content-top-row,.lt-ie9 .campuslife .content-top-row{width:unit(67.14285714285714px, em);margin:5px auto;line-height:1.42em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.lt-ie9 .prospective-student .content-top-row .tab-content,.lt-ie9 .why-ualberta .content-top-row .tab-content,.lt-ie9 .campuslife .content-top-row .tab-content{overflow:auto;min-height:260px;height:unit(18.571428571428573px, em);}
+.lt-ie9 .prospective-student .content-top-row,.lt-ie9 .why-ualberta .content-top-row,.lt-ie9 .campuslife .content-top-row{width:67.14285714285714em;margin:5px auto;line-height:1.42em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.lt-ie9 .prospective-student .content-top-row .tab-content,.lt-ie9 .why-ualberta .content-top-row .tab-content,.lt-ie9 .campuslife .content-top-row .tab-content{overflow:auto;min-height:260px;height:18.571428571428573em;}
 .lt-ie9 .module-container .module-heading .module-actions{position:static;right:-9px;top:0px;}
 .ie7 ul.nav-tabs li.active{background-color:#fff;}
 .ie7 .tab-content{background-color:#fff;}

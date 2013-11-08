@@ -1,13 +1,13 @@
 .blade-container {
   background:  #fff;
   border-bottom:  1px solid #CBCFCD;
-  height:  40px;
-  padding: 10px 0px;
+  height:  2.85714285714286em;
+  padding: 0.71428571428571em 0;
   .box-shadow(inset 0px -3px 0px #F9FBFA);
-  
-  a {
-    color:#999;
-  }
+}
+
+.quick-links li a {
+  color: #999;
 }
 
 .quick-links-container {
@@ -48,8 +48,8 @@
 .brand {
   display: block;
   float:  left;
-  width:  170px;
-  height: 40px;
+  width:  12.1428571428571em;
+  height: 2.85714285714286em;
   
   img {
     display: block;
@@ -125,9 +125,101 @@ ul.quick-links-container {
   width: auto;
   margin: 0;
   .border-radius(0px 4px 4px 0px);
- .box-shadow(none);
+  .box-shadow(none);
   text-align: center;
   margin-left: -5px;
   height: 2.4em;
   padding:0.7em 0.8em;
+}
+
+
+@media (min-width: 61.25em) {
+  .quick-links {
+    display:  inline-block;
+    list-style: none;
+    margin: 2px 0 0 0;
+    padding: 0;
+    
+    li {
+      display:  inline-block;
+      margin-right: -4px;
+      padding: 0px;
+      
+      &:last-child {
+        a { border: 0px }
+      }
+
+      &:first-child a {
+        color:#007c41;
+        font-weight:bold;
+      }
+      
+      a {
+        display:  block;
+        padding: 0px 10px;
+        border-right: 1px solid #eee;
+      }
+    }  
+  }
+  
+  .blade-inner {
+    height: 2.85714285714286em;
+    nav, input, button.global-search-btn {
+      font-size: 0.85714285714286em;
+    }
+    input {
+      padding: 0.2557142857142857em 0.42857142857142855em;
+    }
+  }
+
+  .blade-navigation {
+    position:absolute;
+    left: 14em;
+    right: 12.5em;
+  }
+  
+  .blade-search {
+    width:11em;
+    height:2em;
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+  }
+  
+  .blade-search input.search-query {
+    width:6.667em;  
+  }
+  
+  .blade-inner button.global-search-btn {
+    font-size: 0.82em;
+    margin-top: -1px;
+  }
+
+}
+
+@media (min-width: 75em) {
+  .blade-inner {
+    nav, input, button.global-search-btn {
+      font-size: 1em;
+    }
+    input {
+      padding: 0.2857142857142857em 0.42857142857142855em;
+    }
+  }
+  
+  .blade-inner button.global-search-btn {
+    font-size:1em;
+    margin-top:0;
+  }  
+  .blade-search {
+    width:14em;
+  }
+  .blade-navigation {
+    right: 14em;
+  }
+  .blade-search input.search-query {
+    width:7.667em;  
+  }
 }
