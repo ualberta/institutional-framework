@@ -4924,12 +4924,13 @@ a.btn {
   padding-left: 0.65em;
   padding-right: 0.65em;
 }*/
+/*sidebar*/
 .sidebar .extrude .btn {
   display: block;
   font-weight: bold;
   background: rgba(239, 248, 243, 0.74);
-  margin-left: -0.8333333333333334em;
-  margin-right: -0.8333333333333334em;
+  margin-left: -0.99em;
+  margin-right: -0.99em;
   margin-bottom: -7px;
   margin-top: 4px;
   border-radius: 0 0 4px 4px;
@@ -4968,6 +4969,9 @@ a.btn {
   text-shadow: none;
   color: #007C41;
 }
+.sidebar .extrude .btn-apply {
+  box-shadow: none;
+}
 .sidebar .extrude .btn-green:after,
 .sidebar .extrude .btn-grey:after {
   content: "";
@@ -4980,9 +4984,9 @@ a.btn {
   height: 0px;
   margin: auto;
 }
-.btn-work:after,
-.btn-give:after,
-btn-apply {
+.sidebar .extrude .btn-work:after,
+.sidebar .extrude .btn-give:after,
+.sidebar .extrude btn-apply:after {
   font-size: 1em;
 }
 .close {
