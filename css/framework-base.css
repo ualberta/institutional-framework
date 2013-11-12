@@ -4970,6 +4970,7 @@ a.btn {
   color: #007C41;
 }
 .sidebar .extrude .btn-apply {
+  text-shadow: none;
   box-shadow: none;
 }
 .sidebar .extrude .btn-green:after,
