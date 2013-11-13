@@ -311,10 +311,10 @@ top: 48%;
 	text-shadow: none;
 	color:#007C41;
 }
-	.btn-apply{
+	.btn-apply, .btn-give, .btn-work{
 		box-shadow: none;
 		text-shadow: none;
-		box-shadow:none;
+		padding-left:10px;
 	}
 }
 .sidebar .extrude{
@@ -331,11 +331,33 @@ top: 48%;
 }
 }
 .sidebar .extrude{
-	.btn-work:after, .btn-give:after, btn-apply:after{
+	.btn-work:after, .btn-give:after, .btn-apply:after{
 	font-size:1em;
-}
-}
+	position: absolute;
+    #em > .position(top,14,30);  
+    right: 10px;
+    z-index: 1000;
+    display: inline-block;
+    font-family: FontAwesome;  
+    .ie7-inline-block();
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 1.5em;
+    top: 50%;
+    margin-top: -0.375em;
+    height: 0.75em;
+    line-height: 1em;
+    vertical-align: middle;
+    color: @linkColor;
+    text-shadow: 1px 1px 2px lighten(#ffdb05,35%);
+    pointer-events: none;
+    content: "\f0a9";
+    border:none;
+    left:auto;
 
+}
+}
 
 //
 // Close icons

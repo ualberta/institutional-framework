@@ -4970,9 +4970,12 @@ a.btn {
   text-shadow: none;
   color: #007C41;
 }
-.sidebar .extrude .btn-apply {
-  text-shadow: none;
+.sidebar .extrude .btn-apply,
+.sidebar .extrude .btn-give,
+.sidebar .extrude .btn-work {
   box-shadow: none;
+  text-shadow: none;
+  padding-left: 10px;
 }
 .sidebar .extrude .btn-green:after,
 .sidebar .extrude .btn-grey:after {
@@ -4988,8 +4991,33 @@ a.btn {
 }
 .sidebar .extrude .btn-work:after,
 .sidebar .extrude .btn-give:after,
-.sidebar .extrude btn-apply:after {
+.sidebar .extrude .btn-apply:after {
   font-size: 1em;
+  position: absolute;
+  top: 0.4666666666666667em;
+  right: 10px;
+  z-index: 1000;
+  display: inline-block;
+  font-family: FontAwesome;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 1.5em;
+  top: 50%;
+  margin-top: -0.375em;
+  height: 0.75em;
+  line-height: 1em;
+  vertical-align: middle;
+  color: #007c41;
+  text-shadow: 1px 1px 2px #fff5b7;
+  pointer-events: none;
+  content: "\f0a9";
+  border: none;
+  left: auto;
 }
 .close {
   float: right;
