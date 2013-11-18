@@ -1,63 +1,19 @@
-.standard-button(@backgroundColor: #ccc, @textColor: #666) {
-  border: 1px solid @backgroundColor;
-  border-bottom-color: darken(@backgroundColor, 10%);
-  border-right-color: darken(@backgroundColor, 5%);
-  font-size: 1.2em;
-  line-height: 1em;
-  #gradient > .vertical(@backgroundColor,  darken(@backgroundColor, 5%));
-  padding: 0.8em 1.5em 0.6em 1.5em; 
-  .border-radius(7px); 
-  font-family: @heavyFontFamily;
-  font-weight: @heavyFontWeight;
-  text-decoration: none; 
-  font-weight:500;  
-  color: @textColor; 
-  text-shadow: 0px 1px 1px lighten(@backgroundColor, 25%); 
-  .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px lighten(@backgroundColor, 35%), inset 0px -1px 3px darken(@backgroundColor, 5%)); 
-  text-align: center;
-  &:hover {
-    #gradient > .vertical(lighten(@backgroundColor,10%), lighten(@backgroundColor,10%));
-    text-decoration: none;
-    color: @textColor; 
-  }
-  &:active {
-    #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
-    .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
-    border: 1px solid darken(@backgroundColor,10%);
-    text-shadow:  none;
-    text-decoration: none;
-    color: @textColor; 
-  }
-}
-
 .standard-button-dark(@backgroundColor: #555, @backgroundColor2:#333, @textColor: #666) {
-  border: 1px solid @backgroundColor;
+  border-color: @backgroundColor;
   border-bottom-color: darken(@backgroundColor2, 3%);
   border-right-color: @backgroundColor2;
-  font-size: 1.2em;
-  line-height: 1em;
   #gradient > .vertical(@backgroundColor, @backgroundColor2);
-  padding: 0.8em 1.5em 0.6em 1.5em; 
-  .border-radius(7px); 
-  font-family: @heavyFontFamily;
-  font-weight: @heavyFontWeight;
-  text-decoration: none; 
-  font-weight:500;  
   color: @textColor; 
   text-shadow: 1px 1px 1px desaturate(darken(@backgroundColor2, 5%),10%); 
   .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px desaturate(lighten(@backgroundColor, 25%),50%), inset 0px -1px 3px darken(@backgroundColor2, 5%)); 
-  text-align: center;
   &:hover {
     #gradient > .vertical(lighten(@backgroundColor,2%), lighten(@backgroundColor2,2%));
-    text-decoration: none;
     color: @textColor;
   }
   &:active {
     #gradient > .vertical(darken(@backgroundColor, 5%), @backgroundColor);
     .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(@backgroundColor,10%));
-    border: 1px solid darken(@backgroundColor,10%);
-    text-shadow:  none;
-    text-decoration: none;
+    border-color: darken(@backgroundColor,10%);
     color: @textColor; 
   }
 }
@@ -67,7 +23,7 @@
   font-size: 1.2em;
   line-height: 1em;
   padding: 0.8em 1.5em 0.6em 1.5em; 
-  .border-radius(7px); 
+  .border-radius(0.4em); 
   font-family: @heavyFontFamily;
   font-weight: @heavyFontWeight;
   text-decoration: none; 
@@ -92,25 +48,15 @@ a.btn {
 }
 
 .btn-grey {
-  border: 1px solid #dfe9e3;
+  border-color: #dfe9e3;
   border-bottom-color: darken(#dfe9e3, 13%);
   border-right-color: darken(#dfe9e3, 5%);
-  font-size: 1.2em;
-  line-height: 1em;
-  #gradient > .vertical(#f4f4f4, #dfe9e3);
-  padding: 0.8em 1em 0.6em 1em; 
-  .border-radius(7px); 
-  font-family: @heavyFontFamily;
-  font-weight: @heavyFontWeight;
-  text-decoration: none; 
-  font-weight:500;  
+  #gradient > .vertical(#f4f4f4, #dfe9e3); 
   color: #007c41; 
   text-shadow: 0px 1px 1px lighten(#dfe9e3, 25%); 
   .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px lighten(#dfe9e3, 35%), inset 0px -1px 3px darken(#dfe9e3, 5%)); 
-  text-align: center;
   &:hover {
     #gradient > .vertical(lighten(#f4f4f4,6%), lighten(#dfe9e3,6%));
-    text-decoration: none;
     color: #007c41; 
   }
   &:active {
@@ -118,30 +64,19 @@ a.btn {
     .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(#dfe9e3,10%));
     border: 1px solid darken(#dfe9e3,14%);
     text-shadow:  none;
-    text-decoration: none;
     color: #007c41; 
   }
 }
 .btn-red {
-  border: 1px solid #7C0F00;
+  border-color: #7C0F00;
   border-bottom-color: darken(#7C0F00, 13%);
   border-right-color: darken(#7C0F00, 5%);
-  font-size: 1.2em;
-  line-height: 1em;
   #gradient > .vertical(#AF0000, #7C0F00);
-  padding: 0.8em 1em 0.6em 1em; 
-  .border-radius(7px); 
-  font-family: @heavyFontFamily;
-  font-weight: @heavyFontWeight;
-  text-decoration: none; 
-  font-weight:500;  
   color: #fff; 
   text-shadow: 0px 1px 1px lighten(#2f2f2f, 25%); 
   .box-shadow(0px 1px 4px rgba(0,0,0,0.15), inset 1px 1px 1px lighten(#AF0000, 35%), inset 0px -1px 3px darken(#AF0000, 5%)); 
-  text-align: center;
   &:hover {
     #gradient > .vertical(lighten(#7C0F00,6%), lighten(#AF0000,0%));
-    text-decoration: none;
     color: #fff; 
   }
   &:active {
@@ -149,7 +84,6 @@ a.btn {
     .box-shadow(0px -1px 4px #fff, inset 0px -1px 6px darken(#AF0000,10%));
     border: 1px solid darken(#7C0F00,14%);
     text-shadow:  none;
-    text-decoration: none;
     color: #fff; 
   }
 }
@@ -230,41 +164,15 @@ a.btn {
   }
 }
 
-.btn-apply.btn-small:after,
-.btn-give.btn-small:after,
-.btn-work.btn-small:after {
-
-}
-
 .btn-apply.btn-micro:after,
 .btn-give.btn-micro:after,
 .btn-work.btn-micro:after {
 top: 48%;
 }
 
-.btn-large {
-  font-size: 1.4em;
-}
-
-.btn-small {
-  font-size: 1em;
-}
-
-.btn-micro {
-  font-size: 0.815em;
-  text-transform:uppercase;
-}
-
-/*.sidebar .btn {
-  display: block;
-  margin-bottom: 18px;
-}
-
-.sidebar .btn-grey {
-  padding-left: 0.65em;
-  padding-right: 0.65em;
-}*/
-/*sidebar*/
+.btn-large { font-size: 1.4em; }
+.btn-small { font-size: 1em; }
+.btn-micro { font-size: 0.815em; text-transform:uppercase; }
 
 .sidebar .extrude .btn{
 	display: block;

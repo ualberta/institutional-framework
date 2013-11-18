@@ -1,0 +1,182 @@
+.secondary div.intro,
+.tertiary div.intro {
+  border-bottom: 1px solid #DDD;
+  box-shadow: 0 1px 0 #FFF;
+}
+
+// SECONDARY PAGES
+
+.secondary {
+  div.intro-content {
+    border-bottom: 1px solid #DDD;
+    box-shadow:0 1px 0 #fff;
+    font-size: 1.14em;
+    line-height: 1.42em;
+    padding:1em 0;
+    margin-bottom: 1em;
+  }
+  .page-body { 
+    position: relative; 
+  }
+  .primary-content {
+    margin-left:0;
+  }
+  .secondary-content {
+
+  }
+  .sidebar {
+    margin:0;
+  }
+}
+
+@media (min-width: 43.125em) {
+  .secondary {
+    div.intro-content {
+      width:100%;
+    }
+    .primary-content {
+      width:60%;
+    }
+    .secondary-content,
+    .sidebar {
+      position: static;
+      width: 35%;
+      margin-left: 5%;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  .secondary {
+    div.intro-content {
+      width: 77%;
+    }
+    .page-body { 
+      position: relative; 
+    }
+    .primary-content {
+      width:45%;
+      margin-left:0;
+    }
+    .secondary-content {
+      width:29%;
+      margin-left:3%;
+    }
+    .sidebar {
+      width:20%;
+      margin: 0 0 0 3%;
+      position:absolute;
+      top:1em;
+      right:0;
+    }
+  }
+}
+
+// END SECONDARY PAGES
+// ----------------------
+
+// ----------------------
+// TERTIARY PAGES 
+
+.tertiary {
+  div.intro {
+    margin-bottom:1em;
+  }
+  .navigation {
+    display:none;
+  }
+  .sidebar { 
+    margin:0;
+  }
+}
+
+@media (min-width: 43.125em) {
+  .tertiary {
+    div.intro {
+      margin-bottom:1em;
+    }
+    .navigation {
+      display:block;
+      margin:0;
+      width:30%;
+    }
+    .content {
+      width: 65%;
+      position: static;
+      margin-left: 5%;
+      float:right;
+    }
+    .sidebar { 
+      position:static;
+      clear:right;
+      float: right;
+      margin:0;
+      width:65%;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  .tertiary {
+    .navigation {
+      width:20%;
+    }
+    .content {
+      float:left;
+      width:54%;
+      margin-left:3%;
+    }
+    .span12.primary-content-area {
+      width:77%;
+    }
+    .sidebar {
+      float:left;
+      width:20%;
+      margin: 0 0 0 3%;
+    }
+  }
+}
+
+@media (min-width: 30em) {
+  .tertiary .sidebar > .extrude {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 47%;
+    margin-left:5%;
+    vertical-align:top;
+  }
+
+  .tertiary .sidebar > .extrude:nth-child(odd) {
+    margin-left:0;
+  } 
+
+}
+
+@media (min-width: 61.25em) {
+  .tertiary .sidebar > .extrude {
+    margin-left:0;
+    display:block;
+    max-width: none;
+  }
+}
+
+// END TERTIARY PAGES
+// ----------------------
+
+
+.section-heading {
+  font-family: "DIN Medium", sans-serif;
+  font-size: 1.5em;
+  margin: 0.666667em 0;
+  display: block;
+}
+
+div.content-inner hr.soften,
+hr.soften {
+  background:#ddd;
+  margin:1em 0;
+}
+
+.sidebar .btn { margin-bottom:1em;}

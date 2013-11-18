@@ -1,4 +1,10 @@
+.nav-mobile { display:block; position:relative; }
+.main-navigation { display:none; }
+
 @media (min-width: 43.125em) {
+
+  .nav-mobile { display:none; }
+  .main-navigation { display:block }
 
 //*****************************************
 //** NAVIGATION
@@ -85,5 +91,128 @@
   
   .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
     right:-133px;
+  }
+}
+
+@media screen and (max-width: 43.125em) {
+  .nav-wrapper {
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 9999;
+    background: #343c37;
+    width: 100%;
+    padding-right: 1px;
+    padding-bottom: 0px;
+    -webkit-box-shadow: 1px 0 1em 0 #343c37;
+    -moz-box-shadow: 1px 0 1em 0 #343c37;
+    box-shadow: 1px 0 1em 0 #343c37;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translate(-110%, 0);
+    -moz-transform: translate(-110%, 0);
+    -o-transform: translate(-110%, 0);
+    -ms-transform: translate(-110%, 0);
+    transform: translate(-110%, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0, 0, 0, 1);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0, 0, 0, 1);
+    -moz-transition: -moz-transform 0.4s cubic-bezier(0, 0, 0, 1);
+    -ms-transition: -ms-transform 0.4s cubic-bezier(0, 0, 0, 1);
+    -o-transition: -o-transform 0.4s cubic-bezier(0, 0, 0, 1);
+  }
+  .nav-wrapper.on {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav-wrapper h2 {
+    color: #94a29d;
+    font-size: 1em;
+    margin: 0;
+    padding: 1.15em 1.5em 1em;
+    line-height: 1em;
+    border-top:1px solid rgba(255,255,255,0.1);
+    
+  }
+  ul.level-0 {
+    border-bottom:4px solid rgba(0,0,0,0.35);
+
+  }
+  .nav-wrapper .nav-close {
+    display: block;
+    position: absolute;
+    right: 1em;
+    margin-top: -2.65em;
+    font-size: 0.85em;
+    color: #fff;
+  }
+  .nav-wrapper ul li a {
+    color: #ffffff;
+    border-left: 0.5em solid rgba(255, 219, 5, 0.85);
+    padding: 1em;
+    background: #3d4643;
+    margin-bottom: 1px;
+  }
+  .nav-wrapper ul li a:hover {
+    text-decoration: none;
+  }
+  .nav-wrapper ul.level-1 li a {
+    border-left: 1.5em solid rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0);
+  }
+  .nav-wrapper ul.level-2 li a {
+    border-left-width: 2.5em;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .nav-wrapper ul.level-3 li a {
+    border-left-width: 3.5em;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .nav-wrapper .nav-toggle {
+    border-left: 1px solid #343c37;
+  }
+  .nav-wrapper .nav-parent {
+    padding-right: 5em;
+  }
+  .nav-wrapper ul li.nav-current > a,
+  .nav-wrapper ul li.nav-current > a:hover {
+    font-weight: bold;
+  }
+  .nav-wrapper ul.level-1 li.nav-current > a:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    background: #ffdb05;
+    border-top: 1px solid #343c37;
+    border-bottom: 1px solid #343c37;
+    width: 1.5em;
+    height: 0.425em;
+    left: -1.5em;
+    top: 1.5em;
+    z-index: 5;
+  }
+  .nav-wrapper ul.level-2 li.nav-current > a:before {
+    width: 2.5em;
+    left: -2.5em;
+  }
+  .nav-wrapper ul.level-3 li.nav-current > a:before {
+    width: 3.5em;
+    left: -3.5em;
+  }
+  .nav-wrapper ul li.nav-current > a:after {
+    left: 0em;
+    top: 1.25em;
+    border-left-color: #ffdb05;
+  }
+  .nav-wrapper ul.level-0.faculty-level li a {
+    border-left-color: rgba(0, 124, 65, 0.85);
   }
 }
