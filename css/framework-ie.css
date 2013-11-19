@@ -53,6 +53,26 @@
   width: 100%;
 }
 /** BELOW IE9 **/
+.lt-ie9 {
+  /*Sidebar button*/
+
+}
+.lt-ie9 .sidebar .extrude .btn-apply,
+.lt-ie9 .sidebar .extrude .btn-give,
+.lt-ie9 .sidebar .extrude .btn-work,
+.lt-ie9 .sidebar .extrude .btn-grey,
+.lt-ie9 .sidebar .extrude .btn-green {
+  background-color: #f3faf6;
+  background-image: none;
+  filter: inherit;
+}
+.lt-ie9 .sidebar .extrude .btn-apply:hover,
+.lt-ie9 .sidebar .extrude .btn-give:hover,
+.lt-ie9 .sidebar .extrude .btn-work:hover,
+.lt-ie9 .sidebar .extrude .btn-grey:hover,
+.lt-ie9 .sidebar .extrude .btn-green:hover {
+  background-color: #fff5b8;
+}
 .lt-ie9 input[type='text'] {
   padding-top: 0.58em;
   padding-bottom: 0em;
@@ -604,6 +624,10 @@
 }
 .lt-ie9 .fma-container.flexslider .flex-control-nav a.flex-active {
   background-position: -14px 0px;
+}
+.lt-ie8 .sidebar .extrude .btn-grey,
+.lt-ie8 .sidebar .extrude .btn-green {
+  padding-left: 10px;
 }
 .lt-ie8 .ui-multiselect-checkboxes label input {
   float: left;
