@@ -1,82 +1,71 @@
 .data-list {
   clear: left;
   list-style: none;
-  margin: 0px 0 1.57em 0;
+  margin: 0 0 1.57em 0;
   padding: 0;
-  li {
-    .clearfix();
-    padding: 5px 0px;
-    border-top: 1px dotted #e0e0e0;
+  li { 
     color: @lightText;
-    a{
+    &:first-child a {
+     border-top-color: transparent;
+    }
+    &:last-child a {
+      border-bottom: none;
+    }
+    a {
 	    display:block;
+      border-top: 1px dotted #e0e0e0;
+      padding: 0.3571em 0;
+      &:hover {
+        text-decoration:none;
+        background-color: #F6F8ED;
+        background-color: rgba(255, 245, 184, 0.15);
+        margin: 0 -0.8333em 0 -0.85em;
+        padding: 0.3571em 0.8em;
+        border-color: #E1D8A4;
+        border-style: solid;
+        margin-bottom: -1px;
+        .border-radius(4px);
+        border-width: 1px 1px;
+      }
     }
     h4 {
       font-size: 1em;
       font-family: @sansFontFamily;
+      font-weight: bold;
       line-height: 1.57em;
-      margin:  0px;
-      font-weight:bold;
-      a {
-        padding: 0;
-        border: 0;
-        display:block;
-      }
+      margin: 0;
+      padding: 0;
     }
-    p {
+    span {
+      display:block;
       color: @lightText;
       font-size:  @base13px;
-      margin-bottom: 0;
-      &.date {
-        //float: right;
-      }
-    }
-    &:first-child {
-     border-top-color: transparent;
-    }
-    &:nth-child(even) {
-      //background: rgba(255,255,255, 0.02);
-    }
-    &:last-child {
-      border-bottom: none;
-    }
-    &:hover {
-      background-color: #F6F8ED;
-      background-color: rgba(255, 245, 184, 0.15);
-      margin-left: -10px;
-      margin-right:  -10px;
-      padding-left: 9px;
-      padding-right: 9px;
-      border-color: #E1D8A4;
-      border-style: solid;
-      margin-bottom: -1px;
-      .border-radius(4px);
-      border-width: 1px 1px;
+      font-weight:normal;
+      margin: 0;
     }
     &.bottom-row {
-      border-top-style: dotted;
-      border-bottom: none;
       background: none;
+      border:none;
       font-size: @base12px;
       font-family: @sansFontFamily;
       font-weight: bold;
-      padding: 0;
-      &:hover {
-        border: none;
-        border-top: 1px dotted #e0e0e0;
-        padding: 0;
-      }
       a {
         display: block;
-        padding:  10px;
         background: #ddd;
         background: rgba(0,0,0,0.025);
-        background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0) 10%);
+        background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0) 10%);
         font-family: @sansFontFamily;
+        border-width: 0 0 1px 0;
         border-bottom: 1px solid #e0e0e0;
+        margin:0;
+        padding:0.8em;
         &:hover {
           text-decoration: none;
+          border-width: 0 0 1px 0;
+          border-bottom: 1px solid #ddd;
           background-color: rgba(0,0,0,0.05);
+          margin:0;
+          padding:0.8em;
         }
         &:after {
           content: "\00BB";
@@ -84,49 +73,6 @@
         }
       }
     }
-  }
-}
-
-.sidebar {
-  .data-list {
-    margin-bottom:0px;
-    li {
-      border: 0;
-      padding: 0;
-      line-height: 1.57em;
-      overflow:hidden;
-      &:first-child {
-        padding:0;
-      }
-      a { 
-        display: block;
-        padding-top: 5px; 
-        padding-bottom: 3px;  
-        border-top: 1px dotted #E0E0E0;
-    	    line-height: 135%;
-        &:hover {
-          background: #FFF5B8;
-          padding-left: 10px;
-          padding-right: 10px;
-          border-top: 1px solid desaturate(darken(#FFF5B8,10%),50%);
-          //margin-bottom: -1px;
-          border-bottom: 1px solid desaturate(darken(#FFF5B8,10%),50%);
-          text-decoration:  none;
-        }
-      }
-      &:first-child a { 
-        border-top-color: transparent; 
-        &:hover {
-          border-top-color: desaturate(darken(#FFF5B8,10%),50%);
-        }
-      }
-    }
-  }
-  .data-list li.data-row{
-	  overflow:hidden;
-  }
-  .data-list li.data-row:hover{
-	  padding:0px 10px;
   }
 }
 

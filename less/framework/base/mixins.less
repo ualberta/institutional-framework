@@ -841,26 +841,9 @@
     }
     .spanX (0) {}
 
-    .offsetX (@index) when (@index > 0) {
-      .offset@{index} { .offset(@index); }
-      .offsetX(@index - 1);
-    }
-    .offsetX (0) {}
-
-    .offset (@columns) {
-      @offsetVal: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns + 1));
-      #em > .margin(left, @offsetVal, @baseFontSizepx);
-    }
-
     .span (@columns) {
       @colWidth: ((@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)));
       #em > .size(width, @colWidth, @baseFontSizepx);
-    }
-
-    .row {
-      @negGutter: @gridGutterWidth * -1;
-      #em > .margin(left, @negGutter, @baseFontSizepx);
-      .clearfix();
     }
 
     [class*="span"] {
@@ -877,7 +860,7 @@
     .navbar-fixed-bottom .container { .span(@gridColumns); }
 
     // generate .spanX and .offsetX
-    .spanX (@gridColumns);
+    //.spanX (@gridColumns);
     //.offsetX (@gridColumns);
 
   }
@@ -889,23 +872,6 @@
       .spanX(@index - 1);
     }
     .spanX (0) {}
-
-    .offsetX (@index) when (@index > 0) {
-      .offset@{index} { .offset(@index); }
-      .offset@{index}:first-child { .offsetFirstChild(@index); }
-      .offsetX(@index - 1);
-    }
-    .offsetX (0) {}
-
-    .offset (@columns) {
-      margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) + (@fluidGridGutterWidth*2);
-  	  *margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%) + (@fluidGridGutterWidth*2) - (.5 / @gridRowWidth * 100 * 1%);
-    }
-
-    .offsetFirstChild (@columns) {
-      margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) + (@fluidGridGutterWidth);
-      *margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%) + @fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%);
-    }
 
     .span (@columns) {
       width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));

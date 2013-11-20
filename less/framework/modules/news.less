@@ -37,9 +37,12 @@
     }
   }
   ul.news-list {
-
     li.news-row {
-	  clear:both;
+	    clear:both;
+      border-top:1px dotted #e0e0e0;
+      &:first-child {
+        border-top-width:0;
+      }
       .news-thumbnail {
         display: inline-block;
         float: left;
@@ -49,6 +52,9 @@
           min-width: 81px;
           height: 78px;
           overflow: hidden;
+          margin:0;
+          padding:0;
+          border:none;
           img {
             max-width: none;
             height: 78px;
@@ -98,7 +104,13 @@
           font-size: @base12px;
         }
       }
-      
+      h4 a {
+        margin:0;
+        padding:0;
+        display:inline;
+        background:none;
+        border:none;
+      }
     }
   }
   hr.soften {
