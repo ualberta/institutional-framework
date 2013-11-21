@@ -2679,12 +2679,20 @@ div.scfForm {
 }
 div.scfForm div.scfSubmitButtonBorder input {
   border: 1px solid;
-  padding: 0.8em 1.5em 0.6em 1.5em;
-  border: 1px solid #dfe9e3;
-  border-bottom-color: #b8cec1;
-  border-right-color: #d0dfd6;
   font-size: 1.2em;
   line-height: 1em;
+  padding: 0.8em 1.5em 0.6em 1.5em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  border-color: #dfe9e3;
+  border-bottom-color: #b8cec1;
+  border-right-color: #d0dfd6;
   *background-color: #eaefec;
   background-image: -moz-linear-gradient(top, #f4f4f4, #dfe9e3);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#dfe9e3));
@@ -2693,20 +2701,11 @@ div.scfForm div.scfSubmitButtonBorder input {
   background-image: linear-gradient(to bottom, #f4f4f4, #dfe9e3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffdfe9e3', GradientType=0);
-  padding: 0.8em 1em 0.6em 1em;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  font-weight: 500;
   color: #007c41;
   text-shadow: 0px 1px 1px #ffffff;
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
-  text-align: center;
 }
 div.scfForm div.scfSubmitButtonBorder input [class^="icon-"],
 div.scfForm div.scfSubmitButtonBorder input [class*=" icon-"] {
@@ -2730,7 +2729,6 @@ div.scfForm div.scfSubmitButtonBorder input:hover {
   background-image: linear-gradient(to bottom, #ffffff, #f1f5f3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff1f5f3', GradientType=0);
-  text-decoration: none;
   color: #007c41;
 }
 div.scfForm div.scfSubmitButtonBorder input:active {
@@ -2747,7 +2745,6 @@ div.scfForm div.scfSubmitButtonBorder input:active {
   box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #c1d4c9;
   border: 1px solid #b5ccbe;
   text-shadow: none;
-  text-decoration: none;
   color: #007c41;
 }
 div.scfForm .scfRequired {
@@ -2823,12 +2820,20 @@ div.scfForm .scfSmsTelephoneLabel {
 }
 .sidebar div.scfForm div.scfSubmitButtonBorder input {
   border: 1px solid;
-  padding: 0.8em 1.5em 0.6em 1.5em;
-  border: 1px solid #dfe9e3;
-  border-bottom-color: #b8cec1;
-  border-right-color: #d0dfd6;
   font-size: 1.2em;
   line-height: 1em;
+  padding: 0.8em 1.5em 0.6em 1.5em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  border-color: #dfe9e3;
+  border-bottom-color: #b8cec1;
+  border-right-color: #d0dfd6;
   *background-color: #eaefec;
   background-image: -moz-linear-gradient(top, #f4f4f4, #dfe9e3);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#dfe9e3));
@@ -2837,20 +2842,11 @@ div.scfForm .scfSmsTelephoneLabel {
   background-image: linear-gradient(to bottom, #f4f4f4, #dfe9e3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffdfe9e3', GradientType=0);
-  padding: 0.8em 1em 0.6em 1em;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  font-weight: 500;
   color: #007c41;
   text-shadow: 0px 1px 1px #ffffff;
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
-  text-align: center;
   font-size: 0.815em;
   text-transform: uppercase;
 }
@@ -2876,7 +2872,6 @@ div.scfForm .scfSmsTelephoneLabel {
   background-image: linear-gradient(to bottom, #ffffff, #f1f5f3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff1f5f3', GradientType=0);
-  text-decoration: none;
   color: #007c41;
 }
 .sidebar div.scfForm div.scfSubmitButtonBorder input:active {
@@ -2893,7 +2888,6 @@ div.scfForm .scfSmsTelephoneLabel {
   box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #c1d4c9;
   border: 1px solid #b5ccbe;
   text-shadow: none;
-  text-decoration: none;
   color: #007c41;
 }
 .sidebar div.scfForm fieldset.scfSectionBorderAsFieldSet {
@@ -4540,9 +4534,9 @@ div[class*='-heading'] .dropdown-menu:before {
   font-size: 1.2em;
   line-height: 1em;
   padding: 0.8em 1.5em 0.6em 1.5em;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
   font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-decoration: none;
@@ -4564,11 +4558,9 @@ a.btn {
   *zoom: 1;
 }
 .btn-green {
-  border: 1px solid #00af5c;
+  border-color: #00af5c;
   border-bottom-color: #006d39;
   border-right-color: #007c41;
-  font-size: 1.2em;
-  line-height: 1em;
   *background-color: #00964f;
   background-image: -moz-linear-gradient(top, #00af5c, #007c41);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00af5c), to(#007c41));
@@ -4577,20 +4569,11 @@ a.btn {
   background-image: linear-gradient(to bottom, #00af5c, #007c41);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00af5c', endColorstr='#ff007c41', GradientType=0);
-  padding: 0.8em 1.5em 0.6em 1.5em;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  font-weight: 500;
   color: #ffffff;
   text-shadow: 1px 1px 1px #055e33;
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #63cb9a, inset 0px -1px 3px #006234;
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #63cb9a, inset 0px -1px 3px #006234;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #63cb9a, inset 0px -1px 3px #006234;
-  text-align: center;
 }
 .btn-green:hover {
   *background-color: #00a054;
@@ -4601,7 +4584,6 @@ a.btn {
   background-image: linear-gradient(to bottom, #00b961, #008646);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00b961', endColorstr='#ff008646', GradientType=0);
-  text-decoration: none;
   color: #ffffff;
 }
 .btn-green:active {
@@ -4616,17 +4598,13 @@ a.btn {
   -webkit-box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #007c41;
   -moz-box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #007c41;
   box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #007c41;
-  border: 1px solid #007c41;
-  text-shadow: none;
-  text-decoration: none;
+  border-color: #007c41;
   color: #ffffff;
 }
 .btn-grey {
-  border: 1px solid #dfe9e3;
+  border-color: #dfe9e3;
   border-bottom-color: #b8cec1;
   border-right-color: #d0dfd6;
-  font-size: 1.2em;
-  line-height: 1em;
   *background-color: #eaefec;
   background-image: -moz-linear-gradient(top, #f4f4f4, #dfe9e3);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#dfe9e3));
@@ -4635,20 +4613,11 @@ a.btn {
   background-image: linear-gradient(to bottom, #f4f4f4, #dfe9e3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffdfe9e3', GradientType=0);
-  padding: 0.8em 1em 0.6em 1em;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  font-weight: 500;
   color: #007c41;
   text-shadow: 0px 1px 1px #ffffff;
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;
-  text-align: center;
 }
 .btn-grey:hover {
   *background-color: #f8faf9;
@@ -4659,7 +4628,6 @@ a.btn {
   background-image: linear-gradient(to bottom, #ffffff, #f1f5f3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff1f5f3', GradientType=0);
-  text-decoration: none;
   color: #007c41;
 }
 .btn-grey:active {
@@ -4676,15 +4644,12 @@ a.btn {
   box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #c1d4c9;
   border: 1px solid #b5ccbe;
   text-shadow: none;
-  text-decoration: none;
   color: #007c41;
 }
 .btn-red {
-  border: 1px solid #7C0F00;
+  border-color: #7C0F00;
   border-bottom-color: #3a0700;
   border-right-color: #620c00;
-  font-size: 1.2em;
-  line-height: 1em;
   *background-color: #960800;
   background-image: -moz-linear-gradient(top, #af0000, #7c0f00);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#af0000), to(#7c0f00));
@@ -4693,20 +4658,11 @@ a.btn {
   background-image: linear-gradient(to bottom, #af0000, #7c0f00);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaf0000', endColorstr='#ff7c0f00', GradientType=0);
-  padding: 0.8em 1em 0.6em 1em;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  font-family: "DIN Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  font-weight: 500;
   color: #fff;
   text-shadow: 0px 1px 1px #6f6f6f;
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ff6262, inset 0px -1px 3px #960000;
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ff6262, inset 0px -1px 3px #960000;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ff6262, inset 0px -1px 3px #960000;
-  text-align: center;
 }
 .btn-red:hover {
   *background-color: #a50900;
@@ -4717,7 +4673,6 @@ a.btn {
   background-image: linear-gradient(to bottom, #9b1300, #af0000);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9b1300', endColorstr='#ffaf0000', GradientType=0);
-  text-decoration: none;
   color: #fff;
 }
 .btn-red:active {
@@ -4734,7 +4689,6 @@ a.btn {
   box-shadow: 0px -1px 4px #ffffff, inset 0px -1px 6px #7c0000;
   border: 1px solid #350600;
   text-shadow: none;
-  text-decoration: none;
   color: #fff;
 }
 .btn-apply {
@@ -4915,16 +4869,6 @@ a.btn {
   font-size: 0.815em;
   text-transform: uppercase;
 }
-/*.sidebar .btn {
-  display: block;
-  margin-bottom: 18px;
-}
-
-.sidebar .btn-grey {
-  padding-left: 0.65em;
-  padding-right: 0.65em;
-}*/
-/*sidebar*/
 .sidebar .extrude .btn {
   display: block;
   font-weight: bold;
@@ -4941,8 +4885,11 @@ a.btn {
   border-left: none;
   border-right: none;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.8571428571428571em;
+  font-size: 0.95em;
   text-align: left;
+}
+.sidebar .extrude .btn.btn-green {
+  background: rgba(239, 248, 243, 0.74);
 }
 .sidebar .extrude .btn:hover {
   background: #FFF5B8;
