@@ -39,6 +39,7 @@ build:
 
 less:
 	@lessc -x ./less/framework.less > ./css/framework.css
+	@lessc -x ./less/framework-base.less > ./css/framework-base.css
 	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
 	@echo "Compiling framework base less...             ${CHECK} Done"
 	@lessc -x ${PROTOTYPE_LESS} > ./css/ualberta.css

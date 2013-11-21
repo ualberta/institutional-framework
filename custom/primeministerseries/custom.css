@@ -1,16 +1,177 @@
-.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
-.clearfix:after{clear:both;}
-.pm-hp h3 a{color:#3D4A43;}
-.banner-container{display:none;}
-.navigation-container{display:none;}
-.brand{display:block;}
-.hp-feature .feature-caption{display:none;}
-.hp-feature{background-image:url('../../img/primeministerseries/hp-bg.jpg');display:block;width:auto;overflow:auto;}
-.hp-text{float:left;}
-.secondary-feature{background-image:url('../../img/primeministerseries/secondary-bg.jpg');display:block;width:auto;overflow:auto;}
-.pm-img{float:right;}
-.hp-img{float:right;}
-.sidebar-videos{line-height:1.3em;}.sidebar-videos .hover-caption-container .caption{line-height:1.2em;}
-.sidebar-videos .hover-caption-container i{font-size:4em;}
-.sidebar{position:inherit;}
-@media (max-width:36.5em){.pm-img{display:none;} .hp-img{display:none;} .pm-text{margin:40px 0px 25px 13px;width:90%;} .hp-text{margin:20px;width:90%;}}@media (min-width:36.563em) and (max-width:74.938em){.pm-text{width:60%;float:left;margin-left:20px;} .pm-img{width:34%;} .hp-text{width:55%;} .hp-img{width:34%;}}@media (min-width:36.563em) and (max-width:52.5em){.hp-text{margin:25px 0px 0px 30px;}}@media (min-width:52.563em) and (max-width:74.938em){.hp-text{margin:35px 0px 0px 45px;}}@media (min-width:36.563em) and (max-width:54.25em){.pm-text{margin-top:40px;} .pm-text.paul-text{margin-top:30px;} .pm-text.kim-text{margin-top:10px;} .pm-text.joe-text{margin-top:20px;width:50%;}}@media (min-width:54.313em) and (max-width:74.938em){.pm-text{margin-top:60px;} .pm-text.kim-text{margin-top:19px;} .pm-text.joe-text{margin-top:30px;}}@media (min-width:75em){.hp-text{margin:89px 0px 0px 85px;float:left;} .hp-text img{width:604px;} .pm-text{float:left;margin:112px 0px 0px 70px;} .pm-text img{width:658px;} .pm-text.paul-text img{width:486px;} .pm-text.kim-text img{width:542px;} .pm-text.jean-text img{width:566px;} .pm-text.john-text img{width:525px;} .pm-text.joe-text img{width:474px;}}@media (min-width:43.125em) and (max-width:61.1875em){.row-fluid .sidebar{width:21.9%;}}@media (min-width:31.75em) and (max-width:43.063em){.primary-content-area .frame{width:463px;} .sidebar-videos{width:463px;}}@media (max-width:43.063em){.hp-secondary-pm{margin-top:15px;}}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.pm-hp h3 a {
+  color: #3D4A43;
+}
+.banner-container {
+  display: none;
+}
+.navigation-container {
+  display: none;
+}
+.brand {
+  display: block;
+}
+.hp-feature .feature-caption {
+  display: none;
+}
+.hp-feature {
+  background-image: url('../../img/primeministerseries/hp-bg.jpg');
+  display: block;
+  width: auto;
+  overflow: auto;
+}
+.hp-text {
+  float: left;
+}
+.secondary-feature {
+  background-image: url('../../img/primeministerseries/secondary-bg.jpg');
+  display: block;
+  width: auto;
+  overflow: auto;
+}
+.pm-img {
+  float: right;
+}
+.hp-img {
+  float: right;
+}
+.sidebar-videos {
+  line-height: 1.3em;
+}
+.sidebar-videos .hover-caption-container .caption {
+  line-height: 1.2em;
+}
+.sidebar-videos .hover-caption-container i {
+  font-size: 4em;
+}
+.sidebar {
+  position: inherit;
+}
+@media (max-width: 36.5em) {
+  .pm-img {
+    display: none;
+  }
+  .hp-img {
+    display: none;
+  }
+  .pm-text {
+    margin: 40px 0px 25px 13px;
+    width: 90%;
+  }
+  .hp-text {
+    margin: 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 36.563em) and (max-width: 74.938em) {
+  .pm-text {
+    width: 60%;
+    float: left;
+    margin-left: 20px;
+  }
+  .pm-img {
+    width: 34%;
+  }
+  .hp-text {
+    width: 55%;
+  }
+  .hp-img {
+    width: 34%;
+  }
+}
+@media (min-width: 36.563em) and (max-width: 52.5em) {
+  .hp-text {
+    margin: 25px 0px 0px 30px;
+  }
+}
+@media (min-width: 52.563em) and (max-width: 74.938em) {
+  .hp-text {
+    margin: 35px 0px 0px 45px;
+  }
+}
+@media (min-width: 36.563em) and (max-width: 54.25em) {
+  .pm-text {
+    margin-top: 40px;
+  }
+  .pm-text.paul-text {
+    margin-top: 30px;
+  }
+  .pm-text.kim-text {
+    margin-top: 10px;
+  }
+  .pm-text.joe-text {
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+@media (min-width: 54.313em) and (max-width: 74.938em) {
+  .pm-text {
+    margin-top: 60px;
+  }
+  .pm-text.kim-text {
+    margin-top: 19px;
+  }
+  .pm-text.joe-text {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 75em) {
+  .hp-text {
+    margin: 89px 0px 0px 85px;
+    float: left;
+  }
+  .hp-text img {
+    width: 604px;
+  }
+  .pm-text {
+    float: left;
+    margin: 112px 0px 0px 70px;
+  }
+  .pm-text img {
+    width: 658px;
+  }
+  .pm-text.paul-text img {
+    width: 486px;
+  }
+  .pm-text.kim-text img {
+    width: 542px;
+  }
+  .pm-text.jean-text img {
+    width: 566px;
+  }
+  .pm-text.john-text img {
+    width: 525px;
+  }
+  .pm-text.joe-text img {
+    width: 474px;
+  }
+}
+@media (min-width: 43.125em) and (max-width: 61.1875em) {
+  .row-fluid .sidebar {
+    width: 21.9%;
+  }
+}
+@media (min-width: 31.75em) and (max-width: 43.063em) {
+  .primary-content-area .frame {
+    width: 463px;
+  }
+  .sidebar-videos {
+    width: 463px;
+  }
+}
+@media (max-width: 43.063em) {
+  .hp-secondary-pm {
+    margin-top: 15px;
+  }
+}
