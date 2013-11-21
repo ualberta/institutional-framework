@@ -54,8 +54,24 @@
 }
 /** BELOW IE9 **/
 .lt-ie9 {
+  /*RMI*/
+
   /*Sidebar button*/
 
+}
+.lt-ie9 .rmi-thumbnail {
+  display: block;
+}
+.lt-ie9 .rmi-two .rmi-box {
+  width: 36%;
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+.lt-ie9 .rmi-three .rmi-box {
+  width: 30%;
+  margin-right: 10px;
+  float: left;
 }
 .lt-ie9 .sidebar .extrude .btn-apply,
 .lt-ie9 .sidebar .extrude .btn-give,
@@ -72,6 +88,9 @@
 .lt-ie9 .sidebar .extrude .btn-grey:hover,
 .lt-ie9 .sidebar .extrude .btn-green:hover {
   background-color: #fff5b8;
+}
+.lt-ie9 .sidebar .extrude .btn {
+  padding-left: 10px;
 }
 .lt-ie9 input[type='text'] {
   padding-top: 0.58em;
@@ -628,6 +647,9 @@
 .lt-ie8 .sidebar .extrude .btn-grey,
 .lt-ie8 .sidebar .extrude .btn-green {
   padding-left: 10px;
+}
+.lt-ie8 .sidebar .extrude .btn {
+  width: 150px;
 }
 .lt-ie8 .ui-multiselect-checkboxes label input {
   float: left;
