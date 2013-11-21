@@ -12,10 +12,6 @@
   }
 }
 
-.secondary-row {
-  //.clearfix();
-}
-
 .content-top-row {
   margin-top:  5px;
   .container;
@@ -59,53 +55,6 @@
   
 }
 
-@media (min-width: 61.25em) and (max-width: 74.9375em)  {
-  .image-caption-container {
-    .caption {
-      position: static;
-      padding: 6px 0px 3px 0px;
-      background: #fff;
-      color: #666;
-      text-shadow: none;
-      a {
-        color: @linkColor;
-      }
-      p{
-        padding: 0px;
-        margin-bottom: 0;
-        line-height: 1.4em;
-      }
-      h3{
-	      padding:0px;
-	      line-height:1em;
-      }
-    }
-  }
-}
-
-@media (max-width: 500px)  {
-  .image-caption-container {
-    .caption {
-      position: static;
-      padding: 6px 0px 3px 0px;
-      background: #fff;
-      color: #666;
-      text-shadow: none;
-      p {
-        padding: 0px;
-        margin-bottom: 0;
-        line-height: 1.4em;
-      }
-      h3 {
-	      padding:0px;
-	      line-height:1em;
-      }
-      a {
-        color: @linkColor;
-      }
-    }
-  }
-}
 
 @media (min-width: 460px) and (max-width: 61.1875em) {
   
@@ -141,7 +90,7 @@
     .audience-area,
     .primary-content-area,
     .secondary-content-area {
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
   .row-fluid {
@@ -152,78 +101,7 @@
   }
   .content-top-row {
     .tab-content {
-      min-height: auto;
+      min-height: none;
     }
-  }
-}
-
-@media (min-width: 61.25em) {
-
-  .row-fluid {
-      .feature-area {
-        width: @desktop_FeatureFluid;
-      }
-      .audience-area {
-        width: @desktop_AudienceFluid;
-      }
-      .primary-content-area {
-        width: @desktop_PriColFluid;
-      }
-      .secondary-content-area {
-        width: @desktop_SecColFluid;
-      }
-      .sidebar {
-        width: @desktop_SidebarFluid;
-      }
-  }
-  .row-fluid.one-col{
-	    .primary-content-area {
-        width: @desktop_OneColPriColFluid;
-      }
-  }
-  .content-top-row {
-    #em > .size(width,@desktop_RowWidth,@baseFontSizepx);
-    .border-radius(4px);
-    .tab-content {
-      overflow: auto;
-      min-height: 260px;
-      #em > .size(height,260,@baseFontSizepx);
-    }
-  }
-
-}
-
-@media (min-width: 75em) {
-
-  .content-top-row {
-    #em > .size(width,@highRes_RowWidth,@baseFontSizepx);
-    .tab-content {
-      min-height: 264px;
-      #em > .size(height,264,@baseFontSizepx);
-    }
-  }
-  
-  .row-fluid {
-    
-    .feature-area {
-      width: @highRes_FeatureFluid;
-    }
-    .audience-area {
-      width: @highRes_AudienceFluid;
-    }
-    .primary-content-area {
-      width: @highRes_PriColFluid;
-    }
-    .secondary-content-area {
-      width: @highRes_SecColFluid;
-    }
-    .sidebar {
-      width: @highRes_SidebarFluid;
-    }
-  }
-  .row-fluid.one-col{
-	  .primary-content-area{
-		 width: @highRes_OneColPriColFluid;
-	  }
   }
 }

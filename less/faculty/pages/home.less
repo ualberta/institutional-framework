@@ -15,3 +15,130 @@
   }
 }
 
+
+
+@media screen {
+  /* px override */
+  .flexslider .flex-control-nav {
+    bottom: -2.2em;
+  }
+  /* px override */
+  .nav-tabs>li>a {
+    padding-top: 0.5195em;
+    padding-bottom: 0.5195em;
+  }
+
+  /* force images to fully occupy containers */
+  .image-shadow img {
+    max-width: none;
+    width:100%;
+  }
+  /* no more dark captions */
+  .image-caption-container .caption {
+    position: absolute;
+    background:#fff;
+    background: -moz-linear-gradient(top,rgba(255,255,255,.8),#fff);
+	background: -webkit-gradient(linear,0 0,0 100%,from(rgba(255, 255, 255, 0.8)),to(#FFF));
+	background: -webkit-linear-gradient(top,rgba(255, 255, 255, 0.8),#FFF);
+	background: -o-linear-gradient(top,rgba(255,255,255,.8),#fff);
+	background: linear-gradient(to bottom,rgba(255, 255, 255, 0.8),#FFF);
+	background-repeat: repeat-x;
+    color: @lightText;
+    text-shadow: 0px 1px 1px #fff;
+    padding: 0.9em 0.57em 0.57em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .image-caption-container .caption a {
+    color:#007c41; 
+  }
+  .image-caption-container .caption h3 {
+    padding:0;
+  }
+  .image-caption-container .caption p {
+    color:#666;
+    padding:0;
+  }
+  /* prevent flickering from transitions */
+  .frame, .extrude, .tab-content {
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+
+@media screen and (min-width: 61.25em) {
+  
+  /** Fluid Layout Adjustments **/
+  .content-container.container  {
+      width:100%;
+      padding:0 2em;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+       -moz-box-sizing:border-box;
+  }
+  .content-top-row {
+    width:100%;
+    padding:0;
+    margin:0;
+  }
+
+  .content-top-row .content-inner {
+    padding-bottom: 1.57em;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 0.57em;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+  }
+
+  .content-top-row .tab-content {
+    position: absolute;
+    top: 2.67em;
+    bottom: 0.57em;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: auto;
+    padding: 0.7143em 0.7143em 0;
+    overflow: auto;
+  }
+
+  .content-top-row .span6.audience-area {
+    position:relative;
+  }
+
+  .content-top-row .span6.audience-area:after {
+    padding-top: 58.5%;
+    display: block;
+    content: '';
+  }
+
+  .content-top-row ul.nav.nav-tabs {
+    position:absolute;
+    z-index:2;
+  }
+
+  .row-fluid .audience-area {
+    width: 48.5%;
+    margin-left: 3%;
+  }
+  .row-fluid .feature-area,
+  .row-fluid .primary-content-area {
+    width: 48.5%;
+  }
+
+  .row-fluid .secondary-content-area {
+    width: 30%;
+    margin-left:3%;
+  }
+
+  .row-fluid .sidebar {
+    width: 15.5%;
+    margin-left:3%;
+  }
+}
+
+
+

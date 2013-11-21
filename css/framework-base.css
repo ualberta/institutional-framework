@@ -567,14 +567,12 @@ a.btn{display:inline-block;*display:inline;*zoom:1;}
 .btn-large{font-size:1.4em;}
 .btn-small{font-size:1em;}
 .btn-micro{font-size:0.815em;text-transform:uppercase;}
-.sidebar .extrude .btn{display:block;font-weight:bold;background:rgba(239, 248, 243, 0.74);margin-left:-0.99em;margin-right:-0.99em;margin-bottom:-7px;margin-top:4px;border-radius:0 0 4px 4px;padding:5px 0.8333333333333334em 5px 25px;border-top:1px dotted #E0E4E0;position:relative;border-bottom:2px solid rgba(119, 185, 83, 0.13);border-left:none;border-right:none;font-family:"Helvetica Neue",Arial,sans-serif;font-size:0.8571428571428571em;text-align:left;}
-.sidebar .extrude .btn:hover{background:#FFF5B8;border-top-color:#E1D8A4;}
-.sidebar .extrude .btn:after{content:"";position:absolute;border:0.35em solid transparent;border-left:0.35em solid #007c41;left:10px;top:0;bottom:0;height:0px;margin:auto;}
+.sidebar .extrude .btn{display:block;font-size:1em;text-transform:none;margin:0 -0.85em -0.5em -0.8333333em;position:relative;bottom:0;left:0;right:0;padding:0.8333em 0.8333em 0.8333em 2em;height:3em;box-sizing:border-box;font-weight:bold;background:#f4faf6;border-radius:0 0 4px 4px;border:0;border-top:1px dotted #E0E4E0;border-bottom:2px solid rgba(119, 185, 83, 0.13);text-align:left;font-family:sans-serif;line-height:1.28em;}.sidebar .extrude .btn:before{content:"";position:relative;height:2em;width:100%;}
+.sidebar .extrude .btn:after{content:"";position:absolute;border:0.35em solid rgba(0, 0, 0, 0);border-left:0.35em solid #007C41;left:0.8333em;top:0;bottom:0;height:0;margin:auto;}
+.sidebar .extrude .btn:hover{background:#FFF5B8;border-top:1px solid #E1D8A4;padding:0.8em 0.8em 0.8em 2em;}
 .sidebar .extrude .btn-green{box-shadow:none;text-shadow:none;color:#007C41;}
 .sidebar .extrude .btn-grey{box-shadow:none;text-shadow:none;color:#007C41;}
 .sidebar .extrude .btn-apply,.sidebar .extrude .btn-give,.sidebar .extrude .btn-work{box-shadow:none;text-shadow:none;padding-left:10px;}
-.sidebar .extrude .btn-green:after,.sidebar .extrude .btn-grey:after{content:"";position:absolute;border:0.5em solid transparent;border-left:0.5em solid #007c41;left:10px;top:0;bottom:0;height:0px;margin:auto;}
-.sidebar .extrude .btn-work:after,.sidebar .extrude .btn-give:after,.sidebar .extrude .btn-apply:after{font-size:1em;position:absolute;top:0.4666666666666667em;right:10px;z-index:1000;display:inline-block;font-family:FontAwesome;*display:inline;*zoom:1;font-style:normal;font-weight:normal;text-decoration:inherit;font-size:1.5em;top:50%;margin-top:-0.375em;height:0.75em;line-height:1em;vertical-align:middle;color:#007c41;text-shadow:1px 1px 2px #fff5b7;pointer-events:none;content:"\f0a9";border:none;left:auto;}
 .close{float:right;font-size:20px;font-weight:bold;line-height:1.42857142857143em;color:#000000;text-shadow:0 1px 0 #ffffff;opacity:0.2;filter:alpha(opacity=20);}.close:hover{color:#000000;text-decoration:none;cursor:pointer;opacity:0.4;filter:alpha(opacity=40);}
 button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-appearance:none;}
 ul.breadcrumbs{margin-left:0px;font-size:0.9285714285714286em;}
