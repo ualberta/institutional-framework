@@ -53,7 +53,35 @@
 /** BELOW IE9 **/
 
 .lt-ie9 {
-
+/*RMI*/
+.rmi-thumbnail{
+	display:block;
+}
+.rmi-two .rmi-box{
+	width:36%;
+	float:left;
+	display:inline;
+	margin-right:10px;
+}
+.rmi-three .rmi-box{
+	width:30%;
+	margin-right:10px;
+	float:left;
+}
+/*Sidebar button*/
+.sidebar .extrude{
+	.btn-apply, .btn-give, .btn-work, .btn-grey, .btn-green{
+		background-color:#f3faf6;
+		background-image:none;
+		filter:inherit;
+		&:hover{
+			background-color:#fff5b8;
+		}
+	}
+	.btn{
+		padding-left:10px;
+	}
+}
   input[type='text'] {
     padding-top: 0.58em;
     padding-bottom: 0em;
@@ -662,6 +690,14 @@
 
 // IE7 and below
 .lt-ie8 {
+.sidebar .extrude{
+	.btn-grey, .btn-green{
+		padding-left:10px;
+		}
+}
+.sidebar .extrude .btn{
+	width:150px;
+}
 .ui-multiselect-checkboxes label input{
 	float:left;
 }
