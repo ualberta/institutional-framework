@@ -188,3 +188,47 @@
         margin-right: 0%;
     }
  }
+
+
+/********* Sidebar **********/
+
+    .rmi-sidebox {
+        width: 100%;
+    }
+    
+    .rmi-sidebox .rmi-content {
+        padding-top: 56.25%;
+    }
+    .rmi-sidebox .rmi-thumbnail {
+        position: absolute;
+        width: 100%;
+        .border-radius(4px 4px 0px 0px);
+        left: 0px;
+        right: 0px;
+        top: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .rmi-sidebox .rmi-thumbnail img {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        right: 0px;
+        max-width: 100%;
+        margin-left: 0;
+        .border-radius(4px 4px 0px 0px);
+    }
+
+    .rmi-sidebox .rmi-boxes .rmi-box:nth-child(odd) {
+        margin-left: 0;
+    }
+    .rmi-sidebox .rmi-boxes .rmi-box:nth-child(even) {
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 390px) {
+        .rmi-sidebox .rmi-thumbnail:before {
+            display:none;
+        }
+    }
