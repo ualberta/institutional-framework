@@ -60,24 +60,25 @@ h1, h2, h3, h4, h5, h6, .site-title {
   line-height: 1;
   color: @headingsColor;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
-  small {
-    font-weight: normal;
-    line-height: 1;
-    color: @grayLight;
-  }
 }
 
-.site-title { font-size: 36px; line-height: 40px; }
 h1, h2 { font-size: 30px; line-height: 40px; }
 h3 { font-size: 18px; line-height: 24px; }
 h4 { font-size: 18px; line-height: 20px; }
 h5 { font-size: 15px; line-height: 20px; font-family: sans-serif; font-weight: bold; }
 h6 { font-size: 14px; line-height: 20px; font-family: sans-serif; font-weight: bold; }
 
-h1 small { font-size: 24px; }
-h2 small { font-size: 18px; }
-h3 small { font-size: 14px; }
-h4 small { font-size: 14px; }
+
+a.site-title { color:#fff; font-size: 1.71428571428571em; line-height:1.2em; text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35); }
+a.site-title:hover { color: @yellow; }
+
+@media (min-width: 43.125em) {
+  a.site-title { font-size: 2.2857em; }
+}
+
+@media (min-width: 61.25em) {
+  a.site-title { font-size: 2.4857em; }
+}
 
 h1.page-title {
   margin: 0.1em auto 0.4em auto;
@@ -112,6 +113,12 @@ h5.sidebar-title {
       color: @linkColor;
     }
   }
+}
+
+small {
+  font-weight: normal;
+  line-height: 1;
+  color: @grayLight;
 }
 
 .primary-content-area p a {

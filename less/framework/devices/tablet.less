@@ -277,81 +277,16 @@
   
   // BANNER
   // ---------------
-  .banner-container {
-  	background: #78c89d;
-    .box-shadow(inset 0px 0px 30px #007c41);
-  }
   
-  .oval-container {
-    width: 100%;
-    display: block;
-    height: @bannerHeight;
-    overflow: hidden;
+  .banner-container:after {
+    content: "";
     position: absolute;
-    top: 0; left: 0;
-    z-index: 10;
-  }
-  
-  .shadow-container {
-    width: 100%;
     display: block;
-    height: @bannerHeight;
-    overflow: hidden;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: 11;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     .box-shadow(inset 0px 2px 3px rgba(0,30,0,0.25));
-  }
-  
-  .oval {
-    .transform-origin(center center);
-    #gradient .horizontal-three-colors(#007c41, rgba(0,124,65,0), 50%, #007c41);
-    height: 700%;
-    width: 145.569620253165%;
-    .border-radius(100%);
-    position: absolute;
-  	display: block;
-  }
-  
-  .oval1 {
-    //display: none;
-    top: -270%;
-    left: -22%;
-    .rotate(-21deg);
-    z-index: 10;
-    //animation: animationName 5s ease-in-out 0s infinite alternate;
-    //-webkit-animation: animationName 5s ease-in-out 0s infinite alternate;
-  }
-  
-  .oval2 {
-    //display:  none;
-    .rotate(7deg);
-    top: -160%;
-    left: -35%;
-    z-index: 9;
-    //animation: animationName 120s ease-in-out 0s infinite alternate;
-    //-webkit-animation: animationName 1s ease-in-out 0s infinite alternate;
-  }
-  
-  .oval3 {
-    //display: none;
-    .rotate(-27deg);
-    top: 140%;
-    left: -5%;
-    z-index: 8;
-    //animation: animationName 30s ease-in-out 0s infinite alternate;
-    //-webkit-animation: animationName 3s ease-in-out 0s infinite alternate;
-  }
-  
-  .oval4 {
-    //display: none;
-    .rotate(-49deg);
-    height: 800%;
-    top: -90%;
-    left: -28%;
-    z-index: 7;
-    //animation: animationName 90s ease-in-out 0s infinite alternate;
-    //-webkit-animation: animationName 9s ease-in-out 0s infinite alternate;
   }
   
   // END BANNER

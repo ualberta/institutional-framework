@@ -34,7 +34,7 @@ ul.module-tertiary-links{margin:0;list-style:none;}ul.module-tertiary-links li{b
 .image-caption-container .caption h3{font-size:1.5em;}
 .no-inlinesvg .blade-inner .brand{background:transparent url(../img/ua_logo.png) no-repeat center center;width:12.142857142857142em;height:2.857142857142857em;}.no-inlinesvg .blade-inner .brand img{display:none;}
 .brand img{display:block;height:100%;}
-@media (min-width:61.25em){.blade-search{right:2em;} .blade-navigation{right:14.5em;}}@media (min-width:75em){.blade-navigation{right:16em;}}.banner-inner .site-title{display:block;bottom:-18px;position:absolute;text-shadow:0 1px 5px rgba(0, 0, 0, 0.35);z-index:15;color:#fff;text-decoration:none;}.banner-inner .site-title:hover{color:#ffdb05;}
+@media (min-width:61.25em){.blade-search{right:2em;} .blade-navigation{right:14.5em;}}@media (min-width:75em){.blade-navigation{right:16em;}}.banner-inner .site-title{display:block;bottom:0.25em;margin:0;position:absolute;z-index:15;text-decoration:none;}
 .banner-logo{display:none;}
 .intro h1,.section-heading{margin-bottom:0;font-size:1.75em;}
 .intro p{margin-top:0px;}

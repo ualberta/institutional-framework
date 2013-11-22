@@ -1,7 +1,9 @@
 @bannerHeight: 6.42857142857143em;
 
 .banner-container {
-  background: #007c41;
+  background: #78C89D url(../img/banner-bg.svg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
   height:  @bannerHeight;
   border-bottom: 3px solid #ffdb05;
   color: #fff;
@@ -17,18 +19,8 @@
   .site-title {
     position: absolute;
     z-index: 15;
-    bottom: -5px;
     left: 10px;
-    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35);
-    a {
-      color:  #fff;
-      text-decoration: none;
-      &:hover {
-        color: @yellow;
-      }
-    }
   } 
-  
 }
 
 .oval-container {
