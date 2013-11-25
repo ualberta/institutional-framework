@@ -1,12 +1,4 @@
-@media (min-width: 464px) and (max-width: 979px) {
-  .content-wrapper.home{
-	  .secondary-content-area .module-container{
-		  width:47%;
-		  float:left;
-		  margin-right:15px;
-	  }
-  }
-}
+
 @media (min-width: 43.125em) and (max-width: 61.188em) {
   .content-wrapper.home{
 	  .sidebar{
@@ -61,7 +53,7 @@
     padding:0;
   }
   /* prevent flickering from transitions */
-  .frame, .extrude, .tab-content {
+  .banner-inner, .frame, .extrude, .tab-content {
     -webkit-backface-visibility: hidden;
   }
 }
@@ -70,22 +62,22 @@
 @media screen and (min-width: 61.25em) {
   
   /** Fluid Layout Adjustments **/
-  .content-container.container  {
+  .home .content-container.container  {
       width:100%;
-      padding:0 2em;
+      padding:0 3%;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
        -moz-box-sizing:border-box;
   }
-  .content-top-row {
+  .home .content-top-row {
     width:100%;
     padding:0;
     margin:0;
   }
 
-  .content-top-row .content-inner {
-    padding-bottom: 1.57em;
+  .home .content-top-row .content-inner {
+    padding-bottom: 0.57em;
     border-bottom: 1px solid #DDD;
     margin-bottom: 0.57em;
     -webkit-box-shadow: 0 1px 0 #fff;
@@ -93,7 +85,7 @@
     box-shadow: 0 1px 0 #fff;
   }
 
-  .content-top-row .tab-content {
+  .audience-area .tab-content {
     position: absolute;
     top: 2.67em;
     bottom: 0.57em;
@@ -105,39 +97,27 @@
     overflow: auto;
   }
 
-  .content-top-row .span6.audience-area {
+  .audience-area {
     position:relative;
   }
 
-  .content-top-row .span6.audience-area:after {
+  .audience-area:after {
     padding-top: 58.5%;
     display: block;
     content: '';
   }
 
-  .content-top-row ul.nav.nav-tabs {
+  .audience-area ul.nav.nav-tabs {
     position:absolute;
     z-index:2;
   }
 
-  .row-fluid .audience-area {
-    width: 48.5%;
-    margin-left: 3%;
-  }
-  .row-fluid .feature-area,
-  .row-fluid .primary-content-area {
-    width: 48.5%;
-  }
+}
 
-  .row-fluid .secondary-content-area {
-    width: 30%;
-    margin-left:3%;
-  }
-
-  .row-fluid .sidebar {
-    width: 15.5%;
-    margin-left:3%;
-  }
+@media screen and (min-width: 75em) {
+    .home .content-container.container  {
+      padding:0 5%;
+    }
 }
 
 

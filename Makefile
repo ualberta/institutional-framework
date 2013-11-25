@@ -48,6 +48,8 @@ less:
 	@lessc -x ./less/faculty.less > ./css/faculty.css
 	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
 	@echo "Compiling faculty base less...               ${CHECK} Done"
+	@for file in `find ./less/custom -type f -name '*.less'`; do lessFilePath="$$file"; cssFilePath="$${lessFilePath/.\/less/.}"; cssFilePath="$${cssFilePath/%.less/.css}"; mkdir -p $$(dirname "$$cssFilePath"); lessc -x "$$lessFilePath" > "$$cssFilePath"; done
+	@echo "Compiling custom faculty less...               ${CHECK} Done"
 
 #
 # COMPILE PRODUCTION BRANCH
