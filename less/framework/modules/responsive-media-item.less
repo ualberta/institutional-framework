@@ -192,14 +192,14 @@
 
 /********* Sidebar **********/
 
-    .rmi-sidebox {
+    .rmi-sidebar {
         width: 100%;
     }
     
-    .rmi-sidebox .rmi-content {
+    .rmi-sidebar .rmi-content {
         padding-top: 56.25%;
     }
-    .rmi-sidebox .rmi-thumbnail {
+    .rmi-sidebar .rmi-thumbnail {
         position: absolute;
         width: 100%;
         .border-radius(4px 4px 0px 0px);
@@ -210,7 +210,7 @@
         overflow: hidden;
     }
     
-    .rmi-sidebox .rmi-thumbnail img {
+    .rmi-sidebar .rmi-thumbnail img {
         position: absolute;
         top: 0;
         left: 0px;
@@ -220,15 +220,30 @@
         .border-radius(4px 4px 0px 0px);
     }
 
-    .rmi-sidebox .rmi-boxes .rmi-box:nth-child(odd) {
+    .rmi-sidebar .rmi-boxes .rmi-box:nth-child(odd) {
         margin-left: 0;
     }
-    .rmi-sidebox .rmi-boxes .rmi-box:nth-child(even) {
+    .rmi-sidebar .rmi-boxes .rmi-box:nth-child(even) {
         margin-right: 0;
+    }
+    
+    @media screen and (max-width: 690px) {
+        .rmi-sidebar {
+            width: 95%;
+        }
+        
+        .rmi-sidebar .rmi-thumbnail {
+            height: 0;
+            padding-top: 56.25%;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+        }
     }
 
     @media screen and (min-width: 390px) {
-        .rmi-sidebox .rmi-thumbnail:before {
+        .rmi-sidebar .rmi-thumbnail:before {
             display:none;
         }
     }
