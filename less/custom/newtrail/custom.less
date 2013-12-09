@@ -4,10 +4,12 @@
 //** NAVIGATION
 //******************************************
 //   New Trail Nav Widths:
-//		Current Issue:      110
-//		Past Issue:        	110
-//      Contact:  			111
-//      Advertise:			110
+//		Current Issue:      84
+//		Past Issue:        	84
+//      Features:  			73
+//      Contact:			73
+//		Advertise:			73
+//		Alumni:				54
 //      
 //      ------------------------
 //      TOTAL:           	441
@@ -18,20 +20,30 @@
   .navigation-container {
     .navigation-inner ul li ul {
       .nav1 {
-        width: percentage(110/@totalNavWidth);
+        width: percentage(84/@totalNavWidth);
       }
       .nav2 {
-        width: percentage(110/@totalNavWidth);
+        width: percentage(84/@totalNavWidth);
       }
       .nav3 {
-        width: percentage(111/@totalNavWidth);
+        width: percentage(73/@totalNavWidth);
       }
       .nav4 {
-        width: percentage(110/@totalNavWidth);
+        width: percentage(73/@totalNavWidth);
+      }
+	  .nav5 {
+        width: percentage(73/@totalNavWidth);
+      }
+      .nav6 {
+        width: percentage(54/@totalNavWidth);
       }
     }
   }
 }  
+
+.navigation-inner .main-navigation>li:nth-child(2):hover .sub-menu {
+	right: -330px;
+}
   
 .news-archive-list .frame {
 	width: 166px;

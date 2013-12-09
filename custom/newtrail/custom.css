@@ -1,16 +1,25 @@
 @media (min-width: 43.125em) {
   .navigation-container .navigation-inner ul li ul .nav1 {
-    width: 24.94331065759637%;
+    width: 19.047619047619047%;
   }
   .navigation-container .navigation-inner ul li ul .nav2 {
-    width: 24.94331065759637%;
+    width: 19.047619047619047%;
   }
   .navigation-container .navigation-inner ul li ul .nav3 {
-    width: 25.170068027210885%;
+    width: 16.55328798185941%;
   }
   .navigation-container .navigation-inner ul li ul .nav4 {
-    width: 24.94331065759637%;
+    width: 16.55328798185941%;
   }
+  .navigation-container .navigation-inner ul li ul .nav5 {
+    width: 16.55328798185941%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav6 {
+    width: 12.244897959183673%;
+  }
+}
+.navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu {
+  right: -330px;
 }
 .news-archive-list .frame {
   width: 166px;
