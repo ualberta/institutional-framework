@@ -101,7 +101,7 @@ ul,ol{padding:0;margin:0 0 0.714285714285715em 25px;}
 ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
 li{line-height:1.42857142857143em;}
 ul.unstyled,ol.unstyled{margin-left:0;list-style:none;}
-hr{margin:1.42857142857143em 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
+hr{margin:1.42857142857143em 0;border:0;border-top:1px solid #ddd;border-bottom:1px solid #ffffff;}
 hr.softline{background:#ddd;height:1px;margin:1.42857142857143em 0;border:0;}
 hr.module-separator{margin-top:0px;border-top-color:#e0e0e0;}
 hr.soften{height:1px;margin:1.57em 0;background:#ddd;border:0;-webkit-box-shadow:0px 1px 0px #ffffff;-moz-box-shadow:0px 1px 0px #ffffff;box-shadow:0px 1px 0px #ffffff;clear:left;}
@@ -567,8 +567,7 @@ a.btn{display:inline-block;*display:inline;*zoom:1;}
 .btn-micro{font-size:0.815em;text-transform:uppercase;}
 .sidebar .extrude .btn{display:block;font-size:1em;text-transform:none;margin:0 -0.85em -0.5em -0.8333333em;position:relative;bottom:0;left:0;right:0;padding:0.8333em 0.8333em 0.8333em 2em;height:3em;box-sizing:border-box;font-weight:bold;background:#f4faf6;border-radius:0 0 4px 4px;border:0;border-top:1px dotted #E0E4E0;border-bottom:2px solid rgba(119, 185, 83, 0.13);text-align:left;font-family:sans-serif;line-height:1.28em;}.sidebar .extrude .btn:after{content:"";position:absolute;border:0.35em solid rgba(0, 0, 0, 0);border-left:0.35em solid #007C41;left:0.8333em;top:0;bottom:0;height:0;margin:auto;}
 .sidebar .extrude .btn:hover{background:#FFF5B8;border-top:1px solid #E1D8A4;padding:0.8em 0.8em 0.8em 2em;}
-.sidebar .extrude .btn-green{box-shadow:none;text-shadow:none;color:#007C41;}
-.sidebar .extrude .btn-grey{box-shadow:none;text-shadow:none;color:#007C41;}
+.sidebar .extrude .btn-green,.sidebar .extrude .btn-grey,.sidebar .extrude .btn-apply,.sidebar .extrude .btn-give,.sidebar .extrude .btn-work{box-shadow:none;text-shadow:none;color:#007C41;}
 .sidebar .extrude .btn-apply,.sidebar .extrude .btn-give,.sidebar .extrude .btn-work{box-shadow:none;text-shadow:none;padding-left:10px;}
 .close{float:right;font-size:20px;font-weight:bold;line-height:1.42857142857143em;color:#000000;text-shadow:0 1px 0 #ffffff;opacity:0.2;filter:alpha(opacity=20);}.close:hover{color:#000000;text-decoration:none;cursor:pointer;opacity:0.4;filter:alpha(opacity=40);}
 button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-appearance:none;}
