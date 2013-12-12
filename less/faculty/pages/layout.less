@@ -1,6 +1,13 @@
 /** Faculty - Base Overrides **/
 
-.content-top-row {
+.section-heading {
+  font-family: "DIN Medium", sans-serif;
+  margin: .7143em 0 0 0;
+  display: block;
+  line-height:1.429em
+}
+
+.content-wrapper > .content-top-row {
   background:none;
   box-shadow:none;
   border:none;
@@ -20,7 +27,7 @@
   font-size:1.75em;
 }
 .intro p {  
-  margin-top:0px;
+  margin-top:0;
 }
 
 
@@ -107,6 +114,7 @@
   border-bottom: 1px solid #DDD;
   box-shadow: 0 1px 0 #FFF;
   padding-bottom:0.25em;
+  margin-bottom:1em;
 }
 
 // HOME PAGE 
@@ -116,7 +124,7 @@
   margin-bottom: 1em;
 }
 
-.home .flexslider .slide {
+.content-top-row .flexslider .slide {
   display:none;
 }
 
@@ -189,14 +197,18 @@
 
 @media (min-width: 43.125em) {
 
-  .home .row-fluid { 
+  .row-fluid { 
     .feature-area,
-    .audience-area,
-    .secondary-content-area,
-    .primary-content-area {
+    .audience-area {
       width:70%;
       margin-left:0;
     }
+  }
+
+  .home .row-fluid .secondary-content-area,
+  .home .row-fluid .primary-content-area {
+    width:70%;
+    margin-left:0;
   }
 
   .home .row-fluid .sidebar {
@@ -225,11 +237,11 @@
 }
 
 @media (min-width: 61.25em) {
-  .home .row-fluid .audience-area {
+  .row-fluid .audience-area {
     width: 48.5%;
     margin-left: 3%;
   }
-  .home .row-fluid .feature-area,
+  .row-fluid .feature-area,
   .home .row-fluid .primary-content-area {
     width: 48.5%;
   }
@@ -254,13 +266,13 @@
       -webkit-box-sizing: border-box;
        -moz-box-sizing:border-box;
   }
-  .home .content-top-row {
+  .content-wrapper > .content-top-row {
     width:100%;
     padding:0;
     margin:0;
   }
 
-  .home .content-top-row .content-inner {
+  .content-wrapper > .content-top-row .content-inner {
     padding-bottom: 0.57em;
     border-bottom: 1px solid #DDD;
     margin-bottom: 0.57em;
@@ -315,7 +327,7 @@
     box-shadow:0 1px 0 #fff;
     font-size: 1.14em;
     line-height: 1.42em;
-    padding:1em 0;
+    padding:0 0 1em;
     margin-bottom: 1.57em;
   }
   .page-body { 
@@ -405,7 +417,7 @@
       width:20%;
       margin: 0 0 0 3%;
       position:absolute;
-      top:1em;
+      top:0em;
       right:0;
     }
   }
@@ -418,9 +430,6 @@
 // TERTIARY PAGES 
 
 .tertiary {
-  div.intro {
-    margin-bottom:1em;
-  }
   .navigation {
     display:none;
   }
@@ -513,11 +522,3 @@
 
 // END TERTIARY PAGES
 // ----------------------
-
-
-.section-heading {
-  font-family: "DIN Medium", sans-serif;
-  margin: .7143em 0 0 0;
-  display: block;
-  line-height:1.429em
-}
