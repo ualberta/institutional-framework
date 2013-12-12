@@ -11,6 +11,7 @@
     margin-bottom: 1em;
     .frame {
       display:inline-block;
+      width:100%;
     }
   }
 }
@@ -78,8 +79,8 @@
   }
 
   .row-fluid.one-col{
-    .primary-content-area{
-      width: @tablet_OneColPriColFluid;
+    .primary-content-area.span {
+      width: 100%;
     }
     .sidebar{
       position:inherit;
@@ -94,10 +95,16 @@
     .sidebar { width:19%; margin-left:3%; margin-top:0; padding-top: 0; border-top:none; box-shadow: none; }
   }
 
+  .row-fluid.one-col{
+    .primary-content-area.span {
+      width: 78%;
+    }
+  }
+
   .sidebar > .extrude { 
     width: auto;
     display: block;
-    margin: 0 0 1em;
+    margin: 0 0 1.57em;
   }
 
 }
