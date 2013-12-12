@@ -67,6 +67,7 @@
   }
 
   .main-navigation > li > a { position:relative;}
+
   .main-navigation > li:hover > a:after { 
     content: "";
     position: absolute;
@@ -79,6 +80,11 @@
     display: block;
     left: 50%;
     margin-left: -0.5em;
+  }
+
+  .main-navigation > li:hover > a:only-child:after {
+    content:none;
+    display:none;
   }
   
   .sub-menu {
