@@ -34,6 +34,7 @@ ul.module-tertiary-links{margin:0;list-style:none;}ul.module-tertiary-links li{b
 .submit-event .scfError,.submit-event .scfValidationSummary,.submit-event .scfValidatorRequired,.submit-event .scfValidator{color:#9d261d;}
 .submit-event .scfSingleLineGeneralPanel{margin-top:10px;}
 .submit-event .scfMultipleLineGeneralPanel{margin-top:10px;}
+.content .frame{display:inline-block;}
 .section-heading{font-family:"DIN Medium",sans-serif;margin:.7143em 0 0 0;display:block;line-height:1.429em;}
 .content-wrapper>.content-top-row{background:none;box-shadow:none;border:none;}
 .image-caption-container .caption h3{font-size:1.5em;}
