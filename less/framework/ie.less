@@ -142,6 +142,18 @@
   .row-fluid .footer-copyright {
     margin-left:  0;
   }
+
+  .row-fluid {
+    .primary-content-area { width: 45%; }
+    .secondary-content-area { width: 30%; margin-left:3%;}
+    .sidebar { width:19%; margin-left:3%; margin-top:0; padding-top: 0; border-top:none; box-shadow: none; }
+  }
+
+  .row-fluid.one-col{
+    .primary-content-area.span {
+      width: 78%;
+    }
+  }
   
   .person-search, .icon-field {
     position: relative;
@@ -713,10 +725,10 @@
     }
     &>li ul.link-mod-items {
       left: @linkModDesktopIndent;
+      right:0;
       list-style: none;
       margin: 0;
       padding: 0;
-      width: @linkModDesktopRightWidth;
       border-right:  1px solid @linkModBorderColor;
       margin-left: -1px;
       min-height: @linkModHeight;
@@ -812,8 +824,9 @@
       float: left;
     }
     &>li ul.link-mod-items {
-      width: @linkModDesktopRightWidth;
+      width: auto;
       left: @linkModDesktopIndent;
+      right:0;
     }
     &>li:last-child {
       input {
