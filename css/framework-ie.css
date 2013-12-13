@@ -12,6 +12,7 @@
 .lt-ie10 div.scfForm .scfRadioButtonListGeneralPanel input{margin-top:2px;}
 .ie9 h5.sidebar-title{width:100%;}
 .lt-ie9{}.lt-ie9 .nav-mobile{display:none;}
+.lt-ie9 .top-footer-row .btn-social-media i{width:30px;height:30px;}
 .lt-ie9 .rmi-thumbnail{display:block;}
 .lt-ie9 .rmi-two .rmi-box{width:36%;float:left;display:inline;margin-right:10px;}
 .lt-ie9 .rmi-three .rmi-box{width:30%;margin-right:10px;float:left;}
@@ -85,7 +86,6 @@
 .lt-ie9 .blade-container .quick-links-container .quick-links-button{display:none;}
 .lt-ie9 .blade-container .blade-search i.icon-search{display:none;}
 .lt-ie9 .blade-container .blade-search input.search-query{padding-left:10px;}
-.lt-ie9 .blade-container .quick-links li:first-child a{color:#007c41;font-weight:bold;}
 .lt-ie9 .blade-container .blade-inner{height:2.85714285714286em;}
 .lt-ie9 .blade-container .blade-navigation{position:absolute;left:14em;right:12.5em;}
 .lt-ie9 .blade-container .blade-search{width:13em;height:2em;position:absolute;right:0;top:0;bottom:0;margin:auto;}

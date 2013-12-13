@@ -847,6 +847,7 @@ ul.accordion-list li.expanded div{display:block;padding:10px;}
 .no-boxshadow .navigation-container .navigation-inner ul.main-navigation{border-left:1px solid #cbd2cd;border-right:1px solid #fff;}
 .no-boxshadow .image-shadow{border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.45);}
 .no-boxshadow hr.soften{height:0px;border-top:1px solid #ddd;border-bottom:1px solid #fff;}
+.no-boxshadow .top-footer-row{border-top:1px solid #dca;border-bottom:1px solid #cba;}
 .no-cssgradients .navigation-container{border-top:1px solid #ccc404;border-bottom-color:#abb1ae;background:transparent url(../img/navbar-bg.gif) repeat-x center center;background-size:auto 100%;}.no-cssgradients .navigation-container .navigation-inner>ul>li{background:none;}
 .no-cssgradients .btn-apply{filter:none;background:#ffec05 left bottom repeat-x url(../img/bg-btn-lg-yellow.png);}.no-cssgradients .btn-apply:hover{filter:none;background-image:none;background-color:#ffee6c;}
 .no-cssgradients .btn-micro.btn-apply,.no-cssgradients .btn-small.btn-apply{background-image:url(../img/bg-btn-sm-yellow.png);}
