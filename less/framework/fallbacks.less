@@ -8,6 +8,14 @@
     #em > .size(height,55px,@baseFontSizepx);
     img { display: none; }
   }
+
+    // Banner
+  // ----------------
+  .banner-container,
+  .bottom-footer-row  { 
+    background: #007c41 url(../img/banner-bg.jpg) repeat-x top left;
+  }
+
   
 }
 
@@ -46,17 +54,17 @@
     border: 1px solid #ccc;
     border: 1px solid rgba(0,0,0,0.45);
   }
+
+  hr.soften {
+    height:0px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+  }
   
 }
 
 .no-cssgradients {
-  
-  // Banner
-  // ----------------
-  .banner-container { 
-    background: #007c41 url(../img/banner-bg.jpg) repeat-x top left;
-    .oval-container, .oval { display: none; }
-  }
+
   
   // Navigation
   // ----------------
@@ -64,6 +72,7 @@
     border-top: 1px solid #ccc404;
     border-bottom-color: #abb1ae;
     background: transparent url(../img/navbar-bg.gif) repeat-x center center;
+    background-size: auto 100%;
     .navigation-inner > ul > li { background: none; }
   }
   
@@ -102,17 +111,6 @@
   .btn-red{
 	  filter:none;
 	  background:#7C0F00;
-  }
-  hr.soften {
-    text-align: center;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #fff;
-    *display : list-item;
-    *list-style : url(../img/hr-bevel-short.png) inside;
-    *filter : alpha(opacity=0);
-    *margin-left: -10px;
-    *width : 0;
-    *border:none;
   }
 }
 
