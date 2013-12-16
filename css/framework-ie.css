@@ -28,7 +28,7 @@
 .lt-ie9 .ualberta-home .row-fluid .primary-content-area{width:57%;}
 .lt-ie9 .ualberta-home .row-fluid .secondary-content-area{width:40%;}
 .lt-ie9 .row-fluid .primary-content-area,.lt-ie9 .row-fluid .footer-faculty-links,.lt-ie9 .row-fluid .footer-copyright{margin-left:0;}
-.lt-ie9 .row-fluid .primary-content-area{width:45%;}
+.lt-ie9 .row-fluid .primary-content-area{width:45%;*width:44%;}
 .lt-ie9 .row-fluid .secondary-content-area{width:30%;margin-left:3%;}
 .lt-ie9 .row-fluid .sidebar{width:19%;margin-left:3%;margin-top:0;padding-top:0;border-top:none;box-shadow:none;}
 .lt-ie9 .row-fluid.one-col .primary-content-area.span{width:78%;}
@@ -104,7 +104,7 @@
 .lt-ie9 .navigation-container{border-bottom:1px solid #ccc;}.lt-ie9 .navigation-container .navigation-inner>ul>li{display:block;*zoom:1;margin-right:0px;}.lt-ie9 .navigation-container .navigation-inner>ul>li:before,.lt-ie9 .navigation-container .navigation-inner>ul>li:after{display:table;content:"";line-height:0;}
 .lt-ie9 .navigation-container .navigation-inner>ul>li:after{clear:both;}
 .lt-ie9 .navigation-container .navigation-inner ul li ul li a{display:block;}
-.lt-ie9 .navigation-container .navigation-inner ul li{position:relative;padding:0;}.lt-ie9 .navigation-container .navigation-inner ul li a{margin-right:0px;}.lt-ie9 .navigation-container .navigation-inner ul li a:hover{text-decoration:none;}
+.lt-ie9 .navigation-container .navigation-inner ul li{padding:0;}.lt-ie9 .navigation-container .navigation-inner ul li a{margin-right:0px;}.lt-ie9 .navigation-container .navigation-inner ul li a:hover{text-decoration:none;}
 .lt-ie9 .navigation-container .navigation-inner ul li ul li{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;float:left;display:block;margin-right:0px;border-left:1px solid #f9fffc;border-right:1px solid #c9cfcc;text-align:center;}.lt-ie9 .navigation-container .navigation-inner ul li ul li.audience-link{display:none;}
 .lt-ie9 .navigation-container .navigation-inner ul.main-navigation>li:hover>a,.lt-ie9 .navigation-container .navigation-inner ul.main-navigation>li.nav-current>a{background-color:#f6fcf9;background-color:rgba(255, 255, 255, 0.5);}
 .lt-ie9 .navigation-container .navigation-inner ul.main-navigation>li:hover>a:active{background-color:rgba(0, 30, 0, 0.1);border-top:1px solid rgba(0, 0, 0, 0.25);padding-top:11px;-webkit-box-shadow:inset 0px 1px 6px rgba(0, 0, 0, 0.25);-moz-box-shadow:inset 0px 1px 6px rgba(0, 0, 0, 0.25);box-shadow:inset 0px 1px 6px rgba(0, 0, 0, 0.25);color:#3d4a43;text-shadow:1px 1px 1px rgba(255, 255, 255, 0.65);margin-left:-1px;border-left:1px solid #a2a7a3;}

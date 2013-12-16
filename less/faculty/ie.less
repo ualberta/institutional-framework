@@ -64,15 +64,7 @@
 	.link-mod-container > li ul.link-mod-items{
 		width:270px;
 	}
-	ul.main-navigation li.nav4 .sub-menu{
-		left:-250px;
-	}
-	ul.main-navigation li.nav5 .sub-menu{
-		left:-350px;
-	}
-	ul.main-navigation li.nav6 .sub-menu{
-		left:-515px;
-	}
+
 	.row-fluid.secondary .feature-area{
 		width:100%;
 	}
@@ -108,27 +100,14 @@
   
   .navigation-container {
     .navigation-inner ul li ul {
-      .nav1 {
-        width: percentage(64/@totalNavWidth);
-      }
-      .nav2 {
-        width: percentage(72/@totalNavWidth);
-      }
-      .nav3 {
-        width: percentage(96/@totalNavWidth);
-      }
-      .nav4 {
-        width: percentage(68/@totalNavWidth);
-      }
-      .nav5 {
-        width: percentage(91/@totalNavWidth);
-      }
-      .nav6 {
-        width: percentage(50/@totalNavWidth);
+      .nav1, .nav2, .nav3, .nav4, .nav6, .nav6 {
+        width: 16.666%;
       }
     }
   }
   
+.navigation-inner { position:relative;}
+
   .navigation-inner ul.section-navigation li{
   	border:none;
   	float:none;
@@ -137,26 +116,14 @@
   .navigation-inner ul.section-navigation li:hover{
   	margin-left:-5px;
   }
-  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu{
-    right:-480px;
-  }
+
   .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
-    right: -300px;
-    left: auto;
-    width: 500px;
+
     & .section-navigation {
       width: 46%;
     }
   }
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-    right:-350px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-    right:-150px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
-    width: 500px;
-  }
+
   .navigation-inner .sub-menu .section-title{
     text-align:left;
   }
@@ -171,51 +138,15 @@
   }
   .navigation-inner .main-navigation > li:hover .sub-menu {
     display: block;
-    width:  600px;
     height: auto;
   }
   .navigation-inner .sub-menu {
     position: absolute;
-    top: 39px;
-    left: -1px;
     z-index: 100;
-    width:  600px;
     height: auto;
-    background: #ccc;
-    .border-radius(0px 0px 4px 4px);
-    padding: 10px;
-    #gradient > .vertical-three-colors(#fbfbfb, #ffffff, 33%, #E7EDE7);
-    .box-shadow(inset 0px 0px 5px #aabaaa, 0px 1px 10px rgba(0,0,0,0.15));
-    border: 1px solid #ccd6cc;
-    border-bottom: 2px solid #bbcbbb;
-    border-top: 1px solid #acb1af;
-    .transition(opacity 0.1s linear);
     display: none;
   }
-  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu {
-    right: -450px;
-    left: auto;
-  }
-  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
-    right: -250px;
-    left: auto;
-    width: 400px;
-    & .section-navigation {
-      width: 96%;
-    }
-  }
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu {
-    right: -200px;
-    left: auto;
-  }
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu {
-    right: -100px;
-    left: auto;
-  }
-  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
-    right: -5px;
-    left: auto;
-  }
+
   .navigation-inner .sub-menu ul,
   .navigation-inner .sub-menu ul li,
   .navigation-inner .sub-menu ul li a {
@@ -244,8 +175,6 @@
   }
   .navigation-inner .sub-menu .section-description {
     padding: 4px 0 2px 2%;
-    margin-top: -3px;
-    border-left: 1px dotted @grayDark;
   }
   .navigation-inner .sub-menu ul li a {
     font-family: sans-serif;
@@ -254,15 +183,26 @@
     padding: 4px 0px;
     color: @linkColor;
     line-height: 1.2em;
-    }
+  }
     
-   .navigation-inner .sub-menu ul li:hover {
-      padding-left:12px;
-      margin-left: -13px;
-      #gradient > .horizontal(rgba(255,219,5,0.65), rgba(255,219,5,0));
-      border-left: 1px solid darken(#ffdb05,3%);
-      text-shadow: none;
-    }
+  .navigation-inner .sub-menu ul li:hover {
+    padding-left:12px;
+    margin-left: -13px;
+    border-left: 1px solid darken(#ffdb05,3%);
+    text-shadow: none;
+  }
+
+  .sub-menu {
+    position: absolute;
+    top: 2.8em;
+    left: 0em;
+    right:0em;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #ccd6cc;
+    border-bottom: 3px solid #7ac900;
+    border-top: 1px solid #acb1af;
+  }
   // End Navigation
   
  // Dino 101

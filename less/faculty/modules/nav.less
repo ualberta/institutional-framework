@@ -94,13 +94,14 @@
     right:0em;
     z-index: 100;
     background: #fff;
+    border: 1px solid #ccd6cc;
+    border-bottom: 3px solid #7ac900;
+    border-top: 1px solid #acb1af;
     .border-radius(0px 0px 4px 4px);
     padding: 1% 2%;
     // #gradient > .vertical-three-colors(#fbfbfb, #ffffff, 33%, #E7EDE7);
     .box-shadow(inset 0px 1px 1px #ddd, 0px 5px 15px rgba(0,0,0,0.2));
-    border: 1px solid #ccd6cc;
-    border-bottom: 3px solid #7ac900;
-    border-top: 1px solid #acb1af;
+    
     .transition(opacity 0.1s linear);
     .opacity(0);
   }
@@ -377,7 +378,11 @@
   content: "";
   position: absolute;
   border: 0.5em solid transparent;
-  border-left: 0.5em solid #007c41;
+  border-left: 0.5em solid #ffdb05;
+}
+
+.nav-wrapper ul.level-0 li.inside > ul {
+  display:block;
 }
 
 @media screen and (min-width: 43.15em) {

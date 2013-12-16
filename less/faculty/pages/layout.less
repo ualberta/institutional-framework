@@ -306,6 +306,9 @@
   .sidebar {
     margin:1em 0;
   }
+  .primary-content .feature-area {
+    width:auto;
+  }
 }
 
 @media (min-width: 30em) {
@@ -483,3 +486,34 @@
 
 // END TERTIARY PAGES
 // ----------------------
+
+
+// NEWS ARTICLE PAGE 
+// ----------------------
+
+@media (min-width: 43.125em) {
+  .article-content .story {
+    width:65%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+  }
+  .article-content aside {
+    width: 30%;
+    margin-left:5%;
+    float:left;
+    margin-top: -1.57em;
+  }
+
+  .news-article .row-fluid .primary-content-area {
+    width:100%;
+  }
+
+}
+
+@media (min-width: 61.25em) {
+  .news-article .tertiary .span12.primary-content-area {
+    width:77%;
+  }
+}
