@@ -210,3 +210,19 @@ h5.sidebar-title i {
     right: -226px;
   }
 }
+/*** Lane's adjustments for homepage teasers ***/
+.frame.data-thumbnail {
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+}
+.data-description {
+  margin-left: 8em;
+}
+.homepage .primary-content-area .module-container .data-list li {
+  position: relative;
+  min-height: 7.5em;
+}
+.homepage .primary-content-area .module-container .data-list li:hover .frame.data-thumbnail {
+  left: 0.7em;
+}
