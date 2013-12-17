@@ -53,11 +53,6 @@
       width: 72.64957264957265%;
       margin-left: 2.564102564102564%;
   }
-  .navigation-inner ul.section-navigation li {
-	  border: none;
-	  float: none;
-	  margin-left: -5px;
-  }
   ul.breadcrumbs li {
   	 margin: 0 1px 0 0;
   }
@@ -106,90 +101,84 @@
     }
   }
   
-.navigation-inner { position:relative;}
+  .navigation-inner { position:relative;}
 
-  .navigation-inner ul.section-navigation li{
+  ul.section-navigation li{
   	border:none;
   	float:none;
-  	margin-left:-5px;
-  }
-  .navigation-inner ul.section-navigation li:hover{
-  	margin-left:-5px;
   }
 
-  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu {
+  .sub-menu-content {
+    text-align:left;
+  }
 
+  .main-navigation > li:nth-child(3):hover .sub-menu {
     & .section-navigation {
       width: 46%;
     }
   }
-
-  .navigation-inner .sub-menu .section-title{
+  .sub-menu ul li a {
     text-align:left;
   }
-  .navigation-inner .sub-menu ul li a {
+  .sub-menu .section-description {
     text-align:left;
   }
-  .navigation-inner .sub-menu .section-description {
-    text-align:left;
-  }
-  .navigation-inner .main-navigation > li .sub-menu {
+  .main-navigation > li .sub-menu {
     display: none;
   }
-  .navigation-inner .main-navigation > li:hover .sub-menu {
+  .main-navigation > li:hover .sub-menu {
     display: block;
     height: auto;
   }
-  .navigation-inner .sub-menu {
+  .sub-menu {
     position: absolute;
     z-index: 100;
     height: auto;
     display: none;
   }
 
-  .navigation-inner .sub-menu ul,
-  .navigation-inner .sub-menu ul li,
-  .navigation-inner .sub-menu ul li a {
+  .sub-menu ul,
+  .sub-menu ul li,
+  .sub-menu ul li a {
     display: block;
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  .navigation-inner .sub-menu .section-title {
-    font-weight: bold;
-    font-size:  14px;
-    border-bottom: 1px dotted @grayDark;
-    line-height:  1em;
-    margin: 0 0 4px 0;
-    padding: 5px 0px;
-    text-shadow:  none;
-  }
-  .navigation-inner .sub-menu .section-navigation,
-  .navigation-inner .sub-menu .section-description {
+
+  .sub-menu .section-navigation,
+  .sub-menu .section-description {
     display: inline-block;
     vertical-align: top;
     width: 47%;
   }
-  .navigation-inner .sub-menu .section-navigation {
-    margin-right:2%;
+
+  .sub-menu .section-navigation {
+    margin-right:4%;
   }
-  .navigation-inner .sub-menu .section-description {
-    padding: 4px 0 2px 2%;
+  
+  .sub-menu .section-description {
+    padding: 0.3em 0 0.15em 0em;
   }
-  .navigation-inner .sub-menu ul li a {
+
+  .sub-menu ul li a {
     font-family: sans-serif;
     text-transform: none;
     border: none;
-    padding: 4px 0px;
+    border-bottom: 1px dotted #ddd;
+    padding: 0.5em 0.35em;
     color: @linkColor;
     line-height: 1.2em;
-  }
     
-  .navigation-inner .sub-menu ul li:hover {
-    padding-left:12px;
-    margin-left: -13px;
-    border-left: 1px solid darken(#ffdb05,3%);
-    text-shadow: none;
+    &:hover {
+      color: @linkColorHover;
+      background:  #FFF5B8;
+      border-top: 1px solid #E1D8A4;
+      border-bottom: 1px solid #E1D8A4;
+      border-right: 1px solid #E1D8A4;
+      margin-top: -1px;
+      text-shadow: none;
+    }
   }
 
   .sub-menu {
@@ -204,6 +193,10 @@
     border-top: 1px solid #acb1af;
   }
   // End Navigation
+
+  .slide.image-caption-container h3 {
+    font-size:1.2em;
+  }
   
  // Dino 101
  .fma-small-dino.image-caption-container .caption {
@@ -225,19 +218,16 @@
 // INTERNET EXPLORER 7 AND BELOW
 // --------------------------------------------------
 .lt-ie8 {
-header{
-	z-index:1;
-	position:relative;
-}
+  header{
+  	z-index:1;
+  	position:relative;
+  }
+
+  hr, hr.soften {
+    height: 2px;
+  }
   .content-top-row{
 	  line-height:1.5em;
-  }
-  .image-caption-container .caption a{
-	  color:#ffdb05;
-  }
-  .image-caption-container .caption{
-	  padding:5px;
-	  font-size:0.85em;
   }
   .flexslider .flex-control-nav li {
 	  display:inline;
@@ -254,6 +244,9 @@ header{
   .navigation-inner .sub-menu .section-description{
 	  float:right;
   }
+  .flexslider .flex-direction-nav {
+    height:0px;
+  }
   .flexslider .flex-direction-nav li a.flex-prev{
 	  background-image:url('../img/prev-arrow.png');
 	  width:31px;
@@ -264,22 +257,17 @@ header{
 	  width:31px;
 	  height:46px;
   }
+  .slide.image-caption-container {
+    height: 289px;
+  }
   ul.faculty-links{
 	  margin-left:0px;
   }
-  .image-caption-container .caption{
-	  position:absolute;
-	  filter:~"progid:dximagetransform.microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000', GradientType=0)";
-	  width:98%;
-  }
   .flexslider .flex-control-nav {
-	  bottom:15px;
+	  bottom:-15px;
   }
   .flexslider .flex-direction-nav li a {
 	  top:40%;
-   }
-   .image-caption-container .caption p {
-	   color:#ffffff;
    }
    .tab-content{
 	   height:252px;

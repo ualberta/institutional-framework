@@ -560,11 +560,11 @@
       margin-right: 0px;
     } 
     
-    .navigation-inner ul li ul li a {
+    ul li ul li a {
       display: block;
     }
     
-    .navigation-inner ul li {
+    ul li {
       padding: 0;
       a { 
         margin-right: 0px;
@@ -574,7 +574,7 @@
       }
     }
     
-    .navigation-inner ul li ul li {
+    ul li ul li {
       -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
               box-sizing: border-box;
@@ -590,13 +590,15 @@
       }
     }
     
-    .navigation-inner ul.main-navigation > li:hover > a,
-    .navigation-inner ul.main-navigation > li.nav-current > a {
-      background-color: #f6fcf9;
+    ul.main-navigation > li:hover > a,
+    ul.main-navigation > li.nav-current > a {
+      background-color: #f5f8f6;
       background-color: rgba(255,255,255,0.5);
+      border-bottom: solid #7ac900;
+      padding-bottom:0.3em;
     }
     
-    .navigation-inner ul.main-navigation > li:hover > a:active {
+    ul.main-navigation > li:hover > a:active {
       background-color: rgba(0,30,0,0.1);
       border-top: 1px solid rgba(0,0,0,0.25);
       padding-top: 11px;
@@ -607,7 +609,7 @@
       border-left: 1px solid #a2a7a3;
     }
     
-    .navigation-inner ul li .navigation-toggle {
+    ul li .navigation-toggle {
       display: none;
     }
     
@@ -617,9 +619,8 @@
       overflow: visible!important;
     }
     
-    .navigation-inner ul li ul {
+    ul li ul {
       display: block;
-      width: 940px;
       border: none;
       li {
         border: none;
@@ -965,6 +966,7 @@
   // base.less overrides
   // -----------------------
   
+  /* NO MORE!
   .image-caption-container {
     .caption {
       position: static;
@@ -982,6 +984,7 @@
       }
     }
   }
+  */
   
   .content-top-row {
     width: auto;
@@ -1194,7 +1197,6 @@ ul.nav-tabs li.active{
   // type.less Overrides
   // ------------------------
   h5.sidebar-title {
-  	margin-left: -9px;
   	filter: none;
   	background: #fdfefe left bottom repeat-x url(../img/bg-hdr-grey.png);
   }
