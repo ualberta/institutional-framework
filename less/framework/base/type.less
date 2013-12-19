@@ -80,11 +80,19 @@ a.site-title:hover { color: @yellow; }
   a.site-title { font-size: 2.4857em; }
 }
 
-h1.page-title {
-  margin: 0.1em auto 0.4em auto;
+h1.page-title,
+.intro h1,
+.section-heading {
+  margin: 0.1em auto 0 auto;
+  padding: 0 0 0.4em;
   font-size: 1.8em;    
   line-height: 1.2em;
-  border: none;
+  border-bottom: 1px solid #ddd;
+  .box-shadow(0 1px 0 #fff);
+}
+
+.content h1.page-title {
+  .box-shadow(none);
 }
 
 h3 {

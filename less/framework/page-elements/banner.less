@@ -19,7 +19,6 @@
   .site-title {
     position: absolute;
     z-index: 15;
-    left: 10px;
   } 
 }
 
@@ -33,4 +32,17 @@
 
 .oval {
   display: none;
+}
+
+@media (min-width: 43.125em) {
+  .banner-inner .site-title {
+    left: 0.3125em;
+  }
+}
+
+
+@media (min-width: 61.25em) {
+  .banner-inner .site-title {
+    left: auto;
+  }
 }

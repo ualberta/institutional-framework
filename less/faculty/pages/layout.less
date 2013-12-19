@@ -3,10 +3,9 @@
 .content .frame { display: inline-block; }
 
 .section-heading {
-  font-family: "DIN Medium", sans-serif;
-  margin: .7143em 0 0 0;
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeight;
   display: block;
-  line-height:1.429em
 }
 
 .content-wrapper > .content-top-row {
@@ -15,19 +14,12 @@
   border:none;
  
 }
-.image-caption-container .caption h3 {
- font-size:1.5em;
-}
 
 .rich-text h4 {
   margin-top: 0.25em;
   font-size: 1.2em;
 }
 
-.intro h1, .section-heading {
-  margin-bottom:0;
-  font-size:1.75em;
-}
 .intro p {  
   margin-top:0;
 }
@@ -47,27 +39,6 @@
     height: 100%;
 } 
 
-@media (min-width: 61.25em) {
-  .blade-search {
-    right:3%;
-  }
-  .blade-navigation {
-    right:3%;
-    margin-right:11.5em;
-  }
-}
-
-@media (min-width: 75em) {
-  .blade-search {
-    right:5%;
-  }
-  .blade-navigation {
-    right:5%;
-    margin-right:14em;
-  }
-}
-
-
 /** Faculty - Banner overrides **/
 
 .banner-inner .site-title {
@@ -83,39 +54,10 @@
   display: none;
 }
 
-@media screen and (min-width: 61.25em) {
-  .container, .blade-inner, .banner-inner, .navigation-inner, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom {
-      padding:0 3%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing:border-box;
-      width:100%;
-//      max-width: 105em;
-  }
-  .banner-inner .site-title {
-        left:auto;
-    }
-}
 
-@media screen and (min-width: 75em) {
-  .container, .blade-inner, .banner-inner, .navigation-inner, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom {
-      padding:0 5%;
-  }
-}
-
-@media screen and (min-width: 96em) {
-    body {
-        font-size: 1.14285714285714em;
-        line-height: 1.65em;
-    }
-}
 
 .secondary div.intro,
 .tertiary div.intro {
-  border-bottom: 1px solid #DDD;
-  box-shadow: 0 1px 0 #FFF;
-  padding-bottom:0.25em;
   margin-bottom:1em;
 }
 
@@ -150,6 +92,8 @@
   -webkit-backface-visibility: hidden;
 }
 
+
+
 @media (max-width: 31.250em){
   .flexslider .flex-direction-nav li a {
     margin-top:-72px;
@@ -168,9 +112,28 @@
     left:10px;
     opacity:1;
   }
+  .content-top-row {
+    margin-top: 0;
+  }
+  .content-wrapper .row-fluid .feature-area {
+    margin-left: -0.83333em;
+    margin-right: -0.83333em;
+    margin-top: -1.57em;
+    width: auto;
+  }
+  .content-wrapper .row-fluid .feature-area h3 {
+    font-size: 1.2em;
+  }
+  .feature-area .flexslider {
+    padding: 0;
+  }
 }
 
 @media (min-width: 43.125em) {
+
+  .image-caption-container .caption h3 {
+    font-size:1.35em;
+  }
 
   .row-fluid { 
     .feature-area,
@@ -481,6 +444,91 @@
       max-width: none;
     }
   }
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    margin: 1.57em auto 0.4em auto;
+    line-height: 1.2em;
+    border: none;
+}
+
+.content h1 {
+    margin-top: 0.1em;
+    font-size: 1.75em;
+}
+
+.content h2 {
+    font-size: 1.6em;
+}
+
+.content h3 {
+    font-size: 1.4em;
+}
+
+.content h4 {
+    font-size: 1.15em;
+}
+
+.content p a { text-decoration: underline;}
+
+.image-right {
+    float:right;
+    width:45%;
+    margin-left:1em;
+}
+
+.image-left {
+    float:left;
+    margin-top:0.25em;
+    margin-right:1em;
+    margin-bottom:0.5em;
+}
+
+span.image {
+    position:relative;
+    display:block;
+}
+
+span.image:after {
+    content:"";
+    border:1px solid rgba(0,0,0,0.1);
+    border-top-color:rgba(0,0,0,0.05);
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    z-index:5;
+    border-radius:4px;
+}
+
+span.image img {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+}
+
+.content p.teaser {
+    font-size:1.2em;
+    line-height:1.42em;
+    margin: 0.9em 0 1.2em;   
+    opacity: 0.8;                             
+}
+
+ul.content-list, ol.content-list {
+   margin-top: 1.57em;
+   margin-bottom: 1.57em;
+   margin-left: 1.78571428571429em;
+}
+
+ul.content-list li, ol.content-list li {
+    padding-top:0.15em;
+    padding-bottom:0.15em;
 }
 
 

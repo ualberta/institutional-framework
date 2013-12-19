@@ -3,11 +3,22 @@
 // --------------------------------------------------
 
 
-// Fixed (940px)
+[class*="span"] {
+  float: left;
+  min-height: 1px; // prevent collapsing columns
+}
+
+@media (min-width: 61.25em) {
+
+	// Fixed (940px)
 #grid > .core(@gridColumnWidth, @gridGutterWidth);
 
 // Fluid (940px)
 #grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
+
+}
+
+
 
 // Reset utility classes due to specificity
 [class*="span"].hide,
