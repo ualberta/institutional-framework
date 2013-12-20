@@ -49,6 +49,36 @@
 .homepage .row-fluid .feature-area {
   width: 100%;
 }
+.homepage .feature-caption.caption {
+  background: none;
+  padding: 0 0 25px 10px;
+}
+.homepage .feature-caption.caption h3 {
+  font-size: 2.8em;
+  font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 0.9em;
+}
+.homepage .feature-caption.caption p {
+  font-size: 1.1em;
+}
+.homepage .feature-caption.caption h3,
+.homepage .feature-caption.caption p {
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.85);
+}
+.homepage .primary-content-area .data-list {
+  margin-bottom: 0;
+}
+@media (max-width: 74.9375em) and (min-width: 61.25em) {
+  .homepage .feature-caption.caption {
+    position: absolute;
+    color: #fff;
+  }
+}
+@media (max-width: 61.1875em) and (min-width: 43.125em) {
+  .content-inner {
+    margin-top: 0;
+  }
+}
 .homepage .audience-area {
   display: none;
 }
