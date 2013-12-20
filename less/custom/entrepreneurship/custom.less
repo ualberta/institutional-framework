@@ -76,26 +76,28 @@
 }
 
 // Big FMA
-.homepage .row-fluid .feature-area {
-	width: 100%;
-}
-.homepage .feature-caption.caption {
-	background: none;
-	h3 {
-		font-size: 2.8em;
-		font-family: "DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;
-		line-height: 0.9em;
+.homepage {
+	.row-fluid .feature-area {
+		width: 100%;
 	}
-	p {
-		font-size: 1.1em;
+	.feature-caption.caption {
+		background: none;
+		h3 {
+			font-size: 2.8em;
+			font-family: "DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;
+			line-height: 0.9em;
+		}
+		p {
+			font-size: 1.1em;
+		}
+		h3, p {
+			text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.85);
+		}
+		padding: 0 0 25px 10px;
 	}
-	h3, p {
-		text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.85);
+	.primary-content-area .data-list {
+		margin-bottom: 0;
 	}
-	padding: 0 0 25px 10px;
-}
-.homepage .primary-content-area .data-list {
-	margin-bottom: 0;
 }
 
 
@@ -106,11 +108,7 @@
 	}
 }
 
-@media (max-width: 61.1875em) and (min-width: 43.125em) {
-	.content-inner {
-		margin-top: 0;
-	}
-}
+
 
 
 // Hide empty audience area
@@ -227,9 +225,12 @@ h5.sidebar-title {
 	.events .primary-content-area .row-fluid .span6 {
     	margin-left: 0;
 	}
-// fixed the gap at top of sidebar
+// Added top margin to sidebar
+	.homepage .content-inner.row-fluid {
+		margin-top: 0;
+	}
 	.homepage .sidebar {
-		top: 20px;
+		top: 310px;
 	}
 // made the column widths the same in a 2-column subcontainer
 	.row-fluid.secondary .secondary-content-area .module-container {
