@@ -7,9 +7,10 @@
 //		About us:        75
 //      eHub:  		 72
 //      Courses:     74
-//      News:        72
 //      Events:   73
 //      Startups:          75
+//      News:        72
+
 //      ------------------------
 //      TOTAL:           441
 //*****************************************/
@@ -28,13 +29,13 @@
         width: percentage(74/@totalNavWidth);
       }
       .nav4 {
-        width: percentage(72/@totalNavWidth);
-      }
-      .nav5 {
         width: percentage(73/@totalNavWidth);
       }
-      .nav6 {
+      .nav5 {
         width: percentage(75/@totalNavWidth);
+      }
+      .nav6 {
+        width: percentage(72/@totalNavWidth);
       }
     }
   }
@@ -81,11 +82,11 @@
 		width: 100%;
 	}
 	.feature-caption.caption {
-		background: none;
 		h3 {
 			font-size: 2.8em;
 			font-family: "DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;
 			line-height: 0.9em;
+			padding-top: 15px;
 		}
 		p {
 			font-size: 1.1em;
@@ -97,6 +98,9 @@
 	}
 	.primary-content-area .data-list {
 		margin-bottom: 0;
+	}
+	.feature-caption.caption {
+		background: none;
 	}
 }
 
@@ -217,6 +221,34 @@ h5.sidebar-title {
      		margin-bottom: 10px;
      	}
      }
+     .homepage .feature-caption.caption {
+     	background: none;
+     }
+}
+
+// Mobile
+
+@media (max-width: 43.125em) {
+	.homepage .image-caption-container {
+		position: relative;
+		overflow: hidden;
+		margin-top: 10px;
+		img.fma-background {
+			max-width: 800px;
+			float: right;
+		}
+		background-color: none;
+		.feature-caption.caption {
+			color: #fff;
+			position: absolute;
+			h3 {
+				font-size: 2.1em;
+			}
+			p {
+				font-size: 1em;
+			}
+		}
+	}
 }
 
 // Tablet portrait
@@ -225,12 +257,27 @@ h5.sidebar-title {
 	.events .primary-content-area .row-fluid .span6 {
     	margin-left: 0;
 	}
-// Added top margin to sidebar
-	.homepage .content-inner.row-fluid {
-		margin-top: 0;
-	}
-	.homepage .sidebar {
-		top: 310px;
+// Added top margin to sidebar and adjusted spacing
+	.homepage {
+		.content-inner.row-fluid {
+			margin-top: 0;
+		}
+		.sidebar {
+			top: 330px;
+		}
+		.content-top-row {
+			margin-top: 0;
+		}
+		.image-caption-container {
+			position: relative;
+			overflow: hidden;
+			margin-top: 10px;
+			img.fma-background {
+				max-width: 980px;
+				float: right;
+			}
+		}
+	
 	}
 // made the column widths the same in a 2-column subcontainer
 	.row-fluid.secondary .secondary-content-area .module-container {

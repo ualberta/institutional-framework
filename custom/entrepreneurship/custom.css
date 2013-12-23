@@ -9,13 +9,13 @@
     width: 16.780045351473923%;
   }
   .navigation-container .navigation-inner ul li ul .nav4 {
-    width: 16.3265306122449%;
-  }
-  .navigation-container .navigation-inner ul li ul .nav5 {
     width: 16.55328798185941%;
   }
-  .navigation-container .navigation-inner ul li ul .nav6 {
+  .navigation-container .navigation-inner ul li ul .nav5 {
     width: 17.006802721088434%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav6 {
+    width: 16.3265306122449%;
   }
   .navigation-inner ul.section-navigation li {
     border: none;
@@ -50,13 +50,13 @@
   width: 100%;
 }
 .homepage .feature-caption.caption {
-  background: none;
   padding: 0 0 25px 10px;
 }
 .homepage .feature-caption.caption h3 {
   font-size: 2.8em;
   font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 0.9em;
+  padding-top: 15px;
 }
 .homepage .feature-caption.caption p {
   font-size: 1.1em;
@@ -67,6 +67,9 @@
 }
 .homepage .primary-content-area .data-list {
   margin-bottom: 0;
+}
+.homepage .feature-caption.caption {
+  background: none;
 }
 @media (max-width: 74.9375em) and (min-width: 61.25em) {
   .homepage .feature-caption.caption {
@@ -165,6 +168,31 @@ h5.sidebar-title i {
   .sidebar-feature .btn {
     margin-bottom: 10px;
   }
+  .homepage .feature-caption.caption {
+    background: none;
+  }
+}
+@media (max-width: 43.125em) {
+  .homepage .image-caption-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: none;
+  }
+  .homepage .image-caption-container img.fma-background {
+    max-width: 800px;
+    float: right;
+  }
+  .homepage .image-caption-container .feature-caption.caption {
+    color: #fff;
+    position: absolute;
+  }
+  .homepage .image-caption-container .feature-caption.caption h3 {
+    font-size: 2.1em;
+  }
+  .homepage .image-caption-container .feature-caption.caption p {
+    font-size: 1em;
+  }
 }
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
   .events .primary-content-area .row-fluid .span6 {
@@ -174,7 +202,19 @@ h5.sidebar-title i {
     margin-top: 0;
   }
   .homepage .sidebar {
-    top: 310px;
+    top: 330px;
+  }
+  .homepage .content-top-row {
+    margin-top: 0;
+  }
+  .homepage .image-caption-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .homepage .image-caption-container img.fma-background {
+    max-width: 980px;
+    float: right;
   }
   .row-fluid.secondary .secondary-content-area .module-container {
     width: 48.61878453038674%;
