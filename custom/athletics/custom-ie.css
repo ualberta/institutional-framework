@@ -25,3 +25,15 @@
 .lt-ie9 .navigation-container .navigation-inner ul li ul .nav6 {
   width: 16.55328798185941%;
 }
+.lt-ie9 .row-fluid .audience-area {
+  margin-left: 0;
+}
+.lt-ie9 .banner-container .banner-logo {
+  display: none;
+}
+.lt-ie9 .flexslider .slides > li {
+  margin-left: -934px;
+}
+.lt-ie9 .score-module.extrude {
+  width: 13.9%;
+}
