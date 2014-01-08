@@ -1,47 +1,13 @@
-.lt-ie9 .events .primary-content-area .row-fluid .span6 {
-  width: 28.617021276595743%;
-}
-.lt-ie9 .events .primary-content-area .row-fluid .span6:first-child {
-  width: 68.40425531914893%;
-}
-.lt-ie9 .events .primary-content-area .row-fluid .span6 .row-fluid .span6 {
-  width: 48.61878453038674%;
-}
-.lt-ie9 .navigation-container .navigation-inner ul li ul .nav1 {
-  width: 16.666666%;
-}
-.lt-ie9 .navigation-container .navigation-inner ul li ul .nav2 {
-  width: 16.666666%;
-}
-.lt-ie9 .navigation-container .navigation-inner ul li ul .nav3 {
-  width: 16.666666%;
-}
-.lt-ie9 .navigation-container .navigation-inner ul li ul .nav4 {
-  width: 16.666666%;
-}
-.lt-ie9 .navigation-container .navigation-inner ul li ul .nav5 {
-  width: 16.666666%;
-}
-.lt-ie9 .navigation-container .navigation-inner ul li ul .nav6 {
-  width: 16.666666%;
-}
-.lt-ie9 .homepage .caption.feature-caption {
-  padding-left: 0;
-}
-.lt-ie9 .homepage .caption.feature-caption h3 {
-  padding-top: 10px;
-  font-size: 2.1em;
-}
-.lt-ie8 .events .primary-content-area .row-fluid .span6 .row-fluid .span6 {
-  width: 44%;
-}
-.lt-ie8 .homepage .caption.feature-caption {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.lt-ie8 .homepage .caption.feature-caption h3 {
-  color: #fff;
-}
-.lt-ie8 .navigation-container .navigation-inner ul li ul .nav6 {
-  width: 16.5%;
-}
+.lt-ie9 .events .primary-content-area .row-fluid .span6{width:28.617021276595743%;}
+.lt-ie9 .events .primary-content-area .row-fluid .span6:first-child{width:68.40425531914893%;}
+.lt-ie9 .events .primary-content-area .row-fluid .span6 .row-fluid .span6{width:48.61878453038674%;}
+.lt-ie9 .navigation-container .navigation-inner ul li ul .nav1{width:16.666666%;}
+.lt-ie9 .navigation-container .navigation-inner ul li ul .nav2{width:16.666666%;}
+.lt-ie9 .navigation-container .navigation-inner ul li ul .nav3{width:16.666666%;}
+.lt-ie9 .navigation-container .navigation-inner ul li ul .nav4{width:16.666666%;}
+.lt-ie9 .navigation-container .navigation-inner ul li ul .nav5{width:16.666666%;}
+.lt-ie9 .navigation-container .navigation-inner ul li ul .nav6{width:16.666666%;}
+.lt-ie9 .homepage .caption.feature-caption{padding-left:0;}.lt-ie9 .homepage .caption.feature-caption h3{padding-top:10px;font-size:2.1em;}
+.lt-ie8 .events .primary-content-area .row-fluid .span6 .row-fluid .span6{width:44%;}
+.lt-ie8 .homepage .caption.feature-caption{padding-left:10px;padding-right:10px;}.lt-ie8 .homepage .caption.feature-caption h3{color:#fff;}
+.lt-ie8 .navigation-container .navigation-inner ul li ul .nav6{width:16.5%;}
