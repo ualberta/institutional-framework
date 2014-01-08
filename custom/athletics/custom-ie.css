@@ -31,8 +31,11 @@
 .lt-ie9 .banner-container .banner-logo {
   display: none;
 }
-.lt-ie9 .flexslider .slides > li {
+.lt-ie9 .highlighted-games .slides li {
   margin-left: -934px;
+}
+.lt-ie9 .highlighted-games .slides li.loading {
+  margin-left: 0;
 }
 .lt-ie9 .score-module.extrude {
   width: 13.9%;
