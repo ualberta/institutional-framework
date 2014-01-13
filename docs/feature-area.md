@@ -87,7 +87,8 @@ Seen below is the markup for a feature with the following options set:
   - Island left aligned with `.left-island`
   - Island bottom aligned with `.bottom-island`
 
-        // added in page <head>:
+
+Added to index `<head>`:
 
         <style type="text/css">
             /* island width/height */
@@ -98,7 +99,7 @@ Seen below is the markup for a feature with the following options set:
         </style>
 
 
-        // added in the feature container:
+Added to the feature container:
 
         <li class="ga_ualberta_fma">
           <div class="feature-wrapper example-feature">
