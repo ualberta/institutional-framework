@@ -11,12 +11,16 @@
 .campuslife {
 
 	h1.page-title {
+    background: #007c41;
     color: #FFDB05;
-		background: rgba(0, 0, 0, 0.8);
+		background: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 4px #000;
 	}
 
 	.breadcrumbs {
-		background: rgba(0, 0, 0, 0.8);
+    background: #007c41;
+		background: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 2px #000;
 	}
 
 	.slide {
@@ -521,10 +525,10 @@
   .why-ualberta .fma-container .fma-slide {
     position:  relative;
   }
-  .fma-slide {
+  .why-ualberta .fma-slide {
     display: none;
   }
-  .fma-slide.fma-active {
+  .why-ualberta .fma-slide.fma-active {
     display: block;
   }
   .why-ualberta .fma-container .ualberta-minute {
@@ -556,27 +560,41 @@
   }
 }
 
+// at 690px
 @media (min-width: 43.125em) {
-  p.context {
-    display: none;
+  .why-ualberta {
+
+    // hide the fma introduction sentence
+    .context {
+      display: none;
+    }
+
+    // set widths for thumbnail containers in fma
+    .thumbnail-container .frame,
+    .thumbnail-container .frame {
+      width: 11em;
+    }
+
   }
 }
 
+// at 980px
+@media (min-width: 61.25em) {
+  .why-ualberta {
 
-// NEWS
+    // increase widths for thumbnail containers in fma
+    .thumbnail-container .frame,
+    .thumbnail-container .frame {
+      width: 16.42em;
+    }
+
+  }
+}
+
+// NEWS AND EVENTS
+// ------------------------
 
 .news-and-events {
-  .news-thumbnail {
-    a.image-shadow {
-      width: 78px;
-      height: 78px;
-      overflow: hidden;
-      img {
-        max-width: none;
-        height: 78px;
-      }
-    }
-  }
 
   div.featured-news { 
   		margin-bottom:0.5em;
@@ -621,26 +639,7 @@
     	font-size:0.8em;
     }
   }
-  ul.news-list{
-  	margin:-0.75em 0 -0.75em 0;
-  	.news-description h4{
-  		margin-bottom:0;
-  	}
-  	li {
-  	  padding-top: 0.75em;
-  	  padding-bottom: 0.75em;
-  	}
-  	li:last-child {
-  	  border-bottom-color: transparent;
-  	  &:hover {
-  	    border-bottom-color: #E1D8A4;
-  	  }
-  	}
-  	li.bottom-row {
-  	  padding-top: 0;
-  	  padding-bottom: 0;
-  	}
-  }
+
 }
 
 .explore-logo{
@@ -657,6 +656,8 @@
 .explore-logo-img a{
 	display:block;
 }
+
+
 
 @media (min-width: 500px) and (max-width:689px) {
 	.row-fluid .span6.explore-logo{

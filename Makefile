@@ -181,8 +181,8 @@ homepage:
 	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
 	@cp -r ./img/homepage/ ../homepage/img/
 	@cat ../homepage/css/framework.css ../homepage/css/ualberta-homepage.css ./css/explore-icons.css > ../homepage/css/homepage.css
+	@cp ../homepage/css/homepage.css ../homepage/css/homepage-fluid-qa.css
 	@cat ../homepage/css/framework-ie.css ../homepage/css/ualberta-ie.css > ../homepage/css/homepage-ie.css
-	@cp ./html/homepage/index.html ../homepage/index-preview.html
 	
 homepage-preview:
 	@mkdir -p ./css

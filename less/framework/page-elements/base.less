@@ -84,6 +84,15 @@
       position:inherit;
     }
   }
+
+  // adding temp fix for ILO page
+  // remove this once department update is launched
+  .d101-interactive-modules .row-fluid.one-col {
+    padding-top:1.57em;
+    .primary-content-area.span {
+      width: 74%;
+    }
+  }
 }
 
 @media (min-width: 61.25em) {
@@ -108,6 +117,7 @@
 }
 
 @media screen and (min-width: 61.25em) {
+  .content-top-row { padding:0 3%; }
   .container, .blade-inner, .banner-inner, .navigation-inner, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom {
       padding:0 3%;
       box-sizing: border-box;
