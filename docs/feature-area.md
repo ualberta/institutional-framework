@@ -62,7 +62,7 @@ In this example, the content island will be anchored to the bottom left of the i
         <div class="feature-content bottom-island left-island">
         ...
 
-### Dark/Light vs. Light/Dark Islands
+### Dark/Light vs. Light/Dark Islands (980px+)
 
 Two treatments are available for island overlays.  The default provided is a light background with dark text treatment.  This may not be suitable for all images, so the following class may be used on the `.feature-content` element:
 
@@ -75,3 +75,42 @@ In this example, the content island will have a dark background and be anchored 
 		...
         <div class="feature-content bottom-island right-island dark">
         ...
+
+
+## Full Feature Markup Example
+
+Seen below is the markup for a feature with the following options set:
+
+  - Width/height of the island assigned on page through `.example-feature`
+  - Focal point set to the right side of the image assigned by `.focus-right`.
+  - Light text on dark background for the island assigned by `.dark`
+  - Island left aligned with `.left-island`
+  - Island bottom aligned with `.bottom-island`
+
+        // added in page <head>:
+
+        <style type="text/css">
+            /* island width/height */
+            .example-feature {
+                width: 20em;
+                height:10em;
+            }
+        </style>
+
+
+        // added in the feature container:
+
+        <li class="ga_ualberta_fma">
+          <div class="feature-wrapper example-feature">
+            <div class="feature-image focus-right">
+              <img src="{{IMG_LOCATION}}" />
+            </div>
+              <div class="feature-content dark bottom-island left-island">
+                <h3>Dino 101 is Back</h3>
+                <p>Take it again for the first time</p>
+                <div class="feature-buttons">
+                    <a href="{{URL}}" class="btn btn-green">Find Out More</a>
+                </div>
+              </div>
+            </div>
+        </li>
