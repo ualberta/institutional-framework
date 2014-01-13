@@ -1,5 +1,7 @@
 # Fluid Responsive Feature Area
 
+Demo: http://www.ualberta.ca/~publicas/uofa/index-fluid-qa.html
+
 ## Base Feature Markup
 
 Note: Classes that appear in square brackets are optional classes used to override default behaviour.
