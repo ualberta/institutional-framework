@@ -9,7 +9,7 @@ Note: Classes that appear in square brackets are optional classes used to overri
             <div class="feature-image [focus-left, focus-center, focus-right]">
               <img src="{{IMG_LOCATION}}" />
             </div>
-              <div class="feature-content [dark, bottom-island, left-island, right-island, mob-overlay]">
+              <div class="feature-content [dark, bottom-island, left-island, right-island]">
                 <h3>{{TITLE}}</h3>
                 <p>{{DESCRIPTION}}</p>
                 <div class="feature-buttons">
@@ -21,16 +21,6 @@ Note: Classes that appear in square brackets are optional classes used to overri
 
 
 ## Mobile Overrides
-
-### Caption Overlay (0px - 690px)
-
-The option to overlay the feature-content div overtop of the image on mobile can be anabled by adding the `mob-overlay` class to the `.feature-content` div element.
-		
-#### Markup Example
-
-	...
-        <div class="feature-content mob-overlay-caption">
-        ...
 
 ### Image Focus (0px - 980px)
 
