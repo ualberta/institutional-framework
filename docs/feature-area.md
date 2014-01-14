@@ -1,13 +1,17 @@
 # Fluid Responsive Feature Area
 
+Demo: http://www.ualberta.ca/~publicas/uofa/index-fluid-qa.html
+
 ## Base Feature Markup
 
+Note: Classes that appear in square brackets are optional classes used to override default behaviour.
+
         <li class="ga_ualberta_fma">
-          <div class="feature-wrapper">
-            <div class="feature-image">
+          <div class="feature-wrapper [unique-feature-class]">
+            <div class="feature-image [focus-left, focus-center, focus-right]">
               <img src="{{IMG_LOCATION}}" />
             </div>
-              <div class="feature-content">
+              <div class="feature-content [dark, bottom-island, left-island, right-island]">
                 <h3>{{TITLE}}</h3>
                 <p>{{DESCRIPTION}}</p>
                 <div class="feature-buttons">
@@ -18,17 +22,7 @@
         </li>
 
 
-## Mobile Options
-
-### Caption Overlay (0px - 690px)
-
-The option to overlay the feature-content div overtop of the image on mobile can be anabled by adding the `mob-overlay-caption-mobile` class to the `.feature-content` div element.
-		
-#### Markup Example
-
-		...
-        <div class="feature-content mob-overlay-caption">
-        ...
+## Mobile Overrides
 
 ### Image Focus (0px - 980px)
 
@@ -38,7 +32,7 @@ On low resolutions the feature image maintains a fixed height and only a portion
   - `.focus-center`: Keeps center part of image visible
   - `.focus-right`: keeps right part of image visible
 
-##Tablet+ Options
+## Tablet+ Overrides
 
 At the tablet breakpoint (~690px) the content area becomes an island floating on top of the image.
 
