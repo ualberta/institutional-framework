@@ -9,6 +9,29 @@
     width: 100%;
 }
 
+// hide content top row by default
+.content-top-row {
+  display:none;
+}
+
+// show content top row for homepage fma
+.homepage .content-top-row {
+  position:relative;
+  display:block;
+  text-align:center;
+  background:#242b27;
+  .box-shadow(0 1px 0px #fff);
+  z-index:1;
+  overflow:hidden;
+  border-bottom:1px solid rgba(0,0,0,0.35);
+}
+
+.content-top-row img {
+  .box-shadow(0 0 20px #000);
+  position:relative;
+  z-index:1;
+}
+
 
 @media (min-width: 43.125em) {
 
@@ -52,6 +75,10 @@
     }
   }
  }
+
+  .navigation-inner > ul {
+    position:relative;
+  }
 
    .main-navigation > li .sub-menu {
     display: block;
@@ -159,6 +186,16 @@
     }
   }
  
+  .span6.footer-faculty-links,
+  .span6.vcard {
+    width:48.5%;
+    .span6 {
+      width:47%;
+    }
+  }
+  .span6.vcard {
+    margin-left:3%;
+  }
 
  }
 

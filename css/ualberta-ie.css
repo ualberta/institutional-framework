@@ -1,12 +1,8 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
-.ie10 .csj-frame{float:right;}
-.ie10 .aug-frame{float:right;}
 .lt-ie10 .csj-frame{float:right;}
 .lt-ie10 .aug-frame{float:right;}
-.lt-ie9{}.lt-ie9 .ualberta-home .why-ualberta-row .hover-caption-container .caption{overflow:hidden;}
-.lt-ie9 .ualberta-home .why-ualberta-row .hover-caption-container .caption i{margin-left:0.7em;top:0px;}
-.lt-ie9 .virtual-tour .tour{margin-top:0px;}
+.lt-ie9{}.lt-ie9 .virtual-tour .tour{margin-top:0px;}
 .lt-ie9 .our-campuses .content-top-row{background-image:none;}
 .lt-ie9 .our-campuses .content-top-row .virtual-thumbs{background-image:url("../img/ieWhirl-8kb.jpg");background-position-x:inherit;background-position-y:inherit;background-repeat:no-repeat;background-color:#adc4a7;}
 .lt-ie9 .our-campuses .content-top-row>div{width:100%;padding-bottom:15px;}.lt-ie9 .our-campuses .content-top-row>div .fma-slide{width:100%;}
@@ -18,14 +14,6 @@
 .lt-ie9 .thumbnail-container .hover-caption-container i{top:0%;line-height:1em;width:30%;}
 .lt-ie9 hr.secondary-hr{display:none;}
 .lt-ie9 .make-a-gift .btn-give.btn-micro{filter:none;background:#f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);font-size:0.9em;padding-top:1em;padding-bottom:0.7em;}.lt-ie9 .make-a-gift .btn-give.btn-micro:hover{background-image:none;background-color:#f3f7f5;border-color:#ccc;}
-.lt-ie9 .ualberta-home .fma-container{margin-top:1.57em;}.lt-ie9 .ualberta-home .fma-container .image-shadow::before{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
-.lt-ie9 .ualberta-home .fma-container ul.slides img.fma-background{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;max-width:100%;}
-.lt-ie9 .ualberta-home .why-ualberta-row p.description{width:54%;margin-left:23.1%;position:relative;top:-13px;margin-bottom:0;}
-.lt-ie9 .ualberta-home .why-ualberta-row h3{margin-left:23.1%;position:relative;top:-9px;}
-.lt-ie9 .ualberta-home .why-ualberta-row>.span{padding:0 15px;}
-.lt-ie9 .ualberta-home .why-ualberta-row .button-container{right:15px;margin-top:0.5em;top:-2px;}
-.lt-ie9 .ualberta-home .why-ualberta-row>.span{margin-bottom:-6px;}
-.lt-ie9 .ualberta-home .why-ualberta-row div.frame{margin-bottom:0;}
 .lt-ie9 .campuslife .fma-prospective{position:relative;}.lt-ie9 .campuslife .fma-prospective br{display:none;}
 .lt-ie9 .campuslife .fma-prospective .explore-box h3{font-size:2.25em;*line-height:1em;margin:0.25em 0em 0.35em 0em;font-family:DIN Regular;color:#ffdb05;}
 .lt-ie9 .campuslife .sidebar .links ul li a{line-height:135%;padding-top:0.4em;padding-bottom:0.4em;}

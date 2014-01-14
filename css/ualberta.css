@@ -157,7 +157,9 @@ ul.program-list-alpha li.unactive{color:#999;padding-left:3px;padding-right:3px;
 @media (max-width:50em){.search-programs p{width:100%;}}@media (min-width:50.0625em){.search-programs p{width:70%;}}.grad-program-search .search-major-btn{font-size:0.875em;margin-top:-10px;}
 .content-wrapper.full-width .row-fluid .secondary-content-area{display:none;}
 .content-wrapper.full-width .content-top-row{padding:0;}
-@media (min-width:61.25em){.content-wrapper.full-width .row-fluid .primary-content-area{width:79.787234042553%;}}@media (min-width:75em){.content-wrapper.full-width .row-fluid .primary-content-area{width:82.905982905983%;}}@media (max-width:61.188em){.student-experiences .slide{margin-left:10px;}}@media (min-width:25.438em) and (max-width:43.063em){.student-exp-vid{height:160px;} .student-exp-vid .frame{width:40%;float:left;margin-right:10px;}}@media (max-width:61.1875em) and (min-width:43.125em){.student-experiences .sidebar{top:1.3em;} .student-experiences .content-container.container{position:relative;}}.our-campuses .container.thumbnail-container{display:none;width:auto;padding:0;}
+@media (min-width:61.25em){.content-wrapper.full-width .row-fluid .primary-content-area{width:78%;}}.full-width.student-experiences .frame{display:inline-block;}
+.full-width.student-experiences .content-top-row{padding:0.8333em 0.8333em 0;}
+@media screen and (min-width:61.25em){.full-width.student-experiences .content-top-row{padding:0.8333em 3% 0;}}@media screen and (min-width:75em){.full-width.student-experiences .content-top-row{padding:0.8333em 5% 0;}}.our-campuses .container.thumbnail-container{display:none;width:auto;padding:0;}
 .our-campuses .ut-header,.our-campuses .vt-header{display:none;}
 .our-campuses .thumbnail-container .frame>a{position:absolute;right:1em;bottom:1.57em;display:none;}
 .our-campuses .thumbnail-container .frame>a:after{content:"self guided tour";position:absolute;right:0;bottom:1em;z-index:20;text-indent:0;display:block;width:7em;display:none;}
@@ -214,10 +216,10 @@ ul.our-programs .open-studies .symbol{background-position:-235px 0px;margin-righ
 .find-a-person .person-search{position:relative;}.find-a-person .person-search i{position:absolute;top:0;left:0;z-index:5;color:#ccc;margin:0.7142857142857143em;}
 .find-a-person .person-search input{-webkit-border-radius:4px 0px 0px 4px;-moz-border-radius:4px 0px 0px 4px;border-radius:4px 0px 0px 4px;width:68%;margin-right:0;height:2em;padding-left:7%;padding-right:0em;}
 .find-a-person .person-search .btn{position:absolute;top:auto;right:0;width:25%;-webkit-border-radius:0px 4px 4px 0px;-moz-border-radius:0px 4px 4px 0px;border-radius:0px 4px 4px 0px;margin:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;margin-left:-5px;height:2.7142857142857144em;padding-left:0;padding-right:0;text-align:center;}
-@media (min-width:26.25em) and (max-width:61.1875em){.find-a-person .person-search input{width:69%;padding-left:6%;}}.daily-news .subscribe-form{position:relative;}.daily-news .subscribe-form i{position:absolute;top:0;left:0;margin:0.7142857142857143em;z-index:5;color:#ccc;}
+@media (min-width:26.25em) and (max-width:61.1875em){.find-a-person .person-search input{width:69%;padding-left:2em;}}.daily-news .subscribe-form{position:relative;}.daily-news .subscribe-form i{position:absolute;top:0;left:0;margin:0.7142857142857143em;z-index:5;color:#ccc;}
 .daily-news .subscribe-form input{-webkit-border-radius:4px 0px 0px 4px;-moz-border-radius:4px 0px 0px 4px;border-radius:4px 0px 0px 4px;width:61%;margin-right:0;height:2em;padding-left:9%;padding-right:0em;}
 .daily-news .subscribe-form .btn{position:absolute;top:auto;right:0;width:30%;-webkit-border-radius:0px 4px 4px 0px;-moz-border-radius:0px 4px 4px 0px;border-radius:0px 4px 4px 0px;margin:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;margin-left:-5px;height:2.7142857142857144em;padding-left:0;padding-right:0;text-align:center;}
-@media (min-width:26.25em) and (max-width:61.1875em){.daily-news .subscribe-form input{width:64%;padding-left:6%;}}.our-campus-cnt{margin-bottom:15px;overflow:auto;}
+@media (min-width:26.25em) and (max-width:61.1875em){.daily-news .subscribe-form input{width:64%;padding-left:2em;}}.our-campus-cnt{margin-bottom:15px;overflow:auto;}
 .our-campus-cnt-left{width:100%;}
 @media (min-width:715px){.our-campus-cnt-left{width:500px;padding-right:15px;float:left;} .our-campus-cnt-right{float:left;}}.pull-right{float:right;}
 .pull-left{float:left;}
