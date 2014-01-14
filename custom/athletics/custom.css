@@ -185,6 +185,7 @@ li.headline h4 a {
 }
 .WL span {
   padding-left: 6px;
+  display: inline-block !important;
 }
 @media (max-width: 61.1875em) {
   .extrude.score-module {
@@ -538,6 +539,7 @@ li.headline h4 a {
   position: absolute;
   right: 0;
   top: 10px;
+  display: inline-block;
 }
 .score-schedule-page .event-list .events-description {
   position: relative;
