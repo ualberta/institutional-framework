@@ -12,11 +12,11 @@
 .lt-ie10 div.scfForm .scfRadioButtonListGeneralPanel input{margin-top:2px;}
 .ie9 h5.sidebar-title{width:100%;}
 .lt-ie9{}.lt-ie9 [class*="span"]{float:left;min-height:1px;margin-left:1.4285714285714286em;}
-.lt-ie9 .container,.lt-ie9 .blade-inner,.lt-ie9 .banner-inner,.lt-ie9 .navigation-inner,.lt-ie9 .navbar-static-top .container,.lt-ie9 .navbar-fixed-top .container,.lt-ie9 .navbar-fixed-bottom .container{width:67.14285714285714em;}
 .lt-ie9 .row-fluid{width:100%;*zoom:1;}.lt-ie9 .row-fluid:before,.lt-ie9 .row-fluid:after{display:table;content:"";line-height:0;}
 .lt-ie9 .row-fluid:after{clear:both;}
 .lt-ie9 .row-fluid [class*="span"]{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;float:left;margin-left:2.127659574468085%;*margin-left:2.074468085106383%;}
 .lt-ie9 .row-fluid [class*="span"]:first-child{margin-left:0;}
+.lt-ie9 .row-fluid .container,.lt-ie9 .row-fluid .blade-inner,.lt-ie9 .row-fluid .banner-inner,.lt-ie9 .row-fluid .navigation-inner,.lt-ie9 .row-fluid .navbar-static-top .container,.lt-ie9 .row-fluid .navbar-fixed-top .container,.lt-ie9 .row-fluid .navbar-fixed-bottom .container{width:100%;*width:99.94680851063829%;}
 .lt-ie9 .row-fluid .span12{width:100%;*width:99.94680851063829%;}
 .lt-ie9 .row-fluid .span11{width:91.48936170212765%;*width:91.43617021276594%;}
 .lt-ie9 .row-fluid .span10{width:82.97872340425532%;*width:82.92553191489361%;}

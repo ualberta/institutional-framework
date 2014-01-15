@@ -852,12 +852,7 @@
       #em > .margin(left, @gridGutterWidth, @baseFontSizepx);
     }
 
-    // Set the container width, and override it for fixed navbars in media queries
-    .container,
-    .blade-inner, .banner-inner, .navigation-inner,
-    .navbar-static-top .container,
-    .navbar-fixed-top .container,
-    .navbar-fixed-bottom .container { .span(@gridColumns); }
+
 
     // generate .spanX and .offsetX
     //.spanX (@gridColumns);
@@ -890,6 +885,13 @@
       [class*="span"]:first-child {
         margin-left: 0;
       }
+
+          // Set the container width, and override it for fixed navbars in media queries
+      .container,
+      .blade-inner, .banner-inner, .navigation-inner,
+      .navbar-static-top .container,
+      .navbar-fixed-top .container,
+      .navbar-fixed-bottom .container { .span(@gridColumns); }
 
       // generate .spanX and .offsetX
       .spanX (@gridColumns);

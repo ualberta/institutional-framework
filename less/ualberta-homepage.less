@@ -7,21 +7,55 @@
  
 // UAlberta Institutional Less
 
-/******** FRAMEWORK BASE START *********/
+// CSS Reset
+@import "framework/base/reset.less";
 
 // Core variables and mixins
 @import "framework/base/variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "framework/base/mixins.less";
+@import "framework/base/fonts.less";
 
-/******** FRAMEWORK BASE END *********/
+// Grid system and page structure
+@import "framework/base/scaffolding.less";
+@import "framework/base/grid.less";
+@import "framework/base/responsive.less";
+
+// Base CSS
+@import "framework/base/type.less";
+@import "framework/base/font-awesome.less";
+//@import "component-animations.less";
+
+@import "framework/base/dropdowns.less";
+@import "framework/base/modals.less";
+@import "framework/base/images.less";
+@import "framework/base/buttons.less";
+
+@import "framework/page-elements/base.less";
+@import "framework/page-elements/blade.less";
+@import "framework/page-elements/banner.less";
+@import "framework/page-elements/navigation.less";
+@import "framework/page-elements/footer.less";
+
+@import "framework/modules/module-base.less";
+@import "framework/modules/image-callout.less";
+@import "framework/modules/link-bucket.less";
+@import "framework/modules/news.less";
+@import "framework/modules/data-list.less";
+
+@import "framework/devices/mobile.less";  
+@import "framework/devices/tablet.less";
+//@import "framework/devices/desktop.less";
+@import "framework/devices/highres.less";
+
+@import "framework/fallbacks.less";
+
+@import "framework/hide-elements.less";
 
 @import "ualberta/base.less";
-
-
 @import "ualberta/pages/homepage.less";
 
 @import "ualberta/modules/explore.less";
-@import "ualberta/modules/keep-in-touch.less";
+//@import "ualberta/modules/keep-in-touch.less";
 @import "ualberta/modules/daily-news.less";
 
 // Emergency panel
