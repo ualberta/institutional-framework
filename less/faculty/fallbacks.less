@@ -19,3 +19,11 @@
 		border-right: 1px solid #e0e3e2;
 	} 
 }
+
+.no-csstransforms {
+	// using rotate to create the arrow for highlighted page in nav
+	// hide if not supported
+	.nav-wrapper ul li.nav-current > a:after {
+		display:none;
+	}
+}

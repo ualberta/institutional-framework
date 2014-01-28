@@ -17,6 +17,68 @@
 		.nav5{width:14.058956916099774%;}
 		.nav6{width:14.058956916099774%;}
 	}
+
+  // we never want to display an empty section description
+  .section-description:empty { display:none!important; }
+
+  .main-navigation>li:hover .sub-menu {
+    left: 50%;
+    width: 20em;
+    margin-left: -11em;
+    padding: 1em;
+    overflow: visible;
+    top:auto;
+  }
+
+  .submenu a { border-right:none;}
+
+  .sub-menu .section-navigation {
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+
+  .sub-menu .section-description {
+    border-bottom:3px solid #ffdb05;
+    background:#fff;
+    padding:1em;
+    top:0;
+    position:absolute;
+    right:-21em;
+    width:19em;
+
+  }
+
+  .main-navigation {
+    &>li { position:relative; }
+    &>li.nav1:hover .sub-menu {
+      left:0;
+      margin-left:0;
+    }
+
+    &>li:last-child:hover .sub-menu {
+      left:auto;
+      margin-left:0;
+      right:0;
+    }
+    .nav4 .sub-menu .section-description,
+    .nav5 .sub-menu .section-description,
+    .nav6 .sub-menu .section-description {
+      right:auto;
+      left:-21em;
+    }
+  }
+
+  .sub-menu ul li a {
+    padding: 0.4em 0;
+    &:hover {
+      padding-left:1em;
+      padding-right: 1em;
+      margin-left: -1em;
+      margin-right: -1em;
+      border-right:none;
+    }
+  }
 }
 
 .lt-ie8 {

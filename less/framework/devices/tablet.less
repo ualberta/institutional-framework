@@ -16,14 +16,35 @@
   }
   
   ul.quick-links {
-    .dropdown-menu;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: @zindexDropdown;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: 160px;
+  padding: 0;
+  margin: 2px 0 0; // override default ul
+  list-style: none;
+
+  background: @grayDark;
+  border:  1px solid @grayDark;
+  border-right-width: 0px;
+  .box-shadow(0px 3px 14px rgba(0, 0, 0, 0.35));
+  .border-radius(2px);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
   
     li {
       display: block;
       text-align: left;
-      
       a {
         color:  #fff;
+        clear: both;
+        font-weight: normal;
+        line-height: @baseLineHeight;
+        white-space: nowrap;
         border-bottom: 1px solid rgba(0,0,0,0.15);
         border-right: 1px solid rgba(0,0,0,0.05);
         border-left: 1px solid rgba(255,255,255,0.05);
@@ -172,13 +193,6 @@
   }
   
   // END BANNER
-  
-  
-  .sidebar-content.collapse {
-    display: block;
-    height: auto!important;
-    overflow: visible!important;
-  }
   
 }
 

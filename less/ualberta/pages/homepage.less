@@ -2,7 +2,16 @@
 .navigation-container {
   position:relative;
   z-index:10;
-}   
+}
+
+// homepage has a stripped css file, so apply the search field styling
+.search-query {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
 
 // need relative positioning for sidebar
 .content-inner {
@@ -19,7 +28,13 @@
   padding: 1em 0em; 
 }
 
+// spacing between why ualberta row and content
+.content-container.container {
+  margin-top:1.57em;
+}
+
 ul.slides { margin:0; padding:0;}
+ul.slides.explore-bar { padding-top:1.57em;}
 
 .feature-buttons a {
   margin:0.275em 0.75em 0.275em 0;

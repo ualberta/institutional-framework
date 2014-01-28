@@ -41,3 +41,10 @@
   // Hide
   .hidden-phone      { display: none !important; }
 }
+
+
+// show quick links toggle on tablet resolutions
+// hack fix, because it has hidden-desktop class
+@media (max-width:61.235em) {
+  .quick-links-container .hidden-desktop { display: inherit !important; }
+}

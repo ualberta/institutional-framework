@@ -4,6 +4,8 @@
 .banner-inner .site-title{display:none;}
 .banner-logo{position:absolute;z-index:999;top:1.4285714285714286em;}.banner-logo .site-logo a{display:inline-block;}
 .banner-logo img{width:15em;height:3.9285714285714284em;}
+.inlinesvg .banner-logo .site-logo a{width:15em;height:3.9285714285714284em;display:block;background:transparent url('/design/img/logo-reverse.svg') no-repeat center center;background-size:100% 100%;}
+.inlinesvg .banner-logo .site-logo img{display:none;}
 nav.audience-navigation{position:absolute;z-index:50;}nav.audience-navigation ul{margin:0;padding:0;list-style:none;}
 nav.audience-navigation ul li{display:block;position:relative;float:left;margin-left:20px;}
 nav.audience-navigation ul li a{color:#fff;font-family:"DIN Medium",sans-serif;font-weight:normal;}
@@ -23,7 +25,7 @@ ul.breadcrumbs{margin-top:1.57em;}
 .full-feature .slide .explore-box .btn{margin:0.2em 0.83333em 0.4em 0;}
 .full-feature .slide .explore-box .btn:last-child{margin-right:0;}
 @media (min-width:61.25em){.full-feature .page-title-row{left:3%;} .full-feature .slide .image-shadow img{width:100%;position:static;margin-left:0;height:auto;}}@media (min-width:75em){.full-feature .page-title-row{left:5%;}}@media (min-width:61.25em){ul.footer-quick-links li:last-child{float:right;}}@media (min-width:61.25em){.admissions .sidebar{margin-top:2em;}}.campuslife h1.page-title{background:#007c41;color:#FFDB05;background:rgba(0, 0, 0, 0.25);text-shadow:0 1px 4px #000;}
-.campuslife .breadcrumbs{background:#007c41;background:rgba(0, 0, 0, 0.25);text-shadow:0 1px 2px #000;}
+.campuslife .breadcrumbs{background:#007c41;background:rgba(0, 0, 0, 0.25);text-shadow:0 1px 2px #000;width:17.5em;}
 .campuslife .slide .explore-box{position:absolute;left:0;right:0;bottom:0em;background:#FFF;color:#3D4A43;border-bottom:0.215em solid #7AC900;-webkit-box-shadow:0px -2px 10px #000000;-moz-box-shadow:0px -2px 10px #000000;box-shadow:0px -2px 10px #000000;margin:auto;padding:0.8333em;}.campuslife .slide .explore-box h3{display:none;}
 .campuslife .slide .explore-box .btn{margin:0.2em 0.83333em 0.4em 0;}
 .campuslife .slide .explore-box .btn:last-child{margin-right:0;}
@@ -35,7 +37,7 @@ ul.breadcrumbs{margin-top:1.57em;}
 .fac-sta .fma-prospective{padding-bottom:3em;}
 .fac-sta .caption{background:#fff;}
 @media (min-width:61.25em){.fac-sta .content-top-row{padding:0 3%;}}@media (min-width:75em){.fac-sta .content-top-row{padding:0 5%;}}.prospective-student .page-title{color:#FFDB05;background:rgba(0, 0, 0, 0.35);}
-.prospective-student .breadcrumbs{color:#fff;background:rgba(0, 0, 0, 0.35);}.prospective-student .breadcrumbs a{color:#ffdb05;}
+.prospective-student .breadcrumbs{color:#fff;background:rgba(0, 0, 0, 0.35);width:20em;}.prospective-student .breadcrumbs a{color:#ffdb05;}
 .prospective-student .fma-prospective .explore-box{position:absolute;padding:0.8333em;right:0;top:auto;bottom:0;margin:0;height:auto;left:0;background:linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));background:-moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));}.prospective-student .fma-prospective .explore-box h3{display:none;}
 .prospective-student .fma-prospective .explore-box input{display:block;height:auto;padding:0.787em;margin-bottom:1em;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border:1px solid #445;width:34em;}
 .prospective-student .fma-prospective .explore-box p{color:#fff;font-weight:bold;text-shadow:0px 1px 2px #000;}

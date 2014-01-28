@@ -56,15 +56,14 @@
       }
       .nav4 {
         width: percentage(110/@totalNavWidth);
-          }
-       .section-navigation li{
+      }
+      .section-navigation li{
 	        width:100%;
 	        text-align:left;
-	        margin-left:-11px;
 	        border-right:0px;
+      }
     }
   }
- }
 
   .navigation-inner > ul {
     position:relative;
@@ -131,24 +130,16 @@
   .sub-menu .section-description {
     display: inline-block;
     vertical-align: top;
-    margin-right:-4px;
-    width: 48%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  .sub-menu .section-description { max-width:30em; }
 
   .sub-menu-content { text-align: left; }
   
   .sub-menu .section-navigation {
     margin-right:4%;
-  }
-  
-  .sub-menu .section-description {
-    padding: 0.3em 0 0.15em 0em;
-    
   }
 
   .sub-menu ul li a {
@@ -156,7 +147,6 @@
     text-transform: none;
     border: none;
     border-bottom: 1px dotted #ddd;
-    padding: 2% 0;
     color: @linkColor;
     line-height: 1.2em;
     
@@ -191,25 +181,12 @@
 
 
 @media (min-width: 61.25em) {
-  .sub-menu {
-    left: 3%;
-    right:3%;
-  }
-
-  .sub-menu ul li a {
-    padding: 1% 0;
-  }
   .content-wrapper.full-width .row-fluid .primary-content-area {
     width:78%;
   }
 }
 
-@media (min-width: 75em) {
-  .sub-menu {
-    left: 5%;
-    right:5%;
-  }
-}
+
  
 
  .horizontal-line{
@@ -254,4 +231,108 @@ p.join-the-convo-btn{
 	position:inherit;
 	}
 }
+
+
+// FIXED DROP DOWN NAV STYLING
+@media (min-width: 43.125em) {
+
+  // we never want to display an empty section description
+  .section-description:empty { display:none!important; }
+
+  .main-navigation>li:hover .sub-menu {
+    left: 50%;
+    width: 20em;
+    margin-left: -11em;
+    padding: 1em;
+    overflow: visible;
+    top:auto;
+  }
+
+  .sub-menu .section-navigation {
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+
+  .sub-menu .section-description {
+    border-bottom:3px solid #ffdb05;
+    background:#fff;
+    padding:1em;
+    top:0;
+    position:absolute;
+    right:-16em;
+    width:17em;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .main-navigation {
+    &>li { position:relative; }
+    &>li.nav1:hover .sub-menu {
+      left:0;
+      margin-left:0;
+    }
+    // move dropdown for #5 to the left so it doesnt cause scroll
+    &>li.nav5:hover .sub-menu {
+      left:auto;
+      margin-left:0;
+      right:-5em;
+    }
+    &>li:last-child:hover .sub-menu {
+      left:auto;
+      margin-left:0;
+      right:0;
+    }
+    .nav4 .sub-menu .section-description,
+    .nav5 .sub-menu .section-description,
+    .nav6 .sub-menu .section-description {
+      right:auto;
+      left:-17em;
+      -webkit-border-radius: 0 0 0 4px;
+      -moz-border-radius: 0 0 0 4px;
+      border-radius: 0 0 0 4px;
+    }
+  }
+
+  .sub-menu ul li a {
+    padding: 0.4em 0;
+    &:hover {
+      padding-left:1em;
+      padding-right: 1em;
+      margin-left: -1em;
+      margin-right: -1em;
+      -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+       border-radius: 0px;
+       border-right:none;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  // safe to reset .nav5 drop down
+  .main-navigation {
+    &>li.nav5:hover .sub-menu {
+      left: 50%;
+      margin-left: -11em;
+      right:auto;
+    }
+    .nav4 .sub-menu .section-description,
+    .nav5 .sub-menu .section-description,
+    .nav6 .sub-menu .section-description {
+      right:auto;
+      left:-21em;
+    }
+  }
+  .sub-menu .section-description {
+    right:-20em;
+    width:21em;
+  }
+}
+// END FIXED DROP DOWN STYLING
 

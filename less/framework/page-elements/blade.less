@@ -75,7 +75,7 @@ ul.quick-links-container {
 .blade-search {
   display: inline-block;  .ie7-inline-block();
   position: relative;
-  top: -2px;
+  top: -1px;
   
   i {
     position: absolute;
@@ -116,7 +116,7 @@ ul.quick-links-container {
   .border-radius(4px 0px 0px 4px);
   width: 75%;
   margin-right: 0;
-  height: 1.688em;
+  height: 2em;
   padding-left: 2.142857142857143em;
 }
 .blade-search .btn {
@@ -128,8 +128,20 @@ ul.quick-links-container {
   .box-shadow(none);
   text-align: center;
   margin-left: -5px;
-  height: 2.4em;
+  height: 2.745em;
   padding:0.7em 0.8em;
+}
+
+@media (min-width: 43.125em) {
+  .blade-inner {
+    height: 2.85714285714286em;
+    nav, input, button.global-search-btn {
+      font-size: 0.85714285714286em;
+    }
+    input {
+      padding: 0.2557142857142857em 0.42857142857142855em;
+    }
+  }
 }
 
 
@@ -157,16 +169,6 @@ ul.quick-links-container {
     }  
   }
   
-  .blade-inner {
-    height: 2.85714285714286em;
-    nav, input, button.global-search-btn {
-      font-size: 0.85714285714286em;
-    }
-    input {
-      padding: 0.2557142857142857em 0.42857142857142855em;
-    }
-  }
-
   .blade-navigation {
     position:absolute;
     left: 14em;
@@ -176,7 +178,7 @@ ul.quick-links-container {
   
   .blade-search {
     width:11em;
-    height:2em;
+    height:2.475em;
     position:absolute;
     right:3%;
     top:0;

@@ -1,0 +1,243 @@
+@import '../../less/framework/base/mixins.less';
+
+.content-container.container {
+  position:relative;
+}
+
+
+// apply data-list styling to social media links
+// copied from link-bucket.less
+.social-media-links > ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  li {
+    border: 0;
+    padding: 0;
+    overflow:visible;
+    line-height: 1.57em;
+    &:first-child {
+      padding:0;
+    }
+    a { 
+      display: block;
+      padding: 0.7em 0 0.5em;
+      border-top: 1px dotted #E0E0E0;
+        line-height: 135%;
+      &:hover {
+        background: #FFF5B8;
+        margin: 0 -0.85em -1px -0.8333em;
+        padding: 0.7em 0.8333em 0.5em;
+        border-width:0;
+        border-top: 1px solid desaturate(darken(#FFF5B8,10%),50%);
+        border-bottom: 1px solid desaturate(darken(#FFF5B8,10%),50%);
+        text-decoration:  none;
+        .border-radius(0px);
+      }
+      span { 
+        display:block;
+        color:#637169;
+        font-size:0.9166em;
+        margin-top:0.25em;
+      }
+    }
+    &:first-child a { 
+      border-top-color: transparent; 
+      &:hover {
+        border-top-color: desaturate(darken(#FFF5B8,10%),50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 43.125em) {
+
+//*****************************************
+//** NAVIGATION
+//******************************************
+//      Entrepreneurship Widths:
+//		About us:        75
+//      eHub:  		 72
+//      Courses:     74
+//      Events:   73
+//      Startups:          75
+//      News:        72
+
+//      ------------------------
+//      TOTAL:           441
+//*****************************************/
+  
+  @totalNavWidth: 441px; 
+  
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: percentage(75/@totalNavWidth);
+      }
+      .nav2 {
+        width: percentage(72/@totalNavWidth);
+      }
+      .nav3 {
+        width: percentage(74/@totalNavWidth);
+      }
+      .nav4 {
+        width: percentage(73/@totalNavWidth);
+      }
+      .nav5 {
+        width: percentage(75/@totalNavWidth);
+      }
+      .nav6 {
+        width: percentage(72/@totalNavWidth);
+      }
+    }
+  }
+  
+}
+
+// Big FMA
+.homepage {
+	.row-fluid .feature-area {
+		width: 100%;
+	}
+	.feature-caption.caption {
+		h3 {
+			font-size: 2.8em;
+			font-family: "DIN Medium","Helvetica Neue",Helvetica,Arial,sans-serif;
+			line-height: 0.9em;
+			padding-top: 15px;
+		}
+		p {
+			font-size: 1.1em;
+		}
+		h3, p {
+      color:#fff;
+			text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.85);
+		}
+		padding: 0 0 25px 10px;
+	}
+	.primary-content-area .data-list {
+		margin-bottom: 0;
+	}
+	.feature-caption.caption {
+		background: none;
+	}
+}
+
+
+@media (max-width: 74.9375em) and (min-width: 61.25em) {
+	.homepage .feature-caption.caption {
+		position: absolute;
+		color: #fff;
+	}
+}
+
+
+// Hide empty audience area
+.homepage .audience-area {
+	 display: none;
+}
+
+// RSS button for Events
+.events .rss a.btn {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+// Make sure inline links are underlined
+.primary-content-area p a, .secondary-content-area p a, .sidebar p a {
+     text-decoration:underline;
+     &:hover {
+     	text-decoration: none;
+     }
+}
+// Remove button underlines
+.primary-content-area p.button-container a, .secondary-content-area p.button-container a, .sidebar p.button-container a {
+     text-decoration: none;
+}
+.social-media-links {
+  img {
+    width:  16px;
+    height:  16px;
+ /*   .border-radius(2px); */
+    margin-right: 4px;
+    margin-bottom: 1px;
+  }
+}
+// Add a margin below buttons
+.btn-etrail, .btn-travelevents {
+	margin-bottom: 1em;
+}
+
+
+
+@media (min-width: 43.125em) {
+     .homepage .feature-caption.caption {
+     	background: none;
+     }
+}
+
+// Mobile
+@media (max-width: 43.125em) {
+	.homepage .image-caption-container {
+		position: relative;
+		overflow: hidden;
+		margin-top: 10px;
+		img.fma-background {
+			max-width: 800px;
+			float: right;
+		}
+		background-color: none;
+		.feature-caption.caption {
+			color: #fff;
+			position: absolute;
+			h3 {
+				font-size: 2.1em;
+			}
+			p {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+// Tablet
+@media (min-width: 43.125em) and (max-width: 61.1875em){
+
+	.homepage {
+		.content-inner.row-fluid {
+			margin-top: 0;
+		}
+		.content-top-row {
+			margin-top: 0;
+		}
+		.image-caption-container {
+			position: relative;
+			overflow: hidden;
+			margin-top: 10px;
+			img.fma-background {
+				max-width: 980px;
+				float: right;
+			}
+		}
+	}
+}
+
+.frame.data-thumbnail {
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+}
+
+.data-description {
+  margin-left: 8em;
+}
+
+.homepage .primary-content-area .module-container .data-list li {
+  position: relative;
+  min-height: 7.5em;
+}
+
+.homepage .primary-content-area .module-container .data-list li:hover .frame.data-thumbnail {
+  left:0.65em;
+}

@@ -1,33 +1,25 @@
+// base module container with heading and module actions placed to the right
 .module-container {
-  //.clearfix();
   .module-heading {
     position: relative;
     h3 { 
-      float: left; 
-      margin-right: 10px;
+      display:inline-block;
+      margin-right: 0.5em;
     }
     .module-actions {
       list-style: none;
       margin: 0;
       padding: 0;
+      display:inline-block;
       li {
         display: inline-block;
         .ie7-inline-block();
-        padding: 0 6px;
-        border-left: 1px dotted #e0e0e0;
-        margin: -4px -4px 0 0px;
+        padding: 0 0.5em;
+        margin: -0.23em -0.23em 0 0;
         a {
-          padding: 7px 5px 3px 5px;
+          padding: 0.475em 0.35em 0.23em;
         }
       }
     }
-  }
-}
-
-@media (min-width: 61.25em) and (max-width: 74.9375em) {
-  .module-container .module-heading .module-actions {
-    position: absolute;
-    right: -9px;
-    top: 0px;
   }
 }

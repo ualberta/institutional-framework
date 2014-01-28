@@ -40,13 +40,13 @@
   // navigation
   // ---------------------
   .navigation-container {
-    .navigation-inner ul li a {
-      border-left: 1px solid #fff;
-      border-right: 1px solid #cbd2cd;
-    }
     .navigation-inner ul.main-navigation {
       border-left: 1px solid #cbd2cd;
       border-right: 1px solid #fff;
+      & > li > a {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #cbd2cd;
+      }
     }
   }
   

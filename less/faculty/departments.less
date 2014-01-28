@@ -1,0 +1,99 @@
+.content {
+	// remove top margin if paragraph is first child
+	p:nth-child(1) {
+		margin-top:0;
+		font-size:1.2em;
+	    line-height:1.42em;
+	    margin: 0 0 1.2em;   
+	    opacity: 0.8;   
+	}
+	
+	// drop margin for first heading in a div
+	div h1:nth-child(1),
+	div h2:nth-child(1),
+	div h3:nth-child(1),
+	div h4:nth-child(1),
+	div h5:nth-child(1) {
+		margin-top:0;
+	} 
+
+	.flexslider {
+		padding:0;
+		background:transparent;
+	}
+
+	.feature-area {
+
+		width:100%;
+		margin-top:0;
+		position:relative;
+
+		// default treatment for 3rd level feature
+		img { 
+			max-width:none; 
+			width:100%; 
+			.border-radius(4px);
+		}
+		.image-caption-container:after {
+			content:"";
+			position:absolute;
+			top:0;left:0;right:0;bottom:0;
+			.box-shadow(0 1px 6px rgba(0, 0, 0, 0.35));
+			.border-radius(4px);
+		}
+		.image-caption-container .caption p {
+			line-height:1.42em;
+		}
+		.image-caption-container .caption {
+			border-bottom:3px solid #7AC900;
+		}
+
+		// dark treatment
+		.feature-inset img { 
+			.border-radius(0);
+		}
+		.feature-inset.image-caption-container:after {
+			.box-shadow(inset 0 0 6px rgba(0, 0, 0, 0.35));
+			.border-radius(0);
+		}
+		.feature-inset.image-caption-container .caption {
+			background:rgba(0,0,0,0.65);
+			border-bottom:3px solid #ffdb05;
+			margin:0 1px 1px;
+			.box-shadow(0 0 0 1px rgba(0, 0, 0, 0.65));
+			h3,p {
+				color:#fff;
+				text-shadow: 0 1px 2px #000;
+			}
+			a { color: #ffdb05; }
+		}
+
+	}
+} 
+
+@media screen and (min-width: 43.125em) {
+	.content {
+		// space out the boxes to occupy full row width
+		.rmi-three,
+		.rmi-two {
+			margin-left:0;
+			.rmi-box {
+				width:30%;
+				margin:0 5% 1.57em -0.29em;
+				h3 {
+					font-size:1.1em;
+					margin-top:0;
+				}
+			}
+			.rmi-box:first-child {
+				margin-left:0;
+			}
+			.rmi-box:last-child {
+				margin-right:0;
+			}
+		}
+		.rmi-two .rmi-box {
+			width:47.5%;
+		}
+	}
+}

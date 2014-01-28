@@ -157,11 +157,6 @@
     width: 474px;
   }
 }
-@media (min-width: 43.125em) and (max-width: 61.1875em) {
-  .row-fluid .sidebar {
-    width: 21.9%;
-  }
-}
 @media (min-width: 31.75em) and (max-width: 43.063em) {
   .primary-content-area .frame {
     width: 463px;

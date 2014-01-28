@@ -32,6 +32,21 @@
   }
 }
 
+// svg logo if it's supported
+.inlinesvg .banner-logo {
+  .site-logo a { 
+    #em > .size(width,210,@baseFontSizepx);
+    #em > .size(height,55,@baseFontSizepx);
+    display:block;
+    background: transparent url('/design/img/logo-reverse.svg') no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .site-logo img {
+    display:none;
+  }
+}
+
+
 // AUDIENCE NAVIGATION
 
 nav.audience-navigation {
