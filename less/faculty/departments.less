@@ -1,6 +1,8 @@
 .content {
 	// remove top margin if paragraph is first child
-	p:nth-child(1) {
+
+	// taken out until description is given a specific class
+	& > p.page-description {
 		margin-top:0;
 		font-size:1.2em;
 	    line-height:1.42em;

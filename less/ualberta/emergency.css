@@ -13,32 +13,29 @@
   margin: 0 0.833333em;
 }
 .emergency-message h2 {
-  margin-top:0;
+  margin-top: 0;
 }
 .emergency-message > p:last-child {
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 .emergency-message a {
-  font-weight:bold;
-  text-decoration:underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
-// "Emergency Notification" label
 .emergency-label {
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
-// emergency level 2 dates in list
 p.emergency-date {
-  font-weight:bold;
-  margin-bottom:0.3em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
 }
-
 @media (min-width: 61.25em) {
   .emergency-message {
     margin: 0 3%;
   }
   .emergency-level-3 {
     max-width: 50em;
-    margin-top:1.57em;
+    margin-top: 1.57em;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;

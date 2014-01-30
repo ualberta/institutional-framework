@@ -40,6 +40,16 @@
 .lt-ie9 .sub-menu .section-description{border-right:1px solid #e0e0e0;border-left:1px solid #e0e0e0;}
 .lt-ie9 .sub-menu ul li a{font-family:sans-serif;text-transform:none;border:none;border-bottom:1px dotted #ddd;padding:0.5em 0.35em;color:#007c41;line-height:1.2em;}.lt-ie9 .sub-menu ul li a:hover{color:#003019;background:#FFF5B8;border-top:1px solid #E1D8A4;border-bottom:1px solid #E1D8A4;margin-top:-1px;text-shadow:none;}
 .lt-ie9 .sub-menu{position:absolute;top:2.8em;left:0em;right:0em;z-index:100;background:#fff;border:1px solid #ccd6cc;border-bottom:3px solid #7ac900;border-top:1px solid #acb1af;}
+.lt-ie9 .section-description:empty{display:none!important;}
+.lt-ie9 .main-navigation>li:hover .sub-menu{left:50%;width:20em;margin-left:-11em;padding:1em;overflow:visible;top:auto;}
+.lt-ie9 .submenu a{border-right:none;}
+.lt-ie9 .sub-menu .section-navigation{margin:0;padding:0;width:100%;}
+.lt-ie9 .sub-menu .section-description{border-bottom:3px solid #ffdb05;background:#fff;padding:1em;top:0;position:absolute;right:-21em;width:19em;}
+.lt-ie9 .main-navigation>li{position:relative;}
+.lt-ie9 .main-navigation>li.nav1:hover .sub-menu{left:0;margin-left:0;}
+.lt-ie9 .main-navigation>li.nav6:hover .sub-menu{left:auto;margin-left:0;right:0;}
+.lt-ie9 .main-navigation .nav4 .sub-menu .section-description,.lt-ie9 .main-navigation .nav5 .sub-menu .section-description,.lt-ie9 .main-navigation .nav6 .sub-menu .section-description{right:auto;left:-21em;}
+.lt-ie9 .sub-menu ul li a{padding:0.4em 0;}.lt-ie9 .sub-menu ul li a:hover{padding-left:1em;padding-right:1em;margin-left:-1em;margin-right:-1em;border-right:none;}
 .lt-ie9 .slide.image-caption-container h3{font-size:1.2em;}
 .lt-ie9 .fma-small-dino.image-caption-container .caption .caption-text{width:60%;float:left;}
 .lt-ie9 .fma-small-dino.image-caption-container .caption .logo-link{background:url(-/media/digitallearning/dino101/fma-dino-logo-small.png) no-repeat top right;height:65px;width:38%;float:left;}
