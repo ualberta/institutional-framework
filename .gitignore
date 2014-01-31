@@ -3,3 +3,5 @@
 *.mno
 *.psd
 codekit-config.json
+
+*.zip
