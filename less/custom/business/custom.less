@@ -5,12 +5,38 @@
 @asob_darkTan: #a1905b;
 @asob_tan: #c4b680;
 
+@image_path: "/design/img/asob";
+
+
+
+// center ASOB logo in banner
+.banner-inner {
+  text-align:center;
+}
+.banner-inner a.site-title {
+  background: transparent url("@{image_path}/asob-logo.svg") no-repeat center center;
+  width: 7em;
+  display: block;
+  background-size: 100% 100%;
+  margin: auto;
+  text-indent: -9999px;
+  bottom: -0.5em;
+  top: -0.25em;
+  left: 0;
+  right: 0;
+  font-size:2.2857em; // consistent logo size
+}
+
+// allows us to put an island inside the frame
+.slide.frame { position:relative; }
+
+// custom leather background
 .leather {
-  background: url(leather-texture.png), -webkit-linear-gradient(top, #503722, #2c1905);
-  background: url(leather-texture.png), -moz-linear-gradient(top, #503722, #2c1905);
-  background: url(leather-texture.png), -ms-linear-gradient(top, #503722, #2c1905);
-  background: url(leather-texture.png), -o-linear-gradient(top, #503722, #2c1905);
-  background: url(leather-texture.png), linear-gradient(top, #503722, #2c1905);
+  background: url("@{image_path}/leather-texture.png"), -webkit-linear-gradient(top, #503722, #2c1905);
+  background: url("@{image_path}/leather-texture.png"), -moz-linear-gradient(top, #503722, #2c1905);
+  background: url("@{image_path}/leather-texture.png"), -ms-linear-gradient(top, #503722, #2c1905);
+  background: url("@{image_path}/leather-texture.png"), -o-linear-gradient(top, #503722, #2c1905);
+  background: url("@{image_path}/leather-texture.png"), linear-gradient(top, #503722, #2c1905);
   padding:1.5em;
   color: @asob_tan;
   text-shadow: 1px 1px 4px #1c0900;
@@ -48,13 +74,10 @@
 }
 
 .leather .heading {
-  font-family: "Lucida Sans", sans-serif;
+  font-family: "DIN Medium", "DIN Regular", sans-serif;
   font-weight:normal;
   margin:0 0 0.1em;
-  font-size:2.8em;
-  letter-spacing:0.175em;
-  margin-right: -0.0875em;
-  text-transform:uppercase;
+  margin-right:-0.0875em;
 }
 
 .leather .heading span {
@@ -62,9 +85,27 @@
 }
 
 .leather .sub-heading {
-  font-family: "Lucida Sans", sans-serif;
+  font-family: "DIN Medium", "DIN Regular", sans-serif;
   text-transform:uppercase;
   font-weight:normal;
   font-size: 0.7em;
-  letter-spacing: 0.2em;
 }
+
+// add hover state if leather box is a link
+a.leather:hover { 
+  text-decoration:none; 
+  color: #c4b680; 
+  background: url("@{image_path}/leather-texture.png"),#2c1905; 
+}
+
+.section-description h3 {
+  margin: 0.65em 0 0.375em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.sub-menu .section-description {
+  font-size:1em;
+}
+

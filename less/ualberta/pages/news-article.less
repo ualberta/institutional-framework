@@ -76,6 +76,26 @@
     width:100%;
   }
 
+  // float image on high res
+  @media (min-width: 90em) {
+    .frame.featured-news {
+      max-width: 50%;
+      float: right;
+      margin-left: 2em;
+      margin-bottom: 1em;
+      .image-caption-container .caption { line-height:1.3em }
+    }   
+
+    .force-full-image .frame.featured-news {
+      max-width: none;
+      float: none;
+      margin-bottom: 0.57em;
+      margin-left:0;
+
+    }
+  }
+
+
   // override these heights
   .social-media-actions .data-list li:first-child {
     height: 34px!important;

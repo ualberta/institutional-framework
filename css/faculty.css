@@ -33,6 +33,7 @@ ul.module-tertiary-links{margin:0;list-style:none;}ul.module-tertiary-links li{b
 .secondary div.intro,.tertiary div.intro{margin-bottom:1em;}
 .feature-area>div{margin-bottom:1em;}
 .content-top-row .flexslider .slide{display:none;}
+form[action="/?sc_mode=edit"] .content-top-row .flexslider .slide{display:block;}
 .content-top-row .flexslider.single .slide{display:block;}
 .flexslider .flex-control-nav{bottom:-2.2em;}
 .image-shadow img{max-width:none;width:100%;}
