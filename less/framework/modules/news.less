@@ -1,108 +1,92 @@
 .latest-news {
-  div.news-heading {
-    position: relative;
-    .clearfix();
-    h3 {
-      float: left;
+  h3 { 
+    display:inline-block;
+  }
+}
+.news-list {
+  .news-row {
+    clear:both;
+    border-top:1px dotted #e0e0e0;
+    &:first-child {
+      border-top-width:0;
     }
-    .dropdown {
-      float: left;
-    }
-    & > a {
+    .news-thumbnail {
       display: inline-block;
-      margin-left: 8px;
-      padding-left: 10px;
-      border-left: 1px solid #ddd;
-      border-left-color: rgba(0,0,0,0.2);
-      font-size: 12px;
-      line-height: 1em;
-      vertical-align: text-top;
-      margin-top: 1px;
-    }
-    a.button-link {
-      display: inline-block;
-      margin-left: 8px;
-      font-size: 1.2em;
-      margin-top: 1px;
-      vertical-align: bottom;
-      padding: 1px 10px 0px 10px;
-      margin-bottom: 0px;
-      border-left: 1px solid #E0E0E0;
-      &:hover {
-        #gradient > .vertical(rgba(255,255,255,0),rgba(255,255,255,1));
-        text-decoration: none;
-        .box-shadow(inset 0px -1px 4px #fff);
-        color: #007c41;
+      float: left;
+      width:  auto;
+      margin: 0.75em 0.833em 0.75em 0;
+      a.image-shadow {
+        width: 5.714em; // 80px
+        height: 5.714em; // 80px
+        overflow: hidden;
+        margin:0;
+        padding:0;
+        border:none;
+        img {
+          max-width: none;
+          height: 5.714em;
+        }
+      }
+      a.image-shadow:hover {
+        .border-radius(0);
+        img { .border-radius(0); }
       }
     }
-  }
-  ul.news-list {
-
-    li.news-row {
-	  clear:both;
+    .news-description {
+      padding: 0.75em 0;
+      margin-left: 7.143em;
+    }
+    .news-teaser {
+      margin-bottom: 0;
+      color: @grayDark;
+      font-size:  @base13px;
+    }
+    span.news-date {
+      color: #999;
+      font-size: @base12px;
+      display: inline-block;
+      a {
+        color: lighten(@grayDark,10%);
+      }
+    }
+    &.large-image {
       .news-thumbnail {
+        margin: 0 10px 2px 0px;
+        min-width: 175px;
+      }
+    }
+    &.small-image {
+      .news-thumbnail {
+        min-width: 5.714em;
+      }
+    }
+    &.headline {
+      .news-thumbnail {
+        display: none;
+      }
+      h4 {
         display: inline-block;
-        float: left;
-        width:  38.2%;
-        margin: 0 10px 5px 0px;
-        a.image-shadow {
-          min-width: 81px;
-          height: 78px;
-          overflow: hidden;
-          img {
-            max-width: none;
-            height: 78px;
-          }
-        }
+        margin-right: 5px;
       }
       .news-teaser {
-        margin-bottom: 0;
         color: @grayDark;
-        font-size:  @base13px;
-      }
-      .small-image{
-      }
-      span.news-date {
-        color: #999;
+        margin-top: 3px;
         font-size: @base12px;
-        display: inline-block;
-        a {
-          color: lighten(@grayDark,10%);
-        }
       }
-      &.large-image {
-        .news-thumbnail {
-          width:  38.2%;
-          margin: 0 10px 2px 0px;
-          min-width: 175px;
-        }
-      }
-      &.small-image {
-        .news-thumbnail {
-          width:  12%;
-          margin: 0 10px 5px 0px;
-          min-width: 81px;
-        }
-      }
-      &.headline {
-        .news-thumbnail {
-          display: none;
-        }
-        h4 {
-          display: inline-block;
-          margin-right: 5px;
-        }
-        .news-teaser {
-          color: @grayDark;
-          margin-top: 3px;
-          font-size: @base12px;
-        }
-      }
-      
     }
-  }
-  hr.soften {
-    width: 100%!important;
+    h4 a {
+      margin:0;
+      padding:0;
+      display:inline;
+      background:none;
+      border:none;
+    }
+    h4 a:hover {
+      background:none;
+      border:none;
+      margin:0;
+      padding:0;
+    }
   }
 }
 
@@ -113,6 +97,10 @@
   margin-top: 20px;
 }
 
+.news-archive-list li {
+  clear:left;
+}
+
 .news-archive-list li a {
   font-weight: bold;
 }
@@ -121,10 +109,25 @@
 	margin-right:10px;
 }
 
+// adjust the margin on the hr following the feature story
+.feature-caption + hr.soften {
+  margin: 1em 0 0.57em;
+}
+
 @media (max-width: 26.25em) {
-  .latest-news ul.news-list li.news-row.large-image .news-thumbnail {
+  .news-list .news-row.large-image .news-thumbnail {
     float: none;
     width: auto;
     margin: 0 0 10px 0;
+  }
+}
+
+// drop news thumbnails at 359px
+@media (max-width: 22.4375em) {
+  .news-list .news-row.small-image .news-thumbnail {
+    display:none;
+  }
+  .news-list .news-row.small-image .news-description {
+    margin-left:0;
   }
 }

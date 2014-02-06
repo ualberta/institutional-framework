@@ -1,0 +1,580 @@
+/** Faculty - Base Overrides **/
+
+.content .frame { display: inline-block; }
+
+.section-heading {
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeight;
+  display: block;
+}
+
+.content-wrapper > .content-top-row {
+  background:none;
+  box-shadow:none;
+  border:none;
+ 
+}
+
+.rich-text h4 {
+  margin-top: 0.25em;
+  font-size: 1.2em;
+}
+
+.intro p {  
+  margin-top:0;
+}
+
+
+@media (min-width: 61.25em) and (max-width: 74.9375em) {
+  .module-container .module-heading .module-actions {
+    position: static;
+  }
+}
+
+
+/** Faculty - Blade overrides **/
+
+.brand img {
+    display: block;
+    height: 100%;
+} 
+
+/** Faculty - Banner overrides **/
+
+.banner-inner .site-title {
+  display:block;
+  bottom: 0.25em;
+  margin:0;
+  position: absolute;
+  z-index: 15;
+  text-decoration: none;
+}
+
+.banner-logo {
+  display: none;
+}
+
+
+
+.secondary div.intro,
+.tertiary div.intro {
+  margin-bottom:1em;
+}
+
+// HOME PAGE 
+// --------------------
+
+.feature-area > div { 
+  margin-bottom: 1em;
+}
+
+.content-top-row .flexslider .slide {
+  display:none;
+}
+
+// page editor hack fix to show slides
+form[action*="sc_mode=edit"] .content-top-row .flexslider .slide {
+  display:block;
+}
+
+.content-top-row .flexslider.single .slide {
+  display:block;
+}
+
+/* px override */
+.flexslider .flex-control-nav {
+  bottom: -2.2em;
+}
+
+/* force images to fully occupy containers */
+.image-shadow img {
+  max-width: none;
+  width:100%;
+}
+
+/* prevent flickering from transitions */
+.banner-inner, .frame, .extrude, .tab-content {
+  -webkit-backface-visibility: hidden;
+}
+
+
+
+@media (max-width: 31.250em){
+  .flexslider .flex-direction-nav li a {
+    margin-top:-72px;
+  }
+}
+
+@media screen and (max-width: 43.07em) {
+  .audience-area{
+    margin-top:3em;
+  }
+  .feature-area .flexslider .flex-direction-nav li a.flex-next{
+    right:10px;
+    opacity:1;
+  }
+  .feature-area .flexslider .flex-direction-nav li a.flex-prev{
+    left:10px;
+    opacity:1;
+  }
+  .content-top-row {
+    margin-top: 0;
+  }
+  
+  .content-wrapper .row-fluid .feature-area:nth-child(1) {
+    margin-left: -0.83333em;
+    margin-right: -0.83333em;
+    margin-top: -1.57em;
+    width: auto;
+  }
+  .content-wrapper .row-fluid .feature-area h3 {
+    font-size: 1.2em;
+  }
+  .feature-area .flexslider {
+    padding: 0;
+  }
+}
+
+@media (min-width: 43.125em) {
+
+  .image-caption-container .caption h3 {
+    font-size:1.35em;
+  }
+
+  .row-fluid { 
+    .feature-area,
+    .audience-area {
+      width:70%;
+      margin-left:0;
+    }
+  }
+
+  .row-fluid .secondary-content-area.span5,
+  .row-fluid .primary-content-area.span5 {
+    width:70%;
+    margin-left:0;
+  }
+
+  .row-fluid.content-inner .sidebar.span2 {
+      margin-left:5%;
+      width:25%;
+      position:absolute;
+      top:1.57em;
+      right:0.8333em;
+      margin-top:0; padding-top: 0; border-top:none; box-shadow: none;
+  }
+
+  .row-fluid.content-inner .sidebar.span2 > .extrude {
+    width:auto;
+    display:block;
+    margin: 0 0 1em;
+  }
+
+}
+
+@media (min-width: 61.25em) {
+  .row-fluid .audience-area {
+    width: 48.5%;
+    margin-left: 3%;
+  }
+  .row-fluid .feature-area,
+  .row-fluid .primary-content-area.span5 {
+    width: 48.5%;
+  }
+
+  .row-fluid .secondary-content-area.span5 {
+    width: 30%;
+    margin-left:3%;
+  }
+
+  .content-inner.row-fluid .sidebar.span2 {
+    position:static;
+    width: 15.5%;
+    margin-left:3%;
+  }
+
+  /** Fluid Layout Adjustments **/
+  .home .content-container.container  {
+      width:100%;
+      padding:0 3%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+       -moz-box-sizing:border-box;
+  }
+  .content-wrapper > .content-top-row {
+    width:100%;
+    padding:0;
+    margin:0;
+  }
+
+  .content-wrapper > .content-top-row .content-inner {
+    padding-bottom: 0.57em;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 0.57em;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+  }
+
+  .audience-area .tab-content {
+    position: absolute;
+    top: 2.67em;
+    bottom: 0.57em;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: auto;
+    padding: 1em;
+    overflow: auto;
+  }
+
+  .audience-area {
+    position:relative;
+  }
+
+  .audience-area:after {
+    padding-top: 58.5%;
+    display: block;
+    content: '';
+  }
+
+  .audience-area ul.nav.nav-tabs {
+    position:absolute;
+    z-index:2;
+  }
+}
+
+@media screen and (min-width: 75em) {
+    .home .content-container.container  {
+      padding:0 5%;
+    }
+}
+
+// END HOME PAGE
+// --------------------
+
+// SECONDARY PAGES
+// --------------------
+
+.secondary {
+  .feature-area > div {
+    padding: 0.35714285714285715em;
+    background: #FFF;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  div.intro-content {
+    border-bottom: 1px solid #DDD;
+    box-shadow:0 1px 0 #fff;
+    font-size: 1.14em;
+    line-height: 1.42em;
+    padding:0 0 1em;
+    margin-bottom: 1.57em;
+  }
+  .page-body { 
+    position: relative; 
+  }
+  .primary-content {
+    margin-left:0;
+  }
+  .sidebar {
+    margin:1em 0;
+  }
+  .primary-content .feature-area {
+    width:auto;
+  }
+}
+
+@media (min-width: 30em) {
+
+  .secondary .sidebar > .extrude {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 47%;
+    margin-left:2%;
+    vertical-align:top;
+  }
+
+}
+
+@media (min-width: 43.125em) {
+  .secondary {
+    div.intro-content {
+      width:100%;
+    }
+    .primary-content {
+      width:60%;
+    }
+    .secondary-content,
+    .sidebar {
+      position: static;
+      width: 35%;
+      margin-left: 5%;
+      margin-top:0; 
+      padding-top: 0; 
+      border-top:none; 
+      box-shadow: none;
+    }
+    .sidebar {
+      float:right;
+    }
+    .sidebar > .extrude {
+      margin-left:0;
+      margin-bottom:1.57em;
+      width:auto;
+      display:block;
+      max-width: none;
+    }
+  }
+
+  .secondary .secondary-content {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+    box-shadow: none;
+  }
+
+}
+
+@media (min-width: 61.25em) {
+  .secondary {
+    div.intro-content {
+      width: 77%;
+    }
+    .page-body { 
+      position: relative; 
+    }
+    .primary-content {
+      width:45%;
+      margin-left:0;
+    }
+    .secondary-content {
+      width:29%;
+      margin-left:3%;
+    }
+    .sidebar {
+      float:none;
+      width:20%;
+      margin: 0 0 0 3%;
+      position:absolute;
+      top:0em;
+      right:0;
+    }
+  }
+}
+
+// END SECONDARY PAGES
+// ----------------------
+
+// ----------------------
+// TERTIARY PAGES 
+
+.tertiary {
+  .navigation {
+    display:none;
+  }
+  .sidebar { 
+    margin:0;
+  }
+  .content > p:nth-child(1) {
+    margin-top: 0;
+    font-size: 1.2em;
+    line-height: 1.42em;
+    margin: 0 0 1.2em;
+    opacity: .8;
+  }
+}
+
+@media (min-width: 30em) {
+  .tertiary .sidebar > .extrude {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 46.5%;
+    margin-left:2%;
+    vertical-align:top;
+  }
+
+}
+
+@media (min-width: 43.125em) {
+  .tertiary {
+    div.intro {
+      margin-bottom:1em;
+    }
+    .navigation {
+      display:block;
+      margin:0;
+      width:30%;
+    }
+    .content {
+      width: 65%;
+      position: static;
+      margin-left: 5%;
+      float:right;
+    }
+    .sidebar { 
+      position:static;
+      clear:right;
+      float: right;
+      margin:0;
+      width:65%;
+    }
+    .span12 + .sidebar {
+      width:30%;
+      border-top:none;
+      box-shadow:none;
+      margin-top:0;
+      padding:0;
+    }
+    .span12 + .sidebar > .extrude {
+      width:auto;
+      margin:0 0 1.57em;
+      display:block;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  .tertiary {
+    .navigation {
+      width:20%;
+    }
+    .content {
+      float:left;
+      width:54%;
+      margin-left:3%;
+    }
+    .span12.primary-content-area {
+      width:77%;
+    }
+    .sidebar {
+      float:left;
+      width:20%;
+      margin: 0 0 0 3%;
+    }
+    .span12 + .sidebar {
+      width:20%;
+    }
+    .sidebar > .extrude {
+      margin-left:0;
+      display:block;
+      width:auto;
+      max-width: none;
+    }
+  }
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    border: none;
+}
+
+.content h1 {
+    margin-top: 0.1em;
+}
+
+.content p a { text-decoration: underline;}
+
+.image-right {
+    float:right;
+    width:45%;
+    margin-left:1em;
+}
+
+.image-left {
+    float:left;
+    margin-top:0.25em;
+    margin-right:1em;
+    margin-bottom:0.5em;
+}
+
+span.image {
+    position:relative;
+    display:block;
+}
+
+span.image:after {
+    content:"";
+    border:1px solid rgba(0,0,0,0.1);
+    border-top-color:rgba(0,0,0,0.05);
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    z-index:5;
+    border-radius:4px;
+}
+
+span.image img {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+}
+
+.content p.teaser {
+    font-size:1.2em;
+    line-height:1.42em;
+    margin: 0.9em 0 1.2em;   
+    opacity: 0.8;                             
+}
+
+ul.content-list, ol.content-list {
+   margin-top: 1.57em;
+   margin-bottom: 1.57em;
+   margin-left: 1.78571428571429em;
+}
+
+ul.content-list li, ol.content-list li {
+    padding-top:0.15em;
+    padding-bottom:0.15em;
+}
+
+
+// END TERTIARY PAGES
+// ----------------------
+
+
+// NEWS ARTICLE PAGE 
+// ----------------------
+
+// @media (min-width: 43.125em) {
+//   .article-content .story {
+//     width:65%;
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+//     float:left;
+//   }
+//   .article-content aside {
+//     width: 30%;
+//     margin-left:5%;
+//     float:left;
+//     margin-top: -1.57em;
+//   }
+
+//   .news-article .row-fluid .primary-content-area {
+//     width:100%;
+//   }
+
+// }
+
+// @media (min-width: 61.25em) {
+//   .news-article .tertiary .span12.primary-content-area {
+//     width:77%;
+//   }
+// }

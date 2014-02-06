@@ -20,51 +20,75 @@
   .border-radius(500px); // crank the border-radius so it works with most reasonably sized images
 }
 
+.thumbnail-container {
+  margin-bottom: 1em;
+  .frame {
+    display:inline-block;
+  }
+}
+
 .image-caption-container {
   position: relative;
   .caption {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 19;
-    width: 100%;
-    #gradient > .vertical(rgba(0,0,0,0.45), rgba(0,0,0,0.85));
-    color: #fff;
-    padding:  10px 0;
-    text-shadow: 0px 1px 3px rgba(0,0,0,0.85);
+    background:#fff;
+    background: -moz-linear-gradient(top,rgba(255,255,255,.9),#fff);
+    background: -webkit-gradient(linear,0 0,0 100%,from(rgba(255, 255, 255, 0.9)),to(#FFF));
+    background: -webkit-linear-gradient(top,rgba(255, 255, 255, 0.9),#FFF);
+    background: -o-linear-gradient(top,rgba(255,255,255,.9),#fff);
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.9),#FFF);
+    text-shadow: 0px 1px 1px #fff;
+    padding: 0.9em 0.57em 0.57em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     a {
-      color: #ffdb05;
-    }
-    &.dark-text {
-      background: #fff;
-      #gradient > .vertical(rgba(255,255,255,0), rgba(255,255,255,0.65));
-      color: @grayDark;
-      text-shadow: 0px 1px 3px rgba(255,255,255,0.65);
-      a {
-        color: @linkColor;
-      }
+      color: @linkColor;
     }
     p,h3 {
       margin: 0;
-      padding: 0 10px;
-      line-height: 1.2em;
+      padding: 0;
       position: relative;
     }
     h3 {
-      font-size: 14px;
-      margin-bottom: 3px;
+      font-size: 1em;
+      margin-bottom: 0.1em;
+      line-height:1.2em;
     }
     p {
       font-weight: 500;
+      color: @lightText;
     }
   }
   .image-shadow + p.caption {
-    padding: 10px;
+    padding: 0.8333em;
     margin: 0;
     width: auto;
   }
+  &.dark {
+    .caption {
+      #gradient > .vertical(rgba(0,0,0,0.45), rgba(0,0,0,0.85));
+      color: #fff;
+      a {
+        color: #ffdb05;
+      }
+      p {
+        color:#fff;
+      }
+    }
+  }
 }
+
+@media (max-width: 43.125em) {
+  .image-caption-container .caption {
+    position:relative;
+  }
+}
+
 
 
 

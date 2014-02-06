@@ -8,6 +8,14 @@
     #em > .size(height,55px,@baseFontSizepx);
     img { display: none; }
   }
+
+    // Banner
+  // ----------------
+  .banner-container,
+  .bottom-footer-row  { 
+    background: #007c41 url(../img/banner-bg.jpg) repeat-x top left;
+  }
+
   
 }
 
@@ -17,7 +25,7 @@
   // ---------------
 	
   .top-footer-row {
-	background: #F4F5E9;	
+	 background: #F4F5E9;	
   }
   
 }
@@ -32,13 +40,13 @@
   // navigation
   // ---------------------
   .navigation-container {
-    .navigation-inner ul li a {
-      border-left: 1px solid #fff;
-      border-right: 1px solid #cbd2cd;
-    }
     .navigation-inner ul.main-navigation {
       border-left: 1px solid #cbd2cd;
       border-right: 1px solid #fff;
+      & > li > a {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #cbd2cd;
+      }
     }
   }
   
@@ -46,17 +54,22 @@
     border: 1px solid #ccc;
     border: 1px solid rgba(0,0,0,0.45);
   }
+
+  hr.soften {
+    height:0px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+  }
+
+  .top-footer-row {
+    border-top: 1px solid #dca;
+    border-bottom: 1px solid #cba;
+  }
   
 }
 
 .no-cssgradients {
-  
-  // Banner
-  // ----------------
-  .banner-container { 
-    background: #007c41 url(../img/banner-bg.jpg) repeat-x top left;
-    .oval-container, .oval { display: none; }
-  }
+
   
   // Navigation
   // ----------------
@@ -64,6 +77,7 @@
     border-top: 1px solid #ccc404;
     border-bottom-color: #abb1ae;
     background: transparent url(../img/navbar-bg.gif) repeat-x center center;
+    background-size: auto 100%;
     .navigation-inner > ul > li { background: none; }
   }
   
@@ -103,23 +117,15 @@
 	  filter:none;
 	  background:#7C0F00;
   }
-  hr.soften {
-    text-align: center;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #fff;
-    *display : list-item;
-    *list-style : url(../img/hr-bevel-short.png) inside;
-    *filter : alpha(opacity=0);
-    *margin-left: -10px;
-    *width : 0;
-    *border:none;
-  }
 }
 
 .touch {
 	
+  // some captions are too long to show over the image.
+  // on touch, set position to relative to drop the caption
+  // below the image
   .hover-caption-container .caption {
-    bottom:0;
+    position:relative;
   }
  
 }

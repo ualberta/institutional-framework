@@ -1,194 +1,95 @@
-.our-campuses{
- .content-top-row {
-    background-image: url('../img/whirl-bg.png');
-    background-repeat: repeat-x;
-    background-position: bottom left;
-    .box-shadow(inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
-    border-top: 1px solid rgba(0, 50, 25, 0.25);
-    background-color: rgba(255, 200, 10, 0.1);
+.our-campuses {
+
+  .container.thumbnail-container {
+    display:none;
+    width:auto;
+    padding:0;
+
   }
-  .virtual-thumbs{
-      text-align: center;
-      font-size:  1em;
-      margin-top: 1%;
-      h3 {
-        font-size:  2em;
-        margin: 0.8em 0em 0.25em 0em;
-      }
-      .frame {
-        float:left;
-        .ie7-inline-block();
-        margin-right: 1%;
-      }
-    }
-.caption h4{
-	font-size:1.5em;
-	 line-height:0em;
+
+  .ut-header,
+  .vt-header {
+    display:none;
+  }
+
+  .thumbnail-container .frame > a {
+    position:absolute;
+    right:1em;
+    bottom:1.57em;
+    display:none;
+  }
+
+  .thumbnail-container .frame > a:after {
+    content: "self guided tour";
+    position: absolute;
+    right: 0;
+    bottom: 1em;
+    z-index: 20;
+    text-indent: 0;
+    display: block;
+    width: 7em;
+    display:none;
+  }
+
+  .unguided-btns > a { 
+    margin-top:1.57em; 
+    max-width:23em;
+    display:block;
+  }
+
 }
-.virtual-thumbs{
-	.hover-caption-container .caption{
-		  padding:5px 0px;
-		  bottom:0px;
-	     }
-	.hover-caption-container:hover .caption{
-		 bottom:0px;   
-	    }
-	   .frame a{
-		    font-size:12px;
-	    }
-     .unguided-btns a{
-	    margin:0px 5px 5px 0px;
-    }
-}
-}
+
 @media (min-width: 43.125em) {
-
-  .our-campuses .content-top-row {
-    background-position: 0px 100px;
-    .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
-    
-  }
-  
-  .content-top-row.start {
-    background-position: -600px 250px;
-  }
-  
-  .our-campuses .content-top-row > div {
-    width: 100%;
-    padding-bottom:15px;
-    .fma-slide {
-      width:  100%;
+  .our-campuses {
+    .unguided-btns { display:none; }
+    .container.thumbnail-container {
+      display:block;
+      margin:1.57em 0;
+      position:relative;
     }
-  }
-}
-
-@media (min-width: 61.25em) {
-
-  .our-campuses .content-top-row {
-    background-position: left bottom;
-    .transition(background 5s ease-out);
-  }
-  .our-campuses  .thumbnail-container{
-	  width:68.3em;
-	  margin-top:15px;
-  }
-}
-
-@media (max-width: 43.0625em) {
-
-  .our-campuses .content-top-row {
-    background-position: center 103px;
-  }
-
-  .our-campuses .content-top-row > div .thumbnail-slide {
-    margin-top: 5%;
-    h3, p {
-      padding:  0 10px;
+    .nc-frame {
+      width:70%;
+      position:relative;
+      .frame { display:block; }
+      .caption { font-size:1.2em; }
+      .hover-caption-container img { width:100%; max-width:none; }
     }
-    .thumbnail-container {
-     display: none;
-    }   
-  }
-   .our-campuses .content-top-row > div{
-    overflow: visible;
-    min-height: 200px;
-    .secondary-link {
-      border: none;
-      display: block;
-      margin-top: 10px;
-      margin-bottom: 10px;
+    .csj-frame,
+    .aug-frame {
+      width: 27%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      .caption {
+        font-size:0.8em;
+      }
+      h4 {
+        font-size:1.3em;
+      }
     }
-  }
-  .row-fluid .secondary-content-area{
-	  width:auto;
-  }
- }
-@media (min-width: 43.125em) and (max-width:56.250em){
- .our-campuses .thumbnail-container{
-	 width:38em;
- }
-   .our-campuses .thumbnail-container .nc-frame .frame{
-	  width:517px;
-  }
-    .our-campuses .thumbnail-container .csj-frame .frame{
-	  width:250px;
-  }
-    .our-campuses .thumbnail-container .aug-frame .frame{
-	  width:250px;
-  }
-  .our-campuses .sidebar{
-	  top:670px
-  }
-  }
- @media (min-width: 56.313em) and (max-width:74.938em){
- .our-campuses .thumbnail-container{
-	 width:61.6em;
- }
-  .our-campuses .thumbnail-container .nc-frame .frame{
-	  width:575px;
-  }
-   .our-campuses .thumbnail-container .csj-frame .frame{
-	  width:250px;
-  }
-   .our-campuses .thumbnail-container .aug-frame .frame{
-	  width:250px;
-	  margin-top:5px;
-  }
+    .aug-frame {
+      top:auto;
+      bottom:0;
+    }
 
-  } 
-  @media (min-width: 56.313em) and (max-width:61.188em){
-  .our-campuses .sidebar{
-	  top:530px
-  }
+    .virtual-thumbs {
+      padding:0;
+    }
 
-}
-@media (min-width: 43.125em) {
-  p.context {
-    display: none;
-  }
-  .unguided-btns{
-	  display:none;
-  }
-  .ut-header{
-	  display:none;
-  }
-}
-@media (max-width: 43.125em) {
-	  .vt-header{
-	  display:none;
-  }
-}
-@media (min-width: 25.375em) and (max-width:28.750em) {
-	.our-campuses .primary-content-area .span6{
-		width:auto;
-		float:left;
-	}
-}
-@media (min-width:25.438em) and (max-width:61.188em){
-	.our-campuses .secondary-content-area .module-container{
-		width:360px;
-	}
-}
-@media (min-width: 28.813em) and (max-width: 43.063em) {
-	.our-campuses .primary-content-area .span6{
-		width:370px;
-		float:left;
-	}
-	.campuses-list{
-		margin-right:10px;
-	}
-}
+    .virtual-thumbs .frame:hover .caption {
+      background:rgba(0,0,0,0.85);
+    }
 
+    .virtual-thumbs .caption {
+      bottom:0;
+      padding:1em;
+      background:rgba(0,0,0,0.5);
+      color:#ffdb05;
+    }
 
-@media (min-width: 75em){
-	   .our-campuses .thumbnail-container .nc-frame .frame{
-	  width:637px;
-  }
-   .our-campuses .thumbnail-container .csj-frame .frame{
-	  width:280px;
-  }
-  .our-campuses .thumbnail-container  .aug-frame .frame{
-	  width:280px;
-	  margin-top:5px;
+    .virtual-thumbs .caption h4 {
+      margin:0;
+    }
+
   }
 }

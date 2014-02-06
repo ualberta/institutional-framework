@@ -21,22 +21,31 @@
 }
 .rmi-bottom-link {
     position: absolute;
-    display: block;
-    background: #f4f6f4;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
-    border-top: 2px solid #93B5A1;
     font-weight: bold;
     .border-radius(0px 0px 4px 4px);
+    display: block;
+    background: rgba(239, 248, 243, 0.74);
+    padding: 0.5em 0.8333333333333334em 0.42em 25px;
+    border-top: 1px dotted #E0E4E0;
+    border-bottom: 2px solid rgba(119, 185, 83, 0.13);
+}
+.rmi-bottom-link:after {
+    content: "";
+    position: absolute;
+    border: 0.35em solid rgba(0, 0, 0, 0);
+    border-left: 0.35em solid #007C41;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    height: 0px;
+    margin: auto;
 }
 .rmi-bottom-link:hover {
-    background-color: #007c41;
-    border-top-color: #ffdb05;
-    color: #fff;
-    text-decoration: none;
-    .box-shadow(0 -1px 0 rgba(0, 50, 0, 0.2));
+    background: #FFF5B8;
+    border-top-color: #E1D8A4;
 }
 .rmi-content {
     padding-bottom: 44px;
@@ -147,6 +156,7 @@
     .rmi-two, .rmi-three{
 	    .rmi-box{
 		    width:96%;
+		    margin-left:0px;
 	    }
     }
 }
@@ -187,3 +197,62 @@
         margin-right: 0%;
     }
  }
+
+
+/********* Sidebar **********/
+
+    .rmi-sidebar {
+        width: 100%;
+    }
+    
+    .rmi-sidebar .rmi-content {
+        padding-top: 56.25%;
+    }
+    .rmi-sidebar .rmi-thumbnail {
+        position: absolute;
+        width: 100%;
+        .border-radius(4px 4px 0px 0px);
+        left: 0px;
+        right: 0px;
+        top: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .rmi-sidebar .rmi-thumbnail img {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        right: 0px;
+        max-width: 100%;
+        margin-left: 0;
+        .border-radius(4px 4px 0px 0px);
+    }
+
+    .rmi-sidebar .rmi-boxes .rmi-box:nth-child(odd) {
+        margin-left: 0;
+    }
+    .rmi-sidebar .rmi-boxes .rmi-box:nth-child(even) {
+        margin-right: 0;
+    }
+    
+    @media screen and (max-width: 690px) {
+        .rmi-sidebar {
+            width: 95%;
+        }
+        
+        .rmi-sidebar .rmi-thumbnail {
+            height: 0;
+            padding-top: 56.25%;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+        }
+    }
+
+    @media screen and (min-width: 390px) {
+        .rmi-sidebar .rmi-thumbnail:before {
+            display:none;
+        }
+    }

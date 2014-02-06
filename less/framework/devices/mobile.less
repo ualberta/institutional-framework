@@ -5,14 +5,14 @@
 //    - Resizes search / quick links areas to touch friendly
 //    - Main navigation switch to collapsable (no dropdowns)
 //    - Banner text size decreased
-@media (max-width: 43.0625em) {
+@media (max-width: 43.07em) {
 
   /*****************************************
   ** BLADE START
   *****************************************/
   
   ul.quick-links-container {
-    padding: 0px 0px;
+    padding: 0;
   }
   
   .quick-links-container .quick-links-button {
@@ -70,11 +70,6 @@
   ** BANNER START
   *****************************************/
   
-  .banner-inner .site-title {
-    font-size:  24px;
-    line-height:1.4em;
-  }
-  
   nav.audience-navigation {
     display: none;
   }
@@ -103,8 +98,9 @@
   
   .main-navigation.in {
     display: block;
-    background: #ccc;
+    background: #303C35;
     .box-shadow(inset 0px 1px 10px rgba(0,0,0,0.2));
+    padding:1px 0;
   }
   
   .main-navigation.collapse {
@@ -114,7 +110,6 @@
     min-height: 50px;
     &.in {
       height: auto;
-      
     }
   }
   
@@ -133,7 +128,7 @@
     display: block;
   }
   
-  .navigation-inner ul li .sub-menu {
+  .sub-menu {
     display: none;
   }
   
@@ -153,35 +148,26 @@
   }
   
   .navigation-inner ul li ul li a {
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top:  1px solid rgba(255,255,255,0.25);
-    margin: 0px;
-    
-    }
-  
-  .navigation-inner > ul li a {
-    
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top:  1px solid rgba(255,255,255,0.25);
-    margin: 0px;
-    cursor:pointer;
-
-   }
+    color: #fff;
+    border-left: 0.5em solid #ffdb05;
+    padding: 1em;
+    background: #3D4A43;
+    margin-bottom: 1px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-transform: none;
+  }
   
   .navigation-inner ul.main-navigation li:first-child a {
-    border-top: 0px;
+    border-top: 0;
   }
   
   .navigation-inner ul.main-navigation li:last-child a {
-    border-bottom: 0px;
+    border-bottom: 0;
   }
   
   .navigation-inner > ul {
-    border-left:  0px;
+    border-left:  0;
   }
   
   /*****************************************
@@ -207,13 +193,9 @@
       font-weight: bold;
       
       a {
-        padding:  10px 10px;
+        padding:  0.8333em;
         display: block;
-        #gradient > .vertical(rgba(255,255,255,0.15),rgba(255,255,255,0));
         border-bottom: 1px solid rgba(0,0,0,0.1);
-        &:hover {
-          background: rgba(255,255,255,0.5);
-        }
       }
       
     }
@@ -223,27 +205,9 @@
     margin-top: 1em;
     text-align: left;
   }
-  
-  ul.footer-quick-links {
-    //display: none;
-  }
 
-/*
-  .sidebar-content.collapse {
-    display: none;
-    overflow: hidden;
-  }
-  
-  .sidebar-content.collapse.in {
-    display: block;
-    overflow: visible;
-  }
-  */
   h5.sidebar-title {
     cursor: pointer;
-    &.collapsed {
-      margin-bottom: -4px;
-    }
     &:hover {
       background: #f6f6f6;
     }
@@ -257,7 +221,8 @@
 // Pieces:
 //    - Collapsing / expanding search bar
 //    - Quick Links dropdown placement
-@media (max-width: 26.875em) {
+//    - boosting up to 438px on Jan 28
+@media (max-width: 27.375em) {
 
 /*****************************************
 ** BLADE START
@@ -327,7 +292,7 @@
 
 // Applies to Mobile Landscape
 
-@media (max-height: 22em) and (max-width: 43.0625em) {
+@media (max-height: 22em) and (max-width: 43.07em) {
 	.blade-container {
 		ul.quick-links {
 		left: -100px;

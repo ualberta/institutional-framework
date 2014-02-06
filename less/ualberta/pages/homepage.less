@@ -1,160 +1,65 @@
-@hRes_RowContainer:       @gridRowWidth1200;
-
-@hRes_Content:            970px;
-@hRes_PriCol:             581px;
-@hRes_SecCol:             359px;
-@hRes_Sidebar:            170px;
-@hRes_Gutter:             30px;
-
-@hRes_ContentFluid:       percentage(@hRes_Content/@hRes_RowContainer);
-@hRes_SidebarFluid:       percentage(@hRes_Sidebar/@hRes_RowContainer);
-@hRes_PriColFluid:        percentage(@hRes_PriCol/@hRes_Content);
-@hRes_SecColFluid:        percentage(@hRes_SecCol/@hRes_Content);
-@hRes_innerGutterFluid:   percentage(@hRes_Gutter/@hRes_Content);
-
-@dTop_RowContainer:       @gridRowWidth;
-
-@dTop_Content:            750px;
-@dTop_PriCol:             451px;
-@dTop_SecCol:             279px;
-@dTop_Sidebar:            170px;
-@dTop_Gutter:             20px;
-
-@dTop_ContentFluid:       percentage(@dTop_Content/@dTop_RowContainer);
-@dTop_SidebarFluid:       percentage(@dTop_Sidebar/@dTop_RowContainer);
-@dTop_PriColFluid:        percentage(@dTop_PriCol/@dTop_Content);
-@dTop_SecColFluid:        percentage(@dTop_SecCol/@dTop_Content);
-@dTop_innerGutterFluid:   percentage(@dTop_Gutter/@dTop_Content);
-
-.ualberta-home {
-	ul.slides .image-shadow:before{
-		right:0;
-	}
-	.fma-container.flexslider ul.slides img {
-		width: auto;
-	}
-	
-  .fma-container {
-    margin-top: 0em;
-    .image-shadow {
-      float: right;
-    }
-    ul.slides img.fma-background {
-      max-width: 980px;
-    }
-    ul.slides {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      li {
-        margin: 0;
-        position: relative;
-        min-height: 281px;
-      }
-      li {
-        overflow: hidden;
-        
-        .fma-content {
-          position: absolute;
-          bottom: 0px;
-          left: 0;
-          right: 0;
-          background: rgba(0, 0, 0, 0.65);
-          padding: 5px 0px;
-          h3 {
-            color: #ffdb05;
-            margin: 10px 0px 0px;
-            text-shadow: 0px 1px 6px #000;
-          }
-          p.feature-copy {
-            margin: 4px 0px 0px;
-            line-height: 1.5em;
-            color: #fff;
-            text-shadow: 0px 1px 4px #000;
-          }
-        }
-        .fma-buttons {
-          margin: 10px 0px;
-        }
-        &.feature-dark {
-        	.fma-content {
-        		h3 {
-        		  color: #ffdb05;
-        		  text-shadow: 0px 1px 6px #000;
-        		}
-        		p.feature-copy {
-        		  color: #fff;
-        		  text-shadow: 0px 1px 4px #000;
-        		}
-        	}
-        }
-      }
-      .btn + .btn {
-        margin-left: 10px;
-      }
-    }
-    &.flexslider {
-    	text-align: center;
-    	margin: 0em auto 2.57em;
-    	background: none;
-    	.box-shadow(0px 2px 2px #fff);
-    }
-  }
-  div.content-inner hr.explore-separator {
-    margin-top: 1.57em;
-  }
-  .content-top-row {
-    .box-shadow(inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
-    border-bottom: 1px solid rgba(0, 50, 25, 0.35);
-    border-top: 1px solid rgba(0, 50, 25, 0.25);
-    background-color: rgba(255, 200, 10, 0.1);
-    background-repeat: repeat-x;
-    background-position: 50% 135%;
-  }
-  .row-fluid .primary-content-area {
-    margin-bottom: 0;
-  }
+// bring navigation container above the feature, so the shadow overlays it
+.navigation-container {
+  position:relative;
+  z-index:10;
 }
 
-.ualberta-home .sidebar {
-  margin-top: 0px;
+// homepage has a stripped css file, so apply the search field styling
+.search-query {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-.ualberta-home .content-inner {
+// need relative positioning for sidebar
+.content-inner {
   position: relative;
 }
 
-.why-ualberta-row {
-  position: relative;
-  .button-container {
-    float: none;
-    text-align: center;
-    margin-top: 2em;
-    font-size: 0.85em;
-    a.btn {
-      margin:  5px;
-    }
-  }
-  .hover-caption-container .caption {
-    font-size: 0.875em;
-    bottom:0px;
-  }
-  .hover-caption-container .caption i{
-	  font-size:1.3em;
-	  top:7px;
-	  opacity:100;
-	  margin-left:0.35em;
-	  left:auto;
-  }
-   .hover-caption-container .caption a{
-	   color:#fff;
-   }
-}
-
-.ualberta-home .content-top-row {
+// solid background and no shadow as base for why-ualberta area
+.content-top-row {
+  border-bottom: 1px solid rgba(0, 50, 25, 0.35);
+  border-top: 1px solid rgba(0, 50, 25, 0.35);
+  background-color: #EBE6BE;
+  #gradient > .vertical(#e6e3bb,#ccd6ad);
   margin-top: 1.57em; 
   padding: 1em 0em; 
 }
+
+// spacing between why ualberta row and content
+.content-container.container {
+  margin-top:1.57em;
+}
+
+ul.slides { margin:0; padding:0;}
+ul.slides.explore-bar { padding-top:1.57em;}
+
+.feature-buttons a {
+  margin:0.275em 0.75em 0.275em 0;
+}
+.feature-buttons a:last-child {
+  margin-right:0;
+}
+
+
+.why-ualberta-row {
+  position: relative;
+  .why-text { padding: 0 0.83333em; }
+  .button-container {
+    text-align: center;
+    font-size: 0.85em;
+
+    a.btn {
+      margin: 0.275em;
+    }
+  }
+  .frame {
+    display:none;
+  }
+}
+
 .explore-bar {
   margin-bottom: 1.57em;
 }
@@ -170,227 +75,191 @@
   }
 }
 
-.ualberta-home .fma-container .fma-slide .fma-caption {
-  position: relative;
-  padding: 10px 10px 20px 10px;
-  
-  .clearfix();
+.news-list .news-row .news-description {
+  margin-left:0;
+}
+
+
+.feature-wrapper {
+  overflow:hidden;
+}
+
+.feature-area .slides > li {
+  position:relative;
+  text-align:center;
+  .box-shadow(0px 1px 1px #fff);
+}
+
+.feature-content {
+  margin:auto;
+  position:relative;
+  z-index:990;
+  display:block;
+  padding:1em;
+  background:#fff;
+  border-bottom:3px solid #7ac900;
+  text-align:left;
+  .box-shadow(0 0.1em 1em rgba(0,0,0,0.5));
   h3 {
-    border-bottom: none;
-    margin: 0;
+    margin-top:0;
   }
-  span {
-    font-family: @heavyFontFamily;
-    text-transform: uppercase;
-  }
-  p {
+}
+
+// image focus definitions
+.feature-image {
+  position:relative;
+  width:690px;
+  &.focus-left {
     
   }
-  a.btn {
-    padding-top: 8px;
-    padding-bottom: 6px;
-    &:active {
-      .box-shadow(none);
-    }
+  &.focus-right {
+    float:right;
+  }
+  &.focus-right + .feature-content {
+    clear:right;
+  }
+  &.focus-center {
+    position:relative;
+    left:50%;
+    margin-left:-345px;
+  }
+  &:after {
+    content: "";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    display:block;
+    border-top:1px solid rgba(0,0,0,0.2);
+    border-bottom:1px solid rgba(0,0,0,0.2);
+    z-index:9;
   }
 }
 
-@media (max-width: 43.124em) {
-	// Feature Preset Classes
-	.fma-container.flexslider {
-		.image-left .image-shadow {
-			float: left;
-		}
-		.image-right .image-shadow {
-			float: right;
-		}
-	}
+.feature-area + .content-top-row {
+  margin-top:0;
 }
 
+.ph-explore {
+  width:100%;
+}
+
+
 @media (min-width: 43.125em) {
+
+  .secondary-content-area > hr {
+    display:none;
+  }
+
+  .feature-area .slides > li {
+    background:#242b27;
+  }
+
+  .feature-area .slides > li:after {
+    content:"";
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    .box-shadow(inset 0 -1px 0 rgba(0, 0, 0, 0.25));
+    position:absolute;
+    z-index:9;
+  }
+
+  .feature-image {
+    width:980px;
+    &.focus-left { }
+    &.focus-right {
+      float:right;
+    }
+    &.focus-right + .feature-content {
+      clear:right;
+    }
+    &.focus-center {
+      position:relative;
+      left:50%;
+      margin-left:-490px;
+    }
+  }
+
+  .feature-content {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    width:24em;
+    height:10em;
+    text-align:left;
+    .border-radius(4px);
+    &.left-island {
+      right:auto;
+      left: 3%
+    }
+    &.right-island {
+      left:auto;
+      right: 3%;
+    }
+    &.bottom-island {
+      top:auto;
+      bottom:10%;
+    }
+    &.dark {
+      background:rgba(0,0,0,0.65);
+      border-bottom-color:#ffdb05;
+      color:#fff;
+      text-shadow: 0 1px 6px #000;
+      h3 { color: #ffdb05; }
+    }
+  }
 
   .ualberta-home .content-top-row {
     .box-shadow(inset 0 -10px 150px rgba(0, 110, 65, 0.25), inset 0px 0px 6px rgba(0,0,0,0.25), 0px 2px 2px white);
     background-image: none;
-  }
-  .ualberta-home .why-ualberta-row {
-    .button-container {
-      font-size: 1em;
-      margin-top: 1em;
-    }
-  }
-  
-  .fma-container.flexslider {
-  	.image-left .image-shadow {
-  		float: none;
-  	}
-  	.image-right .image-shadow {
-  		float: none;
-  	}
-  }
-  
-  .ualberta-home .fma-container {
-    .image-shadow {
-      float: none;
-    }
-    ul.slides li {
-    	
-      .fma-content {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        bottom: auto;
-        margin-top: -57px;
-        vertical-align: middle;
-        text-align: center;
-        padding: 20px;
-        background: none;
-        h3 {
-          font-size: 32px;
-          margin-bottom: 5px;
-        }
-        p.feature-copy {
-          font-size: 16px;
-          width: 100%;
-          line-height: 1.5em;
-        }
-      }
-      &.feature-light {
-      	.fma-content {
-      		h3 {
-      		  color: @linkColor;
-      		  text-shadow: none;
-      		}
-      		p.feature-copy {
-      		  color: @lightText;
-      		  text-shadow: none;
-      		}
-      	}
-      }
-    }
-    ul.slides .caption-left {
-    	.fma-content {
-    		position: absolute;
-    		top: 50%;
-    		left: 0;
-    		bottom: auto;
-    		margin-top: -57px;
-    		vertical-align: middle;
-    		text-align: center;
-    		background: none;
-    	}
-    }
-    ul.slides li.caption-left-bottom {
-    	.fma-content {
-    		position: absolute;
-    		top: auto;
-    		left: 0px;
-    		bottom: 0px;
-    		right:  auto;
-    		margin: 0px;
-    		vertical-align: middle;
-    		text-align: left;
-    		&.shade {	
-    			.border-radius(0px 4px 4px 0px);
-    			bottom: 15px;
-    			padding: 15px;
-    			.fma-buttons {
-    				margin-bottom: 0px;
-    			}
-    		}
-    	}
-    }
-		ul.slides li.caption-right-bottom {
-			.fma-content {
-				position: absolute;
-				top: auto;
-				left: auto;
-				bottom: 0px;
-				right:  0px;
-				margin: 0px;
-				text-align: right;
-				&.shade {
-					bottom: 15px;
-					padding: 15px;
-					.border-radius(4px 0px 0px 4px);
-					.fma-buttons {
-						margin-bottom: 0px;
-					}
-				}
-			}
-		}
-    ul.slides .caption-right {
-    	.fma-content {
-    		position: absolute;
-    		top: 50%;
-    		right: 0;
-    		left: auto;
-    		bottom: auto;
-    		margin-top: -57px;
-    		vertical-align: middle;
-    		text-align: right;
-    		background: none;
-    	}
-    }
-  }
-  
-  .ualberta-home .fma-container .fma-slide .fma-caption {
-    position: absolute;
-    left: 15px;
-    bottom: 0px;
-    background-color: rgba(0,0,0,0.65);
-    padding: 10px 15px 20px 15px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000;
-    h3 {
-      color: #ffdb05;
-    }
-    a.btn {
-      padding-top: 6px;
-      padding-bottom: 4px;
-    }
+      background-color: #F5F0CE;
   }
   
   .why-ualberta-row {
+    .why-text {
+      margin-right:30%;
+      margin-left:25%;
+      max-width:60em;
+      padding:0;
+    }
     .button-container {
-      width:  20%;
-      position: absolute;
-      top: 10px;
-      right: 0px;
-      float: right;
+      font-size: 1em;
+      position:absolute;
+      margin:auto;
+      top:0;
+      bottom:0;
+      height:9em;
+      width: 15em;
+      right:1em;
       a.btn {
         display: block;
-        margin: 3px 0px 5px 0px;
+        margin: 0.2em 0px 0.35em 0px;
         font-size:  1em;
-        padding-top: 12px; 
-        padding-bottom: 8px;
+        padding-top: 0.85em; 
+        padding-bottom: 0.6em;
         line-height: 1em;
       }
     }
     .frame {
-      display:inline-block; float:left; width:24%; margin-right:2%; margin-bottom: 1em;
-    }
-    p.description {
-      width: 54%;
-      margin-left: 24%;
-      font-size: 1em;
-      line-height: 1.57em;
-    }
-    h3 {
-      margin-left: 24%;
+      display:inline-block; 
+      float:left; 
+      width:20%;
+      margin: 0 2% 1em 1em;
     }
     .extrude {
       min-height: 135px;
     }
   }
-  .ualberta-home .fma-container ul.slides li .fma-content.shade{
-	  background: rgba(0, 0, 0, 0.65);
-	  h3 {
-		 color: #ffdb05;
-	  }
-		p.feature-copy{
-		 color:#fff;
-		}
+
+  .ualberta-home .sidebar {
+    position:relative;
   }
 }
 
@@ -399,223 +268,271 @@ h1.hp-h1 {
 }
 
 @media (min-width: 61.25em) {
-  .ualberta-home {
-      .row-fluid {
+
+    .row-fluid {
       .main-content {
-        width: @dTop_ContentFluid;
+        width: 80%;
+        float:left;
       }
       .primary-content-area {
-        width: @dTop_PriColFluid;
+        width: 61.25%;
       }
       .secondary-content-area {
-        width: @dTop_SecColFluid;
-        margin-left: @dTop_innerGutterFluid;
+        width: 35%;
+        margin-left: 3.75%;
         & > hr.soften:first-child {
           display:none;
         }
       }
       .sidebar {
-        width: @dTop_SidebarFluid;
+        width: 17%;
+        margin-left:3%;
       }
     }
-    .fma-container {
-      .image-shadow::before {
-        .border-radius(4px);
-      }
-      ul.slides li {
-      	.border-radius(4px);
-      }
-      ul.slides img.fma-background {
-        .border-radius(4px);
-        max-width: 100%;
-      }
-      &.flexslider {
-      	margin-top: 1.57em;
-      }
+
+  .feature-area > .slides > li { text-align:center; overflow:hidden; }
+
+  .feature-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 105em; // 1680px
+    overflow:visible;
+  }
+
+  .feature-image {
+    width:auto;
+    .box-shadow(0 0 2em #000);
+  }
+
+  .feature-image img {
+    width:100%;
+    max-width:none;
+  }
+
+  .feature-image {
+    &.focus-right {
+      float:none;
     }
-    .why-ualberta-row {
-      p.description {
-        width: 54%;
-        margin-left: 23.1%;
-        position: relative;
-        top: -13px;
-        margin-bottom: 0;
-      }
-      h3 {
-        margin-left: 23.1%;
-        position: relative;  
-        top: -9px;
-      }
-      & > .span {
-        padding: 0 15px;
-      }
-      .button-container {
-        right: 15px;
-        margin-top: 0.5em;
-        top: -2px;
-      }
-      & > .span {
-        margin-bottom: -6px;
-      }
-      div.frame {
-        margin-bottom: 0;
-      }
+    &.focus-center {
+      position:static;
+      left:auto;
+      margin:0;
     }
   }
+
+  .feature-area + .content-top-row {
+    margin-top:1.57em;
+  }
+  
+  .content-top-row { .border-radius(4px); margin: 1.57em 3% 0; padding:1em; }
 }
 
 @media (min-width: 75em) {
-
-  .content-top-row {
-    .tab-content {
-      min-height: 264px;
-      height: 264px;
+  .feature-content {
+    &.left-island {
+      left: 5%
+    }
+    &.right-island {
+      right: 5%;
     }
   }
-  
   .why-ualberta-row {
-    & > .span {
-      margin-bottom: -4px;
-    }
-    h3 { 
-      top: -5px;
-    }
     .frame {
-      margin-top: 6px;
       width: 20%;
     }
-    p.description {
-      top: -12px;
-      font-size: 1.14285714285714em;
-      line-height: 1.57em;
+    .why-text {
+      font-size: 1.2em;
+      line-height: 1.42em;
     }
     .button-container {
-      top: 11px;
+      height:10.5em;
+      width:20em;
       a.btn {
         font-size:  1.2em;
       }
     }
   }
-  
-  .ualberta-home {
-    .row-fluid {
-      .main-content {
-        width: @hRes_ContentFluid;
-      }
-      .primary-content-area {
-        width: @hRes_PriColFluid;
-      }
-      .secondary-content-area {
-        width: @hRes_SecColFluid;
-        margin-left: @hRes_innerGutterFluid;
-      }
-      .sidebar {
-        width: @hRes_SidebarFluid;
-      }
-    }
+  .content-top-row {
+    margin:0 5%;
   }
+  .content-top-row { margin: 1.57em 5% 0; }
 }
 
-@media (min-width: 30em) and (max-width: 43.0625em) {
-  .why-ualberta-row {
-    .frame {
-      width: 34%;
-      float: right;
-      margin-right: 0px;
-      margin-left: 20px;
-    }
-  }
-  .ualberta-home {
-    .content-top-row {
-      background-position: 50% 300%;
-    }
-  }
-}
 
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
   // main column: 75.26041666666666%
   // margin: 2.7624309392265194%
-  .ualberta-home {
-    .fma-container {
-      ul.slides .image-shadow {
-        position: relative;
-        left: 50%;
-        margin-left: -490px;
-      }
-      ul.slides .image-shadow::before {
-        .border-radius(0px);
-      }
-      ul.slides li {
-        .fma-content {
-          position: absolute;
-          left: 0;
-          vertical-align: middle;
-          h3 {
-            font-size: 25px;
-          }
-          p.feature-copy {
-            font-size: 16px;
-          }
-        }
-      }
-    }
     .why-ualberta-row {
       .button-container {
         width: 22.135416666666664%;
         min-width: 156px;
       }
-      h3,p.description {
-        margin-left: 28.42%;
-        width: (50.26041666666666% - 2.7624309392265194%);
-      }
       .frame {
-        width: 25%;
-        margin-top: 1em;
-        margin-left: 0;
         float: left;
       }
     }
-    .sidebar {
-      top: 0px;
-      right:  0px;
-      position: absolute;
-    }
-  }
-}
-
-// SLIDE SPECIFIC STYLING
-
-@media (max-width: 61.1875em) {
-	.ualberta-home .why-ualberta-row {
-		ul {
-			margin-left: 25px;	
-			margin-bottom: 0;
-			li {
-				margin-bottom: 0.3em; 				
-			}
-		}
-	}
+  
 }
 
 @media (min-width: 61.25em) {
-	.ualberta-home  {
-		.why-ualberta-row {
-			h3 {
-				margin-bottom: 0;
-			}
-		}
 		.content-container.container {
 			margin-bottom: 0.5em;
 		} 
-	}
+
 }
 @media (min-width: 75em) {
-	.ualberta-home  {
-		.why-ualberta-row ul {
-			width: 18%;
-		}
 		.content-container.container {
 			margin-bottom: 0.9em;
 		} 
-	}
+}
+
+
+// Internet Explorer
+
+.lt-ie9 {
+
+  .banner-inner, .blade-inner, .content-inner, .footer-container, .navigation-inner {
+    width:940px;
+  }
+
+  .content-top-row {
+    width:940px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .ualberta-home {
+    .row-fluid {
+      .main-content {
+        width: 80%;
+        float:left;
+      }
+      .primary-content-area {
+        width: 61.25%;
+      }
+      .secondary-content-area {
+        width: 35%;
+        margin-left: 3.75%;
+        & > hr.soften:first-child {
+          display:none;
+        }
+      }
+      .sidebar {
+        width: 17%;
+        margin: 0 0 0 3%;
+        border-top:none;
+      }
+    }
+    .explore-bar-container ul.explore-bar li i {
+      background: transparent;
+    }
+  }
+
+  .feature-area { 
+    width:940px;
+    margin:1em auto 0;
+  }
+
+  .feature-area > .slides > li { 
+    text-align:center; 
+    overflow:hidden; 
+  }
+
+  .feature-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 105em; // 1680px
+    overflow:visible;
+  }
+
+  .feature-image {
+    width:auto;
+  }
+
+  .feature-image img {
+    width:100%;
+    max-width:none;
+  }
+
+  .feature-image {
+    &.focus-right {
+      float:none;
+    }
+    &.focus-center {
+      position:static;
+      left:auto;
+      margin:0;
+    }
+  }
+
+  .feature-area + .content-top-row {
+    margin-top:1.57em;
+  }
+
+  .why-ualberta-row {
+    .why-text {
+      margin-right:30%;
+      margin-left:25%;
+      max-width:60em;
+      padding:0;
+    }
+    .button-container {
+      font-size: 1em;
+      position:absolute;
+      margin:auto;
+      top:0;
+      bottom:0;
+      height:9em;
+      width: 15em;
+      right:1em;
+      a.btn {
+        display: block;
+        margin: 0.2em 0px 0.35em 0px;
+        font-size:  1em;
+        padding-top: 0.85em; 
+        padding-bottom: 0.6em;
+        line-height: 1em;
+      }
+    }
+    .frame {
+      display:inline-block; 
+      float:left; 
+      width:20%;
+      margin: 0 2% 1em 1em;
+    }
+    .extrude {
+      min-height: 135px;
+    }
+  }
+
+  .feature-content {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    text-align:left;
+    &.left-island {
+      right:auto;
+      left: 3%
+    }
+    &.right-island {
+      left:auto;
+      right: 3%;
+    }
+    &.bottom-island {
+      top:auto;
+      bottom:10%;
+    }
+    &.dark {
+      background:transparent;
+      filter: ~"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#66000000', endColorstr='#66000000')";
+      border-bottom-color:#ffdb05;
+      color:#fff;
+      text-shadow: 0 1px 6px #000;
+      h3 { color: #ffdb05; }
+    }
+  }
 }

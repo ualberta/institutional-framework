@@ -1,4 +1,4 @@
-footer{
+footer {
   margin-top: 20px;
 }
 
@@ -11,11 +11,16 @@ footer{
 }
 
 .bottom-footer-row {
-  background:  #007c41;
   border-top:  3px solid #ffdb05;
   margin: 0;
   color: #fff;
   .box-shadow(inset 0px 1px 10px darken(#007c41,5%));
+  background: #007c41 url(../img/banner-bg.svg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  text-shadow: 0 1px 6px #00582E;
+
   p {
     margin: 0;
     padding: 0;
@@ -35,28 +40,6 @@ footer{
 p.note {
   color: #666;
   font-size:  0.92307692307692em;
-}
-
-.social-media i[class*="icon"] {
-  font-size: 16px;
-}
-
-.social-media {
-  font-size:  1.1em;
-  line-height: 1.5em;
-  font-family: @headingsFontFamily;
-  font-weight: @headingsFontWeight;
-}
-
-.social-media li {
-  display: inline-block;  .ie7-inline-block();
-  padding:5px 6px 5px 0;
-}
-
-.social-media a {
-  &:hover {
-    text-decoration:none;
-  }
 }
 
 .footer-inner {
@@ -102,60 +85,84 @@ ul.footer-quick-links {
   }
 }
 
+.social-media li { display:inline-block; }
+
 .btn-social-media {
   padding: 6px 10px 6px 7px;
   display: inline-block;  .ie7-inline-block();
-  background: rgba(255, 255, 255, 0.25);
-  #gradient > .vertical(rgba(255, 255, 255, 0.35),rgba(255, 255, 255, 0.01));
-  text-shadow: none;
-  font-family: @heavyFontFamily;
-  font-weight: @heavyFontWeight;
-  text-transform: uppercase;
-  vertical-align: middle;
-  .border-radius(4px);
-  .box-shadow(1px 1px 1px rgba(0,0,0,0.1));
-  color: #999;
-  font-size: 13px;
-  line-height: 1em;
-  
-  &:hover {
-    background:#fff;
-    color: #007c41;
-    cursor:pointer;
-  }
-  
-  span {
-    display: inline-block;  .ie7-inline-block();
-    position: relative;
-    top: -1px;
-    left: 0px;
-  }
 }
 
-.btn-social-media i[class*="icon"] {
-  line-height: 1em;
-  background: #007c41;
-  padding: 4px 0px 0px 0px;
-  margin-right: 4px;
-  border-radius: 2px;
-  color: #fff;
+/* Webicons by Adam Fairhead at Fairhead Creative http://fairheadcreative.com */
+.btn-social-media i {
+  display: inline-block;
+  background-size: 100% 100%;
+  width: 3em;
+  height: 3em;
+  text-align: left;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px; 
 }
-.btn-social-media i.icon-flickr{
-	background: transparent url(../img/flickr-icon.png) no-repeat center center;
-	background-color:#007c41;
-	height:17px;
-	width:22px;
-	
+
+.btn-social-media i:before { content: ""; display:none; }
+
+.btn-social-media span { display:none; }
+
+.btn-social-media a:hover i {
+  margin: -1px 0 1px;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+
+
+.social-media i[class*='icon-']:before {
+  display:none;
+  content: "";
 }
-.flickr-footer span{
-	top:-3px;
-}
-.btn-social-media i.icon-youtube{
-	background: transparent url(../img/youtube-icon.png) no-repeat center center;
-	background-color:#007c41;
-	height:17px;
-	width:20px;
-}
-.youtube-footer span{
-	top:-3px;
-}
+
+.no-svg .social-media .icon-blogger {
+  background: url("/design/img/webicons/webicon-blogger-m.png"); }
+
+.svg .social-media .icon-blogger {
+  background: url("/design/img/webicons/webicon-blogger.svg"); }
+
+.no-svg .social-media .icon-facebook {
+  background: url("/design/img/webicons/webicon-facebook-m.png"); }
+
+.svg .social-media .icon-facebook {
+  background: url("/design/img/webicons/webicon-facebook.svg"); }
+
+.no-svg .social-media .icon-flickr {
+  background: url("/design/img/webicons/webicon-flickr-m.png"); }
+
+.svg .social-media .icon-flickr {
+  background: url("/design/img/webicons/webicon-flickr.svg"); }
+
+.no-svg .social-media .icon-googleplus {
+  background: url("/design/img/webicons/webicon-googleplus-m.png"); }
+
+.svg .social-media .icon-googleplus {
+  background: url("/design/img/webicons/webicon-googleplus.svg"); }
+
+.no-svg .social-media .icon-linkedin {
+  background: url("/design/img/webicons/webicon-linkedin-m.png"); }
+
+.svg .social-media .icon-linkedin {
+  background: url("/design/img/webicons/webicon-linkedin.svg"); }
+
+.no-svg .social-media .icon-twitter {
+  background: url("/design/img/webicons/webicon-twitter-m.png"); }
+
+.svg .social-media .icon-twitter {
+  background: url("/design/img/webicons/webicon-twitter.svg"); }
+
+.no-svg .social-media .icon-youtube {
+  background: url("/design/img/webicons/webicon-youtube-m.png"); }
+
+.svg .social-media .icon-youtube {
+  background: url("/design/img/webicons/webicon-youtube.svg"); }
+

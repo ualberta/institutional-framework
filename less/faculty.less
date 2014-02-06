@@ -1,7 +1,7 @@
 /*
  * UAlberta Faculty CSS
  *
- * Copyright 2012 UAlberta
+ * Copyright 2013 UAlberta
  */
  
  /******** FRAMEWORK BASE START *********/
@@ -12,26 +12,19 @@
  
  /******** FRAMEWORK BASE END *********/
 
-
 @import "faculty/modules/tertiary-links.less";
-@import "faculty/modules/left-nav.less";
+@import "faculty/modules/nav.less";
 @import "faculty/modules/news.less";
-@import "faculty/modules/feature-area.less";
-
-
-@import "faculty/page-elements/base.less";
-@import "faculty/blade.less";
-@import "faculty/banner.less";
-@import "faculty/intro.less";
-@import "faculty/nav.less";
-
-@import "faculty/pages/home.less";
-@import "faculty/pages/secondary.less";
-@import "faculty/pages/third.less";
-@import "faculty/pages/events.less";
 @import "faculty/modules/submit-event.less";
-@import "faculty/modules/audience-area.less";
-@import "faculty/modules/module-base.less";
+
+@import "faculty/pages/layout.less";
+@import "faculty/pages/events.less";
+
+@import "faculty/departments.less";
+
+@import "faculty/fallbacks.less";
+
+@import "faculty/hack-fix.less"; // ideally this will be empty
 
 // Utility classes
 @import "framework/base/utilities.less"; // Has to be last to override when necessary

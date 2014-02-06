@@ -87,7 +87,7 @@ a:hover {
   #em > .padding(10,@baseFontSizepx);
   background: #fff;
   border: none;
-  .border-radius(3px);
+  .border-radius(4px);
   .box-shadow(0 1px 4px rgba(0, 30, 15, 0.2));
 }
 
@@ -137,10 +137,18 @@ p.secondary-text {
 	border-bottom: 1px solid rgba(0, 50, 25, 0.35);
 	border-top: 1px solid rgba(0, 50, 25, 0.25);
 	background-color: rgba(255, 200, 10, 0.1);
-	padding: 10px;
+	padding: 0.8333em;
 	.border-radius(4px);
 }
 
+
+// no more collapsing sidebars - Jan 20
+.sidebar-content.sidebar-collapse.collapse {
+	height:auto!important;
+}
+
+
+/* COMMENTED OUT NOV.18, 2013 - Reason: not in use 
 .status-message {
 	position: relative;
 	margin: 0.79em 0;
@@ -187,4 +195,6 @@ p.secondary-text {
 		border-bottom-width: 1px;
 		margin-top: 0;
 	}
+
 }
+*/

@@ -1,0 +1,413 @@
+.nav-mobile { display:block; position:relative; }
+.main-navigation { display:none; }
+
+@media (min-width: 43.125em) {
+
+  .nav-mobile { display:none; }
+  .main-navigation { display:block }
+
+//*****************************************
+//** NAVIGATION
+//******************************************
+//   Medicine Nav Widths:
+//      About Us:        64
+//      Programs:        72
+//      Departments:     96
+//      Research:        68
+//      Communities:     91
+//      Alumni:          50
+//      ------------------------
+//      TOTAL:           441
+//*****************************************/
+  
+  @totalNavWidth: 441px;
+  
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: percentage(64/@totalNavWidth);
+      }
+      .nav2 {
+        width: percentage(72/@totalNavWidth);
+      }
+      .nav3 {
+        width: percentage(96/@totalNavWidth);
+      }
+      .nav4 {
+        width: percentage(68/@totalNavWidth);
+      }
+      .nav5 {
+        width: percentage(91/@totalNavWidth);
+      }
+      .nav6 {
+        width: percentage(50/@totalNavWidth);
+      }
+    }
+  }
+  
+  .navigation-inner ul.section-navigation li {
+    border:none;
+    float:none;
+  }
+
+  .main-navigation > li .sub-menu {
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .main-navigation > li:hover .sub-menu {
+    display: block;
+    visibility: visible;
+    width:  auto;
+    height: auto;
+    .opacity(100);
+  }
+
+  .main-navigation > li > a { position:relative;}
+
+  .main-navigation > li:hover > a:after { 
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 1em solid rgba(0, 0, 0, 0);
+    border-top: 1em solid #7AC900;
+    z-index: 999;
+    bottom: -2em;
+    display: block;
+    left: 50%;
+    margin-left: -0.5em;
+  }
+
+  .main-navigation > li:hover > a:only-child:after {
+    content:none;
+    display:none;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    top: auto;
+    left: 0em;
+    right:0em;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #ccd6cc;
+    border-bottom: 3px solid #7ac900;
+    border-top: 1px solid #acb1af;
+    .border-radius(0px 0px 4px 4px);
+    padding: 1% 2%;
+    // #gradient > .vertical-three-colors(#fbfbfb, #ffffff, 33%, #E7EDE7);
+    .box-shadow(inset 0px 1px 1px #ddd, 0px 5px 15px rgba(0,0,0,0.2));
+    
+    .transition(opacity 0.1s linear);
+    .opacity(0);
+  }
+  
+  .sub-menu ul li a {
+    text-align:left;
+  }
+  
+  .sub-menu .section-description {
+    text-align:left;
+    font-size:0.9em;
+    line-height:1.5em;
+  }
+
+  .sub-menu ul,
+  .sub-menu ul li,
+  .sub-menu ul li a {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-menu .section-title {
+    display: none;
+  }
+  
+  .sub-menu .section-navigation,
+  .sub-menu .section-description {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .sub-menu-content { text-align: left; }
+  
+  .sub-menu ul li a {
+    font-family: sans-serif;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px dotted #ddd;
+    padding: 2% 0;
+    color: @linkColor;
+    line-height: 1.2em;
+    
+    &:hover {
+      color: @linkColorHover;
+      padding-left:4.5%;
+      padding-right: 2%;
+      margin-left: -4.5%;
+      margin-right: -2%;
+      background:  #FFF5B8;
+      border-top: 1px solid #E1D8A4;
+      border-bottom: 1px solid #E1D8A4;
+      border-right: 1px solid #E1D8A4;
+      margin-top: -1px;
+      text-shadow: none;
+      .border-radius(0px 4px 4px 0px);
+    }
+  }
+}
+
+// FIXED DROP DOWN NAV STYLING
+@media (min-width: 43.125em) {
+
+  // we never want to display an empty section description
+  .section-description:empty { display:none!important; }
+
+  .main-navigation>li:hover .sub-menu {
+    left: 50%;
+    width: 20em;
+    margin-left: -11em;
+    padding: 1em;
+    overflow: visible;
+    top:auto;
+  }
+
+  .sub-menu .section-navigation {
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+
+  .sub-menu .section-description {
+    border-bottom:3px solid #ffdb05;
+    background:#fff;
+    padding:1em;
+    top:0;
+    position:absolute;
+    right:-16em;
+    width:17em;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .main-navigation {
+    &>li { position:relative; }
+    &>li.nav1:hover .sub-menu {
+      left:0;
+      margin-left:0;
+    }
+    // move dropdown for #5 to the left so it doesnt cause scroll
+    &>li.nav5:hover .sub-menu {
+      left:auto;
+      margin-left:0;
+      right:-5em;
+    }
+    &>li:last-child:hover .sub-menu {
+      left:auto;
+      margin-left:0;
+      right:0;
+    }
+    .nav4 .sub-menu .section-description,
+    .nav5 .sub-menu .section-description,
+    .nav6 .sub-menu .section-description {
+      right:auto;
+      left:-17em;
+      -webkit-border-radius: 0 0 0 4px;
+      -moz-border-radius: 0 0 0 4px;
+      border-radius: 0 0 0 4px;
+    }
+  }
+
+  .sub-menu ul li a {
+    padding: 0.4em 0;
+    &:hover {
+      padding-left:1em;
+      padding-right: 1em;
+      margin-left: -1em;
+      margin-right: -1em;
+      -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+       border-radius: 0px;
+       border-right:none;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  // safe to reset .nav5 drop down
+  .main-navigation {
+    &>li.nav5:hover .sub-menu {
+      left: 50%;
+      margin-left: -11em;
+      right:auto;
+    }
+    .nav4 .sub-menu .section-description,
+    .nav5 .sub-menu .section-description,
+    .nav6 .sub-menu .section-description {
+      right:auto;
+      left:-21em;
+    }
+  }
+  .sub-menu .section-description {
+    right:-20em;
+    width:21em;
+  }
+}
+// END FIXED DROP DOWN STYLING
+
+// FACULTY LEFT NAVIGATION (TABLET+)
+@media screen and (min-width: 43.15em) {
+
+  .nav-wrapper { display:block; }
+
+  .tertiary .navigation {
+    margin-right:1em;
+  }
+  .tertiary .navigation h2 {
+    display: none;
+  }
+  .tertiary .navigation ul li a {
+    display: block;
+    border-bottom: 1px dotted #DDD;
+    padding: 0.4em 0;
+  }
+  .tertiary .navigation ul.level-1 li a {
+    font-weight: normal;
+    padding-left: 1em;
+  }
+  .tertiary .navigation ul.level-1 li a:hover,
+  .tertiary .navigation ul.level-1 li.nav-current > a {
+    padding-left: 1.92857142857143em;
+  }
+  .tertiary .navigation ul.level-2 li a {
+    padding-left: 2em;
+  }
+  .tertiary .navigation ul.level-2 li a:hover,
+  .tertiary .navigation ul.level-2 li.nav-current > a {
+    padding-left: 2.92857142857143em;
+  }
+  .tertiary .navigation ul.level-3 li a {
+    font-weight: normal;
+    padding-left: 3em;
+  }
+  .tertiary .navigation ul.level-3 li a:hover,
+  .tertiary .navigation ul.level-3 li.nav-current > a {
+    padding-left: 3.92857142857143em;
+  }
+  .tertiary .navigation ul li a:hover {
+    display: block;
+    background-color: #F6F8ED;
+    background-color: rgba(255, 245, 184, 0.15);
+    border: 1px solid #E1D8A4;
+    margin: -1px -1em 0;
+    padding-left: 0.92857142857143em;
+    padding-right: 1em;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+  .tertiary .navigation .nav-parent {
+    padding-right: 1.5em;
+  }
+  .tertiary .navigation .nav-parent:hover {
+    padding-right: 2.5em;
+
+  }
+  .tertiary .navigation .nav-toggle {
+    line-height: 1em;
+    padding: 0em;
+    top: 0.25em;
+    right: 0em;
+    font-size: 1.5em;
+    text-align: right;
+  }
+  .tertiary .navigation a:hover .nav-toggle {
+    right: 0.625em;
+  }
+  .tertiary .navigation ul li.nav-expand > a {
+    font-weight: bold;
+  }
+  .tertiary .navigation ul li.nav-current > a {
+    position: relative;
+    border-radius: 4px;
+    color: #FFF;
+    background-color:#007c41;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIiIHN0b3AtY29sb3I9IiMwMEFGNUMiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iIiBzdG9wLWNvbG9yPSIjMDA3QzQxIiBzdG9wLW9wYWNpdHk9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+);
+    background-image: -moz-linear-gradient(top, #00AF5C, #007C41);
+    background-image: -webkit-linear-gradient(top, #00AF5C, #007C41);
+    background-image: -ms-linear-gradient(top, #00AF5C, #007C41);
+    background-image: -o-linear-gradient(top, #00AF5C, #007C41);
+    background-image: linear-gradient(top, #00AF5C, #007C41);
+    background-repeat: repeat-x;
+    margin: -1px -1em 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+    font-weight: bold;
+  }
+  .tertiary .navigation ul li.nav-current > a:hover {
+    text-decoration: none;
+  }
+  .tertiary .navigation ul li.nav-current > a:after {
+    right: -6px;
+    top: 0.65em;
+  }
+  .tertiary .navigation ul li.nav-current > .nav-parent i.nav-toggle {
+    right: 0.48928571428571505em;
+  }
+  .tertiary .navigation ul li.nav-current > a .nav-toggle {
+    display: none;
+  }
+  .tertiary .navigation ul.level-0.faculty-level {
+    display: none;
+  }
+  .tertiary .navigation ul li.nav-current > ul {
+    display: block;
+  }
+  .tertiary .navigation ul li.inside > ul {
+    display:block;
+  }
+  .tertiary .navigation ul li.inside > .nav-parent {
+    font-weight:bold;
+  }
+  .tertiary .navigation ul li.inside > .nav-parent > .nav-toggle {
+    display:none;
+  }
+
+  .nav-wrapper ul li.nav-current > a:after {
+    content: "";
+    position: absolute;
+    border: none;
+    border-left: none;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #007C41;
+    background: -webkit-linear-gradient(135deg,#00A355,#008A47);
+    background: -moz-linear-gradient(135deg,#00A355,#008A47);
+    background: -ms-linear-gradient(135deg,#00A355,#008A47);
+    background: -o-linear-gradient(135deg,#00A355,#008A47);
+    background: linear-gradient(135deg,#00A355,#008A47);
+  }
+}
+// END FACULTY LEFT NAV (TABLET+)

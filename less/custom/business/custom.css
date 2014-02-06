@@ -1,0 +1,87 @@
+.banner-inner {
+  text-align: center;
+}
+.banner-inner a.site-title {
+  background: transparent url("/design/img/asob/asob-logo.svg") no-repeat center center;
+  width: 7em;
+  display: block;
+  background-size: 100% 100%;
+  margin: auto;
+  text-indent: -9999px;
+  bottom: -0.5em;
+  top: -0.25em;
+  left: 0;
+  right: 0;
+  font-size: 2.2857em;
+}
+.slide.frame {
+  position: relative;
+}
+.leather {
+  background: url("/design/img/asob/leather-texture.png"), -webkit-linear-gradient(top, #503722, #2c1905);
+  background: url("/design/img/asob/leather-texture.png"), -moz-linear-gradient(top, #503722, #2c1905);
+  background: url("/design/img/asob/leather-texture.png"), -ms-linear-gradient(top, #503722, #2c1905);
+  background: url("/design/img/asob/leather-texture.png"), -o-linear-gradient(top, #503722, #2c1905);
+  background: url("/design/img/asob/leather-texture.png"), linear-gradient(top, #503722, #2c1905);
+  padding: 1.5em;
+  color: #c4b680;
+  text-shadow: 1px 1px 4px #1c0900;
+  -webkit-box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.9), inset -3px -3px 10px #2c1905, inset 1px 1px 5px rgba(255, 200, 200, 0.15);
+  -moz-box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.9), inset -3px -3px 10px #2c1905, inset 1px 1px 5px rgba(255, 200, 200, 0.15);
+  box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.9), inset -3px -3px 10px #2c1905, inset 1px 1px 5px rgba(255, 200, 200, 0.15);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.leather:after,
+.leather:before {
+  content: "";
+  position: absolute;
+  bottom: 0.5em;
+  top: 0.5em;
+  left: 0.5em;
+  right: 0.5em;
+  border: 2px dashed #6c5631;
+  display: block;
+  z-index: 2;
+  opacity: 0.4;
+}
+.leather:before {
+  top: 0.5625em;
+  bottom: 0.4375em;
+  left: 0.5625em;
+  right: 0.4375em;
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.leather .heading {
+  font-family: "DIN Medium", "DIN Regular", sans-serif;
+  font-weight: normal;
+  margin: 0 0 0.1em;
+  margin-right: -0.0875em;
+}
+.leather .heading span {
+  color: #90ae41;
+}
+.leather .sub-heading {
+  font-family: "DIN Medium", "DIN Regular", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+a.leather:hover {
+  text-decoration: none;
+  color: #c4b680;
+  background: url("/design/img/asob/leather-texture.png"), #2c1905;
+}
+.section-description h3 {
+  margin: 0.65em 0 0.375em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.sub-menu .section-description {
+  font-size: 1em;
+}

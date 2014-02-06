@@ -1,17 +1,44 @@
+ @import "../../framework/base/variables.less"; // Modify this for custom colors, font-sizes, etc
+ @import "../../framework/base/mixins.less";
+
+.sub-menu {
+  display: none;
+}
+
+.row-fluid .primary-content-area {
+    width: 100%;
+}
+
+// hide content top row by default
+.content-top-row {
+  display:none;
+}
+
+// show content top row for homepage fma
+.homepage .content-top-row {
+  position:relative;
+  display:block;
+  text-align:center;
+  background:#242b27;
+  .box-shadow(0 1px 0px #fff);
+  z-index:1;
+  overflow:hidden;
+  border-bottom:1px solid rgba(0,0,0,0.35);
+}
+
+.content-top-row img {
+  .box-shadow(0 0 20px #000);
+  position:relative;
+  z-index:1;
+}
+
+
 @media (min-width: 43.125em) {
+
+
 
 //*****************************************
 //** NAVIGATION
-//******************************************
-//   Medicine Nav Widths:
-//      About Us:        64
-//      Programs:        72
-//      Departments:     96
-//      Research:        68
-//      Communities:     91
-//      Alumni:          50
-//      ------------------------
-//      TOTAL:           441
 //*****************************************/
   
   @totalNavWidth: 441px;
@@ -29,20 +56,138 @@
       }
       .nav4 {
         width: percentage(110/@totalNavWidth);
-          }
-       .section-navigation li{
+      }
+      .section-navigation li{
 	        width:100%;
 	        text-align:left;
-	        margin-left:-11px;
 	        border-right:0px;
+      }
     }
   }
- }
- }
- 
-   .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu{
-    right: -303px;
+
+  .navigation-inner > ul {
+    position:relative;
   }
+
+   .main-navigation > li .sub-menu {
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .main-navigation > li:hover .sub-menu {
+    display: block;
+    visibility: visible;
+    width:  auto;
+    height: auto;
+    .opacity(100);
+  }
+
+  .main-navigation > li .sub-menu {
+    position: absolute;
+    top: 2.8em;
+    left: 0em;
+    right:0em;
+    z-index: 100;
+    background: #fff;
+    .border-radius(0px 0px 4px 4px);
+    padding: 1% 2%;
+    // #gradient > .vertical-three-colors(#fbfbfb, #ffffff, 33%, #E7EDE7);
+    .box-shadow(inset 0px 1px 1px #ddd, 0px 5px 15px rgba(0,0,0,0.2));
+    border: 1px solid #ccd6cc;
+    border-bottom: 3px solid #7ac900;
+    border-top: 1px solid #acb1af;
+    .transition(opacity 0.1s linear);
+    .opacity(0);
+  }
+
+  .sub-menu ul li a {
+    text-align:left;
+  }
+  
+  .sub-menu .section-description {
+    text-align:left;
+    font-size:0.9em;
+    line-height:1.5em;
+  }
+
+  .sub-menu ul,
+  .sub-menu ul li,
+  .sub-menu ul li a {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-menu .section-title {
+    display: none;
+  }
+  
+  .sub-menu .section-navigation,
+  .sub-menu .section-description {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+  .sub-menu-content { text-align: left; }
+  
+  .sub-menu .section-navigation {
+    margin-right:4%;
+  }
+
+  .sub-menu ul li a {
+    font-family: sans-serif;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px dotted #ddd;
+    color: @linkColor;
+    line-height: 1.2em;
+    
+    &:hover {
+      color: @linkColorHover;
+      padding-left:4.5%;
+      padding-right: 2%;
+      margin-left: -4.5%;
+      margin-right: -2%;
+      background:  #FFF5B8;
+      border-top: 1px solid #E1D8A4;
+      border-bottom: 1px solid #E1D8A4;
+      border-right: 1px solid #E1D8A4;
+      margin-top: -1px;
+      text-shadow: none;
+      .border-radius(0px 4px 4px 0px);
+    }
+  }
+ 
+  .span6.footer-faculty-links,
+  .span6.vcard {
+    width:48.5%;
+    .span6 {
+      width:47%;
+    }
+  }
+  .span6.vcard {
+    margin-left:3%;
+  }
+
+ }
+
+
+@media (min-width: 61.25em) {
+  .content-wrapper.full-width .row-fluid .primary-content-area {
+    width:78%;
+  }
+}
+
+
+ 
 
  .horizontal-line{
 	 margin-top:10px;
@@ -82,8 +227,112 @@ p.join-the-convo-btn{
 }
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
 	.row-fluid .sidebar{
-	width:21%;
+	width:100%;
 	position:inherit;
 	}
 }
+
+
+// FIXED DROP DOWN NAV STYLING
+@media (min-width: 43.125em) {
+
+  // we never want to display an empty section description
+  .section-description:empty { display:none!important; }
+
+  .main-navigation>li:hover .sub-menu {
+    left: 50%;
+    width: 20em;
+    margin-left: -11em;
+    padding: 1em;
+    overflow: visible;
+    top:auto;
+  }
+
+  .sub-menu .section-navigation {
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+
+  .sub-menu .section-description {
+    border-bottom:3px solid #ffdb05;
+    background:#fff;
+    padding:1em;
+    top:0;
+    position:absolute;
+    right:-16em;
+    width:17em;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .main-navigation {
+    &>li { position:relative; }
+    &>li.nav1:hover .sub-menu {
+      left:0;
+      margin-left:0;
+    }
+    // move dropdown for #5 to the left so it doesnt cause scroll
+    &>li.nav5:hover .sub-menu {
+      left:auto;
+      margin-left:0;
+      right:-5em;
+    }
+    &>li:last-child:hover .sub-menu {
+      left:auto;
+      margin-left:0;
+      right:0;
+    }
+    .nav4 .sub-menu .section-description,
+    .nav5 .sub-menu .section-description,
+    .nav6 .sub-menu .section-description {
+      right:auto;
+      left:-17em;
+      -webkit-border-radius: 0 0 0 4px;
+      -moz-border-radius: 0 0 0 4px;
+      border-radius: 0 0 0 4px;
+    }
+  }
+
+  .sub-menu ul li a {
+    padding: 0.4em 0;
+    &:hover {
+      padding-left:1em;
+      padding-right: 1em;
+      margin-left: -1em;
+      margin-right: -1em;
+      -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+       border-radius: 0px;
+       border-right:none;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  // safe to reset .nav5 drop down
+  .main-navigation {
+    &>li.nav5:hover .sub-menu {
+      left: 50%;
+      margin-left: -11em;
+      right:auto;
+    }
+    .nav4 .sub-menu .section-description,
+    .nav5 .sub-menu .section-description,
+    .nav6 .sub-menu .section-description {
+      right:auto;
+      left:-21em;
+    }
+  }
+  .sub-menu .section-description {
+    right:-20em;
+    width:21em;
+  }
+}
+// END FIXED DROP DOWN STYLING
 

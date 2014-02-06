@@ -166,14 +166,11 @@ html[xmlns] .slides {display: block;}
     text-align: center;
     font-size:  1em;
     margin-top:1%;
-    padding-bottom: 10px;
+    padding-bottom: 0.83333em;
     .frame {
       display: inline-block;
        .ie7-inline-block();
       margin-right: 1%;
-    }
-    .thumbnail-container {
-      margin-bottom: 15px;
     }
     h3 {
       font-size:  2em;
@@ -181,40 +178,7 @@ html[xmlns] .slides {display: block;}
     } 
   }
 }
-// Dino 101
-.fma-small-dino.image-caption-container .caption {
-	.caption-text {
-		width: 65%;
-		float: left;
-	}
-	.logo-link { 
-		background: url(-/media/digitallearning/dino101/fma-dino-logo-small-green.png) no-repeat top right;
-		background-size: 155px auto;
-		height: 65px;
-		width: 33%;
-		float: left;
-	}
-}
 
-@media (max-width: 31.188em) {
-	.fma-small-dino.image-caption-container .caption {
-		.caption-text {
-			width: 65%;
-		}
-		.logo-link {
-			background-size: 100%;
-		}
-	}
-}
-
-@media (min-width: 31.250em) and (max-width: 43.0625em) {
-	.fma-small-dino.image-caption-container .caption {
-		background: rgba(0,0,0,0.45);
-		.logo-link {
-			 background-image: url(-/media/digitallearning/dino101/fma-dino-logo-small.png);
-		}
-	}
-}
 
 @media (min-width: 43.125em)
 {
@@ -234,11 +198,6 @@ html[xmlns] .slides {display: block;}
   }
 }
 
-@media (max-width: 43.0625em) {
-	.dino101 .content-holder {
-		background-position: 70% 0;
-	}
-}
 
 @media (min-width: 61.25em) {
   .fma-container.image-slider .fma-slide img.fma-background {
@@ -265,10 +224,6 @@ html[xmlns] .slides {display: block;}
     width: @fmaActiveWidth;
   }
   
-  .thumbnail-container .frame,
-  .thumbnail-container .frame {
-    width: 230px; 
-  }
 }
 
 @media (min-width: 75em) {
@@ -276,30 +231,12 @@ html[xmlns] .slides {display: block;}
     width: 878px;
     height: 313px;
   }
-  .fma-small-dino.image-caption-container .caption {
-  	background: rgba(0,0,0,0.45);
-  	.logo-link {
-  		 background-image: url(-/media/digitallearning/dino101/fma-dino-logo-small.png);
-  	}
-  }
 }
 
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
   .fma-container.image-slider .fma-slide.fma-active {
     width: 100%!important
   }
-  .thumbnail-container .frame,
-  .thumbnail-container .frame {
-    width: 165px;
-  }
-  .fma-small-dino.image-caption-container .caption {
-  	background: rgba(0,0,0,0.45);
-  	.logo-link {
-  		 background-image: url(-/media/digitallearning/dino101/fma-dino-logo-small.png);
-  	}
-  }
-  // Fix sidebar positioning under FMA on Dino hub
-  .campuslife.dino101 .sidebar {
-  	top: 509px;
-  }
+
+
 }

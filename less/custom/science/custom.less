@@ -1,97 +1,36 @@
 @media (min-width: 43.125em) {
-
-//******************************************
-//** NAVIGATION
-//******************************************
-//      Science Nav Widths:
-//		About us:        54
-//      Programs:  		 59
-//      Departments:       73
-//      Research and Teaching:        118
-//      Student Services:          90
-//      Alumni:          47
-//      ------------------------
-//      TOTAL:           441
-//*****************************************/
-  
-  @totalNavWidth: 441px;
-  
   .navigation-container {
     .navigation-inner ul li ul {
       .nav1 {
-        width: percentage(54/@totalNavWidth);
+        width: 12%;
       }
       .nav2 {
-        width: percentage(59/@totalNavWidth);
+        width: 14%;
       }
       .nav3 {
-        width: percentage(73/@totalNavWidth);
+        width: 17%;
       }
       .nav4 {
-        width: percentage(118/@totalNavWidth);
+        width: 27%;
       }
       .nav5 {
-        width: percentage(90/@totalNavWidth);
+        width: 20%;
       }
       .nav6 {
-        width: percentage(47/@totalNavWidth);
+        width: 10%;
       }
     }
   }
-  
-//  .navigation-inner ul.section-navigation li {
-//  	border:none;
-//  	float:none;
-//  	margin-left:-5px;
-//  }
-//  
-//  .navigation-inner ul.section-navigation li:hover{
-//  	margin-left:-5px;
-//  }
-//  
-//  .navigation-inner .main-navigation > li:nth-child(2):hover .sub-menu{
-//	  left: -2px;
-//  }
-//  .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu{
-//  	  right: -420px;
-//  }
-//  .navigation-inner .main-navigation > li:nth-child(6):hover .sub-menu {
-//    right: -1px;
-//  }
-//  
-//  .navigation-inner .sub-menu ul li a {
-//	  text-align:left;
-//  }
-//  
-//  .navigation-inner .sub-menu .section-description{
-//	  text-align:left;
-//	  font-size:0.9em;
-//	  line-height:1.5em;
-//	  h5 {
-//	  	margin-bottom: 0.2em;
-//	  }
-//  }
-  
 }
 
-// RSS button for Events
-.events .rss a.btn {
-	margin-top: 1em;
-	margin-bottom: 2em;
-}
 // Hide FMA
 .aboutus, .stayconnected, .benefits {
 	.feature-area {
 		display: none;
 	}
 }
-// Tab box events
-.homepage .tab-content .data-list {
-	margin-bottom: 0.8em;
-}
-.homepage .tab-content h5 {
-	margin-bottom: 0.2em;
-}
+
+
 // Big menu image links
 .navigation-inner .section-description a {
 	padding: 0;
@@ -105,7 +44,6 @@
 }
 
 // Add space beneath carousel on the subpages
-
 .contours, .graduate, .studentlife, .undergraduate, .sciencecareers, .departments {
 	.flexslider {
 		margin-bottom: 3em;
@@ -122,6 +60,7 @@
 		}
 	}
 }
+
 // Remove button underlines
 .primary-content-area p.button-container a { 
 	text-decoration: none; 
@@ -130,7 +69,6 @@
   img {
     width:  16px;
     height:  16px;
- /*   .border-radius(2px); */
     margin-right: 4px;
     margin-bottom: 1px;
   }
@@ -174,37 +112,17 @@ h5.sidebar-title {
 
 // Everything wider than mobile
 @media (min-width: 43.125em) {
-     .events .row-fluid.tertiary {
-          .sidebar {
-               width: 22.135416666666664%;
-          }
-          .primary-content-area-container {
-               width: 75.52083333333334%;
-          }
-     }
-     .events .primary-content-area .row-fluid .span6 {
-          width: 100%;
-     }
-     .events .primary-content-area .row-fluid .span6:first-child {
-          width: 100%;
-     }
-     .events .primary-content-area .row-fluid .span6 .row-fluid .span6 {
-         width: 48.61878453038674%;
-     }
      // Sidebar feature
      .sidebar-feature {
      	h5.sidebar-title, .btn {
      		margin-bottom: 10px;
      	}
-     }
+  }
 }
 
 // Tablet portrait
 @media (min-width: 43.125em) and (max-width: 61.1875em){
-// removed the margin on fake second column for events
-	.events .primary-content-area .row-fluid .span6 {
-    	margin-left: 0;
-	}
+
 // fixed the gap at top of sidebar
 	.homepage .sidebar {
 		top: 20px;
@@ -213,73 +131,10 @@ h5.sidebar-title {
 	.row-fluid.secondary .secondary-content-area .module-container {
 		width: 48.61878453038674%;
 	}
-	.events .row-fluid.secondary .secondary-content-area .module-container {
-		width: 100%;
-	}
-//	.navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu{
-//		right:-337px;
-//	}
-//	.navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-//		right:-339px;
-//	}
-//	.navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-//		right:-153px;
-//	}
-// made the faculty header a smaller font size to avoid line wrap
-	.banner-inner .site-title {
-		font-size: 28px;
-	}
 }
 
-// Everything wider than tablet
-@media (min-width: 61.25em) {
-     .events .row-fluid.tertiary {
-          .sidebar {
-               width: 18.085106382978726%;
-          }
-          .primary-content-area-container {
-               width: 79.7872340425532%;
-          }
-      }
-     .events .primary-content-area .row-fluid .span6 {
-          width: 28.617021276595743%;
-     }
-     .events .primary-content-area .row-fluid .span6:first-child {
-          width: 68.40425531914893%;
-     }
-//     .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-//       right:-333px;
-//     }
-//     
-//     .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-//       right:-150px;
-//     }
-}
 
-// Widest desktop or high-res
-@media (min-width: 75em) {
-     .events .row-fluid.tertiary {
-           .sidebar {
-               width: 14.529914529914532%;
-            }
-          .primary-content-area-container {
-               width: 82.90598290598291%;
-          }
-     }
-     .events .primary-content-area .row-fluid .span6 {
-          width: 29.059829059829063%;
-     }
-     .events .primary-content-area .row-fluid .span6:first-child {
-          width: 68.37606837606837%;
-     }  
-//     .navigation-inner .main-navigation > li:nth-child(3):hover .sub-menu{
-//         right: auto;
-//         left: -2px;
-//     }
-//     .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu{
-//         right:-415px;
-//     }
-//     .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu{
-//         right:-187px;
-//     }
+
+.sub-menu .section-description img {
+  display:block;
 }
