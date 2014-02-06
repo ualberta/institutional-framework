@@ -12,6 +12,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
+    <!-- Start Visual Website Optimizer Asynchronous Code -->
+  <script type='text/javascript'>
+  var _vwo_code=(function(){
+  var account_id=36096,
+  settings_tolerance=2000,
+  library_tolerance=2500,
+  use_existing_jquery=false,
+  // DO NOT EDIT BELOW THIS LINE
+  f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+  <!-- End Visual Website Optimizer Asynchronous Code -->
+  
   <!-- Title -->
   <title>University of Alberta</title>
   
@@ -20,10 +32,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- The Sheets -->
-  <link href="/~publicas/uofa/preview/css/homepage.css" rel="stylesheet">
+  <link href="/~publicas/uofa/css/homepage-fluid.css" rel="stylesheet">
   
   <!-- IE Stylesheets -->
-  <!--[if IE]><link href="/~publicas/uofa/preview/css/homepage-ie.css" rel="stylesheet"><![endif]-->
+  <!--[if IE]><link href="/~publicas/uofa/css/homepage-ie.css" rel="stylesheet"><![endif]-->
   <!--[if IE 7]><link href="/~publicas/uofa/preview/css/explore-icons-ie7.css" rel="stylesheet"><![endif]-->
     
   <!-- The Favicon -->
@@ -38,115 +50,55 @@
   <!-- Head Scripts: ANALYTICS/MODERNIZR ONLY!  All others before </body> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   
-  <!-- Page sepecific styling -->
+  <!-- Page specific styling -->
   <style>
-  .ualberta-home .fma-container ul.slides li .fma-content h3 {
-  	line-height: 120%;
-  }
-      @media screen {
-      
-        /*.flexslider .slides>li { display:block; } */
-        
-        .ualberta-home .fma-container ul.slides .fma-content h3 { line-height:1em; } 
-      }
   
-      @media screen and (max-width: 43.063em) {
-        .ualberta-home .fma-container ul.slides img.fma-background {
-          margin-top: 0;
-        }
-      }
+  
+      @media screen and (min-width:43.125em) {    
       
-      @media screen and (max-width: 30em) {
-        .ualberta-home .why-ualberta-row .frame {
-          padding:0;
-          margin-top:-1em;
-          margin-left:-10px;
-          margin-right:-10px;
+        .frame.why-thumbnail {
+          margin-top:1em;
         }
         
-        .ualberta-home .why-ualberta-row .frame img {
-          width:100%;
-          max-width:120%;
+        .med-excellence .feature-content {
+          width:24.5em;
+          height:7.75em;
         }
-        .fma-container.flexslider .image-left.feature-healthycampus .image-shadow {
-        	float: left;
-        	right: 40%;
+        
+        .feature-image:after {
+          border-top: none;
+          border-bottom:none;
         }
-		 .fma-container.flexslider .image-left.feature-britten .image-shadow {
-        	float: left;
-        	right: 80%;
+        
+        .feature-area .slides>li:after {
+          -webkit-box-shadow:none;
+          -moz-box-shadow:none;
+          box-shadow:none;
+        }
+        
+        .feature-area .slides {
+          max-width:90em;
+          margin:auto;
+          text-align:left;
+        }
+        
+        .feature-area {
+          background:#fff;
+          border-bottom:1px solid #e0e0e0;
+          text-align:center;
+          padding-bottom:1px;
         }
 
       }
       
-      @media screen and (max-width: 43.1em) {
-        .ualberta-home .fma-container ul.slides li .fma-content p.feature-copy {
-          width: 75%;
-          margin: 0.2em auto;
+      @media screen and (min-width:75em) {
+        ul.explore-bar li span {
+          font-size:0.41em;
         }
       }
-       
-      @media screen and (min-width: 43.125em) {
-        .ualberta-home .fma-container ul.slides li.center-content .fma-content {
-          top:0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          width: 22em;
-          height:10em;
-          text-align: center;
-          margin: auto;
-        }
-		  .ualberta-home .fma-container ul.slides li.feature-healthycampus .fma-content { 
-        	width: 32em;
-        }
-        .ualberta-home .fma-container ul.slides li.feature-healthycampus .fma-content.shade { 
-        	background: rgba(0,0,0,0.45);
-        }
+          
 
-        .ualberta-home .fma-container ul.slides li .fma-content .fma-buttons {
-          font-size:1.2em; /* Bigger buttons on feature area */
-        }
-        .ualberta-home .fma-container ul.slides li.feature-britten .fma-content { 
-        	width: 20em;
-        }
-
-      }
-      @media screen and (min-width: 61.25em) {
-        .ualberta-home .why-ualberta-row p.description {
-          margin-top:0.57em;
-        }
-      }
-
-    @media screen and (min-width: 75em) {
-      .ualberta-home .explore-bar-container ul.explore-bar li i.icon-list-alt::before,
-      .ualberta-home .explore-bar-container ul.explore-bar li i.icon-home::before {
-        margin-top:0.63em;
-      }
-     }
-      @media screen and (min-width: 43.125em) and (max-width: 61.1875em) {
-      	.ualberta-home .fma-container ul.slides li.feature-healthycampus .fma-content { 
-      		width: 30em;
-      	}
-      }
-
-     /*Ualberta intranet*/
-.ualberta-intranet p a{
-	color:#ffdb05;
-}
- @media screen and (min-width: 57.563em) and (max-width:74.938em) {
-    .ualberta-home .fma-container ul.slides li.feature-britten .fma-content.shade h3 {
-	     	font-size: 25px;
-	     }
-     }
-    @media screen and (min-width: 75em) {
-	   .ualberta-home .fma-container ul.slides li.feature-britten .fma-content { 
-	     	width: 26em;
-	     }
-     }
-   .lt-ie9 .ualberta-home .fma-container ul.slides li.feature-britten .fma-content {
-     	width: 280px;
-     }
+          
         </style>
 </head>
 <body>
@@ -171,7 +123,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <nav class="blade-navigation">
           <ul class="quick-links-container">
             <li id="ql" class="dropdown">
-              <a href="#" id="ql-toggle" class="btn btn-grey btn-small hidden-desktop" data-toggle="dropdown">
+              <a href="#" id="ql-toggle" class="btn btn-grey btn-small hidden-desktop">
                 <span class="quick-links-text">
                   Quick Links <b class="caret"></b>
                 </span>
@@ -220,21 +172,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ul>
         </nav>
       </div>
-      <div class="shadow-container"></div>
-      <div class="oval-container">
-        <div class="oval oval1"></div>
-        <div class="oval oval2"></div>
-        <div class="oval oval3"></div>
-        <div class="oval oval4"></div>
-      </div>
     </div> <!-- End Banner -->
   
     <div class="navigation-container"> <!-- Start Navigation -->
       <nav id="main-nav" class="navigation-inner ga_ualberta_main-nav">
         <ul>
           <li>
-            <a class="navigation-toggle collapsed" data-toggle="collapse" data-target=".main-navigation"><span>Show Navigation</span><i class="icon-toggle-nav"></i></a>
-            <ul class="main-navigation collapse in">
+            <a class="navigation-toggle collapsed"><span>Show Navigation</span><i class="icon-toggle-nav"></i></a>
+            <ul class="main-navigation">
               <li class="nav1" role="menuitem"><a href="http://why.ualberta.ca/">Why UAlberta?</a></li>
               <li class="nav2" role="menuitem"><a href="http://faculties.ualberta.ca/">Faculties &amp; Programs</a></li>
               <li class="nav3" role="menuitem"><a href="http://www.research.ualberta.ca/">Research</a></li>
@@ -249,58 +194,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </li>
         </ul>
       </nav>
-    </div><!-- End Navigation -->
-    
+    </div>
+    <!-- End Global Navigation -->
+    <div class="nav-mobile">
+      <div class="nav-wrapper">
+        <ul class="level-0">
+          <li class="nav1" role="menuitem"><a href="http://why.ualberta.ca/">Why UAlberta?</a></li>
+          <li class="nav2" role="menuitem"><a href="http://faculties.ualberta.ca/">Faculties &amp; Programs</a></li>
+          <li class="nav3" role="menuitem"><a href="http://www.research.ualberta.ca/">Research</a></li>
+          <li class="nav4" role="menuitem"><a href="http://admission.ualberta.ca/">Admissions</a></li>
+          <li class="nav5" role="menuitem"><a href="http://campuslife.ualberta.ca/">Campus Life</a></li>
+          <li class="nav6" role="menuitem"><a href="http://news.ualberta.ca/">News &amp; Events</a></li>
+          <li role="menuitem" class="audience-link"><a href="http://prospective.ualberta.ca/">Prospective Students</a></li>
+          <li role="menuitem" class="audience-link"><a href="http://students.ualberta.ca/">Current Students</a></li>
+          <li role="menuitem" class="audience-link"><a href="http://facultystaff.ualberta.ca/">Faculty &amp; Staff</a></li>
+          <li role="menuitem" class="audience-link"><a href="http://www.alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
+        </ul>
+      </div>
+    </div>
   </header> <!-- End Header -->
 
   <div class="content-wrapper ualberta-home">
-    <div id="fma-carousel" class="fma-container container flexslider">
-      <ul class="slides"> 
-         <li class="ga_ualberta_fma caption-left-bottom image-left feature-britten">
-           <span class="image-shadow">
-             <img class="fma-background" src="/~publicas/uofa/img/features/feature-britten.jpg" alt="string orchestra" />
-           </span>
-           <div class="fma-content shade">
-             <h3>The Company of Heaven: Britten at 100</h3>
-             <p class="feature-copy">Live at the Winspear, Nov. 17</p>
-              <div class="fma-buttons">
-                <a href="http://uofa.ualberta.ca/music-and-drama-shows" class="btn btn-green btn-micro">Learn more</a>
-              </div>
-           </div>
-          </li> 
-      <li class="ga_ualberta_fma caption-right-bottom image-left feature-healthycampus">
-         <span class="image-shadow">
-           <img class="fma-background" src="/~publicas/uofa/img/features/feature-healthycampus2.jpg" alt="Healthy Campus Symposium" />
-         </span>
-         <div class="fma-content shade">
-           <h3>Healthy Campus Symposium: Saturday, Nov. 16</h3>
-           <p class="feature-copy">Create a healthier campus and make a meaningful difference by attending the Healthy Campus Symposium.</p>
-            <div class="fma-buttons">
-              <a href="http://www.studenthealth.ualberta.ca/Heroes%20For%20Health.aspx" class="btn btn-green btn-micro">Learn more</a>
+    <div id="homepage-feature-area" class="feature-area">
+      <ul class="slides">
+        <li class="ga_ualberta_fma">
+          <div class="feature-wrapper med-excellence">
+            <div class="feature-image focus-center">
+              <img src="http://ualberta.ca/~publicas/uofa/img/feature/fma-med-excellence.jpg" alt="Medical education in excellent health " />
             </div>
-         </div>
-        </li>
-        </ul>
+              <div class="feature-content left-island bottom-island">
+                <h3>Medical education in excellent health</h3>
+                <p>Students at top-ranked Cambridge University single out UAlberta MD program.</p>
+                <div class="feature-buttons">
+                  <a href="http://www.med.ualberta.ca/news/2014/january/cambridge" class="btn btn-green btn-micro read">Learn More</a>
+                </div>
+              </div>
+            </div>
+        </li>            
+      </ul>
     </div>
   <div class="content-top-row">
-    <div class="content-container container"> 
-      <div class="why-ualberta-row row-fluid ga_ualberta_why-ualberta"> 
-        <div class="span">
-            <div class="frame">
-              <div class="hover-caption-container">
-                <a href="http://news.ualberta.ca/newsarticles/2013/september/ualberta-alumni-founded-organizations-a-staggering-engine-of-albertas-prosperity">
-                  <img src="/~publicas/uofa/img/alumni-impact-img.jpg" />
-                </a>
-              </div>
-            </div>
-            <h3>$348.5 Billion Engine</h3>
-            <p class="description">Landmark study by Faculty of Business professors Tony Briggs and Jennifer Jennings highlights the economic and social impact of UAlberta alumni. <a href="http://news.ualberta.ca/newsarticles/2013/september/ualberta-alumni-founded-organizations-a-staggering-engine-of-albertas-prosperity">See the results.</a></p>
-          <div class="button-container pull-right">
-            <a href="http://admission.ualberta.ca/" class="btn btn-apply km_1000_ualberta">Apply Now</a>
-            <a href="http://www.careers.ualberta.ca/" class="btn btn-work km_1001_ualberta">Careers</a>
-            <a href="http://www.giving.ualberta.ca/" class="btn btn-give km_1002_ualberta">Give to the U of A</a>
-          </div>
-        </div>
+    <div class="why-ualberta-row row-fluid ga_ualberta_why-ualberta"> 
+      <div class="frame why-thumbnail">
+          <a class="image-shadow" href="http://news.ualberta.ca/newsarticles/2013/september/ualberta-alumni-founded-organizations-a-staggering-engine-of-albertas-prosperity">
+            <img src="/~publicas/uofa/img/alumni-impact-img.png" />
+          </a>
+      </div>
+      <div class="why-text">
+        <h3>$348.5 Billion Engine</h3>
+        <p class="description">Landmark study by Faculty of Business professors Tony Briggs and Jennifer Jennings highlights the economic and 
+        social impact of UAlberta alumni. <br /><a href="http://news.ualberta.ca/newsarticles/2013/september/ualberta-alumni-founded-organizations-a-staggering-engine-of-albertas-prosperity">See the results.</a></p>            
+      </div>
+      <div class="button-container">
+        <a href="http://admission.ualberta.ca/" class="btn btn-apply km_1000_ualberta">Apply Now</a>
+        <a href="http://www.careers.ualberta.ca/" class="btn btn-work km_1001_ualberta">Careers</a>
+        <a href="http://www.giving.ualberta.ca/" class="btn btn-give km_1002_ualberta">Give to the U of A</a>
       </div>
     </div>
   </div>
@@ -310,9 +258,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="main-content span">
       
         <div class="row-fluid">
-          <div class="module-container extrude ph-explore span12 ga_ualberta_explore" style="overflow:hidden;">
+          <div class="module-container ph-explore span12 ga_ualberta_explore" style="overflow:hidden;">
           <div id="explore-bar" class="explore-bar-container">
-<ul class="explore-bar slides">
+            <ul class="explore-bar slides">
+              <li>
+                <a href="http://uofa.ualberta.ca/dinosaurs/dino101">
+                  <i class="icon-exp-dino" style="text-indent:-4px"></i>
+                  <span>Dino 101</span>
+                </a>
+              </li>
               <li>
                 <a href="http://www.bookstore.ualberta.ca/">
                   <i class="icon-exp-bookstore"></i>
@@ -472,10 +426,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       <div class="span sidebar"> <!-- Sidebar Start -->
         <div class="extrude twitter-module">
-          <h5 class="sidebar-title collapsed"  data-toggle="collapse" data-target=".twitter-collapser">
+          <h5 class="sidebar-title">
             <a href="http://twitter.com/#!/ualberta"><i class="icon-twitter"></i> Twitter</a>
           </h5>
-          <div class="sidebar-content twitter-collapser collapse in">
+          <div class="sidebar-content">
 		<p>Join the more than 21,000 people who follow and interact with UAlberta on Twitter.</p>
 		<div>
               <a href="https://twitter.com/ualberta" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @ualberta</a>
@@ -485,11 +439,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       <div class="extrude links-module ga_ualberta_keep-in-touch">
-          <h5 class="sidebar-title collapsed" data-toggle="collapse" data-target=".social-media-links">
+          <h5 class="sidebar-title">
             <a href="http://www.uofa.ualberta.ca/keepintouch"><i class="icon-comments"></i> Keep In Touch</a>
           </h5>
-          <div class="sidebar-content social-media-links links collapse in">
-            <ul>
+          <div class="sidebar-content">
+            <ul class="data-list">
               <li><a href="http://www.facebook.com/ualberta"><img src="/~publicas/uofa/img/icons/icon_facebook.png"/> Facebook</a></li>
               <li><a href="https://foursquare.com/ualberta"><img src="/~publicas/uofa/img/icons/icon_foursquare.png"/> Foursquare</a></li>
               <li><a href="http://ualberta.tumblr.com/"><img src="/~publicas/uofa/img/icons/icon_tumblr.png"/> Tumblr</a></li>
@@ -531,25 +485,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>  <!-- Footer Container End -->
     </div> <!-- Footer Bottom Row End -->
   </footer> <!-- Footer End -->
-  
-  <div id="videoModal" class="modal hide fade">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3>Video Modal</h3>
-    </div>
-    <div class="modal-body">
-      <div class="video-mod-container">
-        <iframe type="text/html" src="" style="min-width: 300px; min-height: 100px;" frameborder="0"></iframe>
-      </div>
-    </div>
-  </div>
  
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <!-- scripts concatenated and minified via build script -->
-<script src="/~publicas/uofa/js/bootstrap.min.js"></script>
-<script src="/~publicas/uofa/js/ualberta/institutional.js"></script>
+<script src="/~publicas/uofa/js/ualberta/institutional-fluid-qa.js"></script>
 <script src="/~publicas/uofa/js/ualberta/jquery.flexslider-min.js"></script>
 <script>
 	var UAlberta = UAlberta || {};
@@ -642,10 +583,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
     (function($) {
       $(document).ready(function() {
-    
-      // collapser
-      $('.collapse').collapse();
-      
       
       $("#explore-bar").flexslider({
       	animation: "slide",
@@ -661,7 +598,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         touch: true
       });
       
-      $("#fma-carousel").flexslider();
+      //$("#fma-carousel").flexslider();
       
       // Fetch News
       // --------------------
@@ -708,21 +645,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
        }, 5);
       
-			// Video Modal
-			// -------------------
-			$(document).on("click", ".video-modal-link", function () {
-			  var videoSrc = $(this).attr('href');
-			  // no modal for mobile
-			  if($(window).width() < 500) {
-			    window.location = videoSrc;
-			  }
-			  $('#videoModal iframe').attr('src', videoSrc);
-			  $('#videoModal .modal-header h3').text($(this).data('title'));
-			});
-			
-			$('#videoModal').bind('hidden', function () {
-			  $('#videoModal iframe').attr('src', '');
-			});
 			
 			var options ={};
 			options.selector = '.search-query'; 

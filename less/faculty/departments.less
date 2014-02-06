@@ -1,8 +1,8 @@
-.content {
+.tertiary .content {
 	// remove top margin if paragraph is first child
 
 	// taken out until description is given a specific class
-	& > p.page-description {
+	& > p:nth-child(1) {
 		margin-top:0;
 		font-size:1.2em;
 	    line-height:1.42em;
@@ -19,16 +19,15 @@
 		margin-top:0;
 	} 
 
-	.flexslider {
-		padding:0;
-		background:transparent;
-	}
-
 	.feature-area {
 
 		width:100%;
 		margin-top:0;
 		position:relative;
+
+		.flexslider.single {
+			padding:0;
+		}
 
 		// default treatment for 3rd level feature
 		img { 
@@ -70,11 +69,25 @@
 			a { color: #ffdb05; }
 		}
 
+		// show border
+		.show-border {
+			top:5px;
+			margin: 5px 5px 10px;
+		}
+
+		.show-border.image-caption-container:after {
+			.box-shadow(none);
+		}
+
+		.show-border.image-caption-container .caption {
+			border-bottom: none;
+		}
+
 	}
 } 
 
 @media screen and (min-width: 43.125em) {
-	.content {
+	.tertiary .content {
 		// space out the boxes to occupy full row width
 		.rmi-three,
 		.rmi-two {
