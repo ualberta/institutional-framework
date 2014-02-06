@@ -1,3 +1,45 @@
+@import "../../framework/base/mixins.less";
+
+
+// HACK FIXES
+.span5.secondary-content-area {
+
+  .news-list .news-row .news-description{
+    margin-left:0;
+  }
+
+}
+
+.w-image-row {
+min-height: 110px;
+position: relative;
+padding-left: 100px;
+}
+
+.frame.w-image-thumbnail {
+position: absolute;
+width: 80px;
+height: 80px;
+top: 10px;
+left: 0;
+  a{
+    padding:0;
+    border:none;
+  }
+  a:hover {
+    padding:0;
+    margin:0;
+    border:none;
+    background:transprent;
+  }
+}
+
+.news-row {
+  .clearfix();
+}
+
+// END HACK FIXES
+
 @media (min-width: 43.125em) {
 
 //*****************************************
@@ -41,13 +83,6 @@
   }
 }  
 
-.navigation-inner .main-navigation>li:nth-child(2):hover .sub-menu {
-	right: -330px;
-}
-  
-.news-archive-list .frame {
-	width: 166px;
-}
 
 p.pullquote {
     width: 33%;
@@ -72,99 +107,91 @@ p.teaser {
 }
 
 
-.w-image-list li {
-  position: relative;
-  min-height: 194px;
-}
-.w-image-list li.bottom-row {
-  height: auto;
-  min-height: 0;
-}
-.w-image-list li h4, 
-.w-image-list li p {
-  padding: 0 0 0 190px;
-}
-.w-image-thumbnail {
-  max-width: 166px;
-  margin: 0 10px 5px 0;
-  min-width: 166px;
-  display: inline-block;
-  float: left;
-  top: 9px;
-  position: absolute;
-}
-.w-image-thumbnail a {
-  min-width: 166pxpx;
-  height: 166px;
-  overflow: hidden;
-}
-.w-image-thumbnail a img {
-  max-width: none;
-  height: 166px;
-}
+// .w-image-list li {
+//   position: relative;
+//   min-height: 194px;
+// }
+// .w-image-list li.bottom-row {
+//   height: auto;
+//   min-height: 0;
+// }
+// .w-image-list li h4, 
+// .w-image-list li p {
+//   padding: 0 0 0 190px;
+// }
+// .w-image-thumbnail {
+//   max-width: 166px;
+//   margin: 0 10px 5px 0;
+//   min-width: 166px;
+//   display: inline-block;
+//   float: left;
+//   top: 9px;
+//   position: absolute;
+// }
+// .w-image-thumbnail a {
+//   min-width: 166pxpx;
+//   height: 166px;
+//   overflow: hidden;
+// }
+// .w-image-thumbnail a img {
+//   max-width: none;
+//   height: 166px;
+// }
 
-@media (max-width: 61.25em) {
-  .w-image-list li {
-    min-height: 153px;
-  }
-  .w-image-list li h4, 
-  .w-image-list li p {
-    padding: 0 0 0 155px;
-  }
-  .w-image-thumbnail {
-    max-width: 133px;
-    min-width: 133px;
-  }
-  .w-image-thumbnail a {
-    min-width: 133px;
-    height: 133px;
-  }
-  .w-image-thumbnail a img {
-    height: 133px;
-  }
-  .archive-thumbnail img {
-    height: 133px;
-  }
-  .frame.archive-thumbnail {
-    width: 133px
-  }
-}
+// @media (max-width: 61.25em) {
+//   .w-image-list li {
+//     min-height: 153px;
+//   }
+//   .w-image-list li h4, 
+//   .w-image-list li p {
+//     padding: 0 0 0 155px;
+//   }
+//   .w-image-thumbnail {
+//     max-width: 133px;
+//     min-width: 133px;
+//   }
+//   .w-image-thumbnail a {
+//     min-width: 133px;
+//     height: 133px;
+//   }
+//   .w-image-thumbnail a img {
+//     height: 133px;
+//   }
+//   .archive-thumbnail img {
+//     height: 133px;
+//   }
+//   .frame.archive-thumbnail {
+//     width: 133px
+//   }
+// }
 
-@media (max-width: 43.0625em) {
+// @media (max-width: 43.0625em) {
     
-  .w-image-list li {
-    min-height: 120px;
-  }
-  .w-image-list li h4, 
-  .w-image-list li p {
-    padding: 0 0 0 120px;
-  }
-  .w-image-thumbnail {
-    max-width: 100px;
-    min-width: 100px;
-  }
-  .w-image-thumbnail a {
-    min-width: 100px;
-    height: 100px;
-  }
-  .w-image-thumbnail a img {
-    height: 100px;
-  }
-  .archive-thumbnail img {
-    height: 100px;
-  }
-  .frame.archive-thumbnail {
-    width: 100px;
-  }
+//   .w-image-list li {
+//     min-height: 120px;
+//   }
+//   .w-image-list li h4, 
+//   .w-image-list li p {
+//     padding: 0 0 0 120px;
+//   }
+//   .w-image-thumbnail {
+//     max-width: 100px;
+//     min-width: 100px;
+//   }
+//   .w-image-thumbnail a {
+//     min-width: 100px;
+//     height: 100px;
+//   }
+//   .w-image-thumbnail a img {
+//     height: 100px;
+//   }
+//   .archive-thumbnail img {
+//     height: 100px;
+//   }
+//   .frame.archive-thumbnail {
+//     width: 100px;
+//   }
     
-}
+// }
 
-.sidebar .data-list li:hover {
-    padding: 0 10px 1px 10px;
-}
 
-.sidebar .data-list li a:hover {
-    margin-right: -10px;
-    margin-left: -10px;
-    padding-bottom: 2px; 
-}
