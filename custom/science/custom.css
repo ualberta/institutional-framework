@@ -1,13 +1,108 @@
-@media (min-width:43.125em){.navigation-container .navigation-inner ul li ul .nav1{width:12%;} .navigation-container .navigation-inner ul li ul .nav2{width:14%;} .navigation-container .navigation-inner ul li ul .nav3{width:17%;} .navigation-container .navigation-inner ul li ul .nav4{width:27%;} .navigation-container .navigation-inner ul li ul .nav5{width:20%;} .navigation-container .navigation-inner ul li ul .nav6{width:10%;}}.aboutus .feature-area,.stayconnected .feature-area,.benefits .feature-area{display:none;}
-.navigation-inner .section-description a{padding:0;display:inline;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none;text-decoration:underline;}.navigation-inner .section-description a:hover{text-decoration:none;}
-.contours .flexslider,.graduate .flexslider,.studentlife .flexslider,.undergraduate .flexslider,.sciencecareers .flexslider,.departments .flexslider{margin-bottom:3em;}
-.primary-content-area p a,.sidebar p a{text-decoration:underline;color:#007C41;}.primary-content-area p a:hover,.sidebar p a:hover{text-decoration:none;}
-.primary-content-area p.button-container a{text-decoration:none;}
-.social-media-links img{width:16px;height:16px;margin-right:4px;margin-bottom:1px;}
-.btn-etrail,.btn-travelevents{margin-bottom:1em;}
-.btn-social-media.ftr-flickr,.btn-social-media.ftr-youtube{padding-bottom:3px;}.btn-social-media.ftr-flickr span,.btn-social-media.ftr-youtube span{top:-5px;}
-.btn-social-media.ftr-flickr i,.btn-social-media.ftr-youtube i{height:16px;width:20px;}
-.btn i.icon-circle-arrow-right{font-size:1.5em;vertical-align:middle;line-height:35%;margin-left:0.2em;}
-.content h5.sidebar-title{margin:0 -0.6em 0.6em -0.6em;padding:0 0.6em 0.35714em 0.55em;}
-h5.sidebar-title i{margin-left:5px;}
-@media (min-width:43.125em){.sidebar-feature h5.sidebar-title,.sidebar-feature .btn{margin-bottom:10px;}}@media (min-width:43.125em) and (max-width:61.1875em){.homepage .sidebar{top:20px;} .row-fluid.secondary .secondary-content-area .module-container{width:48.61878453038674%;}}.sub-menu .section-description img{display:block;}
+@media (min-width: 43.125em) {
+  .navigation-container .navigation-inner ul li ul .nav1 {
+    width: 12%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav2 {
+    width: 14%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav3 {
+    width: 17%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav4 {
+    width: 27%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav5 {
+    width: 20%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav6 {
+    width: 10%;
+  }
+}
+.aboutus .feature-area,
+.stayconnected .feature-area,
+.benefits .feature-area {
+  display: none;
+}
+.navigation-inner .section-description a {
+  padding: 0;
+  display: inline;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  text-decoration: underline;
+}
+.navigation-inner .section-description a:hover {
+  text-decoration: none;
+}
+.contours .flexslider,
+.graduate .flexslider,
+.studentlife .flexslider,
+.undergraduate .flexslider,
+.sciencecareers .flexslider,
+.departments .flexslider {
+  margin-bottom: 3em;
+}
+.primary-content-area p a,
+.sidebar p a {
+  text-decoration: underline;
+  color: #007C41;
+}
+.primary-content-area p a:hover,
+.sidebar p a:hover {
+  text-decoration: none;
+}
+.primary-content-area p.button-container a {
+  text-decoration: none;
+}
+.social-media-links img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  margin-bottom: 1px;
+}
+.btn-etrail,
+.btn-travelevents {
+  margin-bottom: 1em;
+}
+.btn-social-media.ftr-flickr,
+.btn-social-media.ftr-youtube {
+  padding-bottom: 3px;
+}
+.btn-social-media.ftr-flickr span,
+.btn-social-media.ftr-youtube span {
+  top: -5px;
+}
+.btn-social-media.ftr-flickr i,
+.btn-social-media.ftr-youtube i {
+  height: 16px;
+  width: 20px;
+}
+.btn i.icon-circle-arrow-right {
+  font-size: 1.5em;
+  vertical-align: middle;
+  line-height: 35%;
+  margin-left: 0.2em;
+}
+.content h5.sidebar-title {
+  margin: 0 -0.6em 0.6em -0.6em;
+  padding: 0 0.6em 0.35714em 0.55em;
+}
+h5.sidebar-title i {
+  margin-left: 5px;
+}
+@media (min-width: 43.125em) {
+  .sidebar-feature h5.sidebar-title,
+  .sidebar-feature .btn {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 43.125em) and (max-width: 61.1875em) {
+  .homepage .sidebar {
+    top: 20px;
+  }
+  .row-fluid.secondary .secondary-content-area .module-container {
+    width: 48.61878453038674%;
+  }
+}
+.sub-menu .section-description img {
+  display: block;
+}
