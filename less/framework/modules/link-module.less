@@ -189,7 +189,7 @@
       }
     }
     li.link-mod-filter {
-      position: absolute;
+      position: static;
       width: 100%;
       bottom: 0;
       z-index:  14;
@@ -206,8 +206,20 @@
         color: #ccc;
         z-index: 16;
       }
+
       .link-mod-label {
-        padding-bottom: 2.75em;
+        color:#EEF3F0;
+      }
+      &.link-mod-active .link-mod-label:after {
+          content: "";
+          position: absolute;
+          border: 0.5em solid transparent;
+          border-left-color: #ccc;
+          width: 0;
+          height: 0;
+          left: 11.9em;
+          bottom: 1em;
+          display: block;
       }
       input {
         position: absolute;
