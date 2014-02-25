@@ -110,15 +110,5 @@ li.headline h4 a{margin:0;padding:0;display:block;background:none;border:none;wi
 .athlete-of-the-week .data-thumbnail a{height:0;overflow:hidden;padding-bottom:35%;margin-bottom:0;border:0;}
 .athlete-of-the-week .data-thumbnail a:hover{height:0;overflow:hidden;padding:.3571em .9em 35% .9em;border:0;background-color:transparent;margin-bottom:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
 .athlete-of-the-week .data-thumbnail a img{width:100%;margin-top:-5px;}
-.front-news-list li.front-news-row,.news-archive-list li{position:relative;}
-.front-news-row.bottom-row{height:auto;min-height:0;}
-.front-news-list li.front-news-row h4,.front-news-list li.front-news-row .source{padding:0 0 0 100px;}
-li.front-news-row .front-news-thumbnail{width:78px;margin:0 10px 5px 0;min-width:81px;position:absolute;top:0;overflow:hidden;padding:0;border:.35714285714285715em solid #fff;}
-li.front-news-row .front-news-thumbnail a{min-width:162px;height:78px;width:78px;overflow:hidden;margin:0 -50%;padding:0 !important;border:none;}
-li.front-news-row .front-news-thumbnail a img{margin:0;padding:0;border:none;width:200px;}
-.news-archive-list li{display:inline-block;width:100%;}
-.news-archive-list li .archive-thumbnail a{display:block;border:none;padding:0;margin:0;}
-.news-archive-list .frame.archive-thumbnail img{max-width:250px;display:inline-block;}
-.news-archive-list .frame{float:left;margin:10px 10px 10px 0;}
-@media (max-width:43.0625em){.news-archive-list .frame.archive-thumbnail img{max-width:130px;}}.content-container.container{position:relative;}
+.content-container.container{position:relative;}
 .rmi-sidebar{width:92%;margin-top:10px;}

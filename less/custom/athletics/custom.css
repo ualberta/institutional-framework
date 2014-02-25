@@ -23,33 +23,9 @@
     text-align: left;
   }
 }
-@media (min-width: 61.188em) {
-  .navigation-inner .main-navigation > li:nth-child(4):hover .sub-menu {
-    right: -359px;
-  }
-  .navigation-inner .main-navigation > li:nth-child(5):hover .sub-menu {
-    right: -196px;
-  }
+.content-top-row {
+  width: 100%;
 }
-/*** Teams Nav dropdown ***/
-.nav2 .sub-menu-content {
-  height: 230px;
-}
-.nav2 .sub-menu .section-navigation {
-  height: 235px;
-  width: 74%;
-  text-align: left;
-}
-.nav2 .sub-menu .section-navigation li {
-  width: 44%;
-  display: inline-block;
-  margin-right: 22px;
-}
-.nav2 #phCustomContent {
-  width: 20%;
-}
-/*** END Teams Nav dropdown ***/
-/*** Highlighted Games Module ***/
 .highlighted-games {
   height: 99px;
   overflow: auto;
@@ -59,6 +35,11 @@
   -moz-box-shadow: none;
   box-shadow: none;
   margin-bottom: -14px;
+}
+@media (min-width: 1455px) {
+  .highlighted-games {
+    overflow: hidden;
+  }
 }
 .score-module .score-title a i {
   display: none;
@@ -86,8 +67,8 @@
   background: #fff5b8;
 }
 .score-title {
-  margin: -10px -10px 5px -10px;
-  padding: 5px 10px;
+  margin: -6% -6% 5px -6%;
+  padding: 5px 6%;
   border-bottom: 1px solid #dfe9e3;
   font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -199,8 +180,17 @@
   background: #fff5b8 url("/design/img/athletics-bg-panda.png") no-repeat 110% 105%;
   background-size: auto 60%;
 }
+li.headline h4 a {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background: none;
+  border: none;
+  width: 60%;
+}
 .WL span {
-  margin-left: 6px;
+  padding-left: 6px;
+  display: inline-block !important;
 }
 @media (max-width: 61.1875em) {
   .extrude.score-module {
@@ -220,31 +210,6 @@
     margin-top: -22px;
   }
 }
-/*** END Highlighted Games Module ***/
-/*** Home Page ***/
-@media (max-width: 43.0625em) {
-  .banner-inner .site-title {
-    text-indent: -283px;
-    overflow: hidden;
-  }
-}
-.banner-logo {
-  display: inline-block;
-  background: url("/design/img/athletics-top-logos.png") no-repeat center -38px;
-  height: 174px;
-  width: 274px;
-  float: right;
-}
-@media (max-width: 61.1875em) {
-  .banner-logo {
-    display: inline-block;
-    background: url("/design/img/athletics-top-logos.png") no-repeat center -5px;
-    height: 87px;
-    width: 137px;
-    float: right;
-    background-size: cover;
-  }
-}
 .primary-content-area .flexslider {
   margin-bottom: 20px;
 }
@@ -255,116 +220,36 @@
   width: 66%;
 }
 .span6.audience-area {
-  width: 31.4%
-;
+  width: 31.4%;
+  margin-bottom: 40px;
+  padding-bottom: 29%;
+  height: 0;
+  margin-left: 0;
 }
 .span6.feature-area .flexslider {
-  height: 325px;
   margin-bottom: 40px;
 }
 .span6.feature-area .slide {
-  max-height: 325px;
+  max-height: 0;
+  padding-bottom: 3%;
 }
 .span6.feature-area .image-caption-container .caption p {
   display: none;
 }
 @media (max-width: 61.1875em) {
-  .span6.feature-area,
-  .span6.audience-area {
-    width: 75%;
-    display: block;
-  }
+  
 }
 @media (max-width: 43.0625em) {
   .span6.feature-area,
   .span6.audience-area {
     width: 100%;
     display: block;
+    height: auto;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 74.9375em) and (min-width: 61.25em) {
-  .image-caption-container .caption {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 19;
-    width: 100%;
-    background: none;
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.85)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
-    color: #fff;
-    padding: 10px 0;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
-  }
-  .image-caption-container .caption a {
-    color: #ffdb05;
-  }
-  .image-caption-container .caption {
-    color: #fff;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
-  }
-  .image-caption-container .caption p,
-  .image-caption-container .caption h3 {
-    margin: 0;
-    padding: 0 10px;
-    line-height: 1.2em;
-    position: relative;
-  }
-  .content-top-row .tab-content {
-    height: 247px;
-    min-height: 247px;
-  }
-}
-@media (max-width: 500px) {
-  .image-caption-container .caption {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 19;
-    width: 100%;
-    background: none;
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.85)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
-    color: #fff;
-    padding: 10px 0;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
-  }
-  .image-caption-container .caption a {
-    color: #ffdb05;
-  }
-  .image-caption-container .caption {
-    color: #fff;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.85);
-  }
-  .image-caption-container .caption p,
-  .image-caption-container .caption h3 {
-    margin: 0;
-    padding: 0 10px;
-    line-height: 1.2em;
-    position: relative;
-  }
-  .span6.feature-area .flexslider {
-    max-height: 245px;
-    height: 245px;
-  }
-  .span6.feature-area .slide {
-    max-height: 245px;
-  }
-}
-.front-news-list {
-  padding-top: 10px;
+  
 }
 .twitter-feed {
   line-height: 1.57em;
@@ -384,39 +269,35 @@
 .twitter-follow-button {
   width: 100% !important;
 }
-/*** END Home Page ***/
-/*** Athlete of the Week ***/
+@media (max-width: 43.0625em) {
+  .primary-content-area .row-fluid .span6 {
+    width: 100%;
+  }
+}
+@media (min-width: 43.0625em) and (max-width: 61.1875em) {
+  .primary-content-area .row-fluid .span6:first-child {
+    width: 52%;
+  }
+  .primary-content-area .row-fluid .span6:nth-child(2) {
+    width: 45%;
+  }
+}
+@media (min-width: 61.1875em) {
+  .primary-content-area .row-fluid .span6 {
+    width: 100%;
+  }
+}
+@media (min-width: 74.9375em) {
+  .primary-content-area .row-fluid .span6:first-child {
+    width: 52%;
+  }
+  .primary-content-area .row-fluid .span6:nth-child(2) {
+    width: 45%;
+  }
+}
 .athlete-of-the-week li {
   position: relative;
 }
-.athlete-of-the-week .data-description {
-  padding: 0;
-}
-.athlete-of-the-week .data-list li h4 {
-  line-height: 1.2em;
-  font-size: 1.2em;
-  margin: 0px;
-  padding: 5px 0;
-  font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-shadow: 1px 1px 0 #fff;
-}
-.athlete-of-the-week .data-list li p {
-  padding: 5px 0;
-}
-.athlete-of-the-week .data-thumbnail {
-  margin: 0px 0px 5px 0;
-  display: inline-block;
-}
-.athlete-of-the-week .data-thumbnail a {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 35%;
-}
-.athlete-of-the-week .data-thumbnail a img {
-  width: 100%;
-}
-/**** Promo Items ***/
 .promotional-item {
   background: #fff;
   border: none;
@@ -480,57 +361,19 @@
   padding: 0 0 10px 0;
   margin: 0;
 }
-/*** END Promo Items ***/
-/*** Athletics Homepage News ***/
-.front-news-list li {
-  position: relative;
-  min-height: 97px;
-}
-.front-news-row.bottom-row {
-  height: auto;
-  min-height: 0;
-}
-.front-news-list h4,
-.front-news-list p {
-  padding: 0 0 0 100px;
-}
-.front-news-thumbnail {
-  width: 12%;
-  margin: 0 10px 5px 0;
-  min-width: 81px;
-  display: inline-block;
-  float: left;
-  top: 9px;
-  position: absolute;
-}
-.front-news-thumbnail a {
-  min-width: 81px;
-  height: 78px;
-  overflow: hidden;
-}
-.front-news-thumbnail a img {
-  max-width: none;
-  height: 78px;
-  margin: 0 0 0 -35%;
-}
-/*** Athletics Sub-Footer ***/
 .btn-social-media i.icon-instagram {
   background: transparent url(/design/img/instagram-icon.png) no-repeat center center;
   background-color: #007c41;
   height: 17px;
   width: 20px;
 }
-/*** END Athletics Homepage News ***/
-.news-archive-list .frame.archive-thumbnail img {
-  max-width: 250px;
-}
 @media (max-width: 43.0625em) {
   .news-archive-list .frame.archive-thumbnail img {
     max-width: 130px;
   }
 }
-/*** Front/sidebar Schedule ***/
 .the-games {
+  border: none;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -587,7 +430,6 @@
 .schedule-module:hover {
   background: #fff5b8;
 }
-/*** Sidebar Schedule ***/
 .sidebar .schedule-links {
   display: block;
 }
@@ -598,7 +440,6 @@
 .sidebar .schedule-module:hover .schedule-links a {
   background: #fff5b8;
 }
-/*** END Sidebar Schedule ***/
 @media (max-width: 61.1875em) {
   .schedule-module.upcoming-game.bears {
     background: #ffffff url("/design/img/athletics-bg-bear.png") no-repeat 98% 50%;
@@ -653,7 +494,6 @@
     background-size: auto 80%;
   }
 }
-/*** END Sidebar Schedule ***/
 .sidebar .schedule-teams a {
   display: block;
   overflow: hidden;
@@ -680,15 +520,10 @@
     background: #fff5b8;
   }
 }
-/*** END Sidebar Schedule ***/
-/*** END Schedule ***/
-/*** Team Page ***/
 .team-page .feature-area {
   width: 100%;
   padding-bottom: 12px;
 }
-/*** END Team Page ***/
-/*** Scores Schedule Page ***/
 .score-schedule-page .filter h3 {
   padding: 10px 0 0 10px;
 }
@@ -698,8 +533,7 @@
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   white-space: nowrap;
-  height: 14px;
-  display: block;
+  display: inline;
   vertical-align: bottom;
 }
 .score-schedule-page .event-list .events-description .WL {
@@ -710,11 +544,11 @@
   position: absolute;
   right: 0;
   top: 10px;
+  display: inline-block;
 }
 .score-schedule-page .event-list .events-description {
   position: relative;
 }
-/*** Athletics Roster Page ***/
 .roster {
   margin-bottom: 30px;
 }
@@ -781,8 +615,6 @@
 .roster ul .bio div {
   margin-left: 32%;
 }
-/*** END Roster Page ***/
-/*** Game Page ***/
 .game-page ul {
   list-style: none;
   margin: 0;
@@ -818,12 +650,9 @@
   margin: 0 0 10px 10px;
 }
 @media (min-width: 75em) {
-  /**** .story .featured-news .image-caption-container .image-shadow img {
-  		min-height: 237px;
-  	} ****/
-}
-.game-page {
-  padding-bottom: 10px;
+  .game-page {
+    padding-bottom: 10px;
+  }
 }
 @media (max-width: 43.0625em) {
   .story .featured-news {
@@ -832,8 +661,6 @@
     margin: 0;
   }
 }
-/*** END Game Page ***/
-/*** Media Page ***/
 .media-gallery .filter h3 {
   padding: 10px 0 0 10px;
 }
@@ -883,7 +710,6 @@
     text-align: center;
   }
 }
-/*** Sidebar Media Gallery ***/
 @media (min-width: 43.0625em) {
   .sidebar .media-gallery .event-list .frame {
     display: none;
@@ -920,20 +746,7 @@
   padding: 0;
   border: 0;
 }
-/*** END Media Gallery ***/
-/*** Feature Image Caption ***/
-.feature-caption.caption {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.85)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#d9000000', GradientType=0);
-}
-/*** END Feature Image Caption ***/
 @media only screen and (max-width: 870px) {
-  /***  Responsive Tables ***/
   #no-more-tables,
   #no-more-tables thead,
   #no-more-tables tbody,
@@ -1073,4 +886,124 @@
   .flip-scroll td:last-child {
     border-bottom: 0;
   }
+}
+.span6.feature-area {
+  margin-right: 2.5%;
+}
+.athlete-of-the-week .data-description {
+  padding: 0;
+}
+.athlete-of-the-week .data-list li h4 {
+  line-height: 1.2em;
+  font-size: 1.2em;
+  margin: 0px;
+  padding: 5px 0;
+  font-family: "DIN Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-shadow: 1px 1px 0 #fff;
+}
+.athlete-of-the-week .data-list li p {
+  padding: 5px 0;
+}
+.athlete-of-the-week .data-thumbnail {
+  margin: 0px 0px 5px 0;
+  display: inline-block;
+}
+.athlete-of-the-week .data-thumbnail a {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 35%;
+  margin-bottom: 0;
+  border: 0;
+}
+.athlete-of-the-week .data-thumbnail a:hover {
+  height: 0;
+  overflow: hidden;
+  padding: .3571em .9em 35% .9em;
+  border: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.athlete-of-the-week .data-thumbnail a img {
+  width: 100%;
+  margin-top: -5px;
+}
+/*
+.front-news-list li.front-news-row, .news-archive-list li {
+    position:relative;
+    }
+    
+.front-news-row.bottom-row{
+    height:auto;
+    min-height:0;
+    }
+.front-news-list li.front-news-row h4, .front-news-list li.front-news-row .source{
+    padding:0 0 0 100px;
+    }
+li.front-news-row .front-news-thumbnail{
+    width: 78px;
+    margin: 0 10px 5px 0;
+    min-width: 81px;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+    padding: 0;
+    border: .35714285714285715em solid #fff;
+}
+    
+li.front-news-row .front-news-thumbnail a {
+    min-width: 162px;
+    height: 78px;
+    width:78px;
+    overflow: hidden;
+    margin: 0 -50%;
+    padding: 0 !important;
+    border: none;
+}
+
+li.front-news-row .front-news-thumbnail a img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 200px;
+}
+
+.news-archive-list li {
+    display: inline-block;
+    width: 100%;
+}
+
+.news-archive-list li .archive-thumbnail a {
+    display: block;
+    border:none;
+    padding:0;
+    margin: 0;
+}
+
+
+.news-archive-list .frame.archive-thumbnail img {
+    max-width: 250px;
+    display: inline-block;
+}
+
+.news-archive-list .frame {
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+@media (max-width: 43.0625em) {
+    .news-archive-list .frame.archive-thumbnail img {
+        max-width: 130px;
+    }
+}
+*/
+.content-container.container {
+  position: relative;
+}
+.rmi-sidebar {
+  width: 92%;
+  margin-top: 10px;
 }

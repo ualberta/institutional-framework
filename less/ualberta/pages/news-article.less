@@ -5,7 +5,7 @@
   p.teaser {
     #em > .font-size(16,@baseFontSizepx);
     color: @lightText;
-    margin-bottom: 1.57em/2;
+    margin-bottom: 0.15em;
   }
   p.caption {
     width: auto;
@@ -16,10 +16,12 @@
   .article-content {
     position: relative;
   }
-  article header .date {
+  article .date {
     #em > .font-size(13,@baseFontSizepx);
     color: @lightText;
-    margin-top: -8px;
+  }
+  article .page-title {
+    padding-bottom:0.1em;
   }
   article .frame.small-image {
     width:50%;
@@ -64,9 +66,15 @@
     display:none;
   }
 
+  // divider on the page-title for news articles is not needed
   h1.page-title {
     border: none;
     .box-shadow(none);
+  }
+
+  // remove the top margin of the heading in the second column
+  .first + h3 {
+    margin-top:0;
   }
 
   // force featured image to occupy entire container
@@ -75,6 +83,7 @@
     width:100%;
   }
 
+  // special treatment used for quotes
   .quote {
     display:block;
     font-family: serif;
@@ -90,25 +99,19 @@
     display:block;
   }
 
+  // pulls the quote to the right
   .quote.pull-right {
     width:50%;
     float:right;
     margin-left:0.5em;
   }
 
+  // pulls the quote to the left
   .quote.pull-left {
     width:50%;
     float:left;
     margin-right:0.5em;
   }  
-
-  // override these heights
-  .social-media-actions .data-list li:first-child {
-    height: 34px!important;
-  }
-  .social-media-actions .data-list li:nth-child(2) {
-    height: 32px!important;
-  }
 }
 
 // News articles list
@@ -122,29 +125,28 @@
 // float image on high res
 @media (min-width: 90em) {
   .news-article {
-  .frame.featured-news {
-    max-width: 50%;
-    float: right;
-    margin-left: 2em;
-    margin-bottom: 1em;
-    .image-caption-container .caption { line-height:1.3em }
-  }   
+    .frame.featured-news {
+      max-width: 50%;
+      float: right;
+      margin-left: 2em;
+      margin-bottom: 1em;
+      .image-caption-container .caption { line-height:1.3em }
+    }   
 
-  .force-full-image .frame.featured-news {
-    max-width: none;
-    float: none;
-    margin-bottom: 0.57em;
-    margin-left:0;
-
+    .force-full-image .frame.featured-news {
+      max-width: none;
+      float: none;
+      margin-bottom: 0.57em;
+      margin-left:0;
+    }
   }
 }
-}
 
 
-@media (min-width: 61.25em) {
+@media (min-width: 43.125em) {
   .news-article {
     .primary-content-area {
-      width: 79.787234042553%;
+      width: 100%;
     }
     article .story {
       width: 67%;
@@ -154,12 +156,27 @@
       width: 30%;
       top: 0;
       right: 0;
-    }
-    .sidebar {
-      #em > .margin(top, 89, @baseFontSizepx);
+    }    
+    // fix sidebar on faculty news articles
+    .tertiary .span12+.sidebar {
+      width:100%;
     }
     hr.soften.first {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  .news-article {
+    .primary-content-area {
+      width: 79.787234042553%;
+    }
+    // fix sidebar on faculty news articles
+    .sidebar,
+    .tertiary .span12+.sidebar {
+      width:19%;
+      margin-top:7em;
     }
   }
 }

@@ -1,18 +1,134 @@
 // Custom Business Colors
 
 @asob_green: #90ae41; // light green used mostly for text
-@asob_brown: #614c36;
+@asob_brown: #614c36; 
 @asob_darkTan: #a1905b;
 @asob_tan: #c4b680;
 
 @image_path: "/design/img/asob";
 
 
+// global nav widths
+.navigation-container .navigation-inner ul li ul .nav1,
+.navigation-container .navigation-inner ul li ul .nav2,
+.navigation-container .navigation-inner ul li ul .nav3,
+.navigation-container .navigation-inner ul li ul .nav4,
+.navigation-container .navigation-inner ul li ul .nav5,
+.navigation-container .navigation-inner ul li ul .nav6 { width:16.66666666666667%; }
+
+// enable full width submenu
+.navigation-container .navigation-inner ul li ul .full-content { position:static; }
+
+// hide the navigation for the full content dropdown
+.main-navigation>li.full-content .sub-menu .section-navigation {
+  display:none;
+} 
+
+// override other styles, make content space fill full dropdown
+.main-navigation>li.full-content .sub-menu .section-description {
+  display:block;
+  border-bottom:none;
+  position:static;
+  margin:auto;
+  width:auto;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius:0;
+  padding:0;
+} 
+
+// fix various column link appearance
+.main-navigation>li.full-content .sub-menu .section-description {
+  // middle column (this selector is nasty)
+  .span4 ul li a:hover {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-left:1px solid #E1D8A4;
+    border-right:1px solid #E1D8A4;
+  }
+  .span4:first-child ul li a:hover {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    border-left-color:transparent;
+  }
+  .span4:last-child ul li a:hover {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    border-right-color:transparent;
+  }
+}
+
+// categorization heading
+.section-description .navigation-heading {
+  text-transform:uppercase;
+  font-weight:normal;
+  font-family: "DIN Bold", sans-serif;
+  color: #637169;
+}
+
+// when the navigation heading is a link, add the "go" button
+.main-navigation .sub-menu .section-description a.navigation-heading {
+  padding:0;
+  position:relative;
+  display:inline-block;
+  color: #637169;
+  &:before {
+    content: "";
+    position: absolute;
+    border: 0.35em solid rgba(0, 0, 0, 0);
+    border-left-color: #CCC;
+    width: 0;
+    height: 0;
+    right: -1.25em;
+    top: 0.25em;
+  }
+  &:hover {
+    &:before {
+      border-left-color: #007c41;
+    }
+  }
+}
+
+// make sub menu occupy full width of container
+.main-navigation>li.full-content:hover .sub-menu {
+  width:auto;
+  margin:auto;
+}
+
+// submenu has 10px margin from window edge on 690px+
+@media (min-width: 43.125em) {
+  .main-navigation>li.full-content:hover .sub-menu {
+    left:0.833333em;
+    right:0.833333em;
+  }
+}
+
+// submenu has 3% margin from window edge on 980px+
+@media (min-width: 61.25em) {
+  .main-navigation>li.full-content:hover .sub-menu {
+    left:3%;
+    right:3%;
+  }
+}
+
+// submenu has 3% margin from window edge on 1170px+
+@media (min-width: 75em) {
+  .main-navigation>li.full-content:hover .sub-menu {
+    left:5%;
+    right:5%;
+  }
+}
 
 // center ASOB logo in banner
 .banner-inner {
   text-align:center;
 }
+
+// svg logo
 .banner-inner a.site-title {
   background: transparent url("@{image_path}/asob-logo.svg") no-repeat center center;
   width: 7em;
@@ -25,9 +141,10 @@
   left: 0;
   right: 0;
   font-size:2.2857em; // consistent logo size
+  height:2.57em;
 }
 
-// allows us to put an island inside the frame
+// allows us to put an island inside the frame for a single feature
 .slide.frame { position:relative; }
 
 // custom leather background
@@ -51,6 +168,7 @@
   box-sizing: border-box;
 }
 
+// leather stitching
 .leather:after,
 .leather:before {
   content:"";
@@ -98,14 +216,6 @@ a.leather:hover {
   background: url("@{image_path}/leather-texture.png"),#2c1905; 
 }
 
-.section-description h3 {
-  margin: 0.65em 0 0.375em;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  font-weight: bold;
-}
-
 .sub-menu .section-description {
   font-size:1em;
 }
-

@@ -22,7 +22,7 @@
   
 <!-- The Sheets -->
 <link type="text/css" href="../../css/framework.css" rel="stylesheet">
-<link type="text/css" href="../../css/ualberta.css" rel="stylesheet">
+<link type="text/css" href="../../css/faculty.css" rel="stylesheet">
 <link type="text/css" href="../../css/explore-icons.css" rel="stylesheet">
 
 <!-- IE Stylesheets -->
@@ -44,7 +44,23 @@
   	body {
   		margin-bottom: 1.57em;
   	}
+
+    a span.site-title {
+      color:#fff;
+      margin:0.2em 0 0 0;
+    }
   
+    .toggle-markup {
+      line-height: 1em;
+      font-size: 0.825em;
+      display:inline-block;
+      margin-left:10px;
+    }
+
+    .inline-heading {
+      display:inline-block;
+    }
+
   	.not-code .extrude {
   		margin-bottom: 1em;
   	}
@@ -265,7 +281,7 @@
   		margin-top: 1.57em;
   	}
   	
-  	#content-pane h3 {
+  	#content-pane h3:first-child {
 	  		margin-top: 4px;
   	}
   
@@ -466,6 +482,17 @@
   		.preview-title-row button.close.closed:after {
   			content: "\2b";
   		}
+
+      /* markup preview */
+      .live-preview {
+        display:none;
+      }
+      .live-preview.active {
+        display:block;
+      }
+      .live-preview.active+pre {
+        display:none;
+      }
   
   </style>
   
@@ -575,6 +602,9 @@
 										<li><a href="#patterns">Patterns</a></li>
 									</ul>
 								</li>
+                <li>
+                  <a href="#components">Sitecore Components</a>
+                </li>
 								<li>
 								<a href="#layouts">Institutional Layouts<span class="toggle open"></span></a>
 									<ul>
@@ -590,23 +620,6 @@
 										<li><a href="#fac-landing">Faculty Landing</a></li>
 										<li><a href="#fac-generic">Faculty Generic</a></li>
 									</ul>
-								</li>
-								<li>
-								<a href="#page-elements">Page Elements<span class="toggle open"></span></a>
-									<ul>
-										<li><a href="#blade">Blade</a></li>
-										<li><a href="#banner">Banner</a></li>
-										<li><a href="#navigation">Global Navigation</a></li>
-										<li><a href="#dropdown-menus">Dropdown Menus</a></li>
-										<li><a href="#breadcrumb">Breadcrumb</a></li>
-										<li><a href="#left-nav">Left Navigation</a></li>
-										<li><a href="#sidebar-items">Sidebar Items</a></li>
-										<li><a href="#faculty-footer">Faculty Footer</a></li>
-										<li><a href="#footer">Footer</a></li>
-									</ul>
-								</li>
-								<li>
-								<a href="#components">Components</a>
 								</li>
 							</ul>
 						</div>
@@ -665,6 +678,17 @@
 <script src="http://www.ualberta.ca/~publicas/beta/js/bootstrap.min.js"></script>
 
 <script>
+
+  function htmlEncode(value){
+    //create a in-memory div, set it's inner text(which jQuery automatically encodes)
+    //then grab the encoded contents back out.  The div never exists on the page.
+    return $('<div/>').text(value).html();
+  }
+
+  function htmlDecode(value){
+    return $('<div/>').html(value).text();
+  }
+
 	/*
 	 * jQuery hashchange event - v1.3 - 7/21/2010
 	 * http://benalman.com/projects/jquery-hashchange-plugin/
@@ -760,6 +784,29 @@
 			  function() {
 			  	$($(this).data("selector")).removeClass("highlight");
 			  });
+
+        $('#content-pane .live-preview').each(function() {
+            var this_p = this;
+            var markup = $("<pre class='prettyprint'></pre>").append(htmlEncode($(this).html()));
+            var title = $("<h5 class='inline-heading'>Preview</h5>");
+            var toggle = $("<a href='#' class='toggle-markup'>Show Markup</a>").on('click', function(e) {
+              if($(this_p).hasClass('active')) {
+                $(this_p).removeClass('active');
+                $(this).text("Show Preview");
+                title.text("Markup");
+              } else {
+                $(this_p).addClass('active');
+                $(this).text("Show Markup");
+                title.text("Preview");
+              }
+              e.stopPropagation();
+              return false;
+            });
+
+            $(this).after(markup);
+            $(this).before(title);
+            $(this).before(toggle);
+        });
 			});
 			$("#preview").contents().find("body").load('./content/'+hash.substring(1)+'.html #content-preview',function(response, status, xhr) {
 				var contentPreview = $("#preview").contents().find("#content-preview");

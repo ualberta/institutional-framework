@@ -109,12 +109,6 @@
   .sub-menu ul li a {
     text-align:left;
   }
-  
-  .sub-menu .section-description {
-    text-align:left;
-    font-size:0.9em;
-    line-height:1.5em;
-  }
 
   .sub-menu ul,
   .sub-menu ul li,
@@ -138,32 +132,13 @@
     box-sizing: border-box;
   }
 
-  .sub-menu-content { text-align: left; }
-  
-  .sub-menu ul li a {
-    font-family: sans-serif;
-    text-transform: none;
-    border: none;
-    border-bottom: 1px dotted #ddd;
-    padding: 2% 0;
-    color: @linkColor;
-    line-height: 1.2em;
-    
-    &:hover {
-      color: @linkColorHover;
-      padding-left:4.5%;
-      padding-right: 2%;
-      margin-left: -4.5%;
-      margin-right: -2%;
-      background:  #FFF5B8;
-      border-top: 1px solid #E1D8A4;
-      border-bottom: 1px solid #E1D8A4;
-      border-right: 1px solid #E1D8A4;
-      margin-top: -1px;
-      text-shadow: none;
-      .border-radius(0px 4px 4px 0px);
-    }
+  //add bottom margin to image in content area
+  .sub-menu .section-description > img {
+    margin-bottom: 0.57em;
   }
+
+  .sub-menu-content { text-align: left; }
+
 }
 
 // FIXED DROP DOWN NAV STYLING
@@ -201,7 +176,9 @@
     -webkit-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 1px #DDD,0 5px 15px rgba(0, 0, 0, 0.2);
-
+    li a {
+      font-family:sans-serif;
+    }
   }
 
   .main-navigation {
@@ -234,15 +211,23 @@
 
   .sub-menu ul li a {
     padding: 0.4em 0;
+    font-family: sans-serif;
+    text-transform: none;
+    border: 1px solid transparent;
+    border-bottom: 1px dotted #ddd;
+    color: @linkColor;
+    line-height: 1.2em;
     &:hover {
-      padding-left:1em;
-      padding-right: 1em;
-      margin-left: -1em;
-      margin-right: -1em;
+      color: @linkColorHover;
+      background:  #FFF5B8;
+      border-top: 1px solid #E1D8A4;
+      border-bottom: 1px solid #E1D8A4;
+      text-shadow: none;
+      padding: 0.4em 1em;
+      margin: 0 -1em;
       -webkit-border-radius: 0px;
-       -moz-border-radius: 0px;
-       border-radius: 0px;
-       border-right:none;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
     }
   }
 }
