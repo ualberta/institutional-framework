@@ -12,6 +12,9 @@
 		padding: 10px;
 		border-radius: 4px;
 	}
+	.live-preview {
+		max-width:30em;
+	}
 	</style>
 
 	<h3>Patterns</h3>
@@ -20,17 +23,10 @@
 	
 	<h4>Extruded Container</h4>
 	<p>The extruded container is used to to bring elements out of the page.  The extruded container is used to hold images, videos, program types, sidebar modules, and more.  Use the .extrude class for content pieces, and the .frame class for images and videos.
-	<div class="row-fluid">
-		<div class="span6">
-			<h5>Example</h5>
-			<div class="extrude">
-				Container
-			</div>
-		</div>
-		<div class="span6">
-			<h5>Markup</h5>
-			<pre class="prettyprint">&lt;div class="extrude"&gt;Container&lt;/div&gt;</pre>
-		</div>
+	<div class="live-preview active">
+<div class="extrude">
+	Container
+</div>
 	</div>
 	
 	<hr class="soften" />
@@ -38,17 +34,10 @@
 	<h4>Inset Container</h4>
 	
 	<p>The inset container gives the area the look that it is sunk into the page to draw the eye.  The inset container is used primarily for feature areas.</p>
-	<div class="row-fluid">
-		<div class="span6">
-			<h5>Example</h5>
-			<div class="inset">
-				Container
-			</div>
-		</div>
-		<div class="span6">
-			<h5>Markup</h5>
-			<pre class="prettyprint">&lt;div class="inset"&gt;Container&lt;/div&gt;</pre>
-		</div>
+	<div class="live-preview active">
+<div class="inset">
+	Container
+</div>
 	</div>
 	
 
@@ -56,69 +45,56 @@
 	
 	<h4>Lists of Links</h4>
 	<p>Lists of links that occur in the main content area of the page should be contained in a data list. If there is a link to view more of whatever is listed, then the bottom-row class should be utilized.</p> 
-	<div class="row-fluid">
-		<div class="span6">
-			<h5>Example</h5>
-			<ul class="data-list">
-			    <li><a href="#">Costs, Tuition, and Fees</a></li>
-			    <li><a href="#">Major Deadlines</a></li>
-			    <li><a href="#">Registrar </a></li>
-			    <li class="bottom-row"><a href="#">View the Calendar</a></li>
-			</ul>
-		</div>
-		<div class="span6">
-			<h5>Markup</h5>
-			<pre class="prettyprint">&lt;ul class=&quot;data-list&quot;&gt;
-   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Costs, Tuition, and Fees&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Major Deadlines&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Registrar &lt;/a&gt;&lt;/li&gt;
-   &lt;li class=&quot;bottom-row&quot;&gt;&lt;a href=&quot;#&quot;&gt;View the Calendar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</pre>
-		</div>
-	</div>
+
+<div class="live-preview active">
+<ul class="data-list">
+    <li><a href="#">Costs, Tuition, and Fees</a></li>
+    <li><a href="#">Major Deadlines</a></li>
+    <li><a href="#">Registrar </a></li>
+    <li class="bottom-row"><a href="#">View the Calendar</a></li>
+</ul>
+</div>
+
 	
 	<hr class="soften" />
 	
 	<h4>Lists of Links with Descriptions</h4>
 	<p>This pattern is most commonly used with news articles or events, where the link is the article or event name and the text that follows is a brief description of what the user can expect to find if they click the link. Similar to the list of links, the .bottom-row class can be used to provide a link to view more.</p> 
 	
-	<div class="row-fluid">
-		<div class="span6">
-			<h5>Example</h5>
-			<ul class="news-list data-list">
-				<li class="news-row">
-					<div class="news-description">
-						<h4>
-							<a href="#">Title Link One</a>
-						</h4>
-						<p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum. Sed semper gravida leo et porttitor.</p>
-					</div>
-				</li>
-				<li class="news-row">
-					<div class="news-description">
-						<h4>
-							<a href="#">Title Link Two</a>
-						</h4>
-						<p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum. Sed semper gravida leo et porttitor.</p>
-					</div>
-				</li>
-				<li class="bottom-row"><a href="#">View More</a></li>
-			</ul>
-		</div>
-		<div class="span6">
-			<h5>Markup</h5>
-			<pre class="prettyprint">&lt;ul class=&quot;news-list data-list&quot;&gt;
-   &lt;li class=&quot;news-row&quot;&gt;
-      &lt;div class=&quot;news-description&quot;&gt;
-         &lt;h4&gt;&lt;a href=&quot;#&quot;&gt;Title Link&lt;/a&gt;&lt;/h4&gt;
-         &lt;p class=&quot;news-teaser&quot;&gt;Teaser&lt;/p&gt;
-      &lt;/div&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;bottom-row&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;View More&lt;/a&gt;
-   &lt;/li&gt;
-&lt;/ul&gt;</pre>
-		</div>
+	<div class="live-preview active">
+<ul class="link-description-list data-list">
+  <li>
+    <a href="#">
+        <div class="list-item-content">
+          <h4>Title or Link Name</h4>
+          <p class="list-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat risus nibh, in pulvinar metus porta sit amet. Cras non ullamcorper massa. 
+          </p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <div class="list-item-content">
+        <h4>Title or Link Name</h4>
+        <p class="list-item-extra">January 26, 2014</p>
+        <p class="list-item-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat risus nibh, in pulvinar metus porta sit amet. Cras non ullamcorper massa. 
+        </p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <div class="list-item-content">
+        <h4>Title or Link Name</h4>
+        <p class="list-item-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat risus nibh, in pulvinar metus porta sit amet. Cras non ullamcorper massa. 
+        </p>
+      </div>
+    </a>
+  </li>
+</ul>
 	</div>
 	
 	<hr class="soften" />
@@ -126,85 +102,52 @@
 	<h4>Media Items</h4>
 	<p>The media item pattern consists of a thumbnail image, heading link, date, and description. The pattern can be used to display news items, posts by users, events, videos, or similar content.</p> 
 	
-	<div class="row-fluid">
-		<div class="span6 latest-news">
-			<h5>Example</h5>
-			<ul class="news-list data-list">
-      	<li class="news-row small-image">
-        	<div class="frame news-thumbnail">
-          	<a href="#" class="image-shadow">
-            	<img src="http://placehold.it/81x78">
-            </a>
-          </div>
-          <div class="news-description">
-          	<h4><a href="#">Title One</a></h4>
-            <span class="news-date">Posted on February 28, 2013</span>
-            <p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum.</p>
-          </div>
-        </li>
-        <li class="news-row small-image">
-        	<div class="frame news-thumbnail">
-          	<a href="#" class="image-shadow">
-            	<img src="http://placehold.it/81x78">
-            </a>
-          </div>
-          <div class="news-description">
-          	<h4><a href="#">Title Two</a></h4>
-            <span class="news-date">Posted on February 28, 2013</span>
-            <p class="news-teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada convallis fermentum.</p>
-          </div>
-        </li>
-    	</ul>
-		</div>
-		<div class="span6">
-			<h5>Markup</h5>
-			<pre class="prettyprint">&lt;ul class=&quot;news-list data-list&quot;&gt;
-   &lt;li class=&quot;news-row small-image&quot;&gt;
-     &lt;div class=&quot;frame news-thumbnail&quot;&gt;
-       &lt;a href=&quot;#&quot; class=&quot;image-shadow&quot;&gt;
-         &lt;img src=&quot;http://placehold.it/81x78&quot;&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;news-description&quot;&gt;
-      &lt;h4&gt;&lt;a href=&quot;#&quot;&gt;Title&lt;/a&gt;&lt;/h4&gt;
-      &lt;span class=&quot;news-date&quot;&gt;Date&lt;/span&gt;
-      &lt;p class=&quot;news-teaser&quot;&gt;Description&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</pre>
-		</div>
+	<div class="live-preview active">
+<ul class="image-link-list data-list">
+  <li>
+    <a href="#">
+        <div class="list-item-image frame">
+          <img src="http://placehold.it/80x80">
+        </div>
+        <div class="list-item-content">
+          <h4>Title or Link Name</h4>
+          <p class="list-item-extra">Posted on January 4, 2014</p>
+          <p class="list-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat risus nibh, in pulvinar metus porta sit amet. Cras non ullamcorper massa. 
+          </p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+        <div class="list-item-image frame">
+          <img src="http://placehold.it/80x80">
+        </div>
+        <div class="list-item-content">
+          <h4>Title or Link Name</h4>
+          <p class="list-item-extra">Posted on January 4, 2014</p>
+          <p class="list-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat risus nibh, in pulvinar metus porta sit amet. Cras non ullamcorper massa. 
+          </p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+        <div class="list-item-image frame">
+          <img src="http://placehold.it/80x80">
+        </div>
+        <div class="list-item-content">
+          <h4>Title or Link Name</h4>
+          <p class="list-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+      </div>
+    </a>
+  </li>
+</ul>
 	</div>
 	
-	<hr class="soften" />
-	
-		<h4>Status Messages</h4>
-		
-		<p>Three different status messages can be used to display notifications to the user. The classes used are .error, .warning, .success, used in combination with the .status-message class.</p>
-		<div class="row-fluid">
-			<div class="span6">
-				<h5>Example</h5>
-				<div class="status-message error">
-					<i class="icon-remove"></i>
-					<span>This is an error message</span>
-				</div>
-				<p class="status-message warning">
-					<i class="icon-warning-sign"></i>
-					This is a warning message
-				</p>
-				<div class="status-message success">
-					<i class="icon-ok"></i>
-					<span>This is a success message</span>
-				</div>
-			</div>
-			<div class="span6">
-				<h5>Markup</h5>
-				<pre class="prettyprint">&lt;div class=&quot;status-message error&quot;&gt;
-  &lt;i class=&quot;icon-remove&quot;&gt;&lt;/i&gt;
-  &lt;span&gt;This is an error message&lt;/span&gt;
-&lt;/div&gt;</pre>
-			</div>
-		</div>
-		
 	
 		<hr class="soften" />
 		
