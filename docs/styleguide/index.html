@@ -49,6 +49,19 @@
       color:#fff;
       margin:0.2em 0 0 0;
     }
+
+    span.identifier + span.site-title {
+      margin-top: 0.2em;
+    }
+
+    .banner-inner h1 a:hover {
+      color:#ffdb05;
+      text-decoration:none;
+    }
+
+    #main-nav > ul > li > ul > li {
+      width:25%;
+    }
   
     .toggle-markup {
       line-height: 1em;
@@ -808,7 +821,7 @@
             $(this).before(toggle);
         });
 			});
-			$("#preview").contents().find("body").load('./content/'+hash.substring(1)+'.html #content-preview',function(response, status, xhr) {
+			$("#preview").contents().find("body").load('content/'+hash.substring(1)+'.html #content-preview',function(response, status, xhr) {
 				var contentPreview = $("#preview").contents().find("#content-preview");
 				if(contentPreview.length > 0) {
 					$('#preview-pane').show();

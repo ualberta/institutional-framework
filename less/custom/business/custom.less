@@ -19,6 +19,37 @@
 // enable full width submenu
 .navigation-container .navigation-inner ul li ul .full-content { position:static; }
 
+
+
+// make sub menu occupy full width of container
+.main-navigation>li.full-content:hover .sub-menu {
+  width:auto;
+  margin:auto;
+}
+
+// submenu has 10px margin from window edge on 690px+
+@media (min-width: 43.125em) {
+  .main-navigation>li.full-content:hover .sub-menu {
+    left:0.833333em;
+    right:0.833333em;
+  }
+}
+
+// set fixed width of sub menu, left align
+@media (min-width: 61.25em) {
+  .main-navigation>li.full-content:hover .sub-menu {
+    width: 52em;
+    left: 3%;
+    right: auto;
+  }
+}
+
+@media (min-width: 75em) {
+  .main-navigation>li.full-content:hover .sub-menu {
+    left: 5%;
+  }
+}
+
 // hide the navigation for the full content dropdown
 .main-navigation>li.full-content .sub-menu .section-navigation {
   display:none;
@@ -93,35 +124,7 @@
   }
 }
 
-// make sub menu occupy full width of container
-.main-navigation>li.full-content:hover .sub-menu {
-  width:auto;
-  margin:auto;
-}
 
-// submenu has 10px margin from window edge on 690px+
-@media (min-width: 43.125em) {
-  .main-navigation>li.full-content:hover .sub-menu {
-    left:0.833333em;
-    right:0.833333em;
-  }
-}
-
-// submenu has 3% margin from window edge on 980px+
-@media (min-width: 61.25em) {
-  .main-navigation>li.full-content:hover .sub-menu {
-    left:3%;
-    right:3%;
-  }
-}
-
-// submenu has 3% margin from window edge on 1170px+
-@media (min-width: 75em) {
-  .main-navigation>li.full-content:hover .sub-menu {
-    left:5%;
-    right:5%;
-  }
-}
 
 // center ASOB logo in banner
 .banner-inner {
