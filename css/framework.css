@@ -677,6 +677,8 @@ ul.footer-quick-links+p{margin-top:1em;}
 .svg .social-media .icon-twitter{background:url("/design/img/webicons/webicon-twitter.svg");}
 .no-svg .social-media .icon-youtube{background:url("/design/img/webicons/webicon-youtube-m.png");}
 .svg .social-media .icon-youtube{background:url("/design/img/webicons/webicon-youtube.svg");}
+.no-svg .social-media .icon-tumblr{background:url("/design/img/webicons/webicon-tumblr-m.png");}
+.svg .social-media .icon-tumblr{background:url("/design/img/webicons/webicon-tumblr.svg");}
 .module-container .module-heading{position:relative;}.module-container .module-heading h3{display:inline-block;margin-right:0.5em;}
 .module-container .module-heading .module-actions{list-style:none;margin:0;padding:0;display:inline-block;}.module-container .module-heading .module-actions li{display:inline-block;*display:inline;*zoom:1;padding:0 0.5em;margin:-0.23em -0.23em 0 0;}.module-container .module-heading .module-actions li a{padding:0.475em 0.35em 0.23em;}
 .module-container.center-component{text-align:center;}.module-container.center-component>.frame{display:inline-block;}
