@@ -3,6 +3,6 @@
 .primary-content-area p.button-container a,.secondary-content-area p.button-container a,.sidebar p.button-container a{text-decoration:none;}
 .social-media-links img{width:16px;height:16px;margin-right:4px;margin-bottom:1px;}
 .frame.data-thumbnail{position:absolute;top:0.8333em;}.frame.data-thumbnail a,.frame.data-thumbnail a:hover{margin:0;padding:0;border:none;}
+.homepage .primary-content-area .module-container .data-list li{position:relative;}
 .homepage .primary-content-area .module-container .data-list li h4 a{padding-left:115px;padding-top:0.83333em;min-height:7.5em;}.homepage .primary-content-area .module-container .data-list li h4 a:hover{padding-left:126px;}
 .homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a{padding-left:0;}.homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a:hover{padding-left:11px;}
-.homepage .primary-content-area .module-container .data-list li{position:relative;}
