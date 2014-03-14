@@ -640,7 +640,7 @@ ul.quick-links-container{list-style:none;margin:0 10px 0 0;padding:11px 0;displa
 .content-wrapper{position:relative;}
 .content-inner{padding:0;margin-top:1.57em;}
 .module-container h3{margin:0 0 0.4em 0;}
-.sidebar .frame{padding:0;margin:0 -0.8333em;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-radius:0;}
+.sidebar .frame{padding:0;margin:0 -0.8333em;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-radius:0;max-width:none;}
 .sidebar .frame img{width:100%;max-width:none;}
 .sidebar p{margin:0.714285714285715em 0;line-height:1.57em;}
 .sidebar .btn{margin-bottom:1em;}
@@ -679,6 +679,10 @@ ul.footer-quick-links+p{margin-top:1em;}
 .svg .social-media .icon-youtube{background:url("/design/img/webicons/webicon-youtube.svg");}
 .no-svg .social-media .icon-tumblr{background:url("/design/img/webicons/webicon-tumblr-m.png");}
 .svg .social-media .icon-tumblr{background:url("/design/img/webicons/webicon-tumblr.svg");}
+.no-svg .social-media .icon-instagram{background:url("/design/img/webicons/webicon-instagram-m.png");}
+.svg .social-media .icon-instagram{background:url("/design/img/webicons/webicon-instagram.svg");}
+.no-svg .social-media .icon-vimeo{background:url("/design/img/webicons/webicon-vimeo-m.png");}
+.svg .social-media .icon-vimeo{background:url("/design/img/webicons/webicon-vimeo.svg");}
 .module-container .module-heading{position:relative;}.module-container .module-heading h3{display:inline-block;margin-right:0.5em;}
 .module-container .module-heading .module-actions{list-style:none;margin:0;padding:0;display:inline-block;}.module-container .module-heading .module-actions li{display:inline-block;*display:inline;*zoom:1;padding:0 0.5em;margin:-0.23em -0.23em 0 0;}.module-container .module-heading .module-actions li a{padding:0.475em 0.35em 0.23em;}
 .module-container.center-component{text-align:center;}.module-container.center-component>.frame{display:inline-block;}
