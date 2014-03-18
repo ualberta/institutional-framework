@@ -83,6 +83,28 @@
   }
 }
 
+
+// add some classes to float the frame left and right
+@media (min-width: 22.5em) {
+  .frame,
+  .extrude { 
+    &.pull-left {
+    float:left;
+    width:45%;
+    margin-right: 0.8333em;
+    }
+    &.pull-right {
+      float:right;
+      width:45%;
+      margin-left: 0.8333em;
+    }
+    &.small {
+      width:33%;
+    }
+  }
+}
+
+
 @media (max-width: 43.125em) {
   .image-caption-container .caption {
     position:relative;

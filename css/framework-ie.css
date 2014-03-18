@@ -29,6 +29,8 @@
 .lt-ie9 .row-fluid .span3{width:23.404255319148934%;*width:23.351063829787233%;}
 .lt-ie9 .row-fluid .span2{width:14.893617021276595%;*width:14.840425531914894%;}
 .lt-ie9 .row-fluid .span1{width:6.382978723404255%;*width:6.329787234042553%;}
+.lt-ie9 .container,.lt-ie9 .blade-inner,.lt-ie9 .banner-inner,.lt-ie9 .navigation-inner,.lt-ie9 .navbar-static-top .container,.lt-ie9 .navbar-fixed-top .container,.lt-ie9 .navbar-fixed-bottom{margin:auto;width:940px;}
+.lt-ie9 .content-top-row{width:auto;margin:0;}
 .lt-ie9 .nav-mobile{display:none;}
 .lt-ie9 .top-footer-row .btn-social-media i{width:30px;height:30px;}
 .lt-ie9 .rmi-thumbnail{display:block;}
@@ -180,7 +182,6 @@
 .lt-ie8 .accordion-list>li.expanded>a:first-child{margin:-1px -10px 0px;padding-left:-10px;}
 .lt-ie8 li.expanded a.accordion-toggle{padding-bottom:11px!important;height:22px;}
 .lt-ie8 li.expanded a.accordion-toggle:hover{background-color:none;}
-.lt-ie8 .content-top-row{width:auto;margin:0;line-height:0;}
 .lt-ie8 .navigation-inner ul li a,.lt-ie8 ul.quick-links li{margin-right:0px;}
 .lt-ie8 [class^="icon-"],.lt-ie8 [class*=" icon-"]{font-family:FontAwesome;font-style:normal;font-weight:normal;}
 .lt-ie8 .btn.dropdown-toggle [class^="icon-"],.lt-ie8 .btn.dropdown-toggle [class*=" icon-"]{line-height:1.4em;}

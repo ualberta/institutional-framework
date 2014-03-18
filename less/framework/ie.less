@@ -51,8 +51,23 @@
   #grid > .core(@gridColumnWidth, @gridGutterWidth);
 
   // Fluid (940px)
-#grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
+  #grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
 
+  .container, 
+  .blade-inner, 
+  .banner-inner, 
+  .navigation-inner, 
+  .navbar-static-top .container, 
+  .navbar-fixed-top .container, 
+  .navbar-fixed-bottom {
+    margin: auto;
+    width:940px;
+  }
+
+  .content-top-row {
+    width: auto;
+    margin: 0;
+  }
 
   /* Hide Mobile Nav */
   .nav-mobile { display:none; }
@@ -993,11 +1008,7 @@
   }
   */
   
-  .content-top-row {
-    width: auto;
-    margin: 0;
-    line-height: 0;
-  }
+
 
   
   .navigation-inner ul li a,
