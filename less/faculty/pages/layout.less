@@ -75,7 +75,15 @@
 // page editor hack fix to show slides
 form[action*="sc_mode=edit"] .content-top-row .flexslider .slide,
 code + .slide {
-  display:block;
+  display:block!important;
+}
+
+// page editor hack fix to show tab content
+div[sc-part-of*="placeholder"] .tab-content {
+  position:relative;
+  bottom:auto;
+  top:auto;
+  margin-top:2.67em;
 }
 
 .content-top-row .flexslider.single .slide {
@@ -243,6 +251,7 @@ code + .slide {
   .audience-area ul.nav.nav-tabs {
     position:absolute;
     z-index:2;
+    top:0;
   }
 }
 
