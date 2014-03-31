@@ -12,7 +12,8 @@
   .sidebar,
   footer,
   hr.softline,
-  #ki_container {
+  #ki_container,
+  .feature-area {
     display: none;
   }
   body {
@@ -72,4 +73,7 @@
   h6 {
     font-size: 11pt;
   }
+}
+.row-fluid .image-shadow img {
+	max-width: 100%;
 }
