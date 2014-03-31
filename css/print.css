@@ -13,7 +13,8 @@
   footer,
   hr.softline,
   #ki_container,
-  .feature-area {
+  .feature-area,
+  #videoModal {
     display: none;
   }
   body {
