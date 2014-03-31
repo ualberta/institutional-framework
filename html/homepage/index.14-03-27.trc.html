@@ -52,19 +52,43 @@
   
   <!-- Page specific styling -->
   <style>
-  .feature-area .slides li.blood-wedding {
-    background: #000 url('http://www.ualberta.ca/~publicas/uofa/img/features/fma-bloodwedding.jpg') no-repeat top center;
-    background-size: 980px 295px;
+
+  .feature-wrapper {
+    max-width:100%;
+  }
+  
+  .feature-area .slides li {
+    overflow:hidden;
+  }
+  
+  .feature-area .slides li.bg-image {
+    background-size: auto 250px;
+    background-repeat:no-repeat;
+  }
+
+  .feature-area .slides li.bg-image.campus-forum {
+    background-position: top center;
+  }
+  
+  .feature-area .slides li.trc {
+    background-color: #f7f7f7;
+    background-image: url('http://www.ualberta.ca/~publicas/uofa/img/features/fma-trc-0314.jpg');
+    background-position: top left;
+  }
+  
+  .feature-area .slides li.campus-challenge {
+    background-color: #1C354D;
   }
   
   .feature-image {
-    min-height:250px;
+    min-height:207px;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
+    text-align:center;
   }
   
-          ul.toggles {
+        ul.toggles {
           display:block;
           position: relative;
           list-style: none;
@@ -99,19 +123,19 @@
 
       @media screen and (max-width: 43.0625em) {
         ul.toggles { display: none; }
-        .feature-area .slides li.blood-wedding {
-          background: #000 url('http://www.ualberta.ca/~publicas/uofa/img/features/fma-blood-wedding.jpg') no-repeat 70% 0;
-          background-size: 833px 250px;
-        }
       }
 
   
       @media screen and (min-width:43.125em) { 
-    
       
+        .feature-content.dark {
+          text-shadow: 0 1px 4px #000;
+          background: rgba(0, 0, 0, 0.75);
+        }
+    
         .feature-area ul.slides {
           position:relative;
-          padding-top:33.3333%;
+          min-height:292px;
         }
         
         .feature-area .slides li {
@@ -129,17 +153,25 @@
           opacity:1;
         }
       
-        .feature-area .slides li.blood-wedding {
+        .feature-area .slides li.bg-image {
           background-size: auto 100%;
         }
-        .blood-wedding .feature-content {
-          width:12em;
-         height:8em;
+       
+        .trc .feature-content {
+          width:27em;
+          height:8em;
+        }
+        
+        .campus-challenge .feature-content {
+          width:18em;
+          height:7em;
         }
 
-        /* maintain aspect ratio as if there were an image */
-        .feature-area .slides li .feature-image {
-          padding-top:33.333333%;
+        /* maintain aspect ratio as if there were an image 
+           for features using a background image
+        */
+        .feature-area .slides .bg-image .feature-image {
+          padding-top:30%;
           -webkit-box-shadow:none;
           -moz-box-shadow:none;
           box-shadow:none;
@@ -161,7 +193,6 @@
         }
         
         .feature-area .slides .feature-wrapper {
-          max-width:96em;
           margin:auto;
           text-align:left;
         }
@@ -172,9 +203,27 @@
 
       }
       
+      
+      @media screen and (min-width:43.125em) and (max-width:61.1875em) { 
+        .feature-area .campus-challenge .feature-wrapper {
+          position:absolute;
+          top:0;
+          right:0;
+        }
+      }
+      
+      
       @media screen and (min-width:61.25em){
         ul.toggles {
           margin-bottom:0;
+        }
+        
+        .feature-image img {
+          max-height:623px;
+        }        
+        .feature-area ul.slides {
+          padding-top:30%;
+          min-height:0;
         }
       }
       
@@ -183,14 +232,24 @@
           font-size:0.41em;
         }
       }
-      
+
       @media screen and (min-width:96em) { 
       
         .feature-area ul.slides {
-          height:31.5em;
-          padding-top:0;
+          background:#1f2622;
         }
         
+        .feature-area .slides .feature-wrapper {
+          max-width:105em;
+        }
+        
+      }
+      
+      @media screen and (min-width:105em) {
+        .feature-area ul.slides {
+          padding-top:0;
+          height:504px;
+        }
       }
       
       
@@ -205,11 +264,23 @@
       
       /* IE Fixes */
       
+      .lt-ie9 .campus-forum .bottom-island.feature-content {
+        width:18em;
+        bottom:-2em;
+        text-shadow: 0 1px 6px #000;
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc000000', endColorstr='#cc000000');
+      }
+      
+      .lt-ie9 .trc .feature-content {
+        width:20em;
+        bottom:-2em;
+      }
+      
         .lt-ie9 .feature-area ul.slides {
           position:relative;
-          padding-top:33.3333%;
+          padding-top:30%;
         }
-      
+
         .lt-ie9 .feature-area .slides li {
           position: absolute;
           top:0;right:0;bottom:0;left:0;
@@ -224,12 +295,7 @@
           z-index:3;
           opacity:1;
         }
-      
- .lt-ie9 .blood-wedding .feature-content {
-		  width:20em;
-  }  
-  
-      
+       
       .lt-ie8 .content-top-row {
         width:940px;
         margin:1.57em auto 0;
@@ -244,8 +310,6 @@
         display:none;
       }
   
-          
- 
           
  
         </style>
@@ -366,29 +430,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-
-<div class="content-wrapper ualberta-home">
+  <div class="content-wrapper ualberta-home">
     <div id="homepage-feature-area" class="feature-area">
       <ul class="slides">
-      <li class="ga_ualberta_fma blood-wedding current">
+      
+      <li class="ga_ualberta_fma campus-challenge current">
         <div class="feature-wrapper">
-        <div class="feature-image"></div>
+          <div class="feature-image focus-left">
+            <img src="http://www.ualberta.ca/~publicas/uofa/img/features/campus-challenge-fma.jpg" />
+          </div>
             <div class="feature-content left-island bottom-island dark">
-               <h3>Blood Wedding </h3>
-            <p>March 27 to April 5 at Timms Centre for the Arts</p>
-            <div class="feature-buttons">
-              <a class="btn btn-green btn-micro read" href="http://uofa.ualberta.ca/music-and-drama-shows">Learn More</a>
-            </div>
+              <h3>Campus Challenge</h3>
+              <p>Make your pledge before March 29.</p>
+              <div class="feature-buttons">
+                <a class="btn btn-green btn-micro read" href="http://sustainability.ualberta.ca/Events/EarthHour/CampusChallenge.aspx">Learn More</a>
+              </div>
             </div>
           </div>
         </li>   
-
               </ul>
-     <!-- Hide the toggles if there is only one feature -->
-     <!-- <ul class="toggles">
+      <!--<ul class="toggles">
         <li class="current">1</li>
         <li>2</li>
-      </ul> -->
+      </ul>-->
     </div>
   <div class="content-top-row">
     <div class="why-ualberta-row row-fluid ga_ualberta_why-ualberta"> 
@@ -400,7 +464,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="why-text">
         <h3>$348.5 Billion Engine</h3>
         <p class="description">Landmark study by Faculty of Business professors Tony Briggs and Jennifer Jennings highlights the economic and 
-        social impact of UAlberta alumni. <a href="http://news.ualberta.ca/newsarticles/2013/september/ualberta-alumni-founded-organizations-a-staggering-engine-of-albertas-prosperity">See the results.</a></p>            
+        social impact of UAlberta alumni. <br /><a href="http://news.ualberta.ca/newsarticles/2013/september/ualberta-alumni-founded-organizations-a-staggering-engine-of-albertas-prosperity">See the results.</a></p>            
       </div>
       <div class="button-container">
         <a href="http://admission.ualberta.ca/" class="btn btn-apply km_1000_ualberta">Apply Now</a>
@@ -754,17 +818,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         nextText: "",
         touch: true
       });
-//		Hide slideshow animation when there is only one feature
-//      var autoRotate = setInterval(function () {
-//        $('ul.toggles li').toggleClass('current');
-//        $('.slides li').toggleClass('current');
-//      }, 8000);
-//      
-//      $('ul.toggles li:not(.current)').live('click',function() {
-//        $('ul.toggles li').toggleClass('current');
-//        $('.slides li').toggleClass('current');
-//        clearInterval(autoRotate);
-//      });
+      
+    
+    //var autoRotate = setInterval(function () {
+       // $('ul.toggles li').toggleClass('current');
+       // $('.slides li').toggleClass('current');
+     // }, 8000);
+      
+     // $('ul.toggles li:not(.current)').live('click',function() {
+      //  $('ul.toggles li').toggleClass('current');
+       // $('.slides li').toggleClass('current');
+       // clearInterval(autoRotate);
+     // });
             
       // Fetch News
       // --------------------
