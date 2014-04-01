@@ -105,3 +105,27 @@
 	  	}
 	}
 }
+
+/* News archive thumbnails */
+
+.news-archive-list {
+	.list-item-image {
+		width: 5.5em;
+	}
+	.list-item-content {
+		margin-left: 7em;
+	}
+}
+
+.research-news, .arts-in-the-news {
+	.news-archive-list {
+		.list-item-content {
+			margin-left:  0;
+		}
+		&.image-link-list .list-item-content:nth-child(1):after {
+			content: none;
+		}
+	}
+}
+
+
