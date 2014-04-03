@@ -10,5 +10,6 @@
 .homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a{padding-left:0;}.homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a:hover{padding-left:11px;}
 .news-archive-list .list-item-image{width:5.5em;}
 .news-archive-list .list-item-content{margin-left:7em;}
+.news-archive-list.image-link-list .list-item-content:nth-child(1):after{width:5.5em;}
 .research-news .news-archive-list .list-item-content,.arts-in-the-news .news-archive-list .list-item-content{margin-left:0;}
 .research-news .news-archive-list.image-link-list .list-item-content:nth-child(1):after,.arts-in-the-news .news-archive-list.image-link-list .list-item-content:nth-child(1):after{content:none;}
