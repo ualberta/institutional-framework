@@ -32,6 +32,9 @@
 .people-info ul.social-media span{
 	display:none;
 }
+.people-info ul.social-media li{
+	margin-right:5px;
+}
 .people-info h3{
     margin:0px 0px 3px 0px;
 }
@@ -45,15 +48,18 @@
     overflow:auto;
     margin-bottom:10px;
 }
-    ul.people-nav{
+.ph-person-events .filter.extrude{
+	padding:15px 0px;
+}
+ul.people-nav{
     margin:0px;
     padding:0px;
     overflow:auto;
     box-shadow: 0 1px 4px rgba(0,0,0,.2),inset 0 1px 4px rgba(255,255,255,.65);
     -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2),inset 0 1px 4px rgba(255,255,255,.65);
     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2),inset 0 1px 4px rgba(255,255,255,.65);
-    }
-    ul.people-nav li{
+}
+ul.people-nav li{
     text-shadow: 1px 1px 1px #fff;
     background-color: #e2eae5;
     background-image: -o-linear-gradient(transparent 90%,rgba(0,0,0,.1)),-o-linear-gradient(rgba(255,255,255,.15),rgba(255,255,255,.35) 50%,transparent 50%);
@@ -145,9 +151,13 @@ ul.people-content ul{
 }
 .accordion-list li.expanded ul.people-accordion{
 	border-bottom:none;
+	padding-bottom:10px;
 }
 .accordion-list li.expanded ul.people-accordion>li{
 	margin:10px;
+}
+.ph-person-events .filter h3{
+	margin:10px 0 0 15px;
 }
 @media screen and (min-width:35.063em){
 	.people-toggle{
