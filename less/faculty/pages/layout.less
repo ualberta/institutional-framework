@@ -405,7 +405,7 @@ div[sc-part-of*="placeholder"] .tab-content {
 
 @media (min-width: 30em) {
   .tertiary .sidebar > .extrude,
-  .sidebar > .btn {
+  .tertiary .sidebar > .btn {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -447,8 +447,7 @@ div[sc-part-of*="placeholder"] .tab-content {
       margin-top:0;
       padding:0;
     }
-    .span12 + .sidebar > .extrude,
-    .sidebar > .btn {
+    .span12 + .sidebar > .extrude {
       width:auto;
       margin:0 0 1.57em;
       display:block;
@@ -477,7 +476,8 @@ div[sc-part-of*="placeholder"] .tab-content {
     .span12 + .sidebar {
       width:20%;
     }
-    .sidebar > .extrude {
+    .sidebar > .extrude,
+    .sidebar > .btn {
       margin-left:0;
       display:block;
       width:auto;
