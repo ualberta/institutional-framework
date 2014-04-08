@@ -52,9 +52,22 @@
   
   <!-- Page specific styling -->
   <style>
-  .feature-area .slides li.blood-wedding {
-    background: #000 url('http://www.ualberta.ca/~publicas/uofa/img/features/fma-bloodwedding.jpg') no-repeat top center;
-    background-size: 980px 295px;
+
+  ul.slides {
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+
+  .feature-area .slides li.athletics-recap {
+    background-color: #000;
+    background-image: url('http://www.ualberta.ca/~publicas/uofa/img/features/fma-athletics-recap.jpg');
+    background-position: top right;
+  }  
+  
+  .feature-area .slides li.bg-image {
+    background-size: auto 250px;
+    background-repeat:no-repeat;
   }
   
   .feature-image {
@@ -62,6 +75,10 @@
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
+    box-shadow:none;
+      -moz-box-shadow:none;
+      -webkit-box-shadow:none;
+
   }
   
           ul.toggles {
@@ -99,10 +116,11 @@
 
       @media screen and (max-width: 43.0625em) {
         ul.toggles { display: none; }
-        .feature-area .slides li.blood-wedding {
-          background: #000 url('http://www.ualberta.ca/~publicas/uofa/img/features/fma-blood-wedding.jpg') no-repeat 70% 0;
-          background-size: 833px 250px;
+        
+        .feature-area .slides li.athletics-recap {
+        	background-position: 35% 0;
         }
+
       }
 
   
@@ -111,10 +129,9 @@
       
         .feature-area ul.slides {
           position:relative;
-          padding-top:33.3333%;
         }
         
-        .feature-area .slides li {
+        .feature-area .slides.carousel li {
           position: absolute;
           top:0;right:0;bottom:0;left:0;
           z-index:2;
@@ -128,18 +145,21 @@
           z-index:3;
           opacity:1;
         }
-      
-        .feature-area .slides li.blood-wedding {
+        
+        .feature-area .slides li.bg-image {
           background-size: auto 100%;
         }
-        .blood-wedding .feature-content {
-          width:12em;
+      
+        .athletics-recap .feature-content {
+          width:23em;
          height:8em;
         }
 
-        /* maintain aspect ratio as if there were an image */
-        .feature-area .slides li .feature-image {
-          padding-top:33.333333%;
+        /* maintain aspect ratio as if there were an image 
+           for features using a background image
+        */
+        .feature-area .slides .bg-image .feature-image {
+          padding-top:30%;
           -webkit-box-shadow:none;
           -moz-box-shadow:none;
           box-shadow:none;
@@ -161,7 +181,6 @@
         }
         
         .feature-area .slides .feature-wrapper {
-          max-width:96em;
           margin:auto;
           text-align:left;
         }
@@ -172,7 +191,19 @@
 
       }
       
+      @media screen and (min-width:43.125em) and (max-width:60.0625em) { 
+      	.athletics-recap .feature-content {
+      		width: 15em;
+      		height: 11.2em;
+      	}
+      }
+      
       @media screen and (min-width:61.25em){
+      
+        .feature-area ul.slides {
+          min-height:0;
+        }
+      
         ul.toggles {
           margin-bottom:0;
         }
@@ -207,7 +238,18 @@
       
         .lt-ie9 .feature-area ul.slides {
           position:relative;
-          padding-top:33.3333%;
+          height:280px;
+        }
+        
+        .lt-ie9 .athletics-recap .feature-content {
+          width: 15em;
+          height: 11.2em;
+          bottom:0;
+        }
+        
+        .lt-ie9 .feature-area .slides li.athletics-recap {
+          background-position: center center;
+          height:280px;
         }
       
         .lt-ie9 .feature-area .slides li {
@@ -225,10 +267,6 @@
           opacity:1;
         }
       
- .lt-ie9 .blood-wedding .feature-content {
-		  width:20em;
-  }  
-  
       
       .lt-ie8 .content-top-row {
         width:940px;
@@ -363,27 +401,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </header> <!-- End Header -->
 
-
-
-
-
 <div class="content-wrapper ualberta-home">
     <div id="homepage-feature-area" class="feature-area">
       <ul class="slides">
-      <li class="ga_ualberta_fma blood-wedding current">
-        <div class="feature-wrapper">
-        <div class="feature-image"></div>
-            <div class="feature-content left-island bottom-island dark">
-               <h3>Blood Wedding </h3>
-            <p>March 27 to April 5 at Timms Centre for the Arts</p>
-            <div class="feature-buttons">
-              <a class="btn btn-green btn-micro read" href="http://uofa.ualberta.ca/music-and-drama-shows">Learn More</a>
+        <li class="ga_ualberta_fma athletics-recap current focus-right bg-image">
+          <div class="feature-wrapper">
+            <div class="feature-image">
             </div>
+            <div class="feature-content right-island bottom-island">
+              <h3>Banner Year for Bears and Pandas</h3>
+              <p>A look back at 2013-14 in photos, featuring 10 regional titles, three championships.</p>
+              <div class="feature-buttons">
+                <a class="btn btn-green btn-micro read" href="http://news.ualberta.ca/newsarticles/2014/april/in-photos-banner-year-for-bears-pandas">Read more</a>
+              </div>
             </div>
           </div>
         </li>   
-
-              </ul>
+      </ul>
      <!-- Hide the toggles if there is only one feature -->
      <!-- <ul class="toggles">
         <li class="current">1</li>
