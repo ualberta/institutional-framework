@@ -38,9 +38,14 @@
   text-decoration: none;
 }
 .sidebar .btn-green.btn-orange {
-  background-image: linear-gradient(to bottom, #ca7700, #975900);
-  border-right-color: #CA7700;
+  background-image: linear-gradient(to bottom, #fd9500, #ca7700);
+  border-color: #fd9500;
+  border-right-color: #ca7700;
   border-bottom-color: #975900;
+  text-shadow: 1px 1px 1px #a86609;
+}
+.sidebar .btn-green.btn-orange:hover {
+  background-image: linear-gradient(to bottom, #fd9500, #ffaa31);
 }
 .primary-content-area p a,
 .secondary-content-area p a,
