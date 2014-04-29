@@ -1,0 +1,42 @@
+@media (min-width: 43.125em) {
+
+//*****************************************
+//** NAVIGATION
+//******************************************
+//   Athletics Nav Widths:
+//		Alumni:         	62
+//		Connect:        	69
+//      Giving:  			73
+//      Scores & Schedules:	98
+//      Teams:        		62
+//      Tickets:          	77
+//      
+//      ------------------------
+//      TOTAL:           	441
+//*****************************************/
+  
+  @totalNavWidth: 441px;
+  
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: percentage(69/@totalNavWidth);
+      }
+      .nav2 {
+        width: percentage(62/@totalNavWidth);
+      }
+      .nav3 {
+        width: percentage(98/@totalNavWidth);
+      }
+      .nav4 {
+        width: percentage(77/@totalNavWidth);
+      }
+      .nav5 {
+        width: percentage(62/@totalNavWidth);
+      }
+      .nav6 {
+        width: percentage(73/@totalNavWidth);
+      }
+    }
+  }
+ }
