@@ -837,15 +837,13 @@ ul.accordion-list li.expanded div{display:block;padding:10px;}
 .thumbnail-data-list li:hover .data-thumbnail{left:0.667em;}
 .list-item-image{position:absolute;padding:4px;height:5.5em;width:5.5em;top:0.57em;overflow:hidden;}
 .list-item-image img{width:100%;}
-.image-link-list .list-item-content{margin-left:6.87em;}
+.image-link-list .list-item-image+.list-item-content{margin-left:6.87em;}
 .image-link-list li{position:relative;}
 .image-link-list li a{min-height:6.5em;}
 .image-link-list li.bottom-row a{min-height:1px;}
-.image-link-list .list-item-content:nth-child(1):after{content:"image not available";position:absolute;left:0;top:50%;height:3em;display:block;margin-top:-1.5em;color:#ccc;width:5.5em;text-align:center;}
 .data-list .list-item-extra{color:#90a099;}
-.news-archive-list.image-link-list .list-item-content:nth-child(1):after{width:9.75em;}
 .news-archive-list .list-item-image{width:9.75em;}
-.news-archive-list .list-item-content{margin-left:11.25em;}
+.news-archive-list.image-link-list .list-item-image+.list-item-content{margin-left:11em;}
 .data-list.share-list li{display:inline-block;vertical-align:middle;padding:0.4em 0;}
 .data-list.share-list li:nth-child(1){height:24px!important;width:80px;}
 .data-list.share-list li:nth-child(2){height:20px!important;width:90px;}
@@ -919,4 +917,9 @@ ul.accordion-list li.expanded div{display:block;padding:10px;}
 .no-cssgradients .btn-green{filter:none;background:#007c41;}
 .no-cssgradients .btn-red{filter:none;background:#7C0F00;}
 .touch .hover-caption-container .caption{position:relative;}
-@media screen and (min-width:61.1875em){.hide-desktop{display:none;}}@media (max-width:61.1875em) and (min-width:43.0625em){.hide-tablet{display:none;}}@media (max-width:43.07em){.hide-mobile{display:none;}}
+@media screen and (min-width:61.1875em){.hide-desktop{display:none;}}@media (min-width:43.0625em) and (max-width:61.1875em){.hide-tablet{display:none;}}@media (max-width:43.07em){.hide-mobile{display:none;}}.hidden{display:none!important;visibility:hidden;}
+.visible-phone{display:none !important;}
+.visible-tablet{display:none !important;}
+.hidden-desktop{display:none !important;}
+.visible-desktop{display:inherit !important;}
+@media (min-width:48em) and (max-width:61.1875em){.hidden-desktop{display:inherit !important;} .visible-desktop{display:none !important ;} .visible-tablet{display:inherit !important;} .hidden-tablet{display:none !important;}}@media (max-width:47.9375em){.hidden-desktop{display:inherit !important;} .visible-desktop{display:none !important;} .visible-phone{display:inherit !important;} .hidden-phone{display:none !important;}}
