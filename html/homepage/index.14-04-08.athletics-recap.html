@@ -59,10 +59,10 @@
     margin:0;
   }
 
-  .feature-area .slides li.rdata {
-    background-color: #0F151F;
-    background-image: url('/~publicas/uofa/img/features/paw-centre-fma.jpg');
-    background-position: top center;
+  .feature-area .slides li.athletics-recap {
+    background-color: #000;
+    background-image: url('http://www.ualberta.ca/~publicas/uofa/img/features/fma-athletics-recap.jpg');
+    background-position: top right;
   }  
   
   .feature-area .slides li.bg-image {
@@ -116,6 +116,11 @@
 
       @media screen and (max-width: 43.0625em) {
         ul.toggles { display: none; }
+        
+        .feature-area .slides li.athletics-recap {
+        	background-position: 35% 0;
+        }
+
       }
 
   
@@ -145,9 +150,9 @@
           background-size: auto 100%;
         }
       
-        .rdata .feature-content {
-          width: 24em;
-		      height: 7.75em;
+        .athletics-recap .feature-content {
+          width:23em;
+         height:8em;
         }
 
         /* maintain aspect ratio as if there were an image 
@@ -186,10 +191,10 @@
 
       }
       
-      @media screen and (min-width:43.125em) { 
-      	.rdata .feature-content {
-      		width: 24em;
-			    height: 7.75em;
+      @media screen and (min-width:43.125em) and (max-width:60.0625em) { 
+      	.athletics-recap .feature-content {
+      		width: 15em;
+      		height: 11.2em;
       	}
       }
       
@@ -236,13 +241,13 @@
           height:280px;
         }
         
-        .lt-ie9 .rdata .feature-content {
-          width: 24em;
-          height: 7.75em;
+        .lt-ie9 .athletics-recap .feature-content {
+          width: 15em;
+          height: 11.2em;
           bottom:0;
         }
         
-        .lt-ie9 .feature-area .slides li.summercamps {
+        .lt-ie9 .feature-area .slides li.athletics-recap {
           background-position: center center;
           height:280px;
         }
@@ -371,7 +376,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <li role="menuitem" class="audience-link"><a href="http://prospective.ualberta.ca/">Prospective Students</a></li>
               <li role="menuitem" class="audience-link"><a href="http://students.ualberta.ca/">Current Students</a></li>
               <li role="menuitem" class="audience-link"><a href="http://facultystaff.ualberta.ca/">Faculty &amp; Staff</a></li>
-              <li role="menuitem" class="audience-link"><a href="http://alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
+              <li role="menuitem" class="audience-link"><a href="http://www.alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
             </ul>
           </li>
         </ul>
@@ -390,7 +395,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li role="menuitem" class="audience-link"><a href="http://prospective.ualberta.ca/">Prospective Students</a></li>
           <li role="menuitem" class="audience-link"><a href="http://students.ualberta.ca/">Current Students</a></li>
           <li role="menuitem" class="audience-link"><a href="http://facultystaff.ualberta.ca/">Faculty &amp; Staff</a></li>
-          <li role="menuitem" class="audience-link"><a href="http://alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
+          <li role="menuitem" class="audience-link"><a href="http://www.alumni.ualberta.ca/">Alumni &amp; Friends</a></li>
         </ul>
       </div>
     </div>
@@ -399,15 +404,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="content-wrapper ualberta-home">
     <div id="homepage-feature-area" class="feature-area">
       <ul class="slides">
-        <li class="ga_ualberta_fma rdata current focus-right bg-image">
+        <li class="ga_ualberta_fma athletics-recap current focus-right bg-image">
           <div class="feature-wrapper">
-            <div class="feature-image"></div>
-            <div class="feature-content left-island bottom-island">
-              <h3>PAW Centre Takes Shape</h3>
-              <p>Watch time lapse video of the work done this winter and early spring.</p>
+            <div class="feature-image">
+            </div>
+            <div class="feature-content right-island bottom-island">
+              <h3>Banner Year for Bears and Pandas</h3>
+              <p>A look back at 2013-14 in photos, featuring 10 regional titles, three championships.</p>
               <div class="feature-buttons">
-                <a class="btn btn-grey btn-micro read" href="http://www.facilities.ualberta.ca/Planning_Project_Delivery/ConstProjects/PAWCentre.aspx">Read more</a>
-                 <a class="btn btn-green btn-micro read" href="http://www.facilities.ualberta.ca/Planning_Project_Delivery/ConstProjects/PAWCentre/PAWCentreVideo.aspx">Watch video</a>
+                <a class="btn btn-green btn-micro read" href="http://news.ualberta.ca/newsarticles/2014/april/in-photos-banner-year-for-bears-pandas">Read more</a>
               </div>
             </div>
           </div>
@@ -472,7 +477,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </a>
               </li>
               <li>
-                <a href="http://www.campusmap.ualberta.ca/">
+                <a href="http://www.campusmaps.ualberta.ca/">
                   <i class="icon-exp-maps"></i>
                   <span>Maps</span>
                 </a>
@@ -484,7 +489,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </a>
               </li>
               <li>
-                <a href="http://athletics.ualberta.ca/">
+                <a href="http://www.athletics.ualberta.ca/">
                   <i class="icon-exp-athletics"></i>
                   <span>Athletics</span>
                 </a>
@@ -616,7 +621,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <a href="http://twitter.com/#!/ualberta"><i class="icon-twitter"></i> Twitter</a>
           </h5>
           <div class="sidebar-content">
-		<p>Join the more than 24,000 people who follow and interact with UAlberta on Twitter.</p>
+		<p>Join the more than 21,000 people who follow and interact with UAlberta on Twitter.</p>
 		<div>
               <a href="https://twitter.com/ualberta" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @ualberta</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -651,16 +656,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
           <div class="span12 footer-copyright">
             <ul class="footer-quick-links">
-					    <li><a href="http://uofa.ualberta.ca/contactualberta">Contact Us</a></li>
+					    <li><a href="http://www.uofa.ualberta.ca/contactualberta">Contact Us</a></li>
               <li><a href="https://www.surveymonkey.com/s/ualberta-web-feedback">Feedback</a></li>
 					    <li><a href="http://www.registrar.ualberta.ca/calendar/">University Calendar</a></li>
 					    <li><a href="http://www.careers.ualberta.ca/">Careers</a></li>
 					    <li><a href="http://www.rms.ualberta.ca/en/EmergNumbers.aspx">Emergency</a></li>
-					    <li><a href="https://policiesonline.ualberta.ca/PoliciesProcedures/Pages/default.aspx">Policies</a></li>
-					    <li><a href="http://weather.gc.ca/city/pages/ab-50_metric_e.html" target="_blank">Weather</a></li>
+					    <li><a href="https://policiesonline.ualberta.ca">Policies</a></li>
+					    <li><a href="http://www.weatheroffice.gc.ca/city/pages/ab-50_metric_e.html" target="_blank">Weather</a></li>
 					    <li><a href="http://www.edmonton.ca/" target="_blank">Edmonton</a></li>
-					    <li><a href="http://uofa.ualberta.ca/privacy">Privacy</a></li>
-					    <li><a href="http://uofa.ualberta.ca/keepintouch">Keep in Touch</a></li>
+					    <li><a href="http://www.uofa.ualberta.ca/privacy">Privacy</a></li>
+					    <li><a href="http://www.uofa.ualberta.ca/keepintouch">Keep in Touch</a></li>
 					    <li><a href="#">Back to Top</a></li>
             </ul>
             <p>
@@ -673,7 +678,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </footer> <!-- Footer End -->
  
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <!-- scripts concatenated and minified via build script -->
 <script src="/~publicas/uofa/js/ualberta/institutional-fluid-qa.js"></script>
@@ -808,10 +813,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }
               newsEl.append('<li class="news-row bottom-row"><a href="http://news.ualberta.ca/">Read more news</a></li>');
           }
-      ).fail(function() {
-        newsEl.removeClass('loading');
-        newsEl.append('<li><p>The latest news can not be displayed at this time.  Go to the <a href="http://news.ualberta.ca/">news page</a> to see the latest stories.</p></li>');
-      });
+      );
       
 			// Fetch Notices
 			// --------------------
@@ -823,7 +825,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
       // Colloquy Blog
       // --------------------
-      (function($){$.extend({jGFeed:function(url,fnk,num,key){if(url==null){return false;}var gurl="//ajax.googleapis.com/ajax/services/feed/load?v=1.0&callback=?&q="+url;if(num!=null){gurl+="&num="+num;}if(key!=null){gurl+="&key="+key;}$.getJSON(gurl,function(data){if(typeof fnk=="function"){fnk.call(this,data.responseData.feed);}else{return false;}});}});})(jQuery);
+      (function($){$.extend({jGFeed:function(url,fnk,num,key){if(url==null){return false;}var gurl="http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&callback=?&q="+url;if(num!=null){gurl+="&num="+num;}if(key!=null){gurl+="&key="+key;}$.getJSON(gurl,function(data){if(typeof fnk=="function"){fnk.call(this,data.responseData.feed);}else{return false;}});}});})(jQuery);
       
       var blogEl = $('#colloquy-blog').find('.data-list');
       

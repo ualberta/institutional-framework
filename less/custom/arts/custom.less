@@ -49,6 +49,24 @@
 	}
 }
 
+// Orange button
+
+
+.sidebar .btn-green.btn-orange {
+	  @orange: #CA7700;
+	  background-image: linear-gradient(to bottom, lighten(@orange, 5%), darken(@orange, 5%));
+	  border-color: lighten(@orange, 10%);
+	  border-right-color: @orange;
+	  border-bottom-color: darken(@orange, 10%);
+	  text-shadow: 1px 1px 1px desaturate(darken(@orange, 5%),10%);
+	  &:hover {
+	    background-image: linear-gradient(to bottom, lighten(@orange, 7%), darken(@orange, 3%));
+	  }
+	  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px desaturate(lighten(@orange, 25%),10%), inset 0px -1px 3px darken(@orange, 5%);
+	  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px desaturate(lighten(@orange, 25%),10%), inset 0px -1px 3px darken(@orange, 5%);
+	  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px desaturate(lighten(@orange, 25%),10%), inset 0px -1px 3px darken(@orange, 5%);
+	  }
+
 // Make sure inline links are underlined
 .primary-content-area p a, .secondary-content-area p a, .sidebar p a {
      text-decoration:underline;
@@ -115,6 +133,10 @@
 	.list-item-content {
 		margin-left: 7em;
 	}
+	&.image-link-list .list-item-content:nth-child(1):after {
+		width: 5.5em;
+	}
+	
 }
 
 .research-news, .arts-in-the-news {
