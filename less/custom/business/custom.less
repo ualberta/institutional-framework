@@ -211,6 +211,18 @@ a.leather:hover {
   font-size: 0.7em;
 }
 
+.sidebar .extrude .leather {
+  margin: -0.8333em;
+  position:relative;
+}
+
+// get rid of empty sidebar headers
+h5.sidebar-title:empty {
+  margin-bottom: -1.075em;
+  background:none;
+  border:none;
+}
+
 .leather-feature .caption {
   .leather();
   h3,p {
@@ -230,13 +242,15 @@ a.leather:hover {
 }
 
 @media (min-width:43.125em) {
-  .leather-feature .caption {
+  .leather-feature.left .caption {
     width: 80%;
     bottom:0.741em;
     left:0.741em;
   }
 
   .leather-feature.right .caption {
+    width: 80%;
+    bottom:0.741em;
     left:auto;
     right:0.741em;
   }
