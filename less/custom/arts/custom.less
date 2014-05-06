@@ -127,26 +127,11 @@
 /* News archive thumbnails */
 
 .news-archive-list {
+	&.image-link-list .list-item-image+.list-item-content {
+		margin-left: 6.87em;
+	}
 	.list-item-image {
-		width: 5.5em;
-	}
-	.list-item-content {
-		margin-left: 7em;
-	}
-	&.image-link-list .list-item-content:nth-child(1):after {
-		width: 5.5em;
-	}
-	
-}
-
-.research-news, .arts-in-the-news {
-	.news-archive-list {
-		.list-item-content {
-			margin-left:  0;
-		}
-		&.image-link-list .list-item-content:nth-child(1):after {
-			content: none;
-		}
+	    width: 5.5em;
 	}
 }
 
