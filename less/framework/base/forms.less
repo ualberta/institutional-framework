@@ -28,7 +28,7 @@ legend {
   line-height: 1.57em;
   color: @grayDark;
   border: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px dotted #ddd;
   float: left;
   font-weight: bold;
 }
@@ -806,6 +806,29 @@ div.scfForm {
 	.scfDropListLabel, .scfEmailLabel, .scfMultipleLineTextLabel, .scfSingleLineTextLabel, .scfPasswordLabel, .scfNumberLabel, .scfDatePickerLabel, .scfDateLabel, .scfRadioButtonListLabel, .scfCheckBoxListLabel, .scfListBoxLabel, .scfFileUploadLabel, .scfDateSelectorLabel, .scfCreditCardLabel, .scfConfirmPasswordLabel, .scfCaptchaLabel, .scfTelephoneLabel, .scfSmsTelephoneLabel {
 		margin-right: 15px;
 	}
+  .scfSectionBorderAsFieldSet {
+    border-top:none;
+    .scfSectionLegend {
+      margin: 1em 0 0.57em 0;
+      padding: 0;
+      color: #3D4A43;
+      font-family: "DIN Medium", sans-serif;
+      font-weight: normal;
+      font-size: 1.2em;
+    }
+  }
+  .scfMultipleLineTextUsefulInfo,
+  .scfSingleLineTextUsefulInfo,
+  [class*="UsefulInfo"] {
+    color: #44524A;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+}
+.content .scfForm input, 
+.content .scfForm select, 
+.content .scfForm textarea {
+  height:auto;
 }
 .sidebar div.scfForm {
 	.scfDropListLabel, .scfEmailLabel, .scfMultipleLineTextLabel, .scfSingleLineTextLabel, .scfPasswordLabel, .scfNumberLabel, .scfDatePickerLabel, .scfDateLabel, .scfRadioButtonListLabel, .scfCheckBoxListLabel, .scfListBoxLabel, .scfFileUploadLabel, .scfDateSelectorLabel, .scfCreditCardLabel, .scfConfirmPasswordLabel, .scfCaptchaLabel, .scfTelephoneLabel, .scfSmsTelephoneLabel {

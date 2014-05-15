@@ -27,7 +27,7 @@ a:hover{color:#003019;text-decoration:underline;}
 .image-shadow{position:relative;display:block;}
 .image-shadow::before{content:'';position:absolute;width:100%;height:100%;-moz-box-shadow:inset 0px 0px 3px 1px rgba(0, 0, 0, 0.2);-webkit-box-shadow:inset 0px 0px 3px 1px rgba(0, 0, 0, 0.2);box-shadow:inset 0px 0px 3px 1px rgba(0, 0, 0, 0.2);}
 .image-shadow+p{margin-top:5px;}
-[class^="loading"],[class*="loading"],.loading{background:url('http://www.ualberta.ca/~publicas/uofa/img/loading.gif') no-repeat center center;min-height:30px;}
+[class^="loading"],[class*="loading"],.loading{background:url('//www.ualberta.ca/~publicas/uofa/img/loading.gif') no-repeat center center;min-height:30px;}
 .ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url('assets/xml/ellipsis.xml#ellipsis');}
 .extrude{padding:0.7142857142857143em;background:#fff;border:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 4px rgba(0, 30, 15, 0.2);-moz-box-shadow:0 1px 4px rgba(0, 30, 15, 0.2);box-shadow:0 1px 4px rgba(0, 30, 15, 0.2);}
 .sidebar .extrude{font-size:0.8571428571428571em;padding:0.8333333333333334em;margin-bottom:1.57em;padding:0.8333333333333334em 0.8333333333333334em 0.5em 0.8333333333333334em;}
@@ -97,7 +97,7 @@ div.content-inner hr.soften.double{margin:1.57em 0em;}
 address{display:block;margin-bottom:1.42857142857143em;font-style:normal;line-height:1.42857142857143em;}
 form{margin:0 0 1.42857142857143em;}
 fieldset{padding:0 0 5px 0;margin:0 0 8px 0;border:0;border-bottom:1px dotted #ddd;}
-legend{display:block;width:100%;padding:0 0 5px 0;margin-bottom:0.75em;font-size:1em;line-height:1.57em;color:#3d4a43;border:0;border-bottom:1px solid #ddd;float:left;font-weight:bold;}
+legend{display:block;width:100%;padding:0 0 5px 0;margin-bottom:0.75em;font-size:1em;line-height:1.57em;color:#3d4a43;border:0;border-bottom:1px dotted #ddd;float:left;font-weight:bold;}
 legend+label{clear:both;}
 label,input,button,select,textarea{font-size:1em;font-weight:normal;line-height:1.42857142857143em;}
 input,button,select,textarea{font-family:sans-serif;}
@@ -214,6 +214,9 @@ div.scfForm .scfCheckBoxListGeneralPanel input{float:left;margin-top:3px;}
 div.scfForm .scfSectionLegend{margin-left:0;padding-left:0;}
 div.scfForm .scfSectionBorderAsFieldSet{padding-left:0;margin-left:0;border-top-color:#ddd;}
 div.scfForm .scfDropListLabel,div.scfForm .scfEmailLabel,div.scfForm .scfMultipleLineTextLabel,div.scfForm .scfSingleLineTextLabel,div.scfForm .scfPasswordLabel,div.scfForm .scfNumberLabel,div.scfForm .scfDatePickerLabel,div.scfForm .scfDateLabel,div.scfForm .scfRadioButtonListLabel,div.scfForm .scfCheckBoxListLabel,div.scfForm .scfListBoxLabel,div.scfForm .scfFileUploadLabel,div.scfForm .scfDateSelectorLabel,div.scfForm .scfCreditCardLabel,div.scfForm .scfConfirmPasswordLabel,div.scfForm .scfCaptchaLabel,div.scfForm .scfTelephoneLabel,div.scfForm .scfSmsTelephoneLabel{margin-right:15px;}
+div.scfForm .scfSectionBorderAsFieldSet{border-top:none;}div.scfForm .scfSectionBorderAsFieldSet .scfSectionLegend{margin:1em 0 0.57em 0;padding:0;color:#3D4A43;font-family:"DIN Medium",sans-serif;font-weight:normal;font-size:1.2em;}
+div.scfForm .scfMultipleLineTextUsefulInfo,div.scfForm .scfSingleLineTextUsefulInfo,div.scfForm [class*="UsefulInfo"]{color:#44524A;margin-top:-5px;margin-bottom:10px;}
+.content .scfForm input,.content .scfForm select,.content .scfForm textarea{height:auto;}
 .sidebar div.scfForm .scfDropListLabel,.sidebar div.scfForm .scfEmailLabel,.sidebar div.scfForm .scfMultipleLineTextLabel,.sidebar div.scfForm .scfSingleLineTextLabel,.sidebar div.scfForm .scfPasswordLabel,.sidebar div.scfForm .scfNumberLabel,.sidebar div.scfForm .scfDatePickerLabel,.sidebar div.scfForm .scfDateLabel,.sidebar div.scfForm .scfRadioButtonListLabel,.sidebar div.scfForm .scfCheckBoxListLabel,.sidebar div.scfForm .scfListBoxLabel,.sidebar div.scfForm .scfFileUploadLabel,.sidebar div.scfForm .scfDateSelectorLabel,.sidebar div.scfForm .scfCreditCardLabel,.sidebar div.scfForm .scfConfirmPasswordLabel,.sidebar div.scfForm .scfCaptchaLabel,.sidebar div.scfForm .scfTelephoneLabel,.sidebar div.scfForm .scfSmsTelephoneLabel{width:100%;}
 .sidebar div.scfForm div.scfSubmitButtonBorder input{border:1px solid;font-size:1.2em;line-height:1em;padding:0.8em 1.5em 0.6em 1.5em;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;border-radius:0.4em;font-family:"DIN Bold",sans-serif;font-weight:normal;text-decoration:none;font-weight:500;text-align:center;border-color:#dfe9e3;border-bottom-color:#b8cec1;border-right-color:#d0dfd6;*background-color:#eaefec;background-image:-moz-linear-gradient(top, #f4f4f4, #dfe9e3);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#dfe9e3));background-image:-webkit-linear-gradient(top, #f4f4f4, #dfe9e3);background-image:-o-linear-gradient(top, #f4f4f4, #dfe9e3);background-image:linear-gradient(to bottom, #f4f4f4, #dfe9e3);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffdfe9e3', GradientType=0);color:#007c41;text-shadow:0px 1px 1px #ffffff;-webkit-box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;-moz-box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15), inset 1px 1px 1px #ffffff, inset 0px -1px 3px #d0dfd6;font-size:0.815em;text-transform:uppercase;}.sidebar div.scfForm div.scfSubmitButtonBorder input [class^="icon-"],.sidebar div.scfForm div.scfSubmitButtonBorder input [class*=" icon-"]{line-height:.9em;}
 .sidebar div.scfForm div.scfSubmitButtonBorder input:hover{text-decoration:none;}
@@ -683,6 +686,8 @@ ul.footer-quick-links+p{margin-top:1em;}
 .svg .social-media .icon-instagram{background:url("/design/img/webicons/webicon-instagram.svg");}
 .no-svg .social-media .icon-vimeo{background:url("/design/img/webicons/webicon-vimeo-m.png");}
 .svg .social-media .icon-vimeo{background:url("/design/img/webicons/webicon-vimeo.svg");}
+.no-svg .social-media .icon-wordpress{background:url("/design/img/webicons/webicon-wordpress-m.png");}
+.svg .social-media .icon-wordpress{background:url("/design/img/webicons/webicon-wordpress.svg");}
 .module-container .module-heading{position:relative;}.module-container .module-heading h3{display:inline-block;margin-right:0.5em;}
 .module-container .module-heading .module-actions{list-style:none;margin:0;padding:0;display:inline-block;}.module-container .module-heading .module-actions li{display:inline-block;*display:inline;*zoom:1;padding:0 0.5em;margin:-0.23em -0.23em 0 0;}.module-container .module-heading .module-actions li a{padding:0.475em 0.35em 0.23em;}
 .module-container.center-component{text-align:center;}.module-container.center-component>.frame{display:inline-block;}
