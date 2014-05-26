@@ -1,0 +1,13 @@
+@media (min-width:43.125em){.navigation-container .navigation-inner ul li ul .nav1{width:12.1%;} .navigation-container .navigation-inner ul li ul .nav2{width:14.5%;} .navigation-container .navigation-inner ul li ul .nav3{width:17.1%;} .navigation-container .navigation-inner ul li ul .nav4{width:14.5%;} .navigation-container .navigation-inner ul li ul .nav5{width:22.6%;} .navigation-container .navigation-inner ul li ul .nav6{width:19.2%;}}.departments .flexslider,.programs .flexslider,.research .flexslider,.workofarts .flexslider{margin-bottom:3em;}
+.sidebar .frame{margin:0;}
+.navigation-inner .section-description a{padding:0;display:inline;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none;text-decoration:underline;}.navigation-inner .section-description a:hover{text-decoration:none;}
+.sidebar .btn-green.btn-orange{background-image:linear-gradient(to bottom, #e38600, #b16800);border-color:#fd9500;border-right-color:#ca7700;border-bottom-color:#975900;text-shadow:1px 1px 1px #a86609;-webkit-box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15),inset 1px 1px 1px #f6b354,inset 0px -1px 3px #b16800;-moz-box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15),inset 1px 1px 1px #f6b354,inset 0px -1px 3px #b16800;box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15),inset 1px 1px 1px #f6b354,inset 0px -1px 3px #b16800;}.sidebar .btn-green.btn-orange:hover{background-image:linear-gradient(to bottom, #ee8c00, #bb6e00);}
+.primary-content-area p a,.secondary-content-area p a,.sidebar p a{text-decoration:underline;}.primary-content-area p a:hover,.secondary-content-area p a:hover,.sidebar p a:hover{text-decoration:none;}
+.primary-content-area p.button-container a,.secondary-content-area p.button-container a,.sidebar p.button-container a{text-decoration:none;}
+.social-media-links img{width:16px;height:16px;margin-right:4px;margin-bottom:1px;}
+.frame.data-thumbnail{position:absolute;top:0.8333em;}.frame.data-thumbnail a,.frame.data-thumbnail a:hover{margin:0;padding:0;border:none;}
+.homepage .primary-content-area .module-container .data-list li{position:relative;}
+.homepage .primary-content-area .module-container .data-list li h4 a{padding-left:115px;padding-top:0.83333em;min-height:7.5em;}.homepage .primary-content-area .module-container .data-list li h4 a:hover{padding-left:126px;}
+.homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a{padding-left:0;}.homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a:hover{padding-left:11px;}
+.news-archive-list.image-link-list .list-item-image+.list-item-content{margin-left:6.87em;}
+.news-archive-list .list-item-image{width:5.5em;}
