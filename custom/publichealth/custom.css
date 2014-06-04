@@ -15,3 +15,16 @@
     width: 23.582766439909296%;
   }
 }
+#health-e-news-form input[type="checkbox"] {
+  float: left;
+  height: 28px;
+  width: 5%;
+}
+#health-e-news-form input[type="text"] {
+  width: 80%;
+}
+#health-e-news-form label {
+  display: inline-block;
+  width: 85%;
+  height: 20px;
+}
