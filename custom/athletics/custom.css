@@ -1037,10 +1037,10 @@ li.front-news-row .front-news-thumbnail a img {
     background: url("/design/img/athletics-top-logos.png") no-repeat center -34px;
   }
 }
-.nav2 #pnlSubMenu {
+.main-navigation > li.nav2:hover .sub-menu {
   width: 30em;
 }
-.nav2 #pnlSubMenu ul li {
+.main-navigation > li.nav2:hover .sub-menu ul li {
   width: 14em;
   float: left;
   margin-right: 1em;
