@@ -1,23 +1,31 @@
 @media (min-width: 43.125em) {
   .navigation-container .navigation-inner ul li ul .nav1 {
-    width: 14.73922902494331%;
+    width: 13%;
   }
   .navigation-container .navigation-inner ul li ul .nav2 {
-    width: 14.73922902494331%;
+    width: 13%;
   }
   .navigation-container .navigation-inner ul li ul .nav3 {
-    width: 14.73922902494331%;
+    width: 13%;
   }
   .navigation-container .navigation-inner ul li ul .nav4 {
-    width: 14.73922902494331%;
+    width: 13%;
   }
   .navigation-container .navigation-inner ul li ul .nav5 {
-    width: 26.303854875283445%;
+    width: 24%;
   }
   .navigation-container .navigation-inner ul li ul .nav6 {
-    width: 14.73922902494331%;
+    width: 24%;
   }
 }
-.home .primary-content-area .span12.rmi-cont {
-  margin-left: 0;
+/*** Lane's adjustments for homepage teasers ***/
+.frame.data-thumbnail {
+  position: absolute;
+  top: 0.8333em;
+}
+.frame.data-thumbnail a,
+.frame.data-thumbnail a:hover {
+  margin: 0;
+  padding: 0;
+  border: none;
 }

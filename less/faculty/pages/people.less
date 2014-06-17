@@ -93,16 +93,16 @@ ul.people-nav li{
     cursor: pointer;
     }
     ul.people-nav li.home{
-    width:23%;
+    width:17%;
     }
     ul.people-nav li.courses{
-    width:25%;
+    width:18%;
     }
     ul.people-nav li.professional-activities{
     width:30%;
     }
     ul.people-nav li.publications{
-    width:25%;
+    width:34%;
     }
 ul.people-content li{
     list-style: none;
@@ -135,7 +135,7 @@ ul.people-content ul{
 }
   .accordion-list li ul.people-accordion li ul.people-accordion-content{
     margin-bottom:10px;
-    border-bottom:2px solid #7AC900;
+    border-bottom:1px solid #ccc;
     padding-bottom:10px;
     }
 .accordion-list li ul.people-accordion-content li a{
@@ -147,7 +147,6 @@ ul.people-content ul{
      background-color:transparent;
 }
 .accordion-list li.expanded ul.people-accordion{
-	border-bottom:none;
 	padding-bottom:10px;
 }
 .accordion-list li.expanded ul.people-accordion>li{
@@ -175,7 +174,17 @@ ul.people-content ul{
 		width:60%;
 		float:right;
 	}
-
+}
+@media (min-width:43.125em) and (max-width:50.063em){
+	ul.people-nav li.home{
+		width:14%;
+	}
+	ul.people-nav li.professional-activities{
+		width:31%;
+	}
+	ul.people-nav li.publications{
+		width:35%;
+	}
 }
 @media screen and (max-width:35em){
 	.people-nav-cont.collapse{
@@ -237,16 +246,5 @@ ul.people-content ul{
 		&.events{
 			width:auto;
 		}
-	}
-}
-@media (min-width:43.188em) and (max-width:50.938em){
-	ul.people-nav li.courses{
-		width:16%;
-	}
-	ul.people-nav li.professional-activities{
-		width:34%;
-	}
-	ul.people-nav li.professional-activities a{
-		font-size:0.9em;
 	}
 }

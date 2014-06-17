@@ -209,7 +209,7 @@ a:hover {
 [class^="loading"],
 [class*="loading"],
 .loading {
-  background: url('http://www.ualberta.ca/~publicas/uofa/img/loading.gif') no-repeat center center;
+  background: url('//www.ualberta.ca/~publicas/uofa/img/loading.gif') no-repeat center center;
   min-height: 30px;
 }
 .ellipsis {
@@ -3076,6 +3076,12 @@ ul.footer-quick-links + p {
 }
 .svg .social-media .icon-vimeo {
   background: url("/design/img/webicons/webicon-vimeo.svg");
+}
+.no-svg .social-media .icon-wordpress {
+  background: url("/design/img/webicons/webicon-wordpress-m.png");
+}
+.svg .social-media .icon-wordpress {
+  background: url("/design/img/webicons/webicon-wordpress.svg");
 }
 .module-container .module-heading {
   position: relative;

@@ -1,0 +1,54 @@
+@media (min-width: 43.125em) {
+
+//*****************************************
+//** NAVIGATION
+//******************************************
+//   Public Health Nav Widths:
+//		About Us:         	77
+//		Programs:        	78
+//      Student Resources:  104
+//      Research:			78
+//      Alumni And Giving:	104
+//      
+//      ------------------------
+//      TOTAL:           	441
+//*****************************************/
+  
+  @totalNavWidth: 441px;
+  
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: percentage(77/@totalNavWidth);
+      }
+      .nav2 {
+        width: percentage(78/@totalNavWidth);
+      }
+      .nav3 {
+        width: percentage(104/@totalNavWidth);
+      }
+      .nav4 {
+        width: percentage(78/@totalNavWidth);
+      }
+      .nav5 {
+        width: percentage(104/@totalNavWidth);
+      }
+    }
+  }
+ }
+ 
+#health-e-news-form input[type="checkbox"] {
+    float: left;
+    height: 28px;
+    width: 5%;
+}
+
+#health-e-news-form input[type="text"] {
+    width: 80%;
+}
+
+#health-e-news-form label {
+    display: inline-block;
+    width: 85%;
+    height: 20px;
+}
