@@ -3083,6 +3083,12 @@ ul.footer-quick-links + p {
 .svg .social-media .icon-wordpress {
   background: url("/design/img/webicons/webicon-wordpress.svg");
 }
+.no-svg .social-media .icon-typepad {
+  background: url("/design/img/webicons/webicon-typepad-m.png");
+}
+.svg .social-media .icon-typepad {
+  background: url("/design/img/webicons/webicon-typepad.svg");
+}
 .module-container .module-heading {
   position: relative;
 }
