@@ -1,0 +1,145 @@
+.content-wrapper {
+  position: relative;
+}
+
+.content-inner {
+  padding: 0;
+  margin-top: 1.57em;
+}
+ 
+.banner-inner {
+    padding:0 0.8333em;
+}
+
+.container {
+    width:  auto;
+    padding: 0 0.8333em;
+}
+
+.content-top-row {
+  .tab-content {
+    min-height: none;
+  }
+}
+
+.intro-content {
+  display:none;
+}
+
+.row-fluid {
+  .first-column,
+  .audience-area,
+  .second-column {
+    margin-left: 0;
+  }
+}
+
+.row-fluid {
+  .feature-area,
+  .first-column {
+    margin-bottom: 1.5em;
+  }
+}
+
+
+@media (min-width: 30em) {
+  .row-fluid .sidebar {
+    & > div {
+      display: inline-block;
+      width: 47.5%;
+      margin-right: 5%;
+      vertical-align: top;
+    }
+    & > div:nth-child(2n+2) {
+      margin-right:-5px;
+    }
+  }
+}
+
+@media (min-width: 43.125em) {
+  // set column widths
+  .row-fluid {
+    .first-column { 
+      width: 56%; 
+      .f-e-container:nth-child(1) h3 {
+        margin-top:0;
+      }
+    }
+    .second-column { 
+      width: 39%; 
+      margin-left:5%; 
+      .f-e-container:nth-child(1) h3 {
+        margin-top:0;
+      }
+    }
+    // sidebar is at bottom
+    .sidebar { 
+      width:100%; 
+      margin-left:0;
+      & > div {
+        width: 30%;
+      }
+      & > div:nth-child(2n+2) {
+        margin-right:5%;
+      }
+      & > div:nth-child(3n+3) {
+        margin-right:-5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  // set column widths
+  .row-fluid {
+    .first-column { width: 45%; }
+    .second-column { width: 30%; margin-left:3%;}
+    .sidebar { 
+      width:19%; 
+      margin-left:3%; 
+      margin-top:0; 
+      padding-top: 0; 
+      border-top:none; 
+      .box-shadow(none); 
+      & > div {
+        width: 100%;
+        display:block;
+      }
+      & > div:nth-child(2n+2) {
+        margin-right:0; 
+      }
+    }
+  } 
+
+  // increase left / right page margins to 5% at 980px
+  .container, 
+  .blade-inner, 
+  .banner-inner, 
+  .navigation-inner, 
+  .content-area-feature
+  {
+    padding:0;
+    margin:0 5%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    width:auto;
+  }
+
+  .banner-inner .site-title {
+    left:auto;
+  }
+}
+
+// increase left / right page margins to 9% at 1200px
+@media (min-width: 75em) {
+  .container, 
+  .blade-inner, 
+  .banner-inner, 
+  .navigation-inner,
+  .content-area-feature {
+      margin:0 9%;
+      max-width: 105em;
+  }
+}

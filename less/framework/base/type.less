@@ -53,8 +53,8 @@ cite {
 
 // Headings
 // -------------------------
-h1, h2, h3, h4, h5, h6, .site-title {
-  margin: 1em 0 0.3em;
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em 0 0.5em;
   font-family: @headingsFontFamily;
   font-weight: @headingsFontWeight;
   line-height: 1;
@@ -62,14 +62,55 @@ h1, h2, h3, h4, h5, h6, .site-title {
   text-rendering: optimizelegibility; // Fix the character spacing for headings
 }
 
-h1 { font-size: 1.75em;line-height: 1.2em; }
-h2 { font-size: 1.6em;line-height: 1.2em; }
-h3 { font-size: 1.4em;line-height: 1.2em; }
+/** modular scale based on a perfect fifth, 16, and 1680 **/
+
+h1 { font-size: 2.0714em;line-height: 1.2em; }
+h2 { font-size: 1.7143em;line-height: 1.2em; }
+h3 { font-size: 1.3857em;line-height: 1.2em; }
 h4 { font-size: 1.15em; line-height: 1.2em;}
 h5 { font-size: 1em; line-height: 1.2em; font-family: sans-serif; font-weight: bold; }
 h6 { font-size: 0.9em; font-family: sans-serif; font-weight: bold; }
 
-a.site-title { color:#fff; font-size: 1.71428571428571em; line-height:1.2em; text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35); }
+
+.tertiary h3 {
+  text-transform: uppercase; 
+  color:#6d756f; 
+  color: rgba(61, 74, 67, 0.75);
+}
+
+.second-column h2:nth-child(1) {
+  margin-top:0;
+}
+
+h1.page-title,
+.intro h1,
+.section-heading,
+.title-container h1 {
+  margin: 0.1em auto 0 auto;
+  padding: 0 0 0.4em;
+  font-size: 1.8em;    
+  line-height: 1.2em;
+  border-bottom: 1px solid #ddd;
+  .box-shadow(0 1px 0 #fff);
+}
+
+h1.page-title {
+  font-size:2.0714em;
+}
+
+.content h1.page-title {
+  .box-shadow(none);
+  padding:0;
+  margin: 0.1em 0 (@baseLineHeight / 4) 0;
+}
+
+a.site-title { 
+  color:#fff; 
+  font-size: 1.71428571428571em; 
+  line-height:1.2em; 
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35); 
+  font-family: "DIN Medium", sans-serif;
+}
 a.site-title:hover { color: @yellow; }
 
 @media (min-width: 43.125em) {
@@ -80,22 +121,6 @@ a.site-title:hover { color: @yellow; }
   a.site-title { font-size: 2.4857em; }
 }
 
-h1.page-title,
-.intro h1,
-.section-heading {
-  margin: 0.1em auto 0 auto;
-  padding: 0 0 0.4em;
-  font-size: 1.8em;    
-  line-height: 1.2em;
-  border-bottom: 1px solid #ddd;
-  .box-shadow(0 1px 0 #fff);
-}
-
-.content h1.page-title {
-  .box-shadow(none);
-  padding:0;
-  margin: 0.1em 0 (@baseLineHeight / 4) 0;
-}
 
 h5.sidebar-title {
   line-height: 1.2em;

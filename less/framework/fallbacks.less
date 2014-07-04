@@ -1,22 +1,40 @@
 .no-inlinesvg {
-  
   // Banner
-  // ----------------
-  .banner-container .banner-logo {
-	background: transparent url(../img/ieLogo.png) no-repeat center center;
-    #em > .size(width,210,@baseFontSizepx);
-    #em > .size(height,55px,@baseFontSizepx);
-    img { display: none; }
-  }
-
-    // Banner
   // ----------------
   .banner-container,
   .bottom-footer-row  { 
     background: #007c41 url(../img/banner-bg.jpg) repeat-x top left;
   }
+}
 
-  
+.no-inlinesvg {
+  // Blade Logo
+  // ----------------
+  .blade-inner .brand {
+    background: transparent url(../img/ua_logo.png) no-repeat center center;
+    #em > .size(width,170,@baseFontSizepx);
+    #em > .size(height,40,@baseFontSizepx);
+    img { display: none; }
+  }
+}
+
+.no-boxshadow {
+  .flexslider,
+  .tab-content {
+    border-bottom: 1px solid #e0e3e2;
+    border-right:1px solid #e0e3e2;
+  }
+  .nav-tabs .active {
+    border-right: 1px solid #e0e3e2;
+  } 
+}
+
+.no-csstransforms {
+  // using rotate to create the arrow for highlighted page in nav
+  // hide if not supported
+  .nav-wrapper ul li.nav-current > a:after {
+    display:none;
+  }
 }
 
 .no-rgba {

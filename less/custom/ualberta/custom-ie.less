@@ -1,0 +1,445 @@
+@import "../../framework/base/variables.less";
+@import "../../framework/base/mixins.less";
+.lt-ie10{
+  .csj-frame{
+    float:right;
+  }
+  .aug-frame{
+    float:right;
+  }
+
+}
+.lt-ie9 {
+
+  .navigation-container .navigation-inner ul li ul li { 
+      .nav1, .nav6 { width:16.66%; }
+    }
+    .navigation-container .navigation-inner ul li ul li.nav2 {
+      width:24.33%;
+    }
+    .navigation-container .navigation-inner ul li ul li.nav3, 
+    .navigation-container .navigation-inner ul li ul li.nav4 {
+      width:13.33%;
+    }
+    .navigation-container .navigation-inner ul li ul li.nav5 {
+      width:15.66%;
+    }  
+
+  .virtual-tour .tour{
+    margin-top:0px;
+  }
+  .our-campuses .content-top-row{
+    background-image:none;
+  }
+ .our-campuses .content-top-row .virtual-thumbs{
+    background-image:url("img/ieWhirl-8kb.jpg");    
+    background-position-x: inherit;
+    background-position-y: inherit;
+    background-repeat:no-repeat;
+    background-color:#adc4a7;
+  }
+  .our-campuses .content-top-row > div {
+    width: 100%;
+    padding-bottom:15px;
+    .fma-slide {
+      width:  100%;
+    }
+  }
+  .ut-header{
+    display:none;
+  }
+  .our-campuses .thumbnail-container .nc-frame .frame{
+    width:578px;
+    float:left;
+    margin-left:15px;
+  }
+   .our-campuses .thumbnail-container .csj-frame .frame{
+    width:250px;
+    float:right;
+    margin-right:15px;
+  }
+   .our-campuses .thumbnail-container .aug-frame .frame{
+    width:250px;
+    margin-top:5px;
+    float:right;
+    margin-right:15px;
+  }
+  .unguided-btns{
+    display:none;
+  }
+   //why Ualberta feature video icon
+  .thumbnail-container .hover-caption-container i{
+     top:0%;
+     line-height:1em;
+     width:30%;
+   }
+  hr.secondary-hr { display: none; }
+
+  // make-a-gift.less - ie7/ie8
+  // --------------------------
+  .make-a-gift .btn-give.btn-micro {
+    filter: none;
+    background: #f3f7f5 left bottom repeat-x url(../img/bg-btn-sm-greygloss.png);
+    font-size: 0.9em;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+    &:hover {
+      background-image: none;
+      background-color: #f3f7f5;
+      border-color: #ccc;
+    }
+  }
+  
+ // campus-life.less - ie7/ie8
+ // --------------------------
+ .campuslife {
+  .page-title-row {
+    position:relative;
+    .breadcrumbs, h1 {
+      color: @textColor;
+    }
+    .breadcrumbs a { color: #007c41; }
+  }
+   .fma-prospective {
+     position: relative;
+     br {
+       display: none;
+     }
+     .explore-box {
+       h3 {
+         font-size: 2.25em;
+         *line-height: 1em; // fix ie7 cut off text
+         margin:  0.25em 0em 0.35em 0em;
+         font-family: DIN Regular;
+         color: @yellow;
+       }
+     }
+   }
+   .sidebar {
+    .links ul li a {
+      line-height: 135%;
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+    }
+    .date {
+      line-height: 1em;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+      font-size: 0.9em;
+      color: @lightText;
+    }
+    .givingcontent div {
+      margin: 1em auto 0.5em auto;
+    }
+   }
+   .fma-container {
+     padding: 0px 10px;
+   }
+   .fma-prospective {
+     height: 275px;
+     text-align: center;
+     img {
+       max-width: 940px;
+     }
+     img, .image-shadow::before {
+       .border-radius(4px);
+     }
+     span.image-shadow {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       overflow: hidden;
+     }
+     .explore-box {
+       position: absolute;
+       .box-shadow(none);
+       top: auto;
+       bottom: 0;
+       left:1px;
+       right:1px;
+       height: auto;
+       padding: 10px 25px;
+       font-size: 0.9em;
+       text-align: center;
+       .border-radius(4px);
+       background:#fff;
+       zoom: 1;
+       .ie7-inline-block();
+       input {
+         width: 420px;
+         font-size: 1em;
+         padding: 0.787em;
+         margin-bottom: 1.2em;
+       }
+       h3 {
+         font-size: 2.5em;
+         margin:  0.35em 0em;
+       }
+       .btn {
+         #em > .font-size(11,14);
+       }
+     }
+   } 
+ }
+ 
+ // prospective-students.less - ie7/ie8
+ // ----------------------------
+  .prospective-student {
+    .page-title-row {
+      position:relative;
+      .breadcrumbs, h1 {
+        color: @textColor;
+      }
+      .breadcrumbs a { color: #007c41; }
+    }
+    .fma-prospective {
+      height: 275px;
+      text-align: center;
+      br {
+        display: none;
+      }
+      .explore-box {
+        height: 100%;
+        padding: 0px 25px 0px 25px;
+        font-size: 0.9em;
+        vertical-align: middle;
+        display: inline-block;
+        .ie7-inline-block();
+        background:transparent;
+        filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; 
+        zoom: 1;
+        position: relative;
+        top: 50px;
+        height: auto;
+        padding: 10px 25px 20px 25px;
+        font-size: 0.9em;
+        text-align: center;
+        width: 460px;
+        margin-left: auto;
+        margin-right:  auto;
+        h3 {
+          font-size: 2.5em;
+          *line-height: 1em; // fix ie7 cut off text
+          font-family: DIN Regular;
+          margin:  0.35em 0em;
+        }
+        input {
+          width: 420px;
+          font-size: 1em;
+          padding: 0.787em;
+          margin-bottom: 1.2em;
+        }
+        .btn {
+          #em > .font-size(12,14);
+        }
+      }
+      img {
+        max-width: 940px;
+      }
+      span.image-shadow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+      }
+    }
+    .fma-container {
+      padding: 0px 10px;
+    }
+  }
+  
+  // news-and-events.less - ie7/ie8
+  .news-and-events {
+    .goto-events {
+      display: none;
+    }
+  }
+  
+  // full-width.less - ie7/ie8
+  .content-wrapper.full-width .row-fluid {
+    .primary-content-area {
+      width:  (47.97872340425532%+29.680851063829788%);
+    }
+    .secondary-content-area {
+      display: none;
+    }
+  }
+  
+  // why-ualberta.less - ie7/ie8  
+  .why-ualberta {
+    .content-top-row {
+      background: none;
+    }
+    .fma-container {
+      background: transparent url(img/ieWhirl-8kb.jpg) no-repeat top left;
+      width: 940px;
+      height: 300px;
+      margin: 0 auto;
+      .ualberta-minute {
+        font-size: 1em;
+      }
+      .thumbnail-slide {
+        margin-top: 1%;
+      }
+      .thumbnail-container .frame {
+        #em > .size(width,230,@baseFontSizepx);
+      }
+      .fma-slide {
+        width:  100%;
+      }
+      .ualberta-minute {
+        font-size: 0.85714285714286em;
+        #em > .size(height,300,12);
+        min-height: 300px;
+        background: url(img/ieWhyUalberta-33k.gif) no-repeat top left;
+        .circle, .context {
+          display: none;
+        }
+        .ualberta-link {
+          position: relative;
+          width: 940px;
+          height: 300px;
+          display: block;
+          i { display: none; }
+          span {
+             position: absolute;
+             width: 205px;
+             top: 260px;
+             left: 50%;
+             margin-left: -113px;
+             &:hover {
+               text-decoration:none;
+             }
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .fma-tabs-container{
+    border:none;
+  }
+  .fma-tabs-container .container {
+    width: 940px;
+    .fma-tabs {
+      width: auto;
+      li {
+        display: inline-block;
+        .ie7-inline-block();
+        width: 317px;
+        *width:314px;
+        margin-right: -5px;
+        *margin-right:-1px;
+      }
+      li a {
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+  .ualberta-home .fma-container ul.slides li.sirish {
+     .fma-content {
+       left:370px;
+       top:140px;
+       width:43%;
+    }
+    h3{
+      color:#007c41;
+    }
+  }
+
+
+  // Back to School
+  .ualberta-home .why-ualberta-row {
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+// IE 7
+.lt-ie8 {
+  .virtual-btn{
+    line-height:2em;
+  }
+  .our-campuses .virtual-thumbs .frame a{
+    line-height:1.5em;
+  }
+  .our-campuses .caption h4{
+    line-height:1em;
+  }
+  .our-campuses .thumbnail-container .nc-frame{
+    width: 610px; 
+    float: left; 
+    display: inline;
+    margin-left:0px;
+  }
+  .our-campuses .thumbnail-container .nc-frame .frame {
+    width:auto;
+    float:left;
+  }
+  .our-campuses .thumbnail-container .csj-frame .frame {
+    width:280px;
+    float:right;
+  }
+  .our-campuses .thumbnail-container .aug-frame .frame {
+    width:280px;
+    margin-top:5px;
+    float:right;
+  }
+  .our-campuses ul.calgary-list li {
+    margin-left:0px;
+    padding-left:0px;
+  }
+  .our-campuses ul.enterprise-list li {
+    margin-left:0px;
+    padding-left:0px;
+  }
+  .ualberta-home {
+    .fma-container { 
+      margin-bottom: 1.57em;
+      h3 {
+        line-height: 1em;
+      }
+    }
+    .why-ualberta-row {
+      .span { padding-right: 0; }
+      p.description {
+        width: 48%;
+      }
+    }
+    .thumbnail-container .hover-caption-container i {
+     top:20%;
+     left:40%;
+    }
+    .daily-news .subscribe-form .btn,
+    .find-a-person .person-search .btn {
+      margin-top: 2px;
+      outline: none;
+    }
+    .daily-news .subscribe-form input {
+      padding-top: 0.57em;
+      padding-bottom: 0em;
+      padding-right: 0;
+    }
+    .daily-news .subscribe-form input.email-input {
+      padding-top: 0.57em;
+      padding-bottom: 0em;
+      padding-right: 0;
+    }
+  }
+  .convocation-feature nav {
+    left:0px;
+  }
+
+  // Welcome back 
+  .welcome-back-feature nav {
+    margin-left:-180px;
+  }
+}

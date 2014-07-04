@@ -1,7 +1,32 @@
 /******** FRAMEWORK COMMON ELEMENTS START *********/
 
-@import "framework-base.less";
+// CSS Reset
+@import "framework/base/reset.less";
 
+// Core variables and mixins
+@import "framework/base/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "framework/base/mixins.less";
+@import "framework/base/fonts.less";
+
+// Grid system and page structure
+@import "framework/base/scaffolding.less";
+@import "framework/base/grid.less";
+@import "framework/base/responsive-767px-max.less";
+
+// Base CSS
+@import "framework/base/type.less";
+@import "framework/base/forms.less"; 
+@import "framework/base/tables.less";
+@import "framework/base/font-awesome.less";
+@import "framework/base/dropdowns.less";
+@import "framework/base/modals.less";
+@import "framework/base/tabs.less";
+@import "framework/base/images.less";
+@import "framework/base/buttons.less";
+@import "framework/base/breadcrumbs.less";
+@import "framework/base/pagination.less";
+
+// Page Elements 
 @import "framework/page-elements/base.less";
 @import "framework/page-elements/blade.less";
 @import "framework/page-elements/banner.less";
@@ -10,6 +35,7 @@
 @import "framework/page-elements/content.less";
 @import "framework/page-elements/footer.less";
 
+// Modules
 @import "framework/modules/module-base.less";
 @import "framework/modules/twitter.less";
 @import "framework/modules/image-callout.less";
@@ -31,16 +57,32 @@
 @import "framework/modules/social-media.less";
 @import "framework/modules/responsive-media-item.less";
 @import "framework/modules/contact-info.less";
+@import "framework/modules/tertiary-links.less";
+@import "framework/modules/nav.less";
+@import "framework/modules/news.less";
+@import "framework/modules/submit-event.less";
 
 @import "framework/devices/mobile.less";  
 @import "framework/devices/tablet.less";
 //@import "framework/devices/desktop.less";
-@import "framework/devices/highres.less";
 
-@import "ualberta/pages/news-article.less";
+// Pages
+@import "framework/pages/news-article.less";
+@import "framework/pages/layout.less";
+@import "framework/pages/events.less";
+@import "framework/pages/people.less";
+
+@import "framework/layouts/layouts.less";
+
+@import "framework/departments.less";
+
+@import "framework/hack-fix.less"; // ideally this will be empty
 
 @import "framework/fallbacks.less";
 
 @import "framework/hide-elements.less";
+
+@import "framework/base/utilities.less"; // Has to be last to override when necessary
+
 
 /******** FRAMEWORK COMMON ELEMENTS END *********/

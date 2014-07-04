@@ -39,15 +39,8 @@ build:
 
 less:
 	@lessc -x ./less/framework.less > ./css/framework.css
-	@lessc -x ./less/framework-base.less > ./css/framework-base.css
 	@lessc -x ./less/framework-ie.less > ./css/framework-ie.css
 	@echo "Compiling framework base less...             ${CHECK} Done"
-	@lessc -x ${PROTOTYPE_LESS} > ./css/ualberta.css
-	@lessc -x ./less/ualberta-ie.less > ./css/ualberta-ie.css
-	@echo "Compiling ualberta institutional less...     ${CHECK} Done"
-	@lessc -x ./less/faculty.less > ./css/faculty.css
-	@lessc -x ./less/faculty-ie.less > ./css/faculty-ie.css
-	@echo "Compiling faculty base less...               ${CHECK} Done"
 	@for file in `find ./less/custom -type f -name '*.less'`; do lessFilePath="$$file"; cssFilePath="$${lessFilePath/.\/less/.}"; cssFilePath="$${cssFilePath/%.less/.css}"; mkdir -p $$(dirname "$$cssFilePath"); lessc -x "$$lessFilePath" > "$$cssFilePath"; done
 	@echo "Compiling custom faculty less...               ${CHECK} Done"
 

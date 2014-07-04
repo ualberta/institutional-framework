@@ -1,0 +1,47 @@
+.landing-page .intro-content {
+  display:block;
+  border-bottom: 1px solid #DDD;
+  box-shadow:0 1px 0 #fff;
+  font-size: 1.14em;
+  line-height: 1.42em;
+  padding:0 0 1em;
+  margin-bottom: 1.57em;
+}
+
+.landing-page .intro-content:empty {
+  display:none;
+}
+
+
+
+
+@media (min-width: 43.125em) {
+  .landing-page .row-fluid {
+    .intro-content {
+      width:100%;
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+  .landing-page .row-fluid {
+    &.content-inner {
+      position:relative;
+    }
+    .intro-content {
+      width: 78%;
+    }
+    .second-column {
+      & > hr.soften:first-child {
+        display:none;
+      }
+    }
+    .sidebar {
+      float: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+ 

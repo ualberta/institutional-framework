@@ -1,0 +1,75 @@
+.faculty-home .row-fluid .feature-area {
+  margin-bottom:1.57em;
+}
+
+.faculty-home .page-title-row { display:none; }
+
+@media (min-width: 43.125em) and (max-width: 61.2em) {
+  .faculty-home .row-fluid {
+    .feature-area {
+      width: 70%;
+      margin-bottom:0;
+    }
+    .audience-area {
+      position:relative;
+      width: 70%;
+      margin: 0;
+    }
+    .first-column,
+    .second-column {
+      width: 70%;
+      margin-left:0;
+    }
+    .sidebar {
+      margin-left: 5%;
+      width: 25%;
+      position: absolute;
+      top: 1.57em;
+      right: .8333em;
+      margin-top: 0;
+      padding-top: 0;
+      border-top:none;
+      .box-shadow(none);
+      & > div {
+        width:auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 61.25em) {
+
+  .faculty-home .content-top-row .content-inner {
+    border-bottom: 1px solid #DDD;
+    .box-shadow(0 1px 0 #FFF);
+    margin-bottom: 1em;
+  }
+
+  .faculty-home .row-fluid {
+    .feature-area {
+      width: 48.5%;
+    }
+    .audience-area {
+      position:relative;
+      width: 48.5%;
+      margin: 0 0 0 3%;
+      .tab-content {
+        position: absolute;
+        top: 2.65em;
+        bottom: 0.525em;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: auto;
+        padding: 0.7143em;
+        overflow: auto;
+      }
+    }
+    .audience-area:after {
+      padding-top: 58.5%;
+      display: block;
+      content: '';
+    }
+  }
+  
+}
