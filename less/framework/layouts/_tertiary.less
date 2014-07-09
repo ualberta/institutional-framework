@@ -1,3 +1,23 @@
+@media (min-width: 43.125em) and (max-width: 61.1875em) {
+	.tertiary {
+		.first-column+.second-column+.sidebar {
+			position: static;
+			clear: right;
+			float: right;
+			margin: 0;
+			width: 66%;
+			& >.extrude, & >.btn {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				display: inline-block;
+				width: 46.5%;
+//				margin-left: 2%;
+				vertical-align: top;
+			}
+		}
+	}
+}
 @media (min-width: 43.125em) {
   .tertiary .row-fluid {
     .first-column {

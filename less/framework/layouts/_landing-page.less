@@ -18,7 +18,14 @@
 @media (min-width: 43.125em) {
   .landing-page .row-fluid {
     .intro-content {
-      width:100%;
+      width: 100%;
+    }
+    .sidebar {
+      width: 39%;
+      float: right;
+      & > div {
+        width: 100%;
+      }
     }
   }
 }
@@ -37,10 +44,12 @@
       }
     }
     .sidebar {
-      float: none;
-      position: absolute;
+//      float: none;
+//      position: absolute;
+	  float: right;
       top: 0;
       right: 0;
+      width: 19%;
     }
   }
 }
