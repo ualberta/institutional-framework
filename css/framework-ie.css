@@ -360,10 +360,7 @@
   display: none;
 }
 .lt-ie9 .landing-page .row-fluid .sidebar {
-  float: none;
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: left;
 }
 .lt-ie9 .tertiary .first-column {
   margin: 0;

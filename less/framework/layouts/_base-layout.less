@@ -41,8 +41,12 @@
   }
 }
 
+.row-fluid .sidebar>.btn {
+	max-width: none;
+}
 
 @media (min-width: 30em) {
+// For tablet, display sidebar boxes side-by-side.
   .row-fluid .sidebar {
     & > div {
       display: inline-block;
@@ -55,6 +59,20 @@
 //      margin-right:-5px;
 //    }
   }
+}
+
+@media (min-width: 30em) and (max-width: 43.0625em) {
+// For tablet, make buttons the same width as sidebar boxes
+	.sidebar {
+	  clear: left;
+	}
+	.row-fluid .sidebar>.btn {
+	  width: 47.5%;
+	  padding-left: 0;
+	  padding-right: 0;
+//	  display: inline-block;
+	  margin-right: 2%;
+	}
 }
 
 @media (min-width: 43.125em) {
@@ -111,7 +129,7 @@
       }
     }
   } 
-
+  
   // increase left / right page margins to 5% at 980px
   .container, 
   .blade-inner, 
