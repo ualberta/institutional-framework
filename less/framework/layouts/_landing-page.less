@@ -37,20 +37,26 @@
     }
     .intro-content {
       width: 78%;
+      & ~ .sidebar {
+            margin-top: -82px;
+      }
+    }
+    .sidebar {
+//    position: absolute;
+      right: 0;
+      width: 19%;       
     }
     .second-column {
       & > hr.soften:first-child {
         display:none;
       }
     }
-    .sidebar {
-//      float: none;
-//      position: absolute;
-	  float: right;
-      top: 0;
-      right: 0;
-      width: 19%;
-    }
   }
 }
- 
+
+@media (min-width: 96em) {
+  .landing-page .row-fluid .intro-content ~ .sidebar {
+      margin-top: -90px;
+  }
+}
+

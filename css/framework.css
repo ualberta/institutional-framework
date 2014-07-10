@@ -6885,6 +6885,9 @@ ul.accordion-list li.expanded div {
 .news-archive-list.image-link-list .list-item-image + .list-item-content {
   margin-left: 11em;
 }
+.sidebar .data-list li p {
+  font-size: 1em;
+}
 .data-list.share-list li {
   display: inline-block;
   vertical-align: middle;
@@ -8895,12 +8898,26 @@ ul.people-content ul {
 .row-fluid .first-column {
   margin-bottom: 1.5em;
 }
+.row-fluid .sidebar > .btn {
+  max-width: none;
+}
 @media (min-width: 30em) {
   .row-fluid .sidebar > div {
     display: inline-block;
     width: 47.5%;
     margin-right: 2%;
     vertical-align: top;
+  }
+}
+@media (min-width: 30em) and (max-width: 43.0625em) {
+  .sidebar {
+    clear: left;
+  }
+  .row-fluid .sidebar > .btn {
+    width: 47.5%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 2%;
   }
 }
 @media (min-width: 43.125em) {
@@ -9078,14 +9095,20 @@ ul.people-content ul {
   .landing-page .row-fluid .intro-content {
     width: 78%;
   }
+  .landing-page .row-fluid .intro-content ~ .sidebar {
+    margin-top: -82px;
+  }
+  .landing-page .row-fluid .sidebar {
+    right: 0;
+    width: 19%;
+  }
   .landing-page .row-fluid .second-column > hr.soften:first-child {
     display: none;
   }
-  .landing-page .row-fluid .sidebar {
-    float: right;
-    top: 0;
-    right: 0;
-    width: 19%;
+}
+@media (min-width: 96em) {
+  .landing-page .row-fluid .intro-content ~ .sidebar {
+    margin-top: -90px;
   }
 }
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
@@ -9093,7 +9116,8 @@ ul.people-content ul {
     position: static;
     clear: right;
     float: right;
-    margin: 0;
+    margin: 1em 0 0 0;
+    padding-top: 1em;
     width: 66%;
   }
   .tertiary .first-column + .second-column + .sidebar > .extrude,
@@ -9104,6 +9128,12 @@ ul.people-content ul {
     display: inline-block;
     width: 46.5%;
     vertical-align: top;
+  }
+  .tertiary .row-fluid .sidebar > .btn {
+    width: 30%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 2%;
   }
 }
 @media (min-width: 43.125em) {

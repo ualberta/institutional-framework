@@ -1,10 +1,13 @@
 @media (min-width: 43.125em) and (max-width: 61.1875em) {
+	
+// When there is a left-navigation column, position the sidebar boxes below the content, not aligned to the left.
 	.tertiary {
 		.first-column+.second-column+.sidebar {
 			position: static;
 			clear: right;
 			float: right;
-			margin: 0;
+			margin: 1em 0 0 0;
+			padding-top: 1em;
 			width: 66%;
 			& >.extrude, & >.btn {
 				-webkit-box-sizing: border-box;
@@ -15,6 +18,14 @@
 //				margin-left: 2%;
 				vertical-align: top;
 			}
+		}
+	// For tablet, make buttons the same width as sidebar boxes
+		.row-fluid .sidebar>.btn {
+		  width: 30%;
+		  padding-left: 0;
+		  padding-right: 0;
+	//	  display: inline-block;
+		  margin-right: 2%;
 		}
 	}
 }
@@ -40,7 +51,9 @@
     .first-column {
       width: 20%;
     }
-    .second-column { width: 75%; margin-left:0%; }
+    .second-column { 
+       width: 75%; margin-left:0%; 
+     }
     .first-column + .second-column {
       width: 50%;
       margin-left: 5%;
@@ -52,8 +65,8 @@
       }
     }
     .sidebar {
-      width: 20%;
-      margin-left:5%;
+       width: 20%;
+       margin-left: 5%;
     }
   }
 }
