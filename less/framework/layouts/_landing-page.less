@@ -37,15 +37,18 @@
     }
     .intro-content {
       width: 78%;
-      & ~ .sidebar {
-            margin-top: -82px;
-      }
     }
     .sidebar {
-//    position: absolute;
-      right: 0;
-      width: 19%;       
+      width: 19%;
     }
+    // absolutely position the sidebar if intro-content is present 
+    .intro-content ~ .sidebar {
+      position: absolute;
+      float: none;
+      top: 0;
+      right: 0;       
+    }
+    
     .second-column {
       & > hr.soften:first-child {
         display:none;
