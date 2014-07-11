@@ -9095,12 +9095,14 @@ ul.people-content ul {
   .landing-page .row-fluid .intro-content {
     width: 78%;
   }
-  .landing-page .row-fluid .intro-content ~ .sidebar {
-    margin-top: -82px;
-  }
   .landing-page .row-fluid .sidebar {
-    right: 0;
     width: 19%;
+  }
+  .landing-page .row-fluid .intro-content ~ .sidebar {
+    position: absolute;
+    float: none;
+    top: 0;
+    right: 0;
   }
   .landing-page .row-fluid .second-column > hr.soften:first-child {
     display: none;
