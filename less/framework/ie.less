@@ -285,6 +285,13 @@
 //      right: 0;
 		float: left;
     }
+    // absolutely position the sidebar if intro-content is present 
+    .intro-content ~ .sidebar {
+      position: absolute;
+      float: none;
+      top: 0;
+      right: 0;       
+    }
   }
 
 // faculty tertiary

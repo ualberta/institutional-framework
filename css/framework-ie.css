@@ -362,6 +362,12 @@
 .lt-ie9 .landing-page .row-fluid .sidebar {
   float: left;
 }
+.lt-ie9 .landing-page .row-fluid .intro-content ~ .sidebar {
+  position: absolute;
+  float: none;
+  top: 0;
+  right: 0;
+}
 .lt-ie9 .tertiary .first-column {
   margin: 0;
 }
