@@ -8716,7 +8716,7 @@ ul.people-nav li a:hover {
   cursor: pointer;
 }
 ul.people-nav li.home {
-  width: 17%;
+  width: 16.9%;
 }
 ul.people-nav li.courses {
   width: 18%;
@@ -8867,6 +8867,59 @@ ul.people-content ul {
   }
   ul.people-nav li.events {
     width: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .people-table {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+    /*
+			Label the data
+			*/
+  }
+  .people-table table,
+  .people-table thead,
+  .people-table tbody,
+  .people-table th,
+  .people-table td,
+  .people-table tr {
+    display: block;
+  }
+  .people-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .people-table tr {
+    border: 1px solid #ccc;
+  }
+  .people-table td:nth-of-type(1):before {
+    content: "Name and Title";
+    display: block;
+    font-family: "DIN Medium", sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+  }
+  .people-table td:nth-of-type(2):before {
+    content: "Department";
+    display: block;
+    font-family: "DIN Medium", sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+  }
+  .people-table td:nth-of-type(3):before {
+    content: "Area(s)";
+    display: block;
+    font-family: "DIN Medium", sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+  }
+  .people-table td:nth-of-type(4):before {
+    content: "Contact";
+    display: block;
+    font-family: "DIN Medium", sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
   }
 }
 .content-wrapper {
