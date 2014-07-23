@@ -93,7 +93,7 @@ ul.people-nav li{
     cursor: pointer;
     }
     ul.people-nav li.home{
-    width:17%;
+    width:16.9%;
     }
     ul.people-nav li.courses{
     width:18%;
@@ -246,5 +246,30 @@ ul.people-content ul{
 		&.events{
 			width:auto;
 		}
+	}
+}
+@media screen and (max-width: 1000px){
+	.people-table{
+	/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+	
+		tr { border: 1px solid #ccc; }
+		/*
+			Label the data
+			*/
+			td:nth-of-type(1):before { content: "Name and Title"; display:block; font-family: "DIN Medium",sans-serif;font-weight: normal;font-size:1.1em;}
+			td:nth-of-type(2):before { content: "Department"; display:block; font-family: "DIN Medium",sans-serif;font-weight: normal;font-size:1.1em;}
+			td:nth-of-type(3):before { content: "Area(s)";  display:block; font-family: "DIN Medium",sans-serif;font-weight: normal;font-size:1.1em;}
+			td:nth-of-type(4):before { content: "Contact";  display:block; font-family: "DIN Medium",sans-serif;font-weight: normal;font-size:1.1em;}
+	
 	}
 }
