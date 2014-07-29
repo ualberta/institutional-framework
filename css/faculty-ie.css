@@ -25,6 +25,9 @@
 .ie9 .link-mod-container > li.link-mod-active h4 a::after {
   top: 0px;
 }
+.lt-ie9 .people-toggle {
+  display: none;
+}
 .lt-ie9 .people-section-nav {
   display: none;
 }
