@@ -41,22 +41,22 @@
 		margin-bottom: 3em;
 	}
 }
-
+//
 // Make sure inline links are underlined
-.primary-content-area, .sidebar { 
-	p a { 
-		text-decoration: underline; 
-		color: #007C41;
-		&:hover {
-			text-decoration: none;
-		}
-	}
-}
-
+//.primary-content-area, .sidebar { 
+//	p a { 
+//		text-decoration: underline; 
+//		color: #007C41;
+//		&:hover {
+//			text-decoration: none;
+//		}
+//	}
+//}
+//
 // Remove button underlines
-.primary-content-area p.button-container a { 
-	text-decoration: none; 
-}
+//.primary-content-area p.button-container a { 
+//	text-decoration: none; 
+//}
 .social-media-links {
   img {
     width:  16px;
@@ -74,4 +74,24 @@
 
 .sub-menu .section-description img {
   display:block;
+}
+
+// Everything wider than mobile
+@media (min-width: 43.125em) {
+	.events {
+		.second-column > .row-fluid > .span6 {
+	    	width: 28.617021276595743%;
+		}
+	    .second-column > .row-fluid > .span6:first-child {
+        	width: 68.40425531914893%;
+        }
+    }
+}
+
+// Tablet portrait
+
+@media (min-width: 43.125em) and (max-width: 61.1875em) {
+	.tertiary .row-fluid .second-column {
+		width: 100%;
+	}
 }

@@ -1,7 +1,6 @@
 @media (min-width:43.125em){.navigation-container .navigation-inner ul li ul .nav1{width:12%;} .navigation-container .navigation-inner ul li ul .nav2{width:14%;} .navigation-container .navigation-inner ul li ul .nav3{width:17%;} .navigation-container .navigation-inner ul li ul .nav4{width:27%;} .navigation-container .navigation-inner ul li ul .nav5{width:20%;} .navigation-container .navigation-inner ul li ul .nav6{width:10%;}}.navigation-inner .section-description a{padding:0;display:inline;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none;text-decoration:underline;}.navigation-inner .section-description a:hover{text-decoration:none;}
 .contours .flexslider,.graduate .flexslider,.studentlife .flexslider,.undergraduate .flexslider,.sciencecareers .flexslider,.departments .flexslider{margin-bottom:3em;}
-.primary-content-area p a,.sidebar p a{text-decoration:underline;color:#007C41;}.primary-content-area p a:hover,.sidebar p a:hover{text-decoration:none;}
-.primary-content-area p.button-container a{text-decoration:none;}
 .social-media-links img{width:16px;height:16px;margin-right:4px;margin-bottom:1px;}
 .content h5.sidebar-title{margin:0 -0.6em 0.6em -0.6em;padding:0 0.6em 0.35714em 0.55em;}
 .sub-menu .section-description img{display:block;}
+@media (min-width:43.125em){.events .second-column>.row-fluid>.span6{width:28.617021276595743%;} .events .second-column>.row-fluid>.span6:first-child{width:68.40425531914893%;}}@media (min-width:43.125em) and (max-width:61.1875em){.tertiary .row-fluid .second-column{width:100%;}}
