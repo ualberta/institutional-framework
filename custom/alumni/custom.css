@@ -1,3 +1,49 @@
-@media (min-width:43.125em){.navigation-container .navigation-inner ul li ul .nav1{width:15.6%;} .navigation-container .navigation-inner ul li ul .nav2{width:22.2%;} .navigation-container .navigation-inner ul li ul .nav3{width:17.5%;} .navigation-container .navigation-inner ul li ul .nav4{width:16.6%;} .navigation-container .navigation-inner ul li ul .nav5{width:14.1%;} .navigation-container .navigation-inner ul li ul .nav6{width:14%;}}.navigation-inner .section-description a{padding:0;display:inline;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none;text-decoration:underline;}.navigation-inner .section-description a:hover{text-decoration:none;}
-.social-media-links img{width:16px;height:16px;margin-right:4px;margin-bottom:1px;}
-@media (min-width:43.125em){.events .second-column>.row-fluid>.span6{width:28.617021276595743%;} .events .second-column>.row-fluid>.span6:first-child{width:68.40425531914893%;}}@media (min-width:43.125em) and (max-width:61.1875em){.tertiary .row-fluid .second-column{width:100%;}}
+@media (min-width: 43.125em) {
+  .navigation-container .navigation-inner ul li ul .nav1 {
+    width: 15.6%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav2 {
+    width: 22.2%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav3 {
+    width: 17.5%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav4 {
+    width: 16.6%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav5 {
+    width: 14.1%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav6 {
+    width: 14%;
+  }
+}
+.navigation-inner .section-description a {
+  padding: 0;
+  display: inline;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  text-decoration: underline;
+}
+.navigation-inner .section-description a:hover {
+  text-decoration: none;
+}
+.social-media-links img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  margin-bottom: 1px;
+}
+@media (min-width: 43.125em) {
+  .events .second-column > .row-fluid > .span6 {
+    width: 28.617021276595743%;
+  }
+  .events .second-column > .row-fluid > .span6:first-child {
+    width: 68.40425531914893%;
+  }
+}
+@media (min-width: 43.125em) and (max-width: 61.1875em) {
+  .tertiary .row-fluid .second-column {
+    width: 100%;
+  }
+}
