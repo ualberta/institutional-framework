@@ -58,7 +58,7 @@
 .lt-ie9 [class*="span"] {
   float: left;
   min-height: 1px;
-  margin-left: 1.4285714285714286em;
+  margin-left: 1.42857143em;
 }
 .lt-ie9 .row-fluid {
   width: 100%;
@@ -81,8 +81,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  margin-left: 2.127659574468085%;
-  *margin-left: 2.074468085106383%;
+  margin-left: 2.12765957%;
+  *margin-left: 2.07446809%;
 }
 .lt-ie9 .row-fluid [class*="span"]:first-child {
   margin-left: 0;
@@ -95,55 +95,55 @@
 .lt-ie9 .row-fluid .navbar-fixed-top .container,
 .lt-ie9 .row-fluid .navbar-fixed-bottom .container {
   width: 100%;
-  *width: 99.94680851063829%;
+  *width: 99.94680851%;
 }
 .lt-ie9 .row-fluid .span12 {
   width: 100%;
-  *width: 99.94680851063829%;
+  *width: 99.94680851%;
 }
 .lt-ie9 .row-fluid .span11 {
-  width: 91.48936170212765%;
-  *width: 91.43617021276594%;
+  width: 91.4893617%;
+  *width: 91.43617021%;
 }
 .lt-ie9 .row-fluid .span10 {
-  width: 82.97872340425532%;
-  *width: 82.92553191489361%;
+  width: 82.9787234%;
+  *width: 82.92553191%;
 }
 .lt-ie9 .row-fluid .span9 {
-  width: 74.46808510638297%;
-  *width: 74.41489361702126%;
+  width: 74.46808511%;
+  *width: 74.41489362%;
 }
 .lt-ie9 .row-fluid .span8 {
-  width: 65.95744680851064%;
-  *width: 65.90425531914893%;
+  width: 65.95744681%;
+  *width: 65.90425532%;
 }
 .lt-ie9 .row-fluid .span7 {
-  width: 57.44680851063829%;
-  *width: 57.39361702127659%;
+  width: 57.44680851%;
+  *width: 57.39361702%;
 }
 .lt-ie9 .row-fluid .span6 {
-  width: 48.93617021276595%;
-  *width: 48.88297872340425%;
+  width: 48.93617021%;
+  *width: 48.88297872%;
 }
 .lt-ie9 .row-fluid .span5 {
-  width: 40.42553191489362%;
-  *width: 40.37234042553192%;
+  width: 40.42553191%;
+  *width: 40.37234043%;
 }
 .lt-ie9 .row-fluid .span4 {
-  width: 31.914893617021278%;
-  *width: 31.861702127659576%;
+  width: 31.91489362%;
+  *width: 31.86170213%;
 }
 .lt-ie9 .row-fluid .span3 {
-  width: 23.404255319148934%;
-  *width: 23.351063829787233%;
+  width: 23.40425532%;
+  *width: 23.35106383%;
 }
 .lt-ie9 .row-fluid .span2 {
-  width: 14.893617021276595%;
-  *width: 14.840425531914894%;
+  width: 14.89361702%;
+  *width: 14.84042553%;
 }
 .lt-ie9 .row-fluid .span1 {
-  width: 6.382978723404255%;
-  *width: 6.329787234042553%;
+  width: 6.38297872%;
+  *width: 6.32978723%;
 }
 .lt-ie9 .container,
 .lt-ie9 .blade-inner,
@@ -300,8 +300,8 @@
 .lt-ie9 .icon-field i {
   position: absolute;
   color: #ccc;
-  top: 0.7857142857142857em;
-  left: 0.7142857142857143em;
+  top: 0.78571429em;
+  left: 0.71428571em;
   margin: 0;
   z-index: 100;
 }
@@ -703,22 +703,22 @@
   border: none;
 }
 .lt-ie9 .navigation-container ul li ul .nav1 {
-  width: 17.695473251028808%;
+  width: 17.69547325%;
 }
 .lt-ie9 .navigation-container ul li ul .nav2 {
-  width: 24.691358024691358%;
+  width: 24.69135802%;
 }
 .lt-ie9 .navigation-container ul li ul .nav3 {
-  width: 12.345679012345679%;
+  width: 12.34567901%;
 }
 .lt-ie9 .navigation-container ul li ul .nav4 {
-  width: 13.717421124828533%;
+  width: 13.71742112%;
 }
 .lt-ie9 .navigation-container ul li ul .nav5 {
-  width: 14.540466392318244%;
+  width: 14.54046639%;
 }
 .lt-ie9 .navigation-container ul li ul .nav6 {
-  width: 17.00960219478738%;
+  width: 17.00960219%;
 }
 .lt-ie9 .btn {
   outline: none;
@@ -935,7 +935,7 @@
 }
 .lt-ie9 .link-mod-container .icon-filter {
   bottom: 10px;
-  bottom: 0.6428571428571429em;
+  bottom: 0.64285714em;
 }
 .lt-ie9 .fma-container.flexslider .flex-control-nav li {
   *display: inline;
@@ -1723,7 +1723,7 @@
 .lt-ie9 .prospective-student .content-top-row,
 .lt-ie9 .why-ualberta .content-top-row,
 .lt-ie9 .campuslife .content-top-row {
-  width: 67.14285714285714em;
+  width: 67.14285714em;
   margin: 5px auto;
   line-height: 1.42em;
   -webkit-border-radius: 4px;
@@ -1735,10 +1735,10 @@
 .lt-ie9 .campuslife .content-top-row .tab-content {
   overflow: auto;
   min-height: 260px;
-  height: 18.571428571428573em;
+  height: 18.57142857em;
 }
 .lt-ie9 .campuslife .title-container.container {
-  width: 67.14285714285714em;
+  width: 67.14285714em;
   margin: 5px auto;
 }
 .lt-ie9 .module-container .module-heading .module-actions {
