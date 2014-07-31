@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .clearfix {
   *zoom: 1;
 }
@@ -2201,6 +2202,8 @@
   height: 252px;
 }
 =======
+=======
+>>>>>>> chowk-merging
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
 .lt-ie10 .accordion-list li a.accordion-toggle{height:14px;}
@@ -2707,4 +2710,7 @@
 .lt-ie8 .flexslider .flex-control-nav{bottom:-15px;}
 .lt-ie8 .flexslider .flex-direction-nav li a{top:40%;}
 .lt-ie8 .tab-content{height:252px;}
+<<<<<<< HEAD
+>>>>>>> chowk-merging
+=======
 >>>>>>> chowk-merging
