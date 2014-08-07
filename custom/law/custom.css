@@ -1,18 +1,21 @@
 @media (min-width: 43.125em) {
   .navigation-container .navigation-inner ul li ul .nav1 {
-    width: 15.646258503401361%;
+    width: 15.6462585%;
   }
   .navigation-container .navigation-inner ul li ul .nav2 {
-    width: 20.408163265306122%;
+    width: 15.87301587%;
   }
   .navigation-container .navigation-inner ul li ul .nav3 {
-    width: 20.408163265306122%;
+    width: 15.87301587%;
   }
   .navigation-container .navigation-inner ul li ul .nav4 {
-    width: 21.31519274376417%;
+    width: 22.67573696%;
   }
   .navigation-container .navigation-inner ul li ul .nav5 {
-    width: 22.22222222222222%;
+    width: 17.68707483%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav5 {
+    width: 18.14058957%;
   }
 }
 @media (min-width: 61.25em) and (max-width: 65.25em) {
