@@ -5221,6 +5221,12 @@ ul.footer-quick-links + p {
 .svg .social-media .icon-typepad {
   background: url("/design/img/webicons/webicon-typepad.svg");
 }
+.no-svg .social-media .icon-soundcloud {
+  background: url("/design/img/webicons/webicon-soundcloud-m.png");
+}
+.svg .social-media .icon-soundcloud {
+  background: url("/design/img/webicons/webicon-soundcloud.svg");
+}
 .module-container .module-heading {
   position: relative;
 }
