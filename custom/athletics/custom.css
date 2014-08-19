@@ -216,32 +216,32 @@ li.headline h4 a {
 .fma-background {
   overflow: hidden;
 }
-.span6.feature-area {
+.faculty-home .row-fluid .feature-area {
   width: 66%;
 }
-.span6.audience-area {
+.faculty-home .row-fluid .audience-area {
   width: 31.4%;
   margin-bottom: 40px;
   padding-bottom: 29%;
   height: 0;
   margin-left: 0;
 }
-.span6.feature-area .flexslider {
+.faculty-home .row-fluid .feature-area .flexslider {
   margin-bottom: 40px;
 }
-.span6.feature-area .slide {
+.faculty-home .row-fluid .feature-area .slide {
   max-height: 0;
   padding-bottom: 3%;
 }
-.span6.feature-area .image-caption-container .caption p {
+.faculty-home .row-fluid .feature-area .image-caption-container .caption p {
   display: none;
 }
 @media (max-width: 61.1875em) {
   
 }
 @media (max-width: 43.0625em) {
-  .span6.feature-area,
-  .span6.audience-area {
+  .faculty-home .row-fluid .feature-area,
+  .faculty-home .row-fluid .audience-area {
     width: 100%;
     display: block;
     height: auto;
@@ -270,28 +270,28 @@ li.headline h4 a {
   width: 100% !important;
 }
 @media (max-width: 43.0625em) {
-  .primary-content-area .row-fluid .span6 {
+  .primary-content-area .row-fluid {
     width: 100%;
   }
 }
 @media (min-width: 43.0625em) and (max-width: 61.1875em) {
-  .primary-content-area .row-fluid .span6:first-child {
+  .primary-content-area .row-fluid:first-child {
     width: 52%;
   }
-  .primary-content-area .row-fluid .span6:nth-child(2) {
+  .primary-content-area .row-fluid:nth-child(2) {
     width: 45%;
   }
 }
 @media (min-width: 61.1875em) {
-  .primary-content-area .row-fluid .span6 {
+  .primary-content-area .row-fluid {
     width: 100%;
   }
 }
 @media (min-width: 74.9375em) {
-  .primary-content-area .row-fluid .span6:first-child {
+  .primary-content-area .row-fluid:first-child {
     width: 52%;
   }
-  .primary-content-area .row-fluid .span6:nth-child(2) {
+  .primary-content-area .row-fluid:nth-child(2) {
     width: 45%;
   }
 }
@@ -882,7 +882,7 @@ li.headline h4 a {
     border-bottom: 0;
   }
 }
-.span6.feature-area {
+.faculty-home .row-fluid .feature-area {
   margin-right: 2.5%;
 }
 .athlete-of-the-week .data-description {
