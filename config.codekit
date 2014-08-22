@@ -182,15 +182,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/custom\/change\/custom.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/custom\/change\/custom.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/custom\/css\/custom.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -7253,15 +7244,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/custom\/change\/custom.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/custom\/change\/custom.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/less\/custom\/change\/custom.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -7421,6 +7403,26 @@
 		"outputAbbreviatedPath": "\/less\/custom\/css\/custom.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/custom\/gradstudies\/custom.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/custom\/gradstudies\/custom.less",
+		"outputAbbreviatedPath": "\/custom\/gradstudies\/custom.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
@@ -12220,7 +12222,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Vic Mach",
+"lastSavedByUser": "Karen Chow",
 "manualImportLinks": {
 	},
 "projectAttributes": {
