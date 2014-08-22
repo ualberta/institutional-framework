@@ -1,0 +1,119 @@
+@media (min-width: 43.125em) {
+  .navigation-container {
+    .navigation-inner ul li ul {
+      .nav1 {
+        width: 10%;
+      }
+      .nav2 {
+        width: 12%;
+      }
+      .nav3 {
+        width: 26%;
+      }
+      .nav4 {
+        width: 12%;
+      }
+      .nav5 {
+        width: 20%;
+      }
+      .nav6 {
+        width: 20%;
+      } 
+    }
+  }
+}
+
+// Add space beneath carousel on Departments
+
+.departments, .programs, .research, .workofarts {
+     .flexslider {
+          margin-bottom: 3em;
+     }
+}
+
+// Sidebar image gap
+
+.sidebar .frame {
+     margin: 0;
+}
+
+// Big menu image links
+.navigation-inner .section-description a {
+     padding: 0;
+     display: inline;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     text-transform: none;
+     text-decoration: underline;
+     &:hover {
+          text-decoration: none;
+     }
+}
+
+// Make sure inline links are underlined
+.primary-content-area p a, .secondary-content-area p a, .sidebar p a {
+     text-decoration:underline;
+     &:hover {
+          text-decoration: none;
+     }
+}
+// Remove button underlines
+.primary-content-area p.button-container a, .secondary-content-area p.button-container a, .sidebar p.button-container a {
+     text-decoration: none;
+}
+.social-media-links {
+  img {
+    width:  16px;
+    height:  16px;
+ /*   .border-radius(2px); */
+    margin-right: 4px;
+    margin-bottom: 1px;
+  }
+}
+
+/*** Lane's adjustments for homepage teasers ***/
+
+.frame.data-thumbnail {
+  position: absolute;
+  top: 0.8333em;
+       a, a:hover {
+            margin:0;
+            padding:0;
+            border:none;
+       }
+}
+
+.homepage .primary-content-area .module-container {
+     .data-list li {
+            position: relative;
+     }
+     .data-list li h4 {
+          a {
+            padding-left: 115px;
+            padding-top:0.83333em;
+            min-height:7.5em;
+                 &:hover {
+                      padding-left: 126px;
+                 }
+          }
+     }
+     .in-the-news-list.data-list li h4  {
+            a {
+                 padding-left: 0;
+                 &:hover {
+                      padding-left: 11px;
+                 }
+            }
+     }
+}
+
+/* News archive thumbnails */
+
+.news-archive-list {
+     &.image-link-list .list-item-image+.list-item-content {
+          margin-left: 6.87em;
+     }
+     .list-item-image {
+         width: 5.5em;
+     }
+}
+
