@@ -1,0 +1,96 @@
+@media (min-width: 43.125em) {
+  .navigation-container .navigation-inner ul li ul .nav1 {
+    width: 10%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav2 {
+    width: 12%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav3 {
+    width: 26%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav4 {
+    width: 12%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav5 {
+    width: 20%;
+  }
+  .navigation-container .navigation-inner ul li ul .nav6 {
+    width: 20%;
+  }
+}
+.departments .flexslider,
+.programs .flexslider,
+.research .flexslider,
+.workofarts .flexslider {
+  margin-bottom: 3em;
+}
+.sidebar .frame {
+  margin: 0;
+}
+.navigation-inner .section-description a {
+  padding: 0;
+  display: inline;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  text-decoration: underline;
+}
+.navigation-inner .section-description a:hover {
+  text-decoration: none;
+}
+.primary-content-area p a,
+.secondary-content-area p a,
+.sidebar p a {
+  text-decoration: underline;
+}
+.primary-content-area p a:hover,
+.secondary-content-area p a:hover,
+.sidebar p a:hover {
+  text-decoration: none;
+}
+.primary-content-area p.button-container a,
+.secondary-content-area p.button-container a,
+.sidebar p.button-container a {
+  text-decoration: none;
+}
+.social-media-links img {
+  width: 16px;
+  height: 16px;
+  /*   .border-radius(2px); */
+  margin-right: 4px;
+  margin-bottom: 1px;
+}
+/*** Lane's adjustments for homepage teasers ***/
+.frame.data-thumbnail {
+  position: absolute;
+  top: 0.8333em;
+}
+.frame.data-thumbnail a,
+.frame.data-thumbnail a:hover {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.homepage .primary-content-area .module-container .data-list li {
+  position: relative;
+}
+.homepage .primary-content-area .module-container .data-list li h4 a {
+  padding-left: 115px;
+  padding-top: 0.83333em;
+  min-height: 7.5em;
+}
+.homepage .primary-content-area .module-container .data-list li h4 a:hover {
+  padding-left: 126px;
+}
+.homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a {
+  padding-left: 0;
+}
+.homepage .primary-content-area .module-container .in-the-news-list.data-list li h4 a:hover {
+  padding-left: 11px;
+}
+/* News archive thumbnails */
+.news-archive-list.image-link-list .list-item-image + .list-item-content {
+  margin-left: 6.87em;
+}
+.news-archive-list .list-item-image {
+  width: 5.5em;
+}
